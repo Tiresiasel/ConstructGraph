@@ -2,6 +2,7 @@
 // Year slider, paper list, layout toggle hookups. Minimal version for interop.
 
 import { appState, setLayoutMode, setPreset } from './state.js';
+import { t, applyTranslations } from './i18n.js';
 import { setAllNodesToLayout } from './layout.js';
 import { applyFilter } from './filter.js';
 
@@ -22,7 +23,18 @@ export function initUI() {
   const yearLabel = document.getElementById('year-label');
   if (rangeEl && yearLabel) {
     rangeEl.addEventListener('input', function() {
-      yearLabel.textContent = `年份: ${this.value}`;
+      const format = (val) => {
+        const dict = (appState.language || 'zh') === 'en' ? 'en' : 'zh';
+        // Fallback via i18n year_colon_value
+        try {
+          const f = (require('./i18n.js').translations || {})[dict]?.year_colon_value; // not always available
+          return f ? f(val) : `${t('year')}: ${val}`;
+        } catch (_) {
+          return `${t('year')}: ${val}`;
+        }
+      };
+      yearLabel.textContent = format(this.value);
+      applyTranslations();
       applyFilter();
     });
   }

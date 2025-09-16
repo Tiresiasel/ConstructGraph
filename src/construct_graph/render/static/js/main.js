@@ -7,6 +7,7 @@ import { createNetwork } from './network.js';
 import { cacheLayoutPositions, setAllNodesToLayout } from './layout.js';
 import { applyFilter } from './filter.js';
 import { initUI } from './ui.js';
+import { initI18n, applyTranslations, toggleLanguage } from './i18n.js';
 import { setupLabelLayer, drawLabels, bindAfterDrawing } from './labels.js';
 import { bindTooltipEvents } from './tooltips.js';
 import { bindClickHighlight } from './interactions.js';
@@ -31,6 +32,27 @@ export async function initApp({ embed_pos = {}, central_pos = {} } = {}) {
     console.log('Data loaded:', { constructs: data.constructs?.length, relationships: data.relationships?.length, papers: data.papers?.length });
     setData(data);
     setLayouts({ embed_pos, central_pos });
+
+    // Set year slider bounds from papers database years
+    try {
+      const years = (appState.papersData || [])
+        .map(p => (typeof p.year === 'number' ? p.year : parseInt(p.year, 10)))
+        .filter(y => Number.isFinite(y));
+      const minY = years.length ? Math.min(...years) : 1900;
+      const maxY = years.length ? Math.max(...years) : new Date().getFullYear();
+      const rangeEl = document.getElementById('year-range');
+      const yearLabel = document.getElementById('year-label');
+      if (rangeEl) {
+        rangeEl.min = String(minY);
+        rangeEl.max = String(maxY);
+        rangeEl.value = String(maxY);
+      }
+      if (yearLabel) {
+        // i18n will format label; call after setting value
+        try { applyTranslations(); } catch (_) { yearLabel.textContent = `年份: ${maxY}`; }
+      }
+      console.log('Year slider bounds set from papers:', { minY, maxY });
+    } catch (e) { console.warn('Failed to set year slider from papers data', e); }
 
     // 2) Network
     console.log('Creating network...');
@@ -114,12 +136,19 @@ export async function initApp({ embed_pos = {}, central_pos = {} } = {}) {
     // 5) UI and first filter
     console.log('Initializing UI components...');
     initUI();
+    initI18n();
     initSearch();
     setupLabelLayer();
     bindAfterDrawing();
     bindTooltipEvents();
     bindClickHighlight();
     setAllNodesToLayout(appState.layoutMode);
+    // Wire language toggle button if present in DOM
+    try {
+      const btn = document.getElementById('lang-toggle');
+      if (btn) btn.onclick = () => toggleLanguage();
+      applyTranslations();
+    } catch (_) {}
     
     // Select all papers by default to show all constructs and relationships
     if (appState.papersData && appState.papersData.length > 0) {

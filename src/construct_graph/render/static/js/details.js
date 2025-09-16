@@ -2,6 +2,7 @@
 // Render right-side details panel for node and edge clicks (mirrors constructs_network.html logic)
 
 import { appState } from './state.js';
+import { t } from './i18n.js';
 
 function getDetailsEl() {
   try { return document.getElementById('details-panel'); } catch (_) { return null; }
@@ -43,16 +44,16 @@ export function renderNodeDetails(nodeId) {
 
   if (construct.best_description) {
     html += `<div class="detail-section no-border">
-      <strong>摘要定义:</strong><br>
+      <strong>${t('d_abs_def')}:</strong><br>
       <div style="margin-top:8px;">${htmlWithMathSafe(construct.best_description)}</div>`;
     if (construct.parent_constructs && construct.parent_constructs.length > 0) {
-      html += `<div style="margin-top:16px;"><strong>所属构型:</strong> ${construct.parent_constructs.join(', ')}</div>`;
+      html += `<div style="margin-top:16px;"><strong>${t('d_parent_constructs')}:</strong> ${construct.parent_constructs.join(', ')}</div>`;
     }
     html += `</div>`;
   }
 
   if (construct.dimensions && construct.dimensions.length > 0) {
-    html += `<div class="detail-section"><strong>维度:</strong><br>${construct.dimensions.map(dim => '• ' + dim).join('<br>')}</div>`;
+    html += `<div class="detail-section"><strong>${t('d_dimensions')}:</strong><br>${construct.dimensions.map(dim => '• ' + dim).join('<br>')}</div>`;
   }
 
   // Similar constructs (combined)
@@ -60,7 +61,7 @@ export function renderNodeDetails(nodeId) {
   (construct.similar_constructs || []).forEach(s => { if (s && s.name) allSimilar.push(s.name); });
   (construct.similar_to_constructs || []).forEach(s => { if (s && s.name) allSimilar.push(s.name); });
   if (allSimilar.length > 0) {
-    html += `<div class="detail-section no-border"><strong>相似构型:</strong> ${allSimilar.join(', ')}</div>`;
+    html += `<div class="detail-section no-border"><strong>${t('d_similar')}:</strong> ${allSimilar.join(', ')}</div>`;
   }
 
   // Moderator info section if acts as moderator
@@ -72,13 +73,12 @@ export function renderNodeDetails(nodeId) {
       const moderatorInfo = moderatorEdges[0].moderatorInfo;
       html += `<div style="margin: 16px 0 0 0;">
         <div class="detail-section no-border">
-          <strong style="color: #6b7280; font-size: 1.05rem;">调节变量信息</strong>
+          <strong style="color: #6b7280; font-size: 1.05rem;">${t('d_moderator')}</strong>
           <div style="margin-top: 12px; opacity: 0.9;">
-            <div style="margin-bottom: 8px;"><strong>调节的关系:</strong> ${moderatorInfo.source} → ${moderatorInfo.target}</div>
-            <div style="margin-bottom: 8px;"><strong>调节作用:</strong> 作为调节变量影响上述关系的强度和方向</div>
-            <div style="margin-bottom: 8px;"><strong>关系状态:</strong> ${moderatorInfo.relationship.status || 'N/A'}</div>
-            <div style="margin-bottom: 8px;"><strong>证据类型:</strong> ${moderatorInfo.relationship.evidence_type || 'N/A'}</div>
-            <div style="margin-bottom: 8px;"><strong>效应方向:</strong> ${moderatorInfo.relationship.effect_direction || 'N/A'}</div>
+            <div style="margin-bottom: 8px;"><strong>${t('d_title')}:</strong> ${moderatorInfo.source} → ${moderatorInfo.target}</div>
+            <div style="margin-bottom: 8px;"><strong>${t('d_status')}:</strong> ${moderatorInfo.relationship.status || 'N/A'}</div>
+            <div style="margin-bottom: 8px;"><strong>${t('d_ev_type')}:</strong> ${moderatorInfo.relationship.evidence_type || 'N/A'}</div>
+            <div style="margin-bottom: 8px;"><strong>${t('d_direction')}:</strong> ${moderatorInfo.relationship.effect_direction || 'N/A'}</div>
           </div>
         </div>
       </div>`;
@@ -104,13 +104,13 @@ export function renderNodeDetails(nodeId) {
   papersWithContent.forEach(({ paper: p, entry, hasDefinitions, hasMeasurements }) => {
     html += `<div class="detail-section">
       <div style="margin-bottom:16px;">
-        <div style="opacity:.85; font-weight:bold;">${p.title || '无标题'}</div>
+        <div style="opacity:.85; font-weight:bold;">${p.title || '(Untitled)'}</div>
         <div style="opacity:.7; margin-top:4px;">${(p.authors || []).join(', ')} (${p.year || 'N/A'})</div>
       </div>`;
 
     if (hasDefinitions) {
       const manyDefs = entry.defs.length > 1;
-      html += `<div style="margin-top:16px;"><strong>定义:</strong>`;
+      html += `<div style="margin-top:16px;"><strong>${t('d_definition')}:</strong>`;
       entry.defs.forEach(d => {
         html += `<div style="margin-top:8px; display:flex; align-items:flex-start; gap:8px;">` +
                 (manyDefs ? `<span style=\"color:#9ca3af; font-size:12px; margin-top:4px;\">•</span>` : `<span style=\"width:0\"></span>`) +
@@ -122,7 +122,7 @@ export function renderNodeDetails(nodeId) {
 
     if (hasMeasurements) {
       const manyMeas = entry.meas.length > 1;
-      html += `<div style="margin-top:16px;"><strong>测量:</strong>`;
+      html += `<div style="margin-top:16px;"><strong>${t('d_measurement')}:</strong>`;
       entry.meas.forEach(m => {
         let measHtml = `<div style=\"margin-top:8px; display:flex;align-items:flex-start; gap:8px;\">` +
                        (manyMeas ? `<span style=\"color:#9ca3af; font-size:12px; margin-top:4px;\">•</span>` : `<span style=\"width:0\"></span>`) +
@@ -137,7 +137,7 @@ export function renderNodeDetails(nodeId) {
     html += `</div>`; // detail-section
   });
 
-  detailsEl.innerHTML = html || '<div style="opacity:.8">所选论文中暂无该构型的详细信息</div>';
+  detailsEl.innerHTML = html || `<div style="opacity:.8">${t('d_no_detail_for_construct')}</div>`;
   try { if (window.MathJax) { window.MathJax.typesetPromise([detailsEl]).catch(() => {}); } } catch (_) {}
 }
 
@@ -159,13 +159,13 @@ export function renderRelationshipDetailsFromEdge(edge) {
   }
   if (!rel) return;
 
-  let html = `<div class="detail-section"><strong style="font-size:1.05rem">关系：${rel.source_construct} → ${rel.target_construct}</strong>
+  let html = `<div class="detail-section"><strong style="font-size:1.05rem">${t('d_title')}：${rel.source_construct} → ${rel.target_construct}</strong>
     <div style="margin-top:12px;opacity:.8">
-      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>状态:</strong> ${rel.status || 'N/A'}</div>
-      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>证据类型:</strong> ${rel.evidence_type || 'N/A'}</div>
-      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>方向:</strong> ${rel.effect_direction || 'N/A'}</div>
-      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>因果验证:</strong> ${(rel.relationship_instances || []).some(ri => ri.is_validated_causality === true) ? '是' : '否'}</div>
-      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>元分析:</strong> ${rel.is_meta_analysis ? '是' : '否'}</div>
+      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>${t('d_status')}:</strong> ${rel.status || 'N/A'}</div>
+      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>${t('d_ev_type')}:</strong> ${rel.evidence_type || 'N/A'}</div>
+      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>${t('d_direction')}:</strong> ${rel.effect_direction || 'N/A'}</div>
+      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>${t('d_causality')}:</strong> ${(rel.relationship_instances || []).some(ri => ri.is_validated_causality === true) ? t('d_yes') : t('d_no')}</div>
+      <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>${t('d_meta')}:</strong> ${rel.is_meta_analysis ? t('d_yes') : t('d_no')}</div>
     </div></div>`;
 
   // Group by paper
@@ -183,15 +183,13 @@ export function renderRelationshipDetailsFromEdge(edge) {
 
     html += `<div class="detail-section">
       <div style="margin-bottom:16px;">
-        <div style="opacity:.85; font-weight:bold;">${p.title || '无标题'}</div>
+        <div style="opacity:.85; font-weight:bold;">${p.title || '(Untitled)'}</div>
         <div style="opacity:.7; margin-top:4px;">${(p.authors || []).join(', ')} (${p.year || 'N/A'})</div>
       </div>`;
 
     instances.forEach(ri => {
       html += `<div style="margin-top:12px;padding:12px;background:rgba(255,255,255,0.05);border-radius:6px;word-wrap:break-word;overflow-wrap:break-word;">`;
-      if (ri.description) {
-        html += `<div style=\"margin-bottom:8px;word-wrap:break-word;\"><strong>描述:</strong> ${ri.description}</div>`;
-      }
+      if (ri.description) { html += `<div style=\"margin-bottom:8px;word-wrap:break-word;\"><strong>${t('d_desc')}:</strong> ${ri.description}</div>`; }
       if (ri.context_snippet) {
         html += `<div style=\"margin-top:8px;font-size:0.9em;opacity:0.8;font-style:italic;display:flex;align-items:flex-start;gap:8px;\">`
              + `<span style=\"color:#9ca3af; font-size:12px; margin-top:4px;\">•</span>`
@@ -201,30 +199,30 @@ export function renderRelationshipDetailsFromEdge(edge) {
       let stats = null; try { stats = ri.statistical_details ? JSON.parse(ri.statistical_details) : null; } catch(_) { stats = ri.statistical_details; }
       if (stats && Object.keys(stats).length > 0) {
         const items = [];
-        if (stats.p_value !== undefined) items.push(`P值: ${stats.p_value}`);
+        if (stats.p_value !== undefined) items.push(`p: ${stats.p_value}`);
         if (stats.beta_coefficient !== undefined) items.push(`β: ${stats.beta_coefficient}`);
         if (stats.correlation !== undefined) items.push(`r: ${stats.correlation}`);
-        html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>统计信息:</strong> ${items.join('，') || '无'}</div>`;
+        html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>${t('d_stat')}:</strong> ${items.join(', ') || 'N/A'}</div>`;
       }
-      if (ri.qualitative_finding) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>定性发现:</strong> ${ri.qualitative_finding}</div>`;
-      if (ri.boundary_conditions) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>边界条件:</strong> ${ri.boundary_conditions}</div>`;
-      if (ri.replication_outcome) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>复制结果:</strong> ${ri.replication_outcome}</div>`;
-      if (ri.theories && ri.theories.length > 0) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>理论基础:</strong> ${ri.theories.join(', ')}</div>`;
-      if (ri.moderators && ri.moderators.length > 0) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>调节变量:</strong> ${ri.moderators.join(', ')}</div>`;
-      if (ri.mediators && ri.mediators.length > 0) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>中介变量:</strong> ${ri.mediators.join(', ')}</div>`;
+      if (ri.qualitative_finding) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>${t('d_qual')}:</strong> ${ri.qualitative_finding}</div>`;
+      if (ri.boundary_conditions) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>${t('d_boundary')}:</strong> ${ri.boundary_conditions}</div>`;
+      if (ri.replication_outcome) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>${t('d_replication')}:</strong> ${ri.replication_outcome}</div>`;
+      if (ri.theories && ri.theories.length > 0) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>${t('d_theory')}:</strong> ${ri.theories.join(', ')}</div>`;
+      if (ri.moderators && ri.moderators.length > 0) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>${t('d_moderator')}:</strong> ${ri.moderators.join(', ')}</div>`;
+      if (ri.mediators && ri.mediators.length > 0) html += `<div style=\"margin-top:4px;word-wrap:break-word;\"><strong>${t('d_mediator')}:</strong> ${ri.mediators.join(', ')}</div>`;
       html += `</div>`;
     });
 
     html += `</div>`; // detail-section
   });
 
-  detailsEl.innerHTML = html || '<div style="opacity:.8">所选论文中暂无该关系的详细信息</div>';
+  detailsEl.innerHTML = html || `<div style="opacity:.8">${t('d_no_detail_for_relation')}</div>`;
   try { if (window.MathJax) { window.MathJax.typesetPromise([detailsEl]).catch(() => {}); } } catch (_) {}
 }
 
 export function resetDetailsPanel() {
   const el = getDetailsEl(); if (!el) return;
-  el.innerHTML = '<div style="opacity:0.8">点击中间的节点或连线查看详细信息</div>';
+  el.innerHTML = `<div style="opacity:0.8">${t('details_hint')}</div>`;
 }
 
 

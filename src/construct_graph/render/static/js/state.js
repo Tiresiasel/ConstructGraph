@@ -9,6 +9,8 @@ export const appState = {
   layoutMode: 'centrality',
   // Current view preset: 'overview' | 'causal' | 'correlation'
   preset: 'overview',
+  // UI language: 'zh' | 'en'
+  language: 'zh',
   embeddingPositions: {},
   centralityPositions: {},
   nodes: null,

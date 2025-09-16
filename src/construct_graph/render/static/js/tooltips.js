@@ -2,6 +2,7 @@
 // Node and edge tooltip rendering.
 
 import { appState } from './state.js';
+import { t } from './i18n.js';
 
 let tooltip = null;
 let tooltipTimeout = null;
@@ -62,13 +63,13 @@ export function onHoverNode(nodeId, event) {
 
     // Definitions
     if (Array.isArray(construct.definitions) && construct.definitions.length > 0) {
-      content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">定义来源</div>`;
+      content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">${t('d_definition')}</div>`;
       construct.definitions.forEach(def => {
         if (def && def.definition && def.paper_title) {
-          let block = `<div class=\"paper-info\"><strong>定义:</strong> ${htmlWithMathSafe(def.definition)}<br><strong>来源:</strong> ${def.paper_title} ${(def.paper_authors || []).join(', ')} (${def.paper_year || 'N/A'})`;
+          let block = `<div class=\"paper-info\"><strong>${t('d_definition')}:</strong> ${htmlWithMathSafe(def.definition)}<br><strong>Source:</strong> ${def.paper_title} ${(def.paper_authors || []).join(', ')} (${def.paper_year || 'N/A'})`;
           try {
             const meta = def.paper_uid ? papersById[def.paper_uid] : null;
-            if (meta) { block += `<br><strong>期刊:</strong> ${meta.journal || 'N/A'}`; }
+            if (meta) { block += `<br><strong>${t('d_journal')}:</strong> ${meta.journal || 'N/A'}`; }
           } catch (_) {}
           block += `</div>`;
           content += block;
@@ -79,12 +80,12 @@ export function onHoverNode(nodeId, event) {
 
     // Dimensions
     if (construct.dimensions && construct.dimensions.length) {
-      content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">维度</div><div class=\"tooltip-content\">${construct.dimensions.join(', ')}</div></div>`;
+      content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">${t('d_dimensions')}</div><div class=\"tooltip-content\">${construct.dimensions.join(', ')}</div></div>`;
     }
 
     // Parent constructs
     if (construct.parent_constructs && construct.parent_constructs.length) {
-      content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">所属构型</div><div class=\"tooltip-content\">${construct.parent_constructs.join(', ')}</div></div>`;
+      content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">${t('d_parent_constructs')}</div><div class=\"tooltip-content\">${construct.parent_constructs.join(', ')}</div></div>`;
     }
 
     // Similar constructs (merged two directions)
@@ -94,19 +95,19 @@ export function onHoverNode(nodeId, event) {
       (construct.similar_to_constructs || []).forEach(s => { if (s && s.name) allSimilar.push(s.name); });
       const uniqueSimilar = Array.from(new Set(allSimilar));
       if (uniqueSimilar.length > 0) {
-        content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">相似构型</div>` + uniqueSimilar.map(n => `<div class=\"tooltip-content\">• ${n}</div>`).join('') + `</div>`;
+        content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">${t('d_similar')}</div>` + uniqueSimilar.map(n => `<div class=\"tooltip-content\">• ${n}</div>`).join('') + `</div>`;
       }
     }
 
     // Measurements
     if (Array.isArray(construct.measurements) && construct.measurements.length > 0) {
-      content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">测量方式</div>`;
+      content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">${t('d_measurement')}</div>`;
       construct.measurements.forEach(m => {
         if (m && m.name && m.paper_title) {
-          let block = `<div class=\"paper-info\"><strong>测量:</strong> ${m.name}<br><strong>来源:</strong> ${m.paper_title} ${(m.paper_authors || []).join(', ')} (${m.paper_year || 'N/A'})`;
+          let block = `<div class=\"paper-info\"><strong>${t('d_measurement')}:</strong> ${m.name}<br><strong>Source:</strong> ${m.paper_title} ${(m.paper_authors || []).join(', ')} (${m.paper_year || 'N/A'})`;
           try {
             const meta = m.paper_uid ? papersById[m.paper_uid] : null;
-            if (meta) { block += `<br><strong>期刊:</strong> ${meta.journal || 'N/A'}`; }
+            if (meta) { block += `<br><strong>${t('d_journal')}:</strong> ${meta.journal || 'N/A'}`; }
           } catch (_) {}
           block += `</div>`;
           content += block;
@@ -120,7 +121,7 @@ export function onHoverNode(nodeId, event) {
       const modEdges = edges.get().filter(e => e.moderatorInfo && e.moderatorInfo.moderator === construct.name);
       if (modEdges && modEdges.length > 0) {
         const mi = modEdges[0].moderatorInfo;
-        content += `<div class=\"tooltip-section\" style=\"border-top: 2px solid #6b7280; margin-top: 16px; padding-top: 16px;\"><div class=\"tooltip-title\" style=\"color:#6b7280;\">调节变量信息</div><div class=\"tooltip-content\"><strong>调节的关系:</strong> ${mi.source} → ${mi.target}<br><strong>调节作用:</strong> 作为调节变量影响上述关系的强度和方向<br><strong>关系状态:</strong> ${mi.relationship?.status || 'N/A'}<br><strong>证据类型:</strong> ${mi.relationship?.evidence_type || 'N/A'}<br><strong>效应方向:</strong> ${mi.relationship?.effect_direction || 'N/A'}</div></div>`;
+        content += `<div class=\"tooltip-section\" style=\"border-top: 2px solid #6b7280; margin-top: 16px; padding-top: 16px;\"><div class=\"tooltip-title\" style=\"color:#6b7280;\">${t('d_moderator')}</div><div class=\"tooltip-content\"><strong>${t('d_title')}:</strong> ${mi.source} → ${mi.target}<br><strong>${t('d_status')}:</strong> ${mi.relationship?.status || 'N/A'}<br><strong>${t('d_ev_type')}:</strong> ${mi.relationship?.evidence_type || 'N/A'}<br><strong>${t('d_direction')}:</strong> ${mi.relationship?.effect_direction || 'N/A'}</div></div>`;
       }
     } catch (_) {}
     tooltip.innerHTML = content;
@@ -138,20 +139,20 @@ export function onHoverEdge(edgeId, event) {
   tooltipTimeout = setTimeout(() => {
     if (e.moderatorInfo) {
       const mi = e.moderatorInfo;
-      let content = `<div class=\"tooltip-title\" style=\"color:#6b7280;\">调节变量连线</div>`;
-      content += `<div class=\"tooltip-section\"><div class=\"tooltip-content\"><strong>调节变量:</strong> ${mi.moderator}<br><strong>调节的关系:</strong> ${mi.source} → ${mi.target}<br><strong>关系状态:</strong> ${mi.relationship?.status || 'N/A'}<br><strong>证据类型:</strong> ${mi.relationship?.evidence_type || 'N/A'}<br><strong>效应方向:</strong> ${mi.relationship?.effect_direction || 'N/A'}</div></div>`;
+      let content = `<div class=\"tooltip-title\" style=\"color:#6b7280;\">${t('d_moderator')}</div>`;
+      content += `<div class=\"tooltip-section\"><div class=\"tooltip-content\"><strong>${t('d_moderator')}:</strong> ${mi.moderator}<br><strong>${t('d_title')}:</strong> ${mi.source} → ${mi.target}<br><strong>${t('d_status')}:</strong> ${mi.relationship?.status || 'N/A'}<br><strong>${t('d_ev_type')}:</strong> ${mi.relationship?.evidence_type || 'N/A'}<br><strong>${t('d_direction')}:</strong> ${mi.relationship?.effect_direction || 'N/A'}</div></div>`;
       tooltip.innerHTML = content;
     } else if (e.mediatorInfo) {
       const mi = e.mediatorInfo;
-      let content = `<div class=\"tooltip-title\" style=\"color:#6b7280;\">中介变量连线</div>`;
-      content += `<div class=\"tooltip-section\"><div class=\"tooltip-content\"><strong>中介变量:</strong> ${mi.mediator}<br><strong>关系:</strong> ${mi.source} → ${mi.target}</div></div>`;
+      let content = `<div class=\"tooltip-title\" style=\"color:#6b7280;\">${t('d_mediator')}</div>`;
+      content += `<div class=\"tooltip-section\"><div class=\"tooltip-content\"><strong>${t('d_mediator')}:</strong> ${mi.mediator}<br><strong>${t('d_title')}:</strong> ${mi.source} → ${mi.target}</div></div>`;
       tooltip.innerHTML = content;
     } else {
       const rel = relationshipsData.find(r => (r.source_construct === e.from && r.target_construct === e.to) || (r.source_construct === e.to && r.target_construct === e.from));
       if (!rel) return;
       const papersById = buildPapersById();
-      let content = `<div class=\"tooltip-title\">关系详情</div>`;
-      content += `<div class=\"tooltip-section\"><div class=\"tooltip-content\"><strong>从:</strong> ${rel.source_construct}<br><strong>到:</strong> ${rel.target_construct}<br><strong>状态:</strong> ${rel.status || 'N/A'}<br><strong>证据类型:</strong> ${rel.evidence_type || 'N/A'}<br><strong>方向:</strong> ${rel.effect_direction || 'N/A'}<br><strong>因果验证:</strong> ${rel.is_validated_causality ? '是' : '否'}<br><strong>元分析:</strong> ${rel.is_meta_analysis ? '是' : '否'}</div></div>`;
+      let content = `<div class=\"tooltip-title\">${t('d_title')}</div>`;
+      content += `<div class=\"tooltip-section\"><div class=\"tooltip-content\"><strong>From:</strong> ${rel.source_construct}<br><strong>To:</strong> ${rel.target_construct}<br><strong>${t('d_status')}:</strong> ${rel.status || 'N/A'}<br><strong>${t('d_ev_type')}:</strong> ${rel.evidence_type || 'N/A'}<br><strong>${t('d_direction')}:</strong> ${rel.effect_direction || 'N/A'}<br><strong>${t('d_causality')}:</strong> ${rel.is_validated_causality ? t('d_yes') : t('d_no')}<br><strong>${t('d_meta')}:</strong> ${rel.is_meta_analysis ? t('d_yes') : t('d_no')}</div></div>`;
 
       // Aggregated moderators/mediators and evidence sources
       try {
@@ -159,11 +160,11 @@ export function onHoverEdge(edgeId, event) {
         const mods = Array.from(new Set(all.flatMap(ri => (ri.moderators || [])).filter(Boolean)));
         const meds = Array.from(new Set(all.flatMap(ri => (ri.mediators || [])).filter(Boolean)));
         if (mods.length || meds.length) {
-          content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">调节/中介</div><div class=\"tooltip-content\">${mods.length ? `<strong>调节变量:</strong> ${mods.join(', ')}` : ''}${meds.length ? `<br><strong>中介变量:</strong> ${meds.join(', ')}` : ''}</div></div>`;
+          content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">${t('d_moderator')}/${t('d_mediator')}</div><div class=\"tooltip-content\">${mods.length ? `<strong>${t('d_moderator')}:</strong> ${mods.join(', ')}` : ''}${meds.length ? `<br><strong>${t('d_mediator')}:</strong> ${meds.join(', ')}` : ''}</div></div>`;
         }
         const sourceIds = Array.from(new Set(all.map(ri => ri.paper_uid).filter(Boolean)));
         if (sourceIds.length) {
-          content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">证据来源</div>`;
+          content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">Sources</div>`;
           sourceIds.slice(0,3).forEach(pid => {
             const p = papersById[pid];
             if (p) content += `<div class=\"paper-info\">${p.title}<br>${(p.authors || []).join(', ')} (${p.year || 'N/A'})${p.journal ? ` • ${p.journal}` : ''}</div>`;
@@ -175,20 +176,20 @@ export function onHoverEdge(edgeId, event) {
 
       // Relationship instances (up to 3)
       if (Array.isArray(rel.relationship_instances) && rel.relationship_instances.length > 0) {
-        content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">关系实例 (${rel.relationship_instances.length}个)</div>`;
+        content += `<div class=\"tooltip-section\"><div class=\"tooltip-title\">Instances (${rel.relationship_instances.length})</div>`;
         rel.relationship_instances.slice(0,3).forEach(ri => {
           let stats = null; try { stats = ri.statistical_details ? JSON.parse(ri.statistical_details) : null; } catch(_) { stats = ri.statistical_details; }
-          content += `<div class=\"stat-info\"><strong>论文:</strong> ${ri.paper_title || 'N/A'}<br><strong>描述:</strong> ${htmlWithMathSafe(ri.description || ri.context_snippet || 'N/A')}`;
+          content += `<div class=\"stat-info\"><strong>Paper:</strong> ${ri.paper_title || 'N/A'}<br><strong>${t('d_desc')}:</strong> ${htmlWithMathSafe(ri.description || ri.context_snippet || 'N/A')}`;
           if (stats) {
-            if (stats.p_value !== undefined) content += `<br><strong>P值:</strong> ${stats.p_value}`;
+            if (stats.p_value !== undefined) content += `<br><strong>p:</strong> ${stats.p_value}`;
             if (stats.beta_coefficient !== undefined) content += `<br><strong>β系数:</strong> ${stats.beta_coefficient}`;
-            if (stats.correlation !== undefined) content += `<br><strong>相关系数:</strong> ${stats.correlation}`;
+            if (stats.correlation !== undefined) content += `<br><strong>r:</strong> ${stats.correlation}`;
           }
-          if (ri.qualitative_finding) content += `<br><strong>定性发现:</strong> ${ri.qualitative_finding}`;
-          if (ri.supporting_quote) content += `<br><strong>支持引用:</strong> \"${ri.supporting_quote}\"`;
-          if (ri.boundary_conditions) content += `<br><strong>边界条件:</strong> ${ri.boundary_conditions}`;
-          if (ri.replication_outcome) content += `<br><strong>复制结果:</strong> ${ri.replication_outcome}`;
-          if (ri.theories && ri.theories.length) content += `<br><strong>理论:</strong> ${ri.theories.join(', ')}`;
+          if (ri.qualitative_finding) content += `<br><strong>${t('d_qual')}:</strong> ${ri.qualitative_finding}`;
+          if (ri.supporting_quote) content += `<br><strong>Quote:</strong> \"${ri.supporting_quote}\"`;
+          if (ri.boundary_conditions) content += `<br><strong>${t('d_boundary')}:</strong> ${ri.boundary_conditions}`;
+          if (ri.replication_outcome) content += `<br><strong>${t('d_replication')}:</strong> ${ri.replication_outcome}`;
+          if (ri.theories && ri.theories.length) content += `<br><strong>${t('d_theory')}:</strong> ${ri.theories.join(', ')}`;
           content += `</div>`;
         });
         if (rel.relationship_instances.length > 3) content += `<div style=\"opacity:0.7;font-size:0.8em;\">还有 ${rel.relationship_instances.length - 3} 个实例...</div>`;
