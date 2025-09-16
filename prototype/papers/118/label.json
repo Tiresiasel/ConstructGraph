@@ -1,0 +1,174 @@
+{   "relevant": false,
+    "L": {
+      "L1_summary_of_paper": "This paper investigates how the technological overlap between a spinout venture and its parent firm influences a corporate venture capital (CVC) investor's decision to invest in that spinout. The key concept is 'competitive tension,' defined as the strain between a focal firm and a rival that is likely to result in action. Drawing primarily on the literature of competitive dynamics and employee entrepreneurship, the authors theorize that a high level of technological overlap between a spinout and its parent firm (TOSP) deters potential CVC investors. This deterrence stems from the CVC's anticipation of hostile actions (e.g., litigation) from the parent firm against the spinout, which creates significant investment risks. The study analyzes CVC investments in the U.S. medical device industry from 1995-2015. The main finding is a negative relationship between TOSP and the likelihood of receiving CVC investment. This negative effect is amplified when the parent firm has a strong history of litigation (higher risk) but is mitigated when the CVC can expect strategic benefits, such as when the CVC itself has high technological overlap with the parent firm or when the parent firm is highly innovative (higher benefit). The paper's primary contribution is to provide a more balanced view of employee entrepreneurship by demonstrating that technological inheritance from a parent firm can be a liability, and it extends competitive dynamics theory by showing that tension between two firms can be transmitted to affect a third party's behavior."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Competitive Dynamics",
+          "tag": "primary"
+        },
+        {
+          "theory": "Employee Entrepreneurship",
+          "tag": "primary"
+        },
+        {
+          "theory": "Corporate Venture Capital Strategic Motives",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Dyad",
+      "M3_unit_of_analysis_element": "Other: <CVC investment decision in a spinout>"
+    },
+    "N": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "Not reported",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "NA_reason_if_any": "The study does not model a focal firm weighing multiple competitors' actions, but rather a CVC weighing the risk from a single, specific parent firm related to a potential investment.",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A": {
+      "A1_citation": "Bae, J., & Lee, J. M. 2021. How technological overlap between spinouts and parent firms affects corporate venture capital investments in spinouts: The role of competitive tension. Academy of Management Journal, 64(2): 643-678.",
+      "A2_year": 2021,
+      "A3_outlet_tier": "AMJ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Bridging",
+      "B2_levels": "Dyad",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Learning",
+        "Signaling"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Similarity/overlap",
+        "Rivalry intensity"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "The core mechanism of 'competitive tension' is a theoretical construct based on the observable proxy of technological overlap. Uncertainty for the CVC investor is framed as the anticipated risk of hostile actions from the parent firm, which is inferred rather than directly measured.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Causal claim",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": "IV",
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": [
+        "Instrument Relevance: The instrument (noncompete agreement enforceability) is shown to be significantly correlated with the endogenous variable (TOSP).",
+        "Instrument Exogeneity (Exclusion Restriction): The authors argue that the instrument is unlikely to affect CVC investment decisions through any channel other than TOSP. This assumption is supported by logic but is fundamentally untestable."
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Instrument diagnostics",
+        "Cluster/serial corr fixes",
+        "Other: <Alternative measures for key constructs, rare events logistic regression, randomly matched sample analysis>"
+      ],
+      "D3_endogeneity": "Network IV",
+      "D4_level_alignment": "None",
+      "D5_data_sources": [
+        "Thomson ONE VentureXpert",
+        "Bloomberg Businessweek",
+        "Capital IQ",
+        "LexisNexis",
+        "Crunchbase",
+        "Relationship Science",
+        "LinkedIn",
+        "U.S. Patent and Trademarks Office (USPTO)",
+        "Lex Machina",
+        "MaxVal's Litigation Databank",
+        "U.S. Food and Drug Administration (FDA) medical device approval database",
+        "Securities Data Company (SDC) Platinum",
+        "Compustat"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Other: <Likelihood of CVC investment>"
+      ],
+      "E2_effect_directions": {
+        "Likelihood of CVC investment": "– (main effect of TOSP), Mixed (moderated effects)"
+      },
+      "E3_mechanisms_tags": [
+        "Deterrence",
+        "Learning",
+        "Spillovers",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "Parent firm litigiousness",
+        "Technological overlap between corporate investor and parent firm (TOCP)",
+        "Parent firm innovativeness"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk of bias is endogeneity, where spinouts might self-select their degree of technological overlap based on unobserved factors that also influence their funding prospects. The authors address this commendably with an instrumental variable (IV) approach. However, the validity of any IV strategy rests on the untestable exclusion restriction assumption. Additionally, the study's focus on a single, IP-intensive industry (medical devices) limits the external validity of the findings to other contexts.",
+      "F3_saturation_contribution": "Redirection"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The paper maps the theoretical construct of 'competitive tension' to the empirical measure of 'technological overlap' (TOSP), based on patent portfolio similarity. This is a standard and reasonable proxy in the literature but does not capture non-technological or tacit dimensions of competition.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The perceived risk of competitive tension between a venture and its parent organization negatively influences third-party resource allocation to the venture.",
+        "A third party's strategic decision to engage with a venture emerging from a dyadic rivalry is a function of the perceived risks of entanglement versus the perceived benefits of knowledge appropriation.",
+        "The transmission of competitive tension through inter-firm networks is conditional on the characteristics of the source of tension (e.g., aggressiveness) and the strategic interests of the third party."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "This is a quantitative empirical paper, not a conceptual or review paper."
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "A high level of TOSP increases competitive tension between the spinout and its parent firm, leading the parent firm to adopt a hostile attitude and potentially take aggressive actions (e.g., litigation).",
+        "Potential corporate investors anticipate this hostility, perceive the investment as risky, and are thus deterred from investing.",
+        "Corporate investors weigh the competitive risks against potential competitive benefits, such as gaining indirect access to a competitor's (the parent firm's) valuable technological knowledge."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Parent firm litigiousness",
+          "role_in_link": "Amplifies the negative relationship between TOSP and CVC investment likelihood by increasing the perceived competitive risk."
+        },
+        {
+          "type": "moderation",
+          "variable": "Technological overlap between corporate investor and parent firm (TOCP)",
+          "role_in_link": "Mitigates the negative relationship between TOSP and CVC investment likelihood by increasing the expected competitive benefits (access to competitor's knowledge)."
+        },
+        {
+          "type": "moderation",
+          "variable": "Parent firm innovativeness",
+          "role_in_link": "Mitigates the negative relationship between TOSP and CVC investment likelihood by increasing the expected competitive benefits (access to high-quality knowledge from an innovative firm)."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "Spinouts with a high level of technological overlap with their parent firms (high TOSP) are significantly less likely to receive CVC investment compared to non-spinouts and low-TOSP spinouts.",
+        "Among spinouts, the level of TOSP is negatively associated with the likelihood of receiving CVC investment.",
+        "The negative effect of TOSP is stronger when the parent firm is more litigious.",
+        "The negative effect of TOSP is weaker when the CVC investor has high technological overlap with the parent firm.",
+        "The negative effect of TOSP is weaker when the parent firm is highly innovative."
+      ],
+      "J2_finding_evidence_links": "Tables 3, 4, 5, 6 and Figures 3, 4, 5.",
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper makes a significant contribution by challenging the predominantly positive view of knowledge inheritance in the employee entrepreneurship literature. It introduces and empirically supports the idea that technological overlap can be a liability by creating 'competitive tension' with the parent firm. This tension acts as a deterrent to third-party corporate investors. The study uniquely extends competitive dynamics theory to a triadic context, demonstrating how rivalry between two firms can spill over to influence the strategic decisions of an external actor."
+    }
+  }

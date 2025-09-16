@@ -1,0 +1,158 @@
+{   "relevant":false,
+    "L_summary_of_paper": {
+      "L1_summary_of_paper": "This study investigates how organizations manage the dual challenge of changing their identity while maintaining distinctiveness, particularly when institutional identity anchors (like political ideologies) weaken. The central research question is: How do political parties maintain their identity distinctiveness while seeking identity change in an environment of simultaneous repositioning by competitors? The key concepts are 'identity affirmation' (defending core identity elements against competitor encroachment) and 'identity reformation' (cautiously expanding into new elements guided by competitor actions and identity coherence). The theoretical framing integrates organizational identity theory, which emphasizes continuity and internal consistency, with competitive rivalry theory, which highlights inter-organizational threat and imitation. The study examines the relationship between competitor claims on political issues (construct: competitor investment) and a focal party's own issue selection and investment level. The context is the British political system from 1970 to 1992, using coded election manifestos from the Conservative, Labour, and Liberal parties. The main findings show that parties (1) engage in identity affirmation by counter-investing heavily in their core identity issues when those issues are challenged by rivals, and (2) engage in identity reformation by imitating rivals to select new issues but constraining their investment based on the issue's ideological proximity (investing most in neutral, then adjacent, and least in oppositional issues). The paper's main contribution is to reconceptualize identity change as an interactive, emergent process shaped by competitive dynamics, thereby bridging the internal (micro) and external (macro) views within organizational identity literature and enriching theories of political competition."
+    },
+    "M_Theory_Unit_of_Analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Organizational Identity Theory",
+          "tag": "primary"
+        },
+        {
+          "theory": "Competitive Rivalry Theory",
+          "tag": "primary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Other: Party-Issue-Election",
+      "M3_unit_of_analysis_element": "Other: Identity claim selection and investment level"
+    },
+    "N_Assumptions_Behavioral_Scope": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "Yes",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A_Bibliographic_Administrative": {
+      "A1_citation": "Karthikeyan, S. I., Jonsson, S., & Wezel, F. C. (2016). The Travails of Identity Change: Competitor Claims and Distinctiveness of British Political Parties, 1970–1992. Organization Science, 27(1), 106-122.",
+      "A2_year": 2016,
+      "A3_outlet_tier": "OS",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "Other: Data source (Comparative Manifestos Project) is public, but the specific dataset and code used for the analysis are not provided."
+    },
+    "B_Perspective_Theoretical_Positioning": {
+      "B1_primary_perspective": "Bridging",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Categorization",
+        "Cognitive maps"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_Phenomenon_Constructs_Context": {
+      "C1_constructs": [
+        "Similarity/overlap",
+        "Category distance",
+        "Other: Identity claims as competitive actions"
+      ],
+      "C2_measurement": "Text/NLP",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "Dependent Variables: (1) Element Investment: percentage of quasi-sentences a party allots to a focal political issue in its manifesto. (2) Element Selection: Binary variable for whether a party mentioned the issue. Independent Variables: (1) Identity Element: Dummy for whether an issue belongs to a party's established identity. (2) Investment of Others: Sum of investments by competitor parties on the focal issue. (3) Issue Types: Dummies for Neutral, Adjacent, and Oppositional identity elements.",
+      "C4_shock_type": "Other: Decline of an institutionalized system of social classification (political ideologies).",
+      "C4_shock_design": "The study uses the post-1970 period in British politics, identified in political science literature as a time of ideological decline, as its observational window. This shock is not used in a formal event study design but provides the theoretical motivation and context for the observed competitive dynamics."
+    },
+    "D_Methods_Identification_Causality": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Weak",
+      "D2_identification": "Other: Panel-Corrected Standard Errors (PCSE); GMM mentioned in footnote",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": [
+        "Simultaneity bias is acknowledged and addressed in a footnote via GMM with lagged instruments.",
+        "The main models use Panel-Corrected Standard Errors (PCSE) to address heteroskedasticity and contemporaneous correlation."
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Other: Heckman selection model (inverse mills ratio) to control for issue selection bias",
+        "Cluster/serial corr fixes"
+      ],
+      "D3_endogeneity": "Other: GMM with lagged instruments mentioned in a footnote.",
+      "D4_level_alignment": "Other: Analysis is at the party-issue-election level, implicitly bridging party-level strategy and issue-level actions.",
+      "D5_data_sources": [
+        "Comparative Manifestos Project (CMP)"
+      ]
+    },
+    "E_Outcomes_Effects": {
+      "E1_outcomes": [
+        "Action rate/mix"
+      ],
+      "E2_effect_directions": [
+        {
+          "Action rate/mix": "Mixed"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Deterrence",
+        "Learning",
+        "Legitimacy/Status",
+        "Category audience",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "Identity Element (whether an issue is core to the focal party's identity)",
+        "Issue Type (Neutral, Adjacent, Oppositional)"
+      ]
+    },
+    "F_Quality_Systematicity": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "Primary risk of bias is endogeneity from simultaneity, as all parties' strategic choices are interdependent and co-determined. While acknowledged and addressed with GMM in a footnote, the main models are correlational and causal claims are weakly supported. Another risk is limited generalizability (external validity) outside the specific context of the 1970-1992 British political system.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_Integration_Hooks": {
+      "G1_construct_mapping_note": "The paper's core construct of 'identity claims' on political issues can be mapped to the competitive dynamics construct of 'competitive actions'. 'Identity affirmation' maps to defensive/retaliatory actions in a firm's core market. 'Identity reformation' maps to exploratory actions or entries into new market/product spaces, guided by competitor signals.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "Competitive actions are filtered through an organization's identity, such that threats to core identity elements trigger disproportionately strong retaliatory actions.",
+        "When exploring new competitive positions, organizations imitate competitors to select potential actions, but the intensity of investment in those actions is constrained by identity coherence.",
+        "The perceived 'distance' of a competitor's market position from a firm's own identity (e.g., adjacent vs. oppositional) determines the feasibility and intensity of imitative competitive moves."
+      ]
+    },
+    "H_Type_Applicability": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "Not applicable"
+    },
+    "I_Mechanism_Proposition_Detailing": {
+      "I1_mechanism_statements": [
+        "Threat perception: Claims by competitors on a party's core identity issues are perceived as a threat to distinctiveness, triggering a defensive neutralization response to reassert ownership.",
+        "Social comparison and validation: Claims by competitors on non-core issues provide valuable signals about popular or important topics, guiding the focal party's selection of new issues to adopt.",
+        "Identity coherence and credibility: The need to maintain a consistent and credible identity tempers the investment in newly adopted issues, leading parties to favor those that are neutral or adjacent over those that are ideologically oppositional and thus more threatening to continuity."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Identity Element",
+          "role_in_link": "Moderates the relationship between competitor investments and the focal party's investment. The positive relationship is stronger for issues that are part of the focal party's established identity."
+        },
+        {
+          "type": "moderation",
+          "variable": "Issue Type (Neutral, Adjacent, Oppositional)",
+          "role_in_link": "Moderates the investment level in newly selected (non-identity) issues. Investment is highest in neutral issues, followed by adjacent, and lowest in oppositional issues."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J_Findings_Evidence": {
+      "J1_main_findings_summary": [
+        "Parties engage in 'identity affirmation': when competitors make claims on a party's core identity issues, the focal party significantly increases its own investment in those same issues to neutralize the threat.",
+        "Parties engage in 'identity reformation' through imitation: they are more likely to select and include issues in their platform that their competitors are already investing in, especially when those issues are outside their established identity.",
+        "Reformation is constrained by identity coherence: when borrowing issues from outside their identity, parties invest most heavily in identity-neutral issues, followed by ideologically adjacent issues, and least in ideologically oppositional issues.",
+        "Identity strategies vary by party: the successful Conservative party was most aggressive in defending its identity, the Labour party was more cautious and coherence-focused in its reformation, and the less-defined Liberal party was more flexible and less defensive."
+      ],
+      "J2_finding_evidence_links": [
+        "H1 (Affirmation): Table 2, Model 2; Figure 1",
+        "H2 (Reformation-Selection): Table 2, Model 3; Figure 2",
+        "H3A/H3B (Reformation-Investment): Table 2, Models 4 & 5",
+        "Heterogeneity: Tables 3 & 4"
+      ],
+      "J3_finding_strength": "Mixed evidence"
+    },
+    "K_Overall_Paper_Contribution": {
+      "K1_contribution_summary": "This paper's primary contribution is to bridge the micro/internal and macro/external streams of organizational identity literature by introducing a competitive rivalry perspective. It reframes identity change not as an isolated, internal process but as an interactive, inter-organizational dynamic where firms simultaneously defend their core identity turf ('affirmation') while cautiously exploring new identity spaces guided by competitor signals and constrained by coherence concerns ('reformation'). This provides a more realistic model of how organizations manage the inherent tension between identity change and distinctiveness in a competitive environment."
+    }
+  }

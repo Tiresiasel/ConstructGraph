@@ -1,0 +1,184 @@
+{   "relevant":true,    
+    "L": {
+      "L1_summary_of_paper": "This paper investigates how a firm's positioning within its network of perceived competitors affects its product innovation. The central research question is: How is a firm's position in perceived competition networks associated with its product innovation? The study defines a 'perceived competition network' as a relational structure emerging from a firm's subjective, and often asymmetric, identification of rivals, distinct from objective networks based on market overlap. The theoretical framing integrates organizational learning and network embeddedness theories, proposing that a firm's unique competitive viewpoint stimulates differentiated search and learning, leading to innovation. The core constructs studied are three forms of network embeddedness: structural (spanning structural holes), positional (perceiving peripheral competitors), and relational (competitor churn), and their relationship with the rate of new product introductions. The study is set in the U.S. enterprise infrastructure software industry from 1995-2012, using a hand-collected panel dataset of 121 public firms. The main findings are that spanning structural holes and paying attention to peripheral competitors are positively associated with product innovation. Counter-intuitively, competitor churn has a negative association. The key conclusion is that firms with an 'unusual' view of competition—seeing what others miss by looking to the network's frontiers—are more innovative. The paper's primary contributions are: (1) establishing the strategic importance of perceived competition networks, a novel concept; (2) demonstrating that optimal positioning strategies in competition networks diverge from those in collaboration networks (e.g., brokerage and periphery are beneficial); and (3) introducing and validating the use of 10-K filings to systematically measure managerial perceptions of competition."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Organizational Learning",
+          "tag": "primary"
+        },
+        {
+          "theory": "Network Theory (Embeddedness)",
+          "tag": "primary"
+        },
+        {
+          "theory": "Competitive Dynamics (Perceptual View)",
+          "tag": "secondary"
+        },
+        {
+          "theory": "Attention-Based View",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": "Innovation introduction frequency"
+    },
+    "N": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "No",
+      "N3_assumption_common_environment": "No",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A": {
+      "A1_citation": "Thatchenkery, S., & Katila, R. (2021). Seeing What Others Miss: A Competition Network Lens on Product Innovation. Organization Science, 32(5), 1346-1370.",
+      "A2_year": 2021,
+      "A3_outlet_tier": "OS",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Bridging",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Learning",
+        "Attention-based view",
+        "Embeddedness",
+        "Structural holes",
+        "Cognitive maps"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Perceived competitor set",
+        "Structural holes",
+        "Centrality",
+        "Constraint/closure"
+      ],
+      "C2_measurement": [
+        "Text/NLP",
+        "Archival behavioral"
+      ],
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "Dependent Variable (Product Introductions): Count of brand-new (version 1.0) infrastructure software products introduced yearly, coded from company press releases. Independent Variables (Competition Network): Derived from annual 10-K filings' 'competition' section. 'Spanning structural holes' is measured as the negative of Burt's constraint index. 'Peripheral competitors' is measured as the sum of inverse indegrees of a firm's perceived competitors within its own markets (indegree = number of other firms naming it as a competitor). 'Competitor churn' is the proportion of competitors added or dropped year-over-year.",
+      "C4_shock_type": "Regulatory",
+      "C4_shock_design": "The study uses the 2001 resolution of the U.S. v. Microsoft antitrust case as an exogenous shock. The instrument is an interaction term between a post-2001 dummy variable and a dummy for the firm's membership in an S&P 1500 index (a proxy for firm visibility). The logic is that after the case, highly visible firms became more attentive to a wider range of competitive threats to avoid antitrust scrutiny."
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Causal claim",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": [
+        "IV",
+        "Panel FE (causal)"
+      ],
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": [
+        "Instrument Relevance: Tested with Stock-Yogo F-statistics and supported by qualitative text analysis of 10-Ks, showing visible firms changed their competitive framing post-shock.",
+        "Instrument Exogeneity (Exclusion Restriction): Tested with Hansen's J-statistic, which supported validity for structural holes and peripheral competitors, but not for churn."
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Placebo/falsification",
+        "Instrument diagnostics",
+        "Other: Patent data used for alternative dependent variables (patent counts, originality, generality) and mechanism tests; exclusion of firms that were later acquired; controlling for competitor diversity."
+      ],
+      "D3_endogeneity": [
+        "FE saturation",
+        "Lags",
+        "Exogenous shock"
+      ],
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "10-K SEC filings",
+        "LexisNexis (press releases)",
+        "Gartner Research",
+        "Compustat",
+        "Thomson ONE",
+        "CapitalIQ",
+        "SDC Platinum",
+        "NBER patent data"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Innovation"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Innovation",
+          "effect": {
+            "Spanning structural holes": "+",
+            "Peripheral competitors": "+",
+            "Competitor churn": "–"
+          }
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Information access",
+        "Learning",
+        "Attention allocation"
+      ],
+      "E4_moderators": [
+        "Not reported"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "The primary risk of bias stems from the endogeneity of a firm's competitive perceptions. The authors address this rigorously with a firm fixed-effects model and an instrumental variable (IV) analysis. However, they transparently report that the instrument is somewhat weak for some variables based on F-statistics, which means the IV results should be interpreted with some caution. A second risk is limited external validity, as the study is confined to public firms in the U.S. software industry, a specific high-velocity environment.",
+      "F3_saturation_contribution": "Divergent"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The paper's central construct, 'perceived competition network,' operationalizes concepts from the attention-based view and cognitive maps literature at a network level. Its independent variables, 'structural holes' and 'peripheral competitors,' are direct applications of network theory constructs (embeddedness, centrality, brokerage) to this novel perceptual context. These positions are framed as drivers of organizational learning and differentiated search.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The innovation value of a specific network position (e.g., brokerage) is conditional on the nature of inter-firm ties, yielding positive outcomes in competitive networks and potentially negative outcomes in collaborative networks.",
+        "Firm innovation is driven more by idiosyncratic, perception-based network positioning than by objective, market-based structural equivalence.",
+        "In competitive learning contexts, stability of attention on a chosen set of competitors fosters greater innovation than high attentional churn, as deep learning requires accumulated experience."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "Paper is a primary empirical study with quantitative data and hypothesis testing."
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "Spanning structural holes stimulates and differentiates a firm's search activities by providing early awareness ('vision advantage') and access to non-redundant, hard-to-replicate information from disparate parts of the network.",
+        "Paying attention to peripheral competitors stimulates search by exposing the firm to 'vivid' (novel or unfamiliar) information that others miss, providing a differentiated source of knowledge to build upon.",
+        "The hypothesized (but not found) mechanism for competitor churn was that it would stimulate search by creating instability and continually refreshing the firm's attention to new knowledge."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "mediation",
+          "variable": "Patent characteristics (originality, generality)",
+          "role_in_link": "The paper provides evidence consistent with mediation by showing that network positions are linked to the characteristics of the knowledge (patents) firms draw upon. Peripheral competitor focus is associated with more original patents, and structural hole spanning with more general patents. However, this is not a formal mediation test."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "Spanning structural holes in the perceived competition network is positively and significantly associated with a firm's rate of new product introductions.",
+        "Paying attention to peripheral competitors (those not widely seen as rivals by others) is positively and significantly associated with new product introductions.",
+        "Contrary to the hypothesis, a higher rate of competitor churn (turnover in the set of perceived competitors) is negatively and significantly associated with new product introductions.",
+        "These findings hold after controlling for numerous firm and market factors, and are robust to an instrumental variable analysis designed to address endogeneity concerns.",
+        "The mechanisms appear to be related to learning and information access, as network positioning is correlated with the type of knowledge (original vs. general) firms use in their own innovations (patents)."
+      ],
+      "J2_finding_evidence_links": [
+        "Main findings: Table 2 (Fixed-Effects Poisson Models)",
+        "Causal inference support: Table 5 (Two-Stage Instrumental-Variables Models)",
+        "Mechanism evidence: Section 'Uncovering the Underlying Mechanisms' (patent citation and characteristic analyses)."
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper makes a significant contribution by conceptualizing and empirically demonstrating the importance of 'perceived competition networks' for innovation. It redirects theory by showing that in competitive contexts, unlike collaborative ones, advantageous network positions are those on the periphery and spanning structural divides. This 'unusual' view allows firms to access differentiated information, stimulating innovation. Methodologically, it pioneers the use of 10-K filings for large-scale analysis of competitive perceptions, offering a powerful new tool for strategy research."
+    }
+  }

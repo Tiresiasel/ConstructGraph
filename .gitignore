@@ -1,0 +1,43 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+
+# Environment config (keep template only)
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+*.log.*
+logs/
+src/logs/
+**/logs/
+
+# Generated page (legacy)
+constructs_network.html
+
+# Input/Output directories
+data/input/**
+!data/input/.gitkeep
+
+dist/**
+!dist/.gitkeep
+
+src/output/**
+src/tmp/**
+
+# Node modules (if added later)
+node_modules/
+
+

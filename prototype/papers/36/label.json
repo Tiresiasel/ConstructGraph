@@ -1,0 +1,139 @@
+{   "relevant": false,
+    "L1_summary_of_paper": "The paper studies how complementors on a digital platform reallocate effort when the platform owner itself enters their product market. Focusing on Apple’s introduction of the native Files app (announced June 2017; launched September 2017), the authors theorize that complementor positioning—being single-homing (specialist) vs. multihoming (generalist)—shapes repositioning costs and thus directional responses across platforms. They define and observe three effort outcomes at the app and developer levels: update frequency, maintenance/active status, and new app releases. Using App Store and Google Play data with a matched difference-in-differences panel design, they find that specialists increase updates and keep treated apps active on the focal platform, whereas generalists reduce maintenance on the focal platform (even for unaffected apps) and shift effort to the competing platform by increasing updates and new releases there. They also show that entry by other large firms does not elicit comparable reactions, underscoring the uniqueness of platform-owner entry. The contribution is to integrate complementor heterogeneity (positioning) into platform competition, reveal cross-platform reallocation as a core competitive dynamic, and empirically differentiate platform-owner entry from ordinary entry.",
+    "M1_main_theories": [
+      "Competitive dynamics (primary)",
+      "Other: Platform strategy and platform ecosystems (secondary)",
+      "Other: Repositioning costs/resource redeployment (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm",
+    "M3_unit_of_analysis_element": [
+      "Innovation introduction frequency",
+      "Action rate/mix",
+      "Other: Product maintenance (active vs. inactive status)",
+      "Other: New application release",
+      "Other: Cross-platform effort allocation"
+    ],
+    "N1_behavioral_scope": "Multiple behaviors",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "Not applicable",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Kapacinskaite, A., & Mostajabi, A. (2024). Competing with the platform: Complementor positioning and cross-platform response to entry. Strategic Management Journal. https://doi.org/10.1002/smj.3643",
+    "A2_year": "2024",
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Bridging",
+    "B2_levels": "Multi-level",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Other: Platform strategy",
+      "Learning"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Similarity/overlap",
+      "Repertoire",
+      "Other: Effort allocation",
+      "Other: Cross-platform reallocation",
+      "Other: Platform-owner entry shock"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Text/NLP"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Treated apps identified as close substitutes to Apple Files using textual similarity (Word Mover’s Distance) within Utilities; monthly panel measures of update count, active status, and new app releases on the focal and competing platforms; developer positioning classified as single-homing (specialist) vs. multihoming (generalist) based on pre-entry presence on Google Play.",
+    "C4_shock_type": "Other",
+    "C4_shock_design": "Platform-owner product entry (Apple Files) used as a quasi-exogenous shock with announcement (June 2017) and launch (September 2017); difference-in-differences with coarsened exact matching and app and month fixed effects to compare treated vs. matched controls across pre/post periods.",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Causal claim",
+    "D2a_causality_claimed": "Yes",
+    "D2b_causality_supported_by_design": "Moderate",
+    "D2_identification": [
+      "DiD",
+      "Panel FE (causal)",
+      "Shock-based",
+      "Matching"
+    ],
+    "D2_causal_claim_strength": "Moderate",
+    "D2_key_assumptions_addressed": [
+      "Parallel trends (assessed via pre/post dynamics and event-time plots for treated vs. matched controls)",
+      "Common shock confined to platform-owner entry (checked against non-platform-owner entry cases)",
+      "Stable unit treatment value (discusses spillovers and analyzes unaffected apps separately)"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Placebo/falsification",
+      "Cluster/serial corr fixes"
+    ],
+    "D3_endogeneity": "FE saturation",
+    "D4_level_alignment": "Explicit bridging",
+    "D5_data_sources": [
+      "Appfigures panel data (App Store and Play Store)",
+      "Apple App Store public listings and policies",
+      "Google Play public listings",
+      "Developer interviews and professional forums (for context on maintenance costs)"
+    ],
+    "E1_outcomes": [
+      "Action rate/mix",
+      "Innovation",
+      "Entry/exit/survival",
+      "Other: New app releases"
+    ],
+    "E2_effect_directions": {
+      "Innovation (updates) on treated apps—Specialists": "+",
+      "Innovation (updates) on treated apps—Generalists": "Null",
+      "Maintenance/active status on treated apps—Generalists": "–",
+      "Maintenance/active status on unaffected apps (focal)—Generalists": "–",
+      "Maintenance/active status on unaffected apps (focal)—Specialists": "+",
+      "Updates/new releases on competing platform—Generalists": "+"
+    },
+    "E3_mechanisms_tags": [
+      "Resource dependence",
+      "Spillovers",
+      "Other: Repositioning cost/outside option activation"
+    ],
+    "E4_moderators": [
+      "Complementor positioning (multihoming vs. single-homing)"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "Shock is not randomized; treatment defined via textual similarity may introduce classification error; platform policy or algorithm changes concurrent with entry could confound effects despite extensive robustness checks; differences between SH and MH developers in resources/quality are examined but residual unobservables may remain.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Map platform-owner entry to a focal exogenous competitive shock; map effort allocation to action rate (updates), maintenance (survival of products), and repertoire expansion (new releases), with cross-platform resource redeployment as the linking mechanism.",
+    "G2_translation_rule": "Conditionality",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "Platform-owner entry triggers divergent effort allocation depending on complementor positioning.",
+      "Low repositioning cost enables activation of outside options and cross-platform shifts.",
+      "High repositioning cost induces defensive investment and within-platform intensification."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Not applicable—this is an empirical study with quantitative identification.",
+    "I1_mechanism_statements": [
+      "Platform-owner entry reduces expected returns in the affected domain; multihoming complementors with lower repositioning costs shift effort to the competing platform (outside option activation).",
+      "Single-homing complementors face higher repositioning costs and therefore intensify updates and maintenance on the focal platform.",
+      "Cross-product spillovers arise as developers reallocate scarce resources across their portfolios, affecting unaffected apps as well."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Complementor positioning (multihoming vs. single-homing)",
+        "role_in_link": "Moderates the effect of platform-owner entry on effort allocation direction and magnitude on focal vs. competing platforms."
+      }
+    ],
+    "I3_theoretical_propositions": "Not applicable",
+    "J1_main_findings_summary": [
+      "Specialists increased updates on treated apps by about 126% after Apple’s entry and maintained activity, consistent with defensive intensification.",
+      "Generalists did not increase updates on treated apps but were more likely to drop maintenance (lower active status), indicating withdrawal from the focal domain.",
+      "On unaffected apps within the focal platform, specialists increased maintenance while generalists reduced it, showing portfolio-level spillovers.",
+      "Generalists shifted effort to Google Play, increasing both updates and new releases there; developers’ active app counts fell on the focal platform and rose on the competing platform.",
+      "Entry by large non-owner firms (e.g., Microsoft, SanDisk) did not elicit comparable responses, highlighting the uniqueness of platform-owner entry."
+    ],
+    "J2_finding_evidence_links": "Main results tables and figures: Table 3 (affected apps), Figure 1 (monthly effects on updates), Table 6 (new app releases across platforms), developer-level portfolio shifts summarized in Table 7 Panel a; robustness across Appendices D–T.",
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "This study reframes platform competition by centering complementor positioning as a driver of cross-platform strategic response to platform-owner entry. It demonstrates that multihoming (generalist) developers activate outside options and redeploy effort to rival platforms, while single-homing (specialist) developers intensify investment on the focal platform. The work empirically distinguishes platform-owner entry from ordinary entry and adds a cross-platform reallocation mechanism to competitive dynamics in platform ecosystems."
+  }
+  

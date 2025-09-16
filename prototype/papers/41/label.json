@@ -1,0 +1,164 @@
+{   "relevant":true,
+    "L1_summary_of_paper": "The paper theorizes and empirically illustrates how incumbents and entrants co-evolve in Schumpeterian technology spaces. It asks: when threatened by an entrant’s technology, do incumbents attack or learn, how do entrants reciprocate or retreat, and what patterns of knowledge flow and technological distance emerge from these choices? The authors integrate evolutionary theory (search, selection, adaptation) with competitive dynamics to build a 2×2 framework: (1) creative destruction (incumbent attacks, entrant attacks), (2) creative construction (incumbent learns, entrant learns), (3) creative deterrence (incumbent attacks, entrant retreats), and (4) creative divergence (incumbent learns, entrant retreats). Key constructs include incumbent knowledge investments (absorptive capacity–building), incumbent learning from entrants (citations from incumbent patents to entrant patents), and technological distance (1 – Jaffe overlap of patent classes within an FDA product category). They demonstrate the framework in the U.S. cardiovascular medical devices industry (1977–2002) where Class III devices drive technological dynamism and patenting is pervasive. Exploratory panel analyses show: incumbent knowledge investments increase learning from entrants but at a decreasing rate because those same investments are associated with greater technological distance as entrants retreat, consistent with “creative divergence.” Supplemental analyses indicate incumbents move toward entrants’ knowledge areas while entrants move away; effects are strongest when entrants initially enter near incumbents. The paper contributes a mid-range typology of Schumpeterian competition that explicitly marries learning and rivalry, introduces the creative divergence scenario, and reframes absorptive capacity as shaping not only a firm’s ability to learn but also the external supply of learnable knowledge via rivals’ strategic retreat. Causality is not claimed; results are associational and positioned as stylized facts for future causal work.",
+    "M1_main_theories": [
+      "Evolutionary theory (primary)",
+      "Competitive dynamics (primary)",
+      "Absorptive capacity (primary)",
+      "Knowledge spillovers (secondary)",
+      "Technological search/recombination (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Dyad",
+    "M3_unit_of_analysis_element": [
+      "Other: Incumbent knowledge absorption from entrant",
+      "Other: Technological distance dynamics"
+    ],
+    "N1_behavioral_scope": "Multiple behaviors",
+    "N2_assumption_symmetry": "Yes",
+    "N3_assumption_common_environment": "Yes",
+    "N4_assumption_equal_weighting": "Yes",
+    "N5_focus_scope": "Single competitor focus",
+    "A1_citation": "Giustiziero, G., Kaul, A., & Wu, B. (2019). The Dynamics of Learning and Competition in Schumpeterian Environments. Organization Science, 30(4), 668–693. https://doi.org/10.1287/orsc.2018.1264",
+    "A2_year": "2019",
+    "A3_outlet_tier": "OS",
+    "A4_study_type": "Mixed",
+    "A5_replicability": "Other: Partly public data (USPTO/FDA) plus licensed/compiled sources; code not reported",
+    "B1_primary_perspective": "Dyadic",
+    "B2_levels": [
+      "Dyad",
+      "Firm",
+      "Market/Industry"
+    ],
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Learning"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Attack/response",
+      "Similarity/overlap",
+      "Other: Knowledge absorption (citations from incumbent to entrant)",
+      "Other: Creative divergence scenario"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Network-derived"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Schumpeterian technological dynamism and regulatory stringency (Class III devices) motivate the setting; uncertainty is not directly measured but described via industry context and product categories.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": [
+      "Panel",
+      "Conceptual/Theory"
+    ],
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "None",
+    "D2_identification": [
+      "Other: Control-function approach in negative binomial count model with instruments",
+      "Other: Simultaneous equations with instruments for knowledge investment and technological distance",
+      "Fixed effects (panel) with heteroskedasticity-robust SEs"
+    ],
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": [
+      "Patent citations proxy knowledge flows; examiner-added noise acknowledged; high-tech context mitigates bias",
+      "Instrument relevance/exogeneity for knowledge investments (external category investments) and technological distance (random portfolio overlap)",
+      "Lag structure for innovation gestation in learning equation; contemporaneous reduced form for distance equation",
+      "Category–incumbent–entrant fixed effects and robustness to alternative specifications"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Instrument diagnostics",
+      "Three-stage least squares",
+      "Control-function negative binomial",
+      "Fixed effects panel OLS",
+      "Tobit and hierarchical models",
+      "Cluster/serial correlation fixes"
+    ],
+    "D3_endogeneity": [
+      "Instrumented network measures",
+      "FE saturation",
+      "Lags"
+    ],
+    "D4_level_alignment": "None",
+    "D5_data_sources": [
+      "USPTO patent data (with NUS–Melbourne and NBER resources)",
+      "FDA CDRH device approvals and product-category mapping",
+      "Derwent LitAlert and legal databases for litigation",
+      "Medical Device Register (downstream investments)",
+      "SDC Platinum by Thomson Reuters (alliances, M&A)",
+      "Company reports/websites; Thomas Register; Hoovers; CorpTech; HighBeam; Informagen"
+    ],
+    "E1_outcomes": [
+      "Other: Incumbent knowledge absorption",
+      "Other: Technological distance (mediator/moderator outcome)"
+    ],
+    "E2_effect_directions": {
+      "Other: Incumbent knowledge absorption": "+",
+      "Other: Technological distance (mediator/moderator outcome)": "+"
+    },
+    "E3_mechanisms_tags": [
+      "Learning",
+      "Information access",
+      "Spillovers"
+    ],
+    "E4_moderators": [
+      "Technological distance (negative moderator of investment → learning)",
+      "Original entrant–incumbent proximity (effects stronger when initially close)"
+    ],
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Observational, no exogenous shock; proxy measures contain noise; instruments may be imperfect; simultaneity among investment, distance, and citations; partial reliance on licensed databases limits replicability.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Technological distance ↔ competitive similarity/overlap; incumbent knowledge absorption ↔ interfirm learning; the 2×2 typology adds behavioral labels to joint patterns of distance and learning.",
+    "G2_translation_rule": "Conditionality",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "When incumbents invest to learn, entrants’ strategic retreat can endogenously reduce the supply of learnable knowledge, yielding diminishing learning returns.",
+      "Technological proximity is a prerequisite for absorptive benefits, and proximity itself is shaped by rivals’ adaptive moves.",
+      "Observed curvature in learning vs. investment and co-movement of distance can diagnose which Schumpeterian scenario is operative."
+    ],
+    "TYPE_APPLICABLE_empirical": "Yes",
+    "TYPE_APPLICABLE_theory_conceptual": "Yes",
+    "TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Not applicable",
+    "I1_mechanism_statements": [
+      "Incumbent knowledge investments increase absorptive capacity, raising citations to entrant (learning).",
+      "Incumbent investments increase perceived threat/spillover risk, inducing entrants to relocate search into nonoverlapping classes, increasing technological distance.",
+      "Technological distance reduces the marginal effectiveness of incumbent absorptive capacity, producing diminishing returns of investment on learning.",
+      "Initial technological proximity conditions both learning potential and the likelihood/magnitude of entrant retreat."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Technological distance",
+        "role_in_link": "Negative moderator of (Incumbent knowledge investments → Incumbent learning)."
+      },
+      {
+        "type": "mediation",
+        "variable": "Technological distance",
+        "role_in_link": "Investments increase distance, which in turn dampens learning (mediated moderation in reduced form)."
+      },
+      {
+        "type": "moderation",
+        "variable": "Original proximity",
+        "role_in_link": "Effects stronger when entrant entered close to incumbent."
+      }
+    ],
+    "I3_theoretical_propositions": [
+      "P1: If incumbents prioritize learning and entrants reciprocate, knowledge flow increases at an increasing rate and technological distance decreases (creative construction).",
+      "P2: If incumbents prioritize attack and entrants reciprocate, knowledge flow declines and distance narrows or stays constant as head-to-head rivalry escalates (creative destruction).",
+      "P3: If incumbents attack and entrants retreat, knowledge flow declines while distance increases (creative deterrence).",
+      "P4: If incumbents learn and entrants retreat, knowledge flow increases at a decreasing rate because investments expand distance via entrant retreat (creative divergence)."
+    ],
+    "J1_main_findings_summary": [
+      "Incumbent knowledge investments are positively associated with learning from entrants, with diminishing marginal returns.",
+      "Technological distance negatively moderates the investment → learning link; learning gains concentrate when the dyad is technologically proximate.",
+      "Incumbent knowledge investments are positively associated with technological distance, consistent with entrant retreat rather than incumbent diversion.",
+      "Move-level analyses show incumbents enter entrants’ known classes while entrants shift toward nonoverlapping classes.",
+      "Effects are most pronounced when entrants initially entered close to incumbents."
+    ],
+    "J2_finding_evidence_links": "Figures: investment → learning; investment → distance; move-toward vs move-away over time. Tables: main FE and control-function NB results; supplemental move-level analyses. Equations (1)–(3) define the regression system.",
+    "J3_finding_strength": "Mixed evidence",
+    "K1_contribution_summary": "The study reframes Schumpeterian rivalry as a joint learning–competition process and introduces ‘creative divergence,’ where incumbents’ absorptive investments pull them toward entrants even as entrants retreat, increasing technological distance and producing diminishing learning returns. It offers simple empirical diagnostics to identify scenarios and extends absorptive-capacity theory by showing how learning investments can endogenize rivals’ knowledge supply through strategic distancing."
+  }
+  

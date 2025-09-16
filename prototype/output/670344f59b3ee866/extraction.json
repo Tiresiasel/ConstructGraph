@@ -1,0 +1,111 @@
+{
+  "paper_metadata": {
+    "doi": null,
+    "title": "Theory and research in strategic management: Swings of a pendulum",
+    "authors": [
+      "Robert E. Hoskisson",
+      "Michael A. Hitt",
+      "William P. Wan",
+      "Daphne Yiu"
+    ],
+    "publication_year": 1999,
+    "journal": "Journal of Management",
+    "research_type": "Review",
+    "research_context": "A historical and thematic review of the development of the strategic management field, tracing theoretical and methodological shifts (e.g., IO economics, organizational economics, resource-based view, knowledge-based view, transaction costs, agency theory, strategic leadership) and discussing future directions.",
+    "is_replication_study": false
+  },
+  "constructs": [],
+  "construct_dimensions": [],
+  "relationships": [],
+  "measurements": [],
+  "core_theories": [
+    {
+      "name": "resource-based view",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC1"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Based on the resource-based view or developing concurrently were research on strategic leadership, strategic decision theory (process research) and knowledge-based view of the ﬁrm.",
+      "evidence": "The paper emphasizes the rise of the resource-based view (RBV) as a dominant framework in the 1980s and 1990s and attributes a refocusing on firms' internal strengths and resources to RBV (e.g., Barney, 1991; Wernerfelt, 1984).",
+      "section_header": null,
+      "confidence": null
+    },
+    {
+      "name": "industrial organization economics",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC1"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Perhaps, one of the more signiﬁcant contributions to the development of strategic management came from industrial organization (IO) economics, speciﬁcally the work of Michael Porter.",
+      "evidence": "The paper describes the adoption of the structure-conduct-performance paradigm and Porter's Five Forces as central IO contributions that shifted attention to industry structure and competitive position.",
+      "section_header": null,
+      "confidence": null
+    },
+    {
+      "name": "transaction costs economics",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC1"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "the ﬁeld began to emphasize transaction costs analysis (Williamson, 1975, 1985), which examines the ﬁrm-environment interface through a contractual or exchange-based approach.",
+      "evidence": "The review links TCE to research on firm boundaries, markets versus hierarchies, the adoption of multidivisional structures, vertical integration, and alliances.",
+      "section_header": null,
+      "confidence": null
+    },
+    {
+      "name": "agency theory",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC1"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "the organizational economics perspective contributed transaction costs economics and agency theory to strategic management.",
+      "evidence": "The paper describes agency theory's focus on separation of ownership and control, managerial opportunism, governance mechanisms (boards, ownership, compensation), and applications to diversification, corporate governance, and innovation.",
+      "section_header": null,
+      "confidence": null
+    },
+    {
+      "name": "knowledge-based view",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC1"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "knowledge-based view of the ﬁrm",
+      "evidence": "The review presents the KBV as an extension of RBV that emphasizes tacit and social knowledge (Polanyi), absorptive capacity, and organizational learning as drivers of competitive advantage.",
+      "section_header": null,
+      "confidence": null
+    },
+    {
+      "name": "strategic leadership",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC1"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "research on strategic leadership",
+      "evidence": "The paper highlights strategic leadership and upper echelon perspectives (e.g., Hambrick & Mason) as important substreams tied to RBV and the study of firm heterogeneity, managerial discretion, and decision processes.",
+      "section_header": null,
+      "confidence": null
+    }
+  ],
+  "coverage_report": {
+    "constructs": 0,
+    "relationships": 0,
+    "measurements": 0,
+    "reason": "This paper is a conceptual/review article that does not contain numbered hypotheses or propositions tied to empirical tests. Per the extraction scope, core constructs and relationships are only extracted when explicitly tied to Hypotheses/Propositions or to empirical tests; none were present. Core theories grounding the review's central claims were extracted instead.",
+    "errors": [
+      "no_hypotheses_found",
+      "core_scope_no_core_relationships_extracted"
+    ]
+  }
+}

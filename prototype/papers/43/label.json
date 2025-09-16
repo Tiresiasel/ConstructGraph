@@ -1,0 +1,128 @@
+{
+    "L_summary_of_the_paper": {
+      "L1_summary_of_paper": "This study investigates corporate venture capital (CVC) investment as a form of inter-firm rivalry, asking how and why a firm's CVC investment provokes matching responses from its competitors. The key concepts are CVC investment (a minority-stake equity investment by an established firm in an entrepreneurial venture), competitive dynamics (a framework of action and response), and matching response (a rival making a similar CVC investment in the same industry). The paper's theoretical framing integrates competitive dynamics theory with signaling theory, proposing that a CVC investment's characteristics act as competitive signals. The core constructs studied are the investment's funding amount, its industry relatedness to the corporate investor, and the investor's reputation, and their relationship with the likelihood of a rival's matching response. The context is U.S. public firms across 81 industries from 2000 to 2014. The main findings show that higher funding amounts and greater industry relatedness increase the likelihood of a rival's matching response, whereas a higher investor reputation decreases it. The paper's primary contribution is to bridge the CVC and competitive dynamics literatures, conceptualizing CVC as a competitive action within an action-response framework rather than just an internal strategic tool for learning or resource acquisition."
+    },
+    "M_theory_and_unit_of_analysis": {
+      "M1_main_theories": [
+        "Competitive dynamics theory (primary)",
+        "Signaling theory (primary)",
+        "Resource-dependence theory (secondary)",
+        "Behavioral theory of the firm (secondary)"
+      ],
+      "M2_unit_of_analysis_level": "Dyad",
+      "M3_unit_of_analysis_element": "Other: <Corporate Venture Capital (CVC) investment as a competitive action and the matching response to it>"
+    },
+    "N_assumptions_and_behavioral_scope": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "Yes",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "Yes",
+      "N5_focus_scope": "Multiple competitors focus but in a dyadic relationship"
+    },
+    "A_bibliographic_and_administrative": {
+      "A1_citation": "Chen, T., Chen, J., Miller, D., Le Breton-Miller, I., & Chen, M.-J. (2023). Corporate venture capital and interfirm rivalry: A competitive dynamics perspective. Strategic Entrepreneurship Journal, 17(1), 210–236. https://doi.org/10.1002/sej.1444",
+      "A2_year": 2023,
+      "A3_outlet_tier": "Other-A*",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B_perspective_and_theoretical_positioning": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Dyad",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Signaling",
+        "Resource-based view",
+        "Learning"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_phenomenon_constructs_and_context": {
+      "C1_constructs": [
+        "Attack/response",
+        "Similarity/overlap",
+        "Status"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "Not applicable",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D_methods_and_identification_causality": {
+      "D1_design": "Event study",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "No",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": "Other: <Event History Analysis (Cox Proportional Hazard and AFT models)>",
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": "Not reported",
+      "D2_robustness_suite": "Alt specs",
+      "D3_endogeneity": "Not addressed",
+      "D4_level_alignment": "None",
+      "D5_data_sources": [
+        "VentureXpert",
+        "Compustat",
+        "LexisNexis"
+      ]
+    },
+    "E_outcomes_and_effects": {
+      "E1_outcomes": "Action rate/mix",
+      "E2_effect_directions": "Mixed",
+      "E3_mechanisms_tags": [
+        "Signaling",
+        "Resource dependence",
+        "Deterrence",
+        "Learning"
+      ],
+      "E4_moderators": []
+    },
+    "F_quality_and_systematicity": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "The study acknowledges potential endogeneity from unobserved confounders (e.g., industry-wide trends) that are not fully resolved by the control variables. The core mechanisms (awareness, motivation) are inferred rather than directly measured.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_integration_hooks": {
+      "G1_construct_mapping_note": "The paper maps CVC investment characteristics (funding, relatedness, reputation) to the likelihood of a rival's matching response, using the core competitive dynamics constructs of 'action' and 'response'.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "Strategic investments (like CVC) function as competitive signals whose characteristics predict the likelihood of rival imitation.",
+        "A powerful signal (high funding, core market relevance) invites imitation, but a powerful signaler (high reputation) can deter it."
+      ]
+    },
+    "H_type_applicability": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "Paper is a quantitative empirical study."
+    },
+    "I_mechanism_and_proposition_detailing": {
+      "I1_mechanism_statements": [
+        "Funding amount increases rival awareness (via visibility) and motivation (via perceived threat and opportunity).",
+        "Industry relatedness increases rival awareness (via proximity to core market) and motivation (via threat to defend turf).",
+        "Investor reputation increases rival awareness (via prominence) but decreases rival motivation (due to perceived difficulty of matching and lower expected payoff)."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "mediation",
+          "variable": "Awareness and Motivation",
+          "role_in_link": "Theorized as the core psychological mechanisms linking CVC investment characteristics to a rival's response, but not empirically tested."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J_findings_and_evidence": {
+      "J1_main_findings_summary": [
+        "The greater the total funding a venture receives in a CVC round, the greater the likelihood of a rival's matching response.",
+        "The higher the industry relatedness between the corporate investor and the new venture, the greater the likelihood of a rival's matching response.",
+        "The higher the reputation of the corporate investor, the lower the likelihood of a rival's matching response."
+      ],
+      "J2_finding_evidence_links": "Main results are in Table 3. Robustness checks are in Tables 4, 5, 6, and 7.",
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K_overall_paper_contribution": {
+      "K1_contribution_summary": "This paper's main contribution is bridging the corporate venture capital (CVC) and competitive dynamics literatures. It reconceptualizes CVC investments not merely as strategic tools for learning or resource acquisition, but as observable competitive actions that provoke predictable responses from rivals. By doing so, it introduces a new form of rivalry to the competitive dynamics literature and provides a more externally-focused, interactive perspective to the CVC literature."
+    }
+  }

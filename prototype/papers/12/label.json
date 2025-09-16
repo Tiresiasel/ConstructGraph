@@ -1,0 +1,124 @@
+{
+  "relevant": true,
+  "L1_summary_of_paper": "This paper analyzes how two orthogonal dimensions of intra-industry heterogeneity—strategic similarity (similarity in competitive orientation independent of specific markets) and multimarket contact (degree of overlap across multiple markets)—shape the intensity of rivalry in a hypercompetitive multimarket environment. Using the U.S. airline industry (1984–1988), the authors model firm–market (airline–route) yield (price per passenger-mile) as an inverse proxy for competitive intensity and estimate fixed-effects panel regressions with extensive controls. Theory provides competing predictions for strategic similarity: a coordination-enhancing view (strategic groups) versus a substitutability view (IO product differentiation/RBV). Multimarket competition theory predicts that higher multimarket contact (MMC) reduces rivalry via credible cross-market retaliation (mutual forbearance). Empirically, when considered alone, both similarity and MMC are positively associated with yield; however, when entered together, MMC remains strongly positive (rivalry-reducing), while the coefficient on strategic similarity becomes significantly negative, indicating that, net of MMC, greater similarity intensifies rivalry through increased substitutability. The sign reversal is not due to multicollinearity; rather, omitting MMC biases the similarity effect. Contributions include cleanly separating two distinct heterogeneity dimensions with opposite implications for rivalry, adjudicating conflicting claims in strategic group research, and extending hypercompetition arguments by showing how stronghold invasion can evolve into restraint as MMC rises.",
+  "M1_main_theories": [
+    "Multimarket contact / mutual forbearance (primary)",
+    "Strategic group theory (primary)",
+    "Resource-based view (secondary)",
+    "Other: IO product differentiation (secondary)",
+    "Other: Hypercompetition (secondary)"
+  ],
+  "M2_unit_of_analysis_level": "Firm",
+  "M3_unit_of_analysis_element": [
+    "Pricing strategy"
+  ],
+  "N1_behavioral_scope": "Single behavior",
+  "N2_assumption_symmetry": "Not reported",
+  "N3_assumption_common_environment": "Yes",
+  "N4_assumption_equal_weighting": "Yes",
+  "N5_focus_scope": "Multiple competitors focus but measureds as dyadic pairs",
+  "A1_citation": "Gimeno, J., & Woo, C. Y. (1996). Hypercompetition in a Multimarket Environment: The Role of Strategic Similarity and Multimarket Contact in Competitive De-escalation. Organization Science, 7(3), 322–341.",
+  "A2_year": "1996",
+  "A3_outlet_tier": "OS",
+  "A4_study_type": "Empirical-Quant",
+  "A5_replicability": "Data public",
+  "B1_primary_perspective": "Bridging",
+  "B2_levels": [
+    "Firm"
+  ],
+  "B3_theoretical_lens_tags": [
+    "Competitive dynamics",
+    "Rivalry",
+    "Multimarket contact",
+    "Resource-based view",
+    "Other: Strategic groups",
+    "Other: Hypercompetition"
+  ],
+  "B4_contribution_type": "Adjudication",
+  "C1_constructs": [
+    "Rivalry intensity",
+    "MMC",
+    "Similarity/overlap"
+  ],
+  "C2_measurement": [
+    "Archival behavioral",
+    "Network-derived"
+  ],
+  "C3_uncertainty_ambiguity": "Stated only",
+  "C3_metric_detail": "Hypercompetition characterized contextually (post-deregulation volatility in airlines); no direct quantitative uncertainty index constructed.",
+  "C4_shock_type": "None",
+  "C4_shock_design": "Not applicable",
+  "D1_design": "Panel",
+  "D2_causal_or_correlational": "Associational only",
+  "D2a_causality_claimed": "No",
+  "D2b_causality_supported_by_design": "Not applicable",
+  "D2_identification": "Other: Fixed-effects panel (LSDV) with absorption and WLS for heteroscedasticity",
+  "D2_causal_claim_strength": "None",
+  "D2_key_assumptions_addressed": [
+    "Airline–route fixed effects absorb time-invariant heterogeneity",
+    "Year and merger dummies control period/structural shocks",
+    "Heteroscedasticity addressed via WLS",
+    "No substantive serial autocorrelation detected",
+    "Nonlinearities handled via transformations/splines",
+    "Hausman test supports FE over RE",
+    "Multicollinearity assessed via VIF and ridge; not driving signs"
+  ],
+  "D2_robustness_suite": [
+    "Alt specs",
+    "Other: Heteroscedasticity correction (WLS)",
+    "Other: Multicollinearity diagnostics (VIF, ridge)"
+  ],
+  "D3_endogeneity": "FE saturation",
+  "D4_level_alignment": "None",
+  "D5_data_sources": [
+    "DOT DB1A Ticket Price Origin–Destination Survey",
+    "DOT service segment data",
+    "DOT Form 41 financial/operational reports"
+  ],
+  "E1_outcomes": [
+    "Price"
+  ],
+  "E2_effect_directions": {
+    "Price": "Mixed"
+  },
+  "E3_mechanisms_tags": [
+    "Deterrence",
+    "Tacit collusion"
+  ],
+  "E4_moderators": [
+    "Not reported"
+  ],
+  "F1_transparency_quality": "High",
+  "F2_risk_of_bias_notes": "Observational design; potential omitted-time-varying confounders remain possible despite rich controls; prices as outcome may embed simultaneous demand/cost shocks.",
+  "F3_saturation_contribution": "Other: Adjudicates conflicting predictions about similarity vs rivalry",
+  "G1_construct_mapping_note": "Strategic similarity maps to firm-level competitive orientation similarity (DOT class match; founding-year proximity; seven-dimensional strategic profile); MMC maps to count of other markets where firm–rival pairs meet; rivalry intensity mapped inversely to price (yield).",
+  "G2_translation_rule": "Conditionality",
+  "G3_integration_evidence_strength": "Single-study suggestive",
+  "G4_unifying_props_drafts": [
+    "Holding MMC constant, greater strategic similarity intensifies rivalry via substitutability pressure.",
+    "Increases in MMC reduce rivalry through credible cross-market retaliation and mutual forbearance.",
+    "Omitting MMC biases estimates of strategic similarity's effect toward falsely inferring rivalry reduction."
+  ],
+  "H1_TYPE_APPLICABLE_empirical": "Yes",
+  "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+  "H3_TYPE_APPLICABLE_review_meta": "No",
+  "NA_reason_if_any": "Not applicable",
+  "I1_mechanism_statements": [
+    "MMC expands credible retaliation opportunities across markets, deterring aggressive moves in any single market and lowering rivalry.",
+    "Strategic similarity raises substitutability, strengthening price competition when mutual forbearance forces (MMC) are held constant.",
+    "Tacit coordination among similar firms can elevate prices, but its apparent effect is overstated if MMC is omitted from the model."
+  ],
+  "I2_mediation_moderation_details": [],
+  "I3_theoretical_propositions": [],
+  "J1_main_findings_summary": [
+    "When modeled separately, both strategic similarity and MMC correlate positively with price (lower rivalry).",
+    "When modeled jointly, MMC remains strongly rivalry-reducing, whereas strategic similarity becomes significantly rivalry-increasing.",
+    "Diagnostics show the sign reversal for similarity is not a multicollinearity artifact; omission of MMC biases the similarity effect.",
+    "MMC's standardized effect size rivals or exceeds traditional market-structure predictors of prices."
+  ],
+  "J2_finding_evidence_links": [
+    "Tables 3–4; results discussion in main text (mid-article)."
+  ],
+  "J3_finding_strength": "Strong evidence",
+  "K1_contribution_summary": "By disentangling strategic similarity from multimarket contact within a rigorous firm–market FE framework, the paper adjudicates conflicting theories about how similarity affects rivalry and demonstrates that MMC-driven mutual forbearance, not similarity per se, underlies observed de-escalation; net of MMC, similarity intensifies competition through substitutability."
+}

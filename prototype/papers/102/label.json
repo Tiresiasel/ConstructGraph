@@ -1,0 +1,189 @@
+{   "relevant":true,
+    "L_summary_of_the_paper": {
+      "L1_summary_of_paper": "This paper develops a theoretical framework to explain the rivalry for narrative control between organizations and the media following an organizational transgression. The core research question is how and why such rivalries emerge, escalate, and conclude. Key concepts include 'narrative control' (the ability to shape stakeholder understanding of an event's plot, characters, and moral), 'organizational transgression', and 'organization-media rivalry'. The framework integrates and extends two main bodies of literature: competitive dynamics and crisis management. It conceptualizes the unique tensions, actions (e.g., critical media coverage), and reactions (e.g., organizational rhetorical strategies) that characterize this form of non-market rivalry between dissimilar actors. The central argument is that the rivalry is a dynamic, multi-stage process driven by the perceptions of both journalists and organizational leaders. Stage 1 (Initiation) is triggered by journalists' perceptions of the transgression's scandalousness, the presence of organizational misinformation, and the organization's susceptibility to pressure. Stage 2 (Reaction) is determined by leaders' perceptions of the transgression's severity and the media coverage's effect, which combine to create a sense of imminent, potential, or non-threat, dictating the organization's response (conciliatory rhetoric, defensive rhetoric, or no response). The main conclusion is that post-transgression media relations should not only be viewed through a stakeholder management lens but also as a potential competitive battle. The paper's primary contributions are threefold: it extends competitive dynamics theory to dissimilar actors and non-market resources; it enriches the understanding of competitive actions to include rhetorical battles; and it provides a new, rivalry-based theoretical mechanism to the crisis management literature."
+    },
+    "M_theory_and_unit_of_analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Competitive dynamics",
+          "tag": "primary"
+        },
+        {
+          "theory": "Crisis management",
+          "tag": "primary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Dyad",
+      "M3_unit_of_analysis_element": [
+        "Other: <specify>",
+        "Rivalrous exchange for narrative control",
+        "Critical media coverage (action)",
+        "Crisis management response (reaction)",
+        "Rhetorical strategy (defensive vs. conciliatory)"
+      ]
+    },
+    "N_assumptions_and_behavioral_scope": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "No",
+      "N3_assumption_common_environment": "No",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "NA_reason_if_any": "The model focuses on a dyadic rivalry, not on how an actor weighs actions from multiple competitors.",
+      "N5_focus_scope": "Single competitor focus"
+    },
+    "A_bibliographic_and_administrative": {
+      "A1_citation": "Hersel, M. C. (2022). Fighting with the fourth estate: A theoretical framework of organization-media rivalry for narrative control following a transgression. Academy of Management Review, 47(3), 425-447.",
+      "A2_year": "2022",
+      "A3_outlet_tier": "Other-A*",
+      "A4_study_type": "Conceptual/Theory",
+      "A5_replicability": "Not applicable",
+      "NA_reason_if_any": "This is a conceptual/theory paper and does not involve original data or code."
+    },
+    "B_perspective_and_theoretical_positioning": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Dyad",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Attention-based view",
+        "Cognitive maps",
+        "Status"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_phenomenon_constructs_and_context": {
+      "C1_constructs": [
+        "Attack/response",
+        "Rivalry intensity",
+        "Status",
+        "Other: <specify>",
+        "Narrative control"
+      ],
+      "C2_measurement": "Not applicable",
+      "NA_reason_if_any": "This is a conceptual/theory paper and does not measure constructs empirically.",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "Not applicable",
+      "NA_reason_if_any": "This is a conceptual/theory paper and does not propose specific metrics.",
+      "C4_shock_type": "Reputation",
+      "C4_shock_design": "The paper's theoretical framework is predicated on the occurrence of an organizational transgression, which acts as the exogenous shock that creates the conditions for a latent rivalry to materialize between an organization and a media outlet."
+    },
+    "D_methods_and_identification_causality": {
+      "D1_design": "Conceptual/Theory",
+      "D2_causal_or_correlational": "Theoretical/Not applicable",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Not applicable",
+      "NA_reason_if_any": "This is a conceptual/theory paper with no empirical design to support or test causality.",
+      "D2_identification": "Not applicable",
+      "NA_reason_if_any": "This is a conceptual/theory paper and does not use an identification strategy.",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": "Not reported",
+      "D2_robustness_suite": "Not applicable",
+      "NA_reason_if_any": "This is a conceptual/theory paper and does not conduct robustness tests.",
+      "D3_endogeneity": "Not applicable",
+      "NA_reason_if_any": "This is a conceptual/theory paper and does not address endogeneity empirically.",
+      "D4_level_alignment": "Not applicable",
+      "NA_reason_if_any": "The paper operates at a single (dyadic) level of analysis.",
+      "D5_data_sources": [
+        "Illustrative case examples (e.g., Pulitzer Prize-winning stories, CNN vs. SeaWorld, NYT vs. FedEx) drawn from public sources."
+      ]
+    },
+    "E_outcomes_and_effects": {
+      "E1_outcomes": [
+        "Reputation",
+        "Other: <specify>",
+        "Narrative control",
+        "Organizational legitimacy",
+        "Likelihood of competitive action/reaction",
+        "Choice of rhetorical strategy"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Likelihood of competitive action by journalist",
+          "direction": "+"
+        },
+        {
+          "outcome": "Likelihood of competitive reaction by organization",
+          "direction": "Contingent"
+        },
+        {
+          "outcome": "Choice of rhetorical strategy",
+          "direction": "Contingent"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Attention allocation",
+        "Legitimacy/Status",
+        "Signaling",
+        "Other: <specify>",
+        "Perceptual sensemaking"
+      ],
+      "E4_moderators": [
+        "Severity of the transgression",
+        "Effect of media coverage on the narrative"
+      ]
+    },
+    "F_quality_and_systematicity": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "Not applicable. NA_reason: 'Conceptual/theory paper, no data collection or analysis to introduce bias. Potential bias lies in the selective use of illustrative examples, but this is inherent to the methodology.'",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_integration_hooks": {
+      "G1_construct_mapping_note": "The paper maps core competitive dynamics constructs (tension, action, reaction) onto the crisis management context. 'Market share' is translated to 'narrative control'. 'Pricing/product actions' are translated to 'critical media coverage' and 'rhetorical strategies'.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "Rivalry between dissimilar actors is triggered by exogenous shocks that create a temporary contest over a non-market, socio-cognitive resource.",
+        "An actor's response to a rival's attack is determined by a multi-dimensional assessment of the threat posed by the attack and the context in which it occurs.",
+        "In perception-driven rivalries, the termination of conflict is contingent on the decay of motivating perceptions, not necessarily the achievement of supremacy."
+      ]
+    },
+    "H_type_applicability": {
+      "TYPE_APPLICABLE_empirical": "No",
+      "TYPE_APPLICABLE_theory_conceptual": "Yes",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "The paper's primary purpose is to develop a new theoretical framework and a set of propositions; it does not test them with empirical data or systematically review existing literature to synthesize findings."
+    },
+    "I_mechanism_and_proposition_detailing": {
+      "I1_mechanism_statements": [
+        "Economic incentives (generating public interest) and institutional role identities (watchdog, change agent) motivate journalists to catalyze latent tensions into rivalrous action (critical coverage).",
+        "Organizational leaders' cognitive assessment of transgression severity and media impact determines their perception of the delegitimization threat (imminent, potential, or non-threat).",
+        "This perceived threat level then drives the organization's choice of rhetorical strategy (conciliatory, defensive, or no response) in an attempt to control the narrative."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Interaction between 'Severity of transgression' and 'Effect of media coverage'",
+          "role_in_link": "These two perceptions jointly determine the level of perceived delegitimization threat, which is the key mediating construct influencing the organization's reaction."
+        },
+        {
+          "type": "mediation",
+          "variable": "Perceived threat of delegitimization (imminent, potential, nonthreat)",
+          "role_in_link": "This construct mediates the relationship between leaders' initial perceptions (of severity and media effect) and their ultimate crisis management reaction (choice of rhetorical strategy)."
+        }
+      ],
+      "I3_theoretical_propositions": [
+        "Proposition 1: Journalists' perception of scandalousness positively relates to their engagement in rivalry for narrative control via critical coverage of the transgression.",
+        "Proposition 2: Journalists' perception of misinformation positively relates to their engagement in rivalry for narrative control via critical coverage of the transgression.",
+        "Proposition 3: Journalists' perception of transgressor susceptibility positively relates to their engagement in rivalry for narrative control via critical coverage of the transgression.",
+        "Proposition 4a: Leaders' perception of an imminent threat of delegitimization positively relates to the likelihood of a crisis management reaction to critical media coverage.",
+        "Proposition 4b: Leaders' perception of an imminent threat of delegitimization positively relates to their preference for a conciliatory rhetorical strategy as the form of crisis management they pursue when reacting to critical media coverage.",
+        "Proposition 5a: Leaders' perception of a potential threat of delegitimization positively relates to the likelihood of a crisis management reaction to critical media coverage.",
+        "Proposition 5b: Leaders' perception of a potential threat of delegitimization positively relates to their preference for defensive rhetorical strategies as the form of crisis management they pursue when reacting to critical media coverage.",
+        "Proposition 6: Leaders' perception of a nonthreat negatively relates to the likelihood of a crisis management reaction to critical media coverage."
+      ]
+    },
+    "J_findings_and_evidence": {
+      "J1_main_findings_summary": [
+        "The initiation of organization-media rivalry is driven by journalists' perceptions of a transgression's potential to be scandalous, to correct misinformation, or to effect change.",
+        "An organization's reaction to media attack is contingent on its leaders' combined assessment of the transgression's severity and the media coverage's impact.",
+        "An 'imminent threat' (high severity, strong impact) is proposed to lead to a conciliatory response involving substantive corrective actions.",
+        "A 'potential threat' (mixed levels of severity and impact) is proposed to lead to a defensive rhetorical response.",
+        "A 'nonthreat' (low severity, weak impact) is proposed to lead to no response.",
+        "The rivalry can continue in a recursive loop as long as motivating perceptions persist for both parties."
+      ],
+      "J2_finding_evidence_links": "Not applicable. NA_reason: 'This is a conceptual/theory paper. Propositions are developed through logical argument and illustration, not from data presented in specific tables or figures.'",
+      "J3_finding_strength": "Speculative (conceptual)"
+    },
+    "K_overall_paper_contribution": {
+      "K1_contribution_summary": "This paper's primary contribution is the development of a novel theoretical framework that reconceptualizes post-transgression organization-media relations as a form of rivalry for narrative control. By integrating insights from competitive dynamics and crisis management, it extends competitive dynamics theory to the understudied domain of dissimilar actors and non-market resources. Simultaneously, it offers a new, rivalry-based mechanism to the crisis management literature, providing an alternative to the dominant stakeholder-centric perspective and better explaining organizations' often adversarial responses to media scrutiny."
+    }
+  }

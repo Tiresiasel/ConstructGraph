@@ -1,0 +1,165 @@
+{   "relevant": false,
+    "L_summary_of_paper": {
+      "L1_summary_of_paper": "This study investigates how different forms of network embeddedness affect the stability of interfirm alliances, specifically focusing on the hazard of unplanned joint venture (JV) dissolution. The core research question is why many alliances fail due to collaboration problems, even when network structures are thought to help firms select better partners initially. The paper distinguishes three key concepts of embeddedness: relational (history of direct ties), positional (network centrality), and structural (common third-party partners). The theoretical framing posits that these forms of embeddedness provide distinct benefits—knowledge-based trust, informational/reputational advantages, and social monitoring, respectively—which have different implications for alliance stability versus formation. The study examines the relationships between partners' combined centrality and positional asymmetry at founding (positional embeddedness), and the evolving number of common partners (structural embeddedness), on the likelihood of JV dissolution. It further explores how these effects are moderated by prior direct ties and the level of competitive risk (positional asymmetry and competitive overlap). The context is the global chemicals industry, analyzing 201 dyadic JVs formed between 1983 and 1991. The main finding is that the effects of embeddedness on dissolution are not a mirror image of their effects on formation. Positional centrality does not promote stability and can even increase dissolution risk when partners already have direct ties. In contrast, structural embeddedness (common partners) significantly enhances stability, particularly in high-risk relationships characterized by positional asymmetry or high competitive overlap. The paper's primary contribution is redirecting network theory by showing that social structure's role shifts from partner selection (formation) to social control and order maintenance (stability), and demonstrating that the stabilizing benefits of embeddedness are most potent precisely when economic incentives for conflict are highest."
+    },
+    "M_theory_and_unit_of_analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Network Embeddedness Theory",
+          "tag": "primary"
+        },
+        {
+          "theory": "Social Capital Theory",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Dyad",
+      "M3_unit_of_analysis_element": "Other: Unplanned joint venture dissolution"
+    },
+    "N_assumptions_and_behavioral_scope": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "Yes",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "NA_reason_if_any": "The study's framework does not involve modeling how actors weight actions from various competitors; instead, it focuses on how the dyad's structural position within the network affects its stability.",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A_bibliographic_and_administrative": {
+      "A1_citation": "Polidoro Jr, F., Ahuja, G., & Mitchell, W. (2011). When the Social Structure Overshadows Competitive Incentives: The Effects of Network Embeddedness on Joint Venture Dissolution. Academy of Management Journal, 54(1), 203-223.",
+      "A2_year": 2011,
+      "A3_outlet_tier": "AMJ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B_perspective_and_theoretical_positioning": {
+      "B1_primary_perspective": "Network",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Embeddedness",
+        "Status",
+        "Rivalry"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_phenomenon_constructs_and_context": {
+      "C1_constructs": [
+        "Centrality",
+        "Constraint/closure",
+        "Similarity/overlap",
+        "Status"
+      ],
+      "C2_measurement": [
+        "Archival behavioral",
+        "Network-derived"
+      ],
+      "C3_uncertainty_ambiguity": "None",
+      "C3_metric_detail": "Not applicable",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D_methods_and_identification_causality": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Causal claim",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": "Other: Heckman sample selection model",
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": [
+        "Sample selection bias (propensity to form a JV is correlated with propensity to dissolve it) is addressed via a two-stage Heckman procedure."
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Cluster/serial corr fixes",
+        "Other: Gamma frailty model for unobserved heterogeneity, testing alternative survival distributions (lognormal, gamma), dropping ambiguous observations, orthogonalizing correlated variables."
+      ],
+      "D3_endogeneity": "Other: Heckman sample selection model for selection on observables, Lags for control variables.",
+      "D4_level_alignment": "Other: Network-derived predictors in a dyad-level model",
+      "D5_data_sources": [
+        "Trade journals (Chemical Week, C&E News)",
+        "Electronic business news databases (Dow Jones News Retrieval, Lexis-Nexis)",
+        "Industry-specific electronic databases (METADEX)",
+        "Print media indices (Frost and Sullivan Predicasts)",
+        "Government publications and consultants' reports",
+        "Patent data for technical resource overlap",
+        "Corporate directories for subsidiary and sales data (market overlap)"
+      ]
+    },
+    "E_outcomes_and_effects": {
+      "E1_outcomes": [
+        "Entry/exit/survival"
+      ],
+      "E2_effect_directions": {
+        "Entry/exit/survival": "Mixed"
+      },
+      "E3_mechanisms_tags": [
+        "Information access",
+        "Deterrence",
+        "Status"
+      ],
+      "E4_moderators": [
+        "Prior direct ties (Relational embeddedness)",
+        "Positional asymmetry",
+        "Competitive overlap"
+      ]
+    },
+    "F_quality_and_systematicity": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "The primary risk of bias is the endogeneity of the network structure itself; network positions and ties are not randomly assigned. While the study commendably addresses selection into the sample of JVs via a Heckman model, it cannot fully account for unobserved firm characteristics that might drive both network position and alliance stability. A secondary risk lies in the subjective classification of dissolutions as 'unplanned' based on archival news reports.",
+      "F3_saturation_contribution": "Divergent"
+    },
+    "G_integration_hooks": {
+      "G1_construct_mapping_note": "The paper provides a clear mapping by disaggregating network embeddedness into three distinct types (relational, positional, structural) and linking each to a primary theoretical mechanism (knowledge-based trust, information/reputation, social monitoring). This provides a robust framework for comparing constructs across studies.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The stabilizing effect of structural embeddedness (e.g., common partners) is conditional on the level of latent conflict in a dyad, being strongest in relationships with high status asymmetry or competitive rivalry.",
+        "Informational benefits from network position (e.g., centrality) that facilitate partner selection do not necessarily translate into post-formation stability and may be detrimental when redundant with relational history.",
+        "The mechanisms governing alliance formation and dissolution are distinct: information access is primary for formation, while social deterrence is primary for stability."
+      ]
+    },
+    "H_type_applicability": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "This is an empirical paper, not a conceptual or review paper."
+    },
+    "I_mechanism_and_proposition_detailing": {
+      "I1_mechanism_statements": [
+        "Positional embeddedness (centrality) provides informational and reputational benefits that aid in ex-ante partner selection, which is hypothesized to lead to more stable ties.",
+        "Positional asymmetry creates reputational and power imbalances, leading to tension and instability.",
+        "Structural embeddedness (common partners) provides social monitoring benefits, creating deterrence-based trust that mitigates opportunistic behavior and enhances stability."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Prior direct ties (Relational embeddedness)",
+          "role_in_link": "Weakens the (hypothesized negative) relationship between combined centrality and dissolution hazard, because prior ties serve as a substitute for the informational benefits of centrality."
+        },
+        {
+          "type": "moderation",
+          "variable": "Positional asymmetry",
+          "role_in_link": "Strengthens the negative relationship between common partners and dissolution hazard, because social monitoring is more valuable in stabilizing inherently risky asymmetric ties."
+        },
+        {
+          "type": "moderation",
+          "variable": "Competitive overlap",
+          "role_in_link": "Strengthens the negative relationship between common partners and dissolution hazard, as common partners provide a crucial enforcement mechanism when incentives for rivalry are high."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J_findings_and_evidence": {
+      "J1_main_findings_summary": [
+        "Contrary to expectations, combined centrality at founding does not decrease, and can even increase, the hazard of unplanned dissolution, particularly when partners have prior direct ties.",
+        "Joint ventures between positionally asymmetric partners (one high-centrality, one low-centrality) experience a significantly higher hazard of dissolution.",
+        "The number of common partners (structural embeddedness) significantly reduces the hazard of unplanned dissolution.",
+        "The stabilizing effect of common partners is significantly stronger for joint ventures between positionally asymmetric partners.",
+        "The stabilizing effect of common partners is also significantly stronger for joint ventures between partners with high competitive overlap."
+      ],
+      "J2_finding_evidence_links": "Main results are in Table 2 (p. 213). Interaction effects are visualized in Figure 2 (p. 214) and Figure 3 (p. 215).",
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K_overall_paper_contribution": {
+      "K1_contribution_summary": "The paper's primary contribution is to reorient network theory by demonstrating that the social structures facilitating alliance formation differ in their function from those ensuring alliance stability. It empirically establishes that while positional embeddedness (centrality) may aid partner selection, it does not guarantee stability. Instead, structural embeddedness (common partners) acts as a crucial social control mechanism that maintains order, especially in high-risk relationships. This shifts the theoretical focus from the informational benefits of networks to their role in governance and deterrence post-formation."
+    }
+  }

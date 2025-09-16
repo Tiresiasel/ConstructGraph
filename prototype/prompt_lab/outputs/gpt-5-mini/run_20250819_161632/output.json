@@ -1,0 +1,29 @@
+{
+  "paper_metadata": {
+    "doi": "dx.doi.org/10.5465/amr.2013.0493",
+    "title": "2013 Presidential Address: BECOMING AMBICULTURAL: A PERSONAL QUEST, AND ASPIRATION FOR ORGANIZATIONS",
+    "authors": [
+      "MING-JER CHEN"
+    ],
+    "publication_year": 2014,
+    "journal": "Academy of Management Review",
+    "research_type": "Conceptual",
+    "research_context": "Ambicultural perspective integrating East and West; implications for management and organization research, professional and personal growth, and organizational practice.",
+    "is_replication_study": false
+  },
+  "constructs": [],
+  "construct_dimensions": [],
+  "relationships": [],
+  "measurements": [],
+  "core_theories": [],
+  "coverage_report": {
+    "constructs": 0,
+    "relationships": 0,
+    "measurements": 0,
+    "reason": "This paper is a presidential address/conceptual essay without any labeled Hypotheses, Propositions, or a Hypothesis Development section. Under the extraction scope (only items explicitly tied to Hypotheses/Propositions or their development), no core constructs, relationships, or measurements are extractable.",
+    "errors": [
+      "no_hypotheses_or_propositions_found",
+      "core_scope_no_extractable_relationships"
+    ]
+  }
+}

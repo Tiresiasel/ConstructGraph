@@ -1,0 +1,152 @@
+{
+    "L1_summary_of_paper": "This paper develops and empirically tests an expectancy–valence framework to explain when competitive attacks provoke retaliation and how retaliation relates to the attacker’s performance. Retaliation likelihood is modeled as a function of three attack attributes: visibility (whether rivals will notice the attack), response difficulty (how easy it is for rivals to respond in kind; inverse of expectancy), and attack centrality (importance of the attacked market to rivals; valence). Using 780 actions and 222 in-kind responses among 32 U.S. airlines (1979–1986) drawn from Aviation Daily, augmented with executive surveys (to rate visibility and difficulty) and DOT airport passenger data (to compute centrality), the study finds strong main effects: higher visibility and centrality and lower response difficulty each increase retaliation. Interaction evidence is modest overall, but the combination of high visibility and low difficulty particularly elevates retaliation. At the firm-year level, a higher response ratio is consistently associated with worse financial performance (revenue/RPM, profit/RPM, margin, S&P rating), controlling for potential attack benefits. Contributions include adapting expectancy–valence theory to interfirm rivalry, specifying actionable attack design levers to reduce retaliation, and linking interaction patterns to performance outcomes.",
+    "M1_main_theories": [
+      "Expectancy–valence theory (primary)",
+      "Resource-based view (secondary)",
+      "Game theory (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Dyad",
+    "M3_unit_of_analysis_element": [
+      "Attack/response",
+      "Other: Visibility of attack",
+      "Centrality",
+      "Other: Response difficulty"
+    ],
+    "N1_behavioral_scope": "Multiple behaviors",
+    "N2_assumption_symmetry": "Not reported",
+    "N3_assumption_common_environment": "Yes",
+    "N4_assumption_equal_weighting": "No",
+    "N5_focus_scope": "Multiple competitors focus",
+    "A1_citation": "Chen, M.-J., & Miller, D. (1994). Competitive attack, retaliation and performance: An expectancy‐valence framework. Strategic Management Journal, 15(2), 85–102.",
+    "A2_year": 1994,
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Dyadic",
+    "B2_levels": [
+      "Dyad",
+      "Firm",
+      "Market/Industry"
+    ],
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Rivalry",
+      "Resource-based view",
+      "Attention-based view"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Attack/response",
+      "Centrality",
+      "Other: Visibility of attack",
+      "Other: Response difficulty",
+      "Other: Retaliation intensity"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Survey/perceptual"
+    ],
+    "C3_uncertainty_ambiguity": "None",
+    "C3_metric_detail": "Environmental uncertainty is not directly theorized or measured; focus is on attack attributes (visibility, response difficulty, centrality).",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "Not applicable",
+    "D2_identification": "Other: OLS regressions with controls; contingency (2×2×2) ANOVA for gate vs chain comparison",
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": [
+      "Controls for potential benefit of attack (affected passengers) when relating response ratio to performance",
+      "Checks for multicollinearity when adding interaction terms"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs"
+    ],
+    "D3_endogeneity": "Not addressed",
+    "D4_level_alignment": "Explicit bridging",
+    "D5_data_sources": [
+      "Aviation Daily archival records (actions and responses)",
+      "U.S. Department of Transportation Airport Activities Statistics (passengers)",
+      "Executive/industry expert survey (visibility, difficulty ratings)",
+      "Standard & Poor's stock ratings",
+      "Airline financials (revenue and profit per RPM, profit margin)"
+    ],
+    "E1_outcomes": [
+      "Other: Retaliation count",
+      "Other: Response ratio",
+      "Revenue/profit"
+    ],
+    "E2_effect_directions": {
+      "Other: Retaliation count": {
+        "Visibility": "+",
+        "Centrality": "+",
+        "Response difficulty": "–"
+      },
+      "Other: Response ratio": {
+        "Visibility": "+",
+        "Centrality": "+",
+        "Response difficulty": "–"
+      },
+      "Revenue/profit": "–"
+    },
+    "E3_mechanisms_tags": [
+      "Deterrence",
+      "Attention allocation",
+      "Signaling",
+      "Resource dependence"
+    ],
+    "E4_moderators": [
+      "Visibility × Response difficulty",
+      "Centrality × Response difficulty"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "Single-industry (airlines) limits external validity; potential omitted variables (firm capabilities, regional shocks) and measurement error in survey-based indices; no formal endogeneity strategy.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Visibility ↔ detectability; Response difficulty ↔ rivals’ expected ability; Centrality ↔ value/valence of defending the market; Retaliation intensity ↔ number/proportion of in-kind responses.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "Reducing visibility, increasing response difficulty, or targeting low-centrality markets each lowers retaliation likelihood.",
+      "High visibility combined with low response difficulty disproportionately elevates retaliation risk.",
+      "Greater retaliation intensity is associated with worse financial performance for the attacker."
+    ],
+    "TYPE_APPLICABLE_empirical": "Yes",
+    "TYPE_APPLICABLE_theory_conceptual": "No",
+    "TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "The paper is an empirical quantitative study linking action-level dynamics to firm-level performance.",
+    "I1_mechanism_statements": [
+      "Visibility increases detection and social/ reputational pressure to respond, elevating retaliation likelihood.",
+      "Lower response difficulty raises rivals’ expectancy of successful retaliation, increasing response probability.",
+      "Higher attack centrality raises the valence (payoff) of defending, increasing retaliation.",
+      "Visibility and response difficulty jointly amplify retaliation when both are high visibility and low difficulty.",
+      "Greater retaliation intensity erodes the attacker’s benefits (cost escalation, advantage dissipation), reducing financial performance."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Response difficulty",
+        "role_in_link": "Moderates the effect of Visibility on Retaliation (high visibility triggers more retaliation especially when response is easy)."
+      },
+      {
+        "type": "moderation",
+        "variable": "Response difficulty",
+        "role_in_link": "Moderates the effect of Centrality on Retaliation (central attacks draw more retaliation when response is easy)."
+      }
+    ],
+    "I3_theoretical_propositions": [],
+    "J1_main_findings_summary": [
+      "Main effects: higher visibility and centrality and lower response difficulty each significantly increase the number of retaliatory responses.",
+      "Interactions: visibility × difficulty and centrality × difficulty show modest positive effects; the high-visibility + low-difficulty combination is especially prone to retaliation.",
+      "Gate vs. chain: evidence favors a chain model for main effects, with a notable gate-like combination (visibility + low difficulty) producing the highest retaliation.",
+      "Performance: higher response ratios are negatively associated with revenue/RPM, profit/RPM, profit margin, and S&P ratings, net of potential attack benefits."
+    ],
+    "J2_finding_evidence_links": [
+      "Table 1 (descriptives and correlations)",
+      "Table 2 (OLS regressions with interactions)",
+      "Table 3 (2×2×2 gate vs. chain analysis)",
+      "Table 4 (response ratio–performance correlations)"
+    ],
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "By transplanting expectancy–valence logic into interfirm rivalry and testing it with rich action-level data, the paper identifies concrete attack design levers (visibility, response difficulty, centrality) that shape retaliation and documents a robust negative association between retaliation intensity and the attacker’s performance, offering both theoretical refinement and practical guidance for low-retaliation competitive strategy."
+  }

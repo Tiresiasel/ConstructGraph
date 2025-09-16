@@ -1,0 +1,153 @@
+{
+    "L1_summary_of_paper": "This study develops and tests the theory of Vicarious Performance Feedback (VPF) to explain tie dissolution in market networks. Under conditions of causal ambiguity, when it is difficult to evaluate a supplier's contribution based solely on direct experience, managers may observe the performance trajectories of other firms that share the same supplier (relative to their own historical baselines) to supplement their evaluation. Using a 33-year panel (1981–2013) of Formula 1 constructors and engine suppliers (432 constructor–year observations, 57 constructors), combined with 55 interviews, the authors find: (1) firms are more likely to switch suppliers when their own performance falls below aspiration (baseline performance feedback effect); (2) negative deviations of other customers' performance from their historical levels increase the likelihood of supplier tie dissolution (VPF main effect); (3) the VPF effect is stronger when the focal firm’s own performance is below aspirations, when there are more joint users (reducing noise in the vicarious signal), and when geographic distance to the supplier is greater (reducing alternative information channels). The paper extends performance feedback from direct to vicarious information, embeds network structure (structural equivalence/joint users) into partner evaluation, and enriches the cognitive foundations of problemistic search and attention allocation under causal ambiguity.",
+    "M1_main_theories": [
+      "Performance feedback theory (primary)",
+      "Attention-based view (secondary)",
+      "Vicarious learning (secondary)",
+      "Network theory: structural equivalence (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Dyad (Dyad-level with partner analysis) but Network in competitor analysis",
+    "M3_unit_of_analysis_element": [
+      "Other: Tie dissolution (supplier relationship termination)"
+    ],
+    "N1_behavioral_scope": "Single behavior",
+    "N2_assumption_symmetry": "Not reported",
+    "N3_assumption_common_environment": "Yes",
+    "N4_assumption_equal_weighting": "Yes",
+    "N5_focus_scope": "Multiple competitors focus",
+    "A1_citation": "Clough, D. R., & Piezunka, H. (2020). Tie Dissolution in Market Networks: A Theory of Vicarious Performance Feedback. Administrative Science Quarterly, 65(4), 972–1017.",
+    "A2_year": "2020",
+    "A3_outlet_tier": "ASQ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Dyadic",
+    "B2_levels": [
+      "Dyad",
+      "Firm",
+      "Market/Industry"
+    ],
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Learning",
+      "Attention-based view",
+      "Embeddedness",
+      "Status"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Other: Vicarious performance feedback",
+      "Other: Performance–aspiration gap",
+      "Other: Structural equivalence (joint component usage)",
+      "Status",
+      "Other: Geographic proximity/distance",
+      "Other: Tie dissolution"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Network-derived",
+      "Other: Qualitative interviews for construct validation"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Causal ambiguity is stated as a theoretical premise (system interdependence, limited direct experience) and is indirectly manifested through the reliance on both direct and vicarious feedback, but there is no separate direct measurement.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Causal claim",
+    "D2a_causality_claimed": "Yes",
+    "D2b_causality_supported_by_design": "Moderate",
+    "D2_identification": "Panel FE (causal)",
+    "D2_causal_claim_strength": "Moderate",
+    "D2_key_assumptions_addressed": [
+      "Temporal ordering of performance feedback and subsequent tie dissolution decision (annual season cycle)",
+      "Constructor fixed effects to control for time-invariant unobserved heterogeneity",
+      "Cluster-robust standard errors by constructor and supplier to address correlated errors",
+      "Separate parameterization of historical and social aspirations with robustness checks"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Placebo/falsification",
+      "Parameter robustness",
+      "Interaction specifications",
+      "Cluster/serial corr fixes"
+    ],
+    "D3_endogeneity": "FE saturation",
+    "D4_level_alignment": "Explicit bridging",
+    "D5_data_sources": [
+      "Motorsportarchiv (FIA race results)",
+      "Who Works in Formula 1",
+      "Factiva press mentions",
+      "Author interviews"
+    ],
+    "E1_outcomes": [
+      "Other: Tie dissolution (change of engine supplier)"
+    ],
+    "E2_effect_directions": {
+      "Other: Tie dissolution (change of engine supplier)": "+"
+    },
+    "E3_mechanisms_tags": [
+      "Attention allocation",
+      "Learning",
+      "Information access",
+      "Spillovers"
+    ],
+    "E4_moderators": [
+      "Own performance below aspiration",
+      "Number of joint component users",
+      "Geographic distance to supplier"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "Potential omitted variable bias is mitigated via constructor fixed effects and extensive controls; aspiration parameters are chosen based on model fit with robustness tests; equal weighting in averaging VPF signals may over/underestimate heterogeneity; interviews support construct validity.",
+    "F3_saturation_contribution": "Vicarious performance feedback",
+    "G1_construct_mapping_note": "Extends performance feedback from own experience to vicarious signals from structurally equivalent network nodes, with joint user count and geographic distance as boundary conditions affecting signal strength and substitution.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "Under causal ambiguity, direct and vicarious performance feedback jointly drive evaluation of existing suppliers and tie dissolution.",
+      "Structural equivalence focuses managerial attention on peer performance, which is translated into inferences about shared supplier quality.",
+      "Information substitution channels (geographic proximity) weaken reliance on vicarious signals, while larger joint user counts increase signal credibility."
+    ],
+    "TYPE_APPLICABLE_empirical": "Yes",
+    "TYPE_APPLICABLE_theory_conceptual": "No",
+    "TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "The paper is an empirical-quantitative panel study, not a conceptual or review paper.",
+    "I1_mechanism_statements": [
+      "High causal ambiguity → limited direct experience → managers seek supplemental external information (others’ performance trajectories).",
+      "Structural equivalence (shared supplier) → mutual monitoring and social comparison.",
+      "Negative deviation from historical performance by joint users → attribution of risk to supplier → increased likelihood of tie dissolution.",
+      "Own performance below aspiration → focused attention on supplier evaluation and lower action threshold → stronger VPF effect.",
+      "More joint users → reduced variance in average vicarious signal → stronger VPF effect.",
+      "Greater geographic distance → fewer alternative forward-looking information channels → stronger reliance on VPF."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Own performance below aspiration",
+        "role_in_link": "Amplifies the path from joint users’ negative deviation to tie dissolution via problemistic search and attention mechanisms."
+      },
+      {
+        "type": "moderation",
+        "variable": "Number of joint component users",
+        "role_in_link": "Increases credibility of vicarious signal, strengthening the VPF main effect."
+      },
+      {
+        "type": "moderation",
+        "variable": "Geographic distance to supplier",
+        "role_in_link": "Fewer substitute information channels increase reliance on VPF."
+      }
+    ],
+    "I3_theoretical_propositions": [],
+    "J1_main_findings_summary": [
+      "Own performance below aspiration increases likelihood of supplier tie dissolution (baseline performance feedback effect).",
+      "Negative deviation of joint users from their historical performance significantly increases focal firm’s likelihood of switching suppliers (VPF main effect).",
+      "VPF effect is significantly stronger when own performance is below aspirations; effect is not significant when above aspirations (boundary condition).",
+      "VPF effect is amplified by more joint users and greater geographic distance to supplier; results are robust across specifications."
+    ],
+    "J2_finding_evidence_links": [
+      "Table 3: Main regressions and interaction terms (H1–H4) significance and effect directions.",
+      "Figures 3–4b: Marginal effects of VPF under different own performance, joint user counts, and geographic distances.",
+      "Methods and variable definitions (design, performance and aspiration construction, joint user identification)."
+    ],
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "The paper extends performance feedback theory from direct to vicarious signals, shows how network structure and information channels shape evaluation of existing exchange partners and tie dissolution decisions, and provides cognitive mechanism evidence for attention allocation and problemistic search under causal ambiguity."
+  }
+  

@@ -1,0 +1,9 @@
+{
+  "pdf": "/Users/tiresias/Documents/PhD/project3/scripts/prompt_lab/samples/Strategic Management Journal - 2001 - Park - Guanxi and organizational dynamics  organizational networking in Chinese firms.pdf",
+  "prompt": "/Users/tiresias/Documents/PhD/project3/scripts/prompt_lab/prompts/blueprint_prompt.txt",
+  "model": "gpt-5",
+  "json_output": true,
+  "system": "You are a research assistant skilled in knowledge extraction. Output only valid JSON when requested.",
+  "timestamp": "20250819_161308",
+  "saved_primary_output": "output.json"
+}

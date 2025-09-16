@@ -1,0 +1,158 @@
+{   "relevant": true,
+    "L1_summary_of_paper": "This conceptual article develops a multilevel structural embeddedness perspective to explain how cooperative interfirm networks shape competitive action and response. The core question is how the structural properties of a network of cooperative ties among competitors influence (i) the likelihood that a firm initiates a competitive action and (ii) the likelihood that targeted competitors respond. The authors define three types of network resource flows—assets, information, and status—that create asymmetries in motivation and capability. They identify four structural properties: firm-level centrality and structural autonomy (structural holes), dyad-level structural equivalence, and network-level density. The model proposes that centrality and structural autonomy increase action likelihood and decrease rivals’ response likelihood; structural equivalence decreases action likelihood but increases response likelihood; density decreases action likelihood but increases response likelihood. Network density also moderates the other effects, dampening centrality, strengthening structural autonomy, and weakening structural equivalence. Contributions include integrating structural embeddedness into competitive dynamics, offering a multilevel model across firm, dyad, and network levels, and specifying empirically testable propositions.",
+    "M1_main_theories": [
+      "Embeddedness (primary)",
+      "Network theory (primary)",
+      "Resource-based view (secondary)",
+      "Institutional theory (secondary)",
+      "Diffusion theory (secondary)",
+      "Status theory (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Network",
+    "M3_unit_of_analysis_element": [
+      "Action likelihood",
+      "Response likelihood",
+      "Centrality",
+      "Structural autonomy",
+      "Structural equivalence",
+      "Network density"
+    ],
+    "N1_behavioral_scope": "Single behavior",
+    "N2_assumption_symmetry": "Yes",
+    "N3_assumption_common_environment": "Yes",
+    "N4_assumption_equal_weighting": "Yes",
+    "N5_focus_scope": "Network",
+    "A1_citation": "Gnyawali, D. R., & Madhavan, R. (2001). Cooperative networks and competitive dynamics: A structural embeddedness perspective. Academy of Management Review, 26(3), 431–445.",
+    "A2_year": "2001",
+    "A3_outlet_tier": "Other-A*",
+    "A4_study_type": "Conceptual/Theory",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Bridging",
+    "B2_levels": "Multi-level",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Rivalry",
+      "Embeddedness",
+      "Structural holes",
+      "Diffusion",
+      "Status"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Attack/response",
+      "Tie type",
+      "Centrality",
+      "Structural holes",
+      "Community",
+      "Similarity/overlap",
+      "Other: Structural autonomy",
+      "Other: Structural equivalence",
+      "Other: Network density"
+    ],
+    "C2_measurement": "Other: Conceptual theorization (no empirical measures)",
+    "C3_uncertainty_ambiguity": "None",
+    "C3_metric_detail": "No operational metrics are estimated; constructs are defined conceptually with proposed operationalizations for future research.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Conceptual/Theory",
+    "D2_causal_or_correlational": "Theoretical/Not applicable",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "Not applicable",
+    "D2_identification": "Other: Conceptual propositions",
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": [
+      "Cooperative network ties transmit assets, information, and status",
+      "Network positions create resource asymmetries that influence motivation and capability to act/respond",
+      "Cooperation and competition are orthogonal and can coexist"
+    ],
+    "D2_robustness_suite": "Not applicable",
+    "D3_endogeneity": "Not applicable",
+    "D4_level_alignment": "Explicit bridging",
+    "D5_data_sources": [
+      "Not applicable"
+    ],
+    "E1_outcomes": [
+      "Action likelihood",
+      "Response likelihood"
+    ],
+    "E2_effect_directions": {
+      "Action likelihood": "Mixed",
+      "Response likelihood": "Mixed"
+    },
+    "E3_mechanisms_tags": [
+      "Information access",
+      "Deterrence",
+      "Legitimacy/Status",
+      "Resource dependence",
+      "Spillovers",
+      "Attention allocation",
+      "Signaling"
+    ],
+    "E4_moderators": [
+      "Network density"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "As a theoretical paper, conclusions are based on logical argument and prior literature; scope conditions clearly stated.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Maps network properties to rivalry mechanisms: Centrality → asset/information/status inflows; Structural autonomy → nonredundant access/control; Structural equivalence → mutual monitoring/coordination; Density → cohesion, norms, sanctions, diffusion.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "Network resource asymmetries mediate the effect of cooperative structure on competitive behavior.",
+      "Network density reduces attack rates and strengthens sanction-based responses.",
+      "Structural holes preserve initiative advantages under high density."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "No",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "Yes",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "H4_NA_reason_if_any": "Conceptual model only; no empirical data or systematic review.",
+    "I1_mechanism_statements": [
+      "High centrality increases asset/information/status inflows → raises action likelihood → lowers rivals’ response likelihood.",
+      "Structural autonomy provides nonredundant, efficient, and controllable resource flows → raises action likelihood → lowers rivals’ response likelihood.",
+      "Structural equivalence reduces attack likelihood via mutual monitoring and coordination → increases response likelihood if attacked.",
+      "Network density reduces action likelihood via shared norms/sanctions → increases response likelihood.",
+      "Density moderates centrality, structural autonomy, and structural equivalence effects."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "mediation",
+        "variable": "Resource asymmetry",
+        "role_in_link": "Mediates effects of centrality/structural autonomy on action and response likelihood"
+      },
+      {
+        "type": "moderation",
+        "variable": "Network density",
+        "role_in_link": "Weakens centrality effects on action (+) and response (–)"
+      },
+      {
+        "type": "moderation",
+        "variable": "Network density",
+        "role_in_link": "Strengthens structural autonomy effects on action (+) and response (–)"
+      },
+      {
+        "type": "moderation",
+        "variable": "Network density",
+        "role_in_link": "Weakens structural equivalence effects on action (–) and response (+)"
+      }
+    ],
+    "I3_theoretical_propositions": [
+      "P1: As centrality increases, action likelihood increases and rivals’ response likelihood decreases.",
+      "P2: As structural autonomy increases, action likelihood increases and rivals’ response likelihood decreases.",
+      "P3: As structural equivalence increases, action likelihood decreases and rivals’ response likelihood increases.",
+      "P4: As network density increases, action likelihood decreases and response likelihood increases.",
+      "P5: Density weakens the centrality–action(+) and centrality–response(–) relationships.",
+      "P6: Density strengthens the structural autonomy–action(+) and structural autonomy–response(–) relationships.",
+      "P7: Density weakens the structural equivalence–action(–) and structural equivalence–response(+) relationships."
+    ],
+    "J1_main_findings_summary": [
+      "Competitive behavior is embedded in cooperative networks; positions and structure shape action and response via resource flows and asymmetries.",
+      "Centrality and structural autonomy promote initiative and deter responses.",
+      "Structural equivalence discourages attacks but increases responses if attacked.",
+      "Network density lowers attack rates but raises response rates.",
+      "Density moderates other structural effects in predictable ways."
+    ],
+    "J2_finding_evidence_links": "Propositions P1–P7 with rationale in text; centrality (pp. 435–436), structural autonomy (pp. 436–437), structural equivalence (pp. 437–438), density (pp. 438–439), moderation (pp. 439–441).",
+    "J3_finding_strength": "Speculative (conceptual)",
+    "K1_contribution_summary": "Introduces a multilevel structural embeddedness model linking cooperative network structures to competitive action and response through resource flows and asymmetries, integrating competitive dynamics and network perspectives."
+  }
+  

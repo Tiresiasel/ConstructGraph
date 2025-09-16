@@ -1,0 +1,149 @@
+{   "relevant": false,
+    "L": {
+      "L1_summary_of_paper": "This paper investigates how the legitimacy of a change project can become dissociated from the legitimacy of the change agent promoting it, leading to the unexpected outcome where the project is adopted while the agent is rejected. The core research question is: How and why does dissociation between the legitimacy of a change agent and their project emerge and evolve over time, and how do change recipients contribute to this? The key concept introduced is 'cooptive rejection,' a process where recipients appropriate and endorse the content of a change while actively undermining its initiator. The theoretical framing integrates legitimacy theory and organizational change literature, challenging the common assumption that agent and project legitimacy are tightly coupled. The study's constructs include the change agent's legitimation strategies (self-promotive vs. service-oriented), recipients' legitimacy judgments (instrumental, relational, moral), and their response moves (e.g., guarding, collaborating, competing, severing). The context is a 3.5-year in-depth qualitative study of a major transformation within a French public organization, focusing on a newly created 'Transformation Department' (TD). The main finding is that cooptive rejection unfolds in three phases: an initial phase of negative association, a second phase of nascent dissociation triggered by the agent's dual strategy of internal service and external promotion, and a final phase of consolidated dissociation where recipients, having appropriated the change, sever ties with the original agent. The paper's primary contribution is the development of a process model that explains legitimacy dissociation, highlights the competitive and political nature of change, and reframes recipients as active agents who can become rivals and substitute the original change champions."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Legitimacy Theory",
+          "tag": "primary"
+        },
+        {
+          "theory": "Organizational Change",
+          "tag": "primary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": "Other: <specify: Legitimacy dynamics and competitive responses between a change-agency unit and internal change recipients>"
+    },
+    "N": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "No",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A": {
+      "A1_citation": "Bourgoin, A., Laszczuk, A. and Langley, A. (2025). How Change Recipients Become Rivals: Legitimacy Dynamics and ‘Cooptive Rejection’ in Organizational Change. Journal of Management Studies, 0:0.",
+      "A2_year": 2025,
+      "A3_outlet_tier": "JMS",
+      "A4_study_type": "Empirical-Qual",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Other: <specify: Intra-organizational dynamics between a change unit and recipients>",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Learning",
+        "Institutional theory",
+        "Cognitive maps",
+        "Legitimacy",
+        "Status"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Attack/response",
+        "Rivalry intensity",
+        "Perceived competitor set",
+        "Status",
+        "Other: <specify: Legitimacy Judgments (Instrumental, Relational, Moral)>",
+        "Other: <specify: Legitimation Strategies (Self-Promotive, Service-Oriented)>",
+        "Other: <specify: Cooptive Rejection>"
+      ],
+      "C2_measurement": "Other: <specify: Ethnographic observation, interviews, archival data>",
+      "C3_uncertainty_ambiguity": "Other: <specify: The entire process is driven by ambiguity and contested legitimacy>",
+      "C3_metric_detail": "The study uses qualitative coding of interview transcripts, field notes, and documents to identify themes related to legitimation strategies, legitimacy judgments (instrumental, relational, moral), and recipient responses (guarding, discrediting, collaborating, translating, competing, severing).",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D": {
+      "D1_design": "Case/Qual",
+      "D2_causal_or_correlational": "Causal claim",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Weak",
+      "D2_identification": "Other: <specify: Process tracing through longitudinal case study>",
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": [
+        "The paper implicitly assumes that the observed recipient responses were primarily driven by the change agent's strategies and the resulting legitimacy judgments, rather than by other unobserved organizational factors. The process model is built on the temporal sequencing of these events."
+      ],
+      "D2_robustness_suite": "Other: <specify: Qualitative triangulation of data sources (interviews, observation, archives) and use of an 'insider-outsider' research team to ensure reflexivity.>",
+      "D3_endogeneity": "Not addressed",
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "Ethnographic observations (251 pages of field notes)",
+        "72 semi-structured interviews",
+        "Audio recordings of 47 formal meetings (50.2 hours)",
+        "Archival data (2.12 GB of internal documents, press articles, social media posts)"
+      ]
+    },
+    "E": {
+      "E1_outcomes": "Other: <specify: Adoption of change project; Rejection and dissolution of change agent>",
+      "E2_effect_directions": {
+        "Adoption of change project": "+",
+        "Rejection and dissolution of change agent": "+"
+      },
+      "E3_mechanisms_tags": [
+        "Learning",
+        "Attention allocation",
+        "Legitimacy/Status",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "Peripheral position of change agent",
+        "Legitimacy deficit of change agent",
+        "Recipients' political skill and ability to become substitutes"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk of bias stems from the single-case study design in a very specific context (French public sector), which limits external validity. Additionally, the close, long-term immersion of one researcher with the change-agency unit could introduce researcher bias, although this was mitigated by a multi-researcher, 'insider-outsider' team structure and peer debriefing.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The central construct, 'cooptive rejection,' is a novel process theory. It can be mapped to existing literature by breaking it down into its components: 'change appropriation' can be linked to literature on organizational learning and implementation, while 'undermining the change agent' connects to literature on organizational politics, rivalry, and resistance.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "Legitimation strategies that enhance a project's instrumental value while damaging the agent's moral value trigger competitive appropriation by recipients.",
+        "In situations of legitimacy deficit, self-promotional strategies by change agents accelerate their replacement by internally-embedded rivals.",
+        "The successful diffusion of a change initiative can be inversely related to the survival of its initial champion when legitimacy is contested."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": ""
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "Mechanism 1: Self-promotive strategies from a position of legitimacy deficit trigger negative moral judgments from recipients, leading to resistance and undermining.",
+        "Mechanism 2: A dual strategy of service-orientation (internal) and self-promotion (external) creates legitimacy dissociation. Service-orientation fosters positive instrumental judgment of the project and enables skill transfer, motivating recipients to appropriate the change. Self-promotion deepens negative moral judgment of the agent, motivating recipients to undermine them as rivals.",
+        "Mechanism 3: As recipients appropriate the project, they become substitute agents. The original agent's attempts to reclaim ownership via further self-promotion are seen as 'political hijacking,' triggering a final 'severing' response where recipients use their stronger relational legitimacy to completely exclude the original agent."
+      ],
+      "I2_mediation_moderation_details": [],
+      "I3_theoretical_propositions": [
+        "Proposition 1: When change agents use self-promotive legitimation strategies from a position of legitimacy deficit, they risk weakening both their own legitimacy and that of their project.",
+        "Proposition 2: When change agents combine service-oriented and self-promotive legitimation strategies, they simultaneously foster positive instrumental judgment of the change and moral rejection of the unit. This dual effect motivates and enables recipients to appropriate the change while undermining the agent.",
+        "Proposition 3: When change agents deploy self-promotive legitimation strategies to reclaim ownership of a project appropriated by recipients, they risk weakening their own legitimacy, deepening the dissociation between the legitimacy of the project and that of the agent."
+      ]
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "The legitimacy of a change project and its agent can become dissociated over time, leading to the project's success and the agent's failure.",
+        "This dissociation is driven by a process termed 'cooptive rejection,' where recipients appropriate the change while actively undermining the agent.",
+        "A change agent's use of self-promotive strategies from a weak position initially triggers negative moral judgments and resistance toward both the agent and the project.",
+        "A shift to a dual strategy (internal service, external promotion) successfully builds instrumental legitimacy for the project but deepens the moral rejection of the agent, fueling rivalry.",
+        "Recipients leverage the skills transferred during collaboration and their superior relational legitimacy to become substitute change agents, ultimately severing the original agent's ties to the project and leading to their ousting."
+      ],
+      "J2_finding_evidence_links": "The evidence is presented sequentially in the 'First-Order Findings' section, structured into three phases: Phase 1 (Negative Legitimacy Association), Phase 2 (Nascent Legitimacy Dissociation), and Phase 3 (Consolidated Legitimacy Dissociation). The process model summarizing these dynamics is shown in Figure 2 and theorized in Figure 3.",
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "This study's main contribution is the development of a process theory of 'cooptive rejection' to explain the paradoxical dissociation of legitimacy between a change project and its agent. It advances legitimacy and organizational change literature by demonstrating that an agent's legitimacy is not a necessary precondition for a project's success, illuminating how different forms of legitimacy (instrumental vs. moral) can evolve in opposition, and highlighting the competitive dynamics through which change recipients can transform from passive audiences into active rivals who ultimately substitute the original change champions."
+    }
+  }

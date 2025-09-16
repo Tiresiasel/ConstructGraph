@@ -1,0 +1,126 @@
+{   "relevant": true,
+    "L_Summary_of_the_Paper": {
+      "L1_summary_of_paper": "This paper addresses the fragmentation in the literature on competitor identification, a core element of competitive dynamics. The central research question is how to organize and integrate the diverse theoretical and empirical research on this topic from management, marketing, and industrial organization (IO) economics. The key concepts are the various conceptualizations of competitor identification, which the authors synthesize into four distinct perspectives: industry-oriented, strategic groups-oriented, manager-oriented, and customer-oriented. The paper's theoretical framing is that of a systematic, integrative literature review. It reviews constructs such as market boundaries, strategic groups, managerial cognition (cognitive maps), and customer perceptions as bases for identifying competitors. The main finding is that these four perspectives are not mutually exclusive but are complementary, each offering partial insights. They can be organized along two dimensions: the focus of analysis (products/markets vs. firms) and the basis for identification (objective characteristics vs. subjective perceptions). The paper's primary contribution is twofold: first, it provides the first comprehensive, integrated framework that organizes this disparate body of literature, clarifying the assumptions and contributions of each perspective. Second, it proposes a detailed and forward-looking research agenda organized into six themes (dynamics, interorganizational relations, micro-foundations, practice/process, international dimensions, and entrepreneurial contexts) to guide future scholarly work."
+    },
+    "M_Theory_Unit_of_Analysis": {
+      "M1_main_theories": [
+        "Industry-Oriented Perspective (primary)",
+        "Strategic Groups-Oriented Perspective (primary)",
+        "Manager-Oriented Perspective (primary)",
+        "Customer-Oriented Perspective (primary)"
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": "Other: <specify> Conceptualizations and processes of competitor identification"
+    },
+    "N_Assumptions_Behavioral_Scope": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "Not applicable",
+      "N3_assumption_common_environment": "Not applicable",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "N5_focus_scope": "Not applicable",
+      "NA_reason_if_any": "These fields pertain to the assumptions within specific empirical studies. As a review paper, this study analyzes and compares literature that contains varying assumptions, rather than adopting a single set of assumptions for its own analysis."
+    },
+    "A_Bibliographic_Administrative": {
+      "A1_citation": "Gur, F. A., & Greckhamer, T. (2019). Know Thy Enemy: A Review and Agenda for Research on Competitor Identification. Journal of Management, 45(5), 2072-2100.",
+      "A2_year": 2019,
+      "A3_outlet_tier": "JoM",
+      "A4_study_type": "Review/Meta",
+      "A5_replicability": "None"
+    },
+    "B_Perspective_Theoretical_Positioning": {
+      "B1_primary_perspective": "Bridging",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Cognitive maps",
+        "Categorization",
+        "Other: <specify> Strategic groups",
+        "Other: <specify> Market definition",
+        "Other: <specify> Customer perception"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_Phenomenon_Constructs_Context": {
+      "C1_constructs": [
+        "Perceived competitor set",
+        "Similarity/overlap",
+        "Category distance",
+        "Other: <specify> Strategic groups",
+        "Other: <specify> Market boundaries",
+        "Other: <specify> Direct vs. indirect competitors"
+      ],
+      "C2_measurement": [
+        "Archival behavioral",
+        "Survey/perceptual",
+        "Other: <specify> The paper reviews literature using a variety of measurement approaches but does not employ one itself."
+      ],
+      "C3_uncertainty_ambiguity": "Not applicable",
+      "C3_metric_detail": "Not applicable",
+      "C4_shock_type": "Not applicable",
+      "C4_shock_design": "Not applicable",
+      "NA_reason_if_any": "These fields are for empirical studies that measure constructs or analyze specific events. This is a review paper."
+    },
+    "D_Methods_Identification_Causality": {
+      "D1_design": "Other: <specify> Integrative literature review",
+      "D2_causal_or_correlational": "Theoretical/Not applicable",
+      "D2a_causality_claimed": "Not applicable",
+      "D2b_causality_supported_by_design": "Not applicable",
+      "D2_identification": "Not applicable",
+      "D2_causal_claim_strength": "Not applicable",
+      "D2_key_assumptions_addressed": "Not applicable",
+      "D2_robustness_suite": "Not applicable",
+      "D3_endogeneity": "Not applicable",
+      "D4_level_alignment": "Other: <specify> The paper's framework explicitly maps and bridges different levels of analysis present in the literature.",
+      "D5_data_sources": [
+        "Other: <specify> Existing academic articles identified through database searches (EBSCO) and expert consultation."
+      ],
+      "NA_reason_if_any": "The entire 'Methods & Identification' section is designed for empirical papers testing causal or correlational relationships. As a review paper, it synthesizes the methods and findings of other studies but does not conduct its own primary data analysis or test for causality."
+    },
+    "E_Outcomes_Effects": {
+      "E1_outcomes": "Not applicable",
+      "E2_effect_directions": "Not applicable",
+      "E3_mechanisms_tags": "Not applicable",
+      "E4_moderators": "Not applicable",
+      "NA_reason_if_any": "This paper's primary focus is on the antecedents and process of competitor identification itself, not a systematic review or meta-analysis of its performance outcomes. While it acknowledges that reviewed studies link identification to performance, it does not synthesize these specific outcome relationships."
+    },
+    "F_Quality_Systematicity": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "The primary risk of bias is article selection bias. The authors mitigate this by using a structured keyword search across databases (Business Source Complete), applying truncation, consulting experts from different disciplines (marketing, IO economics), and manually screening each article for relevance.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_Integration_Hooks": {
+      "G1_construct_mapping_note": "The paper maps the four perspectives on competitor identification onto a 2x2 framework. Dimension 1 is the 'Focus of Analysis' (Products/Markets vs. Firms). Dimension 2 is the 'Basis for Identification' (Objective Characteristics vs. Subjective Perceptions). This framework integrates the diverse approaches into a coherent whole.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Multi-study convergent",
+      "G4_unifying_props_drafts": [
+        "A complete model of competitor identification must integrate four distinct, complementary lenses: objective market structures (industry-oriented), objective firm similarities (strategic groups-oriented), subjective managerial interpretations (manager-oriented), and subjective customer evaluations (customer-oriented).",
+        "The accuracy of a firm's competitor identification is a function of the alignment between managerial perceptions of the competitive landscape and the realities defined by customer preferences and objective market structures."
+      ]
+    },
+    "H_Type_Applicability": {
+      "TYPE_APPLICABLE_empirical": "No",
+      "TYPE_APPLICABLE_theory_conceptual": "Yes",
+      "TYPE_APPLICABLE_review_meta": "Yes",
+      "NA_reason_if_any": "This paper is a review that also develops a new conceptual framework for organizing the literature. Therefore, it fits both 'review' and 'conceptual' types but is not an 'empirical' paper."
+    },
+    "I_Mechanism_Proposition_Detailing": {
+      "I1_mechanism_statements": "Not applicable",
+      "I2_mediation_moderation_details": "Not applicable",
+      "I3_theoretical_propositions": "Not applicable",
+      "NA_reason_if_any": "The paper does not propose formal, numbered theoretical propositions or test specific mechanisms. Instead, it offers a broad research agenda composed of research questions and promising directions."
+    },
+    "J_Findings_Evidence": {
+      "J1_main_findings_summary": [
+        "The literature on competitor identification is fragmented across management, marketing, and IO economics, resulting in diverse and disconnected conceptualizations.",
+        "This fragmented literature can be systematically organized into four complementary perspectives: industry-oriented, strategic groups-oriented, manager-oriented, and customer-oriented.",
+        "These four perspectives can be integrated into a unifying 2x2 framework based on two dimensions: focus of analysis (products/markets vs. firms) and basis for identification (characteristics vs. perceptions).",
+        "Future research on competitor identification should focus on six key themes: dynamics, interorganizational relations, micro-foundations, practice/process, internationalization, and entrepreneurial contexts."
+      ],
+      "J2_finding_evidence_links": "The core findings are synthesized and presented in the organizing framework (Table 2), the detailed summary of perspectives (Table 3), the visual integration model (Figure 1), and the future research agenda (Table 4).",
+      "J3_finding_strength": "Speculative (conceptual)"
+    },
+    "K_Overall_Paper_Contribution": {
+      "K1_contribution_summary": "The paper's primary contribution is to bring order to the fragmented, multidisciplinary literature on competitor identification. It achieves this by creating a novel integrative framework that categorizes existing research into four complementary perspectives and clarifies their underlying assumptions. Building on this synthesis, it provides a comprehensive and forward-looking research agenda that charts a course for future theoretical and empirical advancements in the field."
+    }
+  }

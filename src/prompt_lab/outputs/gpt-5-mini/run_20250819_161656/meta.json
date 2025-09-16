@@ -1,0 +1,9 @@
+{
+  "pdf": "/Users/tiresias/Documents/PhD/project3/scripts/prompt_lab/samples/Strategic Management Journal - 2014 - Skilton - Competition network structure and product market entry.pdf",
+  "prompt": "/Users/tiresias/Documents/PhD/project3/scripts/prompt_lab/prompts/blueprint_prompt.txt",
+  "model": "gpt-5-mini",
+  "json_output": true,
+  "system": "You are a research assistant skilled in knowledge extraction. Output only valid JSON when requested.",
+  "timestamp": "20250819_161656",
+  "saved_primary_output": "output.json"
+}

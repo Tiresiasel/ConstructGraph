@@ -1,0 +1,154 @@
+{   "relevant": false,
+    "L": {
+      "L1_summary_of_paper": "This conceptual paper addresses the research question: Who reaps the fruits of a firm's dynamic capability? It argues that social capital is not only essential for creating value via dynamic capabilities but is also the primary mechanism through which internal stakeholders (employees) appropriate that value. The key concepts are: 'dynamic capability' (the firm's process to integrate, reconfigure, gain, and release resources), 'social capital' (benefits actors obtain through social ties), and 'rent appropriation' (stakeholders capturing returns in excess of the minimum needed to attract their resources). The theoretical framing integrates the resource-based view (specifically, dynamic capabilities) with social capital theory and stakeholder theory. The paper proposes that social capital is a necessary condition for dynamic capabilities because it facilitates the resource acquisition, integration, and release processes. Simultaneously, this same social capital enhances employees' bargaining power by providing information advantages, increasing their replacement costs, and improving their mobility. A key argument is that even under high causal ambiguity, where individual contributions are unclear, social capital serves as a credible signal for claims on rent, challenging the notion that ambiguity prevents appropriation. The paper concludes that individuals in key network positions, such as those occupying structural holes or having high centrality, are best positioned to both generate and appropriate rent. The primary contribution is linking the mechanisms of rent generation and rent appropriation through the single, dual-role construct of social capital, thereby redirecting strategic management research to consider how value created is divided within the firm before it appears as profit."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Social capital theory",
+          "tag": "primary"
+        },
+        {
+          "theory": "Dynamic capabilities",
+          "tag": "primary"
+        },
+        {
+          "theory": "Resource-based view",
+          "tag": "secondary"
+        },
+        {
+          "theory": "Stakeholder theory",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": "Other: Rent appropriation patterns"
+    },
+    "N": {
+      "N1_behavioral_scope": "Not applicable",
+      "N2_assumption_symmetry": "Not applicable",
+      "N3_assumption_common_environment": "Not applicable",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "N5_focus_scope": "Not applicable",
+      "NA_reason_if_any": "This section is designed for studies of external competitive dynamics (firm-vs-firm actions). This paper's focus is on the internal firm dynamics of value creation and appropriation by employees, not on interactions between competing firms."
+    },
+    "A": {
+      "A1_citation": "Blyler, M., & Coff, R. W. (2003). Dynamic capabilities, social capital, and rent appropriation: ties that split pies. Strategic Management Journal, 24(7), 677-686.",
+      "A2_year": 2003,
+      "A3_outlet_tier": "SMJ",
+      "A4_study_type": "Conceptual/Theory",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Other: Stakeholder/Internal firm perspective",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Resource-based view",
+        "Embeddedness",
+        "Structural holes"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Centrality",
+        "Structural holes",
+        "Other: Dynamic capabilities",
+        "Other: Social capital",
+        "Other: Rent appropriation"
+      ],
+      "C2_measurement": "Not applicable",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "The paper extensively discusses the role of causal ambiguity as a key contextual factor that affects rent appropriation. It argues that high ambiguity, contrary to common assumptions, may facilitate rent claims by those with high social capital. It is treated as a theoretical concept, not an operationalized measure.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D": {
+      "D1_design": "Conceptual/Theory",
+      "D2_causal_or_correlational": "Theoretical/Not applicable",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Not applicable",
+      "D2_identification": "Not applicable",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": "Not applicable",
+      "D2_robustness_suite": "Not applicable",
+      "D3_endogeneity": "Not applicable",
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "Not applicable"
+      ],
+      "NA_reason_if_any": "This is a conceptual/theory paper. It develops propositions but does not test them empirically. Therefore, fields related to empirical methodology, identification, and data are not applicable. The causal claim strength is 'Weak' because claims are purely theoretical without empirical support."
+    },
+    "E": {
+      "E1_outcomes": "Other: Rent appropriation by internal stakeholders",
+      "E2_effect_directions": "Not applicable",
+      "E3_mechanisms_tags": [
+        "Information access",
+        "Other: Bargaining power",
+        "Other: Replacement cost",
+        "Other: Mobility/Outside options",
+        "Other: Credibility signaling"
+      ],
+      "E4_moderators": [
+        "Causal ambiguity"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "The primary 'risk' in a conceptual paper is one of logical fallacy or incomplete theoretical integration. The arguments are presented clearly and are well-grounded in cited literature, minimizing this risk. The main limitation is the complete absence of empirical evidence, which is inherent to the paper's type.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The paper maps the individual-level construct of 'social capital' (defined by network positions like centrality and structural holes) as a necessary micro-foundation for the firm-level phenomenon of 'dynamic capabilities'. It then links this same individual-level construct to the individual-level outcome of 'rent appropriation'.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The same micro-level social structures that enable firm-level value creation also determine the pattern of that value's appropriation by individuals.",
+        "Under conditions of high causal ambiguity, social signals (like network position) substitute for performance signals in determining resource allocation, strengthening the link between social capital and rent appropriation.",
+        "Rent from firm capabilities should not be treated as a residual for shareholders until the bargaining power of internal stakeholders, derived from their social capital, has been accounted for."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "No",
+      "TYPE_APPLICABLE_theory_conceptual": "Yes",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "The paper is a conceptual piece that develops a theoretical framework and propositions without empirical data."
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "Social capital enhances employee bargaining power by: (1) granting access to strategic information, (2) increasing their replacement cost, making them difficult to substitute, and (3) increasing their mobility to other firms, providing a credible threat to leave."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Causal ambiguity",
+          "role_in_link": "High causal ambiguity strengthens the role of social capital in establishing the credibility of rent claims, thereby enhancing its effect on rent appropriation."
+        }
+      ],
+      "I3_theoretical_propositions": [
+        "Proposition 1: Social capital is a necessary (though not sufficient) condition for the existence of a dynamic capability.",
+        "Proposition 2: The social capital underlying a firm's dynamic capability enables internal stakeholders to both generate and appropriate rent.",
+        "Proposition 3a: High causal ambiguity encourages a wide range of actors to claim rent due to a self-serving bias.",
+        "Proposition 3b: Under high causal ambiguity, social capital is a primary means of establishing the credibility of claims due to managers' bounded rationality and the lack of clear evidence confirming or contesting claims.",
+        "Proposition 4: Social capital enables actors occupying structural holes and highly central positions to generate and appropriate rent in a firm with a dynamic capability."
+      ]
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "Social capital is a necessary prerequisite for a firm to develop and maintain dynamic capabilities.",
+        "The very social capital that enables rent generation also equips employees with the bargaining power to appropriate a share of that rent.",
+        "High causal ambiguity does not necessarily reduce rent appropriation by employees; instead, it encourages more claims and makes social capital a key signal of credibility for those claims.",
+        "Employees in advantageous network positions (occupying structural holes, high centrality) are the most likely individuals to successfully appropriate rent derived from dynamic capabilities."
+      ],
+      "J2_finding_evidence_links": [
+        "Proposition 1 is developed on pages 678-680.",
+        "Proposition 2 is developed on pages 680-681.",
+        "Propositions 3a and 3b are developed on pages 681-682.",
+        "Proposition 4 is developed on page 683."
+      ],
+      "J3_finding_strength": "Speculative (conceptual)"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper's main contribution is to provide a novel theoretical bridge between the literatures on rent generation (dynamic capabilities) and rent appropriation (stakeholder bargaining). By positioning social capital as the central, dual-role mechanism, it explains not only how firms create value in dynamic environments but also why a significant portion of that value may be captured by employees before it can be reflected in firm profitability, thus challenging a core assumption in strategic management."
+    }
+  }

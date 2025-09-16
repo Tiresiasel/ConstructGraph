@@ -1,0 +1,513 @@
+{
+  "paper_metadata": {
+    "doi": "doi.org/10.5465/amj.2021.1440",
+    "title": "BRICKS WITHOUT STRAW: OVERCOMING RESOURCE LIMITATIONS TO ARCHITECT ECOSYSTEM LEADERSHIP",
+    "authors": [
+      "Xianwei Shi",
+      "Xingkun Liang",
+      "Shahzad (Shaz) Ansari"
+    ],
+    "publication_year": 2024,
+    "journal": "Academy of Management Journal",
+    "research_type": "Qualitative",
+    "research_context": "Longitudinal qualitative case study of Xiaomi within the Android ecosystem and the Chinese smartphone industry, examining how a resource-disadvantaged complementor architects ecosystem leadership.",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "foothold resource",
+      "definition": "a product that enables the firm to foment an identity movement around a mundane resource. By co-developing this resource with users and fostering a sense of community, the firm transforms customers into dedicated fans who feel a deep sense of connection with the firm.",
+      "context_snippet": "We introduce the concept of a “foothold resource,” a product that enables the firm to foment an identity movement (Rao & Dutta, 2018) around a mundane resource. By co-developing this resource with users and fostering a sense of community, the firm transforms customers into dedicated fans...",
+      "aliases": null
+    },
+    {
+      "term": "identity movement",
+      "definition": "fueling an identity movement among underserved users centered around a pivotal foothold resource; channeling the energy of underserved users who feel constrained by incumbents’ rigid rules.",
+      "context_snippet": "resource-disadvantaged firms may begin with fueling an“identity movement” among underserved users centered around a pivotal “foothold resource.”",
+      "aliases": null
+    },
+    {
+      "term": "user community",
+      "definition": "a demand-side community of users (including dedicated fans) co-developed and engaged by the firm to participate in product development, provide feedback, and evangelize offerings.",
+      "context_snippet": "This movement serves as their entry point into an ecosystem and enables them to build a demand-side community.",
+      "aliases": [
+        "demand-side community",
+        "Mi fans"
+      ]
+    },
+    {
+      "term": "democratization of innovation",
+      "definition": "cultivating a community of users to co-develop and co-design offerings; users participate in development as testers, developers, and co-designers with rapid iteration and incorporation of feedback.",
+      "context_snippet": "By cultivating a user community to democratize innovation (microprocess 1a), a firm can fuel an identity movement...",
+      "aliases": [
+        "democratize innovation"
+      ]
+    },
+    {
+      "term": "emancipatory vision",
+      "definition": "a compelling vision crafted around a foothold resource to emancipate underserved users from rigid, standardized offerings by incumbents, enabling personalization and participation.",
+      "context_snippet": "Mechanism 1: Crafting an Emancipatory Vision around a Foothold Resource",
+      "aliases": null
+    },
+    {
+      "term": "pioneering vision",
+      "definition": "a forward-looking vision that paints a promising future and is accompanied by material proof from demand-side support and social proof from high-status connections to establish supply-side legitimacy and signal credibility.",
+      "context_snippet": "Mechanism 2: Crafting a Pioneering Vision around Material and Social Proof",
+      "aliases": null
+    },
+    {
+      "term": "orchestrator vision",
+      "definition": "a vision positioning the firm as an orchestrator of ecosystem activities by leveraging demand- and supply-side synergies and incubating complementors to expand integrated offerings.",
+      "context_snippet": "Mechanism 3: Crafting an Orchestrator Vision Around Demand- and Supply-Side",
+      "aliases": [
+        "orchestrator"
+      ]
+    },
+    {
+      "term": "demand-side support",
+      "definition": "leveraging the market potential and purchasing power of a cultivated user community as material proof to persuade supply-side partners and constituents.",
+      "context_snippet": "leveraging demand-side support and taking substantive actions to establish supply- side legitimacy (Triadic)",
+      "aliases": null
+    },
+    {
+      "term": "supply-side legitimacy",
+      "definition": "legitimacy with critical supply-side constituents (e.g., component suppliers, manufacturers, complementors) established through demand-side evidence and substantive actions.",
+      "context_snippet": "Leveraging demand-side support and taking substantive actions to establish supply- side legitimacy (Triadic)",
+      "aliases": null
+    },
+    {
+      "term": "social proof",
+      "definition": "using initial high-status connections as referents to signal credibility to other prospective partners and trigger a virtuous cycle of positive evaluations.",
+      "context_snippet": "Providing social proof from initial high-status connections (Triadic)",
+      "aliases": [
+        "social proof from high-status connections"
+      ]
+    },
+    {
+      "term": "supply-side synergy",
+      "definition": "synergies from shared components, consolidated supplier relationships, and coordinated supply chains across complementary offerings, reducing cost and improving operational efficiency.",
+      "context_snippet": "combining supply- and demand-side synergies to attract more prominent partners (Triadic)",
+      "aliases": null
+    },
+    {
+      "term": "demand-side synergy",
+      "definition": "synergies linked to within-customer group one-stop shop effects and between-customer group network effects, arising from integrated and interoperable offerings that increase user value and reduce search costs.",
+      "context_snippet": "demand-side synergies arise from the increased value that customers derive from “two possible sources of increasing returns of joint consumption (within-customer group) one-stop shop effects (OE) and (between-customer group) network effects (NE)”",
+      "aliases": null
+    },
+    {
+      "term": "conservatory",
+      "definition": "the protection and support an orchestrator provides to incubated smaller firms so they can grow and thrive within the ecosystem.",
+      "context_snippet": "Through these microprocesses, a firm provides the protection necessary for these smaller firms to grow and thrive— that is, it provides a “conservatory”",
+      "aliases": null
+    },
+    {
+      "term": "second-tier complementors",
+      "definition": "firms whose offerings (e.g., MIUI) complement those of first-tier complementors (e.g., smartphone OEMs) of the focal firm (e.g., Android) in the primary ecosystem.",
+      "context_snippet": "We define “second-tier complementors” as firms whose offerings (e.g., MIUI) complement those of first-tier complementors (e.g., smartphone OEMs) of the focal firm (e.g., Android) in the primary ecosystem.",
+      "aliases": [
+        "second-tier complementor"
+      ]
+    },
+    {
+      "term": "first-tier complementor",
+      "definition": "a complementor occupying a primary position in relation to the focal firm in the ecosystem; in the case context, a smartphone OEM complementor to Android.",
+      "context_snippet": "to a “first-tier complementor.” Eventually, Xiaomi expanded into complementary product categories...",
+      "aliases": [
+        "first-tier complementors"
+      ]
+    },
+    {
+      "term": "derivative ecosystem",
+      "definition": "an ecosystem created and orchestrated by a complementor around its core offering while remaining a participant in the primary ecosystem.",
+      "context_snippet": "ultimately gained architectural control by orchestrating the creation of a derivative ecosystem.",
+      "aliases": null
+    },
+    {
+      "term": "dyadic interactions",
+      "definition": "interactions composed of only two participants, such as the firm’s direct engagement with consumers or a supplier.",
+      "context_snippet": "dyadic interactions that are “composed of only two participants”",
+      "aliases": null
+    },
+    {
+      "term": "triadic interactions",
+      "definition": "interactions that add a third element to a dyad, involving three or more participants, enabling multilateral influence and coordination.",
+      "context_snippet": "triadic interactions that add a “third element” in a dyad, involving three or more participants.",
+      "aliases": null
+    },
+    {
+      "term": "mutualistic approach",
+      "definition": "a “rising tide lifts all boats” approach whereby ecosystem members benefit from overall growth, contrasted with disruptive extraction by one actor.",
+      "context_snippet": "a mutualistic “rising tide lifts all boats” approach ... whereby all members benefit from the growth of the ecosystem.",
+      "aliases": [
+        "rising tide lifts all boats approach"
+      ]
+    }
+  ],
+  "construct_dimensions": [],
+  "relationships": [
+    {
+      "subject_term": "foothold resource",
+      "object_term": "identity movement",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "Resource-disadvantaged firms begin by centering a foothold resource to fuel an identity movement among underserved users.",
+      "supporting_quote": "resource-disadvantaged firms may begin with fueling an“identity movement” among underserved users centered around a pivotal “foothold resource.”",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "This movement serves as their entry point into an ecosystem and enables them to build a demand-side community.",
+      "origin_source": "Core_Claim",
+      "hypothesis_id": null,
+      "claim_id": "CC1",
+      "study_id": "Study1",
+      "causal_support_level": "Indeterminate",
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "line_index_range": null,
+      "supporting_theories": [
+        "demand-side view of strategy",
+        "identity movement"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "democratization of innovation",
+      "object_term": "identity movement",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "Cultivating a user community to democratize innovation fuels an identity movement among users constrained by incumbents’ rules.",
+      "supporting_quote": "By cultivating a user community to democratize innovation (microprocess 1a), a firm can fuel an identity movement (arrow a) among users who feel constrained by the rigid rules of incumbents’ offerings.",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Microprocess 1(a): Cultivating a community of users to democratize innovation",
+      "origin_source": "Core_Claim",
+      "hypothesis_id": null,
+      "claim_id": "CC1a",
+      "study_id": "Study1",
+      "causal_support_level": "Indeterminate",
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "line_index_range": null,
+      "supporting_theories": [
+        "demand-side view of strategy"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "emancipatory vision",
+      "object_term": "user community",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "Crafting an emancipatory vision around a foothold resource channels the energies of underserved users and builds a demand-side community.",
+      "supporting_quote": "Crafting an emancipatory vision around a foothold resource... Channeling the energies of underserved users",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Mechanism 1: Crafting an Emancipatory Vision around a Foothold Resource",
+      "origin_source": "Core_Claim",
+      "hypothesis_id": null,
+      "claim_id": "CC1b",
+      "study_id": "Study1",
+      "causal_support_level": "Indeterminate",
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "line_index_range": null,
+      "supporting_theories": [
+        "identity movement"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "demand-side support",
+      "object_term": "supply-side legitimacy",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "Leveraging the firm’s user base as material proof establishes supply-side legitimacy with critical partners.",
+      "supporting_quote": "leveraging demand-side support and taking substantive actions to establish supply- side legitimacy (Triadic)",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Microprocess 2(a): Leveraging demand-side support and taking substantive actions to establish supply- side legitimacy",
+      "origin_source": "Core_Claim",
+      "hypothesis_id": null,
+      "claim_id": "CC2",
+      "study_id": "Study1",
+      "causal_support_level": "Indeterminate",
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "line_index_range": null,
+      "supporting_theories": [
+        "demand-side view of strategy"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "social proof",
+      "object_term": "credibility",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "Providing social proof from initial high-status connections signals credibility to other ecosystem partners.",
+      "supporting_quote": "Providing social proof from initial high-status connections (Triadic) ... to signal credibility (arrow d).",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Microprocess 2(b): Providing social proof from initial high-status connections (Triadic)",
+      "origin_source": "Core_Claim",
+      "hypothesis_id": null,
+      "claim_id": "CC2b",
+      "study_id": "Study1",
+      "causal_support_level": "Indeterminate",
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "line_index_range": null,
+      "supporting_theories": [
+        "social proof"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "incubating a community of fledgling firms",
+      "object_term": "conservatory",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "Incubating specialized complementors provides protection and support that helps them grow and thrive in the ecosystem.",
+      "supporting_quote": "Through these microprocesses, a firm provides the protection necessary for these smaller firms to grow and thrive— that is, it provides a “conservatory”",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Microprocess 3(a): Incubating a community of fledgling firms",
+      "origin_source": "Core_Claim",
+      "hypothesis_id": null,
+      "claim_id": "CC3a",
+      "study_id": "Study1",
+      "causal_support_level": "Indeterminate",
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "line_index_range": null,
+      "supporting_theories": [
+        "ecosystem as structure"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "evoking emotions to create resonance with second-tier complementors",
+      "object_term": "resonance with second-tier complementors",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "Evoking emotions such as local pride creates resonance and a cohesive identity among second-tier complementors.",
+      "supporting_quote": "By evoking emotions to create resonance with target groups (microprocess 3b), a firm can reinforce a cohesive identity among incubated firms.",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Microprocess 3(b): Evoking emotions to create resonance with second-tier complementors",
+      "origin_source": "Core_Claim",
+      "hypothesis_id": null,
+      "claim_id": "CC3b",
+      "study_id": "Study1",
+      "causal_support_level": "Indeterminate",
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "line_index_range": null,
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "supply-side synergy",
+      "object_term": "attract more prominent partners",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "Combining supply-side synergy with demand-side synergy enables the firm to attract more prominent ecosystem partners.",
+      "supporting_quote": "3(c) Combining supply- and demand-side synergies to attract more prominent partners (Triadic)",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Mechanism 3 ... combining supply- and demand-side synergies to attract more prominent partners",
+      "origin_source": "Core_Claim",
+      "hypothesis_id": null,
+      "claim_id": "CC3c",
+      "study_id": "Study1",
+      "causal_support_level": "Indeterminate",
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "line_index_range": null,
+      "supporting_theories": [
+        "ecosystem as structure",
+        "demand-side view of strategy"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "demand-side synergy",
+      "object_term": "expand range of integrated offerings",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "Demand-side synergies allow an orchestrator to broaden integrated offerings and reach a larger user base.",
+      "supporting_quote": "The third microprocess (3c), creating supply- and demand-side synergies to form new partnerships, is triadic and allows an orchestrator to expand its range of integrated offerings (arrow f) to a larger user base.",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Mechanism 3 ... allows an orchestrator to expand its range of integrated offerings",
+      "origin_source": "Core_Claim",
+      "hypothesis_id": null,
+      "claim_id": "CC3d",
+      "study_id": "Study1",
+      "causal_support_level": "Indeterminate",
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "line_index_range": null,
+      "supporting_theories": [
+        "demand-side view of strategy"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    }
+  ],
+  "measurements": [],
+  "core_theories": [
+    {
+      "name": "resource-based view",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "CC2",
+        "CC3c",
+        "CC3d"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Scholars who adopt the resource-based view (RBV) (Wernerfelt, 1984) typically examine supply-side resources...",
+      "evidence": "Used to contrast supply-side resource emphasis with the paper’s demand-side mechanisms when motivating the core model.",
+      "section_header": "ECOSYSTEMS, CRITICAL RESOURCES, AND COMPLEMENTOR STRATEGY",
+      "confidence": 0.7
+    },
+    {
+      "name": "demand-side view of strategy",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "CC1",
+        "CC1a",
+        "CC1b",
+        "CC2",
+        "CC3c",
+        "CC3d"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "the demand-side perspective in strategy focuses on consumer-facing firm strategies that create value for customers",
+      "evidence": "Explicitly used to frame how firms create value by mobilizing users and crafting demand-side communities, central to Mechanisms 1–3.",
+      "section_header": "ECOSYSTEMS, CRITICAL RESOURCES, AND COMPLEMENTOR STRATEGY",
+      "confidence": 0.85
+    },
+    {
+      "name": "identity movement",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC1",
+        "CC1b"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "fueling an identity movement (Rao & Dutta, 2018)",
+      "evidence": "Invoked to explain Mechanism 1 whereby a foothold resource fuels an identity movement among underserved users.",
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "confidence": 0.78
+    },
+    {
+      "name": "ecosystem as structure",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC3a",
+        "CC3c"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Ecosystem as structure: An actionable construct for strategy",
+      "evidence": "Used to frame orchestration and expansion into a derivative ecosystem in Mechanism 3.",
+      "section_header": "ECOSYSTEMS, CRITICAL RESOURCES, AND COMPLEMENTOR STRATEGY",
+      "confidence": 0.65
+    },
+    {
+      "name": "social proof",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC2b"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Providing social proof from initial high-status connections",
+      "evidence": "Grounds microprocess 2(b) where high-status connections signal credibility to supply-side partners.",
+      "section_header": "HOW RESOURCE-DISADVANTAGED FIRMS ARCHITECT ECOSYSTEM LEADERSHIP",
+      "confidence": 0.7
+    }
+  ],
+  "coverage_report": {
+    "constructs": 19,
+    "relationships": 9,
+    "measurements": 0,
+    "reason": "No explicit Hypotheses/Propositions reported; extracted core claims and mechanisms from the process model and findings sections per Core_Claim origin.",
+    "errors": []
+  }
+}

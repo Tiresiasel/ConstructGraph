@@ -1,0 +1,131 @@
+{   "relevant":false,
+    "L1_summary_of_paper": "Danneels (2012) theorizes and tests how firms’ second-order competences—capabilities to create new resources—translate into profitability via a Schumpeterian competition process, contingent on competitive turbulence. He distinguishes second-order marketing competence (ability to add new market-related resources and customer competences) and second-order R&D competence (ability to add new technological resources and technological competences), arguing these dynamic capabilities generate Schumpeterian rents (rents from resource flow/renewal) rather than Ricardian rents (from existing resource stocks). Using multiple-informant surveys in 2007 for U.S. public manufacturing firms and archival ROA (2007–2009) from Compustat, he tests that competitive turbulence negatively moderates the marketing-competence → ROA link and positively moderates the R&D-competence → ROA link. Results support both: marketing competence predicts ROA under low/moderate turbulence but not under high turbulence; R&D competence predicts ROA only when turbulence is high. This links dynamic capabilities to performance through a competitive-process lens and clarifies environmental contingencies in capability value, while providing operational measures of second-order competences. ",
+    "M1_main_theories": [
+      "Dynamic capabilities theory (primary)",
+      "Schumpeterian competition/rents (primary)",
+      "Resource-based view (secondary)",
+      "Organizational learning theory (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm",
+    "M3_unit_of_analysis_element": [
+      "Other: Second-order marketing competence",
+      "Other: Second-order R&D competence",
+      "Other: Competitive turbulence"
+    ],
+    "N1_behavioral_scope": "Multiple behaviors",
+    "N2_assumption_symmetry": "Not reported",
+    "N3_assumption_common_environment": "Not reported",
+    "N4_assumption_equal_weighting": "Not reported",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Danneels, E. (2012). Second-order competences and Schumpeterian rents. Strategic Entrepreneurship Journal, 6(1), 42–58.",
+    "A2_year": 2012,
+    "A3_outlet_tier": "A",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Other: Firm-level dynamic capabilities",
+    "B2_levels": "Firm",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Resource-based view",
+      "Learning",
+      "Other: Dynamic capabilities",
+      "Other: Schumpeterian rents"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Other: Second-order marketing competence",
+      "Other: Second-order R&D competence",
+      "Other: Competitive turbulence",
+      "Revenue/profit"
+    ],
+    "C2_measurement": [
+      "Survey/perceptual",
+      "Archival behavioral"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Competitive turbulence captured as perceived rate of entry, exit, and strategy change among competitors, using a 5-item Likert scale (α≈0.72). ",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Cross-section",
+    "D2_causal_or_correlational": "Causal claim",
+    "D2a_causality_claimed": "Yes",
+    "D2b_causality_supported_by_design": "Weak",
+    "D2_identification": "Other: Lagged DV (Granger-style)",
+    "D2_causal_claim_strength": "Weak",
+    "D2_key_assumptions_addressed": [
+      "Temporal precedence via lagged dependent variable (ROA 2002)",
+      "Controls for first-order competences, firm size, age, and industries",
+      "Measurement validity (factor structure, reliability, interrater checks)"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Other: Lagged DV control",
+      "Other: Measurement validation and interrater reliability",
+      "Other: Multicollinearity checks and respondent-type controls"
+    ],
+    "D3_endogeneity": "Lags",
+    "D4_level_alignment": "None",
+    "D5_data_sources": [
+      "Compustat (financials/ROA)",
+      "Executive surveys (multiple informants)"
+    ],
+    "E1_outcomes": [
+      "Revenue/profit"
+    ],
+    "E2_effect_directions": {
+      "Revenue/profit": "Mixed"
+    },
+    "E3_mechanisms_tags": [
+      "Learning",
+      "Spillovers",
+      "Signaling",
+      "Other: Creative destruction via imitation/substitution barriers"
+    ],
+    "E4_moderators": [
+      "Competitive turbulence"
+    ],
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Perceptual capability measures may introduce measurement bias; mitigated by multiple informants, CFA, reliability, and discriminant validity checks. Causal inference limited without quasi-experimental design. ",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Second-order competences map to dynamic capabilities (resource flow) whereas first-order competences map to RBV (resource stock); competitive turbulence maps to environmental dynamism in competitive dynamics.",
+    "G2_translation_rule": "Conditionality",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "P1: The profitability impact of second-order competences is conditional on competitive turbulence.",
+      "P2: Marketing-oriented second-order competences yield rents under low/moderate turbulence; R&D-oriented second-order competences yield rents under high turbulence.",
+      "P3: Dynamic capabilities generate Schumpeterian (flow-based) rents distinct from Ricardian (stock-based) rents."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Empirical firm-level survey-archival study.",
+    "I1_mechanism_statements": [
+      "Second-order competences → creation of new resources/competences (flow) → capacity to imitate/substitute rivals’ resources → Schumpeterian rents in disequilibrium. ",
+      "Market-related resources are observable and weakly protected; thus turbulence accelerates imitation, eroding rents from marketing competence. ",
+      "Technological resources are less observable and better protected; thus turbulence amplifies the rent potential of R&D competence. "
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Competitive turbulence",
+        "role_in_link": "Negatively moderates (Marketing second-order competence → ROA); slope strong at low turbulence, null at high turbulence. "
+      },
+      {
+        "type": "moderation",
+        "variable": "Competitive turbulence",
+        "role_in_link": "Positively moderates (R&D second-order competence → ROA); slope significant only at high turbulence. "
+      }
+    ],
+    "I3_theoretical_propositions": [],
+    "J1_main_findings_summary": [
+      "Marketing second-order competence improves ROA under low/moderate turbulence but not under high turbulence. ",
+      "R&D second-order competence improves ROA only when turbulence is high. ",
+      "Findings hold controlling for first-order competences and lagged performance; multicollinearity and respondent-type checks show robustness. ",
+      "Links dynamic capabilities to Schumpeterian rents by introducing competitive turbulence as a conditioning factor. "
+    ],
+    "J2_finding_evidence_links": [
+      "Table 3 (interaction terms and controls); Table 4 (simple slopes); Figure 1a–1b (plots of moderation). "
+    ],
+    "J3_finding_strength": "Mixed evidence",
+    "K1_contribution_summary": "The paper operationalizes second-order competences and shows their profitability effects depend on competitive turbulence, thereby connecting dynamic capabilities to Schumpeterian rents and specifying distinct contingencies for marketing versus R&D exploration. "
+  }

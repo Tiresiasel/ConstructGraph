@@ -1,0 +1,385 @@
+{
+  "paper_metadata": {
+    "doi": "doi.org/10.1287/mnsc.2017.2878",
+    "title": "Collusion in Bertrand vs. Cournot Competition: A Virtual Bargaining Approach",
+    "authors": [
+      "Tigran Melkonyan",
+      "Hossam Zeitoun",
+      "Nick Chater"
+    ],
+    "publication_year": 2018,
+    "journal": "Management Science",
+    "research_type": "Conceptual",
+    "research_context": "Two-firm oligopoly models comparing Cournot (quantity) vs. Bertrand (price) competition under linear demand and zero marginal cost; introduction of virtual bargaining equilibrium to explain implicit collusion without communication.",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "virtual bargaining equilibrium",
+      "definition": "A feasible agreement that maximizes the product of differences between the players’ worst payoffs under that agreement and their status-quo (minimum feasible worst payoff) levels. Formally, a strategy profile (σ1V, σ2V) ∈ F solves arg max_(σ1F,σ2F)∈F ∏_{i=1}^2 (w_i(σiF, σ−iF) − w_i^m), where F is the set of feasible agreements and w_i^m is player i’s minimum feasible worst payoff.",
+      "context_snippet": "Formally, a virtual bargaining equilibrium (VBE) (σV1,σV2) is a feasible agreement that maximizes the product of differences between the players’ worst payoffs under this strategy pair and the worst payoffs from the status quo… (4)",
+      "aliases": [
+        "VBE",
+        "virtual bargain"
+      ]
+    },
+    {
+      "term": "feasible agreement",
+      "definition": "An agreement (σ1F, σ2F) such that neither player can improve her worst payoff by a unilateral deviation: for all i ∈ {1,2}, w_i(σiF, σ−iF) ≥ w_i(˜σi, σ−iF) for all ˜σi ∈ Σi. Equivalently, σiF ∈ R_i^F(σ−iF), i ∈ {1,2}, i.e., a Nash equilibrium with respect to worst payoffs.",
+      "context_snippet": "Formally, we will say that an agreement (σFi ,σF−i) is feasible if, for all i ∈ {1,2}, wi(σFi ,σF−i) ≥ wi(˜σi ,σF−i), for all ˜σi ∈ Σi. … Thus, our notion of a feasible agreement is equivalent to the Nash equilibrium, but in a world of “worst payoffs” rather than “payoffs.”",
+      "aliases": [
+        "feasible bargain"
+      ]
+    },
+    {
+      "term": "worst payoff",
+      "definition": "For a proposed agreement (σ1A, σ2A), player i’s worst payoff is the minimum of (i) the payoff if both honor the agreement and (ii) the payoff when the opponent best responds (non-spitefully) to σiA: w_i(σiA, σ−iA) = min{ u_i(σiA, σ−iA), sup_{σ−i ∈ R−i(σiA)} u_i(σiA, σ−i) }.",
+      "context_snippet": "Formally, the worst payoff of an agreement (σA1 ,σA2 ) is given by wi(σAi ,σA−i) = min{ ui(σAi ,σA−i), sup_{σ−i ∈ R−i(σAi )} ui(σAi ,σ−i) } (1).",
+      "aliases": [
+        "worst-case payoff",
+        "minimax payoff"
+      ]
+    },
+    {
+      "term": "Nash equilibrium",
+      "definition": "A strategy profile in which each player’s strategy is a best response to the other’s, i.e., no unilateral deviation can increase a player’s payoff. In this paper, Nash equilibria are compared with feasible agreements and virtual bargaining equilibria.",
+      "context_snippet": "The set of feasible agreements contains all Nash equilibria and often includes additional strategy profiles.",
+      "aliases": [
+        "NE"
+      ]
+    },
+    {
+      "term": "collusive outcome",
+      "definition": "The strategy profile that maximizes the joint profits of the two firms. In Cournot, it is the output combination q1* = q2* = α/(2β + 2γ). In Bertrand, it is the price vector p1* = p2* = a/(2b − 2c).",
+      "context_snippet": "The output combination that maximizes the joint of the two firms’ profits is given by q∗1 = q∗2 = α/(2β + 2γ). We will refer to the latter output combination as the collusive outcome. … The price combination that maximizes the total of the two firms’ profits is given by p∗1 = p∗2 = a/(2b − 2c).",
+      "aliases": [
+        "joint profit-maximizing outcome",
+        "full collusion"
+      ]
+    },
+    {
+      "term": "Cournot competition",
+      "definition": "A simultaneous-move duopoly game where firms choose quantities. With linear inverse demands p1 = α − β q1 − γ q2 and p2 = α − β q2 − γ q1, α > β ≥ γ > 0, zero marginal costs, and strategic substitutability (∂²πi/∂q1∂q2 = −γ < 0).",
+      "context_snippet": "Consider the following Cournot game with two firms… The inverse demand functions … p1 = α − βq1 − γq2 and p2 = α − βq2 − γq1, where α > β ≥ γ > 0… Since ∂2πi/∂q1∂q2 = −γ < 0, the firms’ outputs are strategic substitutes.",
+      "aliases": [
+        "quantity competition"
+      ]
+    },
+    {
+      "term": "Bertrand competition",
+      "definition": "A simultaneous-move duopoly game where firms choose prices. With linear direct demands q1 = a − b p1 + c p2 and q2 = a − b p2 + c p1, b ≥ c > 0, zero marginal costs, and strategic complementarity (∂²πi/∂p1∂p2 = c > 0).",
+      "context_snippet": "Consider the following Bertrand game with linear demand functions… q1 = a − b p1 + c p2 and q2 = a − b p2 + c p1, where b ≥ c > 0… Since ∂2πi/∂p1∂p2 = c > 0, the prices of the two firms are strategic complements.",
+      "aliases": [
+        "price competition"
+      ]
+    },
+    {
+      "term": "strategic complementarity",
+      "definition": "A property of players’ choices where an increase in one player’s action raises the other’s best response; in Bertrand price competition, ∂²πi/∂p1∂p2 = c > 0 implies prices are strategic complements.",
+      "context_snippet": "Since ∂2πi/∂p1∂p2 = c > 0, the prices of the two firms are strategic complements.",
+      "aliases": [
+        "strategic complements"
+      ]
+    },
+    {
+      "term": "strategic substitutability",
+      "definition": "A property of players’ choices where an increase in one player’s action lowers the other’s best response; in Cournot quantity competition, ∂²πi/∂q1∂q2 = −γ < 0 implies outputs are strategic substitutes.",
+      "context_snippet": "Since ∂2πi/∂q1∂q2 = −γ < 0, the firms’ outputs are strategic substitutes.",
+      "aliases": [
+        "strategic substitutes"
+      ]
+    },
+    {
+      "term": "Nash bargaining solution",
+      "definition": "A bargaining mechanism that selects a Pareto-efficient agreement by maximizing the product of players’ gains over their status-quo (fallback) payoffs. In this paper, it is applied over worst payoffs with status quo given by minimum feasible worst payoffs.",
+      "context_snippet": "The bargaining mechanism used to choose a virtual bargain is the Nash bargaining solution where the players’ status quo positions are their minimum feasible worst payoffs.",
+      "aliases": []
+    },
+    {
+      "term": "best response",
+      "definition": "A strategy that maximizes a player’s payoff (or worst payoff, for R_i^F) given the opponent’s strategy. In Cournot, Ri(q−i) = (α − γ q−i)/(2β). In Bertrand, Ri(p−i) = (a + c p−i)/(2b).",
+      "context_snippet": "Firm i’s best response to output q−i is given by Ri(q−i) = (α − γ q−i)/(2β). … Firm i’s best response to price p−i is given by Ri(p−i) = (a + c p−i)/(2b).",
+      "aliases": [
+        "reaction function",
+        "Ri(·)"
+      ]
+    },
+    {
+      "term": "maxmin expected utility",
+      "definition": "A preference functional under ambiguity aversion (Gilboa and Schmeidler 1989) where a decision maker evaluates options by their minimum expected utility across a set of priors. In this paper, it rationalizes players using worst payoffs when they hold completely ambiguous beliefs over whether the opponent will honor the agreement or best respond.",
+      "context_snippet": "This behavior can be rationalized using the maxmin model of ambiguity aversion (Gilboa and Schmeidler 1989)… If a player with such beliefs has maxmin expected utility preferences, then his preference functional will be given by (1).",
+      "aliases": [
+        "maxmin model of ambiguity aversion"
+      ]
+    },
+    {
+      "term": "joint profits",
+      "definition": "The sum of the two firms’ profits. The collusive outcome maximizes joint profits; relationships among NE, VBE, and collusive joint profits are compared in Proposition 2.",
+      "context_snippet": "The price combination that maximizes the total of the two firms’ profits is given by p∗ … Proposition 2. (b) The joint profits under the VB equilibrium in the Bertrand game are strictly greater than … under the NE but strictly smaller than … under the collusive outcome.",
+      "aliases": [
+        "total profits"
+      ]
+    },
+    {
+      "term": "price",
+      "definition": "The decision variable in Bertrand competition chosen simultaneously by each firm. With linear demands q1 = a − b p1 + c p2 and q2 = a − b p2 + c p1, the NE price is pN = a/(2b − c) and the collusive price is p* = a/(2b − 2c).",
+      "context_snippet": "The unique Nash equilibrium is given by pN ≡ pN1 = pN2 = a/(2b − c). The price combination that maximizes the total of the two firms’ profits is given by p∗ ≡ p∗1 = p∗2 = a/(2b − 2c).",
+      "aliases": []
+    },
+    {
+      "term": "quantity",
+      "definition": "The decision variable in Cournot competition chosen simultaneously by each firm. With inverse demands p1 = α − β q1 − γ q2 and p2 = α − β q2 − γ q1, the NE output is qN = α/(2β + γ) and the collusive output is q* = α/(2β + 2γ).",
+      "context_snippet": "The unique Nash equilibrium is given by qN1 = qN2 = α/(2β + γ). The output combination that maximizes the joint of the two firms’ profits is given by q∗1 = q∗2 = α/(2β + 2γ).",
+      "aliases": []
+    }
+  ],
+  "construct_dimensions": [],
+  "relationships": [
+    {
+      "subject_term": "virtual bargaining equilibrium",
+      "object_term": "Nash equilibrium",
+      "status": "Proposition",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "In Cournot competition, the unique virtual bargaining equilibrium coincides with the Nash equilibrium.",
+      "supporting_quote": "Proposition 1. The unique VB equilibrium of the Cournot game coincides with the NE.",
+      "boundary_conditions": "Two-firm Cournot game; linear inverse demands p1 = α − β q1 − γ q2, p2 = α − β q2 − γ q1 with α > β ≥ γ > 0; zero marginal costs; simultaneous moves; strategic substitutability.",
+      "context_snippet": "We summarize our findings in the following: Proposition 1. The unique VB equilibrium of the Cournot game coincides with the NE.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "Proposition 1",
+      "claim_id": "Proposition 1",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "3. Cournot Competition",
+      "line_index_range": null,
+      "supporting_theories": [
+        "maxmin expected utility",
+        "Nash bargaining solution"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "virtual bargaining equilibrium price",
+      "object_term": "Nash equilibrium price",
+      "status": "Proposition",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "In Bertrand competition, the unique virtual bargaining equilibrium price is strictly greater than the Nash equilibrium price (pN < pV).",
+      "supporting_quote": "Proposition 2. (a) The unique VB equilibrium price of the Bertrand game is strictly greater than the NE price and strictly smaller than the price vector that maximizes the joint profits… pN < pV < p∗.",
+      "boundary_conditions": "Two-firm Bertrand game; linear direct demands q1 = a − b p1 + c p2, q2 = a − b p2 + c p1 with b ≥ c > 0; zero marginal costs; simultaneous price setting; strategic complementarity.",
+      "replication_outcome": null,
+      "context_snippet": "Virtual bargaining allows the two players to partially collude by raising the price above the Nash level.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "Proposition 2(a)",
+      "claim_id": "Proposition 2(a)",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "4. Bertrand Competition",
+      "line_index_range": null,
+      "supporting_theories": [
+        "maxmin expected utility",
+        "Nash bargaining solution"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "virtual bargaining equilibrium price",
+      "object_term": "joint profit-maximizing price",
+      "status": "Proposition",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "In Bertrand competition, the unique virtual bargaining equilibrium price is strictly smaller than the joint profit-maximizing (collusive) price (pV < p∗).",
+      "supporting_quote": "Proposition 2. (a) … pN < pV < p∗.",
+      "boundary_conditions": "Two-firm Bertrand game; linear direct demands; b ≥ c > 0; zero marginal costs; simultaneous price setting.",
+      "context_snippet": "Thus, virtual bargaining leads to partial collusion.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "Proposition 2(a)",
+      "claim_id": "Proposition 2(a)-2",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "4. Bertrand Competition",
+      "line_index_range": null,
+      "supporting_theories": [
+        "maxmin expected utility",
+        "Nash bargaining solution"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "joint profits under virtual bargaining equilibrium",
+      "object_term": "joint profits under Nash equilibrium",
+      "status": "Proposition",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "In Bertrand competition, joint profits under the virtual bargaining equilibrium are strictly greater than under the Nash equilibrium.",
+      "supporting_quote": "Proposition 2. (b) The joint profits under the VB equilibrium in the Bertrand game are strictly greater than the joint profits of the two firms under the NE but strictly smaller than the joint profits under the collusive outcome.",
+      "boundary_conditions": "Two-firm Bertrand game; linear direct demands; b ≥ c > 0; zero marginal costs; simultaneous price setting.",
+      "context_snippet": "… strictly greater than the joint profits of the two firms under the NE …",
+      "origin_source": "Proposition",
+      "hypothesis_id": "Proposition 2(b)",
+      "claim_id": "Proposition 2(b)-1",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "4. Bertrand Competition",
+      "line_index_range": null,
+      "supporting_theories": [
+        "maxmin expected utility",
+        "Nash bargaining solution"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "joint profits under virtual bargaining equilibrium",
+      "object_term": "joint profits under collusive outcome",
+      "status": "Proposition",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "In Bertrand competition, joint profits under the virtual bargaining equilibrium are strictly smaller than under the collusive (joint profit-maximizing) outcome.",
+      "supporting_quote": "Proposition 2. (b) … but strictly smaller than the joint profits under the collusive outcome.",
+      "boundary_conditions": "Two-firm Bertrand game; linear direct demands; b ≥ c > 0; zero marginal costs; simultaneous price setting.",
+      "context_snippet": "… strictly smaller than the joint profits under the collusive outcome.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "Proposition 2(b)",
+      "claim_id": "Proposition 2(b)-2",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "4. Bertrand Competition",
+      "line_index_range": null,
+      "supporting_theories": [
+        "maxmin expected utility",
+        "Nash bargaining solution"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "feasible agreement set",
+      "object_term": "Nash equilibrium",
+      "status": "Hypothesis",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "The set of feasible agreements contains all Nash equilibria and may include additional strategy profiles.",
+      "supporting_quote": "The set of feasible agreements contains all Nash equilibria and often includes additional strategy profiles.",
+      "boundary_conditions": "General two-player normal-form games under the virtual bargaining framework; non-spiteful best responses; worst payoffs as defined in (1).",
+      "context_snippet": "The assumption of non-spitefulness ensures that the set of feasible agreements includes all Nash equilibria.",
+      "origin_source": "Hypothesis_Development",
+      "hypothesis_id": null,
+      "claim_id": "CC1",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "2. Virtual Bargaining Equilibrium",
+      "line_index_range": null,
+      "supporting_theories": [
+        "maxmin expected utility",
+        "Nash bargaining solution"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "virtual bargaining equilibrium",
+      "object_term": "Nash equilibrium",
+      "status": "Hypothesis",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "Any virtual bargaining equilibrium is Pareto-undominated by any Nash equilibrium (with respect to worst payoffs) among feasible agreements.",
+      "supporting_quote": "Moreover, any virtual bargaining equilibrium is Pareto-undominated by any Nash equilibrium.",
+      "boundary_conditions": "Virtual bargaining framework; Pareto comparisons with respect to worst payoffs; feasible agreement set nonempty under standard regularity.",
+      "context_snippet": "By the definition of the Nash bargaining solution, any virtual bargaining equilibrium will be Pareto-optimal (with respect to the players’ worst payoffs)… Moreover, any virtual bargaining equilibrium is Pareto-undominated by any Nash equilibrium.",
+      "origin_source": "Hypothesis_Development",
+      "hypothesis_id": null,
+      "claim_id": "CC2",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "2. Virtual Bargaining Equilibrium",
+      "line_index_range": null,
+      "supporting_theories": [
+        "Nash bargaining solution"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    }
+  ],
+  "measurements": [],
+  "core_theories": [
+    {
+      "name": "maxmin expected utility",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "Proposition 1",
+        "Proposition 2(a)",
+        "Proposition 2(b)",
+        "CC1",
+        "CC2"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "This behavior can be rationalized using the maxmin model of ambiguity aversion (Gilboa and Schmeidler 1989).",
+      "evidence": "Players entertain ambiguous beliefs over whether opponents will honor the agreement or best respond; the worst payoff functional (1) follows from maxmin preferences.",
+      "section_header": "2. Virtual Bargaining Equilibrium",
+      "confidence": 0.9
+    },
+    {
+      "name": "Nash bargaining solution",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "Proposition 1",
+        "Proposition 2(a)",
+        "Proposition 2(b)",
+        "CC2"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "The bargaining mechanism used to choose a virtual bargain is the Nash bargaining solution…",
+      "evidence": "Virtual bargaining equilibrium is selected by maximizing the Nash product over worst payoffs above status-quo worst payoffs.",
+      "section_header": "2. Virtual Bargaining Equilibrium",
+      "confidence": 0.86
+    },
+    {
+      "name": "strategic substitutes and complements",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "Proposition 1",
+        "Proposition 2(a)"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Since ∂2πi/∂q1∂q2 = −γ < 0, the firms’ outputs are strategic substitutes… Since ∂2πi/∂p1∂p2 = c > 0, the prices of the two firms are strategic complements.",
+      "evidence": "The sign of cross-partials underpins the different comparative statics that make VB coincide with NE in Cournot but exceed NE in Bertrand.",
+      "section_header": "3. Cournot Competition; 4. Bertrand Competition",
+      "confidence": 0.78
+    }
+  ],
+  "coverage_report": {
+    "constructs": 15,
+    "relationships": 7,
+    "measurements": 0,
+    "reason": "Conceptual/theoretical paper presenting propositions and model results; no empirical measurements or instruments reported.",
+    "errors": []
+  }
+}

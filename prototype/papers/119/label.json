@@ -1,0 +1,180 @@
+{   "relevant": false,
+    "L": {
+      "L1_summary_of_paper": "This paper investigates the spillover effects on non-accused firms when an industry peer is accused of financial misconduct. It aims to reconcile two conflicting theoretical perspectives: the 'stigma effect,' which predicts negative consequences for all industry peers due to generalized perceptions of risk, and the 'competition effect,' which predicts positive outcomes for rivals that can gain from the accused firm's weakened competitive position. The core theoretical argument is that both effects coexist, and their net impact is contingent on the degree of product market overlap between the non-accused firm and its accused peer. The study hypothesizes a U-shaped relationship: at low to moderate levels of overlap, the negative stigma effect dominates, but at very high levels of overlap, the positive competition effect begins to counterbalance and eventually outweighs the stigma. This relationship is further moderated by two key factors: the granularity of the market classification system used by observers, and the sophistication of investors. A more fine-grained classification and higher investor sophistication are predicted to make the competition effect more salient relative to the stigma effect. Using an event study methodology on data from the U.S. software industry (1991-2001), the research finds strong support for its hypotheses. The results show the predicted U-shaped effect of market overlap on the stock market returns of non-accused firms. Furthermore, this U-shape 'tilts' to favor the competition effect when a more fine-grained product classification is used. Finally, the study shows that more sophisticated investors (hedge funds and mutual funds) are more likely than their less sophisticated counterparts to increase their shareholdings in the accused firm's close competitors, especially as market overlap increases. The paper's main contribution is to provide a unified framework that adjudicates between the stigma and competition perspectives, explaining the significant heterogeneity in spillover effects by highlighting the dual role of market overlap as both a basis for cognitive generalization (stigma) and a landscape for competitive interaction (competition)."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Stigma Theory / Stigma by Association",
+          "tag": "primary"
+        },
+        {
+          "theory": "Competitive Dynamics",
+          "tag": "primary"
+        },
+        {
+          "theory": "Categorization Theory",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": "Other: <specify>: Stock market valuation spillover; Investor shareholding change"
+    },
+    "N": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "No",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A": {
+      "A1_citation": "Naumovska, I., & Lavie, D. (2021). When an Industry Peer Is Accused of Financial Misconduct: Stigma versus Competition Effects on Non-accused Firms. Administrative Science Quarterly, 66(4), 1130-1172.",
+      "A2_year": 2021,
+      "A3_outlet_tier": "ASQ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Categorization",
+        "Signaling",
+        "Other: <specify>: Spillovers"
+      ],
+      "B4_contribution_type": "Adjudication"
+    },
+    "C": {
+      "C1_constructs": [
+        "Similarity/overlap",
+        "Category distance",
+        "Status"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "None",
+      "C3_metric_detail": "Dependent variables: 1) Cumulative Abnormal Return (CAR) calculated over a three-day [-1, +1] event window around the misconduct announcement. 2) Change in quarterly percentage shareholding by institutional investors. Independent variables: 1) Product Market Overlap, measured at three levels of granularity (coarse, intermediate, fine-grained) based on a detailed, proprietary classification of software products. 2) Investor Sophistication, a dummy variable where hedge funds and mutual funds are coded as sophisticated.",
+      "C4_shock_type": "Reputation",
+      "C4_shock_design": "The shock is the first public announcement of an SEC enforcement action against an industry peer for financial misrepresentation ('cooking the books'). This represents an exogenous negative reputational and informational shock for the industry."
+    },
+    "D": {
+      "D1_design": "Event study",
+      "D2_causal_or_correlational": "Causal claim",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": "Shock-based",
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": [
+        "The timing of the misconduct announcement is exogenous to the short-term performance of non-accused firms.",
+        "The market model accurately captures expected returns.",
+        "The relationship between market overlap and CAR is non-linear (tested via quadratic term)."
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Cluster/serial corr fixes",
+        "Other: <specify>: Extensive set of control variables for firm, peer, and dyadic similarity characteristics to rule out alternative explanations."
+      ],
+      "D3_endogeneity": "Exogenous shock",
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "SEC enforcement action database (Karpoff et al., 2017)",
+        "Compustat",
+        "CRSP",
+        "Thomson Reuters 13F SEC filings",
+        "LexisNexis",
+        "Thomson's Dialog New Product Announcements",
+        "SEC EDGAR database",
+        "Gale Business & Company Resource Center",
+        "BoardEx",
+        "Institutional Shareholder Services (ISS)",
+        "SDC Platinum",
+        "Factiva"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Reputation",
+        "Other: <specify>: Investor shareholding"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Reputation",
+          "direction": "U"
+        },
+        {
+          "outcome": "Investor shareholding",
+          "direction": "Mixed"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Legitimacy/Status",
+        "Category audience",
+        "Spillovers",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "Product market classification granularity",
+        "Investor sophistication"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "Primary risks include potential omitted variable bias, as unobserved firm characteristics could correlate with both market position and investor reactions. External validity is a consideration, as findings are based on the US software industry in the 1990s and may not generalize to other industries, time periods, or institutional contexts.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The central construct, 'product market overlap,' serves a dual purpose, mapping onto both 'cognitive similarity' (from categorization/stigma literature) and 'competitive intensity' (from competitive dynamics literature). This dual mapping is the key to the paper's integrative contribution.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The valence of spillover from a negative event depends on the target firm's structural position relative to the event firm, where structural position simultaneously informs cognitive categorization and competitive interaction.",
+        "The observability of positive competitive spillovers is conditional on the granularity of the analytical lens applied by the audience.",
+        "Audience heterogeneity (e.g., sophistication) systematically shapes the net outcome of conflicting spillover effects by differentially weighting cognitive versus competitive signals."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "Not applicable"
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "The stigma effect mechanism: Accusation against a peer triggers stakeholder perceptions that similar firms (based on product overlap) may also engage in misconduct, leading to generalized negative evaluations and withdrawal of support. This follows a 'satisficing' logic.",
+        "The competition effect mechanism: Misconduct revelation weakens the accused peer's competitive position, creating opportunities for close rivals (high product overlap) to capture market share, customers, and other resources. This follows a 'maximizing' logic.",
+        "The investor sophistication mechanism: More sophisticated investors use more fine-grained market classifications, enabling them to better discern true competitors and anticipate the competition effect, while being less susceptible to broad generalizations that drive the stigma effect."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Product market classification granularity",
+          "role_in_link": "Moderates the U-shaped relationship between product market overlap and stock market valuation. A more fine-grained classification strengthens the competition effect relative to the stigma effect."
+        },
+        {
+          "type": "moderation",
+          "variable": "Investor sophistication",
+          "role_in_link": "Moderates the relationship between product market overlap and investor shareholding changes. For more sophisticated investors, the positive effect of overlap on shareholding increase is stronger."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "There is a significant U-shaped relationship between product market overlap and the stock market valuation (CAR) of non-accused firms following a peer's misconduct accusation.",
+        "At low to moderate overlap, the effect is negative (stigma dominates), while at high overlap, the effect becomes positive (competition dominates).",
+        "Using a more fine-grained market classification to measure overlap makes the positive competition effect stronger relative to the negative stigma effect.",
+        "More sophisticated investors (hedge funds, mutual funds) increase their shareholdings in non-accused firms more than less sophisticated investors do.",
+        "This tendency for sophisticated investors to increase shareholdings is stronger for non-accused firms that have higher product market overlap with the accused peer."
+      ],
+      "J2_finding_evidence_links": [
+        "Hypothesis 1 (U-shape): Table 1, Model 3; Figure 3.",
+        "Hypothesis 2 (Granularity): Table 1, Models 4-7; Figure 3.",
+        "Hypothesis 3 (Investor Sophistication): Table 2, Models 3-9; Figure 4."
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper's primary contribution is reconciling the conflicting 'stigma' and 'competition' effects of peer misconduct into a single, cohesive framework. It demonstrates that these are not mutually exclusive outcomes but co-occurring processes whose net effect is systematically determined by the degree of product market overlap. By showing how this relationship is further shaped by the cognitive lenses of observers (classification granularity and investor sophistication), the study advances our understanding of market categorization, competitive dynamics, and the micro-foundations of heterogeneous market reactions to corporate misconduct."
+    }
+  }

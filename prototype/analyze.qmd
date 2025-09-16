@@ -1,0 +1,34 @@
+In this file, I am going to iterate all the pdf under the `papers` and systemically extract the formatted information of each paper.
+
+```{python}
+import os
+import PyPDF2
+
+
+pdf_dir = "/Users/tiresias/Documents/PhD/project3/papers"
+pdf_files = []
+from pathlib import Path
+
+# Use pathlib's rglob to recursively find all PDF files in pdf_dir and all its subfolders (including nested subfolders)
+from pathlib import Path
+
+# This will find all PDFs in pdf_dir and all levels of subfolders
+# Use absolute path to ensure correct directory resolution and check if directory exists
+pdf_dir_path = Path(pdf_dir).resolve()
+if not pdf_dir_path.exists():
+    print(f"Directory {pdf_dir_path} does not exist.")
+    pdf_files = []
+else:
+    # List all PDF files recursively under pdf_dir and its subfolders
+    pdf_files = [str(p) for p in pdf_dir_path.rglob('*.pdf') if p.is_file()]
+    print(f"Found {len(pdf_files)} PDF files under {pdf_dir_path}")
+
+def extract_information(pdf_path):
+    with open(pdf_path, 'rb') as file:
+        reader = PyPDF2.PdfReader(file)
+        num_pages = len(reader.pages)
+        print(f"Number of pages: {num_pages}")
+
+
+
+```

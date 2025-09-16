@@ -1,0 +1,399 @@
+{
+  "paper_metadata": {
+    "doi": null,
+    "title": "Leveraging the Customer Base: Creating Competitive Advantage Through Knowledge Management",
+    "authors": [
+      "Elie Ofek",
+      "Miklos Sarvary"
+    ],
+    "publication_year": 2001,
+    "journal": "Management Science",
+    "research_type": "Conceptual",
+    "research_context": "professional services industry (consulting, accounting, advertising)",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "knowledge management",
+      "definition": "KM is the set of business processes that capture and provide access to this collective experience.  In economic terms, KM represents the “production technology” for such firms whose core product is business knowledge itself.",
+      "context_snippet": "KM is the set of business processes that capture and provide access to this collective experience. In economic terms, KM represents the “production technology” for such firms whose core product is business knowledge itself.",
+      "aliases": [
+        "KM"
+      ]
+    },
+    {
+      "term": "supply-side economies",
+      "definition": "KM processes aimed primarily at cost reduction (i.e., supply-side economies of scale) make it easier for professionals to locate previously generated solutions and adapt these to their client's problem.  This can be achieved, for example, by developing an electronic document system that extracts and stores critical features of existing business solutions in a way that allows fast and effective use by other teams; efficiency can also be achieved by facilitating communication between people within the firm so that a consultant spends less time and effort tracking down relevant colleagues.",
+      "context_snippet": "KM processes aimed primarily at cost reduction (i.e., supply-side economies of scale), make it easier for professionals to locate previously generated solutions and adapt these to their client's problem.  This can be achieved, for example, by developing an electronic document system that extracts and stores critical features of existing business solutions in a way that allows fast and effective use by other teams.",
+      "aliases": [
+        "cost reduction",
+        "learning by doing effects"
+      ]
+    },
+    {
+      "term": "demand-side economies",
+      "definition": "A KM system can generate demand-side economies of scale through the creation of new, deeper knowledge that enhances the quality of the services/products offered by the firm.  This is achieved by a better understanding of the business environment through the analysis of consultants’ experiences, which in turn can lead to qualitatively better business solutions and more favorable evaluations of the firm by its clients (i.e., indirect network externalities).",
+      "context_snippet": "A KM system can also generate demand-side economies of scale through the creation of new, deeper knowledge that enhances the quality of the services/products offered by the firm.  This is achieved by a better understanding of the business environment through the analysis of consultants’ experiences, which in turn can lead to qualitatively better business solutions and more favorable evaluations of the firm by its clients, in other words, network externalities.",
+      "aliases": [
+        "quality improvement",
+        "network-based economies"
+      ]
+    },
+    {
+      "term": "customer base leverage",
+      "definition": "The marginal value of each unit of output is represented by $$\\alpha$$ (where $$0\\le \\alpha<1$$).  In essence, $$\\alpha$$ measures the effectiveness of the KM system or the marginal benefit of the customer base; economies of scale mean that the marginal benefit rises with the size of the customer base.",
+      "context_snippet": "we assume that the marginal value of each unit of output is alpha, where 0 ≤ alpha < 1. In essence, alpha measures the effectiveness of the KM system or the marginal benefit of the customer base.",
+      "aliases": [
+        "alpha",
+        "ability to leverage the customer base"
+      ]
+    },
+    {
+      "term": "KM design emphasis",
+      "definition": "Each firm can choose to allocate any portion $$\\beta_i$$ (with $$0\\le \\beta_L \\le \\beta_i \\le \\beta_H \\le 1$$) of the \"potential gain\" (the marginal benefit per unit of output, $$\\alpha$$) to improve the quality of its service (demand-side).  The remaining portion, $$(1-\\beta_i)\\alpha y$$, is used to reduce the firm's variable cost (supply-side).",
+      "context_snippet": "each firm can choose to allocate any portion beta_i (0 ≤ beta_L ≤ beta_i ≤ beta_H ≤ 1) of this \"potential gain\" to improve the quality of its service, while (1−beta_i) alpha y is used to reduce the firm's variable cost.",
+      "aliases": [
+        "beta",
+        "design emphasis",
+        "allocation between quality and cost"
+      ]
+    },
+    {
+      "term": "monopolist",
+      "definition": null,
+      "context_snippet": "To set a benchmark, we first look at a monopolist.",
+      "aliases": [
+        "monopoly"
+      ]
+    },
+    {
+      "term": "competition",
+      "definition": null,
+      "context_snippet": "In a competitive setting, when the ability to exploit economies of scale is high enough, firms are better off shifting emphasis to systems generating higher quality service to customers rather than focusing on cost reduction.",
+      "aliases": [
+        "duopoly",
+        "competitive setting"
+      ]
+    },
+    {
+      "term": "quality advantage",
+      "definition": "A firm-specific parameter $$\\gamma$$ that reflects, for example, the inherent advantage of a firm in generating business solutions without KM: the higher quality of its professionals or its brand equity.  Numerically it enters demand as an additive quality parameter for one firm.",
+      "context_snippet": "Here, 1−c>\\gamma>0 is a firm-specific parameter that reflects, for example, the inherent advantage of Firm 1 in generating business solutions without KM: the higher quality of its professionals or its brand equity.",
+      "aliases": [
+        "gamma",
+        "firm quality difference"
+      ]
+    },
+    {
+      "term": "installed knowledge",
+      "definition": "The experience acquired in the past that does not get dissipated; it is available to the firm and can be leveraged using the KM system.  The paper refers to this exogenous past customer base as \"installed knowledge.\"",
+      "context_snippet": "This simple formulation captures the idea that the experience acquired in the past does not get dissipated; it is available to the firm and can also be leveraged using the KM system. For this reason, we will refer to it as “installed knowledge.”",
+      "aliases": [
+        "installed base",
+        "past customer base"
+      ]
+    },
+    {
+      "term": "firm output",
+      "definition": "Firm i's output is denoted by $$y_i$$ (or Period 1 output by $$x_i$$).  In the baseline without KM the inverse linear demand is $$p=1-y_1-y_2$$, where $$y_i$$ is the output of firm i.",
+      "context_snippet": "In the absence of KM, firms face a standard linear (inverse) demand, p = 1−y1−y2, where yi is the output of firm i.",
+      "aliases": [
+        "output",
+        "quantity"
+      ]
+    },
+    {
+      "term": "relative output",
+      "definition": null,
+      "context_snippet": "The paper analyzes how initial differences in customer base (installed knowledge) affect subsequent relative outputs of firms.",
+      "aliases": [
+        "output difference"
+      ]
+    },
+    {
+      "term": "equilibrium outcome",
+      "definition": null,
+      "context_snippet": "The model characterizes symmetric and asymmetric equilibria (including winner-take-all outcomes) depending on parameter values such as $$\\alpha$$ and installed knowledge.",
+      "aliases": [
+        "equilibrium",
+        "market outcome"
+      ]
+    },
+    {
+      "term": "network externalities",
+      "definition": "Consumers benefit from other consumers joining a particular firm's customer base.  In the professional services context, if firms integrate client assignments and generate broader insights, a larger customer base represents deeper understanding and hence better business solutions; this is an indirect network externality because clients benefit only through the firm's knowledge-creating activity.",
+      "context_snippet": "The basic idea is that consumers benefit from other consumers joining a particular firm's customer base.  In the context of the professional services industry, if firms choose to improve their product quality through the integration of client assignments, they essentially generate indirect network externalities.",
+      "aliases": [
+        "network effects"
+      ]
+    },
+    {
+      "term": "learning by doing",
+      "definition": "Supply-side increasing returns: larger output or production can lead to smaller marginal costs (learning by doing), which can result in long-run competitive advantage through cost reductions.",
+      "context_snippet": "Relevant to our context, increasing returns due to demand-side effects have largely been covered by the literature on network externalities. The second research area, which addresses supply-side economies of scale, is the literature on learning by doing (e.g., Spence 1981, Tirole 1988). Here the idea is that larger output or production can lead to smaller marginal costs, which again can result in long-run competitive advantage.",
+      "aliases": [
+        "learning",
+        "cost-reduction learning"
+      ]
+    },
+    {
+      "term": "increasing returns to scale",
+      "definition": "The production technology exhibits increasing returns to scale whereby the firm benefits from having a larger customer base; this can take the form of supply-side cost reductions or demand-side network externalities depending on KM design.",
+      "context_snippet": "As this knowledge is generated through customer contacts or sales (i.e., it directly results from the firm's past and present experience), the 'KM technology' exhibits increasing returns to scale, whereby the firm benefits from having a larger customer base.",
+      "aliases": [
+        "increasing returns"
+      ]
+    }
+  ],
+  "construct_dimensions": [
+    {
+      "parent_construct": "knowledge management",
+      "dimension_construct": "supply-side economies"
+    },
+    {
+      "parent_construct": "knowledge management",
+      "dimension_construct": "demand-side economies"
+    },
+    {
+      "parent_construct": "demand-side economies",
+      "dimension_construct": "network externalities"
+    }
+  ],
+  "relationships": [
+    {
+      "subject_term": "monopolist",
+      "object_term": "KM design emphasis",
+      "status": "Hypothesized",
+      "evidence_type": "Qualitative",
+      "effect_direction": null,
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Proposition 1. The monopolist maximizes profits by setting $$\\beta=\\beta_L$$.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "P1",
+      "claim_id": "P1",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "None",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "3.1. ChoosingtheDesignoftheKMSystem",
+      "line_index_range": null,
+      "supporting_theories": [
+        "learning by doing",
+        "increasing returns to scale"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "customer base leverage",
+      "object_term": "KM design emphasis",
+      "status": "Hypothesized",
+      "evidence_type": "Qualitative",
+      "effect_direction": null,
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": "If $$\\alpha<1/(2-\\beta_L)$$ then equilibrium is $$(\\beta_L,\\beta_L)$$; if $$\\alpha>1/(2-\\beta_L)$$ then equilibrium has $$\\beta>\\beta_L$$; if $$\\alpha>1/(2-\\beta_H)$$ unique equilibrium is $$(\\beta_H,\\beta_H)$$.",
+      "replication_outcome": null,
+      "context_snippet": "Proposition 2. If $$\\alpha<1/(2-\\beta_L)$$, the unique equilibrium is $$(\\beta_L,\\beta_L)$$. If $$\\alpha>1/(2-\\beta_L)$$, then in any equilibrium $$\\beta_1=\\beta_2=\\beta>\\beta_L$$. In particular, if $$\\alpha>1/(2-\\beta_H)$$, then the unique equilibrium is $$(\\beta_H,\\beta_H)$$.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "P2",
+      "claim_id": "P2",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "None",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "3.1. ChoosingtheDesignoftheKMSystem",
+      "line_index_range": null,
+      "supporting_theories": [
+        "network externalities",
+        "learning by doing",
+        "increasing returns to scale"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "quality advantage",
+      "object_term": "KM design emphasis",
+      "status": "Hypothesized",
+      "evidence_type": "Qualitative",
+      "effect_direction": null,
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": "Outcomes depend on interaction of $$\\alpha$$ and $$\\gamma$$; small $$\\gamma$$ leads to symmetric behavior similar to Prop.2; moderate/large $$\\gamma$$ can lead to asymmetric equilibrium and drive the low-quality firm out of market.",
+      "replication_outcome": null,
+      "context_snippet": "Proposition 3. If $$\\alpha<\\alpha_1=\\frac{1-\\gamma}{1-c}/(2-\\beta_L)$$, then the unique equilibrium is $$(\\beta_L,\\beta_L)$$. If $$\\alpha_1<\\alpha<\\alpha_2$$ then \\(\\beta_1=\\beta_L\\) and Firm 2 is driven out of the market. If $$\\alpha_2<\\alpha<\\alpha_3$$ then there is no equilibrium in pure strategies. Finally, if $$\\alpha>\\alpha_3$$ then $$(\\beta_H,\\beta_H)$$ is unique equilibrium.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "P3",
+      "claim_id": "P3",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "None",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "3.1. ChoosingtheDesignoftheKMSystem",
+      "line_index_range": null,
+      "supporting_theories": [
+        "increasing returns to scale",
+        "learning by doing",
+        "network externalities"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "installed knowledge",
+      "object_term": "relative output",
+      "status": "Hypothesized",
+      "evidence_type": "Qualitative",
+      "effect_direction": null,
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Proposition 4. The relationship between the output of the two firms when they both produce positive output in equilibrium is given by $$y^*_1 - y^*_2 = \\frac{\\lambda \\alpha (x_1 - x_2)}{1-\\alpha}.$$",
+      "origin_source": "Proposition",
+      "hypothesis_id": "P4",
+      "claim_id": "P4",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "None",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "3.2. Competition with KM Based on NetworkExternalities",
+      "line_index_range": null,
+      "supporting_theories": [
+        "network externalities",
+        "increasing returns to scale"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "customer base leverage",
+      "object_term": "equilibrium outcome",
+      "status": "Hypothesized",
+      "evidence_type": "Qualitative",
+      "effect_direction": null,
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": "Three possible equilibrium regimes depending on $$\\alpha$$: symmetric equilibrium for small $$\\alpha$$; asymmetric equilibria (one firm drops out in Period 2) for intermediate $$\\alpha$$; winner-take-all (early shakeout) for sufficiently large $$\\alpha$$ and $$\\lambda$$.",
+      "replication_outcome": null,
+      "context_snippet": "Proposition 5. In a duopoly, there are three possible equilibria depending on the value of $$\\alpha$$: for small $$\\alpha$$ a symmetric equilibrium with equal Period 1 and Period 2 outputs; for intermediate $$\\alpha$$ an asymmetric equilibrium where one firm is active only in Period 1 while the other remains active in Period 2; for sufficiently high $$\\alpha$$ and $$\\lambda$$ a winner-take-all outcome where one firm captures both periods.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "P5",
+      "claim_id": "P5",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "None",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "3.2. Competition with KM Based on NetworkExternalities",
+      "line_index_range": null,
+      "supporting_theories": [
+        "network externalities",
+        "increasing returns to scale"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    }
+  ],
+  "measurements": [],
+  "core_theories": [
+    {
+      "name": "network externalities",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "P2",
+        "P4",
+        "P5"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "The basic idea is that consumers benefit from other consumers joining a particular firm's customer base.",
+      "evidence": null,
+      "section_header": "2. RelatedLiterature",
+      "confidence": null
+    },
+    {
+      "name": "learning by doing",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "The second research area, which addresses supply-side economies of scale, is the literature on learning by doing.",
+      "evidence": null,
+      "section_header": "2. RelatedLiterature",
+      "confidence": null
+    },
+    {
+      "name": "increasing returns to scale",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "As this knowledge is generated through customer contacts or sales ... the 'KM technology' exhibits increasing returns to scale, whereby the firm benefits from having a larger customer base.",
+      "evidence": null,
+      "section_header": "1. Introduction",
+      "confidence": null
+    },
+    {
+      "name": "knowledge broker perspective",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "P2",
+        "P4"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Hargadon and Sutton ... see the professional service firm as a 'knowledge broker' between clients.",
+      "evidence": null,
+      "section_header": "2. RelatedLiterature",
+      "confidence": null
+    }
+  ],
+  "coverage_report": {
+    "constructs": 16,
+    "relationships": 5,
+    "measurements": 0,
+    "reason": "This paper is conceptual and presents formal propositions derived from a theoretical model. No empirical tests or operational measurements are provided for the propositions in this paper.",
+    "errors": [
+      "hypothesis_without_empirical_result: P1,P2,P3,P4,P5"
+    ]
+  }
+}

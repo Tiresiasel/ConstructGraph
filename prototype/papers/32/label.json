@@ -1,0 +1,161 @@
+{   "relevant": true,
+    "L1_summary_of_paper": "This longitudinal multi-case study examines how three Italian lead firms in the packaging machinery industry (Ima, Corazza, Wrapmatic) develop and leverage “relational capability”—the ability to coordinate complementary competencies and integrate knowledge across firm boundaries—as a distinctive organizational capability. Framed by the resource-based view (RBV), dynamic capabilities, and the knowledge-based view (KBV), and set against the limits of transaction cost economics (TCE), the paper tracks how make–buy configurations, supplier tiers, and governance practices evolved between 1988 and 1995 at the product level. Using interviews and archival/company records, the authors map which subassemblies were designed/made in-house, co-designed/co-made, or outsourced, and identify decision determinants (supplier distinctive capability, complementarity, asset specificity, scale economies). Findings show progressive deintegration of manufacturing, concentration on strategic in-house competencies (testing, format customization, a few highly specific parts), deliberate pruning and professionalization of first-tier suppliers (proximate, long-duration, trust-based), and institutionalized supplier development (evaluations, seminars, early co-design). The study argues that relational capability accelerates knowledge access/transfer, enhances innovation, lowers coordination/production costs, and can be deliberately designed alongside evolving core competencies. Contributions include conceptualizing relational capability as a dynamic capability embedded in networks, extending RBV/KBV beyond the single firm, and advancing propositions on the cost/innovation benefits of repeated, trust-based supplier ties.",
+    "M1_main_theories": [
+      "Resource-based view (primary)",
+      "Dynamic capabilities (primary)",
+      "Knowledge-based view (primary)",
+      "Transaction cost economics (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Network",
+    "M3_unit_of_analysis_element": [
+      "Other: Relational capability (knowledge integration across firm boundaries)",
+      "Other: Make–buy boundary shifts",
+      "Other: Supplier network design/governance",
+      "Other: Co-design and co-makership practices"
+    ],
+    "N1_behavioral_scope": "Multiple behaviors (Outsourcing/co-design)",
+    "N2_assumption_symmetry": "Not reported",
+    "N3_assumption_common_environment": "Yes",
+    "N4_assumption_equal_weighting": "No",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Lorenzoni, G., & Lipparini, A. (1999). The leveraging of interfirm relationships as a distinctive organizational capability: A longitudinal study. Strategic Management Journal, 20(4), 317–338.",
+    "A2_year": "1999",
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Empirical-Qual",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Network",
+    "B2_levels": [
+      "Firm",
+      "Ego-network",
+      "Product"
+    ],
+    "B3_theoretical_lens_tags": [
+      "Resource-based view",
+      "Learning",
+      "Embeddedness",
+      "Other: Dynamic capabilities",
+      "Other: Knowledge-based view"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Tie type",
+      "Community",
+      "Other: Relational capability",
+      "Other: Knowledge integration",
+      "Other: Make–buy boundary configuration",
+      "Other: Supplier proximity and relationship duration"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Network-derived",
+      "Other: Semi-structured interviews and internal records"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Technological change, buyer procurement shifts, and supplier reliability are discussed as contextual uncertainty; no quantitative uncertainty index is constructed.",
+    "C4_shock_type": [
+      "Market disruption",
+      "Innovation/tech"
+    ],
+    "C4_shock_design": "Industry-level technological advancements and buyer-priority shifts are treated descriptively as events prompting network restructuring; no exogenous shock identification.",
+    "D1_design": "Case/Qual",
+    "D2_causal_or_correlational": "Theoretical/Not applicable",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "Not applicable",
+    "D2_identification": "Not applicable",
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": "Not reported",
+    "D2_robustness_suite": "Not applicable",
+    "D3_endogeneity": "Not applicable",
+    "D4_level_alignment": "Explicit bridging",
+    "D5_data_sources": [
+      "Company archival records and internal documents",
+      "Semi-structured interviews with CEOs, managers, and engineers (~40 hours, 19 respondents)",
+      "Supplier counts, proximity (distance), and relationship duration data"
+    ],
+    "E1_outcomes": [
+      "Innovation",
+      "Other: Coordination/production cost efficiency",
+      "Other: Relational capability development",
+      "Other: Network structural evolution (supplier tiering, specialization)"
+    ],
+    "E2_effect_directions": {
+      "Innovation": "+",
+      "Other: Coordination/production cost efficiency": "+",
+      "Other: Relational capability development": "+",
+      "Other: Network structural evolution (supplier tiering, specialization)": "+"
+    },
+    "E3_mechanisms_tags": [
+      "Learning",
+      "Information access",
+      "Resource dependence",
+      "Other: Trust-based governance",
+      "Other: Complementary capabilities alignment"
+    ],
+    "E4_moderators": [
+      "Supplier proximity (geographic)",
+      "Relationship duration",
+      "Asset specificity",
+      "Supplier distinctive capabilities",
+      "Degree of co-design/co-makership"
+    ],
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Single-industry, success-leaning case selection within one region; heavy reliance on managerial accounts; no counterfactual or failed cases.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Relational capability operationalizes a dynamic capability that integrates internal core competencies with externally held specialized knowledge through network governance.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "Relational capability functions as a dynamic capability that embeds RBV/KBV in network contexts.",
+      "Repeated, trust-based supplier ties reduce coordination costs and speed knowledge transfer, enhancing innovation.",
+      "Lead firms can intentionally (re)design supplier networks to co-evolve with their narrowing core competencies."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Empirical qualitative multi-case study; not a pure theory or review/meta-analysis piece.",
+    "I1_mechanism_statements": [
+      "Repeated, trust-based interactions with key suppliers lower coordination and production costs.",
+      "Early co-design and ongoing joint problem-solving accelerate knowledge transfer and product innovation.",
+      "Supplier evaluation and development align external capabilities with the lead firm’s evolving core, improving fit and responsiveness."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Supplier proximity",
+        "role_in_link": "Enhances real-time coordination and knowledge exchange, strengthening the tie between collaboration intensity and cost/innovation outcomes."
+      },
+      {
+        "type": "moderation",
+        "variable": "Relationship duration",
+        "role_in_link": "Builds trust and reduces opportunism/monitoring costs, amplifying the impact of collaboration on efficiency and innovation."
+      },
+      {
+        "type": "moderation",
+        "variable": "Asset specificity",
+        "role_in_link": "Higher specificity encourages internalization of a few critical components while increasing co-design intensity for others."
+      }
+    ],
+    "I3_theoretical_propositions": [
+      "Lead firms can lower overall network coordination and production costs through multiple, repeated, trust-based relationships with key suppliers.",
+      "Stable, trust-laden ties that combine social and economic exchange support innovation and reduce transaction/coordination costs in vertically deintegrated networks."
+    ],
+    "J1_main_findings_summary": [
+      "All three firms progressively deintegrated manufacturing, retaining strategic in-house competencies (testing, format customization) and a few highly specific parts while outsourcing/co-making most subassemblies.",
+      "First-tier supplier portfolios were deliberately pruned and professionalized—fewer suppliers, greater specialization, geographic proximity, and longer-duration, trust-based ties.",
+      "Relational capability emerged as a distinctive capability: firms systematically integrated internal and external knowledge via co-design, co-makership, and supplier development.",
+      "Deliberate network design (supplier evaluations, seminars, intercompany forums) institutionalized knowledge sharing and improved capability fit.",
+      "Trust-based governance reduced reliance on formal contracting, lowering coordination costs and enabling faster responses to technological and market shifts."
+    ],
+    "J2_finding_evidence_links": [
+      "Methods and setting: pp. 321–322",
+      "Ima C90 organization and determinants: Table 1, p. 323",
+      "Corazza FD12+AD12/N organization and determinants: Table 2, p. 325",
+      "Wrapmatic PW33 organization and determinants: Table 3, p. 326",
+      "Supplier structure (tiers, distance, duration): Table 4, p. 327",
+      "Boundary shifts and competencies over time: Figures 1–3, pp. 328–330",
+      "Discussion and propositions: pp. 331–333"
+    ],
+    "J3_finding_strength": "Mixed evidence",
+    "K1_contribution_summary": "By tracing boundary shifts and supplier-network redesign over time, the study reframes competitive advantage as partly residing in a firm’s relational capability to integrate external specialized knowledge. It extends RBV/KBV into networked settings, qualifies TCE’s static focus on make–buy, and advances testable propositions on how repeated, trust-based supplier ties improve innovation and lower coordination/production costs."
+  }
+  

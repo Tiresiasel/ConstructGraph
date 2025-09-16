@@ -1,0 +1,200 @@
+{   "relevant": true,
+    "L_summary_of_paper": {
+      "L1_summary_of_paper": "This study investigates the research question of how common institutional owners use their ownership in media companies as a strategic tool to influence competitive dynamics in other industries. The paper introduces the key concept of 'media-rival common ownership,' defined as the condition where an institutional investor holds a significant stake (blockholding) in both a media company and a non-media focal firm's rivals. The theoretical framing posits a 'new invisible hand' mechanism, where common owners, facing scrutiny for direct anti-competitive coordination, leverage their media holdings as a discreet, indirect channel to advance their economic interests. The core constructs studied are the relationship between media-rival common ownership (the independent variable) and the negativity of a focal firm's media coverage (the dependent variable). The study's context is the U.S. market from 2007 to 2019, examining publicly traded firms and media companies. The main finding is that a focal firm receives significantly more negative coverage from a media outlet when its rivals share a common institutional blockholder with that media company. This effect is amplified when the focal firm and its rivals are closer competitors (higher product and geographic overlap), when the common owner is a long-term investor, and when media executives have higher stock-based compensation incentives. The paper's primary contributions are threefold: it reveals a hidden, indirect force shaping competitive markets, it expands the study of common ownership from a within-industry to a cross-industry phenomenon, and it identifies a new and powerful economic antecedent of media coverage bias."
+    },
+    "M_theory_and_unit_of_analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Competitive dynamics",
+          "status": "primary"
+        },
+        {
+          "theory": "Institutional ownership theory / Common ownership theory",
+          "status": "primary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Dyad",
+      "M3_unit_of_analysis_element": "Other: Media coverage negativity as a strategic competitive outcome"
+    },
+    "N_assumptions_and_behavioral_scope": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "Not reported",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A_bibliographic_and_administrative": {
+      "A1_citation": "DesJardine, M. R., Shi, W., & Cheng, X. (2023). The New Invisible Hand: How Common Owners Use the Media as a Strategic Tool. Administrative Science Quarterly, 68(4), 956-1007.",
+      "A2_year": 2023,
+      "A3_outlet_tier": "ASQ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B_perspective_and_theoretical_positioning": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_phenomenon_constructs_and_context": {
+      "C1_constructs": [
+        "Rivalry intensity",
+        "Similarity/overlap",
+        "Other: Investor-driven competitive influence via media"
+      ],
+      "C2_measurement": [
+        "Archival behavioral",
+        "Text/NLP"
+      ],
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "The primary dependent variable, Media Coverage Negativity, is measured using the Event Sentiment Score (ESS) from the RavenPack database. The ESS for each news article ranges from 0 to 100 (more positive). The authors calculate the annual average ESS for all articles about a firm from a specific media outlet. The final variable is calculated as (100 - average ESS) / 100, so higher values indicate more negative coverage.",
+      "C4_shock_type": "Other: M&As between institutional investment firms",
+      "C4_shock_design": "The study uses mergers and acquisitions between institutional investment firms as an exogenous shock that creates new instances of media-rival common ownership. A differences-in-differences (DiD) model is employed to compare the change in media coverage negativity for affected firms before and after the M&A event."
+    },
+    "D_methods_and_identification_causality": {
+      "D1_design": [
+        "Panel",
+        "Field/natural experiment"
+      ],
+      "D2_causal_or_correlational": "Causal claim",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Strong",
+      "D2_identification": [
+        "DiD",
+        "IV",
+        "Panel FE (causal)",
+        "Other: Heckman selection model"
+      ],
+      "D2_causal_claim_strength": "Strong",
+      "D2_key_assumptions_addressed": [
+        "Instrument validity in 2SLS is supported by Cragg-Donald Wald F-statistic for relevance and Sargan statistic for exogeneity.",
+        "The exogeneity of the M&A shock in the DiD design is argued on the basis that investment firm M&As are driven by industry consolidation or strategic objectives unrelated to influencing media coverage of specific portfolio firms."
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Instrument diagnostics",
+        "Cluster/serial corr fixes",
+        "Other: Analysis restricted to a single event type (earnings announcements)"
+      ],
+      "D3_endogeneity": [
+        "FE saturation",
+        "Lags",
+        "Exogenous shock",
+        "Other: Heckman selection model for selection bias"
+      ],
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "RavenPack",
+        "Compustat",
+        "Center for Research in Security Prices (CRSP)",
+        "Thomson Reuters 13F Holdings",
+        "ExecuComp",
+        "Institutional Brokers' Estimate System (I/B/E/S)",
+        "Audit Analytics",
+        "SDC M&A database"
+      ]
+    },
+    "E_outcomes_and_effects": {
+      "E1_outcomes": [
+        "Reputation",
+        "Revenue/profit",
+        "Other: Stock return"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Reputation (via media negativity)",
+          "direction": "+"
+        },
+        {
+          "outcome": "Stock return",
+          "direction": "–"
+        },
+        {
+          "outcome": "Revenue/profit (via ROA)",
+          "direction": "–"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Attention allocation",
+        "Signaling",
+        "Other: Strategic information distortion"
+      ],
+      "E4_moderators": [
+        "Firm-rival product similarity",
+        "Firm-rival geographic market overlap",
+        "Common owner investment horizon",
+        "Media CEO equity compensation"
+      ]
+    },
+    "F_quality_and_systematicity": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk of bias stems from the unobservability of the micro-mechanisms; the influence process between investors and media executives is treated as a 'black box'. While the causal identification strategies (IV, DiD) are strong, there remains a small risk of unobserved time-varying factors that could confound the results, particularly for the DiD analysis if M&A events are not fully exogenous to the media strategies for all firms.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_integration_hooks": {
+      "G1_construct_mapping_note": "The paper provides an excellent example of mapping a broad, abstract theoretical idea (a strategic 'invisible hand') onto a specific, measurable set of empirical constructs (cross-industry common ownership structure and media sentiment scores), demonstrating how to operationalize complex strategic phenomena.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "Powerful economic actors with interests spanning multiple markets will leverage their influence in one market (e.g., media) to create competitive advantages in another.",
+        "The strategic value of corporate assets, particularly information intermediaries, is a function not only of their direct financial returns but also of their utility as a tool for shaping competitive landscapes in other industries where the asset owner has interests.",
+        "As direct forms of anti-competitive behavior draw increased regulatory scrutiny, powerful actors will shift to more indirect and less observable channels of influence."
+      ]
+    },
+    "H_type_applicability": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "The paper is a quantitative empirical study, not a conceptual/theory piece or a literature review."
+    },
+    "I_mechanism_and_proposition_detailing": {
+      "I1_mechanism_statements": [
+        "Investors actively influence media content: Common owners with blockholding stakes have the power and incentive to use their access (e.g., private meetings, board seats) to subtly or directly guide media executives' content decisions in their favor.",
+        "Media executives proactively cater to investors: Senior media executives, motivated by career concerns and financial incentives (especially stock-based pay), are attentive to the interests of their powerful blockholders and may filter news coverage to align with those interests without direct instruction."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Firm-rival product similarity",
+          "role_in_link": "Strengthens the positive relationship between media-rival CIO and media coverage negativity by increasing the common owner's incentive and the salience of the rivalry to media executives."
+        },
+        {
+          "type": "moderation",
+          "variable": "Firm-rival geographic market overlap",
+          "role_in_link": "Strengthens the positive relationship between media-rival CIO and media coverage negativity for the same reasons as product similarity."
+        },
+        {
+          "type": "moderation",
+          "variable": "Common owner investment horizon",
+          "role_in_link": "Strengthens the positive relationship between media-rival CIO and media coverage negativity because long-term investors have more power and opportunity to influence executives, and executives are more incentivized to cater to them."
+        },
+        {
+          "type": "moderation",
+          "variable": "Media CEO equity compensation",
+          "role_in_link": "Strengthens the positive relationship between media-rival CIO and media coverage negativity by increasing media executives' motivation to align their decisions with the economic interests of influential shareholders."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J_findings_and_evidence": {
+      "J1_main_findings_summary": [
+        "A focal firm's media coverage is significantly more negative when its industry rivals share a common institutional blockholder with the media outlet providing the coverage.",
+        "This negative effect is stronger when the focal firm has higher product similarity and geographic market overlap with its rivals.",
+        "The influence is driven primarily by common owners who are long-term investors; short-term common owners do not have a significant effect.",
+        "The effect is amplified in media companies where the CEO receives a higher proportion of their total compensation in the form of equity, suggesting executive incentives play a key role.",
+        "This induced negative media coverage is associated with subsequent decreases in the focal firm's stock returns and return on assets (ROA)."
+      ],
+      "J2_finding_evidence_links": [
+        "Main Hypotheses (H1-H4): Table 4",
+        "Robustness Checks (IV, DiD): Table 5",
+        "Performance Consequences: Table 6"
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K_overall_paper_contribution": {
+      "K1_contribution_summary": "The paper's paramount contribution is the conceptualization and robust empirical validation of a 'new invisible hand' in competitive markets. It redirects the academic conversation on common ownership from a singular focus on direct, within-industry anti-competitive coordination to include indirect, cross-industry strategic influence. By demonstrating that media ownership can be weaponized to disadvantage the rivals of an investor's other portfolio firms, the study uncovers a novel channel of competitive influence, provides a new economic rationale for the consolidation of media ownership, and raises significant questions for antitrust and media governance policy."
+    }
+  }

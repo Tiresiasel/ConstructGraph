@@ -1,0 +1,31 @@
+{
+  "paper_metadata": {
+    "doi": "10.1002/smj.2110",
+    "title": "FROM CORE TO PERIPHERY AND BACK: A STUDY ON THE DELIBERATE SHAPING OF KNOWLEDGE FLOWS IN INTERFIRM DYADS AND NETWORKS",
+    "authors": [
+      "ANDREA LIPPARINI",
+      "GIANNI LORENZONI",
+      "SIMONE FERRIANI"
+    ],
+    "publication_year": 2014,
+    "journal": "Strategic Management Journal",
+    "research_type": "Mixed-Methods",
+    "research_context": "Italian powered two-wheeler industry",
+    "is_replication_study": false
+  },
+  "constructs": [],
+  "construct_dimensions": [],
+  "relationships": [],
+  "measurements": [],
+  "core_theories": [],
+  "coverage_report": {
+    "constructs": 0,
+    "relationships": 0,
+    "measurements": 0,
+    "reason": "No hypotheses, propositions, or clearly labeled 'Hypothesis Development' or 'Proposition' sections found in the paper. Per the extraction scope, only constructs and relationships explicitly tied to hypotheses/propositions are included. None were present.",
+    "errors": [
+      "no_hypotheses_found",
+      "out_of_core_scope"
+    ]
+  }
+}

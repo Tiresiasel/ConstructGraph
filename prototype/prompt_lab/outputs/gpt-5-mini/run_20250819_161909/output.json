@@ -1,0 +1,278 @@
+{
+  "paper_metadata": {
+    "doi": "doi.org/10.1287/mnsc.2017.2878",
+    "title": "Collusion in Bertrand vs. Cournot Competition: A Virtual Bargaining Approach",
+    "authors": [
+      "Tigran Melkonyan",
+      "Hossam Zeitoun",
+      "Nick Chater"
+    ],
+    "publication_year": 2018,
+    "journal": "MANAGEMENT SCIENCE",
+    "research_type": "Conceptual",
+    "research_context": "Two-player oligopolistic competition: Bertrand (price) and Cournot (quantity) competition with linear demand and constant marginal costs (normalized to zero).",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "virtual bargaining",
+      "definition": "Strategic behavior where decision makers mentally simulate and choose among agreements that they could reach if they were able to explicitly negotiate with each other; virtual bargainers focus on agreements that offer some protection against the possibility that counterparts may deviate and best respond to these agreements. Presented as a mode of reasoning that requires neither communication nor dynamic considerations.",
+      "context_snippet": "When decision makers virtually bargain, they mentally simulate, and choose among, agreements that they could reach if they were able to explicitly negotiate with each other. Virtual bargainers focus on agreements that offer some protection against the possibility that their counterparts may deviate and best respond to these agreements.",
+      "aliases": null
+    },
+    {
+      "term": "virtual bargaining equilibrium",
+      "definition": "A virtual bargaining equilibrium (VBE) (σV1, σV2) is a feasible agreement that maximizes the product of differences between the players’ worst payoffs under this strategy pair and the worst payoffs from the status quo subject to the constraint that both players’ payoffs exceed their respective status quo payoffs: (σV1, σV2) ∈ arg max_{(σF1,σF2)∈F} ∏_{i=1}^{2} (wi(σF i, σF −i) − wm_i). The status quo payoffs wm_i are the minimum feasible worst payoffs for each player.",
+      "context_snippet": "Formally, a virtual bargaining equilibrium (VBE) (σV1, σV2) is a feasible agreement that maximizes the product of differences between the players’ worst payoffs under this strategy pair and the worst payoffs from the status quo subject to the constraint that both players’ payoffs exceed their respective status quo payoffs: (σV1, σV2) ∈ arg max_{(σF1,σF2)∈F} ∏_{i=1}^{2} (wi(σF i, σF −i) − wm_i).",
+      "aliases": [
+        "VBE"
+      ]
+    },
+    {
+      "term": "feasible agreement",
+      "definition": "An agreement (σF1, σF2) is feasible if, for all players i, the worst payoff of the agreement for player i cannot be improved by a unilateral change of strategy: wi(σF i, σF −i) ≥ wi(˜σi, σF −i) for all ˜σi ∈ Σi. Equivalently, feasible agreements are Nash equilibria of the game with worst-payoff payoff functions.",
+      "context_snippet": "The two players narrow down the set of all possible agreements and retain the agreements where neither player can improve her worst payoﬀ by a unilateral deviation. We call these agreements \"feasible.\" Formally, an agreement (σF i, σF −i) is feasible if, for all i ∈ {1,2}, wi(σF i, σF −i) ≥ wi(˜σi, σF −i), for all ˜σi ∈ Σi.",
+      "aliases": null
+    },
+    {
+      "term": "worst payoff",
+      "definition": "For an agreement (σA1, σA2) the worst payoff for player i is the minimum between (i) the payoff if the opponent sticks to the agreement and (ii) the supremum payoff when the opponent best responds to σA i; formally, wi(σA i, σA −i) = min { ui(σA i, σA −i), sup_{σ−i ∈ R−i(σA i)} ui(σA i, σ−i) }.",
+      "context_snippet": "We define the worst payoff of an agreement (σA1, σA2) for player i as the worst-case scenario of two possibilities: (i) player i's opponent goes through with the agreement by playing her part of the strategy profile (σA1, σA2) and (ii) best responds to σA i. Formally, the worst payoff of an agreement (σA i, σA −i) is given by wi(σA i, σA −i) = min { ui(σA i, σA −i), sup_{σ−i ∈ R−i(σA i)} ui(σA i, σ−i) }.",
+      "aliases": [
+        "worst payoﬀ",
+        "worst-case payoff"
+      ]
+    },
+    {
+      "term": "agreement",
+      "definition": "A strategy profile that the players consider as a possible bargain; the paper uses 'agreement' and 'strategy profile' interchangeably. Players mentally consider agreements and evaluate worst payoffs associated with them.",
+      "context_snippet": "Each player thinks of all strategy profiles as possible agreements that she could strike with her opponent; and for each such agreement, her choices are guided by the worst payoff.",
+      "aliases": [
+        "strategy profile"
+      ]
+    },
+    {
+      "term": "Cournot competition",
+      "definition": "A two-firm Cournot game where each firm i chooses output qi ≥ 0; inverse demands are p1 = α − β q1 − γ q2 and p2 = α − β q2 − γ q1 with α > β ≥ γ > 0 and constant marginal costs normalized to zero. Firms' profits are πi(qi, q−i) = (α − β qi − γ q−i) qi. Outputs are strategic substitutes, best response R_i(q−i) = (α − γ q−i)/(2β). The Nash equilibrium output is qN = α/(2β+γ); the joint-profit-maximizing (collusive) output is q* = α/(2β+2γ).",
+      "context_snippet": "Consider the following Cournot game with two firms, i = 1,2, each producing output qi ∈ R+. ... The inverse demand functions for the two firms' products are given by p1 = α − β q1 − γ q2 and p2 = α − β q2 − γ q1, where α > β ≥ γ > 0. ... Firm i's best response to output q−i is given by R_i(q−i) = (α − γ q−i)/(2β). The unique Nash equilibrium is given by qN = α/(2β + γ). The output combination that maximizes the joint of the two firms' profits is given by q* = α/(2β + 2γ).",
+      "aliases": [
+        "Cournot game"
+      ]
+    },
+    {
+      "term": "Bertrand competition",
+      "definition": "A two-firm Bertrand game with linear direct demand q1 = a − b p1 + c p2 and q2 = a − b p2 + c p1, where b ≥ c > 0 and marginal costs normalized to zero. Profit functions are πi(pi, p−i) = (a − b pi + c p−i) pi. Prices are strategic complements, best response R_i(p−i) = (a + c p−i)/(2b). The Nash equilibrium price is pN = a/(2b − c) and the joint-profit‑maximizing (collusive) price is p* = a/(2b − 2c).",
+      "context_snippet": "Consider the following Bertrand game with linear demand functions. ... The direct demand functions for the two firms' products are given by q1 = a − b p1 + c p2 and q2 = a − b p2 + c p1, where b ≥ c > 0. ... Each firm's profit function can be written as πi(pi, p−i) = (a − b pi + c p−i) pi. ... Firm i's best response to price p−i is given by R_i(p−i) = (a + c p−i)/(2b). The unique Nash equilibrium is given by pN = a/(2b − c). The price combination that maximizes the total of the two firms' profits is given by p* = a/(2b − 2c).",
+      "aliases": [
+        "Bertrand game"
+      ]
+    },
+    {
+      "term": "Nash equilibrium",
+      "definition": null,
+      "context_snippet": "It follows immediately from the definition in (1) that any Nash equilibrium (NE) is a feasible agreement. The unique Nash equilibrium is given by qN = α/(2β + γ) (Cournot) and pN = a/(2b − c) (Bertrand).",
+      "aliases": [
+        "NE"
+      ]
+    },
+    {
+      "term": "collusive outcome",
+      "definition": "The strategy profile (price or quantity vector) that maximizes the joint profits of the two firms. In Cournot, the joint-profit-maximizing output combination is q* = α/(2β + 2γ). In Bertrand, the joint-profit-maximizing price is p* = a/(2b − 2c).",
+      "context_snippet": "The output combination that maximizes the joint of the two firms' profits is given by q* = α/(2β + 2γ). ... The price combination that maximizes the total of the two firms' profits is given by p* = a/(2b − 2c).",
+      "aliases": [
+        "joint-profit-maximizing outcome",
+        "collusive price",
+        "collusive output"
+      ]
+    },
+    {
+      "term": "minimum feasible worst payoff",
+      "definition": "For each player i, the fallback or status quo position in the bargaining process is the minimum feasible worst payoff wm_i = min_{(σF1,σF2)∈F} wi(σF1, σF2). The Nash bargaining solution used to select the virtual bargain uses these minima as the status quo.",
+      "context_snippet": "The status quo position for each player in the bargaining process is given by her worst payoﬀ from a feasible agreement that is worst for him. Formally, player i's fallback position is defined as wm_i = min_{(σF1,σF2)∈F} wi(σF1, σF2).",
+      "aliases": [
+        "wm_i",
+        "status quo payoﬀ"
+      ]
+    },
+    {
+      "term": "best response",
+      "definition": "For a given opponent strategy, the strategy (or strategies) that maximizes a player's payoff; denoted R_{−i}(σA i) for best responses of −i to σA i. Appears in worst payoff definition and in derivation of feasible agreements.",
+      "context_snippet": "The worst payoff ... uses sup_{σ−i ∈ R_{−i}(σA i)} ui(σA i, σ−i) where R_{−i}(σA i) denotes the set of player −i's best responses to strategy σA i. ... Firm i's best response to output q−i is given by R_i(q−i) = (α − γ q−i)/(2β).",
+      "aliases": null
+    }
+  ],
+  "construct_dimensions": [],
+  "relationships": [
+    {
+      "subject_term": "virtual bargaining equilibrium",
+      "object_term": "Nash equilibrium",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Proposition 1. The unique VB equilibrium of the Cournot game coincides with the NE.",
+      "boundary_conditions": "Cournot game as analyzed: two firms, inverse demands p1 = α − β q1 − γ q2 with α > β ≥ γ > 0, constant marginal costs normalized to zero; outputs are strategic substitutes; analysis and derivation in Section 3.",
+      "replication_outcome": null,
+      "context_snippet": "Proposition 1. The unique VB equilibrium of the Cournot game coincides with the NE.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "P1",
+      "claim_id": "P1",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "3. Cournot Competition",
+      "line_index_range": null,
+      "supporting_theories": [
+        "virtual bargaining"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "virtual bargaining equilibrium price",
+      "object_term": "Nash equilibrium price",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Proposition 2. (a) The unique VB equilibrium price of the Bertrand game is strictly greater than the NE price and strictly smaller than the price vector that maximizes the joint profits of the two firms: pN < pV < p*.",
+      "boundary_conditions": "Bertrand game as analyzed: two firms, direct demand q1 = a − b p1 + c p2 with b ≥ c > 0, constant marginal costs normalized to zero; prices are strategic complements; analysis and derivation in Section 4.",
+      "replication_outcome": null,
+      "context_snippet": "Proposition 2. (a) The unique VB equilibrium price of the Bertrand game is strictly greater than the NE price and strictly smaller than the price vector that maximizes the joint profits of the two firms: pN < pV < p*.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "P2",
+      "claim_id": "P2a",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "4. Bertrand Competition",
+      "line_index_range": null,
+      "supporting_theories": [
+        "virtual bargaining"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "joint profits under the virtual bargaining equilibrium",
+      "object_term": "joint profits under the Nash equilibrium",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Proposition 2. (b) The joint profits under the VB equilibrium in the Bertrand game are strictly greater than the joint profits of the two firms under the NE but strictly smaller than the joint profits under the collusive outcome.",
+      "boundary_conditions": "Bertrand competition with linear demand and b ≥ c > 0, constant marginal costs normalized to zero; joint profits compared across pN (Nash), pV (VBE), and p* (collusive).",
+      "replication_outcome": null,
+      "context_snippet": "Proposition 2. (b) The joint profits under the VB equilibrium in the Bertrand game are strictly greater than the joint profits of the two firms under the NE but strictly smaller than the joint profits under the collusive outcome.",
+      "origin_source": "Proposition",
+      "hypothesis_id": "P2",
+      "claim_id": "P2b",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "4. Bertrand Competition",
+      "line_index_range": null,
+      "supporting_theories": [
+        "virtual bargaining"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "worst payoff",
+      "name": "worst payoff function",
+      "details": "Defined for an agreement (σA1, σA2) as wi(σA i, σA −i) = min { ui(σA i, σA −i), sup_{σ−i ∈ R−i(σA i)} ui(σA i, σ−i) }, where R−i(σA i) denotes the set of best responses of player −i to σA i. Used to evaluate feasibility of agreements.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": null,
+      "formula": "wi(σA i, σA −i) = min{ ui(σA i, σA −i), sup_{σ−i ∈ R−i(σA i)} ui(σA i, σ−i) }",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Hypothesis_Development",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "feasible agreement",
+      "name": "feasibility condition",
+      "details": "An agreement (σF1, σF2) is feasible iff, for each player i, wi(σF i, σF −i) ≥ wi(˜σi, σF −i) for all unilateral deviations ˜σi ∈ Σi. Equivalently σF i ∈ RF i(σF −i) for each i, where RF i are best responses with respect to worst-payoff functions.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": null,
+      "formula": "wi(σF i, σF −i) ≥ wi(˜σi, σF −i) ∀˜σi ∈ Σi",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Hypothesis_Development",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "virtual bargaining equilibrium",
+      "name": "Nash-bargaining-based selection over feasible agreements",
+      "details": "Among feasible agreements F, select the agreement that maximizes the Nash product of improvements over the minimum feasible worst payoffs wm_i: (σV1, σV2) ∈ arg max_{(σF1,σF2)∈F} ∏_{i=1}^{2} (wi(σF i, σF −i) − wm_i).",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": null,
+      "formula": "(σV1, σV2) ∈ arg max_{(σF1,σF2)∈F} ∏_{i=1}^{2} (wi(σF i, σF −i) − wm_i)",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Hypothesis_Development",
+      "hypothesis_id": null
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "virtual bargaining",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "P1",
+        "P2"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "When decision makers virtually bargain, they mentally simulate, and choose among, agreements that they could reach if they were able to explicitly negotiate with each other.",
+      "evidence": null,
+      "section_header": "1. Introduction; 2. Virtual Bargaining Equilibrium",
+      "confidence": 0.9
+    },
+    {
+      "name": "Nash bargaining solution",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "P1",
+        "P2"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "The bargaining mechanism used to choose a virtual bargain is the Nash bargaining solution where the players' status quo positions are their minimum feasible worst payoffs.",
+      "evidence": null,
+      "section_header": "2. Virtual Bargaining Equilibrium",
+      "confidence": 0.85
+    }
+  ],
+  "coverage_report": {
+    "constructs": 11,
+    "relationships": 3,
+    "measurements": 3,
+    "reason": null,
+    "errors": []
+  }
+}

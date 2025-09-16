@@ -1,0 +1,161 @@
+{   "relevant":false,
+    "L": {
+      "L1_summary_of_paper": "This paper investigates how the structure of existing, incumbent technology networks shapes the emergence of new technology networks, focusing on the dual role of knowledge brokers. The core research question is: Under what circumstances do brokers facilitate (tertius iungens) or inhibit (tertius gaudens) collaboration between their unconnected partners in the context of technological change? The study introduces the concept of 'multiplex technology closure,' distinguishing between collaborative tie formation within a single technology network (uniplex closure) and across different technology networks (multiplex closure). The theoretical framework adjudicates the tension between tertius iungens (the third who joins, driven by uncertainty reduction) and tertius gaudens (the third who enjoys, driven by competitive advantage). Key constructs include uniplex vs. multiplex triads, incumbent vs. emergent technology networks, and asymmetry in technological expertise. The study is set in the global cancer therapy industry from 2004-2020, analyzing R&D alliances focused on small-molecule drugs (incumbent technology) and monoclonal antibodies (emergent technology). Using stochastic actor-oriented models (SAOMs) on a sample of 453 firms, the main findings are threefold: 1) Brokers facilitate uniplex closure within the emergent technology network to mitigate uncertainty. 2) Brokers also facilitate multiplex closure, where ties in the incumbent network foster new collaborations in the emergent network. 3) Crucially, this tendency reverses when the broker connects a firm with expertise in the emergent technology to a novice; in this case, the broker actively prevents a direct tie to protect its advantageous position. The paper's primary contribution is to resolve a classic theoretical tension in network theory by introducing the context of multiplexity and expertise asymmetry, thereby providing a more dynamic and nuanced understanding of network evolution during technological transitions."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "name": "Network Theory (Brokerage & Triadic Closure)",
+          "status": "primary"
+        },
+        {
+          "name": "Tertius Iungens",
+          "status": "primary"
+        },
+        {
+          "name": "Tertius Gaudens",
+          "status": "primary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": "R&D alliance formation rate"
+    },
+    "N": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "Not applicable",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "Yes",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A": {
+      "A1_citation": "Brändle, L., Berger, E. S. C., & Howard, M. D. (2025). Crossing technological boundaries: Brokerage and the emergence of innovation networks. Academy of Management Journal, 68(3), 620-647.",
+      "A2_year": 2025,
+      "A3_outlet_tier": "AMJ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Bridging",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Embeddedness",
+        "Structural holes",
+        "Diffusion"
+      ],
+      "B4_contribution_type": "Adjudication"
+    },
+    "C": {
+      "C1_constructs": [
+        "Tie type",
+        "Constraint/closure",
+        "Structural holes",
+        "Community",
+        "Similarity/overlap"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "Technological and relational uncertainty are central theoretical motivations for the 'tertius iungens' mechanism, especially in the context of the emergent technology, but they are not directly measured as variables in the model.",
+      "C4_shock_type": "Innovation/tech",
+      "C4_shock_design": "The study leverages the historical emergence of a new technology (monoclonal antibodies) as a challenge to an incumbent technology (small molecules). This is treated as a continuous environmental condition shaping network evolution over the 2004-2020 panel period, rather than a discrete, sharp shock for an event study."
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Causal claim",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": "SAOM",
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": [
+        "Non-independence of observations in network data, which is a core feature addressed by SAOMs."
+      ],
+      "D2_robustness_suite": [
+        "Other: <specify>"
+      ],
+      "D3_endogeneity": "SAOM",
+      "D4_level_alignment": "Multilevel model",
+      "D5_data_sources": [
+        "BioSciDB",
+        "U.S. Patent and Trademark Office (USPTO)"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Other: <R&D alliance formation>"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Uniplex closure on alliance formation (H1)",
+          "direction": "+"
+        },
+        {
+          "outcome": "Multiplex closure on alliance formation (H2)",
+          "direction": "+"
+        },
+        {
+          "outcome": "Moderating effect of expertise asymmetry on multiplex closure (H3)",
+          "direction": "–"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Information access",
+        "Signaling",
+        "Resource dependence"
+      ],
+      "E4_moderators": [
+        "Asymmetry in emergent technology expertise between potential partners"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk of bias is from unobserved variables that could influence both a firm's propensity to collaborate and its position in the network. While SAOM controls for many endogenous network processes, it cannot rule out all omitted confounders. External validity is another concern, as findings from the highly specific, high-stakes biopharma industry may not generalize to other settings where knowledge brokerage dynamics differ.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The core construct of 'brokerage' is operationalized not as a firm-level attribute but as a structural position within an open triad (a firm that is a shared third-party collaborator between two otherwise unconnected firms). 'Closure' refers to the formation of a direct tie between these two unconnected firms.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "Proposition 1: The incentive for a broker to facilitate tie formation (tertius iungens) is dominant when uncertainty is high and shared among all actors in a triad, such as within an emergent technology network.",
+        "Proposition 2: A broker's incentive to prevent tie formation (tertius gaudens) becomes dominant when the broker mediates access between actors with asymmetric levels of a valuable resource, such as expertise in an emergent technology.",
+        "Proposition 3: The structural properties of established networks (e.g., incumbent technology) create path dependencies that conditionally shape the evolutionary trajectory of emergent networks."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "Not applicable"
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "Tertius Iungens Mechanism: In high-uncertainty environments like emergent technologies, brokers facilitate connections between partners to mitigate shared technological and relational risks, enhancing knowledge flow and increasing the quality of innovation outcomes for the entire network.",
+        "Tertius Gaudens Mechanism: When a broker has exclusive access to a partner with valuable and asymmetric expertise (e.g., in an emergent technology), it has strong competitive incentives to maintain the separation between that expert and other partners to control the flow of knowledge and secure its competitively advantageous brokerage position."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Asymmetry in emergent technology expertise",
+          "role_in_link": "This variable moderates the relationship between sharing a common third party in the incumbent network and forming a tie in the emergent network. When expertise is asymmetric (one firm is an expert, the other is a novice), the positive effect of the common third party on tie formation is reversed, becoming negative."
+        }
+      ],
+      "I3_theoretical_propositions": [
+        "Not applicable"
+      ]
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "Firms are more likely to form a new R&D alliance in an emergent technology (mAbs) if they already share a common third-party collaborator within that same technology network (supports H1).",
+        "Firms are also more likely to form an R&D alliance in the emergent technology if they share a common third-party collaborator in the incumbent technology network (small molecules), demonstrating a cross-network spillover effect (supports H2).",
+        "The positive spillover effect from the incumbent network is significantly reversed when the two firms have asymmetric expertise in the emergent technology. Brokers actively prevent a direct tie between an 'expert' and a 'novice' to maintain their advantageous position (supports H3)."
+      ],
+      "J2_finding_evidence_links": [
+        "Table 4 (Stochastic Actor-Oriented Models results)",
+        "Table 5 (Rare Events Logistic Regression robustness tests)"
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper's main contribution is resolving the long-standing theoretical tension between the collaborative (tertius iungens) and competitive (tertius gaudens) roles of network brokers. By contextualizing this tension within a dynamic setting of technological change and introducing the concepts of multiplex triads and expertise asymmetry, the study demonstrates that a broker's behavior is not fixed but is conditional on the specific structure of the triad and the competitive value of the knowledge being brokered. It shifts the brokerage literature from asking 'if' brokers connect others to asking 'when' and 'why' they choose to do so."
+    }
+  }

@@ -1,0 +1,579 @@
+{
+  "paper_metadata": {
+    "doi": "10.1002/smj.894",
+    "title": "LIFE IN THE FAST LANE: ORIGINS OF COMPETITIVE INTERACTION IN NEW VS. ESTABLISHED MARKETS",
+    "authors": [
+      "ERIC L. CHEN",
+      "RIITTA KATILA",
+      "RORY MCDONALD",
+      "KATHLEEN M. EISENHARDT"
+    ],
+    "publication_year": 2010,
+    "journal": "Strategic Management Journal",
+    "research_type": "Quantitative",
+    "research_context": "Longitudinal experiential simulation (Markstrat) with 32 runs (industries) and 160 firms (teams). Two simulated product markets: Sonite (established) and Vodite (new). Participant-managers competed for seven rounds (data from first six rounds used). Supplemented by interviews, team papers, and case analyses.",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "firm performance",
+      "definition": "The relative success of a firm compared with its rivals, operationalized in the study as the firm's market share in each simulation round.",
+      "context_snippet": "We measure firm performance as the ﬁrm’s market share in each round.  As a widely used assessment of performance relative to competitors (Armstrong and Collopy, 1996), market share measures the relative success of ﬁrms by providing explicit comparison to rivals.",
+      "aliases": []
+    },
+    {
+      "term": "market moves",
+      "definition": "Competitive moves involving commercialization and actions that change the firm’s presence in customer segments (e.g., market probe, market entry, market exit); moves intended to defend or improve a firm’s position in customer segments.",
+      "context_snippet": "Measures of a ﬁrm’s commercialization and market moves (labeled as market moves) were based on any changes in the customer segments in which the ﬁrm marketed products in each round. There were three types. Market probe is an entry into a customer segment... market entry as entry into a customer segment... market exit as withdrawal of all products from a customer segment.",
+      "aliases": [
+        "commercialization moves"
+      ]
+    },
+    {
+      "term": "R&D moves",
+      "definition": "Competitive moves consisting of research and development investments that alter product or production characteristics (e.g., R&D probe, R&D product development, R&D process improvements) used to improve products or reduce production costs.",
+      "context_snippet": "Measures of a ﬁrm’s R&D investment moves (labeled as R&D moves) were based on three types of R&D investments. An R&D probe is a $100,000 investment to create a prototype of a new product. An R&D product move is an R&D investment exceeding $100,000 to further develop a new product. An R&D process move is an R&D investment in an existing product that reduces its production cost.",
+      "aliases": [
+        "research and development moves"
+      ]
+    },
+    {
+      "term": "established market",
+      "definition": "A market characterized as having moderately temporary advantages: a relatively stable search landscape organized into well-defined turfs of competition, where competitors occupy relatively well-established positions and maps of peaks/valleys exist.",
+      "context_snippet": "From the evolutionary theory perspective, established markets with moderately temporary advantages can be conceptualized as search landscapes that are relatively stable and organized into well-deﬁned turfs of competition. These landscapes are relatively stable such that few new peaks rise and old peaks sink slowly...",
+      "aliases": [
+        "Sonite market (established)"
+      ]
+    },
+    {
+      "term": "new market",
+      "definition": "A market characterized as having highly temporary advantages: an unstable, unknown, and rapidly changing search landscape in which peaks often arise frequently, customer preferences are unpredictable, and well-defined turfs of competition do not yet exist.",
+      "context_snippet": "From the evolutionary theory perspective, new markets with highly temporary advantages can be conceptualized as search landscapes that are unstable and intensely competitive. These landscapes are unstable such that new peaks often arise frequently as the market unfolds and as rival ﬁrms make moves that reshape the landscape.",
+      "aliases": [
+        "Vodite market (new)"
+      ]
+    },
+    {
+      "term": "competitive moves",
+      "definition": "Actions firms take that are intended to defend or improve their position relative to competitors, including pricing, advertising, capacity, boundary moves, market entries/exits, and R&D investments.",
+      "context_snippet": "For instance, researchers have studied pricing and advertising as well as capacity and boundary moves. The core premise is that engaging rivals through competitive moves generates a series of temporary advantages that lead to superior performance.",
+      "aliases": []
+    },
+    {
+      "term": "firm resources",
+      "definition": "Availability of a firm's tangible financial resources that affect its ability to enact moves; in the study measured as a firm's total revenue in each round (standardized).",
+      "context_snippet": "We control for ﬁrm resources to ensure that the availabil- ity of resources (rather than ﬁrm performance) did not explain frequency of moves. We measured resources as a ﬁrm’s total revenue in each round (in millions of dollars, standardized).",
+      "aliases": [
+        "resources",
+        "total revenue"
+      ]
+    },
+    {
+      "term": "demand diversity",
+      "definition": "Diversity of consumer demand across market segments; measured with a Herﬁndahl-type index to capture how varied customer segments are and therefore the opportunities available.",
+      "context_snippet": "We control for demand diversity because diversity of consumer demand increases available opportunities and, thus, may trigger diversity in competitive moves. We measured demand diversity using a Herﬁndahl-type index per round: 1 − ∑(Pa/PT)2 where Pa equals the number of products in segment a, and PT equals the total number of products in all the segments in the market.",
+      "aliases": []
+    },
+    {
+      "term": "competitor moves",
+      "definition": "The aggregate number of competitive moves enacted by rival firms (all firms except the focal firm) in a round; used as a control for rival activity intensity.",
+      "context_snippet": "We control for the frequency of competitor moves. When competitors make many moves, especially relative to a focal firm, this hypercompetitive activity by rivals is likely to spur more moves by the focal firm. We measured competitor moves as the number of moves made by all ﬁrms less those made by the focal ﬁrm.",
+      "aliases": [
+        "rival moves"
+      ]
+    },
+    {
+      "term": "sector growth",
+      "definition": "Growth of the industry sector measured as the percentage change in total industry revenue between rounds; used as a control because sector growth affects competitive intensity.",
+      "context_snippet": "We control for the growth of the industry sector using the sector growth variable. Because slowly growing demand in a sector intensiﬁes competi- tion as ﬁrms increasingly compete for the same customers, we control for it. We measured industry sector growth as the percentage change in total industry revenue (sum of Sonite and Vodite markets) in each round.",
+      "aliases": [
+        "industry growth"
+      ]
+    }
+  ],
+  "construct_dimensions": [
+    {
+      "parent_construct": "competitive moves",
+      "dimension_construct": "market moves"
+    },
+    {
+      "parent_construct": "competitive moves",
+      "dimension_construct": "R&D moves"
+    },
+    {
+      "parent_construct": "markets with temporary advantages",
+      "dimension_construct": "established market"
+    },
+    {
+      "parent_construct": "markets with temporary advantages",
+      "dimension_construct": "new market"
+    }
+  ],
+  "relationships": [
+    {
+      "subject_term": "firm performance",
+      "object_term": "market moves",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": "In markets with moderately temporary advantages (established markets).",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 1 (H1). High-performing ﬁrms will be less likely to enact market moves than low-performing ﬁrms in markets with moderately temporary advantages.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "HYPOTHESES: ORIGINS OF COMPETITIVE MOVES",
+      "line_index_range": null,
+      "supporting_theories": [
+        "evolutionary search theory",
+        "mutual forbearance",
+        "competitive dynamics"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "firm performance",
+      "object_term": "R&D moves",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": "In markets with moderately temporary advantages (established markets).",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 2 (H2). High-performing ﬁrms will be more likely to enact R&D moves than low-performing ﬁrms in markets with moderately temporary advantages.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "HYPOTHESES: ORIGINS OF COMPETITIVE MOVES",
+      "line_index_range": null,
+      "supporting_theories": [
+        "evolutionary search theory",
+        "competitive dynamics"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "firm performance",
+      "object_term": "market moves",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": "In markets with highly temporary advantages (new markets).",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 3 (H3). High-performing ﬁrms will be more likely to enact market moves than low-performing ﬁrms in markets with highly temporary advantages.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H3",
+      "claim_id": "H3",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "HYPOTHESES: ORIGINS OF COMPETITIVE MOVES",
+      "line_index_range": null,
+      "supporting_theories": [
+        "evolutionary search theory",
+        "competitive dynamics"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "firm performance",
+      "object_term": "R&D moves",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": "In markets with highly temporary advantages (new markets).",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 4 (H4). High-performing ﬁrms will be more likely to enact R&D moves than low-performing ﬁrms in markets with highly temporary advantages.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H4",
+      "claim_id": "H4",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "HYPOTHESES: ORIGINS OF COMPETITIVE MOVES",
+      "line_index_range": null,
+      "supporting_theories": [
+        "evolutionary search theory",
+        "competitive dynamics"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "firm performance",
+      "object_term": "market moves",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Model 2 in Table 2a: the coefﬁcient for ﬁrm performance is negative and signiﬁcant (p < 0.001) indicating that high-performing ﬁrms avoid disruptive market moves in the established Sonite market.",
+      "boundary_conditions": "Establishment (Sonite) market context; lagged antecedent design (performance at round r predicts moves in r+1).",
+      "replication_outcome": null,
+      "context_snippet": "To test Hypothesis 1 on market moves, Model 2 in Table 2a introduces the ﬁrm performance variable. As expected, the coefﬁcient for ﬁrm performance is negative and signiﬁcant (p < 0.001)...",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Panel GEE Poisson regressions with lagged antecedents used; no exogenous identification strategy reported.",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "evolutionary search theory",
+        "mutual forbearance"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "firm resources",
+        "demand diversity",
+        "competitor moves",
+        "sector growth"
+      ]
+    },
+    {
+      "subject_term": "firm performance",
+      "object_term": "R&D moves",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Model 2 in Table 2b: the coefﬁcient for ﬁrm performance is positive and signiﬁcant (p < 0.05) indicating that high-performing ﬁrms enact more R&D moves in the established Sonite market.",
+      "boundary_conditions": "Establishment (Sonite) market context; lagged antecedent design (performance at round r predicts moves in r+1).",
+      "replication_outcome": null,
+      "context_snippet": "To test Hypothesis 2 on R&D moves, Model 2 in Table 2b similarly introduces the ﬁrm performance variable. The coefﬁcient for ﬁrm performance is positive and signiﬁcant...",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Panel GEE Poisson regressions with lagged antecedents used; no exogenous identification strategy reported.",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "evolutionary search theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "firm resources",
+        "demand diversity",
+        "competitor moves",
+        "sector growth"
+      ]
+    },
+    {
+      "subject_term": "firm performance",
+      "object_term": "market moves",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Model 2 in Table 3a: the coefﬁcient for ﬁrm performance is positive and signiﬁcant (p < 0.001) indicating that high-performing ﬁrms enact more market moves in the new Vodite market.",
+      "boundary_conditions": "New (Vodite) market context; lagged antecedent design (performance at round r predicts moves in r+1).",
+      "replication_outcome": null,
+      "context_snippet": "To test Hypothesis 3 on market moves, Model 2 in Table 3a introduces the ﬁrm performance variable. As expected, the coefﬁcient for ﬁrm performance is positive and signiﬁcant (p < 0.001)...",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H3",
+      "claim_id": "H3",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Panel GEE Poisson regressions with lagged antecedents used; no exogenous identification strategy reported.",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "evolutionary search theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "firm resources",
+        "demand diversity",
+        "competitor moves",
+        "sector growth"
+      ]
+    },
+    {
+      "subject_term": "firm performance",
+      "object_term": "R&D moves",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Model 2 in Table 3b: the coefﬁcient for ﬁrm performance is positive and signiﬁcant (p < 0.001) indicating that high-performing ﬁrms enact more R&D moves in the new Vodite market.",
+      "boundary_conditions": "New (Vodite) market context; lagged antecedent design (performance at round r predicts moves in r+1).",
+      "replication_outcome": null,
+      "context_snippet": "To test Hypothesis 4 on R&D moves, Model 2 in Table 3b introduces the ﬁrm performance variable. As expected, the coefﬁcient for ﬁrm performance is positive and signiﬁcant (p < 0.001)...",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H4",
+      "claim_id": "H4",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Panel GEE Poisson regressions with lagged antecedents used; no exogenous identification strategy reported.",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "evolutionary search theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "firm resources",
+        "demand diversity",
+        "competitor moves",
+        "sector growth"
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "firm performance",
+      "name": "market share",
+      "details": "Measured as the firm's market share in each simulation round (used separately for Sonite and Vodite markets depending on the dependent variable). The paper states: 'We measure firm performance as the ﬁrm’s market share in each round.'",
+      "instrument": "Markstrat simulation data (archived outputs)",
+      "scale_items": null,
+      "scoring_procedure": "Calculated per round from simulation-reported firm and industry sales data; used as a lagged antecedent (performance at round r predicts moves in round r+1).",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Sonite market share used for Sonite analyses; Vodite market share used for Vodite analyses; alternative aggregate measures (revenue, stock price, total profit) tested with similar results (reported in paper).",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "market moves",
+      "name": "market moves (frequency)",
+      "details": "Count of market-related competitive moves per firm per round. Market moves comprise: market probe (entry into a segment with minimal advertising < $1.5M), market entry (entry into a segment supported by advertising > $1.5M), and market exit (withdrawal of all products from a segment). These were coded per market and summed per round.",
+      "instrument": "Markstrat simulation transaction logs and team decisions (archived)",
+      "scale_items": null,
+      "scoring_procedure": "Count of discrete market move events per firm per round; Sonite and Vodite markets measured separately; lagged predictor used (round r antecedent predicts r+1 outcome).",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Different thresholds for advertising distinguish probe vs entry as described in the Appendix.",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "R&D moves",
+      "name": "R&D moves (frequency)",
+      "details": "Count of R&D investment moves per firm per round. R&D moves comprise: R&D probe ($100,000 prototype investment), R&D product (R&D > $100,000 to develop new product), and R&D process (R&D to reduce production cost of existing product). These were coded per market and summed per round.",
+      "instrument": "Markstrat simulation transaction logs and R&D investment records",
+      "scale_items": null,
+      "scoring_procedure": "Count of discrete R&D move events per firm per round; Sonite and Vodite markets measured separately; lagged predictor used (round r antecedent predicts r+1 outcome).",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Classification thresholds described in the Appendix inform coding between probe and product R&D investments.",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H2"
+    },
+    {
+      "construct_term": "firm resources",
+      "name": "total revenue (resources)",
+      "details": "Firm resources measured as the firm's total revenue in each round (in millions of dollars, standardized) used as a control for availability of resources to enact moves.",
+      "instrument": "Markstrat simulation financial outputs",
+      "scale_items": null,
+      "scoring_procedure": "Standardize revenue values per round; included as lagged control variable in regressions.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "demand diversity",
+      "name": "demand diversity (Herfindahl-type index)",
+      "details": "Measured per market per round as a Herfindahl-type index capturing the distribution of products across segments: 1 − ∑(Pa/PT)2 where Pa equals number of products in segment a and PT equals total number of products across segments.",
+      "instrument": "Market and product data from Markstrat simulation",
+      "scale_items": null,
+      "scoring_procedure": "Index ranges from 0 to 1; higher values indicate greater demand diversity; used as lagged control in regressions.",
+      "formula": "$$1 - \\sum \\left(\\frac{P_a}{P_T}\\right)^2$$",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Calculated separately for Sonite and Vodite markets.",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "competitor moves",
+      "name": "competitor moves (frequency)",
+      "details": "Aggregate count of moves by all other firms in the industry for the round (total competitor activity) computed as total moves by all firms less moves by the focal firm; used as a control for rival activity intensity.",
+      "instrument": "Markstrat simulation archived actions",
+      "scale_items": null,
+      "scoring_procedure": "Count variable per firm per round; lagged control in regression models.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Computed separately for Sonite and Vodite contexts where applicable.",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "sector growth",
+      "name": "sector growth (percentage change)",
+      "details": "Measured as the percentage change in total industry revenue (sum of Sonite and Vodite markets) between rounds; used as a control because sector growth affects competitive intensity and move choices.",
+      "instrument": "Aggregate revenue outputs from Markstrat simulation",
+      "scale_items": null,
+      "scoring_procedure": "Percent change per round; lagged control in regression models.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "market moves",
+      "name": "market moves (diversity)",
+      "details": "Diversity of market moves across customer segments measured with Herﬁndahl index: 1 − ∑(Na/NT)2 where Na equals number of market moves in segment a and NT equals total market moves. Ranges 0–1; higher values indicate greater diversification of moves.",
+      "instrument": "Markstrat simulation action logs",
+      "scale_items": null,
+      "scoring_procedure": "Calculated per firm per round; used in GLS regressions predicting move diversity.",
+      "formula": "$$1 - \\sum \\left(\\frac{N_a}{N_T}\\right)^2$$",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Sonite segments range zero to five; Vodite segments range zero to three.",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "R&D moves",
+      "name": "R&D moves (diversity)",
+      "details": "Diversity of R&D moves across customer segments measured with Herﬁndahl index: 1 − ∑(Na/NT)2 where Na equals number of R&D moves in segment a and NT equals total R&D moves. Ranges 0–1; higher values indicate greater diversification.",
+      "instrument": "Markstrat simulation action logs",
+      "scale_items": null,
+      "scoring_procedure": "Calculated per firm per round; used in GLS regressions predicting move diversity.",
+      "formula": "$$1 - \\sum \\left(\\frac{N_a}{N_T}\\right)^2$$",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Sonite segments range zero to five; Vodite segments range zero to three.",
+      "study_id": "Markstrat simulation (32 runs, 160 firms)",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H2"
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "evolutionary search theory",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "From the evolutionary theory perspective",
+      "evidence": null,
+      "section_header": "HYPOTHESES: ORIGINS OF COMPETITIVE MOVES",
+      "confidence": null
+    },
+    {
+      "name": "mutual forbearance",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1"
+      ],
+      "hypothesis_id": "H1",
+      "grounding_phrase": "norms of mutual forbearance often develop to regulate competitive behavior",
+      "evidence": null,
+      "section_header": "THEORETICAL BACKGROUND",
+      "confidence": null
+    },
+    {
+      "name": "competitive dynamics",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "The search perspective is especially useful for examining the origins of distinct competitive moves (R&D, market) in different market landscapes",
+      "evidence": null,
+      "section_header": "THEORETICAL BACKGROUND",
+      "confidence": null
+    }
+  ],
+  "coverage_report": {
+    "constructs": 11,
+    "relationships": 8,
+    "measurements": 11,
+    "reason": null,
+    "errors": []
+  }
+}

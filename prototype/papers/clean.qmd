@@ -1,0 +1,29 @@
+This file is used to clean the current folder.
+
+# Document classification
+
+For each paper pdf in the folder, we create a folder for this paper, whose name is an incremented number. Under each folder, we will put the pdf file, create an empty file call `label.json` to indicate the label of the paper.
+
+```{python}
+import os
+import shutil
+
+# Get all pdf files in the current directory
+pdf_files = [f for f in os.listdir() if f.endswith('.pdf')]
+
+# Create a folder for each paper
+for i, pdf_file in enumerate(pdf_files):
+    os.makedirs(f"{i}", exist_ok=True)
+    shutil.copy(pdf_file, f"{i}/{pdf_file}")
+    with open(f"{i}/label.json", "w") as f:
+        f.write("{}")
+
+# Remove the original pdf files
+for pdf_file in pdf_files:
+    os.remove(pdf_file)
+
+
+
+
+
+```

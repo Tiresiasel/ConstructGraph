@@ -1,0 +1,177 @@
+{   "relevant":true,
+    "L": {
+      "L1_summary_of_paper": "This paper investigates the strategic drivers behind two opposing actions a firm can take with a 'foothold'—a small, intentionally established position in a new market. The core research question is how competitor analysis, specifically market commonality and resource similarity with rivals, affects a firm's likelihood of either launching a 'foothold attack' (an aggressive competitive move) or a 'foothold withdrawal' (ceasing operations). Framed within competitive dynamics theory, the study hypothesizes a paradox: contrary to the logical assumption that a factor discouraging attack would encourage withdrawal, both high market commonality and high resource similarity are predicted to decrease the likelihood of *both* attack and withdrawal. The mechanism for this is deterrence; a foothold's value as a retaliatory weapon against a significant rival (one with high market overlap and similar resources) makes a firm reluctant to either provoke that rival (by attacking) or disarm itself (by withdrawing). The study uses longitudinal data from 285 footholds in the U.S. computer and software industries from 2004-2006, analyzed with a novel (for management) competing risks regression model. The main findings support all hypotheses, confirming the paradox: market commonality, resource similarity, and their interaction are related in the same direction to both foothold attack and withdrawal. The paper's primary contribution is to extend competitive dynamics theory by identifying the unique, unpredictable nature of footholds as competitive weapons, establishing boundary conditions for competitor analysis theory, and introducing a new statistical methodology to the management field."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Competitive dynamics theory",
+          "status": "primary"
+        },
+        {
+          "theory": "Resource-based view",
+          "status": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": [
+        "Other: Foothold attack",
+        "Other: Foothold withdrawal"
+      ]
+    },
+    "N": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "No",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A": {
+      "A1_citation": "Upson, J. W., Ketchen, D. J., Jr., Connelly, B. L., & Ranft, A. L. (2012). Competitor analysis and foothold moves. Academy of Management Journal, 55(1), 93-110.",
+      "A2_year": "2012",
+      "A3_outlet_tier": "AMJ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Multimarket contact",
+        "Resource-based view",
+        "Signaling"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Attack/response",
+        "MMC",
+        "Similarity/overlap",
+        "Other: Market withdrawal"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "Market Commonality: Measured using Chen's (1996) formula based on firm sales in overlapping markets, capturing the highest value relative to any competitor in the foothold market. Resource Similarity: Measured as the reverse-coded Euclidean distance between the focal firm and its most similar competitor based on standardized scores for four resource dimensions (financial, physical, social, human). Foothold Attack: Coded from press releases (new products, price actions, campaigns) and acquisition data. Foothold Withdrawal: Coded when sales in the foothold market drop to zero for two consecutive quarters.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable. The study does not use an exogenous shock design."
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Weak",
+      "D2_identification": "Other: Competing risks regression",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": "Not reported",
+      "D2_robustness_suite": "Other: Use of an alternative model specification (single variable with three levels for maintain/attack/withdraw) yields same results.",
+      "D3_endogeneity": "Lags",
+      "D4_level_alignment": "Other: Predictors are at the firm-market level and outcomes are at the firm level, analyzed in a single model framework.",
+      "D5_data_sources": [
+        "The NPD Group",
+        "Compustat",
+        "Corporate Library",
+        "Riskmetric's IRRC",
+        "SDC Platinum",
+        "LexisNexis"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Other: Foothold attack",
+        "Entry/exit/survival"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Foothold attack",
+          "predictor": "Market commonality",
+          "direction": "–"
+        },
+        {
+          "outcome": "Foothold attack",
+          "predictor": "Resource similarity",
+          "direction": "–"
+        },
+        {
+          "outcome": "Foothold attack",
+          "predictor": "Market commonality * Resource similarity",
+          "direction": "+"
+        },
+        {
+          "outcome": "Foothold withdrawal",
+          "predictor": "Market commonality",
+          "direction": "–"
+        },
+        {
+          "outcome": "Foothold withdrawal",
+          "predictor": "Resource similarity",
+          "direction": "–"
+        },
+        {
+          "outcome": "Foothold withdrawal",
+          "predictor": "Market commonality * Resource similarity",
+          "direction": "+"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Deterrence",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "Market commonality",
+        "Resource similarity"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk of bias stems from potential endogeneity. The decision to establish a foothold in a particular market is non-random and may be correlated with unobservable firm characteristics that also drive the subsequent decision to attack or withdraw. The study uses lagged predictors but lacks a stronger identification strategy (e.g., instrumental variable, natural experiment) to fully address this. Measurement of 'intent' is indirect, which could introduce classification errors.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The core constructs of 'Market Commonality' and 'Resource Similarity' are directly adopted from Chen (1996). The paper's innovation is applying them to the specific phenomena of 'Foothold Attack' and 'Foothold Withdrawal', treating these as distinct outcomes. This allows for mapping the same theoretical drivers to counterintuitive, opposing behaviors.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The deterrent value of a strategic position (e.g., a foothold) is a function of both rival motivation (market commonality) and capability (resource similarity), making the firm simultaneously less likely to attack from or abandon the position.",
+        "In competitive contexts with low asset specificity (like footholds), competitor analysis variables predict the likelihood of strategic action but not its valence (aggressive vs. defensive).",
+        "The value of strategic ambiguity, embodied by a foothold, increases with the intensity of potential dyadic rivalry, leading to a higher likelihood of strategic inaction (maintenance)."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "This is an empirical paper with quantitative data analysis."
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "High market commonality and resource similarity increase the threat of effective retaliation from a competitor, thus creating a deterrent effect that discourages a focal firm from launching a foothold attack.",
+        "The value of a foothold as a competitive deterrent ('a stick with which to discipline the other firm') is highest against rivals with high market commonality and resource similarity, making a firm less likely to withdraw the foothold and give up this deterrent capability."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Market commonality and Resource similarity",
+          "role_in_link": "These two variables have a positive interaction effect on both foothold attack and foothold withdrawal. The likelihood of either move increases when both market commonality and resource similarity are low. This suggests a conditional relationship where the deterrent effects of each are amplified by the presence of the other."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable. This is an empirical paper with hypotheses, not a conceptual paper with propositions."
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "Market commonality is negatively and significantly associated with the likelihood of both foothold attack and foothold withdrawal.",
+        "Resource similarity is negatively and significantly associated with the likelihood of both foothold attack and foothold withdrawal.",
+        "There is a positive and significant interaction effect between market commonality and resource similarity on both outcomes.",
+        "Firms are most likely to launch a foothold attack when both market commonality and resource similarity are low.",
+        "Firms are most likely to withdraw a foothold when both market commonality and resource similarity are low.",
+        "The results confirm a 'foothold paradox' where factors that deter aggression also deter retreat, highlighting the strategic unpredictability of footholds."
+      ],
+      "J2_finding_evidence_links": "Results for H1, H2, H5 are in Table 2. Results for H3, H4, H6 are in Table 3.",
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper's primary contribution is twofold. Theoretically, it extends competitive dynamics by isolating the unique strategic logic of 'footholds,' uncovering a paradox where the key drivers of competitor analysis (market commonality and resource similarity) simultaneously deter both aggressive attacks and defensive withdrawals. This establishes important boundary conditions for the theory, showing that while it can predict the likelihood of a foothold move, it cannot predict the direction. Methodologically, it introduces competing risks regression, a more appropriate statistical technique for analyzing situations with multiple distinct outcomes, to the management literature."
+    }
+  }

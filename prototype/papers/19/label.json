@@ -1,0 +1,148 @@
+{   "relevant":false,
+    "L1_summary_of_paper": "This paper develops and tests a longitudinal framework linking firms’ strategic consistency—defined as the continuity and directional coherence of competitive actions over time—to market share development and organizational survival. Integrating competitive dynamics with an evolutionary/market‐process view and the AMC (awareness–motivation–capability) logic, the authors argue that firms perform and survive better when their action trajectories balance adaptation to environmental change with continuity rooted in capabilities and history. Using Finland’s grocery retail sector (1945–1995) and four focal organizations (Kesko, SOK, TUKO, EKA), they construct a quantitative Strategic Consistency (SC) index from two observable action domains: store configuration (by size class) and newspaper advertising (by size/space). Annual action vectors are built in a 6‑dimensional space; SC combines (i) the magnitude of year‑to‑year change and (ii) the angle between consecutive change vectors to capture both stability and path‐following. Principal component analysis (PCA) visualizes trajectories. Periodized comparisons across three eras—regulation, deregulation, and new means of competition—show that firms with higher and well‑directed consistency (Kesko, SOK) improved or sustained market position and survived, while firms with low or misdirected consistency (TUKO, EKA) declined and exited. Qualitative historical evidence attributes consistency to CHQ focus/capability, low strategic contestation, and organizational slack. Contributions: (1) formalizing and operationalizing strategic consistency as a higher‑order property of action repertoires; (2) a process model linking actions → market feedback → resources/structure → survival; (3) long‑horizon, mixed‑method evidence connecting competitive action patterns to survival outcomes.",
+    "M1_main_theories": [
+      "Competitive dynamics (primary)",
+      "Evolutionary organization theory (primary)",
+      "Austrian market-process economics (secondary)",
+      "Attention-based view/AMC (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm",
+    "M3_unit_of_analysis_element": [
+      "Other: Strategic consistency of action repertoire",
+      "Advertising intensity",
+      "Other: Store network configuration/expansion by size class"
+    ],
+    "N1_behavioral_scope": "Multiple behaviors",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "Not applicable",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Lamberg, J.-A., Tikkanen, H., Nokelainen, T., & Suur-Inkeroinen, H. (2009). Competitive dynamics, strategic consistency, and organizational survival. Strategic Management Journal, 30(1), 45–60. https://doi.org/10.1002/smj.726",
+    "A2_year": "2009",
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Mixed",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Not applicable",
+    "B2_levels": [
+      "Firm",
+      "Market/Industry"
+    ],
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Learning",
+      "Other: Resource dependence"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Repertoire",
+      "Other: Strategic consistency (balance of continuity and adaptation)",
+      "Other: Administrative focus (CHQ capability)",
+      "Other: Organizational slack"
+    ],
+    "C2_measurement": [
+      "Archival behavioral"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Uncertainty/dynamism treated via historical periodization into three eras (regulation, deregulation, new means of competition). No direct numeric uncertainty index is estimated.",
+    "C4_shock_type": [
+      "Regulatory",
+      "Innovation/tech",
+      "Market disruption"
+    ],
+    "C4_shock_design": "Contextual shocks represented by exogenous deregulation and technology/logistics changes; used for periodized comparisons rather than formal identification.",
+    "D1_design": [
+      "Case/Qual",
+      "Panel"
+    ],
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "Yes",
+    "D2b_causality_supported_by_design": "Weak",
+    "D2_identification": [
+      "Other: Observational historical comparison"
+    ],
+    "D2_causal_claim_strength": "Weak",
+    "D2_key_assumptions_addressed": [
+      "Strategic consistency captures both stability and path-following (construct logic).",
+      "Market feedback links action patterns to resources/position (process logic)."
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Other: Period means with confidence intervals; PCA trajectory validation"
+    ],
+    "D3_endogeneity": "Not addressed",
+    "D4_level_alignment": "Explicit bridging",
+    "D5_data_sources": [
+      "Newspaper advertising archives (three major newspapers; yearly 6-week samples, 1945–1995).",
+      "AC Nielsen directory of grocery outlets (1978–1995).",
+      "Company histories/industry reports to reconstruct pre-1978 store configuration.",
+      "Compiled market share series/figures from industry sources."
+    ],
+    "E1_outcomes": [
+      "Market share",
+      "Entry/exit/survival"
+    ],
+    "E2_effect_directions": {
+      "Market share": "+",
+      "Entry/exit/survival": "+"
+    },
+    "E3_mechanisms_tags": [
+      "Learning",
+      "Attention allocation",
+      "Legitimacy/Status",
+      "Resource dependence"
+    ],
+    "E4_moderators": [
+      "Environmental dynamism (era: regulation vs. deregulation vs. new competition means)"
+    ],
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Archival sampling (six weeks per year) may miss short bursts; pre-1978 store data reconstructed; outcomes read from compiled series; no formal control for unobserved heterogeneity or reverse causality; single-country/industry context limits external validity.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Maps observable actions (store openings by size, ad space purchases) to a higher-order trajectory property (strategic consistency) that can be compared across firms and eras.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "P1: In dynamic markets, survival is maximized at an intermediate/appropriate level of strategic consistency balancing adaptation and continuity.",
+      "P2: Central administrative focus and slack increase strategic consistency by enhancing AMC.",
+      "P3: Strategic contestation reduces consistency and degrades performance via misbalanced action portfolios."
+    ],
+    "TYPE_APPLICABLE_empirical": "Yes",
+    "TYPE_APPLICABLE_theory_conceptual": "Yes",
+    "TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Not applicable",
+    "I1_mechanism_statements": [
+      "Consistent action trajectories generate favorable market feedback, strengthening resources and legitimacy, which further reinforce consistency.",
+      "Focused CHQ and undisputed strategic direction heighten awareness/motivation/capability to sustain consistent repertoires.",
+      "Slack enables balanced mixes of capital-intensive (store founding) and marketing actions, avoiding decline spirals."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "mediation",
+        "variable": "Market feedback",
+        "role_in_link": "Transmits effects of action trajectory consistency to performance and resources."
+      },
+      {
+        "type": "moderation",
+        "variable": "Environmental dynamism",
+        "role_in_link": "Alters the optimal level/value of strategic consistency for outcomes."
+      },
+      {
+        "type": "moderation",
+        "variable": "Administrative focus/slack",
+        "role_in_link": "Enables achieving and maintaining consistency under change."
+      }
+    ],
+    "I3_theoretical_propositions": [
+      "The more resourceful and focused the central administration, the higher the probability of achieving an optimal level of strategic consistency.",
+      "Lower political contestation over strategic direction facilitates achieving optimal consistency; political coalitions reduce balance in action portfolios.",
+      "Low consistency weakens market position and slack, which in turn further reduces the ability to reach optimal consistency (vicious circle)."
+    ],
+    "J1_main_findings_summary": [
+      "Introduces an SC index combining directional alignment (angle between change vectors) and magnitude of change to quantify action-path coherence.",
+      "Firms with higher and well-directed consistency (Kesko, SOK) tended to improve/sustain market share and survive; low or drifting consistency (TUKO, EKA) associated with decline and exit.",
+      "PCA trajectories visualize coherent directional movement for successful firms and drifting for unsuccessful ones, consistent with theory.",
+      "Organizational antecedents—CHQ focus/capability, strategic consensus, and slack—emerge as key drivers of consistency via AMC."
+    ],
+    "J2_finding_evidence_links": "Figure 2 (market shares); Figure 3 (SC construction/geometry); Table 2 (period SC means and CIs); Figure 4 (PCA trajectories).",
+    "J3_finding_strength": "Mixed evidence",
+    "K1_contribution_summary": "By elevating strategic consistency to a formal, measurable trajectory property of action repertoires and connecting it to survival through a process model validated on a 50-year industry history, the paper redirects competitive dynamics toward long-run evolutionary alignment and provides a portable measurement recipe for comparing firms’ action paths across eras."
+  }

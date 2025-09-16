@@ -1,0 +1,568 @@
+{
+  "paper_metadata": {
+    "doi": "10.1002/smj.795",
+    "title": "DE NOVOVENTURE STRATEGY: ARCH INCUMBENCY AT INAUGURAL ENTRY",
+    "authors": [
+      "TERENCE PING CHING FAN"
+    ],
+    "publication_year": 2010,
+    "journal": "Strategic Management Journal",
+    "research_type": "Quantitative",
+    "research_context": "Intra-European scheduled passenger airline industry",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "market overlap",
+      "definition": "The degree to which a de novo venture and an incumbent serve the same markets (measured in the study as the percent of the entrant's seat capacity that directly overlaps with a single incumbent across non-stop city-pair markets).",
+      "context_snippet": "To estimate the impact of market overlap between a new venture and its arch incumbent in a test for Hypothesis 1, the percent of market overlap (ArcInc i) from the perspective of the new venture is used.  For instance, if a new venture i faces only three competitors, with 60 percent of its seat capacity overlapping (i.e., directly competing in the same city pair markets) with incumbent A, 40 percent with incumbent B, and 10 percent with incumbent C, A would be its arch incumbent with 60 percent market overlap (ArcInc i = 0.60).",
+      "aliases": [
+        "ArcInc",
+        "percent market overlap"
+      ]
+    },
+    {
+      "term": "arch incumbent",
+      "definition": "The particular incumbent with whom a de novo venture shares the most market or product overlap; the single incumbent that the entrant overlaps most with in its inaugural markets and hence is most likely to launch coordinated retaliatory actions.",
+      "context_snippet": "As far as a de novo venture is concerned, the particular incumbent with whom it shares the most market or product overlap (referred to herein as the arch incumbent) would potentially have the most to lose, and would therefore be the most motivated to launch an aggressive reaction.",
+      "aliases": []
+    },
+    {
+      "term": "venture survival",
+      "definition": "The continued existence of the de novo venture after entry; in this study operationalized as lack of exit (continued scheduled passenger air service) and modeled via an exit hazard (survival analysis).",
+      "context_snippet": "The probability of a de novo venture's post-entry exit, as witnessed by a lack of continued scheduled passenger air service, is used as the dependent variable in the econometric model.",
+      "aliases": [
+        "survival odds",
+        "exit hazard (inverse of survival)"
+      ]
+    },
+    {
+      "term": "inaugural capacity",
+      "definition": "The scale of the de novo venture's inaugural entry in terms of production or service capacity; conceptually associated with 'aggressive entry' where larger initial scale can confer economies of scale and signal resource depth to incumbents.",
+      "context_snippet": "To test Hypothesis 2, the inaugural capacity of a de novo venture is calculated ... The variable SEATS i is the natural logarithm of the total (one-way) capacity in terms of the number of seats per week of venture i.  ... An aggressive entry by a de novo venture can aid its survival both internally and externally.  Internally ... the increased scale of entry allows the new venture to attain larger economies of scale earlier ... Externally, an aggressive entry can signal the availability of deep pools of resources for the new ventures ...",
+      "aliases": [
+        "SEATS",
+        "inaugural production capacity"
+      ]
+    },
+    {
+      "term": "relative capacity",
+      "definition": "The entrant's capacity in a given city-pair market relative to a computed minimum efficient scale (MES) for that city-pair; used to capture threat to incumbents when entrant capacity approximates incumbent scale in that market.",
+      "context_snippet": "The ratio of the capacity of a new venture (in terms of one-way seats per week) to that of the MES is the relative capacity, or RMES i, of that venture.  The MES is computed as the average seat capacity (one-way, per week) of the largest incumbents accounting in aggregate for at least half of the industry seat capacity for a particular non-stop city pair.",
+      "aliases": [
+        "RMES",
+        "capacity / MES"
+      ]
+    },
+    {
+      "term": "market positioning",
+      "definition": "The strategic positioning of the new venture (e.g., low-cost, differentiated, or niche) that signals which customer segments it targets and thus affects the degree of direct competition and likelihood of incumbent retaliation.",
+      "context_snippet": "A different product positioning by a firm signals that it is targeting a different set of customers; this should lessen the degree of competition with other firms, and hence increase its survival odds.  Porter (1980) identified three generic strategic positions to enhance firms' long-term viability: a low-cost orientation, a differentiated positioning through higher quality, and a focus on specific niches.",
+      "aliases": [
+        "positioning",
+        "low-cost positioning"
+      ]
+    },
+    {
+      "term": "low-cost positioning",
+      "definition": "A market position emphasizing lower prices and cost-focused operations (used in the paper as a concrete 'different market positioning' away from incumbents); in this study operationalized as a binary indicator if the carrier advertised itself as low-cost or budget.",
+      "context_snippet": "The variable LowCost i takes on a value of one if venture i advertised itself as a low-cost or budget carrier, and zero otherwise.",
+      "aliases": [
+        "LowCost",
+        "budget positioning"
+      ]
+    },
+    {
+      "term": "retaliation probability",
+      "definition": "The likelihood that an incumbent (particularly the arch incumbent) will launch entry-retaliatory actions against a de novo entrant; theoretically mediates the effect of overlap/positioning/capacity on survival (paper hypothesizes reduced retaliation under certain conditions).",
+      "context_snippet": "However, a large market overlap with the arch incumbent combined with an aggressive inaugural market entry or a different market positioning reduces the probability of retaliation by the arch incumbent (and subsequently other incumbents as well), and hence increases the probability of survival for a de novo entrant.",
+      "aliases": [
+        "entry retaliation",
+        "entry-retaliatory actions"
+      ]
+    },
+    {
+      "term": "home city size",
+      "definition": "The population size of the venture's operational home base city (used as a control variable; operationalized as the natural logarithm of the city's population).",
+      "context_snippet": "Home city population. This is the natural logarithm of the population of the city (Home i) of the operational home base of a de novo venture.",
+      "aliases": [
+        "Home",
+        "home city population"
+      ]
+    }
+  ],
+  "construct_dimensions": [
+    {
+      "parent_construct": "market positioning",
+      "dimension_construct": "low-cost positioning"
+    },
+    {
+      "parent_construct": "market positioning",
+      "dimension_construct": "differentiated positioning"
+    },
+    {
+      "parent_construct": "market positioning",
+      "dimension_construct": "niche positioning"
+    }
+  ],
+  "relationships": [
+    {
+      "subject_term": "market overlap",
+      "object_term": "venture survival",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 1: The larger the degree of market overlap between a de novo venture and its arch incumbent, the less likely the new venture will survive.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Observational Cox proportional-hazard analysis on entry/exit data; no exogenous treatment or identification strategy establishing a causal counterfactual.",
+      "section_header": "THEORY / Hypotheses",
+      "line_index_range": null,
+      "supporting_theories": [
+        "multimarket contact / mutual forbearance"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "home city size",
+        "airport constraint",
+        "market newness (near-new)",
+        "market newness (near-near)",
+        "year dummies",
+        "age dummy",
+        "new industry entrant"
+      ]
+    },
+    {
+      "subject_term": "market overlap",
+      "object_term": "venture survival",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "In Model 3 ... the estimated coefficients for ... the main effect of arch incumbency (ArcInc i) are ... positive for ArcInc i (i.e., detrimental to survival, as hypothesized).",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Model 3 shows a positive and statistically significant coefficient for ArcInc (market overlap) indicating larger overlap increases exit hazard (reduces survival).",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": "Model3",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Cox proportional hazards regression (observational), no experimental/quasi-experimental identification; estimates association between ArcInc and exit hazard controlling for listed covariates.",
+      "section_header": "DATA AND METHODOLOGY / Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "multimarket contact / mutual forbearance"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "home city size",
+        "airport constraint",
+        "market newness (near-new)",
+        "market newness (near-near)",
+        "year dummies",
+        "age dummy",
+        "new industry entrant",
+        "market positioning (LowCost)"
+      ]
+    },
+    {
+      "subject_term": "inaugural capacity",
+      "object_term": "venture survival",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Hypothesis 2: When combined with a high degree of market overlap with an arch incumbent, the larger the inaugural production capacity of a de novo venture, the more likely the new venture will survive.",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 2: ... the interaction of large inaugural production capacity and high market overlap with the arch incumbent increases survival odds.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Theory: aggressive entry signals resources and achieves scale economies; empirically tested via interaction ArcInc × SEATS in Cox models.",
+      "section_header": "THEORY / Hypotheses",
+      "line_index_range": null,
+      "supporting_theories": [
+        "aggressive entry deterrence"
+      ],
+      "moderators": [
+        "market overlap"
+      ],
+      "mediators": [
+        "retaliation probability"
+      ],
+      "controls": [
+        "home city size",
+        "airport constraint",
+        "market newness (near-new)",
+        "market newness (near-near)",
+        "year dummies",
+        "age dummy",
+        "new industry entrant"
+      ]
+    },
+    {
+      "subject_term": "inaugural capacity",
+      "object_term": "venture survival",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Model 5 shows ... the estimated coefficient for the interaction variable (ArcInc i × SEATS i) is ... negative (survival enhancing) ... indicating that the threat of a large market overlap with an arch incumbent can be mitigated by an aggressive inaugural entry.",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Model 5: interaction ArcInc × SEATS has a negative coefficient (decreases exit hazard), implying larger inaugural capacity improves survival when overlap is high.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": "Model5",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Observed association from Cox proportional hazards with interaction term; no exogenous identification to claim causality.",
+      "section_header": "DATA AND METHODOLOGY / Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "aggressive entry deterrence",
+        "multimarket contact / mutual forbearance"
+      ],
+      "moderators": [
+        "market overlap"
+      ],
+      "mediators": [
+        "retaliation probability"
+      ],
+      "controls": [
+        "home city size",
+        "airport constraint",
+        "market newness (near-new)",
+        "market newness (near-near)",
+        "year dummies",
+        "age dummy",
+        "new industry entrant"
+      ]
+    },
+    {
+      "subject_term": "market positioning",
+      "object_term": "venture survival",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Hypothesis 3. For de novo ventures with large market overlaps with their arch incumbents, those adopting a low-cost, differentiated, or niche positioning will be more likely to survive than other new ventures.",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 3: For de novo ventures with large market overlaps with their arch incumbents, those adopting a low-cost, differentiated, or niche positioning will be more likely to survive than other new ventures.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H3",
+      "claim_id": "H3",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Theory: different positioning reduces direct competition and incumbent retaliation; empirically tested via ArcInc × LowCost interaction.",
+      "section_header": "THEORY / Hypotheses",
+      "line_index_range": null,
+      "supporting_theories": [
+        "market positioning (Hotelling tradition)"
+      ],
+      "moderators": [
+        "market overlap"
+      ],
+      "mediators": [
+        "retaliation probability"
+      ],
+      "controls": [
+        "home city size",
+        "airport constraint",
+        "market newness (near-new)",
+        "market newness (near-near)",
+        "year dummies",
+        "age dummy",
+        "new industry entrant"
+      ]
+    },
+    {
+      "subject_term": "market positioning",
+      "object_term": "venture survival",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "In Model 4 ... the interaction coefficient ArcInc × LowCost is statistically significant and negative (survival enhancing), while the main effect of LowCost alone is not significant.  This suggests that a low-cost positioning enhances survival primarily when the entrant has a large market overlap with its arch incumbent.",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Model 4 shows the interaction ArcInc × LowCost is significant (reduces exit hazard), implying low-cost positioning improves survival when overlap with the arch incumbent is high.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H3",
+      "claim_id": "H3",
+      "study_id": "Model4",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Observed association from Cox proportional hazards with interaction term; no experimental/quasi-experimental identification.",
+      "section_header": "DATA AND METHODOLOGY / Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "market positioning (Hotelling tradition)",
+        "multimarket contact / mutual forbearance"
+      ],
+      "moderators": [
+        "market overlap"
+      ],
+      "mediators": [
+        "retaliation probability"
+      ],
+      "controls": [
+        "home city size",
+        "airport constraint",
+        "market newness (near-new)",
+        "market newness (near-near)",
+        "year dummies",
+        "age dummy",
+        "new industry entrant"
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "market overlap",
+      "name": "ArcInc (percent market overlap with arch incumbent)",
+      "details": "Percent of the entrant's weekly seat capacity that overlaps (directly competes) with a single incumbent across non-stop city-pair markets. If multiple competitors exist, the incumbent with the largest percent overlap is designated the arch incumbent and ArcInc equals that percent overlap. Example: ArcInc = 0.60 if 60% of entrant seats overlap with incumbent A.",
+      "instrument": "OAG schedules; seat capacity by non-stop city-pair",
+      "scale_items": null,
+      "scoring_procedure": "ArcInc computed as overlapping seats divided by total entrant seats (weighted across multiple routes by seat capacity).",
+      "formula": "$$ArcInc_i = \\frac{\\text{overlapping seats with arch incumbent}}{\\text{total seats of entrant }i}$$",
+      "reliability": null,
+      "validity": "Construct based on schedule overlap proxy; described as perspective of the entrant in the paper.",
+      "context_adaptations": null,
+      "study_id": "Model3",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "venture survival",
+      "name": "Exit hazard / survival (Cox proportional hazards)",
+      "details": "Dependent variable: firm exit defined as cessation of scheduled passenger air service (no continued scheduled service). Modeled using Cox proportional hazards; ventures right-censored if still operating at end of data window. Regression uses discrete-time formulation derived from Cox model and logistic likelihood for risk sets.",
+      "instrument": "OAG schedule presence/absence across quarters",
+      "scale_items": null,
+      "scoring_procedure": "Exit event coded when carrier ceases scheduled intra-European passenger service; survival time measured in quarters from inaugural quarter until exit or censoring.",
+      "formula": "$$\\lambda(t_i) = e^{ -\\beta' x_i } \\; \\lambda_0(t_i)$$  \nAdditionally the discrete-time risk probability used:  \n$$\\Pr[t=T_j\\mid \\text{risk set}_j] = \\frac{e^{\\beta'X_i}}{\\sum_{k\\in\\text{risk set}_j} e^{\\beta'X_k}}$$",
+      "reliability": null,
+      "validity": "Paper justifies exit as appropriate negative performance indicator because firms often maintain schedules up to last day of operation.",
+      "context_adaptations": null,
+      "study_id": "Model3",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "inaugural capacity",
+      "name": "SEATS (log of entrant weekly one-way seats)",
+      "details": "Natural logarithm of the entrant's total one-way seat capacity per week at inauguration (weighted across routes by seat capacity). Used as a measure of aggressive inaugural entry and included (and interacted with ArcInc) in Cox regressions.",
+      "instrument": "OAG schedules; weekly one-way seat tallies",
+      "scale_items": null,
+      "scoring_procedure": "Compute total one-way seats per week across entrant's inaugural route network, then take natural logarithm.",
+      "formula": "$$SEATS_i = \\ln(\\text{total one-way seats/week for entrant }i)$$",
+      "reliability": null,
+      "validity": "Argued to proxy aggressive entry scale and resource depth; used in prior literature.",
+      "context_adaptations": null,
+      "study_id": "Model5",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H2"
+    },
+    {
+      "construct_term": "relative capacity",
+      "name": "RMES (capacity / MES)",
+      "details": "Entrant capacity relative to the minimum efficient scale (MES) for each city-pair market. MES computed as average seat capacity of the largest incumbents accounting for at least 50% of city-pair capacity; entrant RMES is weighted average across routes.",
+      "instrument": "OAG schedules; computation of MES using incumbent shares in each city-pair",
+      "scale_items": null,
+      "scoring_procedure": "For each city-pair compute MES as average capacity of largest incumbents summing to >=50% of capacity; compute entrant capacity / MES for each route, then weight by entrant seat capacity to obtain RMES_i.",
+      "formula": "$$RMES_{i} = \\frac{\\text{entrant capacity (one-way seats/week)}}{MES_{o}}$$",
+      "reliability": null,
+      "validity": "Designed to capture threat of entrant when its capacity approaches incumbents' scale.",
+      "context_adaptations": null,
+      "study_id": "Models6-8",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H2"
+    },
+    {
+      "construct_term": "market positioning",
+      "name": "LowCost dummy",
+      "details": "Binary indicator equal to one if the entrant advertised itself as a low-cost or budget carrier in company materials and industry publications, zero otherwise. Used as a measure of different market positioning (low-cost) and interacted with ArcInc in regressions.",
+      "instrument": "Company web sites and industry publications coding",
+      "scale_items": null,
+      "scoring_procedure": "Manual coding from public materials; LowCost_i = 1 if advertised as low-cost/budget, else 0.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Paper notes only 15 carriers advertised as low-cost among sample and uses dummy in models.",
+      "context_adaptations": null,
+      "study_id": "Model4",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3"
+    },
+    {
+      "construct_term": "retaliation probability",
+      "name": "Inferred retaliation (not directly measured)",
+      "details": "The study posits probability of retaliation by incumbents as a mediating mechanism but does not directly measure or report an explicit empirical proxy for retaliation probability; the mechanism is inferred from interaction effects (ArcInc×SEATS, ArcInc×LowCost) on survival.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": null,
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Hypothesis_Development",
+      "hypothesis_id": "H2"
+    },
+    {
+      "construct_term": "home city size",
+      "name": "HOME (log population of home city)",
+      "details": "Natural logarithm of the population of the entrant's operational home base city (city with most scheduled departure seat capacity per week). Included as a control in regressions.",
+      "instrument": "City population statistics (unspecified source in paper)",
+      "scale_items": null,
+      "scoring_procedure": "$$HOME_i = \\ln(\\text{population of entrant }i\\text{'s home city})$$",
+      "formula": "$$HOME_i = \\ln(\\text{population})$$",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": "Model3",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "airport constraint",
+      "name": "Multi (dummy for home base served by >1 airport)",
+      "details": "Dummy variable equal to one if the operational home base of the entrant is served by more than one airport (used as an indicator of potential capacity constraint at the primary airport), zero otherwise.",
+      "instrument": "Airport listings / city-airport mappings",
+      "scale_items": null,
+      "scoring_procedure": "Multi_i = 1 if home base served by more than one airport, else 0.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": "Model3",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "market newness",
+      "name": "NEARNEW / NEARNEAR (proportion of capacity in near-new markets)",
+      "details": "Proportions of entrant inaugural capacity devoted to city-pair markets that are newly served or near existing served routes: NEARNEW = proportion of capacity on routes where one endpoint is close to an established route; NEARNEAR = proportion where both endpoints are near established routes. Included as controls.",
+      "instrument": "OAG schedules and geographic proximity (150 km proximity rule described)",
+      "scale_items": null,
+      "scoring_procedure": "Compute proportions of entrant capacity in route categories defined by proximity to existing service; NEARNEW_i and NEARNEAR_i are weighted by seat capacity.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Proximity threshold 150 km used in paper (tested robust to 50 km or 200 km).",
+      "study_id": "Model3",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "new industry entrant",
+      "name": "NewCo (dummy: first among new entrants to a market)",
+      "details": "Dummy taking value one if the entrant was the first among 'new industry entrants' (founded after regulatory change) to enter a given non-stop city-pair market that had preexisting incumbents, weighted by seat capacity; included as a control per Mitchell's dual clocks concept.",
+      "instrument": "OAG schedules and entrant founding dates",
+      "scale_items": null,
+      "scoring_procedure": "NewCo_i = weighted proportion of entrant inaugural capacity that is first among new-industry entrants for the route.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": "Model3",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "multimarket contact / mutual forbearance",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "hypothesis_id": "H1",
+      "grounding_phrase": "The first stream is on interfirm competition, specifically about how the concept of mutual forbearance among established incumbents does not bode well for de novo ventures.",
+      "evidence": "Cites Baum and Korn (1996, 1999), Gimeno (1999) and literature showing multimarket contact promotes mutually tolerant behavior among rivals; used to argue incumbents may retaliate against de novo entrants.",
+      "section_header": "THEORY",
+      "confidence": null
+    },
+    {
+      "name": "aggressive entry deterrence",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H2"
+      ],
+      "hypothesis_id": "H2",
+      "grounding_phrase": "The second stream of studies ... several scholars advocate aggressive entry by new ventures as a means to increase survival odds (Biggardike, 1979; MacMillan and Day, 1987; Miller and Camp, 1985; Cooper, Willard, and Woo, 1986).",
+      "evidence": "Paper uses literature arguing large inaugural capacity can achieve economies of scale and signal resource depth to incumbents; used to motivate Hypothesis 2.",
+      "section_header": "THEORY",
+      "confidence": null
+    },
+    {
+      "name": "market positioning (Hotelling tradition)",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H3"
+      ],
+      "hypothesis_id": "H3",
+      "grounding_phrase": "In a third stream of literature, researchers in the tradition of Hotelling (1929) have long argued that when firms sell the same product or adopt the same market positioning as an existing competitor intense price competition may be the result.",
+      "evidence": "Paper cites Hotelling (1929), Porter (1980), Durand and Coeurderoy (2001) to motivate how different positioning (low-cost/differentiation/niche) reduces direct competition and deters retaliation.",
+      "section_header": "THEORY",
+      "confidence": null
+    }
+  ],
+  "coverage_report": {
+    "constructs": 9,
+    "relationships": 6,
+    "measurements": 11,
+    "reason": "Controlled-vocabulary minimal coverage targets for a quantitative paper (>=10 constructs and >=12 relationships) are not met. Extraction limited to constructs and relationships explicitly anchored to Hypotheses/Propositions and their empirical tests as required by scope policy.",
+    "errors": [
+      "insufficient_constructs",
+      "insufficient_relationships"
+    ]
+  }
+}

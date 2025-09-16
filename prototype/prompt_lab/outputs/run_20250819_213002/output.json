@@ -1,0 +1,632 @@
+{
+  "paper_metadata": {
+    "doi": "doi.org/10.1287/mnsc.2021.4210",
+    "title": "Michelin Is Coming to Town: Organizational Responses to Status Shocks",
+    "authors": [
+      "Saverio Dave Favaron",
+      "Giada Di Stefano",
+      "Rodolphe Durand"
+    ],
+    "publication_year": 2022,
+    "journal": "MANAGEMENT SCIENCE",
+    "research_type": "Quantitative",
+    "research_context": "Empirical analysis exploiting the exogenous shock produced by the release of the first edition of the Michelin Guide for Washington, DC (fall 2016); restaurants included in the Guide are treated and compared to (1) similar DC restaurants excluded from the Guide and (2) matched restaurants in Boston (difference-in-differences).",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "status shock",
+      "definition": "An exogenous shock in the attribution of status—namely, the release of the first edition of the Michelin Guide for Washington, DC—which generated a positive change in status for restaurants included in the Guide; characterized in the paper as a \"positive status shock— that is, a positive status shock— that elevates them to the elite of the industry worldwide.\"",
+      "context_snippet": "we leverage the unique empirical opportunity of an exogenous shock in the attribution of status— namely, the release of the first edition of the Michelin Guide for Washington, DC, in the fall of 2016.",
+      "aliases": [
+        "positive status shock",
+        "Michelin entry"
+      ]
+    },
+    {
+      "term": "self-presentation",
+      "definition": "The set of attributes an organization displays to communicate its identity and to align with audience expectations; in this paper, the concept refers to attributes restaurants present (e.g., menu content, emphasis on techniques and ingredients, pricing) to conform to what they believe audiences expect from elite actors.",
+      "context_snippet": "newly awarded high-status actors modify their self-presentation attributes to fit with what they believe audiences expect from the elite.",
+      "aliases": [
+        "self-presentation attributes",
+        "menu-based self-presentation"
+      ]
+    },
+    {
+      "term": "prior standing",
+      "definition": "An actor's standing prior to the status shock, operationalized in the paper as prior recognition in prominent local and national intermediaries; theoretically the pre-shock position/recognition that may affect insecurity and the propensity to change self-presentation.",
+      "context_snippet": "The standing of an actor prior to the shock will affect the extent to which the actor feels the need to make changes to their self-presentation.",
+      "aliases": [
+        "standing prior to the shock",
+        "pre-shock standing"
+      ]
+    },
+    {
+      "term": "description length",
+      "definition": "A descriptive menu attribute capturing the level of detail provided in menus (how menus look from a descriptive standpoint); theoretically a dimension of self-presentation reflecting the degree of narrative/detail used to identify the establishment.",
+      "context_snippet": "The first two attributes we examined are associated with how menus look from a descriptive standpoint... We use description length to capture the level of detail provided in menus.",
+      "aliases": [
+        "menu description length"
+      ]
+    },
+    {
+      "term": "size description",
+      "definition": "A descriptive attribute reflecting emphasis on portion size (a manifestation of 'plenty'); theoretically, a menu-based signal of abundance used in self-presentation.",
+      "context_snippet": "Our second variable, size description, is a direct translation of Bourdieu’s (1984) definition of plenty. In particular, we look at the number of words... used to characterize the size of portions.",
+      "aliases": [
+        "portion size emphasis"
+      ]
+    },
+    {
+      "term": "craft authenticity",
+      "definition": "An authenticity-related attribute focusing on mastery of culinary skills and techniques used in dish preparation; theoretically part of how a restaurant signals authenticity in self-presentation.",
+      "context_snippet": "Our first variable, craft authenticity, captures the mastery of skills by looking at the number of words related to cooking techniques...",
+      "aliases": [
+        "technical authenticity",
+        "culinary technique emphasis"
+      ]
+    },
+    {
+      "term": "natural authenticity",
+      "definition": "An authenticity-related attribute focusing on raw materials and provenance/origin of ingredients; theoretically part of how a restaurant signals authenticity and quality in self-presentation.",
+      "context_snippet": "Our second variable, natural authenticity, focuses on raw materials by measuring the number of words related to the provenance and origin of food.",
+      "aliases": [
+        "ingredient provenance emphasis"
+      ]
+    },
+    {
+      "term": "average price",
+      "definition": "A value-related menu attribute capturing the typical price charged for main dishes; theoretically a signal of value creation and status-aware pricing in self-presentation.",
+      "context_snippet": "To examine the pricing strategies of restaurants newly included in the Michelin Guide... our first variable, average price, is the average of all dish prices listed as 'main dishes' ... where changes could potentially imply changes in the restaurant’s operations.",
+      "aliases": [
+        "mean main-dish price"
+      ]
+    },
+    {
+      "term": "minimum price",
+      "definition": "A value-related menu attribute capturing the minimum price charged for a main dish; theoretically a signaling tool to position among elites and indicate accessibility.",
+      "context_snippet": "Our second variable, minimum price, is the minimum of all dish prices in the main dishes section of the menu, where changes may capture signaling behaviors.",
+      "aliases": [
+        "min main-dish price"
+      ]
+    }
+  ],
+  "construct_dimensions": [
+    {
+      "parent_construct": "authenticity",
+      "dimension_construct": "craft authenticity"
+    },
+    {
+      "parent_construct": "authenticity",
+      "dimension_construct": "natural authenticity"
+    }
+  ],
+  "relationships": [
+    {
+      "subject_term": "status shock",
+      "object_term": "self-presentation",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 1. Organizations that experience a positive status shock will modify their self-presentation with the aim of conforming to the expectations associated with their newly acquired status.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "Hypothesis Development",
+      "line_index_range": null,
+      "supporting_theories": [
+        "status insecurity",
+        "self-presentation theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "prior standing",
+      "object_term": "self-presentation",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": null,
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 2. Organizations with high standing prior to a positive status shock will be less likely to modify their self-presentation in response to that shock.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "Hypothesis Development",
+      "line_index_range": null,
+      "supporting_theories": [
+        "middle-status conformity"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "status shock",
+      "object_term": "description length",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": true,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Our results show ... a significant positive effect on the length of dish descriptions (b = 1.404, p = 0.005 for control 1; and b = 1.404, p = 0.018 for control 2).",
+      "boundary_conditions": "Effect observed comparing treated restaurants to two control groups (DC excluded restaurants and matched Boston restaurants); stronger tendency among non-starred restaurants.",
+      "replication_outcome": null,
+      "context_snippet": "As shown in Table 4, after Michelin’s entry, we observe a significant positive effect on the length of dish descriptions (b = 1.404, p = 0.005 for control 1; and b = 1.404, p = 0.018 for control 2).",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1_Result_DescriptionLength",
+      "study_id": null,
+      "causal_support_level": "Causal",
+      "design_type": "DiD",
+      "manipulated_variable": "Subject",
+      "causal_notes": "Difference-in-differences design exploiting exogenous introduction of the Michelin Guide for Washington, DC; comparison with two control groups (DC restaurants at risk but excluded; matched Boston restaurants), restaurant fixed effects, clustered SEs; authors also report synthetic control robustness.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "status insecurity",
+        "self-presentation theory"
+      ],
+      "moderators": [
+        "prior standing"
+      ],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "status shock",
+      "object_term": "craft authenticity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": true,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "We observe ... a significant positive effect ... on emphasis on craft authenticity (b = 0.021, p = 0.013; and b = 0.019, p = 0.043).",
+      "boundary_conditions": "Observed across comparisons with both control groups; stronger emphasis among restaurants with high prior standing.",
+      "replication_outcome": null,
+      "context_snippet": "As shown in Table 4, after Michelin’s entry, we observe ... emphasis on craft authenticity (b = 0.021, p = 0.013; and b = 0.019, p = 0.043).",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1_Result_CraftAuthenticity",
+      "study_id": null,
+      "causal_support_level": "Causal",
+      "design_type": "DiD",
+      "manipulated_variable": "Subject",
+      "causal_notes": "Difference-in-differences design with two control groups and restaurant fixed effects; authors discuss robustness including synthetic control.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "self-presentation theory"
+      ],
+      "moderators": [
+        "prior standing"
+      ],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "status shock",
+      "object_term": "minimum price",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": true,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "We observe ... a significant positive effect ... on minimum prices charged for main dishes (b = 0.777, p = 0.024; and b = 0.779, p = 0.059).",
+      "boundary_conditions": "Increase in minimum price observed overall; increase in average price is not significant except for starred restaurants; pricing effects may be stronger for starred restaurants.",
+      "replication_outcome": null,
+      "context_snippet": "As shown in Table 4, after Michelin’s entry, we observe ... minimum prices charged for main dishes (b = 0.777, p = 0.024; and b = 0.779, p = 0.059).",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1_Result_MinimumPrice",
+      "study_id": null,
+      "causal_support_level": "Causal",
+      "design_type": "DiD",
+      "manipulated_variable": "Subject",
+      "causal_notes": "Difference-in-differences with two control groups, restaurant fixed effects; authors note starred restaurants particularly raised prices.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "status theory"
+      ],
+      "moderators": [
+        "star presence",
+        "prior standing"
+      ],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "status shock",
+      "object_term": "natural authenticity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": true,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "In the case of non-starred restaurants, we observe a significant increase in emphasis on the origin of ingredients (b = 0.016, p = 0.033; and b = 0.011, p = 0.100).",
+      "boundary_conditions": "Effect observed for non-starred restaurants in split-sample analyses; weaker or insignificant in aggregate.",
+      "replication_outcome": null,
+      "context_snippet": "In the case of non-starred restaurants, we also observe a significant increase in emphasis on the origin of ingredients (b = 0.016, p = 0.033; and b = 0.011, p = 0.100).",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1_Result_NaturalAuthenticity",
+      "study_id": null,
+      "causal_support_level": "Causal",
+      "design_type": "DiD",
+      "manipulated_variable": "Subject",
+      "causal_notes": "Identified via difference-in-differences split-sample analysis comparing non-starred treated restaurants to controls; restaurant fixed effects.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "self-presentation theory"
+      ],
+      "moderators": [
+        "star presence",
+        "prior standing"
+      ],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "status shock",
+      "object_term": "size description",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": true,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "In the case of non-starred restaurants, we observe a significant decrease in the emphasis on portion sizes (only compared with control 2: b = -0.009, p = 0.037).",
+      "boundary_conditions": "Effect observed for non-starred restaurants when comparing to matched Boston control (control 2).",
+      "replication_outcome": null,
+      "context_snippet": "In the case of non-starred restaurants, on the other hand, mostly acted on descriptive attributes ... a significant decrease in the emphasis on portion sizes (only compared with control 2: b = -0.009, p = 0.037).",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1_Result_SizeDescription",
+      "study_id": null,
+      "causal_support_level": "Causal",
+      "design_type": "DiD",
+      "manipulated_variable": "Subject",
+      "causal_notes": "Difference-in-differences split-sample analysis (non-starred restaurants) with matched Boston control; restaurant fixed effects.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "self-presentation theory"
+      ],
+      "moderators": [
+        "prior standing"
+      ],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "prior standing",
+      "object_term": "minimum price",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": true,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Restaurants with high prior standing are also more likely to emphasize value attributes: Their minimum price is higher (control 1: b = 1.317, p = 0.005; control 2: b = 1.319, p = 0.013), and significantly more so compared with restaurants with low prior standing.",
+      "boundary_conditions": "Split-sample analysis comparing treated restaurants with high vs low prior standing to control groups; effect particularly associated with high prior standing subgroup.",
+      "replication_outcome": null,
+      "context_snippet": "Restaurants with high prior standing are also more likely to emphasize value attributes: Their minimum price is higher (control 1: b = 1.317, p = 0.005; control 2: b = 1.319, p = 0.013)...",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H2",
+      "claim_id": "H2_Result_MinimumPrice_PriorStanding",
+      "study_id": null,
+      "causal_support_level": "Causal",
+      "design_type": "DiD",
+      "manipulated_variable": "Subject",
+      "causal_notes": "Identified via difference-in-differences split-sample analysis by prior standing with two control groups; restaurant fixed effects.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "middle-status conformity",
+        "status insecurity"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "status shock",
+      "object_term": "self-presentation",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": true,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Our results show that, depending on their standing prior to Michelin’s entry, restaurants acted upon different attributes of their self-presentation.",
+      "boundary_conditions": "Effects vary by prior standing and star status; many findings are stronger among non-starred restaurants and differ by prior standing subgroup.",
+      "replication_outcome": null,
+      "context_snippet": "Our results show that, depending on their standing prior to Michelin’s entry, restaurants acted upon different attributes of their self-presentation.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1_Result_Overall",
+      "study_id": null,
+      "causal_support_level": "Causal",
+      "design_type": "DiD",
+      "manipulated_variable": "Subject",
+      "causal_notes": "Difference-in-differences comparing treated restaurants to two control groups, with robustness checks including synthetic control and restaurant fixed effects.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "status insecurity",
+        "self-presentation theory",
+        "middle-status conformity"
+      ],
+      "moderators": [
+        "prior standing",
+        "star presence"
+      ],
+      "mediators": [],
+      "controls": []
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "description length",
+      "name": "description length (words per dish)",
+      "details": "Measured as the total number of words used in the menu divided by the total number of dishes in the menu; captures level of detail provided in menu descriptions.",
+      "instrument": "Menu text parsing (word counts) from Yelp/restaurant websites",
+      "scale_items": null,
+      "scoring_procedure": "Total words / total number of dishes",
+      "formula": "description_length = (number_of_words_in_menu) / (number_of_dishes)",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "size description",
+      "name": "size description (portion-size words per dish)",
+      "details": "Measured as the number of words in a menu that reference portion size (e.g., big, bigger, biggest, bottomless, bountiful, colossal, endless, enormous, generous, generously, gigantic, ginormous, heaped, heaping, hearty, hefty, huge, largest, loaded, loads, lots, mammoth, massive, mega, oversized, overstuffed, piled, plentiful, plenty, refills, unlimited, \"and more\", king sized, Texas sized, thick cut, tons of, with more) divided by the total number of dishes; captures emphasis on portion size/plenty.",
+      "instrument": "Menu text parsing with predefined lexicon",
+      "scale_items": [
+        "big",
+        "bigger",
+        "biggest",
+        "bottomless",
+        "bountiful",
+        "colossal",
+        "endless",
+        "enormous",
+        "generous",
+        "generously",
+        "gigantic",
+        "ginormous",
+        "heaped",
+        "heaping",
+        "hearty",
+        "hefty",
+        "huge",
+        "largest",
+        "loaded",
+        "loads",
+        "lots",
+        "mammoth",
+        "massive",
+        "mega",
+        "oversized",
+        "overstuffed",
+        "piled",
+        "plentiful",
+        "plenty",
+        "refills",
+        "unlimited",
+        "and more",
+        "king sized",
+        "Texas sized",
+        "thick cut",
+        "tons of",
+        "with more"
+      ],
+      "scoring_procedure": "Count of matched portion-size words / total number of dishes",
+      "formula": "size_description = (count_portion_size_words) / (number_of_dishes)",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "craft authenticity",
+      "name": "craft authenticity (technique words per dish)",
+      "details": "Measured as the number of words in a menu related to cooking techniques (e.g., saut\u0000e9, fricass\u0000e9e, sous-vide, low-temperature, flamb\u0000e9, carameliz\u0000e9e, nappage, pasteurized, gel\u0000e9e, pur\u0000e9e, confit, consomm\u0000e9, simmered, smothered, braised) divided by the total number of dishes; captures emphasis on culinary technique/mastery.",
+      "instrument": "Menu text parsing with predefined lexicon (technique list from The Professional Chef, Culinary Institute of America)",
+      "scale_items": [
+        "saut\u0000e9",
+        "fricass\u0000e9e",
+        "sous-vide",
+        "low-temperature",
+        "flamb\u0000e9",
+        "carameliz\u0000e9e",
+        "nappage",
+        "pasteurized",
+        "gel\u0000e9e",
+        "pur\u0000e9e",
+        "confit",
+        "consomm\u0000e9",
+        "simmered",
+        "smothered",
+        "braised"
+      ],
+      "scoring_procedure": "Count of matched technique words / total number of dishes",
+      "formula": "craft_authenticity = (count_technique_words) / (number_of_dishes)",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "natural authenticity",
+      "name": "natural authenticity (provenance words per dish)",
+      "details": "Measured as the number of words in a menu related to ingredient provenance/origin (e.g., natural, organic, farmhouse, wild caught, grass fed, local, market, farmed, free range, heirloom, ranch) divided by the total number of dishes; captures emphasis on provenance of raw materials.",
+      "instrument": "Menu text parsing with predefined lexicon",
+      "scale_items": [
+        "natural",
+        "organic",
+        "farmhouse",
+        "wild caught",
+        "grass fed",
+        "local",
+        "market",
+        "farmed",
+        "free range",
+        "heirloom",
+        "ranch"
+      ],
+      "scoring_procedure": "Count of matched provenance words / total number of dishes",
+      "formula": "natural_authenticity = (count_provenance_words) / (number_of_dishes)",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "average price",
+      "name": "average main-dish price",
+      "details": "Measured as the average price of items explicitly listed under 'main dishes' (or equivalent depending on cuisine) in the menu; captures typical price signalling and potential operational cost/pass-through.",
+      "instrument": "Menu price extraction from Yelp/restaurant websites",
+      "scale_items": null,
+      "scoring_procedure": "Mean of listed prices in the main dishes section",
+      "formula": "average_price = mean(price_i for i in main_dishes)",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Price variables available for a subset of restaurants when menus listed prices (71 of 83 treated; 133 of 143 control1).",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "minimum price",
+      "name": "minimum main-dish price",
+      "details": "Measured as the minimum price among items explicitly listed under 'main dishes' (or equivalent) in the menu; captures signaling at the lower end of accessibility/status.",
+      "instrument": "Menu price extraction from Yelp/restaurant websites",
+      "scale_items": null,
+      "scoring_procedure": "Minimum of listed prices in the main dishes section",
+      "formula": "minimum_price = min(price_i for i in main_dishes)",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Price variables available for a subset of restaurants when menus listed prices (71 of 83 treated; 133 of 143 control1).",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "prior standing",
+      "name": "prior standing (binary)",
+      "details": "Measured as a dummy equal to one if the restaurant appeared in 2015 and/or 2016 in any of the following: (a) Washington Post Dining Guide; (b) Washingtonian '100 Very Best'; (c) Rammy awards; or (d) James Beard Awards (national or mid-Atlantic region); zero otherwise.",
+      "instrument": "Coding of inclusion in specified local/national rankings/awards (2015-2016)",
+      "scale_items": [
+        "Washington Post Dining Guide appearance",
+        "Washingtonian 100 Very Best appearance",
+        "Rammy awards",
+        "James Beard Awards (national/mid-Atlantic)"
+      ],
+      "scoring_procedure": "prior_standing = 1 if appeared in any listed source in 2015 or 2016; else 0",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H2"
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "status insecurity",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H2"
+      ],
+      "hypothesis_id": "H1",
+      "grounding_phrase": "we build on prior work on rankings as insecurity-inducing devices",
+      "evidence": null,
+      "section_header": "Introduction / Hypothesis Development",
+      "confidence": null
+    },
+    {
+      "name": "self-presentation theory",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1"
+      ],
+      "hypothesis_id": "H1",
+      "grounding_phrase": "newly awarded high-status actors modify their self-presentation attributes to fit with what they believe audiences expect",
+      "evidence": null,
+      "section_header": "Hypothesis Development",
+      "confidence": null
+    },
+    {
+      "name": "middle-status conformity",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H2"
+      ],
+      "hypothesis_id": "H2",
+      "grounding_phrase": "In line with prior work, we expect that organizations with high standing prior to a positive status shock will be less likely to modify their self-presentation",
+      "evidence": null,
+      "section_header": "Hypothesis Development",
+      "confidence": null
+    }
+  ],
+  "coverage_report": {
+    "constructs": 9,
+    "relationships": 10,
+    "measurements": 9,
+    "reason": null,
+    "errors": []
+  }
+}

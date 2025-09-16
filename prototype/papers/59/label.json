@@ -1,0 +1,119 @@
+{   "relevant": true,
+    "L1_summary_of_paper": "This paper investigates how the convergence of competences across industry submarkets differentially affects the survival chances of incumbents versus entrants. The core research question is: Does the convergence of technological and customer competences exert different effects on the success of industry incumbents versus entrants? The study defines key concepts such as 'technological competences' (ability to develop and manufacture products using certain process technologies) and 'customer competences' (ability to address different customer needs). The paper develops a 'competence-based view of industry evolution' to argue that the nature of competence convergence determines competitive outcomes. It studies the relationships between technology convergence, market (customer) convergence, firm type (incumbent/entrant), and the likelihood of fab (production facility) closure. The study is set in the global semiconductor manufacturing industry from 1995 to 2015. The main finding is that convergence in both technological and customer competences decreases entrants' survival chances, favoring incumbents. However, convergence in only one of the two competence dimensions (either technological or customer, but not both) provides entrants with sufficient differentiation to survive and potentially disrupt incumbents. If neither dimension converges, incumbents and entrants tend to coexist. The paper contributes to the literature on industry evolution and disruptive innovation by providing a framework that reconciles the conflicting predictions of incumbent dominance (from industry life cycle theory) and entrant advantage (from disruption theory), showing they are conditional on the pattern of submarket competence convergence. It also refines the concept of disruption by categorizing it into 'market disruption' (driven by technology convergence) and 'technology disruption' (driven by market convergence).",
+    "M1_main_theories": [
+      "Competence-based view of industry evolution (primary)",
+      "Industry evolution (secondary)",
+      "Disruptive innovation (secondary)",
+      "Organizational ecology (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm-industry",
+    "M3_unit_of_analysis_element": "Other: <specify>: Fab closure/survival in a submarket",
+    "N1_behavioral_scope": "Multiple behaviors",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "Yes",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Uzunca, B. 2018. A competence-based view of industry evolution: The impact of submarket convergence on incumbent-entrant dynamics. Academy of Management Journal, 61(2): 738-768.",
+    "A2_year": 2018,
+    "A3_outlet_tier": "AMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Other: <specify>: Market/Industry Structure",
+    "B2_levels": "Multi-level",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Learning",
+      "Other: <specify>: Industry evolution",
+      "Other: <specify>: Disruptive innovation",
+      "Other: <specify>: Competence-based view"
+    ],
+    "B4_contribution_type": "Adjudication",
+    "C1_constructs": [
+      "Similarity/overlap",
+      "Other: <specify>: Incumbency",
+      "Other: <specify>: Entry/exit/survival",
+      "Other: <specify>: Submarket convergence"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Text/NLP"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "The paper acknowledges that convergence introduces uncertainty, particularly for incumbents who have higher adjustment costs. For example, it states 'convergence denotes a more radical change in S2’s competence portfolio with more uncertainty' and cites organizational ecology's inertia theorem regarding the unpredictability of environmental change. However, uncertainty is not formally measured as a variable in the model.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "The study models convergence as a continuous process rather than a discrete shock. The author notes: 'This approach distinguishes this paper from the majority of studies... which base their arguments on discrete events, such as shocks or discontinuities'.",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "Yes",
+    "D2b_causality_supported_by_design": "Moderate",
+    "D2_identification": "Other: <specify>: Panel FE (associational)",
+    "D2_causal_claim_strength": "Weak",
+    "D2_key_assumptions_addressed": [
+      "Proportional hazards assumption (implicit in using Cox model)",
+      "Unobserved time-invariant heterogeneity (addressed with country and submarket fixed effects)"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Other: <specify>: Limited sample analysis for H4"
+    ],
+    "D3_endogeneity": "FE saturation",
+    "D4_level_alignment": "Multilevel model",
+    "D5_data_sources": [
+      "Semiconductor Equipment and Materials International (SEMITM)'s World Fab Watch (WFW) dataset",
+      "VLSI Research",
+      "Yole Développement"
+    ],
+    "E1_outcomes": [
+      "Entry/exit/survival"
+    ],
+    "E2_effect_directions": {
+      "Entry/exit/survival": "Mixed"
+    },
+    "E3_mechanisms_tags": [
+      "Learning",
+      "Resource dependence",
+      "Other: <specify>: Organizational inertia",
+      "Other: <specify>: Differentiation opportunity"
+    ],
+    "E4_moderators": [
+      "Incumbent status"
+    ],
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Potential risk of omitted variable bias exists, as is common in observational studies. While the model includes an extensive set of controls and fixed effects, there could be unobserved time-varying factors at the submarket or firm level that correlate with both convergence patterns and fab closure decisions. The measurement of technology and market convergence, while based on an established methodology (Jaffe-style vectors), relies on text analysis of product/technology lists which may not perfectly capture the underlying competence profiles.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "The paper maps 'technology closeness' and 'market closeness' to the underlying constructs of 'technological competences' and 'customer competences' at the submarket level. Firm survival/exit is operationalized as 'fab closure', representing a firm's decision to reposition or its failure to compete within a specific submarket.",
+    "G2_translation_rule": "Conditionality",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "The competitive advantage of incumbents over entrants is conditional on the simultaneous convergence of both technological and market-based competences within an industry; convergence in only one dimension creates opportunities for entrants.",
+      "Disruption is not a monolithic event but can be categorized by its competence-based origin: 'market disruption' arises from technology convergence, while 'technology disruption' arises from market convergence.",
+      "The absence of industry shakeouts can be explained by the persistent separation of submarkets across competence dimensions, which provides stable niches for both entrants and incumbents to coexist."
+    ],
+    "TYPE_APPLICABLE_empirical": "Yes",
+    "TYPE_APPLICABLE_theory_conceptual": "No",
+    "TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Not applicable",
+    "I1_mechanism_statements": [
+      "When only technological competences converge, entrants can survive by leveraging differentiated customer competences, as incumbents' organizational inertia makes it difficult for them to serve niche customer needs.",
+      "When only customer competences converge, entrants can survive by leveraging new, competence-destroying technologies that incumbents, with their sunk costs in old technologies, cannot easily adopt.",
+      "When both technological and customer competences converge, the industry becomes homogeneous, eliminating differentiation opportunities. This forces entrants into direct competition with incumbents, who have superior scale and resources, leading to entrant failure.",
+      "When neither competence type converges, submarkets remain as 'isolated islands', preventing incumbents from leveraging their advantages across submarkets and allowing both incumbents and entrants to coexist in their respective niches."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Incumbent status",
+        "role_in_link": "Moderates the relationship between the different types of submarket convergence (technology only, market only, both) and the likelihood of fab closure. The effect of each convergence type on survival is different for incumbents versus entrants."
+      }
+    ],
+    "I3_theoretical_propositions": [],
+    "J1_main_findings_summary": [
+      "Convergence in only technological competences decreases the likelihood of fab closure for entrants more than for incumbents, supporting the 'market disruption' hypothesis (H1).",
+      "Convergence in only customer (market) competences also decreases the likelihood of fab closure for entrants more than for incumbents, supporting the 'technology disruption' hypothesis (H2).",
+      "Convergence in both technological and customer competences increases the likelihood of fab closure for entrants while decreasing it for incumbents, supporting the 'incumbent dominance' hypothesis (H3).",
+      "In submarkets where neither competence type is converging, there is no significant differential effect on the survival of entrants versus incumbents, supporting the 'continued separation' hypothesis (H4)."
+    ],
+    "J2_finding_evidence_links": "Table 5 (Cox Hazard Model Results), particularly Model 5 for H1-H3 and Model 6 for H4.",
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "This study makes a significant contribution by developing and testing a competence-based view of industry evolution that reconciles the conflicting perspectives of incumbent dominance (from ILC theory) and entrant-led disruption. By disaggregating industry structure into submarkets defined by technological and customer competences, the paper creates a typology that explains when and why different competitive outcomes (incumbent dominance, disruption, coexistence) occur. It enriches disruption theory by distinguishing between market- and technology-driven disruption and provides a novel explanation for why industry shakeouts do not always happen, linking it to the lack of competence convergence."
+  }

@@ -1,0 +1,109 @@
+{   "relevant":false,
+    "L1_summary_of_paper": "This empirical-quantitative study investigates how corporate scope influences competitive behavior in complementary markets, focusing on the role of motivation differences alongside capability differences. Using the U.S. automobile leasing market as an empirical setting, the authors contrast predictions from the capabilities view, which emphasizes cost and forecasting advantages, with those from the awareness–motivation–capability (AMC) framework, which incorporates firm-level strategic motives. The central research question is whether corporate affiliates (captive lessors) compete differently from independent lessors due to motivations to support parent firms’ core product sales, even at the expense of local profitability. The study finds that while capability-based predictions explain some competitive patterns (e.g., independent lessors’ advantage in first-year models), AMC motivation-based predictions better explain why captive lessors take on higher-risk, lower-reliability, and high-inventory models, but only for their own brands. The contribution lies in integrating motivation into competitive dynamics theory in complementary markets, demonstrating that corporate scope can shape competitive conduct beyond capability-based explanations.",
+    "M1_main_theories": [
+      "Awareness–Motivation–Capability framework (primary)",
+      "Capabilities view (secondary)",
+      "Resource-based view (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm",
+    "M3_unit_of_analysis_element": "Market share",
+    "N1_behavioral_scope": "Single behavior",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "Not applicable",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Bennett, V. M., & Pierce, L. (2016). Motivation matters: Corporate scope and competition in complementary markets. Strategic Management Journal, 37(10), 1836–1854.",
+    "A2_year": "2016",
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Firm",
+    "B2_levels": "Firm",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Resource-based view",
+      "Awareness–Motivation–Capability"
+    ],
+    "B4_contribution_type": "Adjudication",
+    "C1_constructs": [
+      "Other: motivation differences",
+      "Other: capability differences",
+      "Market share"
+    ],
+    "C2_measurement": "Archival behavioral",
+    "C3_uncertainty_ambiguity": "None",
+    "C3_metric_detail": "No explicit measurement of uncertainty; focus is on motivations and capabilities in competitive behavior.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "Not applicable",
+    "D2_identification": "Panel FE (causal)",
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": "Not reported",
+    "D2_robustness_suite": "Alt specs",
+    "D3_endogeneity": "FE saturation",
+    "D4_level_alignment": "None",
+    "D5_data_sources": [
+      "California leasing contract records",
+      "Dealer loan rate data",
+      "Consumer Reports reliability scores",
+      "Automotive News inventory data"
+    ],
+    "E1_outcomes": [
+      "Market share"
+    ],
+    "E2_effect_directions": {
+      "Market share": "Mixed"
+    },
+    "E3_mechanisms_tags": [
+      "Resource dependence",
+      "Signaling"
+    ],
+    "E4_moderators": [
+      "Brand affiliation (own brand vs. other brand)"
+    ],
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Observational design with panel FE controls; no strong causal identification; possible omitted variable bias.",
+    "F3_saturation_contribution": "Adjudication",
+    "G1_construct_mapping_note": "Maps capability-based competition to RBV and motivation-based competition to AMC framework within competitive dynamics literature.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "Corporate scope can alter local competitive incentives in complementary markets.",
+      "Motivations and capabilities jointly shape competitive behavior.",
+      "AMC framework adds predictive power beyond capabilities view in specific contexts."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "The paper is an empirical study with archival data; not applicable to theory-only or review contexts.",
+    "I1_mechanism_statements": [
+      "Captive lessors may lease low-profit vehicles to support parent company sales (motivation effect).",
+      "Independent lessors’ market share advantages stem from lower cost of funds and lower residual value uncertainty (capability effect).",
+      "Inventory pressure increases captive lessors’ willingness to accept lower margins."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Brand affiliation",
+        "role_in_link": "Motivation effects occur only for own-brand vehicles, not for other brands."
+      }
+    ],
+    "I3_theoretical_propositions": [],
+    "J1_main_findings_summary": [
+      "Independent lessors outperform captive lessors in first-year models, consistent with capability advantages.",
+      "Captive lessors have higher market share overall, contradicting pure capability-based predictions.",
+      "Higher credit risk and lower reliability are associated with higher captive market share for own-brand models.",
+      "High inventory amplifies captive lessor market share for own-brand models.",
+      "Motivation-based AMC predictions better explain these patterns than capabilities view alone."
+    ],
+    "J2_finding_evidence_links": [
+      "Table 3",
+      "Table 4",
+      "Section: Results"
+    ],
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "The paper adjudicates between the capabilities view and the AMC framework in the context of complementary market competition, showing that motivation differences stemming from corporate scope can override local capability disadvantages. It extends competitive dynamics theory by demonstrating the need to incorporate broader strategic motives when analyzing competitive behavior."
+  }

@@ -1,0 +1,181 @@
+{   "relevant":true,
+    "L": {
+      "L1_summary_of_paper": "This paper investigates why the benefits of business group (BG) affiliation vary across member firms. It addresses the research question: To what extent do affiliate-specific rents from group-level knowledge-based assets (KBAs) vary, and why? The study integrates the knowledge-based perspective with the dynamic capabilities view (DCV) to theorize that value is generated from the complementarity between a firm's own KBAs (F-KBAs) and the collective KBAs of the group (G-KBAs). This complementarity, and the quasi-rents it generates, is hypothesized to be stronger under specific conditions. The core constructs are F-KBAs and G-KBAs (measured by patent stocks), and their complementarity. The study proposes four moderators that enhance this complementarity: (1) the decentralization of G-KBAs, (2) the technological relatedness between G-KBAs and F-KBAs, (3) the affiliate's in-group sensing advantage (the speed at which it can source knowledge internally versus externally), and (4) the affiliate's in-group seizing intensity (its propensity to build on internal knowledge). Using a large panel dataset of 524 affiliates of Japanese keiretsu groups from 1985-2015 and 11.5 million patents, the study employs hierarchical linear models (HLM). The main findings robustly support all hypotheses: there is significant complementarity between F-KBAs and G-KBAs, and this effect is positively moderated by decentralization, relatedness, sensing advantage, and seizing intensity. Furthermore, a Cox proportional hazards model shows these same factors reduce the likelihood of a firm exiting its BG, suggesting that this knowledge-based value creation is a key driver of BG persistence. The paper's primary contribution is shifting the explanation for BG persistence from an institutional voids perspective to a knowledge-based, value-creation perspective, while also providing a micro-foundational explanation for the significant intra-group heterogeneity in performance benefits."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Dynamic Capabilities View (DCV)",
+          "tag": "primary"
+        },
+        {
+          "theory": "Knowledge-Based View (KBV)",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": "Other: <Rent generation from knowledge asset complementarity>"
+    },
+    "N": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "Not applicable",
+      "NA_reason_if_any_N2": "This assumption pertains to competitive interactions between firms. The paper studies knowledge sharing and complementarity within a business group, which is a cooperative, not a competitive, context.",
+      "N3_assumption_common_environment": "Not applicable",
+      "NA_reason_if_any_N3": "This assumption pertains to competitive interactions. The paper's context is intra-group dynamics, where affiliates operate in diverse industries but are bound by group ties, not a common competitive environment.",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "NA_reason_if_any_N4": "This assumption pertains to how a firm weighs actions from different competitors. The paper studies how a firm utilizes knowledge from different internal affiliates, not how it reacts to external competitors' actions.",
+      "N5_focus_scope": "Not applicable",
+      "NA_reason_if_any_N5": "This field describes how a firm tracks external competitors. The paper's focus is on a firm's sensing and seizing of knowledge opportunities from multiple sources *within* its own business group, a fundamentally different, cooperative dynamic."
+    },
+    "A": {
+      "A1_citation": "Aliyev, M., & Lee, J. Y. (2025). Knowledge-Based Assets in Business Groups: A Dynamic Capabilities View of Complementarity and Rents. Journal of Management, Vol. XX No. X, 1-35.",
+      "A2_year": "2025",
+      "A3_outlet_tier": "JoM",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Network",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Resource-based view",
+        "Learning",
+        "Embeddedness",
+        "Other: <Knowledge-Based View>",
+        "Other: <Dynamic Capabilities View>"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Similarity/overlap",
+        "Other: <Knowledge-Based Assets (KBAs)>",
+        "Other: <Complementarity>",
+        "Other: <Quasi-rents>",
+        "Other: <Decentralization of KBAs>",
+        "Other: <In-group sensing advantage>",
+        "Other: <In-group seizing intensity>"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "Key constructs are measured using patent data. Firm-level and Group-level KBAs are patent stocks calculated with the perpetual inventory method. Decentralization is a Blau index of patent stock distribution among affiliates. Technological Relatedness is a vector similarity index of patent portfolios based on IPC codes. In-group Sensing Advantage is the difference in time lag (days) between citing and cited patents for in-group vs. out-group knowledge sourcing. In-group Seizing Intensity is the ratio of in-group backward citations to total external backward citations.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "The paper does not use an exogenous shock for causal identification. The Asian financial crisis is mentioned as a historical context for keiretsu restructuring and firm exits, but it is not used in an event-study or DiD design for the main performance analysis."
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Weak",
+      "D2_identification": "Other: <Hierarchical linear model (HLM) with lagged predictors and extensive controls, including firm, industry, and year fixed effects>",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": "Not reported",
+      "D2_robustness_suite": "Other: <Alternative dependent variables (ROA, ROE), analysis on a secondary sample (horizontal keiretsu), and alternative mean-centering techniques for the multilevel model>",
+      "D3_endogeneity": [
+        "Lags",
+        "Other: <FE saturation via HLM and industry/year dummies>"
+      ],
+      "D4_level_alignment": "Multilevel model",
+      "D5_data_sources": [
+        "Worldscope",
+        "Toyo Keizai's Japan Company Handbooks",
+        "Institute of Intellectual Property (IIP) Patent Database (Japan)"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Revenue/profit",
+        "Entry/exit/survival"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Revenue/profit",
+          "direction": "+"
+        },
+        {
+          "outcome": "Entry/exit/survival",
+          "direction": "+"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Information access",
+        "Learning",
+        "Signaling",
+        "Other: <Knowledge integration>",
+        "Other: <Preclusive appropriation>"
+      ],
+      "E4_moderators": [
+        "Decentralization of group-level KBAs",
+        "Technological relatedness between firm- and group-level KBAs",
+        "In-group sensing advantage",
+        "In-group seizing intensity"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk of bias stems from endogeneity, specifically omitted variables. Factors like affiliate-level managerial talent, R&D capability, or a culture of collaboration could drive both knowledge strategies (e.g., higher seizing intensity) and financial performance, leading to an overestimation of the reported effects. Additionally, using patents as a proxy for all KBAs omits tacit knowledge, which may have different complementarity mechanisms.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The paper's novel, patent-citation-based measures for 'in-group sensing advantage' (based on time lags) and 'in-group seizing intensity' (based on citation ratios) could be mapped to broader constructs in other literature, such as 'absorptive capacity', 'organizational learning', or 'network resource acquisition'.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The persistence of multi-firm organizations like business groups in developed economies is driven by affiliate-level value creation derived from the complementarity between firm-specific and group-level intangible assets.",
+        "Intra-group heterogeneity in performance is a function of both the structural configuration of group-level assets (e.g., their decentralization and relatedness) and the affiliate's dynamic capabilities (e.g., sensing and seizing) to reconfigure those assets.",
+        "An affiliate's ability to create quasi-rents from group assets depends on its temporal advantage in identifying internal opportunities (sensing) and its strategic commitment to leveraging them (seizing)."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": ""
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "Decentralization of group KBAs creates more opportunities for knowledge integration across affiliates and fosters the evolution of complementary specialization.",
+        "Technological relatedness facilitates the redeployability and compatibility of group-level KBAs with an affiliate's own knowledge base, enabling easier integration and technological upgrades.",
+        "In-group sensing advantage allows an affiliate to gain early access to emerging knowledge within the group, enabling a 'preclusive appropriation' of subsequent invention opportunities before competitors.",
+        "In-group seizing intensity reflects an affiliate's commitment to path-dependent investments that leverage internal knowledge, developing specific architectural skills for combining in-group knowledge and transforming it into new firm-level knowledge."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Decentralization of group-level KBAs",
+          "role_in_link": "Enhances the positive interaction effect of G-KBAs and F-KBAs on firm performance."
+        },
+        {
+          "type": "moderation",
+          "variable": "Technological relatedness between G-KBAs and F-KBAs",
+          "role_in_link": "Enhances the positive interaction effect of G-KBAs and F-KBAs on firm performance."
+        },
+        {
+          "type": "moderation",
+          "variable": "In-group sensing advantage",
+          "role_in_link": "Enhances the positive interaction effect of G-KBAs and F-KBAs on firm performance."
+        },
+        {
+          "type": "moderation",
+          "variable": "In-group seizing intensity",
+          "role_in_link": "Enhances the positive interaction effect of G-KBAs and F-KBAs on firm performance."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "There is a statistically significant and economically meaningful positive complementarity between firm-level KBAs (F-KBAs) and group-level KBAs (G-KBAs) in predicting an affiliate's financial performance (H1).",
+        "The decentralization of G-KBAs across affiliates positively moderates this complementarity; more dispersed knowledge enhances the performance effect (H2).",
+        "The technological relatedness between G-KBAs and F-KBAs positively moderates their complementarity; greater technological overlap enhances the performance effect (H3).",
+        "An affiliate's in-group sensing advantage (sourcing internal knowledge faster than external) positively moderates the complementarity (H4).",
+        "An affiliate's in-group seizing intensity (preferentially building on internal knowledge) positively moderates the complementarity (H5).",
+        "The same factors that drive complementarity rents also significantly decrease the hazard of a firm exiting its business group, linking value creation to group persistence."
+      ],
+      "J2_finding_evidence_links": "Primary evidence is in Table 2 (Multilevel Analysis Results) for hypotheses H1-H5. Supporting evidence for persistence is in Table 4 (Cox Proportional Hazard Model Analysis). Interaction effects are visualized in Figures 2 and 3a-3d.",
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper's main contribution is to provide a new, knowledge-based explanation for the persistence of business groups (BGs) in developed economies, shifting the focus from the traditional institutional voids perspective. It redirects the literature by focusing on intra-group heterogeneity in performance and theorizing that this variation is driven by an affiliate's ability to create value through the complementarity of its own knowledge assets with those of the group. By integrating the dynamic capabilities view, it provides novel micro-foundations (sensing, seizing) for how this value is created, offering a more dynamic and nuanced understanding of BGs as systems for joint value creation rather than static structures for value distribution."
+    }
+  }

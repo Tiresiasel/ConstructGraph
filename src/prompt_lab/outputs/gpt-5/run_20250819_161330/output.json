@@ -1,0 +1,723 @@
+{
+  "paper_metadata": {
+    "doi": "10.1002/smj.2240",
+    "title": "LIGHTING THE WA Y OR STEALING THE SHINE? AN EXAMINATION OF THE DUALITY IN STAR SCIENTISTS’ EFFECTS ON FIRM INNOVATIVE PERFORMANCE",
+    "authors": [
+      "Rebecca R. Kehoe",
+      "Daniel Tzabbar"
+    ],
+    "publication_year": 2015,
+    "journal": "StrategicManagementJournal",
+    "research_type": "Quantitative",
+    "research_context": "Panel study of 456 dedicated U.S. biotechnology firms, 1973–2003; patent-based measures; star identification based on inventor performance",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "presence_of_a_star",
+      "definition": "A firm-level condition indicating that the firm employs at least one star scientist. Stars are identified as individuals who have demonstrated disproportionately high levels of performance and have superior visibility in the external market; operationally, an inventor whose performance score is at least two standard deviations above the industry average in a given year.",
+      "context_snippet": "stars—identified as individuals who have demonstrated disproportionately high levels of performance and have superior visibility in the external market... we operationalized the star firm as a dummy variable, where 1 indicates that a firm employs at least one star scientist.",
+      "aliases": [
+        "star_presence",
+        "star firm"
+      ]
+    },
+    {
+      "term": "innovative_productivity",
+      "definition": "A firm’s achievement of repeated innovative success, requiring the ability to access and effectively utilize knowledge and tangible resources for effective research in a defined domain. In this study, captured through successful patenting weighted by forward citations.",
+      "context_snippet": "Innovative productivity reflects a firm’s achievement of repeated innovative success and requires a firm to have the ability to access and effectively utilize the knowledge and tangible resources required for effective research in a defined domain.",
+      "aliases": [
+        "patent-weighted productivity"
+      ]
+    },
+    {
+      "term": "innovative_leadership_among_non_star_scientists",
+      "definition": "The ability of a firm’s (non-star) members to initiate and lead innovation, ultimately defining a firm’s capacity to attain continuous innovative productivity. Operationalized as the count of unique non-star inventors who patented without a star co-inventor, adjusted for inventor counts.",
+      "context_snippet": "Innovative leadership is defined as the ability of a firm’s members to initiate and lead innovation, and thus ultimately defines a firm’s capacity to attain continuous innovative productivity.",
+      "aliases": [
+        "innovative leadership"
+      ]
+    },
+    {
+      "term": "breadth_of_star_expertise",
+      "definition": "The range of technological domains across which a star pursues research and can provide relevant, timely knowledge and access to opportunities. It reflects both the scope of the star’s expert power and the range of domains across which the star may require support.",
+      "context_snippet": "The breadth of a star’s expertise reflects the range of technological domains across which the star pursues research and can thus provide relevant, timely knowledge and access to opportunities for a firm.",
+      "aliases": [
+        "technological breadth of star"
+      ]
+    },
+    {
+      "term": "star_collaborative_strength",
+      "definition": "The frequency and intensity of a star’s collaboration (co-invention) with colleagues inside the firm, fostering familiarity, trust, and tacit knowledge exchange that balance mutual dependence.",
+      "context_snippet": "A star’s collaborative strength in a knowledge-based context is reflected in the frequency of collaboration between a star and his colleagues and is likely to foster greater balance in the exchange relationship...",
+      "aliases": [
+        "star’s collaborative strength"
+      ]
+    },
+    {
+      "term": "mutual_dependence",
+      "definition": "The bilateral dependence between two actors, governed by the importance of resources each holds for the other’s performance, discretion over those resources, and availability of substitutes. More balanced mutual dependence increases benefits from exchange.",
+      "context_snippet": "The mutual dependence between two actors is influenced by the importance of the resource that each actor holds for the other actor’s performance, the extent of each actor’s discretion over the use of the resources desired by the other actor, and the extent to which the resource or an adequate substitute is available...",
+      "aliases": []
+    },
+    {
+      "term": "power_imbalance",
+      "definition": "An asymmetry in control over critical resources (including tacit knowledge and organizational resources) that grants one actor disproportionate influence over others; in this context, stars’ discretion and prestige create a power imbalance with colleagues.",
+      "context_snippet": "stars’ discretion over the tacit knowledge underlying the generation of successful innovations and the tangible organizational resources funneled to support a star’s research creates a power imbalance between stars and their colleagues.",
+      "aliases": []
+    },
+    {
+      "term": "expert_power",
+      "definition": "Influence derived from the value, complexity, and uniqueness of an individual’s exceptional expertise, conferring social status and control over knowledge and resources.",
+      "context_snippet": "stars… enjoy power and social status based on the value, complexity, and uniqueness of their exceptional expertise.",
+      "aliases": []
+    },
+    {
+      "term": "workflow_centrality",
+      "definition": "The central role of an individual within a firm’s workflow structure, enabling control of key resources and influence over research direction; stars tend to assume such central roles.",
+      "context_snippet": "stars tend to assume central roles in a firm’s workflow structure and control the flow of key resources within and between firm boundaries...",
+      "aliases": [
+        "work flow centrality"
+      ]
+    },
+    {
+      "term": "knowledge_spillovers",
+      "definition": "Indirect benefits to colleagues’ productivity through exposure to a star’s knowledge, behaviors, and access to resources and networks.",
+      "context_snippet": "stars inventors are commonly believed to positively affect firms’ innovative productivity… indirectly by providing knowledge spillovers that improve their colleagues’ productivity.",
+      "aliases": []
+    },
+    {
+      "term": "information_overload",
+      "definition": "A state arising from constant information flows that strain cognitive capacity, hindering effective communication of knowledge and reducing information sharing and learning outcomes.",
+      "context_snippet": "constant information flows to and from a star may cause the star to experience social and informational overload… hinder the star’s ability to effectively communicate his knowledge… hampers learning outcomes.",
+      "aliases": []
+    },
+    {
+      "term": "structural_holes",
+      "definition": "Gaps between disconnected knowledge bases within a firm; bridging these gaps allows identification of unique knowledge recombination opportunities and boosts productivity.",
+      "context_snippet": "By bridging internal structural holes, collaborative stars can better identify unique knowledge recombination opportunities and leverage the knowledge of local experts...",
+      "aliases": []
+    },
+    {
+      "term": "vicarious_learning",
+      "definition": "Learning that occurs through observing role models’ behaviors; working alongside a star can shape attitudes, norms, and behaviors conducive to higher productivity.",
+      "context_snippet": "through vicarious learning and behavioral modeling, scientists working alongside a star may enact behavioral norms conducive to research productivity.",
+      "aliases": [
+        "behavioral modeling"
+      ]
+    }
+  ],
+  "construct_dimensions": [],
+  "relationships": [
+    {
+      "subject_term": "presence_of_a_star",
+      "object_term": "innovative_productivity",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Knowledge-intensive firms; biotechnology research settings with patentable innovations",
+      "context_snippet": "Accordingly, we hypothesize: Hypothesis 1a: The presence of a star increases a firm’s innovative productivity.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H1a",
+      "claim_id": "H1a",
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "section_header": "HYPOTHESES",
+      "supporting_theories": [
+        "resource dependence theory",
+        "knowledge-based view",
+        "social cognitive theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "presence_of_a_star",
+      "object_term": "innovative_productivity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "456 dedicated U.S. biotechnology firms, 1973–2003; GLS fixed effects panel models; patent- and citation-based productivity measures",
+      "context_snippet": "As expected, the presence of a star relates positively and significantly… On average, the innovative productivity of firms with a star scientist is 71 percent higher… Excluding patents in which the star was a co-inventor… 22 percent increase.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1a",
+      "claim_id": "H1a",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Panel_FE",
+      "manipulated_variable": "None",
+      "section_header": "RESULTS",
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "public firm",
+        "firm size",
+        "firm age",
+        "venture capital",
+        "scientist recruitment event",
+        "geographic dispersion",
+        "prior R&D alliance",
+        "CEO succession",
+        "technological breadth",
+        "Heckman selection (Mills ratio)"
+      ]
+    },
+    {
+      "subject_term": "presence_of_a_star",
+      "object_term": "innovative_leadership_among_non_star_scientists",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Within firms where star discretion and resource allocation can constrain others’ leadership opportunities",
+      "context_snippet": "Hypothesis 1b: The presence of a star decreases innovative leadership among a firm’s non-star scientists.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H1b",
+      "claim_id": "H1b",
+      "section_header": "HYPOTHESES",
+      "supporting_theories": [
+        "resource dependence theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "presence_of_a_star",
+      "object_term": "innovative_leadership_among_non_star_scientists",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "456 dedicated U.S. biotechnology firms, 1973–2003; GLS fixed effects panel models",
+      "context_snippet": "Using Model 6… the presence of a star relates negatively and significantly… On average, innovative leadership in firms with a star is 141 percent lower than in firms with no star inventor.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1b",
+      "claim_id": "H1b",
+      "causal_support_level": "Correlational",
+      "design_type": "Panel_FE",
+      "manipulated_variable": "None",
+      "section_header": "RESULTS",
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "public firm",
+        "firm size",
+        "firm age",
+        "venture capital",
+        "scientist recruitment event",
+        "geographic dispersion",
+        "prior R&D alliance",
+        "CEO succession",
+        "technological breadth",
+        "Heckman selection (Mills ratio)"
+      ]
+    },
+    {
+      "subject_term": "breadth_of_star_expertise",
+      "object_term": "innovative_productivity",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Effect expected to weaken at very high breadth due to information overload",
+      "context_snippet": "Hypothesis 2a: There is a diminishing positive relationship between the breadth of a star’s expertise and a firm’s innovative productivity.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H2a",
+      "claim_id": "H2a",
+      "section_header": "HYPOTHESES",
+      "supporting_theories": [
+        "resource dependence theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "breadth_of_star_expertise",
+      "object_term": "innovative_productivity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Firms with at least one star; GLS panel within star firms",
+      "context_snippet": "our results demonstrated a diminishing positive effect of the breadth of the star’s expertise on a firm’s innovative productivity… increases… although a slight attenuation of this effect occurs at high levels.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H2a",
+      "claim_id": "H2a",
+      "causal_support_level": "Correlational",
+      "design_type": "Panel_FE",
+      "manipulated_variable": "None",
+      "section_header": "RESULTS",
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "public firm",
+        "firm size",
+        "firm age",
+        "venture capital",
+        "scientist recruitment event",
+        "geographic dispersion",
+        "prior R&D alliance",
+        "CEO succession",
+        "technological breadth",
+        "Heckman selection (Mills ratio)"
+      ]
+    },
+    {
+      "subject_term": "breadth_of_star_expertise",
+      "object_term": "innovative_leadership_among_non_star_scientists",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Mixed",
+      "non_linear_type": "U-shaped",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Low to moderate breadth expected negative, high breadth expected positive",
+      "context_snippet": "Hypothesis 2b: There is a U-shaped relationship between the breadth of a star’s expertise and innovative leadership among a firm’s non-star scientists.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H2b",
+      "claim_id": "H2b",
+      "section_header": "HYPOTHESES",
+      "supporting_theories": [
+        "resource dependence theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "breadth_of_star_expertise",
+      "object_term": "innovative_leadership_among_non_star_scientists",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Firms with at least one star; GLS panel within star firms",
+      "context_snippet": "we did not find support for a U-shaped relationship… Instead, innovative leadership increases with breadth in a star’s expertise, but at a decreasing rate.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H2b",
+      "claim_id": "H2b",
+      "causal_support_level": "Correlational",
+      "design_type": "Panel_FE",
+      "manipulated_variable": "None",
+      "section_header": "RESULTS",
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "public firm",
+        "firm size",
+        "firm age",
+        "venture capital",
+        "scientist recruitment event",
+        "geographic dispersion",
+        "prior R&D alliance",
+        "CEO succession",
+        "technological breadth",
+        "Heckman selection (Mills ratio)"
+      ]
+    },
+    {
+      "subject_term": "star_collaborative_strength",
+      "object_term": "innovative_productivity",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Within-firm collaboration networks affecting tacit knowledge transfer",
+      "context_snippet": "Hypothesis 3a: A star’s collaborative strength increases a firm’s innovative productivity.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H3a",
+      "claim_id": "H3a",
+      "section_header": "HYPOTHESES",
+      "supporting_theories": [
+        "resource dependence theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "star_collaborative_strength",
+      "object_term": "innovative_productivity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Firms with at least one star; GLS panel within star firms",
+      "context_snippet": "the relationship between stars’ collaborative strength and a firm’s innovative productivity is positive and significant.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H3a",
+      "claim_id": "H3a",
+      "causal_support_level": "Correlational",
+      "design_type": "Panel_FE",
+      "manipulated_variable": "None",
+      "section_header": "RESULTS",
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "public firm",
+        "firm size",
+        "firm age",
+        "venture capital",
+        "scientist recruitment event",
+        "geographic dispersion",
+        "prior R&D alliance",
+        "CEO succession",
+        "technological breadth",
+        "Heckman selection (Mills ratio)"
+      ]
+    },
+    {
+      "subject_term": "star_collaborative_strength",
+      "object_term": "innovative_leadership_among_non_star_scientists",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Collaboration facilitates tacit knowledge transfer and balanced exchange",
+      "context_snippet": "Hypothesis 3b: A star’s collaborative strength increases innovative leadership among a firm’s non-star scientists.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H3b",
+      "claim_id": "H3b",
+      "section_header": "HYPOTHESES",
+      "supporting_theories": [
+        "resource dependence theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "star_collaborative_strength",
+      "object_term": "innovative_leadership_among_non_star_scientists",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Firms with at least one star; GLS panel within star firms",
+      "context_snippet": "The relationship between a star’s collaborative strength and innovative leadership is positive and significant.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H3b",
+      "claim_id": "H3b",
+      "causal_support_level": "Correlational",
+      "design_type": "Panel_FE",
+      "manipulated_variable": "None",
+      "section_header": "RESULTS",
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "public firm",
+        "firm size",
+        "firm age",
+        "venture capital",
+        "scientist recruitment event",
+        "geographic dispersion",
+        "prior R&D alliance",
+        "CEO succession",
+        "technological breadth",
+        "Heckman selection (Mills ratio)"
+      ]
+    },
+    {
+      "subject_term": "breadth_of_star_expertise",
+      "object_term": "innovative_productivity",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Moderated by star_collaborative_strength",
+      "context_snippet": "Hypothesis 4a: A star’s collaborative strength moderates the relationship between the breadth of a star’s expertise and a firm’s innovative productivity, such that high collaborative strength increases the positive effect...",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H4a",
+      "claim_id": "H4a",
+      "section_header": "HYPOTHESES",
+      "supporting_theories": [
+        "resource dependence theory"
+      ],
+      "moderators": [
+        "star_collaborative_strength"
+      ],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "breadth_of_star_expertise",
+      "object_term": "innovative_productivity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Firms with at least one star; GLS panel within star firms",
+      "context_snippet": "the linear effect of the interaction between stars’ collaborative strength and breadth of expertise… is positive and significant, and the square term is negative and significant… stars with high collaborative strength increase their firm’s productivity across all levels of expertise breadth.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H4a",
+      "claim_id": "H4a",
+      "causal_support_level": "Correlational",
+      "design_type": "Panel_FE",
+      "manipulated_variable": "None",
+      "section_header": "RESULTS",
+      "supporting_theories": [],
+      "moderators": [
+        "star_collaborative_strength"
+      ],
+      "mediators": [],
+      "controls": [
+        "public firm",
+        "firm size",
+        "firm age",
+        "venture capital",
+        "scientist recruitment event",
+        "geographic dispersion",
+        "prior R&D alliance",
+        "CEO succession",
+        "technological breadth",
+        "Heckman selection (Mills ratio)"
+      ]
+    },
+    {
+      "subject_term": "breadth_of_star_expertise",
+      "object_term": "innovative_leadership_among_non_star_scientists",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Mixed",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Moderated by star_collaborative_strength; collaborative strength expected to reduce negative effect at low breadth and increase positive effect at high breadth",
+      "context_snippet": "Hypothesis 4b: A star’s collaborative strength moderates the relationship between the breadth of a star’s expertise and a firm’s innovative leadership...",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H4b",
+      "claim_id": "H4b",
+      "section_header": "HYPOTHESES",
+      "supporting_theories": [
+        "resource dependence theory"
+      ],
+      "moderators": [
+        "star_collaborative_strength"
+      ],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "breadth_of_star_expertise",
+      "object_term": "innovative_leadership_among_non_star_scientists",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Firms with at least one star; GLS panel within star firms",
+      "context_snippet": "the linear effect of the interaction between collaborative strength and the breadth of a star’s expertise on innovative leadership is positive and significant, and the square term is negative and significant… highest levels when breadth is broad and collaborative strength high.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H4b",
+      "claim_id": "H4b",
+      "causal_support_level": "Correlational",
+      "design_type": "Panel_FE",
+      "manipulated_variable": "None",
+      "section_header": "RESULTS",
+      "supporting_theories": [],
+      "moderators": [
+        "star_collaborative_strength"
+      ],
+      "mediators": [],
+      "controls": [
+        "public firm",
+        "firm size",
+        "firm age",
+        "venture capital",
+        "scientist recruitment event",
+        "geographic dispersion",
+        "prior R&D alliance",
+        "CEO succession",
+        "technological breadth",
+        "Heckman selection (Mills ratio)"
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "innovative_productivity",
+      "name": "Citation-weighted patent count (firm-year)",
+      "details": "Following prior research, successful patenting indicates innovative productivity. Patents are weighted by forward citations received in the five years after issuance to account for variance in patent value. Calculated at the firm-year level.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "Sum of firm patents in year t multiplied by forward citations within five years; aggregated to a firm-year score.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Established in prior literature (Ahuja & Katila, 2001; Sampson, 2007).",
+      "context_adaptations": "Biotechnology context with strong patent appropriability.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1a"
+    },
+    {
+      "construct_term": "innovative_productivity",
+      "name": "Citation-weighted patent count excluding star co-invented patents",
+      "details": "Same as primary productivity measure but excludes patents on which the star scientist is a co-inventor to assess indirect effects on colleagues.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "Compute citation-weighted patent count per firm-year after removing patents with a star co-inventor.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Used to isolate spillover/indirect effects of stars.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1a"
+    },
+    {
+      "construct_term": "innovative_leadership_among_non_star_scientists",
+      "name": "Non-star innovative leadership index",
+      "details": "Counts unique non-star inventors who applied for patents without any star co-inventor, with a correction for number of inventors to avoid bias.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "Identify unique non-star inventors with patents without star co-inventors in year t; adjust using correction factor to account for inventor counts.",
+      "formula": "Innovative leadership = ∑ i j × ( n / (n − 1) ); ij represents the number of non-star inventors who applied for patents on which a star scientist was not a co-inventor.",
+      "reliability": null,
+      "validity": "Construct separates leadership capacity from raw productivity.",
+      "context_adaptations": "Focus on individuals’ leadership rather than number of patents.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1b"
+    },
+    {
+      "construct_term": "presence_of_a_star",
+      "name": "Star firm dummy and star scientist identification",
+      "details": "Star firm is coded 1 if the firm employs at least one star scientist in year t. A star scientist is identified via an inventor performance score at least two standard deviations above the industry average in year t.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "Compute each inventor’s annual performance score; flag as star if ≥ 2 SD above industry mean; assign firm-level dummy if any star employed.",
+      "formula": "InvPerformance_it = [(InvPat_it / IndTenure_it) × AveForwardCite_it]; star if ≥ mean + 2 SD.",
+      "reliability": null,
+      "validity": "Aligned with prior biotechnology research (Zucker & Darby, 2001).",
+      "context_adaptations": "Scores updated annually to allow non-stars to become stars over time.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1a"
+    },
+    {
+      "construct_term": "breadth_of_star_expertise",
+      "name": "Technological breadth index (unbiased Herfindahl-based)",
+      "details": "Diversification across 22 technological fields based on the star’s patent portfolio; higher values indicate broader expertise.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "Assign each of the star’s patents to one of 22 technological fields; compute breadth using 1 minus the sum of squared shares across fields. For multiple stars, use the star with the highest breadth.",
+      "formula": "Breadth = 1 − ∑_{j=1}^{22} (N_ij / N_i)^2; adjusted using an unbiased Herfindahl index per Hall (2002).",
+      "reliability": null,
+      "validity": "Standard diversity metric applied to patent classes; reflects scope of expertise.",
+      "context_adaptations": "Biotechnology-specific 22-field categorization per Tzabbar (2009).",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H2a"
+    },
+    {
+      "construct_term": "star_collaborative_strength",
+      "name": "Normalized co-invention frequency with colleagues",
+      "details": "Average level of co-invention frequency between the star and non-star scientists within the firm, normalized by maximum possible ties; ranges from 0 (no co-invention) to 1 (complete network).",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "For each star i, sum co-invention frequencies with team members j, normalize by maximum possible collaboration ties, and average over scientists in the firm.",
+      "formula": "Star collaborative strength = [∑_{i=1}^{N_s} ∑_{j=1, j≠i}^{N_s} z_ijs / max(z_ijs)] / [N_s (N_s − 1)], where z_ijs ∈ {0,1,2,3,4}.",
+      "reliability": null,
+      "validity": "Captures tie strength relevant for tacit knowledge transfer.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3a"
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "resource dependence theory",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1a",
+        "H1b",
+        "H2a",
+        "H2b",
+        "H3a",
+        "H3b",
+        "H4a",
+        "H4b"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "we draw on two key concepts from resource dependence theory: power imbalance and mutual dependence",
+      "evidence": "Used to theorize stars’ discretion, power imbalance, and how balanced mutual dependence via collaboration and breadth shapes effects on productivity and leadership.",
+      "section_header": "THEORETICAL BACKGROUND",
+      "confidence": 0.95
+    },
+    {
+      "name": "knowledge-based view",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1a",
+        "H1b"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "The knowledge-based view promotes a “democratic notion” of the firm… Knowledge is perceived as a “private good,” which requires discretion in the sharing of employees’ expertise and transformation of tacit knowledge",
+      "evidence": "Frames how stars’ tacit knowledge and role modeling can enhance productivity and how social structures affect leadership opportunities.",
+      "section_header": "THEORETICAL BACKGROUND",
+      "confidence": 0.78
+    },
+    {
+      "name": "social cognitive theory",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1a"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "through vicarious learning and behavioral modeling, scientists working alongside a star may enact behavioral norms conducive to research productivity",
+      "evidence": "Cited to explain indirect positive effects on colleagues’ productivity via role modeling (Wood and Bandura, 1989).",
+      "section_header": "HYPOTHESES",
+      "confidence": 0.7
+    }
+  ],
+  "coverage_report": {
+    "constructs": 13,
+    "relationships": 16,
+    "measurements": 6,
+    "reason": null,
+    "errors": []
+  }
+}

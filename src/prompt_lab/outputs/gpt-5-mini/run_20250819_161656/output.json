@@ -1,0 +1,378 @@
+{
+  "paper_metadata": {
+    "doi": "10.1002/smj.2318",
+    "title": "COMPETITION NETWORK STRUCTURE AND PRODUCT MARKET ENTRY",
+    "authors": [
+      "PAUL F . SKILTON1,2*",
+      "EDNILSON BERNARDES2,3"
+    ],
+    "publication_year": 2015,
+    "journal": "StrategicManagementJournal",
+    "research_type": "Quantitative",
+    "research_context": "the aircraft modification industry in the United States",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "competition networks",
+      "definition": "Competition networks are defined as the relational structures of interdependence between rivals that emerge from direct competition.",
+      "context_snippet": "Competition networks are defined as the relational structures of interdependence between rivals that emerge from direct competition.",
+      "aliases": null
+    },
+    {
+      "term": "ego network size",
+      "definition": "Degree is the network theory name for ego network size. Degree as of 2000 was calculated as the count of direct competitor going concerns, as defined above.",
+      "context_snippet": "Degree is the network theory name for ego network size. Degree as of 2000 was calculated as the count of direct competitor going concerns, as defined above.",
+      "aliases": null
+    },
+    {
+      "term": "ego network density",
+      "definition": "Density is measured as the percentage of possible competitive ties between members of the ego network that are actually realized.",
+      "context_snippet": "Density is measured as the percentage of possible competitive ties between members of the ego network that are actually realized.",
+      "aliases": null
+    },
+    {
+      "term": "diversity of competitors in ego network",
+      "definition": "The diversity of a focal firm’s multimarket contact is measured as the coefficient of variation (standard deviation divided by mean) of multimarket contact with the firm’s direct competitors. Multimarket contact between firms i and j in the decade from 1991 to 2000 is calculated as: ∑Mi[ Cim × ( Dim×Djm )] + ∑Mj[ Cjm × ( Dim×Djm )] / (Mi+Mj) for all ∑Mi(Dim × Djm) > 1, where m denotes a given market in the set of markets Mi or Mj served by firms i and j, respectively. Cim and Cjm are the centralities of market m to firms i and j, and Dim and Djm are indicator variables set equal to 1 if firms i or j are active in market m during the decade and 0 otherwise.",
+      "context_snippet": "The diversity of a focal firm’s multimarket contact is measured as the coefficient of variation (standard deviation divided by mean) of multimarket contact with the firm’s direct competitors. We measured multimarket contact using the method developed by Baum and Korn (1999) ... We measure multimarket contact between going concerns i and j ...",
+      "aliases": [
+        "diversity_of_multimarket_contact",
+        "competitor_diversity"
+      ]
+    },
+    {
+      "term": "rate of product market entry",
+      "definition": "We measured the dependent variable, future product market entry, as the count of new STCs issued to each firm between 2000 and 2009.",
+      "context_snippet": "We measured the dependent variable, future product market entry, as the count of new STCs issued to each firm between 2000 and 2009.",
+      "aliases": [
+        "product_market_entry_rate",
+        "future product market entry"
+      ]
+    }
+  ],
+  "construct_dimensions": [],
+  "relationships": [
+    {
+      "subject_term": "ego network size",
+      "object_term": "rate of product market entry",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "",
+      "supporting_quote": "",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 1: The rate of product market entry will increase as ego network size increases.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "line_index_range": null,
+      "supporting_theories": [
+        "competitive dynamics theory",
+        "social network theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "ego network density",
+      "object_term": "rate of product market entry",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "",
+      "supporting_quote": "",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 2: The rate of product market entry will decrease as ego network density increases.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "line_index_range": null,
+      "supporting_theories": [
+        "theory of brokerage",
+        "network architecture model",
+        "social network theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "diversity of competitors in ego network",
+      "object_term": "rate of product market entry",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "",
+      "supporting_quote": "",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 3: The rate of product market entry will increase as competitor diversity increases.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H3",
+      "claim_id": "H3",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "line_index_range": null,
+      "supporting_theories": [
+        "competitive dynamics theory",
+        "social network theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "ego network size",
+      "object_term": "rate of product market entry",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": "Inverted_U-shaped",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "",
+      "supporting_quote": "In Model 2 of Table 2, ego network size is entered. Hypothesis 1 is supported. As the number of competitors in ego networks increases, the rate of product market entry increases. ... Post hoc tests show that the squared term for network size is significant, indicating that the relationship between network size and product market entry has an inverted U shape.",
+      "boundary_conditions": "Post hoc: the inverted U inflection point is about 2 standard deviations above the mean; a cluster of 45 firms occupy that region (airframe manufacturers, major systems manufacturers, major airlines).",
+      "replication_outcome": null,
+      "context_snippet": "In Model 2 of Table 2, ego network size is entered. Hypothesis 1 is supported. ... Post hoc tests show that the squared term for network size is significant, indicating that the relationship between network size and product market entry has an inverted U shape.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1_Result",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Independent variables based on 1990–1999; dependent variable measured 2000–2009; negative binomial regression used to model overdispersed count outcome.",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "competitive dynamics theory",
+        "social network theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "ego network density",
+      "object_term": "rate of product market entry",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Insignificant",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "",
+      "supporting_quote": "In Model 3 the variable for ego network density is entered into the control model. Its coefficient is not significantly different from zero, so that Hypothesis 2 is not supported.",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "In Model 3 the variable for ego network density is entered into the control model. Its coefficient is not significantly different from zero, so that Hypothesis 2 is not supported.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H2",
+      "claim_id": "H2_Result",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Negative binomial regression; coefficient not significantly different from zero.",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "theory of brokerage",
+        "network architecture model"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "diversity of competitors in ego network",
+      "object_term": "rate of product market entry",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "",
+      "supporting_quote": "In Model 4 the diversity of multimarket contact variable is entered into the control model. The estimated coefficient is positive and significant and thus supports Hypothesis 3.",
+      "boundary_conditions": "",
+      "replication_outcome": null,
+      "context_snippet": "In Model 4 the diversity of multimarket contact variable is entered into the control model. The estimated coefficient is positive and significant and thus supports Hypothesis 3.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H3",
+      "claim_id": "H3_Result",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Negative binomial regression; diversity measured as coefficient of variation of multimarket contact computed from 1991–2000.",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "competitive dynamics theory",
+        "social network theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "rate of product market entry",
+      "name": "Count of new Supplemental Type Certificates (STCs) issued (2000–2009)",
+      "details": "Dependent variable 'future product market entry' measured as the count of new STCs issued to each firm between 2000 and 2009; an STC issued to a single firm and specifying modifications not covered by prior STCs is treated as an act of product market entry; an STC may apply to several aircraft types and thus represent simultaneous entry into several markets.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "Simple count of new STCs issued to each firm in 2000–2009.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "STC-based operationalization leverages FAA supplemental type certificate records for identifying product market entry.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1,H2,H3"
+    },
+    {
+      "construct_term": "ego network size",
+      "name": "Degree (count of direct competitor going concerns)",
+      "details": "Degree as of 2000 was calculated as the count of direct competitor going concerns. Direct competition was defined when different firms have STCs that share one or more descriptive noun pairs and one or more model/type.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "Count of distinct going-concern competitors (firms with at least three STCs in 1990s and deemed going concerns for 2000s) that share at least one noun-pair and aircraft model/type.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Uses FAA STC descriptions; noun-pair text analysis to identify similar modifications across model/types.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "ego network density",
+      "name": "Percentage of realized competitive ties among ego network members",
+      "details": "Density measured as the percentage of possible competitive ties between members of the ego network that are actually realized; competitive ties based on sharing noun-pair modifications and model/type.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "Compute number of observed competitor–competitor ties within ego network divided by number of possible ties.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Based on STC-derived direct competition ties.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H2"
+    },
+    {
+      "construct_term": "diversity of competitors in ego network",
+      "name": "Coefficient of variation of multimarket contact with direct competitors",
+      "details": "First compute multimarket contact between focal firm i and each direct competitor j using Baum and Korn (1999) method: ∑Mi[ Cim × ( Dim×Djm )] + ∑Mj[ Cjm × ( Dim×Djm )] / (Mi+Mj) for all ∑Mi(Dim × Djm) > 1, where Cim and Cjm are market centralities and Dim/Djm are indicators of activity in market m. Then compute coefficient of variation (standard deviation / mean) of these multimarket contact values across the focal firm's direct competitors to yield diversity.",
+      "instrument": null,
+      "scale_items": null,
+      "scoring_procedure": "Compute multimarket contact dyad values for each direct competitor pair over 1991–2000; take mean and standard deviation across dyads; diversity = standard deviation / mean.",
+      "formula": "Multimarket contact (i,j) = [∑_{m in Mi} (Cim × (Dim × Djm)) + ∑_{m in Mj} (Cjm × (Dim × Djm))] / (Mi + Mj), then diversity = SD(multimarket_contact_i_with_each_j) / Mean(multimarket_contact_i_with_each_j).",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Markets defined by noun-pair + model/type co-occurrences from STC descriptions; centrality Cim defined as proportion of i's other product markets that share the word pair or model/type with market m.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3"
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "competitive dynamics theory",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Combining competitive dynamics theory and social network theory leads to new questions",
+      "evidence": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "confidence": null
+    },
+    {
+      "name": "social network theory",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Combining competitive dynamics theory and social network theory leads to new questions",
+      "evidence": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "confidence": null
+    },
+    {
+      "name": "network architecture model",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H2"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "this study proposes that competition networks belong to the network architecture category",
+      "evidence": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "confidence": null
+    },
+    {
+      "name": "theory of brokerage",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H2"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "As Burt has long argued (1992, 2007) the interconnectedness of networks influences the performance of the firms in them.",
+      "evidence": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "confidence": null
+    }
+  ],
+  "coverage_report": {
+    "constructs": 5,
+    "relationships": 6,
+    "measurements": 4,
+    "reason": "Extraction is limited to constructs and relationships explicitly anchored to the three numbered hypotheses (H1–H3) and empirical results that confirm/refute them per scope policy; as a result the number of constructs/relationships is fewer than the optional minimal coverage targets for quantitative studies.",
+    "errors": [
+      "minimal_coverage_unmet"
+    ]
+  }
+}

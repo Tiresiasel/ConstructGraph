@@ -1,0 +1,165 @@
+{
+    "L_summary_of_paper": {
+      "L1_summary_of_paper": "This paper investigates why and how firms initiate competitive actions against rivals that have experienced a critical negative event, specifically a negative earnings surprise, without being directly attacked. The core research question is: How do a rival's negative earnings surprises and its subsequent communication style affect a focal firm's intensity of competitive actions? Key concepts include 'negative earnings surprise' (realized earnings falling short of analyst consensus), 'competitive action intensity' (the total volume of tactical competitive actions), and the linguistic attributes of 'complexity' and 'vagueness' in corporate communications. The study is framed primarily by the Awareness-Motivation-Capability (AMC) perspective from competitive dynamics, supplemented by communication theory. It examines the relationship where a rival's negative earnings surprise (independent variable) is hypothesized to increase the focal firm's competitive action intensity (dependent variable). This relationship is further hypothesized to be moderated by the complexity and vagueness of the rival's language in its post-announcement earnings conference call. The context is publicly listed U.S. firms in oligopolistic industries from 2003 to 2014. The main findings strongly support the hypotheses: a rival's negative earnings surprise is positively associated with the focal firm's action intensity. This positive relationship is significantly strengthened when the rival uses more complex and/or vague language, as these linguistic cues are interpreted as signals of greater underlying vulnerability. The paper's primary contribution is threefold: it extends competitive dynamics research beyond the traditional action-response dyad to event-driven competitive attacks; it introduces the role of language as a critical signal that can amplify, rather than just dampen, competitive intensity; and it provides new micro-level evidence on how capital market pressures (earnings surprises) spill over into product market competition."
+    },
+    "M_theory_unit_of_analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Awareness-Motivation-Capability (AMC) Perspective",
+          "tag": "primary"
+        },
+        {
+          "theory": "Communication Theory / Signaling",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Dyad",
+      "M3_unit_of_analysis_element": "Volume of competitive actions"
+    },
+    "N_assumptions_behavioral_scope": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "Yes",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Single competitor focus"
+    },
+    "A_bibliographic_administrative": {
+      "A1_citation": "Guo, W., Sengul, M., & Yu, T. (2020). Rivals' negative earnings surprises, language signals, and firms' competitive actions. Academy of Management Journal, 63(3), 637-659.",
+      "A2_year": 2020,
+      "A3_outlet_tier": "AMJ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B_perspective_theoretical_positioning": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Attention-based view",
+        "Signaling"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_phenomenon_constructs_context": {
+      "C1_constructs": [
+        "Attack/response",
+        "Rivalry intensity",
+        "Similarity/overlap"
+      ],
+      "C2_measurement": [
+        "Archival behavioral",
+        "Text/NLP"
+      ],
+      "C3_uncertainty_ambiguity": "Measured",
+      "C3_metric_detail": "Linguistic vagueness is measured using a count of vague words from Hiller's Communication Vagueness Dictionary, normalized by the total number of words in an earnings conference call.",
+      "C4_shock_type": "Other: Financial performance shock",
+      "C4_shock_design": "The study uses a naturally occurring event, a rival's negative earnings surprise, as the primary shock or trigger for the focal firm's competitive actions."
+    },
+    "D_methods_identification_causality": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": [
+        "IV",
+        "Panel FE (causal)"
+      ],
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": [
+        "Instrument relevance (Cragg-Donald test, F-statistic)",
+        "Instrument exogeneity (Durbin-Wu-Hausman test suggests exogeneity cannot be rejected)",
+        "Addressing sample selection bias (Heckman estimation)"
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Instrument diagnostics",
+        "Cluster/serial corr fixes",
+        "Other: Alternative measures for key variables (e.g., SUE for earnings surprises), alternative estimation models (Poisson), inclusion of additional controls, exclusion of potentially confounding observations."
+      ],
+      "D3_endogeneity": [
+        "FE saturation",
+        "Lags",
+        "Other: Instrumental Variable (IV)"
+      ],
+      "D4_level_alignment": "Multilevel model",
+      "D5_data_sources": [
+        "RavenPack News Analytics",
+        "Thomson Reuters StreetEvent",
+        "Thomson Reuters I/B/E/S",
+        "Compustat Fundamentals Quarterly"
+      ]
+    },
+    "E_outcomes_effects": {
+      "E1_outcomes": [
+        "Action rate/mix"
+      ],
+      "E2_effect_directions": {
+        "Action rate/mix": "+"
+      },
+      "E3_mechanisms_tags": [
+        "Signaling",
+        "Attention allocation"
+      ],
+      "E4_moderators": [
+        "Rival's language complexity",
+        "Rival's language vagueness"
+      ]
+    },
+    "F_quality_systematicity": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk of bias stems from potential endogeneity, as unobserved factors could simultaneously influence a rival's performance/communication and a focal firm's competitive posture. The authors mitigate this substantially through a comprehensive set of robustness checks, including an IV approach, but the exclusion restriction for the instrument is untestable, leaving a small residual risk. External validity is limited to public firms in U.S. oligopolies.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_integration_hooks": {
+      "G1_construct_mapping_note": "The paper's dependent variable, 'competitive action intensity' (a count of tactical actions), is a specific operationalization of the broader 'Attack/response' construct in competitive dynamics. It focuses on the initiation ('attack') volume following a non-action trigger.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "A rival's demonstrated weakness (e.g., a negative performance shock) increases a focal firm's propensity to attack.",
+        "The perceived severity of a rival's weakness, and thus the intensity of a focal firm's attack, is amplified by the rival's use of obfuscating language (complexity, vagueness) in its public communications.",
+        "In competitive settings, communicative ambiguity following a negative event is interpreted not as strategic noise that deters action, but as a signal of vulnerability that invites action."
+      ]
+    },
+    "H_type_applicability": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "Fields specific to conceptual or review papers are not applicable as this is an empirical quantitative study."
+    },
+    "I_mechanism_proposition_detailing": {
+      "I1_mechanism_statements": [
+        "A rival firm's use of complex and vague language to communicate a negative earnings surprise is perceived by a focal firm as an indicator of greater underlying vulnerability.",
+        "This heightened perception of vulnerability increases the focal firm's motivation and confidence in its ability to launch successful competitive attacks, as the rival is deemed less likely or capable of retaliating effectively."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Rival's language complexity",
+          "role_in_link": "Strengthens the positive relationship between a rival's negative earnings surprise and the focal firm's competitive action intensity."
+        },
+        {
+          "type": "moderation",
+          "variable": "Rival's language vagueness",
+          "role_in_link": "Strengthens the positive relationship between a rival's negative earnings surprise and the focal firm's competitive action intensity."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J_findings_evidence": {
+      "J1_main_findings_summary": [
+        "A rival's negative earnings surprise is positively and significantly associated with the intensity of tactical competitive actions initiated by a focal firm.",
+        "The complexity of a rival's language in its earnings conference call positively moderates the relationship, such that the effect of a negative earnings surprise on a focal firm's action intensity is stronger when the rival's language is more complex.",
+        "The vagueness of a rival's language also positively moderates the relationship, meaning the effect of a negative earnings surprise is amplified when the rival's language is more vague.",
+        "The effect is strongest when a rival's communication is both complex and vague, suggesting a compound signaling effect of vulnerability."
+      ],
+      "J2_finding_evidence_links": [
+        "Main effects and moderation results are presented in Table 2 (p. 648).",
+        "The interaction effects are visualized in Figure 1 (complex language, p. 649), Figure 2 (vague language, p. 650), and Figure 3 (three-way interaction, p. 651)."
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K_overall_paper_contribution": {
+      "K1_contribution_summary": "The paper makes a significant contribution by shifting the focus of competitive dynamics from reactions to direct attacks towards proactive attacks triggered by a rival's non-competitive negative events. It innovatively demonstrates that language is not merely a tool for creating strategic ambiguity to deter rivals, but can also, under conditions of poor performance, become a powerful signal of vulnerability that invites competitive aggression, thereby linking capital market communication directly to product market strategy."
+    }
+  }

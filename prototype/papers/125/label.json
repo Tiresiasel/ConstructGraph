@@ -1,0 +1,185 @@
+{   "relevant": true,
+    "L_summary_of_the_paper": {
+      "L1_summary_of_paper": "This paper investigates an indirect consequence of institutional investor activism, termed 'portfolio spillover.' The core research question is how activist behavior targeted at one firm within an investor's portfolio influences the strategic actions of other, non-targeted firms held by the same investor. The key concept is the 'implicit threat' that non-targeted firms perceive when they observe their activist shareholder taking action elsewhere. To explain this phenomenon, the study extends the Awareness-Motivation-Capability (AMC) framework, traditionally used in competitive dynamics, to the corporate governance arena. The primary constructs studied are activist investor ownership (as a proxy for awareness of the implicit threat), and the firm's subsequent corporate restructuring and growth activities (as responses). The study uses a large panel dataset of S&P 1500 companies from 2000 to 2013. The main findings are that higher ownership by activist investors is positively associated with a non-targeted firm's restructuring activities and negatively associated with its growth activities. These relationships are stronger when firms have weak constitutional constraints against shareholder control (moderating firm motivation) and when transactional investor ownership is high (moderating activist capability). A quasi-natural experiment using activist fund closures supports a causal interpretation. The paper's primary contributions are twofold: it successfully extends the theoretical scope of the AMC framework beyond interfirm competition to governance, and it identifies and provides evidence for portfolio spillover as a significant, previously under-theorized externality of shareholder activism, highlighting that activism's influence is much broader than its direct targets."
+    },
+    "M_theory_and_unit_of_analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Awareness-Motivation-Capability (AMC) Framework",
+          "tag": "primary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Firm",
+      "M3_unit_of_analysis_element": [
+        "Corporate restructuring activities",
+        "Corporate growth activities"
+      ]
+    },
+    "N_assumptions_and_behavioral_scope": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "Not applicable",
+      "NA_reason_if_any_N2": "The paper studies the influence of a shareholder's actions on a focal firm, not the reciprocal observation between two competing firms, making the concept of symmetry irrelevant.",
+      "N3_assumption_common_environment": "Not applicable",
+      "NA_reason_if_any_N3": "The mechanism is based on common ownership, not a shared competitive market environment. Firms in the portfolio can be in dozens of different industries.",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "NA_reason_if_any_N4": "The theory posits a continuous effect based on the level of activist ownership, not an equal weighting of different actors' actions.",
+      "N5_focus_scope": "Not applicable",
+      "NA_reason_if_any_N5": "The firm's focus is on the actions of a common owner across that owner's portfolio, not on tracking a set of market competitors."
+    },
+    "A_bibliographic_and_administrative": {
+      "A1_citation": "Shi, W., Connelly, B. L., Hoskisson, R. E., & Ketchen, D. J. (2020). PORTFOLIO SPILLOVER OF INSTITUTIONAL INVESTOR ACTIVISM: AN AWARENESS-MOTIVATION-CAPABILITY PERSPECTIVE. Academy of Management Journal, 63(6), 1865-1892.",
+      "A2_year": 2020,
+      "A3_outlet_tier": "AMJ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B_perspective_and_theoretical_positioning": {
+      "B1_primary_perspective": "Other: Common ownership governance perspective",
+      "B2_levels": "Firm",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Cognitive maps",
+        "Attention-based view"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_phenomenon_constructs_and_context": {
+      "C1_constructs": [
+        "Other: Implicit threat from shareholder activism",
+        "Other: Portfolio spillover"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "Independent Variable (Activist Ownership): Percentage of shares held by institutional investors who filed a Schedule 13D in the past year. Dependent Variables (Restructuring/Growth): Counts of announcements for specific corporate actions (e.g., divestitures, downsizing, acquisitions, new product introductions) from the Capital IQ database. Moderators: Constitutional limits are a sum of four key anti-takeover provisions (0-4 scale); Transactional ownership is the percentage of shares held by investors classified as 'transient' or 'quasi-indexer' based on their trading behavior.",
+      "C4_shock_type": "Other: Investor-specific shock (activist fund closure)",
+      "C4_shock_design": "A dummy variable ('post-closure period') is created, coded '1' for a firm in the years after an activist investor that owns its shares ceases operations, and '0' otherwise. This generates an exogenous decrease in the implicit threat."
+    },
+    "D_methods_and_identification_causality": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Causal claim",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": [
+        "Panel FE (causal)",
+        "Shock-based",
+        "Other: Heckman selection model"
+      ],
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": [
+        "Time-invariant firm heterogeneity (via firm fixed effects)",
+        "Sample selection bias (via Heckman two-stage model)",
+        "Reverse causality (via quasi-natural experiment of fund closures)"
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Placebo/falsification"
+      ],
+      "D3_endogeneity": [
+        "FE saturation",
+        "Lags",
+        "Exogenous shock"
+      ],
+      "D4_level_alignment": "Not applicable",
+      "NA_reason_if_any_D4": "The study is conducted entirely at the firm level.",
+      "D5_data_sources": [
+        "ExecuComp",
+        "Audit Analytics Investor Activism database",
+        "S&P Compustat",
+        "Thomson Reuter 13(F) database",
+        "Capital IQ Key Development",
+        "BoardEx",
+        "Institutional Shareholder Services (ISS)"
+      ]
+    },
+    "E_outcomes_and_effects": {
+      "E1_outcomes": [
+        "Action rate/mix",
+        "Revenue/profit"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Action rate/mix (Restructuring)",
+          "direction": "+"
+        },
+        {
+          "outcome": "Action rate/mix (Growth)",
+          "direction": "–"
+        },
+        {
+          "outcome": "Revenue/profit (supplementary analysis)",
+          "direction": "Mixed"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Spillovers",
+        "Deterrence",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "Constitutional limits on shareholder control",
+        "Transactional investor ownership"
+      ]
+    },
+    "F_quality_and_systematicity": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "Potential risk from unobserved time-varying heterogeneity, as industry-level shocks could influence both activist ownership and firm strategy simultaneously. Measurement of strategic actions as counts ignores their magnitude and quality. External validity is limited to large, public U.S. firms.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_integration_hooks": {
+      "G1_construct_mapping_note": "The paper maps the core AMC constructs from the interfirm competition context to a corporate governance context. 'Awareness' is mapped to the firm's perception of an 'implicit threat' from its activist shareholders. 'Motivation' and 'Capability' are adapted to refer to both the firm's motivation to respond and the activist's capability to attack, which in turn influences the firm's motivation.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "An actor's awareness of a powerful stakeholder's actions in one part of a shared network (e.g., a portfolio) creates an implicit threat that triggers preemptive behavioral change in the focal actor.",
+        "The intensity of an actor's response to an implicit threat is conditional on the threat-sender's perceived capability to act and the focal actor's structural defenses against such action.",
+        "The presence of potential allies (e.g., transactional investors) amplifies a threat-sender's capability, thereby increasing the focal actor's motivation to respond preemptively."
+      ]
+    },
+    "H_type_applicability": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "The paper is a primary empirical study with quantitative data analysis."
+    },
+    "I_mechanism_and_proposition_detailing": {
+      "I1_mechanism_statements": [
+        "Increased ownership by known activist investors heightens executives' 'awareness' of an 'implicit threat' that their firm could become a future target for activism.",
+        "This heightened awareness 'motivates' executives to take preemptive actions—specifically, increasing restructuring and reducing growth—to remove potential inefficiencies and align with activist preferences, thereby making the firm a less attractive target.",
+        "The 'capability' of activists to launch a successful attack is enhanced by the presence of transactional investors, and the firm's 'motivation' to respond is amplified when its own structural defenses (constitutional limits) are weak."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Constitutional limits on shareholder control",
+          "role_in_link": "Weakens the relationships between activist ownership and both restructuring (+) and growth (–) activities. High limits reduce the activist's capability and thus the firm's motivation to respond."
+        },
+        {
+          "type": "moderation",
+          "variable": "Transactional investor ownership",
+          "role_in_link": "Strengthens the relationships between activist ownership and both restructuring (+) and growth (–) activities. High transactional ownership enhances the activist's capability by providing a potential base of support, thus increasing the firm's motivation to respond."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J_findings_and_evidence": {
+      "J1_main_findings_summary": [
+        "The level of ownership by activist investors in a non-targeted firm is positively and significantly associated with the number of that firm's restructuring activities.",
+        "The level of ownership by activist investors in a non-targeted firm is negatively and significantly associated with the number of that firm's growth activities.",
+        "These effects are significantly stronger for firms with weak constitutional limits on shareholder control.",
+        "These effects are significantly stronger for firms with high levels of transactional institutional ownership.",
+        "A quasi-natural experiment shows that when the implicit threat from an activist investor is exogenously removed (due to fund closure), firms decrease restructuring and increase growth, supporting a causal interpretation.",
+        "Supplementary analyses suggest that the strategic actions undertaken in response to portfolio spillover can be detrimental to firm performance."
+      ],
+      "J2_finding_evidence_links": [
+        "Main effects (H1, H2): Table 2, Models 3 & 5.",
+        "Moderation by constitutional limits (H3a, H3b): Table 3, Models 1-4.",
+        "Moderation by transactional ownership (H4a, H4b): Table 3, Models 5 & 6; Figures 1 & 2.",
+        "Quasi-natural experiment: Table 4, Models 1 & 2.",
+        "Performance implications: Table 4, Models 3-6."
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K_overall_paper_contribution": {
+      "K1_contribution_summary": "The paper's primary contribution is the introduction and empirical validation of the 'portfolio spillover' concept, which posits that shareholder activism has significant indirect effects on non-targeted firms that share a common activist owner. In doing so, it makes a major theoretical contribution by demonstrating the applicability of the Awareness-Motivation-Capability (AMC) framework outside its traditional domain of competitive dynamics, successfully redirecting it to explain corporate governance phenomena. This work reveals a crucial, and potentially negative, externality of activism, suggesting its full economic impact is far broader and more complex than previously understood."
+    }
+  }

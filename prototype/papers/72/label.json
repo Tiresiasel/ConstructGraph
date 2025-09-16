@@ -1,0 +1,157 @@
+{   "relevant": false,
+    "L": {
+      "L1_summary_of_paper": "This paper investigates whether technology-intensive (TI) industries became more dynamically competitive between 1978 and 1997. It directly challenges the widespread assumption in management literature that the competitive landscape has fundamentally shifted towards 'hypercompetition,' where competitive advantages are increasingly fleeting. The core research questions are: 1) Has performance instability for firms in TI industries systematically increased over this 20-year period (longitudinal)? and 2) Are TI industries and the firms within them systematically more unstable than their non-TI counterparts (cross-sectional)? The study is framed by Schumpeter's theory of dynamic competition, defined as innovation-based rivalry for markets, which implies greater performance volatility. Key constructs include the durability of abnormal returns, stability of market leadership, business mortality rates, and overall industry dynamism. Using a large panel dataset of 2,309 business segments in 31 TI industries (and a larger sample of non-TI firms for comparison) from the Compustat database, the study employs a battery of econometric tests (autoregressive, logit, and hazard rate models). The main finding is a nuanced 'no and yes.' For the full sample of TI firms, the study finds no general, sustained trend of increasing performance instability on any of the four measures, either over time or in comparison to non-TI firms. However, for a small, elite segment of very high-performing TI firms (e.g., those with returns >2 standard deviations above the industry mean), the study does find statistically significant and substantial evidence of declining performance stability. The paper's primary contribution is to adjudicate a major debate in the strategy field by providing robust, large-sample evidence that claims of a universal shift to hypercompetition are overstated. Instead, it precisely identifies the boundary condition for this phenomenon, suggesting it may be confined to the very top performers in technology-intensive sectors."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Schumpeterian Dynamic Competition",
+          "tag": "primary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": "Other: Performance stability (durability of returns, market leadership, survival) and Industry dynamism"
+    },
+    "N": {
+      "N1_behavioral_scope": "Not applicable",
+      "NA_reason_if_any_N1": "The study analyzes macro-level performance outcomes (e.g., profitability persistence, survival) of an unobserved competitive process, not specific, discrete strategic actions or behaviors of firms.",
+      "N2_assumption_symmetry": "Not applicable",
+      "NA_reason_if_any_N2": "The study does not model dyadic interactions or perceptions between specific firms, so assumptions of symmetry do not apply.",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "NA_reason_if_any_N4": "The study does not model how firms weigh competitors' actions. The analysis is at the firm-in-industry level, not the competitive interaction level.",
+      "N5_focus_scope": "Not applicable",
+      "NA_reason_if_any_N5": "The analysis focuses on firm performance within an industry context, not on how a focal firm tracks or responds to specific competitors."
+    },
+    "A": {
+      "A1_citation": "McNamara, G., & Vaaler, P. M. (2008). Are technology-intensive industries more dynamically competitive? No and yes. Organization Science, 21(1), 271-289.",
+      "A2_year": 2008,
+      "A3_outlet_tier": "OS",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Other: Market/Industry-level analysis",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry"
+      ],
+      "B4_contribution_type": "Adjudication"
+    },
+    "C": {
+      "C1_constructs": "Other: Performance instability (durability of abnormal returns, market leadership stability, mortality/exit), Industry dynamism",
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "None",
+      "C3_metric_detail": "Durability of Abnormal Returns: Modeled using a year-to-year autoregressive process on Return on Assets (ROA) and logistic regression on the likelihood of sustaining above-average performance. Market Leadership Stability: Logistic regression on the likelihood of the market share leader being supplanted. Business Mortality: Proportional hazard rate model on business segment exit from the database. Industry Dynamism: Calculated as the standard error of a regression of industry sales on year dummies, divided by mean industry sales, within five-year panels.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Weak",
+      "D2_identification": "Other: Panel data regression with time trends and controls",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": "Not reported",
+      "D2_robustness_suite": "Other: Alternative model specifications (e.g., using year dummies instead of a linear time trend), robustness of sample definition, analysis of sub-samples (individual industries, alternative performance definitions).",
+      "D3_endogeneity": "Not addressed",
+      "D4_level_alignment": "Other: Analysis is conducted at two distinct levels (business segment and industry) but without formal multi-level modeling to bridge them.",
+      "D5_data_sources": [
+        "Compustat Industry Segment database",
+        "Compustat corporate level database (for R&D data)"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Revenue/profit",
+        "Market share",
+        "Entry/exit/survival",
+        "Performance variance"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Durability of abnormal returns (profitability persistence)",
+          "direction": "Mixed"
+        },
+        {
+          "outcome": "Stability of market leadership",
+          "direction": "Null"
+        },
+        {
+          "outcome": "Survival (inverse of mortality)",
+          "direction": "Null"
+        },
+        {
+          "outcome": "Industry dynamism (performance variance at industry level)",
+          "direction": "Null"
+        }
+      ],
+      "E3_mechanisms_tags": "Not applicable",
+      "NA_reason_if_any_E3": "The paper tests for the performance outcomes of an aggregate, unobserved process ('dynamic competition'), not the specific micro-mechanisms (e.g., learning, deterrence) that constitute that process.",
+      "E4_moderators": [
+        "Time (longitudinal trend)",
+        "Industry type (TI vs. non-TI)",
+        "Firm performance level (high-performers vs. others)"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk of bias stems from the observational nature of the study, which limits causal claims. Potential for omitted variable bias exists, as other macro trends during the 1978-1997 period could explain the results. The study's conclusion ending in 1997 limits its external validity to the internet and post-internet eras, where competitive dynamics may have changed substantially.",
+      "F3_saturation_contribution": "Divergent"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The paper maps the abstract construct of 'increasing dynamic competition' to four specific, measurable performance outcomes: decreased durability of abnormal returns, decreased market leadership stability, increased mortality, and increased industry dynamism.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The intensification of dynamic competition is not a universal phenomenon but is conditional on a firm's performance level, primarily affecting elite, high-performing firms.",
+        "In the absence of elite-level performance, technology intensity does not necessarily translate into greater performance instability compared to non-technology-intensive sectors.",
+        "Macro-level measures of industry dynamism may fail to capture significant shifts in competitive pressure occurring within specific performance strata of an industry."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": ""
+    },
+    "I": {
+      "I1_mechanism_statements": "Not applicable",
+      "NA_reason_if_any_I1": "The paper does not test or specify micro-level mechanisms. It treats 'dynamic competition' as a macro-level force whose presence is inferred from its predicted performance outcomes.",
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Time (YEAR)",
+          "role_in_link": "Tests whether the rate of performance decay in TI industries changes over the 1978-1997 period."
+        },
+        {
+          "type": "moderation",
+          "variable": "Industry Type (TECH)",
+          "role_in_link": "Tests whether the rate of performance decay differs between TI and non-TI industries."
+        },
+        {
+          "type": "moderation",
+          "variable": "Performance Stratum",
+          "role_in_link": "Tests whether the trends in performance stability differ for firms at different levels of performance (e.g., average vs. >2 SD above average)."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable",
+      "NA_reason_if_any_I3": "This is an empirical paper with formal hypotheses, not a conceptual paper with propositions."
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "Across the full sample of Technology-Intensive (TI) industries, there is no evidence of a general, sustained increase in performance instability between 1978 and 1997.",
+        "Specifically, the durability of abnormal returns, stability of market leadership, and firm survival rates did not systematically decrease over time for the average TI firm.",
+        "There were no significant differences in the overall levels of performance instability or industry dynamism between TI and non-TI industries during the period.",
+        "A key exception was found for a small segment of very high-performing TI firms (top ~2%), which did experience a significant and substantial decline in their ability to sustain their elite performance over time.",
+        "These elite TI firms were also found to be significantly less able to sustain their high performance compared to similarly high-performing firms in non-TI industries."
+      ],
+      "J2_finding_evidence_links": "Results for H1 (returns durability) are in Tables 1, 2, 3. Results for H2 (market leadership) are in Table 4. Results for H3 (mortality) are in Table 5. Results for H4 (industry dynamism) are in Table 6.",
+      "J3_finding_strength": "Mixed evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper's main contribution is to bring large-scale, systematic evidence to bear on the widely accepted but empirically contested narrative of increasing hypercompetition. By showing that this phenomenon is not a universal trend but is instead concentrated among a small elite of top-performing firms in TI industries, the study provides a crucial boundary condition for theories of dynamic competition and cautions against the broad application of management practices and policies based on the assumption of a universally destabilized competitive landscape."
+    }
+  }

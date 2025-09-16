@@ -1,0 +1,170 @@
+{   "relevant": true,
+    "L": {
+      "L1_summary_of_paper": "This paper introduces and tests the construct of 'competitor acumen,' defined as the extent to which a focal firm's assessment of a given rival's prioritization of its own competitors reflects that rival's actual view. The central research question is twofold: how does competitor acumen develop, and what are its market consequences? The study is theoretically framed within competitive dynamics and a social network 'embeddedness' perspective, arguing that a firm's position within a network of market-engagement relationships shapes its ability to accurately perceive its rivals. The core constructs studied are relational competitive embeddedness (direct market overlap with a rival), structural competitive embeddedness (sharing common third-party competitors with a rival), competitor acumen (perceptual accuracy), resource deployment capability, and relative market share gain. The research context is the U.S. airline industry in the early 1990s, using a combination of archival market data and perceptual survey data from senior executives. The main findings indicate that both relational and structural competitive embeddedness are positively associated with a firm's competitor acumen. Furthermore, higher competitor acumen leads to greater relative market share gains against that specific rival. A key conclusion is that competitor acumen acts as a moderator, enhancing the positive effect of a firm's resource deployment capability on its market performance. The paper's primary contribution is redirecting competitor analysis from a traditional firm-centric approach to a novel rival-centric perspective, providing a new, measurable cognitive construct that links a firm's network position to its competitive outcomes."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Competitive Dynamics",
+          "tag": "primary"
+        },
+        {
+          "theory": "Social Network Theory (Embeddedness Perspective)",
+          "tag": "primary"
+        },
+        {
+          "theory": "Cognitive Approaches to Competition",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": "Other: <Perceptual accuracy of a rival's competitive priorities (Competitor Acumen) and its effect on relative market share gain>"
+    },
+    "N": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "No",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A": {
+      "A1_citation": "Tsai, W., Su, K. H., & Chen, M. J. (2011). Seeing through the eyes of a rival: Competitor acumen based on rival-centric perceptions. Academy of Management Journal, 54(4), 761-778.",
+      "A2_year": 2011,
+      "A3_outlet_tier": "AMJ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Both",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Embeddedness",
+        "Cognitive maps"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Similarity/overlap",
+        "Centrality",
+        "Constraint/closure",
+        "Other: <Competitor Acumen>",
+        "Other: <Relational Competitive Embeddedness>",
+        "Other: <Structural Competitive Embeddedness>"
+      ],
+      "C2_measurement": [
+        "Archival behavioral",
+        "Survey/perceptual"
+      ],
+      "C3_uncertainty_ambiguity": "None",
+      "C3_metric_detail": "Competitor Acumen is measured by comparing a focal firm's ranking of a rival's top-5 competitors against the rival's own self-reported ranking, using a reversed and rescaled Euclidean distance score. Competitive Embeddedness (relational and structural) is calculated from archival market share and passenger data in specific airline routes. Relative market share gain is the change in the log-ratio of a focal firm's and a rival's market share over one year.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": [
+        "Panel FE (causal)",
+        "Other: <Multiple Regression Quadratic Assignment Procedure (MRQAP)>"
+      ],
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": [
+        "MRQAP is used to account for autocorrelation in dyadic data.",
+        "Fixed-effects models are used to control for time-invariant unobserved heterogeneity at the firm-route level."
+      ],
+      "D2_robustness_suite": [
+        "Alt specs"
+      ],
+      "D3_endogeneity": [
+        "FE saturation",
+        "Lags"
+      ],
+      "D4_level_alignment": "Multilevel model",
+      "D5_data_sources": [
+        "Primary survey of senior executives in the U.S. airline industry.",
+        "Department of Transportation’s 'Origin-Destination (O-D) Survey of Airline Passenger Traffic'."
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Market share",
+        "Other: <Competitor Acumen>"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Competitor Acumen",
+          "direction": "+"
+        },
+        {
+          "outcome": "Market share",
+          "direction": "+"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Information access",
+        "Learning",
+        "Attention allocation"
+      ],
+      "E4_moderators": [
+        "Competitor acumen"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "Low",
+      "F2_risk_of_bias_notes": "The primary risk is omitted variable bias, as unobserved firm-level strategic capabilities could drive both market embeddedness and performance. The data is also from the early 1990s, which may limit the generalizability of findings to the current competitive landscape. The small sample size for the acumen antecedents model (n=70) may affect statistical power.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The central construct, 'competitor acumen,' can be mapped to the 'awareness' component of the Awareness-Motivation-Capability (AMC) framework, providing a measure of the quality or accuracy of awareness. 'Competitive embeddedness' is a structural antecedent to this cognitive awareness.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The accuracy of a firm's competitive awareness (acumen) is a function of its structural position (embeddedness) in the competitive landscape.",
+        "Cognitive capabilities (like acumen) and operational capabilities (like resource deployment) are complementary assets; the value of one is enhanced by the presence of the other.",
+        "Effective competitive strategy formation requires shifting from a firm-centric perception to a validated, rival-centric understanding of the competitive field."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "This is an empirical paper, not a conceptual piece or a literature review."
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "Relational embeddedness fosters acumen through direct, firsthand experience and learning from repeated interactions with a rival in multiple markets.",
+        "Structural embeddedness fosters acumen by providing indirect information channels and enabling a firm to simulate a rival's perspective by facing similar competitive pressures from common third-party competitors.",
+        "Higher competitor acumen allows a firm to make more informed predictions about a rival's actions and vulnerabilities, leading to more effective competitive moves (attacks and defenses) that result in relative market share gains."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Focal firm's competitor acumen",
+          "role_in_link": "Positively moderates the relationship between the firm's resource deployment capability and its relative market share gain. Acumen enhances the effectiveness with which a firm can leverage its resources against a rival."
+        }
+      ],
+      "I3_theoretical_propositions": []
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "A focal firm's relational competitive embeddedness with a rival is positively and significantly associated with its competitor acumen regarding that rival.",
+        "A focal firm's structural competitive embeddedness with a rival is positively and significantly associated with its competitor acumen regarding that rival.",
+        "A focal firm's competitor acumen is positively and significantly associated with its ability to gain market share relative to the target rival, controlling for the rival's own acumen.",
+        "Competitor acumen positively moderates the relationship between a firm's resource deployment capability and its relative market share gain; the capability is more effective when paired with high acumen."
+      ],
+      "J2_finding_evidence_links": [
+        "Hypotheses 1 & 2: Table 2, Model 4",
+        "Hypothesis 3: Table 3, Model 4",
+        "Hypothesis 4: Table 3, Model 5 and Figure 1"
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper makes a significant contribution by conceptualizing, operationalizing, and empirically validating the construct of 'competitor acumen.' It shifts the focus of competitor analysis from a traditional firm-centric perspective to a more nuanced rival-centric view. By linking this cognitive capability to network embeddedness antecedents and market performance consequences, the study provides a novel framework that bridges social network theory, cognitive perspectives, and competitive dynamics research, demonstrating that accurately understanding a rival's worldview is a key determinant of competitive success."
+    }
+  }

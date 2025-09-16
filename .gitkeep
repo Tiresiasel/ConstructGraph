@@ -1,0 +1,37 @@
+// constants.js
+// Fixed styles and color schemes shared across modules.
+
+export const FIXED_BASE_STYLES = Object.freeze({
+  node: {
+    color: {
+      background: '#e5e7eb',
+      border: '#c9d1d9',
+      highlight: { background: '#e5e7eb', border: '#c9d1d9' },
+    },
+    font: { color: '#e5e7eb', size: 12, face: 'arial' },
+    size: 20,
+    opacity: 1.0,
+  },
+  edge: {
+    color: { color: '#6b7280', highlight: '#6b7280', hover: '#6b7280' },
+    font: { color: '#e5e7eb', size: 12, face: 'arial' },
+    width: 1.8,
+    opacity: 1.0,
+  },
+});
+
+export const EDGE_COLORS = Object.freeze({
+  positive: '#9ca3af',
+  negative: '#9ca3af',
+  causal: '#9ca3af',
+  correlational: '#9ca3af',
+  default: '#9ca3af',
+});
+
+// Expose for legacy inline script if present
+if (typeof window !== 'undefined') {
+  window.FIXED_BASE_STYLES = window.FIXED_BASE_STYLES || FIXED_BASE_STYLES;
+  window.edge_colors = window.edge_colors || EDGE_COLORS;
+}
+
+

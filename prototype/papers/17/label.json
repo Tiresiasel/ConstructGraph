@@ -1,0 +1,128 @@
+{   "relevant":false,
+    "L1_summary_of_paper": "The paper develops a structural theory of interorganizational power that extends resource dependence by incorporating indirect (network-embedded) power, and tests how these power positions shape corporate acquisition strategies and firm performance. Key constructs are (i) direct disadvantage—the focal firm’s dependence on a partner net of the partner’s dependence on the firm; (ii) indirect disadvantage—the focal firm’s exposure to a significant partner’s leverage exercised via intermediaries; and (iii) two-step leverage—the focal firm’s ability to neutralize a powerful partner by acquiring a non-partner that has power over that partner. Using BEA input–output tables (1997, 2002, 2007) linked to Compustat segments and SDC M&A (1997–2007), the authors operationalize firm–industry power asymmetries and estimate effects on (a) the likelihood and (b) the expenditure of acquisitions of partners and non-partners, and (c) industry-adjusted ROA. They find that greater direct and indirect disadvantages both increase partner-acquisition likelihood and spending; the motivation to gain two-step leverage increases non-partner acquisitions; and a firm’s total indirect disadvantage to all partners depresses performance. Contributions: introduces an operationalizable indirect power construct; generalizes two-step leverage from coopting ties to acquisitions; and offers a network-structural route from dependence to strategy and performance.",
+    "M1_main_theories": [
+      "Resource dependence theory (primary)",
+      "Network/structural power (primary)",
+      "Two-step leverage theory (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm",
+    "M3_unit_of_analysis_element": [
+      "Acquisition likelihood",
+      "Acquisition expenditure",
+      "Performance (industry-adjusted ROA)",
+      "Other: Direct disadvantage (power asymmetry)",
+      "Other: Indirect disadvantage (structural power via intermediaries)",
+      "Other: Two-step leverage (via acquiring non-partners)"
+    ],
+    "N1_behavioral_scope": "Single behavior",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "Not applicable",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Zhu, D. H., & Westphal, J. D. (2021). Structural power, corporate strategy, and performance. Strategic Management Journal, 42(3), 624–651. https://doi.org/10.1002/smj.3239.",
+    "A2_year": "2021",
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "Other: Mixed (public BEA IO tables; proprietary Compustat/SDC; no public code)",
+    "B1_primary_perspective": "Network",
+    "B2_levels": "Multi-level",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Resource dependence",
+      "Network/structural power",
+      "Embeddedness",
+      "Diffusion"
+    ],
+    "B4_contribution_type": "Redirection, Extension",
+    "C1_constructs": [
+      "Other: Direct disadvantage (power imbalance, directional)",
+      "Other: Indirect disadvantage (structural power)",
+      "Other: Two-step leverage",
+      "Similarity/overlap",
+      "Centrality"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Network-derived"
+    ],
+    "C3_uncertainty_ambiguity": "None",
+    "C3_metric_detail": "Not applicable",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Causal claim",
+    "D2a_causality_claimed": "Yes",
+    "D2b_causality_supported_by_design": "Weak",
+    "D2_identification": "Other: Logistic panel with two-way clustered SEs; Heckman selection for expenditure; FE/GLS for ROA",
+    "D2_causal_claim_strength": "Weak",
+    "D2_key_assumptions_addressed": [
+      "Temporal ordering (predictors at t; outcomes over t..t+4)",
+      "Selection into positive expenditure addressed via Heckman first-stage exclusions",
+      "Extensive controls for dependence structure and firm/industry characteristics"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Jackknife",
+      "Cluster/serial corr fixes"
+    ],
+    "D3_endogeneity": "Lags",
+    "D4_level_alignment": "Explicit bridging",
+    "D5_data_sources": [
+      "U.S. BEA Input–Output tables (6-digit IO accounts; 1997, 2002, 2007)",
+      "U.S. Census concentration ratios / Compustat segment data",
+      "SDC Platinum M&A",
+      "Compustat financials"
+    ],
+    "E1_outcomes": [
+      "Acquisition likelihood",
+      "Acquisition expenditure",
+      "Revenue/profit"
+    ],
+    "E2_effect_directions": {
+      "Acquisition likelihood": "+",
+      "Acquisition expenditure": "+",
+      "Revenue/profit": "–"
+    },
+    "E3_mechanisms_tags": [
+      "Resource dependence",
+      "Deterrence",
+      "Spillovers",
+      "Other: Two-step leverage via acquisition"
+    ],
+    "E4_moderators": "Not reported",
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Observational design; heavy reliance on IO-based dyadic intensities and concentration ratios; construction of ‘significant partner’ threshold (0.01) could affect classification though authors show robustness; potential omitted variables in acquisition decisions despite extensive controls.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Map direct/indirect disadvantage to directional dependence asymmetry at firm–industry ties; total indirect disadvantage aggregates triadic paths across all partners to a firm-level exposure metric.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "P1: Greater direct disadvantage to a significant partner increases the likelihood and size of acquisitions of that partner.",
+      "P2: Greater indirect disadvantage to a significant partner independently increases the likelihood and size of acquisitions of that partner.",
+      "P3: The product of a focal firm’s direct disadvantage to a partner and the partner’s disadvantage to a non-partner predicts acquisitions of that non-partner (two-step leverage)."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Not applicable",
+    "I1_mechanism_statements": [
+      "Indirect disadvantage allows a significant partner to restrict the focal firm’s access to intermediary-controlled resources, extracting better exchange terms.",
+      "Acquiring a partner with an indirect advantage both removes indirect disadvantage and inherits the partner’s direct advantages over intermediaries.",
+      "Acquiring a non-partner that dominates a powerful partner yields two-step leverage, neutralizing direct disadvantage when direct acquisition is infeasible."
+    ],
+    "I2_mediation_moderation_details": "Not reported",
+    "I3_theoretical_propositions": [
+      "H1/H2: Direct and indirect disadvantages → higher likelihood and greater expenditure on acquiring exchange partners.",
+      "H3: Motivation to gain two-step leverage → higher likelihood and greater expenditure on acquiring non-partners.",
+      "H4: Total indirect disadvantage (aggregated over all partners) → lower industry-adjusted ROA."
+    ],
+    "J1_main_findings_summary": [
+      "Both direct and indirect disadvantages significantly increase the likelihood of acquiring partners; marginal effects at means ≈ +10.1% and +56.0% respectively off a 2.2% base rate.",
+      "Direct and indirect disadvantages also increase acquisition expenditure on partners; +1 SD increases expenditure by ≈2% and ≈8%, respectively (Heckman second stage).",
+      "Motivation to gain two-step leverage significantly raises the likelihood of acquiring non-partners; marginal effect ≈ +5.9% off a 0.13% base rate.",
+      "Total indirect disadvantage to all partners is negatively associated with firm performance (industry-adjusted ROA) in FE and GLS models."
+    ],
+    "J2_finding_evidence_links": "Results and Table 2 (acquisitions) & Table 4 (ROA)",
+    "J3_finding_strength": "Mixed evidence",
+    "K1_contribution_summary": "The study reframes power from a purely dyadic dependence to a structural property of a firm’s position in an exchange network, introduces measurable ‘indirect disadvantage,’ and shows that firms use acquisitions—of both partners and influential non-partners—to manage dependence. It further links a firm’s aggregate indirect exposure to lower profitability, positioning structural power as a pathway from network position to corporate strategy and performance."
+  }

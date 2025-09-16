@@ -1,0 +1,142 @@
+{   "relevant": false,
+    "L1_summary_of_paper": "This conceptual review (Priem, Li, & Carr, 2012, Journal of Management) synthesizes an emerging demand-side perspective across technology innovation, entrepreneurship, and strategic management. Demand-side work looks downstream to product markets and consumers to explain managerial choices that enhance value creation (measured by consumers' willingness to pay), explicitly separating value creation from value capture (shaped by market structure and resource ownership). The article catalogs core characteristics (consumer heterogeneity, dynamic/latent preferences, managerial judgment), contrasts demand-side logic with marketing, the resource-based view (RBV), and dynamic capabilities, and surfaces counterintuitive insights: dominant designs can be demand-pulled; incumbents can succeed via technology retreat (repositioning old technologies to heterogeneous segments); users act as innovators and entrepreneurs; generalist firms may 'dominate from the middle'; and mundane assets can yield sustained advantages through demand complementarities and platform externalities. The paper proposes future research and a unifying agenda integrating demand-side mechanisms with RBV and dynamic capabilities.",
+    "M1_main_theories": [
+      "Demand-side perspective (primary)",
+      "Resource-based view (secondary)",
+      "Dynamic capabilities (secondary)",
+      "Kirznerian entrepreneurship (secondary)",
+      "Penrose’s theory of firm growth (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Multi-level",
+    "M3_unit_of_analysis_element": [
+      "Other: Value creation strategy",
+      "Other: Entrepreneurial opportunity discovery",
+      "Other: User innovation/commercialization",
+      "Market entry mode",
+      "Repertoire diversity"
+    ],
+    "N1_behavioral_scope": "Not applicable",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "Not applicable",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Priem, R. L., Li, S., & Carr, J. C. (2012). Insights and new directions from demand-side approaches to technology innovation, entrepreneurship, and strategic management research. Journal of Management, 38(1), 346–374.",
+    "A2_year": "2012",
+    "A3_outlet_tier": "JoM",
+    "A4_study_type": "Conceptual/Theory",
+    "A5_replicability": "Other: Not applicable (conceptual review)",
+    "B1_primary_perspective": "Not applicable",
+    "B2_levels": [
+      "Firm",
+      "Market/Industry",
+      "Multi-level"
+    ],
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Resource-based view",
+      "Learning",
+      "Diffusion",
+      "Other: Demand-side perspective"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Community",
+      "Category distance",
+      "Perceived competitor set",
+      "Other: Value creation",
+      "Other: User innovation",
+      "Other: Diversification complementarities",
+      "Other: Dominant design formation"
+    ],
+    "C2_measurement": [
+      "Other: Not applicable (conceptual review)"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "The paper emphasizes uncertainty from dynamic and sometimes latent consumer preferences and heterogeneous demand but does not operationalize a metric.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Conceptual/Theory",
+    "D2_causal_or_correlational": "Theoretical/Not applicable",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "Not applicable",
+    "D2_identification": "Not applicable",
+    "D2_causal_claim_strength": "Not applicable",
+    "D2_key_assumptions_addressed": [
+      "Markets are heterogeneous and multi-attribute",
+      "Value creation precedes value capture",
+      "Consumers have bounded foreknowledge; preferences can be latent",
+      "Managerial judgment mediates between demand heterogeneity and firm strategy"
+    ],
+    "D2_robustness_suite": "Not applicable",
+    "D3_endogeneity": "Not applicable",
+    "D4_level_alignment": "None",
+    "D5_data_sources": [
+      "Not applicable"
+    ],
+    "E1_outcomes": [
+      "Innovation",
+      "Entry/exit/survival",
+      "Other: Value creation strategy",
+      "Other: Opportunity discovery"
+    ],
+    "E2_effect_directions": {
+      "Innovation": "Other: Conceptual insights",
+      "Entry/exit/survival": "Other: Conceptual insights",
+      "Other: Value creation strategy": "Other: Conceptual insights",
+      "Other: Opportunity discovery": "Other: Conceptual insights"
+    },
+    "E3_mechanisms_tags": [
+      "Learning",
+      "Attention allocation",
+      "Category audience",
+      "Spillovers",
+      "Signaling",
+      "Other: Consumer heterogeneity → managerial judgment → strategic choice"
+    ],
+    "E4_moderators": [
+      "Market dynamism",
+      "Degree of consumer heterogeneity",
+      "Technology trajectory",
+      "Information transparency/selection systems"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "Narrative synthesis without a fully reported systematic search protocol; potential selection bias and emphasis on illustrative exemplars.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Maps heterogeneous and evolving consumer preferences to firm-level value creation moves (repositioning, diversification, platforming, user co-creation) and links these to RBV resource deployment and dynamic capability reconfiguration.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "In heterogeneous markets, value creation for consumers must precede value capture by firms.",
+      "Consumer heterogeneity can generate sustainable advantages even without VRIN resources.",
+      "Integrating demand-side mechanisms with RBV and dynamic capabilities yields a fuller account of competitive advantage."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "No",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "Yes",
+    "H3_TYPE_APPLICABLE_review_meta": "Yes",
+    "NA_reason_if_any": "Conceptual review synthesizing literature; no original empirical identification, measures, or datasets.",
+    "I1_mechanism_statements": [
+      "Consumer heterogeneity influences managerial judgment and strategic responses, producing firm heterogeneity and value creation differences.",
+      "User communities generate innovations that signal opportunities, enabling user entrepreneurship or incumbent absorption.",
+      "Demand complementarities and platform externalities allow mundane assets to create value and sustain advantages.",
+      "Demand pull and preference trajectories shape dominant designs and technology paths alongside supply-side factors."
+    ],
+    "I2_mediation_moderation_details": [],
+    "I3_theoretical_propositions": [
+      "Demand-side strategies can yield sustained competitive advantage even in the absence of VRIN resources.",
+      "Multi-attribute preference trade-offs and evolving demand curves open new strategic positions and repositioning options.",
+      "Combining demand-side and resource/capability-side mechanisms enhances adaptability and performance under uncertainty."
+    ],
+    "J1_main_findings_summary": [
+      "Demand-side perspectives provide counterintuitive insights in innovation, entrepreneurship, and strategy that challenge supply-side orthodoxy.",
+      "Dominant designs and incumbent responses are shaped by demand pull and preference trajectories, not only by technology push.",
+      "Opportunity signaling and user entrepreneurship demonstrate consumer-driven opportunity creation and commercialization.",
+      "Under scalable production and sufficiently large mid-market segments, generalists can 'dominate from the middle'.",
+      "Mundane assets can create and sustain value through demand complementarities and platform externalities; willingness-based isolating mechanisms can sustain advantages."
+    ],
+    "J2_finding_evidence_links": [
+      "pp. 346–374 (review synthesis and exemplars within the article)"
+    ],
+    "J3_finding_strength": "Speculative (conceptual)",
+    "K1_contribution_summary": "The article redirects attention to demand-side mechanisms of value creation, articulates how consumer heterogeneity and dynamic preferences shape strategic choices and sustained advantage, differentiates demand-side logic from marketing, RBV, and dynamic capabilities, and lays out a research agenda for integrating demand-side, resource-side, and dynamic capability perspectives into a unified theory of value creation and capture."
+  }
+  

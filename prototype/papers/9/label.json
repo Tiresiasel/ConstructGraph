@@ -1,0 +1,134 @@
+{
+    "L1_summary_of_paper": "This paper examines how market overlap (market commonality) between employee spinouts and their parent firms affects spinout survival, and how founders’ prior hierarchical position in the parent moderates this relationship. Integrating knowledge inheritance theory with competitive dynamics, the authors argue that moderate market overlap lets spinouts leverage inherited market know-how to reduce early uncertainty, whereas very high overlap triggers parental hostility (e.g., litigation, price responses), and very low overlap forgoes inherited benefits—yielding an inverted U between overlap and survival. They further theorize that founders who held high-ranking roles inherit more tacit market knowledge and social capital: this helps at very low or very high overlap, but can induce competency traps at moderate overlap, flattening the curve. Using 117 European biotech spinouts (1990–2014) and 103 parents, they hand-code market overlap via the OECD biotech application taxonomy, control for technological overlap (patents) and financing, and estimate log-logistic survival models. Results support both hypotheses: survival peaks at intermediate overlap; the curve is flatter for high-rank founders (better at extremes, worse at mid-range). The paper contributes by unifying knowledge inheritance and competitive dynamics in a parent–spinout dyad, showing nonlinearity and founder hierarchy as a boundary condition.",
+    "M1_main_theories": [
+      "Knowledge inheritance theory (primary)",
+      "Competitive dynamics theory (primary)"
+    ],
+    "M2_unit_of_analysis_level": "Dyad",
+    "M3_unit_of_analysis_element": [
+      "Market overlap",
+      "Entry/exit/survival"
+    ],
+    "N1_behavioral_scope": "Not applicable",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "Not applicable",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Single competitor focus",
+    "A1_citation": "Bahoo-Torodi, A., & Torrisi, S. (2022). When do spinouts benefit from market overlap with parent firms? Journal of Business Venturing, 37(6), 106249. https://doi.org/10.1016/j.jbusvent.2022.106249",
+    "A2_year": "2022",
+    "A3_outlet_tier": "Other-A*",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Dyadic",
+    "B2_levels": "Dyad",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Rivalry",
+      "Learning",
+      "Other: Knowledge inheritance"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "MMC",
+      "Similarity/overlap",
+      "Rivalry intensity",
+      "Other: Competitive tension",
+      "Other: Market overlap (OECD application overlap)"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Other: Hand-coded OECD application classification",
+      "Patent data (archival)"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Uncertainty is theorized to decline with inherited market know-how at moderate overlap; uncertainty is not directly measured.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "None",
+    "D2_identification": "Other: Parametric survival (log-logistic) with controls",
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": [
+      "Quadratic functional form validated (turning point tests)",
+      "Appropriate hazard specification (log-logistic) and right-censoring handled",
+      "Inclusion of observed confounders (founder, parent, financing, technology overlap)"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Other: Inverted-U verification via Lind–Mehlum-type checks",
+      "Other: Cox proportional hazards as alternative"
+    ],
+    "D3_endogeneity": "Not addressed",
+    "D4_level_alignment": "None",
+    "D5_data_sources": [
+      "ThomsonOne (VentureXpert)",
+      "ORBIS",
+      "European Patent Office (EPO)",
+      "Company websites and annual reports",
+      "LinkedIn",
+      "Crunchbase",
+      "Bionity",
+      "Biocentury"
+    ],
+    "E1_outcomes": [
+      "Entry/exit/survival"
+    ],
+    "E2_effect_directions": {
+      "Entry/exit/survival": "∩"
+    },
+    "E3_mechanisms_tags": [
+      "Information access",
+      "Deterrence",
+      "Learning",
+      "Resource dependence"
+    ],
+    "E4_moderators": [
+      "Founder hierarchical position"
+    ],
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Observational design without quasi-experimental identification; unobserved founder/parent heterogeneity may remain; hand-coding of market overlap could introduce coder discretion despite reconciliation steps.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Maps market overlap to market commonality (MMC) in competitive dynamics; integrates inherited knowledge benefits (learning/information access) with retaliation costs (deterrence), producing a nonlinear survival effect contingent on founder hierarchy.",
+    "G2_translation_rule": "Conditionality",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "Market overlap generates opposing forces—inheritance benefits vs. retaliation costs—yielding an inverted-U survival relationship.",
+      "Founder hierarchy shifts these forces’ net effect, flattening the curve and improving survival at very low and very high overlap but worsening it at mid-range.",
+      "Competitive dynamics principles (awareness–motivation–capability via MMC/resource similarity) extend to parent–spinout dyads."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "The article is an empirical quantitative study; conceptual and review meta categories do not apply.",
+    "I1_mechanism_statements": [
+      "Moderate overlap maximizes access to inherited, tacit market knowledge, reducing early-stage uncertainty and failure risk.",
+      "High overlap increases parental awareness and motivation to retaliate (legal, pricing, partner interference), raising failure risk.",
+      "Low overlap forgoes inherited market know-how, increasing uncertainty and failure risk.",
+      "High-rank founders’ greater tacit knowledge and social capital improve survival at overlap extremes but induce competency traps at moderate overlap."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Founder hierarchical position",
+        "role_in_link": "Flattens the inverted-U relation between market overlap and survival; raises survival at very low and very high overlap, lowers it at moderate overlap for high-rank founders."
+      }
+    ],
+    "I3_theoretical_propositions": [
+      "P1: Market overlap with the parent has an inverted U-shaped relation with spinout survival.",
+      "P2: Founder hierarchical position moderates this curve, flattening it such that survival is higher at low/high overlap but lower at moderate overlap for high-rank founders."
+    ],
+    "J1_main_findings_summary": [
+      "Survival is maximized at intermediate market overlap; very low and very high overlap are associated with higher failure risk.",
+      "Founder hierarchical position significantly moderates the curve, producing higher survival at the extremes and lower survival at mid-range for high-rank founders.",
+      "Results are robust to alternative hazard specifications and formal inverted-U checks.",
+      "Technological overlap (as a control) does not overturn the market overlap effects."
+    ],
+    "J2_finding_evidence_links": [
+      "Table 2: Parametric survival estimates showing positive linear and negative quadratic terms for market overlap and significant interactions with founder position.",
+      "Figure 1: Predictive margins illustrating the flattened curve for high-rank founders and turning points within data range."
+    ],
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "By integrating knowledge inheritance with competitive dynamics in a parent–spinout context, the paper demonstrates a nonlinear (inverted-U) relationship between market overlap and spinout survival and shows founder hierarchy as a key boundary condition that reshapes this curve. This reframes spinout inheritance from uniformly beneficial to contingent on competitive positioning and founder background."
+  }

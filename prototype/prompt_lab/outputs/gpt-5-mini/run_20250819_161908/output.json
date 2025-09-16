@@ -1,0 +1,32 @@
+{
+  "paper_metadata": {
+    "doi": "doi.org/10.5465/amj.2021.1440",
+    "title": "BRICKS WITHOUT STRAW: OVERCOMING RESOURCE LIMITATIONS TO ARCHITECT ECOSYSTEM LEADERSHIP XIANWEI SHI Shanghai Jiao Tong University XINGKUN LIANG Peking University SHAHZAD (SHAZ) ANSARI University of Cambridge",
+    "authors": [
+      "Xianwei Shi",
+      "Xingkun Liang",
+      "Shahzad (Shaz) Ansari"
+    ],
+    "publication_year": 2024,
+    "journal": "Academy of Management Journal",
+    "research_type": "Qualitative",
+    "research_context": "Nine-year longitudinal qualitative case study of Xiaomi within the Android ecosystem and the Chinese smartphone industry (including archival data, 112 semi-structured interviews, and participant observation).",
+    "is_replication_study": false
+  },
+  "constructs": [],
+  "construct_dimensions": [],
+  "relationships": [],
+  "measurements": [],
+  "core_theories": [],
+  "coverage_report": {
+    "constructs": 0,
+    "relationships": 0,
+    "measurements": 0,
+    "reason": "Per the extraction scope, only constructs/relationships explicitly tied to labeled Hypotheses/Propositions or contained in 'Hypothesis Development'/'Proposition' sections should be extracted. The provided paper contains no explicit Hypotheses, Propositions, Hypothesis Development sections, or labeled theoretical claims anchored to H/P identifiers; therefore no core-scoped constructs, relationships, or measurements meeting the required anchoring criteria were found.",
+    "errors": [
+      "no_anchor_found",
+      "insufficient_evidence",
+      "out_of_scope_content"
+    ]
+  }
+}

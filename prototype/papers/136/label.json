@@ -1,0 +1,174 @@
+{   "relevant": true,
+    "L_summary_of_paper": {
+      "L1_summary_of_paper": "This paper investigates how asymmetries in territorial interests among multimarket competitors affect rivalry and the sustainability of market positions. The core research question is whether firms can use footholds in their rivals' important markets as a deterrent to protect their own core territories, or 'spheres of influence'. The study extends multimarket competition theory and the mutual forbearance hypothesis by incorporating the concept of spheres of influence (Edwards, 1964) and insights from game theory, challenging purely resource-based or structural views of sustainability by focusing on influencing rivals' *motivation* to attack. The central constructs are reciprocal multimarket contact (where a firm has a foothold in a rival's important market) versus nonreciprocal contact. The study hypothesizes that reciprocal contact is more effective at reducing competitive intensity (measured by price/yield) and sustaining a leader's market share. The context is the U.S. scheduled airline industry from 1984-1988, with city-pairs as markets. The main findings show strong support that reciprocal contact leads to less intense price competition from both challengers and leaders. The effect on market share sustainability is contingent on how 'spheres of influence' are defined, with the strongest effect found when defined by resource centrality (i.e., airport hubs). The paper's primary contribution is refining multimarket theory by showing that the strategic nature, not just the quantity, of market contacts matters, and it bridges competitive dynamics with the resource-based view by demonstrating how strategic deterrence can protect valuable resource commitments."
+    },
+    "M_Theory_Unit_of_Analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Multimarket competition theory",
+          "tag": "primary"
+        },
+        {
+          "theory": "Mutual forbearance hypothesis",
+          "tag": "primary"
+        },
+        {
+          "theory": "Game theory",
+          "tag": "secondary"
+        },
+        {
+          "theory": "Resource-based view",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Competitive tie",
+      "M3_unit_of_analysis_element": [
+        "Pricing strategy",
+        "Other: Market Share Sustainability"
+      ]
+    },
+    "N_Assumptions_Behavioral_Scope": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "Yes",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A_Bibliographic_Administrative": {
+      "A1_citation": "Gimeno, J. (1999). Reciprocal threats in multimarket rivalry: Staking out ‘spheres of influence’ in the U.S. airline industry. Strategic Management Journal, 20(2), 101-128.",
+      "A2_year": 1999,
+      "A3_outlet_tier": "SMJ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "Data public"
+    },
+    "B_Perspective_Theoretical_Positioning": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Multimarket contact",
+        "Resource-based view"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_Phenomenon_Constructs_Context": {
+      "C1_constructs": [
+        "MMC",
+        "Rivalry intensity",
+        "Other: Spheres of Influence",
+        "Other: Asymmetric Territorial Interests",
+        "Other: Reciprocal Threats"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "None",
+      "C3_metric_detail": "Reciprocal Multimarket Contact is measured as the count of markets where a focal challenger meets the focal leader, and in which the challenger is the leader. Non-Reciprocal MMC is the count of markets where the roles are the same. Intensity of Rivalry is inversely measured by Yield (revenue per passenger-mile). Market Position Sustainability is measured by Market Share. Territorial Interests are operationalized in three ways: Market Share Dominance, Market Dependence, and Resource Centrality.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D_Methods_Identification_Causality": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Moderate",
+      "D2_identification": [
+        "Panel FE (causal)",
+        "GMM"
+      ],
+      "D2_causal_claim_strength": "Moderate",
+      "D2_key_assumptions_addressed": [
+        "Time-invariant unobserved heterogeneity via fixed effects.",
+        "Endogeneity of lagged dependent variable in dynamic models via GMM with lagged instruments."
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Cluster/serial corr fixes"
+      ],
+      "D3_endogeneity": [
+        "FE saturation",
+        "Other: GMM with lagged instruments"
+      ],
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "Department of Transportation (DOT): Ticket Price Origin and Destination Survey (DB1A)",
+        "Department of Transportation (DOT): Service Segment data",
+        "Department of Transportation (DOT): Form 41 reports"
+      ]
+    },
+    "E_Outcomes_Effects": {
+      "E1_outcomes": [
+        "Price",
+        "Market share"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Price",
+          "direction": "+"
+        },
+        {
+          "outcome": "Market share",
+          "direction": "+"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Deterrence",
+        "Tacit collusion",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "Other: Operationalization of Territorial Interest"
+      ]
+    },
+    "F_Quality_Systematicity": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "The primary risk of bias is endogeneity from omitted time-varying variables. While the fixed-effects and GMM approaches are strong, they cannot rule out that firms which adopt reciprocal market postures also differ on unobserved strategic dimensions (e.g., corporate culture, strategic patience) that simultaneously affect pricing and market share.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_Integration_Hooks": {
+      "G1_construct_mapping_note": "The paper maps the abstract concept of 'spheres of influence' to three concrete, measurable operationalizations: market share dominance, market dependence, and resource centrality. It finds that the resource-based measure (resource centrality) has the strongest predictive power for market structure outcomes, suggesting that underlying resource commitments are the true basis for these territories.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The deterrent effect of multimarket contact is conditional on the strategic importance of the markets where contact occurs, with reciprocal threats in core territories being most effective.",
+        "Firms can sustain advantages in their core markets not just through superior resources, but by strategically creating credible threats in their rivals' core markets.",
+        "Market structures co-evolve towards stable 'spheres of influence' as firms learn to respect rivals' territories, which are primarily defined by underlying, visible resource commitments rather than transient market share."
+      ]
+    },
+    "H_Type_Applicability": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "Not applicable"
+    },
+    "I_Mechanism_Proposition_Detailing": {
+      "I1_mechanism_statements": [
+        "The central mechanism is strategic deterrence through credible threats of cross-market retaliation. A leader with a foothold in a challenger's important market can influence the challenger's motivation to attack. This reduces the challenger's aggression, which in turn reduces the leader's need to compete fiercely to defend its position, leading to mutual de-escalation of rivalry and a tacit division of markets."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Reciprocity of multimarket contact",
+          "role_in_link": "The paper's core argument is that the relationship between multimarket contact and competitive outcomes (lower rivalry, higher market share for leaders) is moderated by the reciprocity of the contact. Reciprocal contacts are hypothesized and found to have a much stronger effect than nonreciprocal contacts. This is tested by directly comparing the coefficients of the two types of contacts."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable",
+      "NA_reason_if_any": "The paper is empirical and tests hypotheses, not a conceptual paper that develops propositions."
+    },
+    "J_Findings_Evidence": {
+      "J1_main_findings_summary": [
+        "Reciprocal multimarket contact significantly reduces the competitive intensity (i.e., increases prices/yields) of both market challengers and market leaders.",
+        "The deterrent effect of reciprocal multimarket contact on competitive intensity is significantly stronger than that of nonreciprocal contact.",
+        "Reciprocal multimarket contact helps market leaders sustain a higher equilibrium market share in their core markets ('spheres of influence').",
+        "The effect on market share sustainability is contingent on how territorial interests are defined, with the strongest support found when interests are based on resource centrality (hub dominance)."
+      ],
+      "J2_finding_evidence_links": [
+        "Hypotheses 1a/1b: Table 3",
+        "Hypotheses 2a/2b: Table 4",
+        "Hypotheses 3a/3b: Table 5"
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K_Overall_Paper_Contribution": {
+      "K1_contribution_summary": "This paper makes a seminal contribution by refining multimarket competition theory. It moves beyond simply counting market overlaps to demonstrate that the strategic nature of these overlaps is what truly matters. By empirically testing the 'spheres of influence' hypothesis, it shows that credible, reciprocal threats in rivals' core territories are a powerful mechanism for deterring aggression, facilitating tacit collusion, and ultimately sustaining a firm's dominant position in its own core markets. It provides a crucial bridge between the resource-based view and competitive dynamics by showing how firms can actively use strategic deterrence to protect their valuable resource commitments."
+    }
+  }

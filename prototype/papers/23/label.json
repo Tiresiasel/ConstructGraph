@@ -1,0 +1,143 @@
+{   "relevant": false,
+    "L1_summary_of_paper": "This empirical-quantitative SMJ study asks how executives’ temporal depth—how far back they look into the past (PTD) and how far ahead they look into the future (FTD)—interacts with industry velocity to shape firms’ competitive aggressiveness and, in turn, performance. Grounded in upper echelons, competitive dynamics, contingency, and entrainment perspectives, the paper theorizes that executive temporal orientation is a third temporal force complementing macro (industry) and micro (firm action) tempos. Using a 1995–2000 U.S. panel of 258 single-business firms across 23 industries, the authors code PTD/FTD from executive communications and operationalize competitive aggressiveness as the composite of action volume and (inverse) action speed from LexisNexis-coded market actions; industry velocity is the average action rate of dominant firms (>80% share) in each industry-year. They find: (i) PTD raises aggressiveness in low-velocity industries but lowers it in high-velocity industries; (ii) FTD raises aggressiveness in low-velocity industries but follows an inverted-U in high-velocity industries; and (iii) aggressiveness improves performance, more so when velocity is high. Contributions: integrating subjective temporal orientation into competitive dynamics; specifying velocity-contingent fit of PTD/FTD; and linking aggressiveness to performance under temporal contingencies. :contentReference[oaicite:0]{index=0}",
+    "M1_main_theories": [
+      "Upper echelons theory (primary)",
+      "Competitive dynamics (secondary)",
+      "Contingency perspective (secondary)",
+      "Entrainment theory (secondary)",
+      "Other: Austrian view of market (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm",
+    "M3_unit_of_analysis_element": [
+      "Competitive aggressiveness"
+    ],
+    "N1_behavioral_scope": "Not applicable",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "False",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Nadkarni, S., Chen, T., & Chen, J. (2016). The clock is ticking! Executive temporal depth, industry velocity, and competitive aggressiveness. Strategic Management Journal, 37(6), 1132–1153.",
+    "A2_year": "2016",
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Other: Firm-level behavioral",
+    "B2_levels": [
+      "Firm",
+      "Market/Industry"
+    ],
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Other: Contingency",
+      "Other: Entrainment",
+      "Other: Upper echelons"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Aggressiveness",
+      "Industry velocity",
+      "Other: Executive temporal depth (PTD/FTD)"
+    ],
+    "C2_measurement": [
+      "Text/NLP",
+      "Archival behavioral"
+    ],
+    "C3_uncertainty_ambiguity": "Measured",
+    "C3_metric_detail": "Industry unpredictability computed as the standardized SE of a time-regression on five years of industry shipments (1995–2000) divided by mean shipments; industry homogeneity based on variance across six strategic dimensions. ",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "Yes",
+    "D2b_causality_supported_by_design": "Weak",
+    "D2_identification": "Other: Panel GLS with lags and endogeneity-correction controls",
+    "D2_causal_claim_strength": "Weak",
+    "D2_key_assumptions_addressed": [
+      "Temporal ordering via one-year lags for aggressiveness and performance",
+      "Industry/firm/TMT controls (e.g., HHI, growth, unpredictability, homogeneity, size, slack, past performance)",
+      "Predicted-score controls for PTD/FTD (per Chatterjee & Hambrick procedures)"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Separate DV components (volume, speed) consistent with composite"
+    ],
+    "D3_endogeneity": "Other: Predicted PTD/FTD scores included as correction controls; Lags",
+    "D4_level_alignment": "Explicit bridging",
+    "D5_data_sources": [
+      "LexisNexis news headlines (competitive actions)",
+      "SEC EDGAR / shareholder letters / MD&A / call transcripts (PTD/FTD)",
+      "Industry shipment data (unpredictability)",
+      "Accounting data (ROS, ROA)",
+      "Other archival sources noted in paper"
+    ],
+    "E1_outcomes": [
+      "Action rate/mix",
+      "Revenue/profit"
+    ],
+    "E2_effect_directions": {
+      "Action rate/mix": "Mixed",
+      "Revenue/profit": "+"
+    },
+    "E3_mechanisms_tags": [
+      "Attention allocation",
+      "Learning",
+      "Signaling",
+      "Other: Entrainment/pacing fit"
+    ],
+    "E4_moderators": [
+      "Industry velocity"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "Potential coder subjectivity in PTD/FTD extraction and action identification; non-experimental design with GLS and controls—residual omitted variables possible.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Maps executive temporal orientation (PTD/FTD) to micro-level aggressiveness under macro-level industry clock speed; integrates subjective time with competitive repertoires.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "Fit between executive temporal depth and industry velocity increases competitive aggressiveness.",
+      "In high-velocity contexts, moderate FTD (not long PTD) best supports aggressiveness.",
+      "Aggressiveness more strongly translates into performance under high velocity."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "H4_NA_reason_if_any": "The paper is an empirical-quantitative panel study; not a theory-only or review article.",
+    "I1_mechanism_statements": [
+      "PTD supplies historical pattern recognition aiding action choice when environments change slowly; in fast environments, distant cues become outdated, dampening aggressiveness. :contentReference[oaicite:2]{index=2}",
+      "FTD enables proactive preparation and resource alignment; in fast environments excessive long-range focus reduces sensitivity to short-term shifts, yielding an inverted-U with aggressiveness. :contentReference[oaicite:3]{index=3}",
+      "Aggressiveness (more actions, faster responses) helps seize fleeting opportunities and shorten rivals’ advantage duration, improving performance especially when velocity is high. :contentReference[oaicite:4]{index=4}"
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Industry velocity",
+        "role_in_link": "Moderates PTD → Aggressiveness (positive at low velocity, negative at high velocity). :contentReference[oaicite:5]{index=5}"
+      },
+      {
+        "type": "moderation",
+        "variable": "Industry velocity",
+        "role_in_link": "Moderates FTD → Aggressiveness (positive at low velocity; inverted-U at high velocity). :contentReference[oaicite:6]{index=6}"
+      },
+      {
+        "type": "moderation",
+        "variable": "Industry velocity",
+        "role_in_link": "Strengthens Aggressiveness → Performance. :contentReference[oaicite:7]{index=7}"
+      }
+    ],
+    "I3_theoretical_propositions": [],
+    "J1_main_findings_summary": [
+      "PTD boosts aggressiveness in low-velocity industries but reduces it in high-velocity industries (H1 supported). :contentReference[oaicite:8]{index=8}",
+      "FTD boosts aggressiveness in low-velocity industries and shows an inverted-U in high-velocity industries (H2 supported). :contentReference[oaicite:9]{index=9}",
+      "Competitive aggressiveness improves performance, with stronger effects under high velocity (H3 supported). :contentReference[oaicite:10]{index=10}",
+      "Measurement validation shows convergent/discriminant validity for archival PTD/FTD measures. :contentReference[oaicite:11]{index=11}"
+    ],
+    "J2_finding_evidence_links": [
+      "PTD×Velocity → Aggressiveness significant; split-sample signs as predicted (Tables 2–3). :contentReference[oaicite:12]{index=12}",
+      "Inverted-U for FTD in high-velocity industries (Figure/Models described). :contentReference[oaicite:13]{index=13}",
+      "Aggressiveness → Performance positive; stronger at high velocity; performance measure ROS/ROA z-composite. :contentReference[oaicite:14]{index=14}",
+      "PTD/FTD archival measure validation (alphas; correlations with TDI). :contentReference[oaicite:15]{index=15}"
+    ],
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "By introducing executive temporal depth as a contingent driver of competitive aggressiveness and performance, the paper extends competitive dynamics with a subjective temporal lens and specifies how PTD/FTD must fit industry clock speed—long past helps when change is slow; in fast contexts, moderate future focus dominates while long past hinders."
+  }
+  

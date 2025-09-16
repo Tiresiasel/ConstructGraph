@@ -1,0 +1,152 @@
+{ "relevant":true,
+    "L_summary_of_the_paper": {
+      "L1_summary_of_paper": "This conceptual paper addresses the research question of how to bridge the gap between competitor analysis and the prediction of interfirm rivalry. It introduces and defines two key firm-specific constructs: 'market commonality' (the degree of a competitor's presence in markets shared with a focal firm, weighted by strategic importance) and 'resource similarity' (the extent to which a competitor possesses comparable strategic endowments in type and amount). The theoretical framing integrates the 'outside-in' perspective of multipoint competition literature with the 'inside-out' perspective of the resource-based view (RBV), arguing they are complementary. The paper proposes a series of relationships: market commonality primarily drives a firm's awareness and motivation to attack or respond, while resource similarity primarily drives its capability. A key argument is the existence of 'competitive asymmetry,' where Firm A's view of Firm B as a competitor may not equal Firm B's view of Firm A. The paper uses the U.S. airline industry as an illustrative context to propose measurement methods for the constructs. Its main conclusions are presented as a series of propositions, such as high market commonality and high resource similarity both decrease the likelihood of attack but increase the likelihood of response. The paper's primary contribution is providing a new, dyad-level theoretical framework that allows for a more granular, predictive analysis of competitive behavior than existing industry- or strategic group-level approaches."
+    },
+    "M_theory_and_unit_of_analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Multiple-point competition",
+          "tag": "primary"
+        },
+        {
+          "theory": "Resource-based view (RBV)",
+          "tag": "primary"
+        },
+        {
+          "theory": "Features of similarity (Tversky)",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Dyad",
+      "M3_unit_of_analysis_element": [
+        "Likelihood of competitive attack",
+        "Likelihood of competitive response"
+      ]
+    },
+    "N_assumptions_and_behavioral_scope": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "Yes",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "Yes",
+      "N5_focus_scope": "Single competitors focus"
+    },
+    "A_bibliographic_and_administrative": {
+      "A1_citation": "Chen, M.-J. (1996). Competitor analysis and interfirm rivalry: Toward a theoretical integration. Academy of Management Review, 21(1), 100-134.",
+      "A2_year": 1996,
+      "A3_outlet_tier": "Other: AMR (Academy of Management Review), equivalent to top-tier (ASQ, AMJ, SMJ)",
+      "A4_study_type": "Conceptual/Theory",
+      "A5_replicability": "Not applicable"
+    },
+    "B_perspective_and_theoretical_positioning": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Multimarket contact",
+        "Resource-based view",
+        "Cognitive maps"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_phenomenon_constructs_and_context": {
+      "C1_constructs": [
+        "Attack/response",
+        "Rivalry intensity",
+        "Similarity/overlap",
+        "Perceived competitor set"
+      ],
+      "C2_measurement": [
+        "Archival behavioral",
+        "Survey/perceptual"
+      ],
+      "C3_uncertainty_ambiguity": "None",
+      "C3_metric_detail": "Market Commonality (MC): Proposed as a summation across all shared markets 'i' of [(Focal firm's passengers in market 'i' / Focal firm's total passengers) * (Competitor's passengers in market 'i' / Total passengers in market 'i')]. Resource Similarity (RS): Proposed as a comparison of strategic endowments, illustrated by comparing the type and amount of aircraft in airlines' fleet structures.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D_methods_and_identification_causality": {
+      "D1_design": "Conceptual/Theory",
+      "D2_causal_or_correlational": "Theoretical/Not applicable",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Not applicable",
+      "D2_identification": "Not applicable",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": "Not applicable",
+      "D2_robustness_suite": "Not applicable",
+      "D3_endogeneity": "Not applicable",
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "Public airline industry data (for illustration)",
+        "Key informant surveys (for validation of proposed measures)"
+      ]
+    },
+    "E_outcomes_and_effects": {
+      "E1_outcomes": [
+        "Action rate/mix"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Likelihood of Attack",
+          "effect_of_market_commonality": "-",
+          "effect_of_resource_similarity": "-"
+        },
+        {
+          "outcome": "Likelihood of Response",
+          "effect_of_market_commonality": "+",
+          "effect_of_resource_similarity": "+"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Deterrence",
+        "Attention allocation",
+        "Resource dependence",
+        "Learning"
+      ],
+      "E4_moderators": "Not reported"
+    },
+    "F_quality_and_systematicity": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "Not applicable",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_integration_hooks": {
+      "G1_construct_mapping_note": "'Market Commonality' is a refinement of 'Multimarket Contact' that incorporates the strategic importance of shared markets and a competitor's strength within them. 'Resource Similarity' operationalizes a dyadic comparison based on the Resource-Based View, moving beyond simple strategic group membership.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The likelihood and nature of interfirm rivalry between two firms is a joint function of their market-based motivations (market commonality) and their resource-based capabilities (resource similarity).",
+        "Competitive relationships are inherently asymmetric; a firm's propensity to attack or respond to a rival is contingent on its own unique, dyadic assessment of market commonality and resource similarity, not on an objective or symmetric industry structure."
+      ]
+    },
+    "H_type_applicability": {
+      "TYPE_APPLICABLE_empirical": "No",
+      "TYPE_APPLICABLE_theory_conceptual": "Yes",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "This paper is a theoretical piece that develops a conceptual framework and propositions. It does not conduct empirical tests, but rather provides an illustrative example and validation for its proposed measures."
+    },
+    "I_mechanism_and_proposition_detailing": {
+      "I1_mechanism_statements": [
+        "Market commonality drives competitive behavior through awareness and motivation. High MC increases awareness of mutual interdependence and the motivation to forbear from attack due to the threat of multi-market retaliation.",
+        "Resource similarity drives competitive behavior through capability. High RS provides a firm with the necessary strategic endowments and organizational routines to mount an effective and timely response to a rival's attack."
+      ],
+      "I2_mediation_moderation_details": "Not applicable",
+      "I3_theoretical_propositions": [
+        "Proposition 1a: The greater B's market commonality with A, the less likely A is to initiate an attack against B.",
+        "Proposition 1b: The greater A's market commonality with B, the more likely B is to respond to A's attack.",
+        "Proposition 2a: The greater B's resource similarity with A, the less likely A is to initiate an attack against B.",
+        "Proposition 2b: The greater A's resource similarity with B, the more likely B is to respond to A's attack.",
+        "Proposition 3: Market commonality is a stronger predictor of competitive attack and response than is resource similarity.",
+        "Proposition 4a: Competitive asymmetry is likely to exist within a pair of competitors.",
+        "Proposition 4b: Because of competitive asymmetry, the likelihood that A will attack B will differ from the likelihood that B will attack A."
+      ]
+    },
+    "J_findings_and_evidence": {
+      "J1_main_findings_summary": "Not applicable",
+      "J2_finding_evidence_links": "Not applicable",
+      "J3_finding_strength": "Speculative (conceptual)"
+    },
+    "K_overall_paper_contribution": {
+      "K1_contribution_summary": "The paper's primary contribution is the development of a novel theoretical framework that integrates the multipoint competition and resource-based views to explain interfirm rivalry at the dyadic level. It introduces two operationalizable constructs, Market Commonality and Resource Similarity, and the critical concept of Competitive Asymmetry, thereby providing a more granular and predictive lens for competitor analysis than was previously available."
+    }
+  }

@@ -1,0 +1,9 @@
+{
+  "pdf": "/Users/tiresias/Documents/PhD/project3/scripts/prompt_lab/samples/Favaron 等 - 2022 - Michelin Is Coming to Town Organizational Responses to Status Shocks.pdf",
+  "prompt": "/Users/tiresias/Documents/PhD/project3/scripts/prompts/extraction.txt",
+  "model": "gpt-5-mini",
+  "json_output": true,
+  "system": "You are a research assistant skilled in knowledge extraction.",
+  "timestamp": "20250819_213002",
+  "saved_primary_output": "output.json"
+}

@@ -1,0 +1,3077 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>构型关系网络图 - Enhanced</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    
+    <!-- MathJax for mathematical formula rendering -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [],
+                displayMath: [['$$', '$$']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            svg: {
+                fontCache: 'global'
+            },
+            startup: {
+                pageReady: () => {
+                    MathJax.startup.defaultPageReady();
+                    // Re-render math after dynamic content is loaded
+                    if (window.renderMathAfterLoad) {
+                        window.renderMathAfterLoad();
+                    }
+                }
+            }
+        };
+    </script>
+    <!-- Removed polyfill.io to avoid ERR_NAME_NOT_RESOLVED in some environments; modern browsers don't need it -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif !important;
+            background: #1e1e1e;
+            min-height: 100vh;
+            color: #c9d1d9;
+        }
+        
+        * {
+            font-family: 'Times New Roman', Times, serif !important;
+        }
+        
+        .global-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            background: rgba(60, 60, 60, 0.5);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #3c3c3c;
+            gap: 1rem;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 200000;
+        }
+        
+        .toolbar-section {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+
+        
+        .search-input {
+            padding: 10px 16px;
+            border-radius: 20px;
+            border: 1px solid #3c3c3c;
+            background: #2b2b2b;
+            color: #e5e7eb;
+            min-width: 400px;
+            font-size: 0.95rem;
+            position: relative;
+        }
+        
+        .toolbar-section {
+            position: relative;
+        }
+        
+        .search-dropdown {
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            width: 400px;
+            background: rgba(43, 43, 43, 0.95);
+            border-radius: 8px;
+            border: 1px solid rgba(156, 163, 175, 0.3);
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 10000;
+            display: none;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        
+        .search-result {
+            padding: 12px 16px;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.9);
+            transition: all 0.2s ease;
+        }
+        
+        .search-result:last-child {
+            border-bottom: none;
+        }
+        
+        .search-result:hover,
+        .search-result.selected {
+            background: rgba(156, 163, 175, 0.2);
+            color: #fff;
+        }
+        
+        .search-result-title {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .search-result-meta {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 2px;
+        }
+        
+        .timeline-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: rgba(60,60,60,0.5);
+            padding: 8px 12px;
+            border-radius: 20px;
+        }
+        
+        .year-slider {
+            width: 200px;
+            accent-color: #9ca3af;
+        }
+        
+        .view-presets {
+            display: flex;
+            gap: 4px;
+            background: rgba(255,255,255,0.1);
+            padding: 4px;
+            border-radius: 20px;
+        }
+        
+        .preset-btn, .layout-btn {
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            padding: 6px 12px;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+        
+        .preset-btn:hover, .layout-btn:hover {
+            color: white;
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .preset-btn.active, .layout-btn.active {
+            color: white;
+            background: rgba(156, 163, 175, 0.8);
+        }
+        
+        .filters-section {
+            display: flex;
+            gap: 0.5rem;
+            position: relative;
+            z-index: 200000;
+        }
+        
+        .filter-dropdown {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            position: relative;
+            z-index: 210000;
+        }
+        
+        .filter-dropdown summary {
+            padding: 6px 10px;
+            color: white;
+            cursor: pointer;
+            list-style: none;
+            font-size: 0.9rem;
+        }
+        
+        .filter-dropdown summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .filter-content {
+            position: fixed;
+            top: auto;
+            left: auto;
+            background: rgba(0,0,0,0.95);
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 8px;
+            padding: 12px;
+            min-width: 180px;
+            z-index: 220000 !important;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+            backdrop-filter: blur(16px);
+            pointer-events: auto;
+        }
+        
+        .filter-content label {
+            display: block;
+            color: white;
+            padding: 4px 0;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+        
+        .filter-content input[type="checkbox"] {
+            margin-right: 6px;
+            accent-color: #9ca3af;
+        }
+        
+        .hud-overlay {
+            position: absolute;
+            z-index: 100;
+            pointer-events: none;
+        }
+        
+        .hud-overlay.top-left {
+            top: 10px;
+            left: 10px;
+        }
+        
+        .hud-overlay.top-right {
+            top: 10px;
+            right: 10px;
+        }
+        
+        .hud-overlay.bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+        
+        .selection-summary, .legend {
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(8px);
+        }
+        
+        .selection-summary div, .legend div {
+            margin: 2px 0;
+        }
+        
+        #toast-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .toast {
+            background: rgba(156, 163, 175, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            animation: slideIn 0.3s ease;
+            pointer-events: auto;
+            cursor: pointer;
+        }
+        
+        .toast.success {
+            background: rgba(134, 239, 172, 0.9);
+        }
+        
+        .toast.warning {
+            background: rgba(253, 224, 71, 0.9);
+        }
+        
+        .toast.error {
+            background: rgba(252, 165, 165, 0.9);
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .content {
+            display: grid;
+            /* 20% / 60% / 20% with minimums to ensure readability */
+            grid-template-columns: minmax(280px, 1fr) minmax(720px, 3fr) minmax(320px, 1fr);
+            gap: 16px;
+            padding: 16px;
+            height: calc(100vh - 64px);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            display: block;
+        }
+        
+        .stat-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        .sidebar, .details {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.15);
+            backdrop-filter: blur(14px);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar-header {
+            padding: 12px 14px;
+            color: #fff;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+        }
+        .paper-tools {
+            display: flex;
+            gap: 8px;
+            padding: 10px 12px;
+        }
+        .paper-tools input {
+            flex: 1;
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.25);
+            background: rgba(0,0,0,0.2);
+            color: #fff;
+        }
+        .paper-action-buttons {
+            display: flex;
+            gap: 8px;
+            padding: 0 12px 8px 12px;
+        }
+        .paper-action-btn {
+            flex: 1;
+            padding: 6px 12px;
+            border: 1px solid rgba(156, 163, 175, 0.4);
+            background: rgba(156, 163, 175, 0.1);
+            color: rgba(255, 255, 255, 0.9);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(4px);
+        }
+        .paper-action-btn:hover {
+            background: rgba(156, 163, 175, 0.2);
+            border-color: rgba(156, 163, 175, 0.6);
+            color: #fff;
+        }
+        .paper-action-btn:active {
+            background: rgba(156, 163, 175, 0.3);
+            transform: translateY(1px);
+        }
+        .paper-list {
+            overflow-y: auto;
+            padding: 8px 12px 12px 12px;
+        }
+        .paper-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 8px;
+            border-radius: 8px;
+            color: rgba(255,255,255,0.95);
+        }
+        .paper-item:hover {
+            background: rgba(255,255,255,0.08);
+        }
+        .paper-item input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 2px solid #6b7280;
+            border-radius: 4px;
+            background-color: transparent;
+            margin-top: 2.3px;
+            margin-right: 8px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+        .paper-item input[type="checkbox"]:checked {
+            background-color: #6b7280;
+            border-color: #6b7280;
+        }
+        .paper-item input[type="checkbox"]:checked::after {
+            content: '✓';
+            position: absolute;
+            top: -0.5px;
+            left: 1.8px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            line-height: 14px;
+        }
+        #network-container {
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .details {
+            color: #fff;
+            padding: 12px 16px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+            z-index: 1;
+            font-family: 'Times New Roman', Times, serif !important;
+            word-wrap: break-word;
+            word-break: break-word;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .detail-section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            padding-bottom: 16px;
+        }
+        .detail-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .detail-section.no-border {
+            border-bottom: none;
+        }
+        
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.95);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            max-width: 400px;
+            z-index: 500;
+            pointer-events: none;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .tooltip.show {
+            opacity: 1;
+        }
+        
+        .tooltip-section {
+            margin-bottom: 1rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .tooltip-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .tooltip-title {
+            font-weight: bold;
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .tooltip-content {
+            line-height: 1.4;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .paper-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem;
+            margin: 0.3rem 0;
+            border-radius: 5px;
+            border-left: 3px solid #9ca3af;
+        }
+        
+        .stat-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem;
+            margin: 0.3rem 0;
+            border-radius: 5px;
+            border-left: 3px solid #9ca3af;
+        }
+        
+        /* Allow MathJax display math to be properly centered like in academic papers */
+        mjx-container[display="true"] {
+            display: block !important;
+            margin: 1em auto !important;
+            text-align: center !important;
+        }
+        .MathJax_Display {
+            display: block !important;
+            margin: 1em auto !important;
+            text-align: center !important;
+        }
+        
+        /* Style for mathematical expressions in paragraphs */
+        .math-block {
+            display: block;
+            text-align: center;
+            margin: 1em 0;
+        }
+        
+        /* Moderator-specific styles */
+        .moderator-node {
+            border: 2px solid #6b7280 !important;
+            box-shadow: 0 0 10px rgba(107, 114, 128, 0.5) !important;
+        }
+        
+        .moderator-edge {
+            stroke-dasharray: 8, 4 !important;
+            stroke-width: 2 !important;
+            stroke: #6b7280 !important;
+        }
+        
+        .moderator-triangle {
+            background: rgba(107, 114, 128, 0.1) !important;
+            border: 1px solid rgba(107, 114, 128, 0.3) !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="global-toolbar">
+        <div class="toolbar-section">
+            <input id="global-search" placeholder="搜索构型 (Enter跳转, ↑↓切换)" class="search-input" />
+            <div id="search-results" class="search-dropdown"></div>
+        </div>
+        
+        <div class="toolbar-section">
+            <div class="timeline-controls">
+                <input id="year-range" type="range" min="1900" max="2100" step="1" value="2100" class="year-slider" />
+                <span id="year-label">年份: 全部</span>
+            </div>
+        </div>
+
+        <div class="toolbar-section">
+            <div class="view-presets">
+                <button class="preset-btn active" data-preset="overview">总览</button>
+                <button class="preset-btn" data-preset="causal">因果</button>
+                <button class="preset-btn" data-preset="correlation">相关</button>
+                <button class="preset-btn" data-preset="dense">密集</button>
+            </div>
+            <div class="view-presets" style="margin-left:8px">
+                                <button class="layout-btn" id="layout-centrality">中心度布局</button>
+            <button class="layout-btn" id="layout-embedding">语义布局</button>
+            </div>
+
+        </div>
+        
+        <div class="toolbar-section">
+            <div class="filters-section">
+                <details class="filter-dropdown">
+                    <summary>关系过滤 ▼</summary>
+                    <div class="filter-content">
+                        <label><input type="radio" name="rel-filter" id="filter-rel-all" checked> 全部</label>
+                        <label><input type="radio" name="rel-filter" id="filter-rel-pos"> 正向</label>
+                        <label><input type="radio" name="rel-filter" id="filter-rel-neg"> 负向</label>
+                        <label><input type="radio" name="rel-filter" id="filter-rel-insig"> 非显著</label>
+                        <label><input type="radio" name="rel-filter" id="filter-rel-s"> S 型</label>
+                        <label><input type="radio" name="rel-filter" id="filter-rel-u"> U 型</label>
+                        <label><input type="radio" name="rel-filter" id="filter-rel-invu"> 倒 U 型</label>
+                    </div>
+                </details>
+                <!-- 证据强度筛选暂时移除 -->
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <div class="sidebar-header">论文列表</div>
+            <div class="paper-tools">
+                <input id="paper-search" placeholder="搜索论文标题/作者" />
+            </div>
+            <div class="paper-action-buttons">
+                <button id="select-all" class="paper-action-btn">全选</button>
+                <button id="clear-all" class="paper-action-btn">清空</button>
+            </div>
+            <div class="paper-list" id="paper-list"></div>
+        </div>
+        <div id="network-container">
+            <!-- HUD Overlays -->
+            <div class="hud-overlay top-left">
+                <div class="selection-summary" id="selection-summary">
+                    <div><b>当前视图</b></div>
+                    <div>论文: <span id="papers-count">0</span></div>
+                    <div>构型: <span id="nodes-count">0</span></div>
+                    <div>关系: <span id="edges-count">0</span></div>
+                </div>
+            </div>
+            
+            <div class="hud-overlay top-right">
+                <div id="toast-container"></div>
+            </div>
+            
+            <div class="hud-overlay bottom-right"></div>
+        </div>
+        <div class="details" id="details-panel">
+            <div style="opacity:0.8">点击中间的节点或连线查看详细信息</div>
+        </div>
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+    
+    <script>
+        // Data variables - will be populated from API calls
+        let constructsData = [];
+        let relationshipsData = [];
+        let papersData = [];
+        let selectedPaperIds = new Set(); // 默认全选
+        
+        // Global DOM elements - moved to global scope to avoid scope issues
+        let globalSearch = null;
+        let searchResults = null;
+        let relAll = null;
+        let relPos = null;
+        let relNeg = null;
+        let relInsig = null;
+        let relS = null;
+        let relU = null;
+        let relInvU = null;
+        
+        // Global functions - moved to global scope to avoid scope issues
+        function currentYear() { 
+            const rangeEl = document.getElementById('year-range');
+            return rangeEl ? parseInt(rangeEl.value, 10) : new Date().getFullYear();
+        }
+        
+        function evidenceCountWithinYear(paperIds) {
+            // 计算在年份范围内的选中论文数量
+            if (!Array.isArray(paperIds)) return 0;
+            if (!selectedPaperIds) return 0;
+            
+            return paperIds.filter(paperId => {
+                const paper = papersData.find(p => p.id === paperId);
+                if (!paper) return false;
+                
+                // 检查论文是否被选中且在年份范围内
+                const isSelected = selectedPaperIds.has(paper.id);
+                const isWithinYear = paper.year <= currentYear();
+                
+                return isSelected && isWithinYear;
+            }).length;
+        }
+        
+        function applyFilter() {
+            console.log('applyFilter: 开始渲染网络...');
+            console.log('applyFilter: 构型数据数量:', constructsData.length);
+            console.log('applyFilter: 关系数据数量:', relationshipsData.length);
+            console.log('applyFilter: 选中的论文数量:', selectedPaperIds ? selectedPaperIds.size : 0);
+            console.log('applyFilter: 当前年份:', currentYear ? currentYear() : 'unknown');
+            
+            if (!window.nodes || !window.edges) {
+                console.error('applyFilter: nodes 或 edges 数据集未定义');
+                return;
+            }
+            
+            window.nodes.clear();
+            window.edges.clear();
+
+            // Step 1: 先简化筛选逻辑，显示所有有论文支持的构型
+            const candidateConstructs = constructsData.filter(construct => {
+                if (!construct.paper_ids || construct.paper_ids.length === 0) return false;
+                
+                // 检查是否有选中的论文支持
+                const hasSelectedPaper = construct.paper_ids.some(paperId => {
+                    const paper = papersData.find(p => p.id === paperId);
+                    return paper && selectedPaperIds && selectedPaperIds.has(paper.id);
+                });
+                
+                return hasSelectedPaper;
+            });
+            
+            console.log('applyFilter: 筛选后的构型数量:', candidateConstructs.length);
+            
+            // Step 2: 添加筛选后的构型节点
+            console.log('=== 开始添加节点到数据集 ===');
+            console.log('候选构型数量:', candidateConstructs.length);
+            candidateConstructs.forEach((construct, index) => {
+                const evid = evidenceCountWithinYear ? evidenceCountWithinYear(construct.paper_ids) : 0;
+                const nodeSize = Math.max(10, 6 + Math.sqrt(evid) * 4);
+                console.log(`添加节点 ${index + 1}/${candidateConstructs.length}:`, construct.name, 'uniqueId:', construct.uniqueId);
+                window.nodes.add({
+                    id: construct.uniqueId,
+                    label: '',
+                    color: { background: '#e5e7eb', border: '#c9d1d9', highlight: { background: '#f5f6f8', border: '#c9d1d9' } },
+                    font: { color: '#2c3e50', size: 12, face: 'Times New Roman', bold: false },
+                    size: nodeSize,
+                    x: getNodePosition ? getNodePosition(construct.uniqueId).x : undefined,
+                    y: getNodePosition ? getNodePosition(construct.uniqueId).y : undefined
+                });
+            });
+            
+            // Step 3: 添加筛选后的关系边
+            // 创建构型名称到唯一ID的映射
+            const nameToUniqueId = new Map();
+            candidateConstructs.forEach(c => {
+                nameToUniqueId.set(c.name, c.uniqueId);
+            });
+            
+            const candidateRelationships = relationshipsData.filter(rel => {
+                return nameToUniqueId && nameToUniqueId.has(rel.source_construct) && nameToUniqueId.has(rel.target_construct);
+            });
+            
+            console.log('applyFilter: 筛选后的关系数量:', candidateRelationships.length);
+            
+            console.log('=== 开始添加边到数据集 ===');
+            console.log('候选关系数量:', candidateRelationships.length);
+            candidateRelationships.forEach((rel, index) => {
+                const edgeWidth = Math.max(1.5, 1 + Math.sqrt(evidenceCountWithinYear ? evidenceCountWithinYear(rel.paper_ids) || 0 : 0));
+                console.log(`添加边 ${index + 1}/${candidateRelationships.length}:`, rel.source_construct, '->', rel.target_construct);
+                const edgeLabel = rel.status === 'Hypothesized' ? 'H' : 
+                                 (rel.is_validated_causality ? 'C' : 'E');
+                window.edges.add({
+                    from: nameToUniqueId ? nameToUniqueId.get(rel.source_construct) : rel.source_construct,
+                    to: nameToUniqueId ? nameToUniqueId.get(rel.target_construct) : rel.target_construct,
+                    label: edgeLabel,
+                    color: { color: '#6b7280', highlight: '#6b7280', hover: '#6b7280' },
+                    width: edgeWidth,
+                    font: { color: '#2c3e50', size: 10, face: 'Times New Roman' },
+                    arrows: { to: { enabled: true, scaleFactor: 1.2 } }
+                });
+            });
+            
+            console.log('applyFilter: 渲染完成 - 节点数量:', window.nodes.length, '边数量:', window.edges.length);
+        }
+        
+        function performInitialLayout() {
+            // Build a full-graph once to compute deterministic coordinates
+            const allNodes = new vis.DataSet();
+            const allEdges = new vis.DataSet();
+            // Sort to keep input order stable
+            const constructsSorted = [...constructsData].sort((a,b) => (a.name||'').localeCompare(b.name||''));
+            const relsSorted = [...relationshipsData].sort((a,b) => (a.source_construct+a.target_construct).localeCompare(b.source_construct+b.target_construct));
+
+            constructsSorted.forEach(c => {
+                // If we already have a saved position, place it there; allow user to drag later
+                const pos = savedPositions[c.name];
+                if (pos) {
+                    allNodes.add({ id: c.uniqueId, label: c.name, x: pos.x, y: pos.y });
+                } else {
+                    allNodes.add({ id: c.uniqueId, label: c.name });
+                }
+            });
+
+            relsSorted.forEach(r => {
+                const sourceId = constructsData.find(c => c.name === r.source_construct)?.uniqueId;
+                const targetId = constructsData.find(c => c.name === r.target_construct)?.uniqueId;
+                if (sourceId && targetId) {
+                    allEdges.add({ id: r.id, from: sourceId, to: targetId, label: r.relationship_type });
+                }
+            });
+
+            // Create a temporary network to compute layout
+            const tempNetwork = new vis.Network(document.createElement('div'), { nodes: allNodes, edges: allEdges }, {
+                physics: { enabled: true, stabilization: { iterations: 100 } },
+                layout: { improvedLayout: true }
+            });
+
+            // Wait for stabilization and save positions
+            tempNetwork.on('stabilizationIterationsDone', () => {
+                const positions = tempNetwork.getPositions();
+                Object.keys(positions).forEach(id => {
+                    const construct = constructsData.find(c => c.uniqueId === id);
+                    if (construct) {
+                        savedPositions[construct.name] = positions[id];
+                    }
+                });
+                tempNetwork.destroy();
+            });
+        }
+        
+        // Define fixed base styles that never change - moved to global scope
+        const FIXED_BASE_STYLES = {
+            node: {
+                color: {
+                    background: '#e5e7eb',
+                    border: '#c9d1d9',
+                    highlight: {
+                        background: '#e5e7eb',
+                        border: '#c9d1d9'
+                    }
+                },
+                font: {
+                    color: '#e5e7eb',
+                    size: 12,
+                    face: 'arial'
+                },
+                size: 20,
+                opacity: 1.0
+            },
+            edge: {
+                color: {
+                    color: '#6b7280',
+                    highlight: '#6b7280',
+                    hover: '#6b7280'
+                },
+                font: {
+                    color: '#e5e7eb',
+                    size: 12,
+                    face: 'arial'
+                },
+                width: 1.8,
+                opacity: 1.0
+            }
+        };
+        
+        // Layout data injected from Python (fallback to empty objects if not provided)
+        const embed_pos = {{ embed_pos | tojson | safe if embed_pos else '{}' }};
+        const central_pos = {{ central_pos | tojson | safe if central_pos else '{}' }};
+        const embeddingPositions = embed_pos;
+        const centralityPositions = central_pos;
+        let layoutMode = 'centrality'; // 'centrality' | 'embedding'
+        
+        // Function to load data from API endpoints
+        async function loadDataFromAPI() {
+            try {
+                console.log('开始从API加载数据...');
+                
+                // Initialize global DOM elements
+                globalSearch = document.getElementById('global-search');
+                searchResults = document.getElementById('search-results');
+                relAll = document.getElementById('filter-rel-all');
+                relPos = document.getElementById('filter-rel-pos');
+                relNeg = document.getElementById('filter-rel-neg');
+                relInsig = document.getElementById('filter-rel-insig');
+                relS = document.getElementById('filter-rel-s');
+                relU = document.getElementById('filter-rel-u');
+                relInvU = document.getElementById('filter-rel-invu');
+                
+                // Load constructs
+                const constructsResponse = await fetch('/api/constructs?limit=10000');
+                if (!constructsResponse.ok) throw new Error(`Constructs API error: ${constructsResponse.status}`);
+                const constructsResult = await constructsResponse.json();
+                constructsData = constructsResult.items || [];
+                console.log('构型数据加载完成:', constructsData.length, '个');
+                console.log('构型数据示例:', constructsData.slice(0, 2));
+                
+                // Load relationships
+                const relationshipsResponse = await fetch('/api/relationships?limit=10000');
+                if (!relationshipsResponse.ok) throw new Error(`Relationships API error: ${relationshipsResponse.status}`);
+                const relationshipsResult = await relationshipsResponse.json();
+                relationshipsData = relationshipsResult.items || [];
+                console.log('关系数据加载完成:', relationshipsData.length, '个');
+                console.log('关系数据示例:', relationshipsData.slice(0, 2));
+                
+                // Load papers
+                const papersResponse = await fetch('/api/papers?limit=10000');
+                if (!papersResponse.ok) throw new Error(`Papers API error: ${papersResponse.status}`);
+                const papersResult = await papersResponse.json();
+                papersData = papersResult.items || [];
+                console.log('论文数据加载完成:', papersData.length, '个');
+                
+                // Initialize selectedPaperIds with all papers by default
+                selectedPaperIds = new Set(papersData.map(p => p.id));
+                console.log('选中的论文数量:', selectedPaperIds.size);
+                
+                // Update global variables
+                window.constructsData = constructsData;
+                window.relationshipsData = relationshipsData;
+                window.papersData = papersData;
+                
+                console.log('所有数据加载完成:', constructsData.length, '个构型,', relationshipsData.length, '个关系,', papersData.length, '篇论文');
+                
+                // 数据加载完成后，设置年份边界
+                const bounds = extractYearsFromNetwork();
+                console.log('提取的年份边界:', bounds);
+                
+                // 更新滑动条
+                const rangeEl = document.getElementById('year-range');
+                const yearLabel = document.getElementById('year-label');
+                if (rangeEl && yearLabel) {
+                    rangeEl.min = String(bounds.minYear);
+                    rangeEl.max = String(bounds.maxYear);
+                    rangeEl.value = String(bounds.maxYear);
+                    yearLabel.textContent = `年份: ${bounds.maxYear}`;
+                    console.log('滑动条设置完成:', { min: rangeEl.min, max: rangeEl.max, value: rangeEl.value });
+                }
+                
+                // Initialize network after data is loaded
+                if (typeof initializeNetwork === 'function') {
+                    initializeNetwork();
+                }
+                
+            } catch (error) {
+                console.error('数据加载失败:', error);
+                // Show error message to user
+                const container = document.getElementById('network-container');
+                if (container) {
+                    container.innerHTML = `
+                        <div style="display: flex; justify-content: center; align-items: center; height: 100%; color: #e5e7eb; text-align: center;">
+                            <div>
+                                <h3>数据加载失败</h3>
+                                <p>错误信息: ${error.message}</p>
+                                <p>请检查后端服务是否正常运行</p>
+                                <button onclick="location.reload()" style="padding: 10px 20px; background: #6b7280; border: none; border-radius: 5px; color: white; cursor: pointer;">重新加载</button>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+        }
+        
+        // --- Math helpers ---
+        // Process text with proper math formula formatting for academic display
+        function normalizeMathInline(text) {
+            if (text == null) return '';
+            try {
+                let s = String(text);
+                
+                // Step 1: Detect and format display math blocks ($$...$$ or \[...\])
+                // Split text around math blocks and format them properly
+                s = s.replace(/(\$\$[^$]+\$\$|\\[[^\]]+\\])/g, function(match, mathBlock, offset) {
+                    // Check if the text before the math block ends with a colon
+                    const beforeMath = s.substring(0, offset).trim();
+                    const needsColon = beforeMath.length > 0 && !beforeMath.endsWith(':') && !beforeMath.endsWith('：');
+                    
+                    // Add colon if needed, then wrap math block
+                    const colonPrefix = needsColon ? ':' : '';
+                    return `${colonPrefix}<div class="math-block">${mathBlock}</div>`;
+                });
+                
+                // Step 2: PDF artifact cleanup (no MathJax injection)
+                s = s.replace(/\/SL([a-zA-Z]+)/g, function(_, sym) {
+                    const map = {alpha:'α', beta:'β', gamma:'γ', delta:'δ', lambda:'λ', theta:'θ'};
+                    return map[sym.toLowerCase()] || sym; // prefer unicode over LaTeX to avoid math mode
+                });
+                s = s.replace(/\/lparenori/g, '(')
+                     .replace(/\/rparenori/g, ')')
+                     .replace(/\/commaori/g, ',')
+                     .replace(/\/lbracketori/g, '[')
+                     .replace(/\/rbracketori/g, ']');
+                
+                // Step 3: abbreviations normalization only (avoid JS  here to prevent Python escape issues)
+                s = s.replace(/i\.\s*e\./gi, 'i.e.');
+                s = s.replace(/e\.\s*g\./gi, 'e.g.');
+                s = s.replace(/etc\./gi, 'etc.');
+                s = s.replace(/e\.\s*g\.\s*,/g, 'e.g.,').replace(/i\.\s*e\.\s*,/g, 'i.e.,');
+                
+                // Step 4: camelCase split only; do not touch punctuation spacing
+                s = s.replace(/([a-z])([A-Z])/g, '$1 $2');
+                
+                // Step 5: sanitize stray math inline markers to prevent unwanted math mode
+                s = s.split('\(').join('(').split('\)').join(')');
+                
+                return s;
+            } catch (e) {
+                return String(text);
+            }
+        }
+        function htmlWithMathSafe(text) {
+            return normalizeMathInline(text);
+        }
+
+        // Debounced MathJax typeset for dynamic content
+        function typesetDebounced(el) {
+            if (!window.MathJax || !el) return;
+            if (window.__mjxDebounce) clearTimeout(window.__mjxDebounce);
+            window.__mjxDebounce = setTimeout(() => {
+                try { window.MathJax.typesetPromise([el]); } catch (e) {}
+            }, 80);
+        }
+        // 年份边界变量，将在数据加载完成后计算
+        let minYear = 1900;
+        let maxYear = new Date().getFullYear();
+        
+        // 从网络节点中提取年份信息的函数
+        function extractYearsFromNetwork() {
+            console.log('=== 从网络节点提取年份信息 ===');
+            
+            // 从所有构型的定义和测量中提取年份
+            const years = new Set();
+            
+            constructsData.forEach(construct => {
+                // 从定义中提取年份
+                if (construct.definitions) {
+                    construct.definitions.forEach(def => {
+                        if (def.paper_year && typeof def.paper_year === 'number') {
+                            years.add(def.paper_year);
+                        }
+                    });
+                }
+                
+                // 从测量中提取年份
+                if (construct.measurements) {
+                    construct.measurements.forEach(meas => {
+                        if (meas.paper_year && typeof meas.paper_year === 'number') {
+                            years.add(meas.paper_year);
+                        }
+                    });
+                }
+            });
+            
+            // 从关系实例中提取年份
+            relationshipsData.forEach(rel => {
+                if (rel.relationship_instances) {
+                    rel.relationship_instances.forEach(inst => {
+                        if (inst.paper_year && typeof inst.paper_year === 'number') {
+                            years.add(inst.paper_year);
+                        }
+                    });
+                }
+            });
+            
+            const yearArray = Array.from(years).sort((a, b) => a - b);
+            console.log('从网络节点提取的年份:', yearArray);
+            
+            if (yearArray.length > 0) {
+                minYear = yearArray[0];
+                maxYear = yearArray[yearArray.length - 1];
+                console.log('计算出的年份边界:', { minYear, maxYear });
+            } else {
+                console.warn('未找到有效年份，使用默认值');
+                minYear = 1900;
+                maxYear = new Date().getFullYear();
+            }
+            
+            return { minYear, maxYear };
+        }
+        
+        // Title case formatting function
+        function formatTitle(title) {
+            if (!title) return '无标题';
+            return title.split(' ').map(word => {
+                if (word.length === 0) return word;
+                // Keep special characters and numbers as is, only capitalize first letter of words
+                const firstChar = word.charAt(0);
+                const rest = word.slice(1);
+                if (/[A-Za-z]/.test(firstChar)) {
+                    return firstChar.toUpperCase() + rest.toLowerCase();
+                }
+                return word;
+            }).join(' ');
+        }
+        
+        console.log('数据加载完成:', constructsData.length, '个构型,', relationshipsData.length, '个关系');
+
+        // Tooltip management
+        let tooltip = null;
+        let tooltipTimeout = null;
+        
+        function createTooltip() {
+            tooltip = document.getElementById('tooltip');
+            if (!tooltip) {
+                tooltip = document.createElement('div');
+                tooltip.id = 'tooltip';
+                tooltip.className = 'tooltip';
+                document.body.appendChild(tooltip);
+            }
+        }
+        
+        function showNodeTooltip(node, event) {
+            if (tooltipTimeout) clearTimeout(tooltipTimeout);
+            
+            tooltipTimeout = setTimeout(() => {
+                // Use node.id (we render empty internal labels and draw external labels)
+                const construct = constructsData.find(c => c.name === node.id);
+                if (!construct) return;
+                
+                let content = `<div class="tooltip-title">${construct.name}</div>`;
+                
+                // Definitions section
+                if (construct.definitions && construct.definitions.length > 0) {
+                    content += `<div class="tooltip-section">
+                        <div class="tooltip-title">定义来源</div>`;
+                    construct.definitions.forEach(def => {
+                        if (def.definition && def.paper_title) {
+                            content += `<div class="paper-info">
+                                <strong>定义:</strong> ${htmlWithMathSafe(def.definition)}<br>
+                                <strong>来源:</strong> ${def.paper_title} ${(def.paper_authors || []).join(', ')} (${def.paper_year || 'N/A'})
+                            </div>`;
+                        }
+                    });
+                    content += '</div>';
+                }
+                
+                // Dimensions section
+                if (construct.dimensions && construct.dimensions.length > 0) {
+                    content += `<div class="tooltip-section">
+                        <div class="tooltip-title">维度</div>
+                        <div class="tooltip-content">${construct.dimensions.join(', ')}</div>
+                    </div>`;
+                }
+                
+                // Parent constructs section
+                if (construct.parent_constructs && construct.parent_constructs.length > 0) {
+                    content += `<div class="tooltip-section">
+                        <div class="tooltip-title">所属构型</div>
+                        <div class="tooltip-content">${construct.parent_constructs.join(', ')}</div>
+                    </div>`;
+                }
+                
+                // Combined similar constructs section (merge both directions)
+                {
+                    const allSimilar = [];
+                    if (construct.similar_constructs && construct.similar_constructs.length > 0) {
+                        construct.similar_constructs.forEach(s => { if (s && s.name) allSimilar.push(s.name); });
+                    }
+                    if (construct.similar_to_constructs && construct.similar_to_constructs.length > 0) {
+                        construct.similar_to_constructs.forEach(s => { if (s && s.name) allSimilar.push(s.name); });
+                    }
+                    const uniqueSimilar = Array.from(new Set(allSimilar));
+                    if (uniqueSimilar.length > 0) {
+                        content += `<div class="tooltip-section">
+                            <div class="tooltip-title">相似构型</div>`;
+                        uniqueSimilar.forEach(name => {
+                            content += `<div class="tooltip-content">• ${name}</div>`;
+                        });
+                        content += `</div>`;
+                    }
+                }
+                
+                // Measurements section
+                if (construct.measurements && construct.measurements.length > 0) {
+                    content += `<div class="tooltip-section">
+                        <div class="tooltip-title">测量方式</div>`;
+                    construct.measurements.forEach(meas => {
+                        if (meas.name && meas.paper_title) {
+                            content += `<div class="paper-info">
+                                <strong>测量:</strong> ${meas.name}<br>
+                                <strong>来源:</strong> ${meas.paper_title} ${(meas.paper_authors || []).join(', ')} (${meas.paper_year || 'N/A'})
+                            </div>`;
+                        }
+                    });
+                    content += '</div>';
+                }
+                
+                // Check if this is a moderator and show moderator information
+                const moderatorEdges = edges.get().filter(e => 
+                    e.moderatorInfo && e.moderatorInfo.moderator === construct.name
+                );
+                
+                if (moderatorEdges.length > 0) {
+                    const moderatorInfo = moderatorEdges[0].moderatorInfo;
+                    content += `<div class="tooltip-section" style="border-top: 2px solid #6b7280; margin-top: 16px; padding-top: 16px;">
+                        <div class="tooltip-title" style="color: #6b7280;">调节变量信息</div>
+                        <div class="tooltip-content">
+                            <strong>调节的关系:</strong> ${moderatorInfo.source} → ${moderatorInfo.target}<br>
+                            <strong>调节作用:</strong> 作为调节变量影响上述关系的强度和方向<br>
+                            <strong>关系状态:</strong> ${moderatorInfo.relationship.status || 'N/A'}<br>
+                            <strong>证据类型:</strong> ${moderatorInfo.relationship.evidence_type || 'N/A'}<br>
+                            <strong>效应方向:</strong> ${moderatorInfo.relationship.effect_direction || 'N/A'}
+                        </div>
+                    </div>`;
+                }
+                
+                tooltip.innerHTML = content;
+                tooltip.style.left = event.pageX + 15 + 'px';
+                tooltip.style.top = event.pageY - 15 + 'px';
+                tooltip.classList.add('show');
+                typesetDebounced(tooltip);
+            }, 300);
+        }
+        
+        function showEdgeTooltip(edge, event) {
+            if (tooltipTimeout) clearTimeout(tooltipTimeout);
+            
+            tooltipTimeout = setTimeout(() => {
+                // Check if this is a similarity edge
+                if (edge.id && edge.id.startsWith('similar_')) {
+                    showSimilarityTooltip(edge, event);
+                    return;
+                }
+                
+                // Check if this is a moderator edge
+                if (edge.moderatorInfo) {
+                    const moderatorInfo = edge.moderatorInfo;
+                    let content = `<div class="tooltip-title" style="color: #6b7280;">调节变量连线</div>
+                        <div class="tooltip-section">
+                            <div class="tooltip-content">
+                                <strong>调节变量:</strong> ${moderatorInfo.moderator}<br>
+                                <strong>调节的关系:</strong> ${moderatorInfo.source} → ${moderatorInfo.target}<br>
+                                <strong>调节作用:</strong> 作为调节变量影响上述关系的强度和方向<br>
+                                <strong>关系状态:</strong> ${moderatorInfo.relationship.status || 'N/A'}<br>
+                                <strong>证据类型:</strong> ${moderatorInfo.relationship.evidence_type || 'N/A'}<br>
+                                <strong>效应方向:</strong> ${moderatorInfo.relationship.effect_direction || 'N/A'}
+                            </div>
+                        </div>`;
+                    
+                    tooltip.innerHTML = content;
+                    tooltip.style.left = event.pageX + 15 + 'px';
+                    tooltip.style.top = event.pageY - 15 + 'px';
+                    tooltip.classList.add('show');
+                    typesetDebounced(tooltip);
+                    return;
+                }
+                
+                const relationship = relationshipsData.find(r => 
+                    r.source_construct === edge.from && r.target_construct === edge.to
+                );
+                if (!relationship) return;
+                
+                let content = `<div class="tooltip-title">关系详情</div>
+                    <div class="tooltip-section">
+                        <div class="tooltip-content">
+                            <strong>从:</strong> ${relationship.source_construct}<br>
+                            <strong>到:</strong> ${relationship.target_construct}<br>
+                            <strong>状态:</strong> ${relationship.status || 'N/A'}<br>
+                            <strong>证据类型:</strong> ${relationship.evidence_type || 'N/A'}<br>
+                            <strong>方向:</strong> ${relationship.effect_direction || 'N/A'}<br>
+                            <strong>因果验证:</strong> ${relationship.is_validated_causality ? '是' : '否'}<br>
+                            <strong>元分析:</strong> ${relationship.is_meta_analysis ? '是' : '否'}
+                        </div>
+                    </div>`;
+                
+                // Relationship instances section (Blueprint schema)
+                if (relationship.relationship_instances && relationship.relationship_instances.length > 0) {
+                    content += `<div class="tooltip-section">
+                        <div class="tooltip-title">关系实例 (${relationship.relationship_instances.length}个)</div>`;
+                    
+                    relationship.relationship_instances.slice(0, 3).forEach((ri, idx) => {
+                        let stats = null;
+                        try {
+                            stats = ri.statistical_details ? JSON.parse(ri.statistical_details) : null;
+                        } catch(e) {
+                            stats = ri.statistical_details;
+                        }
+                        
+                        content += `<div class="stat-info">
+                            <strong>论文:</strong> ${ri.paper_title || 'N/A'}<br>
+                            <strong>描述:</strong> ${htmlWithMathSafe(ri.description || ri.context_snippet || 'N/A')}`;
+                        
+                        if (stats) {
+                            if (stats.p_value !== undefined) content += `<br><strong>P值:</strong> ${stats.p_value}`;
+                            if (stats.beta_coefficient !== undefined) content += `<br><strong>β系数:</strong> ${stats.beta_coefficient}`;
+                            if (stats.correlation !== undefined) content += `<br><strong>相关系数:</strong> ${stats.correlation}`;
+                        }
+                        
+                        // Qualitative findings
+                        if (ri.qualitative_finding) {
+                            content += `<br><strong>定性发现:</strong> ${ri.qualitative_finding}`;
+                        }
+                        
+                        if (ri.supporting_quote) {
+                            content += `<br><strong>支持引用:</strong> "${ri.supporting_quote}"`;
+                        }
+                        
+                        // Boundary conditions
+                        if (ri.boundary_conditions) {
+                            content += `<br><strong>边界条件:</strong> ${ri.boundary_conditions}`;
+                        }
+                        
+                        // Replication outcome
+                        if (ri.replication_outcome) {
+                            content += `<br><strong>复制结果:</strong> ${ri.replication_outcome}`;
+                        }
+                        
+                        if (ri.theories && ri.theories.length > 0) {
+                            content += `<br><strong>理论:</strong> ${ri.theories.join(', ')}`;
+                        }
+                        
+                        content += `</div>`;
+                    });
+                    
+                    if (relationship.relationship_instances.length > 3) {
+                        content += `<div style="opacity:0.7; font-size:0.8em;">还有 ${relationship.relationship_instances.length - 3} 个实例...</div>`;
+                    }
+                    
+                    content += '</div>';
+                }
+                
+                tooltip.innerHTML = content;
+                tooltip.style.left = event.pageX + 15 + 'px';
+                tooltip.style.top = event.pageY - 15 + 'px';
+                tooltip.classList.add('show');
+            }, 300);
+        }
+        
+        function showSimilarityTooltip(edge, event) {
+            if (tooltipTimeout) clearTimeout(tooltipTimeout);
+            
+            tooltipTimeout = setTimeout(() => {
+                const similarityScore = (edge.similarity_score * 100).toFixed(1);
+                const confidence = (edge.llm_confidence * 100).toFixed(1);
+                
+                let content = `<div class="tooltip-title" style="color: #9ca3af;">相似构型连线</div>
+                    <div class="tooltip-section">
+                        <div class="tooltip-content">
+                            <strong>构型A:</strong> ${edge.source_name || edge.from}<br>
+                            <strong>构型B:</strong> ${edge.target_name || edge.to}<br>
+                            <strong>相似度:</strong> <span style="color: #A78BFA;">${similarityScore}%</span><br>
+                            <strong>置信度:</strong> <span style="color: #A78BFA;">${confidence}%</span>
+                        </div>
+                    </div>`;
+                
+                tooltip.innerHTML = content;
+                tooltip.style.left = event.pageX + 15 + 'px';
+                tooltip.style.top = event.pageY - 15 + 'px';
+                tooltip.classList.add('show');
+            }, 300);
+        }
+        
+        function hideTooltip() {
+            if (tooltipTimeout) clearTimeout(tooltipTimeout);
+            if (tooltip) {
+                tooltip.classList.remove('show');
+            }
+        }
+        
+        // Initialize network when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('页面加载完成，开始加载数据...');
+            
+            // Load data from API first
+            loadDataFromAPI();
+        });
+        
+        // Function to initialize network after data is loaded
+        function initializeNetwork() {
+            console.log('开始创建网络...');
+            
+            // Check if vis.js is loaded
+            if (typeof vis === 'undefined') {
+                console.error('vis.js library not loaded');
+                return;
+            }
+            console.log('vis.js库已加载:', vis);
+            
+            // Check container
+            const container = document.getElementById('network-container');
+            if (!container) {
+                console.error('Container element not found');
+                return;
+            }
+            console.log('容器元素:', container);
+            
+            // Create tooltip
+            createTooltip();
+            
+            // Create unique IDs for constructs with duplicate names
+            const constructIdMap = new Map();
+            constructsData.forEach((c, index) => {
+                let uniqueId = c.name;
+                if (constructIdMap.has(c.name)) {
+                    constructIdMap.set(c.name, constructIdMap.get(c.name) + 1);
+                    uniqueId = `${c.name}_${constructIdMap.get(c.name)}`;
+                } else {
+                    constructIdMap.set(c.name, 1);
+                }
+                c.uniqueId = uniqueId;
+            });
+            
+            // DataSets and filtering state
+            const nodes = new vis.DataSet();
+            const edges = new vis.DataSet();
+            console.log('=== 开始创建数据集 ===');
+            console.log('构型数据长度:', constructsData.length);
+            console.log('关系数据长度:', relationshipsData.length);
+            const paperListEl = document.getElementById('paper-list');
+            const searchEl = document.getElementById('paper-search');
+            const selectAllBtn = document.getElementById('select-all');
+            const clearAllBtn = document.getElementById('clear-all');
+            // selectedPaperIds is now a global variable
+
+            // Expose datasets globally for helper functions defined outside this scope
+            window.nodes = nodes;
+            window.edges = edges;
+            
+            // Enhanced filters and search
+            // Relationship filter controls (now using global variables)
+            const evidenceHasPvalue = null;
+            const evidenceHighR = null;
+            const evidenceLargeN = null;
+
+            
+            // Search state
+            let searchCurrentIndex = -1;
+            let searchMatches = [];
+
+            function renderPaperList(filterText = '') {
+                paperListEl.innerHTML = '';
+                const normalized = (filterText || '').trim().toLowerCase();
+                const tokens = normalized.length ? normalized.split(/\s+/).filter(Boolean) : [];
+                const filtered = papersData.filter(p => {
+                    if (tokens.length === 0) return true;
+                    const titleStr = (typeof p.title === 'string' ? p.title : String(p.title || '')).toLowerCase();
+                    const authorsStr = (Array.isArray(p.authors) ? p.authors.join(', ') : String(p.authors || '')).toLowerCase();
+                    return tokens.every(t => titleStr.includes(t) || authorsStr.includes(t));
+                });
+                filtered.forEach(p => {
+                    const wrapper = document.createElement('label');
+                    wrapper.className = 'paper-item';
+                    const cb = document.createElement('input');
+                    cb.type = 'checkbox';
+                    cb.checked = selectedPaperIds.has(p.id);
+                    cb.addEventListener('change', () => {
+                        if (cb.checked) selectedPaperIds.add(p.id); else selectedPaperIds.delete(p.id);
+                        applyFilter();
+                    });
+                    const span = document.createElement('span');
+                    // 格式化论文标题：使用标准的 Title Case 格式
+                    const formatTitle = (title) => {
+                        if (!title) return '无标题';
+                        
+                        // 定义应该小写的词（介词、冠词、连词等）
+                        const lowercaseWords = new Set([
+                            'a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'in', 'of', 'on', 'or', 'the', 'to', 'up', 'vs', 'vs.'
+                        ]);
+                        
+                        return title.split(' ').map((word, index) => {
+                            if (word.length === 0) return word;
+                            
+                            // 第一个词和最后一个词总是大写
+                            if (index === 0 || index === title.split(' ').length - 1) {
+                                return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+                            }
+                            
+                            // 检查是否应该小写
+                            const cleanWord = word.replace(/[^a-zA-Z]/g, '').toLowerCase();
+                            if (lowercaseWords.has(cleanWord)) {
+                                return word.toLowerCase();
+                            }
+                            
+                            // 其他词首字母大写
+                            return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+                        }).join(' ');
+                    };
+                    
+                    const authorsText = Array.isArray(p.authors) ? p.authors.join(', ') : (p.authors || '');
+                    span.innerHTML = `${formatTitle(p.title)}<br><span style="opacity:.7;font-size:.85em">${authorsText} (${p.year || 'N/A'})</span>`;
+                    wrapper.appendChild(cb);
+                    wrapper.appendChild(span);
+                    paperListEl.appendChild(wrapper);
+                });
+            }
+            renderPaperList();
+            let paperSearchDebounce = null;
+            searchEl.addEventListener('input', () => {
+                clearTimeout(paperSearchDebounce);
+                paperSearchDebounce = setTimeout(() => renderPaperList(searchEl.value), 150);
+            });
+            selectAllBtn.onclick = () => { selectedPaperIds = new Set(papersData.map(p => p.id)); renderPaperList(searchEl.value); applyFilter(); };
+            clearAllBtn.onclick = () => { selectedPaperIds = new Set(); renderPaperList(searchEl.value); applyFilter(); };
+
+            // Paper selection ∩ year filter helper
+            function isSelectedAndWithinYear(paperId) {
+                const p = papersData.find(x => x.id === paperId);
+                if (!p) return false;
+                const inYear = (!p.year) || (p.year <= currentYear());
+                return inYear && selectedPaperIds.has(paperId);
+            }
+
+            // 删除重复的函数定义，使用后面更新的版本
+
+            // --- Relationship symbol labeling ---
+            function normalizeStatus(status) {
+                const s = (status || '').toLowerCase();
+                if (s.includes('empirical')) return 'empirical';
+                if (s.includes('hypoth')) return 'hypothesis';
+                if (s.includes('propos')) return 'proposition';
+                return 'unknown';
+            }
+
+            function symbolForInstance(ri) {
+                const nonlin = (ri.non_linear_type || '').toLowerCase();
+                if (nonlin.includes('inverted')) return '∩';
+                if (nonlin.includes('u')) return '∪';
+                if (nonlin.includes('s')) return 'S';
+                const dir = (ri.effect_direction || '').toLowerCase();
+                if (dir === 'positive') return '+';
+                if (dir === 'negative') return '−';
+                return '·'; // unknown/insignificant
+            }
+
+            function computeEdgeLabelForRel(rel) {
+                const instances = (rel.relationship_instances || []).filter(ri => isSelectedAndWithinYear(ri.paper_uid));
+                if (instances.length === 0) return '';
+                const buckets = { empirical: new Set(), hypothesis: new Set(), proposition: new Set(), unknown: new Set() };
+                instances.forEach(ri => { buckets[normalizeStatus(ri.status)].add(symbolForInstance(ri)); });
+                // If only one status bucket used and size==1 => single concise symbol
+                const used = Object.entries(buckets).filter(([k,v]) => v.size > 0);
+                if (used.length === 1 && used[0][1].size === 1) {
+                    return Array.from(used[0][1])[0];
+                }
+                // Compose grouped label
+                const seg = [];
+                if (buckets.empirical.size) seg.push('E:' + Array.from(buckets.empirical).join(''));
+                if (buckets.hypothesis.size) seg.push('H:' + Array.from(buckets.hypothesis).join(''));
+                if (buckets.proposition.size) seg.push('P:' + Array.from(buckets.proposition).join(''));
+                if (seg.length === 0 && buckets.unknown.size) seg.push(Array.from(buckets.unknown).join(''));
+                return seg.join(' | ');
+            }
+
+            function evidenceCountWithinYear(pids) {
+                if (!pids || !pids.length) return 0;
+                const uniq = new Set();
+                pids.forEach(pid => { if (isSelectedAndWithinYear(pid)) uniq.add(pid); });
+                return uniq.size;
+            }
+
+            // Toast notification system
+            function showToast(message, type = 'info', duration = 3000) {
+                const container = document.getElementById('toast-container');
+                const toast = document.createElement('div');
+                toast.className = `toast ${type}`;
+                toast.textContent = message;
+                toast.onclick = () => toast.remove();
+                
+                container.appendChild(toast);
+                setTimeout(() => toast.remove(), duration);
+            }
+            
+            // Update HUD display
+            function updateHUD() {
+                const papersCount = document.getElementById('papers-count');
+                const nodesCount = document.getElementById('nodes-count');
+                const edgesCount = document.getElementById('edges-count');
+                
+                if (papersCount) papersCount.textContent = selectedPaperIds.size;
+                if (nodesCount) nodesCount.textContent = nodes.length;
+                if (edgesCount) edgesCount.textContent = edges.length;
+                
+                // Update preset info in HUD
+                const presetNames = {
+                    'overview': '总览',
+                    'causal': '因果',
+                    'correlation': '相关',
+                    'dense': '密集'
+                };
+                const selectionSummary = document.getElementById('selection-summary');
+                if (selectionSummary) {
+                    const presetInfo = selectionSummary.querySelector('.preset-info');
+                    if (presetInfo) {
+                        presetInfo.textContent = `视图: ${presetNames[currentPreset] || '总览'}`;
+                    } else {
+                        const div = document.createElement('div');
+                        div.className = 'preset-info';
+                        div.textContent = `视图: ${presetNames[currentPreset] || '总览'}`;
+                        selectionSummary.appendChild(div);
+                    }
+                }
+            }
+
+            // CRITICAL FIX: Add missing filter functions
+            function relationshipMatchesSelection(rel) {
+                // 检查关系是否有选中的论文支持
+                if (!rel.paper_ids || rel.paper_ids.length === 0) return false;
+                
+                // 至少有一个论文被选中且在年份范围内
+                return rel.paper_ids.some(paperId => {
+                    const paper = papersData.find(p => p.id === paperId);
+                    if (!paper) return false;
+                    
+                    // 检查论文是否被选中
+                    const isSelected = selectedPaperIds.has(paper.id);
+                    // 检查论文是否在年份范围内
+                    const isWithinYear = paper.year <= currentYear;
+                    
+                    return isSelected && isWithinYear;
+                });
+            }
+            
+            function constructMatchesSelection(construct) {
+                // 检查构型是否有选中的论文支持
+                if (!construct.paper_ids || construct.paper_ids.length === 0) return false;
+                
+                // 至少有一个论文被选中且在年份范围内
+                return construct.paper_ids.some(paperId => {
+                    const paper = papersData.find(p => p.id === paperId);
+                    if (!paper) return false;
+                    
+                    // 检查论文是否被选中
+                    const isSelected = selectedPaperIds.has(paper.id);
+                    // 检查论文是否在年份范围内
+                    const isWithinYear = paper.year <= currentYear;
+                    
+                    return isSelected && isWithinYear;
+                });
+            }
+            
+            function evidenceCountWithinYear(paperIds) {
+                // 计算在年份范围内的选中论文数量
+                if (!Array.isArray(paperIds)) return 0;
+                
+                return paperIds.filter(paperId => {
+                    const paper = papersData.find(p => p.id === paperId);
+                    if (!paper) return false;
+                    
+                    // 检查论文是否被选中且在年份范围内
+                    const isSelected = selectedPaperIds.has(paper.id);
+                    const isWithinYear = paper.year <= currentYear;
+                    
+                    return isSelected && isWithinYear;
+                }).length;
+            }
+            
+            function isSelectedAndWithinYear(paperUid) {
+                // 检查论文是否被选中且在年份范围内
+                const paper = papersData.find(p => p.id === paperUid);
+                if (!paper) return false;
+                
+                const isSelected = selectedPaperIds.has(paper.id);
+                const isWithinYear = paper.year <= currentYear;
+                
+                return isSelected && isWithinYear;
+            }
+            
+            function withinYear(paperId) {
+                // 检查论文是否在年份范围内
+                const paper = papersData.find(p => p.id === paperId);
+                if (!paper || !paper.year) return false;
+                
+                return paper.year <= currentYear();
+            }
+            
+            
+            // Network options
+            const options = {
+                physics: {
+                    enabled: false,
+                    barnesHut: {
+                        gravitationalConstant: -2000,
+                        centralGravity: 0.3,
+                        springLength: 150,
+                        springConstant: 0.04,
+                        damping: 0.09
+                    },
+                    stabilization: {
+                        enabled: false,
+                        iterations: 100,
+                        updateInterval: 25
+                    }
+                },
+                interaction: {
+                    hover: true,
+                    tooltipDelay: 200,
+                    zoomView: true,
+                    dragView: true
+                },
+                nodes: {
+                    borderWidth: 2,
+                    shadow: true
+                },
+                edges: {
+                    smooth: false,
+                    shadow: true,
+                    color: { inherit: false }
+                },
+                layout: {
+                    improvedLayout: true,
+                    hierarchical: false,
+                    randomSeed: 1337
+                }
+            };
+            console.log('网络选项设置完成:', options);
+            
+            // Create network
+            console.log('开始创建vis.Network...');
+            console.log('数据集状态 - 节点数量:', nodes.length, '边数量:', edges.length);
+            console.log('节点数据集内容:', nodes.get());
+            console.log('边数据集内容:', edges.get());
+            const network = new vis.Network(container, { nodes, edges }, options);
+            window.network = network;
+            console.log('网络创建成功:', network);
+            console.log('网络创建后 - 节点索引:', network.body.nodeIndices);
+            console.log('网络创建后 - 边索引:', network.body.edgeIndices);
+            // Persist positions when user drags nodes in the full graph
+            network.on('dragEnd', function() {
+                try {
+                    const ids = nodes.getIds();
+                    persistPositions(ids);
+                } catch(e) {}
+            });
+            // Persist and restore view (center/zoom) to keep absolute positions stable across filters
+            const VIEW_KEY = 'kg_saved_view';
+            const VIEW_USER_KEY = 'kg_view_user_set';
+            // 默认锁定视图，避免切换筛选/年份引起绝对位置偏移
+            window.__kg_viewLock = true;
+            function saveViewState() {
+                if (window.__kg_viewLock) return;
+                try {
+                    const scale = network.getScale();
+                    const position = network.getViewPosition();
+                    localStorage.setItem(VIEW_KEY, JSON.stringify({ scale, position }));
+                    localStorage.setItem(VIEW_USER_KEY, 'true');
+                } catch(e) {}
+            }
+            function loadViewState() {
+                try { const s = localStorage.getItem(VIEW_KEY); if (!s) return null; const v = JSON.parse(s); return { scale: v.scale, position: v.position }; } catch(e) { return null; }
+            }
+            function hasUserView() {
+                try { return localStorage.getItem(VIEW_USER_KEY) === 'true'; } catch(e) { return false; }
+            }
+            const initialView = loadViewState() || { scale: 1, position: { x: 0, y: 0 } };
+            // 仅当用户曾经调整过视图才恢复
+            if (hasUserView() && initialView) { network.moveTo(initialView); }
+            network.on('zoom', saveViewState);
+            network.on('dragEnd', params => { if (!params || !params.nodes || params.nodes.length === 0) saveViewState(); });
+            
+            // Tooltip handlers
+            network.on('hoverNode', function(params) {
+                showNodeTooltip(nodes.get(params.node), params.event);
+            });
+            
+            network.on('blurNode', function(params) {
+                hideTooltip();
+            });
+            
+            network.on('hoverEdge', function(params) {
+                const edge = edges.get(params.edge);
+                if (!edge) { return; }
+                if (edge.id && edge.id.startsWith('similar_')) {
+                    // Show similarity tooltip for similarity edges
+                    showSimilarityTooltip(edge, params.event);
+                } else {
+                    // Show regular edge tooltip for relationship edges
+                    showEdgeTooltip(edge, params.event);
+                }
+            });
+            
+            network.on('blurEdge', function(params) {
+                hideTooltip();
+            });
+            
+            // --- Deterministic layout support ---
+            // Persist node positions across re-renders (in-memory + localStorage)
+            const savedPositions = (() => {
+                try {
+                    return JSON.parse(localStorage.getItem('kg_saved_positions') || '{}');
+                } catch(e) { return {}; }
+            })();
+
+            function persistPositions(ids) {
+                const pos = network.getPositions(ids);
+                Object.keys(pos).forEach(id => { savedPositions[id] = pos[id]; });
+                try { localStorage.setItem('kg_saved_positions', JSON.stringify(savedPositions)); } catch(e) {}
+            }
+
+            function hashCode(str) {
+                let h = 0; for (let i = 0; i < str.length; i++) { h = ((h << 5) - h) + str.charCodeAt(i); h |= 0; }
+                return h;
+            }
+
+            function deterministicFallbackPosition(id) {
+                const h = Math.abs(hashCode(String(id)));
+                const angle = (h % 360) / 360 * Math.PI * 2;
+                const ring = (Math.floor(h / 360) % 5) + 1; // 1..5 个同心环
+                const radius = ring * 320;
+                return { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius };
+            }
+
+            function getNodePosition(id) {
+                return savedPositions[id] || deterministicFallbackPosition(id);
+            }
+
+            function performInitialLayout() {
+                // Build a full-graph once to compute deterministic coordinates
+                const allNodes = new vis.DataSet();
+                const allEdges = new vis.DataSet();
+                // Sort to keep input order stable
+                const constructsSorted = [...constructsData].sort((a,b) => (a.name||'').localeCompare(b.name||''));
+                const relsSorted = [...relationshipsData].sort((a,b) => (a.source_construct+a.target_construct).localeCompare(b.source_construct+b.target_construct));
+
+                constructsSorted.forEach(c => {
+                    // If we already have a saved position, place it there; allow user to drag later
+                    const pos = savedPositions[c.name];
+                    if (pos) {
+                                        allNodes.add({ id: c.uniqueId, label: c.name, x: pos.x, y: pos.y });
+            } else {
+                allNodes.add({ id: c.uniqueId, label: c.name });
+            }
+                });
+                relsSorted.forEach(r => allEdges.add({ from: r.source_construct, to: r.target_construct }));
+
+                // Deterministic seed so physics is repeatable
+                network.setOptions({ physics: { enabled: true }, layout: { randomSeed: 1337 } });
+                network.setData({ nodes: allNodes, edges: allEdges });
+                network.once('stabilized', () => {
+                    // Save positions for all nodes and freeze physics afterwards
+                    persistPositions(allNodes.getIds());
+                    network.setOptions({ physics: false });
+                    applyFilter();
+                });
+            }
+            
+            // Keep tooltip near cursor
+            document.addEventListener('mousemove', function(e) {
+                if (tooltip && tooltip.classList.contains('show')) {
+                    tooltip.style.left = e.pageX + 15 + 'px';
+                    tooltip.style.top = e.pageY - 15 + 'px';
+                }
+            });
+
+            // Timeline controls
+            const rangeEl = document.getElementById('year-range');
+            const yearLabel = document.getElementById('year-label');
+            // 滑动条范围将在数据加载完成后设置
+
+            // currentYear is now a global function
+            
+            // 添加年份滑块事件监听器
+            if (rangeEl && yearLabel) {
+                rangeEl.addEventListener('input', function() {
+                    const year = this.value;
+                    yearLabel.textContent = `年份: ${year}`;
+                    console.log('年份滑块变化:', year);
+                    applyFilter(); // 重新应用筛选
+                });
+            }
+
+            // Current preset view
+            let currentPreset = 'overview';
+            
+            // 预设视图筛选逻辑将在 applyFilter 函数中实现
+                    const labelContainer = document.getElementById('network-container');
+                    if (!window.__labelLayer) {
+                        window.__labelLayer = document.createElement('div');
+                        window.__labelLayer.style.position = 'absolute';
+                        window.__labelLayer.style.left = '0';
+                        window.__labelLayer.style.top = '0';
+                        window.__labelLayer.style.pointerEvents = 'none';
+                        labelContainer.appendChild(window.__labelLayer);
+                    }
+                    function drawLabels2() {
+                        if (!window.__labelLayer) return;
+                        window.__labelLayer.innerHTML = '';
+                        const scale = network.getScale();
+                        nodes.forEach(n => {
+                            const pos = network.canvasToDOM(network.getPositions([n.id])[n.id]);
+                            const el = document.createElement('div');
+                            el.style.position = 'absolute';
+                            // node radius in screen space under current zoom
+                            const nodeRadius = (n.size || 10) * (scale || 1);
+                            el.style.left = pos.x + 'px';
+                            const vOffset = nodeRadius + Math.max(6, 2 * scale);
+                            el.style.top = (pos.y + vOffset) + 'px';
+                            el.style.transform = 'translate(-50%, 0)';
+                            // fade with zoom, hide when too small
+                            const baseOpacity = Math.min(1, Math.max(0, (scale - 0.25) / 0.6));
+                            // apply highlight-based fading for non-selected nodes
+                            const isDim = window.__highlightNodes && !window.__highlightNodes.has(n.id);
+                            const lowAlpha = (typeof window.__lowAlpha === 'number') ? window.__lowAlpha : 0.1;
+                            const finalOpacity = isDim ? Math.min(baseOpacity, lowAlpha) : baseOpacity;
+                            if (finalOpacity <= 0.02) return;
+                            el.style.opacity = String(finalOpacity);
+                            el.style.color = '#e5e7eb';
+                            // font scales with node size and zoom
+                            const fontPx = Math.max(10, Math.min(42, 10 + nodeRadius * 0.35));
+                            el.style.font = fontPx + 'px Times New Roman';
+                            el.style.whiteSpace = 'nowrap';
+                            el.textContent = n.id;
+                            window.__labelLayer.appendChild(el);
+                        });
+                    }
+                    drawLabels2();
+                    if (!window.__afterDrawingHandlerSet) {
+                        network.off('afterDrawing', window.__afterDrawingLabels);
+                        window.__afterDrawingLabels = drawLabels2;
+                        network.on('afterDrawing', window.__afterDrawingLabels);
+                        window.__afterDrawingHandlerSet = true;
+                    }
+                    // Auto-fit viewport to include all nodes and labels with padding on first render or when requested
+                    if (!window.__fittedOnce || window.__requestAutoFit) {
+                        fitToViewport(160);
+                        window.__fittedOnce = true;
+                        window.__requestAutoFit = false;
+                    }
+                    // Capture base styles after data render - only once
+                    if (!window.__baseStylesCaptured) {
+                        initializeBaseStyles();
+                        window.__baseStylesCaptured = true;
+                    }
+                }
+
+            // Smart search functionality
+            function performSearch(query) {
+                if (!query) {
+                    searchResults.style.display = 'none';
+                    return;
+                }
+                const q = query.toLowerCase();
+                
+                // 只搜索当前画布上显示的构型节点（不包括证据节点）
+                const constructNodeIds = nodes.getIds().filter(id => {
+                    const node = nodes.get(id);
+                    // 只包含构型节点（圆形），排除证据节点（菱形）
+                    return !node.shape || node.shape !== 'diamond';
+                });
+                const visibleMatches = constructNodeIds.filter(id => id.toLowerCase().includes(q)).map(id => ({ id: id }));
+                
+                // 更新全局搜索匹配结果
+                searchMatches = visibleMatches;
+                
+                if (visibleMatches.length === 0) {
+                    searchResults.style.display = 'none';
+                    return;
+                }
+                
+                searchResults.innerHTML = '';
+                visibleMatches.slice(0, 8).forEach((match, idx) => {
+                    const div = document.createElement('div');
+                    div.className = 'search-result';
+                    
+                    const title = document.createElement('div');
+                    title.className = 'search-result-title';
+                    title.textContent = match.id;
+                    
+                    const meta = document.createElement('div');
+                    meta.className = 'search-result-meta';
+                    
+                    // 获取该节点的构型信息
+                    const construct = constructsData.find(c => c.name === match.id);
+                    if (construct) {
+                        const paperCount = (construct.paper_ids || []).length;
+                        const dimensionCount = (construct.dimensions || []).length;
+                        meta.textContent = `${paperCount} 篇论文${dimensionCount > 0 ? ` • ${dimensionCount} 个维度` : ''}`;
+                    } else {
+                        meta.textContent = '构型节点';
+                    }
+                    
+                    div.appendChild(title);
+                    div.appendChild(meta);
+                    
+                    div.onclick = () => {
+                        const nodeId = match.id;
+                        
+                        // 1. 选中并聚焦节点
+                        network.selectNodes([nodeId]);
+                        network.focus(nodeId, { scale: 1.5, animation: true });
+                        
+                        // 2. 模拟点击事件来触发完整的高亮逻辑
+                        setTimeout(() => {
+                            // 创建一个模拟的点击事件参数
+                            const simulatedParams = {
+                                nodes: [nodeId],
+                                edges: [],
+                                pointer: {
+                                    DOM: { x: 0, y: 0 }
+                                }
+                            };
+                            
+                            // 如果网络图的点击处理函数已定义，直接调用
+                            if (window.networkClickHandler) {
+                                window.networkClickHandler(simulatedParams);
+                            }
+                        }, 100);
+                        
+                        // 3. 隐藏搜索结果并更新搜索框
+                        searchResults.style.display = 'none';
+                        globalSearch.value = nodeId;
+                    };
+                    
+                    searchResults.appendChild(div);
+                });
+                searchResults.style.display = 'block';
+            }
+            
+            globalSearch && globalSearch.addEventListener('input', (e) => {
+                performSearch(e.target.value.trim());
+            });
+            
+            globalSearch && globalSearch.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    if (searchMatches.length > 0) {
+                        searchCurrentIndex = (searchCurrentIndex + 1) % searchMatches.length;
+                        const match = searchMatches[searchCurrentIndex];
+                        const nodeId = match.id;
+                        
+                        // 1. 选中并聚焦节点
+                        network.selectNodes([nodeId]);
+                        network.focus(nodeId, { scale: 1.5, animation: true });
+                        
+                        // 2. 模拟点击事件来触发完整的高亮逻辑
+                        setTimeout(() => {
+                            // 创建一个模拟的点击事件参数
+                            const simulatedParams = {
+                                nodes: [nodeId],
+                                edges: [],
+                                pointer: {
+                                    DOM: { x: 0, y: 0 }
+                                }
+                            };
+                            
+                            // 如果网络图的点击处理函数已定义，直接调用
+                            if (window.networkClickHandler) {
+                                window.networkClickHandler(simulatedParams);
+                            }
+                        }, 100);
+                        
+                        // 3. 更新搜索框并隐藏结果
+                        globalSearch.value = nodeId;
+                        searchResults.style.display = 'none';
+                    }
+                } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    const results = searchResults.querySelectorAll('.search-result');
+                    if (results.length === 0) return;
+                    
+                    results.forEach(r => r.classList.remove('selected'));
+                    if (e.key === 'ArrowUp') {
+                        searchCurrentIndex = searchCurrentIndex <= 0 ? results.length - 1 : searchCurrentIndex - 1;
+                    } else {
+                        searchCurrentIndex = searchCurrentIndex >= results.length - 1 ? 0 : searchCurrentIndex + 1;
+                    }
+                    results[searchCurrentIndex].classList.add('selected');
+                } else if (e.key === 'Escape') {
+                    searchResults.style.display = 'none';
+                    globalSearch.blur();
+                }
+            });
+            
+            // 动态定位过滤器弹窗
+            function positionFilterDropdowns() {
+                document.querySelectorAll('.filter-dropdown').forEach(dropdown => {
+                    const summary = dropdown.querySelector('summary');
+                    const content = dropdown.querySelector('.filter-content');
+                    if (!summary || !content) return;
+                    // 将弹窗内容挂载到body，避免被任何局部容器截断
+                    if (content.parentElement !== document.body) {
+                        content.__origParent = dropdown;
+                        document.body.appendChild(content);
+                    }
+                    
+                    const rect = summary.getBoundingClientRect();
+                    content.style.position = 'fixed';
+                    content.style.top = (rect.bottom + 5) + 'px';
+                    content.style.left = rect.left + 'px';
+                    content.style.zIndex = '99999';
+                });
+            }
+
+            function restoreDropdownContent(dropdown) {
+                // 将内容移回到原来的details中
+                const inBody = Array.from(document.body.querySelectorAll('.filter-content')).find(c => c.__origParent === dropdown);
+                if (inBody) { dropdown.appendChild(inBody); }
+            }
+
+            function closeOtherDropdowns(current) {
+                document.querySelectorAll('.filter-dropdown').forEach(d => {
+                    if (d !== current && d.open) {
+                        // 先恢复内容，再关闭
+                        restoreDropdownContent(d);
+                        d.open = false;
+                    }
+                });
+            }
+            
+            // 监听过滤器弹窗的展开/收起 - 使用click事件而不是toggle事件来避免竞态条件
+            document.querySelectorAll('.filter-dropdown summary').forEach(summary => {
+                summary.addEventListener('click', (e) => {
+                    e.preventDefault(); // 阻止默认的toggle行为
+                    const dropdown = summary.parentElement;
+                    
+                    if (dropdown.open) {
+                        // 当前是打开的，点击后关闭
+                        dropdown.open = false;
+                        restoreDropdownContent(dropdown);
+                    } else {
+                        // 当前是关闭的，点击后打开（先关闭其他的）
+                        closeOtherDropdowns(dropdown);
+                        dropdown.open = true;
+                        setTimeout(positionFilterDropdowns, 10);
+                    }
+                });
+            });
+            
+            // View presets
+            document.querySelectorAll('.preset-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const preset = btn.dataset.preset;
+                    currentPreset = preset; // Update current preset
+                    
+                    // Reset all filters first
+                    [relAll, relPos, relNeg, relInsig, relS, relU, relInvU]
+                        .forEach(el => el && (el.checked = false));
+                    
+                    switch(preset) {
+                        case 'overview':
+                            (relAll && (relAll.checked = true));
+                            break;
+                        case 'causal':
+                            (relAll && (relAll.checked = true));
+                            break;
+                        case 'correlation':
+                            (relAll && (relAll.checked = true));
+                            break;
+                        case 'dense':
+                            (relAll && (relAll.checked = true));
+                            break;
+                    }
+                    applyFilter();
+                });
+            });
+            
+
+
+            // Layout mode toggles (single-source-of-truth with active class)
+            const layoutCentralityBtn = document.getElementById('layout-centrality');
+            const layoutEmbeddingBtn = document.getElementById('layout-embedding');
+            function setLayoutMode(mode) {
+                const old = layoutMode;
+                layoutMode = mode;
+                if (layoutCentralityBtn) layoutCentralityBtn.classList.toggle('active', mode === 'centrality');
+                if (layoutEmbeddingBtn) layoutEmbeddingBtn.classList.toggle('active', mode === 'embedding');
+                if (old !== mode) {
+                    const container = document.getElementById('toast-container');
+                    if (container) {
+                        showToast(mode === 'centrality' ? '切换到中心性布局' : '切换到语义布局', 'info');
+                    }
+                    // request auto-fit after layout change
+                    window.__requestAutoFit = true;
+                }
+                applyFilter();
+            }
+            layoutCentralityBtn && (layoutCentralityBtn.onclick = () => setLayoutMode('centrality'));
+            layoutEmbeddingBtn && (layoutEmbeddingBtn.onclick = () => setLayoutMode('embedding'));
+            if (layoutCentralityBtn) layoutCentralityBtn.classList.toggle('active', layoutMode === 'centrality');
+            if (layoutEmbeddingBtn) layoutEmbeddingBtn.classList.toggle('active', layoutMode === 'embedding');
+
+            // 首次渲染：先全图布局一次保存坐标，再进入筛选渲染
+            console.log('=== 开始首次渲染 ===');
+            performInitialLayout();
+            console.log('=== 开始应用筛选 ===');
+            applyFilter();
+
+            // Filter change handlers
+            [relAll, relPos, relNeg, relInsig, relS, relU, relInvU]
+                .forEach(el => el && el.addEventListener('change', applyFilter));
+
+            // Details panel on click
+            const detailsEl = document.getElementById('details-panel');
+            
+            // 定义网络点击处理函数为全局函数，以便搜索结果可以调用
+            window.networkClickHandler = function(params) {
+                hideTooltip();
+
+                // Normalize: if a node/edge is under the pointer, prefer those over stale selection arrays
+                let nodeAtPointer = null;
+                let edgeAtPointer = null;
+                try {
+                    if (params && params.pointer && params.pointer.DOM) {
+                        nodeAtPointer = network.getNodeAt(params.pointer.DOM);
+                        edgeAtPointer = network.getEdgeAt(params.pointer.DOM);
+                    }
+                } catch(e) { nodeAtPointer = null; edgeAtPointer = null; }
+
+                if (nodeAtPointer) {
+                    params.nodes = [nodeAtPointer];
+                    params.edges = [];
+                } else if (edgeAtPointer) {
+                    params.nodes = [];
+                    params.edges = [edgeAtPointer];
+                }
+
+                // Background click: reset view (robust: neither node nor edge under pointer)
+                if (!nodeAtPointer && !edgeAtPointer) {
+                    console.log('Background clicked - initiating full reset.');
+
+                    // 1. Clear vis.js internal selection
+                    try {
+                        if (network && typeof network.unselectAll === 'function') {
+                            network.unselectAll();
+                        }
+                    } catch (e) { console.error('unselectAll error:', e); }
+
+                    // 2. Run our comprehensive reset function immediately
+                    clearHighlight();
+
+                    // 3. Reset the details panel
+                    detailsEl.innerHTML = '<div style="opacity:0.8">点击中间的节点或连线查看详细信息</div>';
+                    
+                    // 4. Final override: A delayed second reset to fight any race conditions.
+                    setTimeout(clearHighlight, 50);
+
+                    return;
+                }
+
+                // Node click highlighting (node + its incident edges and neighbor nodes) — handle first if present
+                if (params.nodes && params.nodes.length > 0) {
+                    clearHighlight();
+                    const nodeId = params.nodes[0];
+                    
+                    // Check if this is a moderator node (has moderator edges)
+                    const moderatorEdges = edges.get().filter(e => 
+                        e.moderatorInfo && e.moderatorInfo.moderator === nodeId
+                    );
+                    
+                    if (moderatorEdges.length > 0) {
+                        // This is a moderator node - highlight the entire triangle
+                        const moderatorInfo = moderatorEdges[0].moderatorInfo;
+                        const triangleNodes = [
+                            moderatorInfo.moderator,
+                            moderatorInfo.source,
+                            moderatorInfo.target
+                        ];
+                        const triangleEdges = [
+                            // Find the main relationship edge
+                            ...edges.get().filter(e => 
+                                e.from === moderatorInfo.source && e.to === moderatorInfo.target
+                            ),
+                            // Include the moderator edges
+                            ...moderatorEdges
+                        ];
+                        
+                        fadeAllExcept(nodes, edges, triangleNodes, triangleEdges.map(e => e.id), 0.1);
+                    } else {
+                        // If this node is an endpoint of a moderated relationship, highlight the full triad(s)
+                        const modEdgesForEndpoint = edges.get().filter(e => e.moderatorInfo && (e.to === nodeId || e.from === nodeId));
+                        const medEdgesForEndpoint = edges.get().filter(e => e.mediatorInfo && (e.to === nodeId || e.from === nodeId));
+                        if (modEdgesForEndpoint.length > 0) {
+                            const nodesToHighlight = new Set([nodeId]);
+                            const edgeIdsToHighlight = new Set();
+                            modEdgesForEndpoint.forEach(me => {
+                                const mi = me.moderatorInfo;
+                                nodesToHighlight.add(mi.moderator);
+                                nodesToHighlight.add(mi.source);
+                                nodesToHighlight.add(mi.target);
+                                // add both moderator dashed edges
+                                edges.get().forEach(e => {
+                                    if (e.moderatorInfo && e.moderatorInfo.moderator === mi.moderator && e.moderatorInfo.source === mi.source && e.moderatorInfo.target === mi.target) {
+                                        edgeIdsToHighlight.add(e.id);
+                                    }
+                                });
+                                // add the main relationship edge
+                                edges.get().forEach(e => {
+                                    if (e.from === mi.source && e.to === mi.target) {
+                                        edgeIdsToHighlight.add(e.id);
+                                    }
+                                });
+                            });
+                            fadeAllExcept(nodes, edges, Array.from(nodesToHighlight), Array.from(edgeIdsToHighlight), 0.1);
+                        } else if (medEdgesForEndpoint.length > 0) {
+                            const nodesToHighlight = new Set([nodeId]);
+                            const edgeIdsToHighlight = new Set();
+                            medEdgesForEndpoint.forEach(me => {
+                                const mi = me.mediatorInfo;
+                                nodesToHighlight.add(mi.mediator);
+                                nodesToHighlight.add(mi.source);
+                                nodesToHighlight.add(mi.target);
+                                // add both mediator dotted edges
+                                edges.get().forEach(e => {
+                                    if (e.mediatorInfo && e.mediatorInfo.mediator === mi.mediator && e.mediatorInfo.source === mi.source && e.mediatorInfo.target === mi.target) {
+                                        edgeIdsToHighlight.add(e.id);
+                                    }
+                                });
+                                // add the main relationship edge
+                                edges.get().forEach(e => {
+                                    if (e.from === mi.source && e.to === mi.target) {
+                                        edgeIdsToHighlight.add(e.id);
+                                    }
+                                });
+                            });
+                            fadeAllExcept(nodes, edges, Array.from(nodesToHighlight), Array.from(edgeIdsToHighlight), 0.1);
+                        } else {
+                            // Regular node highlighting
+                            const incident = (typeof network.getConnectedEdges === 'function') ? (network.getConnectedEdges(nodeId) || []) : [];
+                            const neighborList = (typeof network.getConnectedNodes === 'function') ? (network.getConnectedNodes(nodeId) || []) : [];
+                            const neighbors = new Set(neighborList);
+                            neighbors.add(nodeId);
+                            fadeAllExcept(nodes, edges, Array.from(neighbors), incident, 0.1);
+                        }
+                    }
+                } else if (params.edges && params.edges.length > 0) {
+                    // Edge click highlighting
+                    clearHighlight();
+                    const edgeId = params.edges[0];
+                    const e = edges.get(edgeId);
+                    if (e) {
+                        // If this edge is part of a moderated or mediated relationship, highlight the whole triad(s)
+                        if (e.moderatorInfo) {
+                            const mi = e.moderatorInfo;
+                            const nodesToHighlight = [mi.moderator, mi.source, mi.target];
+                            const edgeIds = [];
+                            // include main relationship edge (either orientation)
+                            edges.get().forEach(ed => { if ((ed.from === mi.source && ed.to === mi.target) || (ed.from === mi.target && ed.to === mi.source)) edgeIds.push(ed.id); });
+                            // include both moderator dashed edges
+                            edges.get().forEach(ed => { if (ed.moderatorInfo && ed.moderatorInfo.moderator === mi.moderator && ed.moderatorInfo.source === mi.source && ed.moderatorInfo.target === mi.target) edgeIds.push(ed.id); });
+                            fadeAllExcept(nodes, edges, nodesToHighlight, edgeIds, 0.1);
+                        } else if (e.mediatorInfo) {
+                            const mi = e.mediatorInfo;
+                            const nodesToHighlight = [mi.mediator, mi.source, mi.target];
+                            const edgeIds = [];
+                            edges.get().forEach(ed => { if ((ed.from === mi.source && ed.to === mi.target) || (ed.from === mi.target && ed.to === mi.source)) edgeIds.push(ed.id); });
+                            edges.get().forEach(ed => { if (ed.mediatorInfo && ed.mediatorInfo.mediator === mi.mediator && ed.mediatorInfo.source === mi.source && ed.mediatorInfo.target === mi.target) edgeIds.push(ed.id); });
+                            fadeAllExcept(nodes, edges, nodesToHighlight, edgeIds, 0.1);
+                        } else {
+                            // Check if this is the main relationship edge for which moderator edges exist
+                            const relatedModerators = edges.get().filter(ed => ed.moderatorInfo && ((ed.moderatorInfo.source === e.from && ed.moderatorInfo.target === e.to) || (ed.moderatorInfo.source === e.to && ed.moderatorInfo.target === e.from)));
+                            const relatedMediators = edges.get().filter(ed => ed.mediatorInfo && ((ed.mediatorInfo.source === e.from && ed.mediatorInfo.target === e.to) || (ed.mediatorInfo.source === e.to && ed.mediatorInfo.target === e.from)));
+                            if (relatedModerators.length > 0 || relatedMediators.length > 0) {
+                                const nodesToHighlight = new Set([e.from, e.to]);
+                                const edgeIds = new Set([edgeId]);
+                                relatedModerators.forEach(ed => { nodesToHighlight.add(ed.moderatorInfo.moderator); edgeIds.add(ed.id); });
+                                relatedMediators.forEach(ed => { nodesToHighlight.add(ed.mediatorInfo.mediator); edgeIds.add(ed.id); });
+                                fadeAllExcept(nodes, edges, Array.from(nodesToHighlight), Array.from(edgeIds), 0.1);
+                            } else {
+                                const highlightNodes = [e.from, e.to].filter(Boolean);
+                                const highlightEdges = [edgeId];
+                                fadeAllExcept(nodes, edges, highlightNodes, highlightEdges, 0.1);
+                            }
+                        }
+                    }
+                }
+
+                if (params.nodes && params.nodes.length > 0) {
+                    const nodeId = params.nodes[0];
+                    const construct = constructsData.find(c => c.name === nodeId);
+                    if (!construct) return;
+                    let html = `<div class="detail-section"><strong style="font-size:1.1rem">${construct.name}</strong></div>`;
+                    // Show abstract definition with parent constructs (combined in one section)
+                    if (construct.best_description) {
+                        html += `<div class="detail-section no-border">
+                            <strong>摘要定义:</strong><br>
+                            <div style="margin-top:8px;">${htmlWithMathSafe(construct.best_description)}</div>`;
+                        
+                        // Add parent constructs to the same section if they exist
+                        if (construct.parent_constructs && construct.parent_constructs.length > 0) {
+                            html += `<div style="margin-top:16px;">
+                                <strong>所属构型:</strong> ${construct.parent_constructs.join(', ')}
+                            </div>`;
+                        }
+                        
+                        html += `</div>`;
+                    }
+                    
+                    // Show dimensions
+                    if (construct.dimensions && construct.dimensions.length > 0) {
+                        html += `<div class="detail-section">
+                            <strong>维度:</strong><br>
+                            ${construct.dimensions.map(function(dim) { return '• ' + dim; }).join('<br>')}
+                        </div>`;
+                    }
+                    
+                    // Show similar constructs (combined)
+                    const allSimilarConstructs = [];
+                    if (construct.similar_constructs && construct.similar_constructs.length > 0) {
+                        construct.similar_constructs.forEach(s => {
+                            if (s.name) allSimilarConstructs.push(s.name);
+                        });
+                    }
+                    if (construct.similar_to_constructs && construct.similar_to_constructs.length > 0) {
+                        construct.similar_to_constructs.forEach(s => {
+                            if (s.name) allSimilarConstructs.push(s.name);
+                        });
+                    }
+                    
+                    if (allSimilarConstructs.length > 0) {
+                        html += `<div class="detail-section no-border">
+                            <strong>相似构型:</strong> ${allSimilarConstructs.join(', ')}
+                        </div>`;
+                    }
+                    
+                    // Check if this is a moderator and show moderator information
+                    const moderatorEdges = edges.get().filter(e => 
+                        e.moderatorInfo && e.moderatorInfo.moderator === construct.name
+                    );
+                    
+                    if (moderatorEdges.length > 0) {
+                        const moderatorInfo = moderatorEdges[0].moderatorInfo;
+                        html += `<div style="margin: 20px 0;">
+                            <div style="padding-top: 20px; border-left: 4px solid #6b7280; padding-left: 16px; background: rgba(107, 114, 128, 0.05); border-radius: 4px;">
+                                <strong style="color: #6b7280; font-size: 1.05rem;">调节变量信息</strong>
+                                <div style="margin-top: 12px; opacity: 0.9;">
+                                    <div style="margin-bottom: 8px;"><strong>调节的关系:</strong> ${moderatorInfo.source} → ${moderatorInfo.target}</div>
+                                    <div style="margin-bottom: 8px;"><strong>调节作用:</strong> 作为调节变量影响上述关系的强度和方向</div>
+                                    <div style="margin-bottom: 8px;"><strong>关系状态:</strong> ${moderatorInfo.relationship.status || 'N/A'}</div>
+                                    <div style="margin-bottom: 8px;"><strong>证据类型:</strong> ${moderatorInfo.relationship.evidence_type || 'N/A'}</div>
+                                    <div style="margin-bottom: 8px;"><strong>效应方向:</strong> ${moderatorInfo.relationship.effect_direction || 'N/A'}</div>
+                                </div>
+                            </div>
+                        </div>`;
+                    }
+                    
+                    // Note: Do NOT add a separator here. We'll add a single separator
+                    // later only if there is actual paper content and no moderator block.
+                    
+                    const byPaper = new Map();
+                    (construct.definitions || []).forEach(d => { if (!d.paper_uid) return; if (!byPaper.has(d.paper_uid)) byPaper.set(d.paper_uid, { defs: [], meas: [] }); byPaper.get(d.paper_uid).defs.push(d); });
+                    (construct.measurements || []).forEach(m => { if (!m.paper_uid) return; if (!byPaper.has(m.paper_uid)) byPaper.set(m.paper_uid, { defs: [], meas: [] }); byPaper.get(m.paper_uid).meas.push(m); });
+                    
+                    // Only render papers that have actual content
+                    const papersWithContent = [];
+                    papersData.forEach(p => {
+                        if (!selectedPaperIds.has(p.id)) return;
+                        const entry = byPaper.get(p.id);
+                        if (!entry) return;
+                        
+                        // Check if this paper has any definitions or measurements
+                        const hasDefinitions = entry.defs && entry.defs.length > 0;
+                        const hasMeasurements = entry.meas && entry.meas.length > 0;
+                        
+                        if (hasDefinitions || hasMeasurements) {
+                            papersWithContent.push({ paper: p, entry: entry, hasDefinitions, hasMeasurements });
+                        }
+                    });
+                    
+                    // CRITICAL FIX: Remove duplicate separator line
+                    // We already have a separator above the moderator section, so no need for another one
+                    // This eliminates the double line issue
+                    
+                    // Render papers with content
+                    papersWithContent.forEach(({ paper: p, entry, hasDefinitions, hasMeasurements }) => {
+                        // Paper header without bullet point
+                        html += `<div class="detail-section">
+                            <div style="margin-bottom:16px;">
+                                <div style="opacity:.85; font-weight:bold;">${formatTitle(p.title)}</div>
+                                <div style="opacity:.7; margin-top:4px;">${(p.authors || []).join(', ')} (${p.year || 'N/A'})</div>
+                            </div>`;
+                        
+                        // Definitions section
+                        if (hasDefinitions) {
+                            const manyDefs = entry.defs.length > 1;
+                            html += `<div style="margin-top:16px;">
+                                <strong>定义:</strong>`;
+                            entry.defs.forEach(d => {
+                                html += `<div style="margin-top:8px; display:flex; align-items:flex-start; gap:8px;">` +
+                                        (manyDefs ? `<span style="color:#9ca3af; font-size:12px; margin-top:4px;">•</span>` : `<span style="width:0"></span>`) +
+                                        `<div style="flex:1; word-wrap:break-word;">${htmlWithMathSafe(d.definition || '')}</div>` +
+                                        `</div>`;
+                            });
+                            html += `</div>`;
+                        }
+                        
+                        // Measurements section
+                        if (hasMeasurements) { 
+                            const manyMeas = entry.meas.length > 1;
+                            html += `<div style="margin-top:16px;">
+                                <strong>测量:</strong>`;
+                            entry.meas.forEach(m => { 
+                                let measHtml = `<div style="margin-top:8px; display:flex;align-items:flex-start; gap:8px;">` +
+                                               (manyMeas ? `<span style="color:#9ca3af; font-size:12px; margin-top:4px;">•</span>` : `<span style="width:0"></span>`) +
+                                               `<div style="flex:1; word-wrap:break-word;"><strong>${m.name || ''}</strong>`;
+                                if (m.description) {
+                                    measHtml += `: ${htmlWithMathSafe(m.description)}`;
+                                }
+                                measHtml += `</div></div>`;
+                                html += measHtml;
+                            }); 
+                            html += `</div>`; 
+                        }
+                        
+                        html += `</div>`;
+                    });
+                    detailsEl.innerHTML = html || '<div style="opacity:.8">所选论文中暂无该构型的详细信息</div>';
+                    
+                    // Re-render MathJax after updating content (normalized inline)
+                    if (window.MathJax) {
+                        MathJax.typesetPromise([detailsEl]).catch((err) => console.log('MathJax error:', err));
+                    }
+                } else if (params.edges && params.edges.length > 0) {
+                    const edgeId = params.edges[0];
+                    const e = edges.get(edgeId);
+                    // Map any clicked edge (main/moderator/mediator) to the underlying main relationship
+                    let rel = null;
+                    if (e && e.moderatorInfo) {
+                        const mi = e.moderatorInfo;
+                        rel = relationshipsData.find(r => (r.source_construct === mi.source && r.target_construct === mi.target) || (r.source_construct === mi.target && r.target_construct === mi.source));
+                    } else if (e && e.mediatorInfo) {
+                        const mi = e.mediatorInfo;
+                        rel = relationshipsData.find(r => (r.source_construct === mi.source && r.target_construct === mi.target) || (r.source_construct === mi.target && r.target_construct === mi.source));
+                    } else if (e) {
+                        rel = relationshipsData.find(r => (r.source_construct === e.from && r.target_construct === e.to) || (r.source_construct === e.to && r.target_construct === e.from));
+                    }
+                    if (!rel) return;
+                    let html = `<div class="detail-section"><strong style="font-size:1.05rem">关系：${rel.source_construct} → ${rel.target_construct}</strong>
+                        <div style="margin-top:12px;opacity:.8">
+                            <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>状态:</strong> ${rel.status || 'N/A'}</div>
+                            <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>证据类型:</strong> ${rel.evidence_type || 'N/A'}</div>
+                            <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>方向:</strong> ${rel.effect_direction || 'N/A'}</div>
+                            <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>因果验证:</strong> ${(rel.relationship_instances || []).some(ri => ri.is_validated_causality === true) ? '是' : '否'}</div>
+                            <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;"><span style="color:#9ca3af; font-size:12px;">•</span><strong>元分析:</strong> ${rel.is_meta_analysis ? '是' : '否'}</div>
+                        </div></div>`;
+                    
+                    // Group relationship instances by paper
+                    const paperInstances = new Map();
+                    (rel.relationship_instances || []).forEach(ri => {
+                        if (!ri.paper_uid) return;
+                        if (!paperInstances.has(ri.paper_uid)) {
+                            paperInstances.set(ri.paper_uid, []);
+                        }
+                        paperInstances.get(ri.paper_uid).push(ri);
+                    });
+                    
+                    papersData.forEach(p => {
+                        if (!selectedPaperIds.has(p.id)) return;
+                        const instances = paperInstances.get(p.id);
+                        if (!instances || instances.length === 0) return;
+                        
+                        // Paper header without bullet point
+                        html += `<div class="detail-section">
+                            <div style="margin-bottom:16px;">
+                                <div style="opacity:.85; font-weight:bold;">${formatTitle(p.title)}</div>
+                                <div style="opacity:.7; margin-top:4px;">${(p.authors || []).join(', ')} (${p.year || 'N/A'})</div>
+                            </div>`;
+                        
+                        instances.forEach(ri => {
+                            html += `<div style="margin-top:12px;padding:12px;background:rgba(255,255,255,0.05);border-radius:6px;word-wrap:break-word;overflow-wrap:break-word;">`;
+                            
+                            if (ri.description) {
+                                html += `<div style="margin-bottom:8px;word-wrap:break-word;"><strong>描述:</strong> ${ri.description}</div>`;
+                            }
+                            
+                            if (ri.context_snippet) {
+                                html += `<div style="margin-top:8px;font-size:0.9em;opacity:0.8;font-style:italic;display:flex;align-items:flex-start;gap:8px;">
+                                    <span style="color:#9ca3af; font-size:12px; margin-top:4px;">•</span>
+                                    <div style="flex:1; word-wrap:break-word;">"${ri.context_snippet}"</div>
+                                </div>`;
+                            }
+                            
+                            // Statistical details
+                            let stats = null;
+                            try {
+                                stats = ri.statistical_details ? JSON.parse(ri.statistical_details) : null;
+                            } catch(e) {
+                                stats = ri.statistical_details;
+                            }
+                            
+                            if (stats && Object.keys(stats).length > 0) {
+                                html += `<div style="margin-top:4px;word-wrap:break-word;"><strong>统计信息:</strong> `;
+                                const statItems = [];
+                                if (stats.p_value !== undefined) statItems.push(`P值: ${stats.p_value}`);
+                                if (stats.beta_coefficient !== undefined) statItems.push(`β: ${stats.beta_coefficient}`);
+                                if (stats.correlation !== undefined) statItems.push(`r: ${stats.correlation}`);
+                                html += statItems.join('，') || '无';
+                                html += `</div>`;
+                            }
+                            
+                            // Qualitative findings
+                            if (ri.qualitative_finding) {
+                                html += `<div style="margin-top:4px;word-wrap:break-word;"><strong>定性发现:</strong> ${ri.qualitative_finding}</div>`;
+                            }
+                            
+
+                            
+                            // Boundary conditions
+                            if (ri.boundary_conditions) {
+                                html += `<div style="margin-top:4px;word-wrap:break-word;"><strong>边界条件:</strong> ${ri.boundary_conditions}</div>`;
+                            }
+                            
+                            // Replication outcome
+                            if (ri.replication_outcome) {
+                                html += `<div style="margin-top:4px;word-wrap:break-word;"><strong>复制结果:</strong> ${ri.replication_outcome}</div>`;
+                            }
+                            
+                            // Theories
+                            if (ri.theories && ri.theories.length > 0) {
+                                html += `<div style="margin-top:4px;word-wrap:break-word;"><strong>理论基础:</strong> ${ri.theories.join(', ')}</div>`;
+                            }
+                            
+                            // Moderators and Mediators
+                            if (ri.moderators && ri.moderators.length > 0) {
+                                html += `<div style="margin-top:4px;word-wrap:break-word;"><strong>调节变量:</strong> ${ri.moderators.join(', ')}</div>`;
+                            }
+                            if (ri.mediators && ri.mediators.length > 0) {
+                                html += `<div style="margin-top:4px;word-wrap:break-word;"><strong>中介变量:</strong> ${ri.mediators.join(', ')}</div>`;
+                            }
+                            
+                            html += `</div>`;
+                        });
+                        
+                        html += `</div>`;
+                    });
+                    detailsEl.innerHTML = html || '<div style="opacity:.8">所选论文中暂无该关系的详细信息</div>';
+                    
+                    // Re-render MathJax after updating content
+                    if (window.MathJax) {
+                        MathJax.typesetPromise([detailsEl]).catch((err) => console.log('MathJax error:', err));
+                    }
+                }
+            };
+            
+            // 注册网络点击事件监听器
+            network.on('click', window.networkClickHandler);
+            
+            console.log('统计信息更新完成');
+            console.log('网络状态:', {
+                nodes: network.body.data.nodes.length,
+                edges: network.body.data.edges.length,
+                container: container
+            });
+            
+            // CRITICAL FIX: Call applyFilter to actually render the network with data
+            console.log('调用 applyFilter 来渲染网络数据...');
+            applyFilter();
+        
+        function getBlueprintRelationshipColor(rel) {
+            // Blueprint-based coloring: direction takes precedence, then causality
+            if (rel.effect_direction === 'Positive') return edge_colors.positive;
+            if (rel.effect_direction === 'Negative') return edge_colors.negative;
+            if (rel.is_validated_causality === true) return edge_colors.causal;
+            if (rel.status === 'Empirical_Result') return edge_colors.correlational;
+            return edge_colors.default;
+        }
+        
+        // Legacy function for backward compatibility
+        function getRelationshipColor(type, direction) {
+            if (direction === 'positive') return edge_colors.positive;
+            if (direction === 'negative') return edge_colors.negative;
+            if (type === 'causal') return edge_colors.causal;
+            if (type === 'correlational') return edge_colors.correlational;
+            return edge_colors.default;
+        }
+        
+        // Define color schemes in global scope
+        const node_colors = [
+            '#9ca3af', '#6b7280', '#4b5563', '#374151', '#1f2937',
+            '#9ca3af', '#6b7280', '#4b5563', '#374151', '#1f2937',
+            '#9ca3af', '#6b7280', '#4b5563', '#374151', '#1f2937'
+        ];
+        
+        const edge_colors = {
+            positive: '#9ca3af',
+            negative: '#9ca3af',
+            causal: '#9ca3af',
+            correlational: '#9ca3af',
+            default: '#9ca3af'
+        };
+
+        // Focus/highlight utilities
+        function hexToRgb(hex) {
+            try {
+                const h = hex.replace('#','').trim();
+                const bigint = parseInt(h.length === 3 ? h.split('').map(c=>c+c).join('') : h, 16);
+                const r = (bigint >> 16) & 255;
+                const g = (bigint >> 8) & 255;
+                const b = bigint & 255;
+                return [r,g,b];
+            } catch(e) { return [229,231,235]; }
+        }
+        function toRgba(color, alpha) {
+            if (!color) return 'rgba(229,231,235,' + alpha + ')';
+            const c = String(color).trim();
+            if (c.startsWith('rgba(')) {
+                const parts = c.slice(5,-1).split(',').map(x=>x.trim());
+                return 'rgba(' + parts[0] + ', ' + parts[1] + ', ' + parts[2] + ', ' + alpha + ')';
+            }
+            if (c.startsWith('rgb(')) {
+                const parts = c.slice(4,-1).split(',').map(x=>x.trim());
+                return 'rgba(' + parts[0] + ', ' + parts[1] + ', ' + parts[2] + ', ' + alpha + ')';
+            }
+            if (c.startsWith('#')) {
+                const [r,g,b] = hexToRgb(c);
+                return 'rgba(' + r + ', ' + g + ', ' + b + ', ' + alpha + ')';
+            }
+            return c; // fallback
+        }
+        function ensureOpaque(color) {
+            if (!color) return '#e5e7eb';
+            const c = String(color).trim();
+            if (c.startsWith('rgba(')) {
+                const parts = c.slice(5,-1).split(',').map(x=>x.trim());
+                return 'rgba(' + parts[0] + ', ' + parts[1] + ', ' + parts[2] + ', 1)';
+            }
+            if (c.startsWith('rgb(') || c.startsWith('#')) return c;
+            return color;
+        }
+        function fadeAllExcept(nodes, edges, highlightNodeIds, highlightEdgeIds, lowAlpha=0.1) {
+            const hiNodes = new Set(highlightNodeIds || []);
+            const hiEdges = new Set(highlightEdgeIds || []);
+            // expose for label-layer rendering
+            window.__highlightNodes = hiNodes;
+            window.__highlightEdges = hiEdges;
+            window.__lowAlpha = lowAlpha;
+            // Nodes
+            nodes.getIds().forEach(id => {
+                const n = nodes.get(id);
+                if (!n) return;
+                const isHi = hiNodes.has(id);
+                if (isHi) {
+                    const b = window.__baseNodeStyles && window.__baseNodeStyles.get(id);
+                    // force opaque bright style for highlighted node
+                    const baseColor = (b && b.color) || (n.color || { background: '#e5e7eb', border: '#c9d1d9' });
+                    const bg = ensureOpaque(baseColor.background || baseColor.color || '#e5e7eb');
+                    const bd = ensureOpaque(baseColor.border || baseColor.color || '#c9d1d9');
+                    const fontStyle = (b && b.font) || n.font || { color: '#e5e7eb' };
+                    nodes.update({ id, color: { background: bg, border: bd, highlight: { background: bg, border: bd } }, font: Object.assign({}, fontStyle, { color: '#e5e7eb' }), size: (b && b.size) || n.size });
+                } else {
+                    const bg = toRgba(n.color && n.color.background || '#e5e7eb', lowAlpha);
+                    const bd = toRgba(n.color && n.color.border || '#c9d1d9', lowAlpha);
+                    const fcol = toRgba(n.font && n.font.color || '#e5e7eb', lowAlpha);
+                    nodes.update({ id, color: { background: bg, border: bd, highlight: { background: bg, border: bd } }, font: Object.assign({}, n.font||{}, { color: fcol }) });
+                }
+            });
+            // Edges
+            edges.getIds().forEach(id => {
+                const e = edges.get(id);
+                if (!e) return;
+                const isHi = hiEdges.has(id);
+                if (isHi) {
+                    // Restore to full visibility and original colors for highlighted edges
+                    const b = window.__baseEdgeStyles && window.__baseEdgeStyles.get(id);
+                    const baseColor = ensureOpaque(b ? b.color : ((e.color && (e.color.color || e.color)) || '#e5e7eb'));
+                    const baseFont = b ? b.font : (e.font || { color: '#e5e7eb' });
+                    const width = Math.max((b ? b.width : (e.width || 1.8)), 3); // Make highlighted edges thicker
+                    edges.update({ id, color: { color: baseColor, highlight: baseColor, hover: baseColor }, font: baseFont, width });
+                } else {
+                    // Fade non-highlighted edges
+                    const baseEdgeColor = (e.color && (e.color.color || e.color)) || '#6b7280';
+                    const faded = toRgba(baseEdgeColor, lowAlpha);
+                    const baseFontColor = (e.font && e.font.color) || '#e5e7eb';
+                    const fadedFont = toRgba(baseFontColor, lowAlpha);
+                    edges.update({ id, color: { color: faded, highlight: faded, hover: faded }, font: Object.assign({}, e.font||{}, { color: fadedFont }), width: Math.max(1, (e.width || 1.8)) });
+                }
+            });
+        }
+
+        // Fit the view so that all nodes (plus label area) are visible with padding
+        function fitToViewport(paddingPx) {
+            try {
+                const ids = nodes.getIds();
+                if (!ids || ids.length === 0) return;
+                // First, let vis-network compute best fit for all nodes
+                network.fit({ nodes: ids, animation: false });
+                // Then slightly zoom out to reserve margin for external labels
+                const currentScale = network.getScale();
+                const currentPos = network.getViewPosition();
+                const marginFactor = 0.90; // keep 10% margin around
+                network.moveTo({ position: currentPos, scale: currentScale * marginFactor, animation: false });
+            } catch (e) {}
+        }
+
+        // Focus/highlight utilities
+
+        // Initialize base styles (not needed anymore since we use fixed styles)
+        function initializeBaseStyles() {
+            console.log('Using fixed base styles - no capture needed');
+            // Just log for debugging
+            console.log('Fixed base styles:', FIXED_BASE_STYLES);
+        }
+
+        function resetStylesToBase() {
+            try {
+                console.log('Resetting all styles to base...');
+                
+                // Reset all nodes to their base styles with full opacity
+                if (window.__baseNodeStyles) {
+                    nodes.getIds().forEach(id => {
+                        const s = window.__baseNodeStyles.get(id) || {};
+                        const baseColor = s.color || { background: '#e5e7eb', border: '#c9d1d9' };
+                        const baseFont = s.font || { color: '#e5e7eb' };
+                        const baseSize = s.size || 20;
+                        
+                        // Ensure full opacity for all nodes
+                        const bg = ensureOpaque(baseColor.background || baseColor.color || '#e5e7eb');
+                        const bd = ensureOpaque(baseColor.border || baseColor.color || '#c9d1d9');
+                        const fontColor = ensureOpaque(baseFont.color || '#e5e7eb');
+                        
+                        nodes.update({ 
+                            id, 
+                            color: {
+                                background: bg,
+                                border: bd,
+                                highlight: {
+                                    background: bg,
+                                    border: bd
+                                }
+                            }, 
+                            font: Object.assign({}, baseFont, { color: fontColor }), 
+                            size: baseSize 
+                        });
+                    });
+                }
+                
+                // Reset all edges to their base styles with full opacity
+                if (window.__baseEdgeStyles) {
+                    edges.getIds().forEach(id => {
+                        const s = window.__baseEdgeStyles.get(id) || {};
+                        const baseColor = s.color || '#6b7280';
+                        const baseFont = s.font || { color: '#e5e7eb' };
+                        const baseWidth = s.width || 1.8;
+                        
+                        // Ensure full opacity for all edges
+                        const edgeColor = ensureOpaque(baseColor);
+                        const fontColor = ensureOpaque(baseFont.color || '#e5e7eb');
+                        
+                        edges.update({ 
+                            id, 
+                            color: { 
+                                color: edgeColor, 
+                                highlight: edgeColor, 
+                                hover: edgeColor 
+                            }, 
+                            font: Object.assign({}, baseFont, { color: fontColor }), 
+                            width: baseWidth 
+                        });
+                    });
+                }
+                
+                // Clear highlight tracking
+                window.__highlightNodes = null;
+                window.__highlightEdges = null;
+                window.__lowAlpha = null;
+                
+                console.log('All styles reset to base with full opacity');
+            } catch(e) {
+                console.log('Error in resetStylesToBase:', e);
+            }
+        }
+
+        // New function: completely reset all highlighting and restore original state
+        function completelyResetAllHighlights() {
+            try {
+                console.log('Completely resetting all highlights...');
+                
+                // First, clear all global highlight state
+                window.__highlightNodes = null;
+                window.__highlightEdges = null;
+                window.__lowAlpha = null;
+                
+                // Force all nodes back to full opacity and original styles
+                nodes.getIds().forEach(id => {
+                    const n = nodes.get(id);
+                    if (!n) return;
+                    
+                    // Get the original base style
+                    const baseStyle = window.__baseNodeStyles ? window.__baseNodeStyles.get(id) : null;
+                    
+                    if (baseStyle) {
+                        // Use base style with full opacity
+                        const bg = ensureOpaque(baseStyle.color.background || baseStyle.color.color || '#e5e7eb');
+                        const bd = ensureOpaque(baseStyle.color.border || baseStyle.color.color || '#c9d1d9');
+                        const fontColor = ensureOpaque(baseStyle.font.color || '#e5e7eb');
+                        
+                        nodes.update({ 
+                            id, 
+                            color: {
+                                background: bg,
+                                border: bd,
+                                highlight: {
+                                    background: bg,
+                                    border: bd
+                                }
+                            }, 
+                            font: Object.assign({}, baseStyle.font, { color: fontColor }), 
+                            size: baseStyle.size || 20
+                        });
+                    } else {
+                        // Fallback: force full opacity on current style
+                        const currentColor = n.color || { background: '#e5e7eb', border: '#c9d1d9' };
+                        const bg = ensureOpaque(currentColor.background || currentColor.color || '#e5e7eb');
+                        const bd = ensureOpaque(currentColor.border || currentColor.color || '#c9d1d9');
+                        const fontColor = ensureOpaque((n.font || { color: '#e5e7eb' }).color || '#e5e7eb');
+                        
+                        nodes.update({ 
+                            id, 
+                            color: {
+                                background: bg,
+                                border: bd,
+                                highlight: {
+                                    background: bg,
+                                    border: bd
+                                }
+                            }, 
+                            font: Object.assign({}, n.font || {}, { color: fontColor }), 
+                            size: n.size || 20
+                        });
+                    }
+                });
+                
+                // Force all edges back to full opacity and original styles
+                edges.getIds().forEach(id => {
+                    const e = edges.get(id);
+                    if (!e) return;
+                    
+                    // Get the original base style
+                    const baseStyle = window.__baseEdgeStyles ? window.__baseEdgeStyles.get(id) : null;
+                    
+                    if (baseStyle) {
+                        // Use base style with full opacity
+                        const edgeColor = ensureOpaque(baseStyle.color);
+                        const fontColor = ensureOpaque(baseStyle.font.color || '#e5e7eb');
+                        
+                        edges.update({ 
+                            id, 
+                            color: { 
+                                color: edgeColor, 
+                                highlight: edgeColor, 
+                                hover: edgeColor 
+                            }, 
+                            font: Object.assign({}, baseStyle.font, { color: fontColor }), 
+                            width: baseStyle.width || 1.8
+                        });
+                    } else {
+                        // Fallback: force full opacity on current style
+                        const currentColor = (e.color && (e.color.color || e.color)) || '#6b7280';
+                        const edgeColor = ensureOpaque(currentColor);
+                        const fontColor = ensureOpaque((e.font || { color: '#e5e7eb' }).color || '#e5e7eb');
+                        
+                        edges.update({ 
+                            id, 
+                            color: { 
+                                color: edgeColor, 
+                                highlight: edgeColor, 
+                                hover: edgeColor 
+                            }, 
+                            font: Object.assign({}, e.font || {}, { color: fontColor }), 
+                            width: e.width || 1.8
+                        });
+                    }
+                });
+                
+                console.log('All highlights completely reset');
+            } catch(e) {
+                console.log('Error in completelyResetAllHighlights:', e);
+            }
+        }
+
+        // Helper: reset only colors/opacity (keep positions, sizes, zoom intact)
+        function resetColorsOnly() {
+            try {
+                console.log('resetColorsOnly: Starting color reset to FIXED base styles...');
+                
+                // Build batched updates using FIXED_BASE_STYLES only
+                const nodeUpdates = [];
+                const edgeUpdates = [];
+
+                // Nodes: ALWAYS use the fixed base style - no exceptions
+                nodes.getIds().forEach(id => {
+                    nodeUpdates.push({ 
+                        id, 
+                        color: {
+                            background: FIXED_BASE_STYLES.node.color.background,
+                            border: FIXED_BASE_STYLES.node.color.border,
+                            highlight: {
+                                background: FIXED_BASE_STYLES.node.color.highlight.background,
+                                border: FIXED_BASE_STYLES.node.color.highlight.border
+                            }
+                        },
+                        font: {
+                            color: FIXED_BASE_STYLES.node.font.color,
+                            size: FIXED_BASE_STYLES.node.font.size,
+                            face: FIXED_BASE_STYLES.node.font.face
+                        },
+                        opacity: FIXED_BASE_STYLES.node.opacity
+                    });
+                });
+
+                // Edges: ALWAYS use the fixed base style - no exceptions  
+                edges.getIds().forEach(id => {
+                    edgeUpdates.push({ 
+                        id, 
+                        color: {
+                            color: FIXED_BASE_STYLES.edge.color.color,
+                            highlight: FIXED_BASE_STYLES.edge.color.highlight,
+                            hover: FIXED_BASE_STYLES.edge.color.hover
+                        },
+                        font: {
+                            color: FIXED_BASE_STYLES.edge.font.color,
+                            size: FIXED_BASE_STYLES.edge.font.size,
+                            face: FIXED_BASE_STYLES.edge.font.face
+                        },
+                        width: FIXED_BASE_STYLES.edge.width,
+                        opacity: FIXED_BASE_STYLES.edge.opacity
+                    });
+                });
+
+                // Apply all updates at once
+                if (nodeUpdates.length) {
+                    console.log('Resetting', nodeUpdates.length, 'nodes to fixed base style');
+                    nodes.update(nodeUpdates);
+                }
+                if (edgeUpdates.length) {
+                    console.log('Resetting', edgeUpdates.length, 'edges to fixed base style');
+                    edges.update(edgeUpdates);
+                }
+                
+                console.log('resetColorsOnly: All elements reset to FIXED base styles');
+            } catch(e) { 
+                console.log('resetColorsOnly error:', e); 
+            }
+        }
+
+        function clearHighlight() {
+            // 1. Clear all global state that controls highlighting
+            window.__highlightNodes = null;
+            window.__highlightEdges = null;
+            window.__lowAlpha = null;
+
+            // 2. Reset all node/edge styles to the fixed, default appearance
+            resetColorsOnly();
+
+            // 3. Force vis.js to redraw itself with the new styles
+            try {
+                if (network && typeof network.redraw === 'function') {
+                    network.redraw();
+                }
+            } catch (e) {
+                console.error('Error during network.redraw() in clearHighlight:', e);
+            }
+
+            // 4. Force the external label layer to redraw itself
+            try {
+                if (window.__afterDrawingLabels && typeof window.__afterDrawingLabels === 'function') {
+                    window.__afterDrawingLabels();
+                }
+            } catch (e) {
+                console.error('Error during __afterDrawingLabels() in clearHighlight:', e);
+            }
+            console.log('clearHighlight: All visual states have been reset.');
+        }
+
+        // Global function for re-rendering MathJax after dynamic content updates
+        window.renderMathAfterLoad = function() {
+            if (window.MathJax) {
+                MathJax.typesetPromise().catch((err) => console.log('MathJax error:', err));
+            }
+        };
+
+        // Initialize MathJax after page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait a bit for MathJax to be ready
+            setTimeout(() => {
+                if (window.MathJax) {
+                    MathJax.typesetPromise().catch((err) => console.log('MathJax error:', err));
+                }
+            }, 1000);
+            
+            // Capture base styles after network is fully loaded
+            setTimeout(() => {
+                if (typeof initializeBaseStyles === 'function') {
+                    initializeBaseStyles();
+                    console.log('Base styles captured for reset functionality');
+                }
+            }, 2000);
+        });
+
+    </script>
+</body>
+</html>
+    

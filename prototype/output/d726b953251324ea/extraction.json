@@ -1,0 +1,683 @@
+{
+  "paper_metadata": {
+    "doi": "10.1002/smj.695",
+    "title": "COMPETITIVE INTENSITY AND COLLABORATION: IMPACT ON FIRM GROWTH ACROSS TECHNOLOGICAL ENVIRONMENTS",
+    "authors": [
+      "Siah Hwee Ang"
+    ],
+    "publication_year": 2008,
+    "journal": "Strategic Management Journal",
+    "research_type": "Quantitative",
+    "research_context": "Manufacturing sector firms (1,004 firms, 2,828 firm-years) and 378 collaborations in Singapore (1994–1996); industry technology intensity classified per OECD (1997) into high, medium-high, medium-low, low.",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "competitive intensity",
+      "definition": "Firm-level competitive intensity: the degree of competitive pressure faced by a firm stemming from competitors and market structure.  Example (conceptual definition used in paper): Barnett (1997) defines competitive intensity at the firm level as the effect that a firm has on other firms' survival chances; the paper uses the idea that stronger competitors increase competitive intensity and that firms face heterogeneous competitive intensities depending on resources and competitive efforts.",
+      "context_snippet": "Barnett (1997) deﬁnes competitive intensity at the ﬁrm level, as the effect that a ﬁrm has on other ﬁrms’ survival chances.  This deﬁnition recognizes that some ﬁrms are likely to exert greater competitive pressures and affect the viability of competitors more signiﬁcantly than others.",
+      "aliases": null
+    },
+    {
+      "term": "collaboration",
+      "definition": "Interfirm collaboration: voluntary cooperation between firms involving exchange, sharing, or co-development of products, technologies, or services.  Example: collaboration allows firms to overcome resource constraints, shorten development cycles, achieve efficiency and speed to market, and potentially preempt rivals' access to complementary resources.",
+      "context_snippet": "I deﬁne collaboration as voluntary cooperation between ﬁrms involving exchange, sharing, or co-development of products, technologies, or services (Gulati, 1998).",
+      "aliases": null
+    },
+    {
+      "term": "firm growth",
+      "definition": "Firm growth operationalized as changes in firm sales over time.  The paper models growth in sales and estimates the first difference of log sales; theoretically growth refers to increases in firm size/market position as proxied by sales.",
+      "context_snippet": "Following prior research (Podolny, Stuart, and Hannan, 1996; Stuart, 2000), I model firm growth as $$S_{i,t+1} = S_{i,t} \\exp(\\pi' x_{it}) \\epsilon$$ where $$S_{i,t}$$ is the sales of firm i at time t and $$x_{it}$$ is a covariate matrix.  The first difference of log sales is estimated using ordinary least square regression for the tests on firm growth.",
+      "aliases": [
+        "growth"
+      ]
+    },
+    {
+      "term": "technology intensity",
+      "definition": "Industry-level technology intensity: the ratio of research and development (R&D) expenditure and embodied/indirect technology flows during R&D processes to output; used as a moderator capturing how technology-intensive an industry is (OECD, 1997).  Higher technology intensity implies greater technological opportunities, faster technological change, greater irreversibility of commitments, and higher uncertainty.",
+      "context_snippet": "An industry’s technology intensity is defined as the ratio of research and development (R&D) expenditure and indirect technology flows during the R&D processes to output (Organization of Economic Cooperation and Development (OECD), 1997).  More technology intensive industries are characterized by significantly greater technological opportunities, more demands for multiple technological developments, and higher speed of technological changes.",
+      "aliases": [
+        "industry technology intensity",
+        "industry tech intensity"
+      ]
+    }
+  ],
+  "construct_dimensions": [
+    {
+      "parent_construct": "technology intensity",
+      "dimension_construct": "high technology intensity"
+    },
+    {
+      "parent_construct": "technology intensity",
+      "dimension_construct": "medium-high technology intensity"
+    },
+    {
+      "parent_construct": "technology intensity",
+      "dimension_construct": "medium-low technology intensity"
+    },
+    {
+      "parent_construct": "technology intensity",
+      "dimension_construct": "low technology intensity"
+    }
+  ],
+  "relationships": [
+    {
+      "subject_term": "competitive intensity",
+      "object_term": "collaboration",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Mixed",
+      "non_linear_type": "Inverted_U-shaped",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Hypothesis 1. There is an inverted-U-shaped relationship between competitive intensity and collaboration, such that ﬁrms facing low and high levels of competitive intensity will collaborate less often than those facing moderate levels of competitive intensity.",
+      "boundary_conditions": "Moderated by industry technology intensity (see Hypothesis 2).",
+      "replication_outcome": null,
+      "context_snippet": "Firms facing low and high levels of competitive intensity collaborate less often than those facing moderate levels of competitive intensity.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "No experimental/exogenous identification described; results from fixed-effects Poisson regressions on counts of collaborations.",
+      "section_header": "Hypotheses Development",
+      "line_index_range": null,
+      "supporting_theories": [
+        "resource-based view",
+        "competitive dynamics"
+      ],
+      "moderators": [
+        "technology intensity"
+      ],
+      "mediators": [],
+      "controls": [
+        "firm age",
+        "firm size",
+        "number of business lines",
+        "publicly listed",
+        "firm origin",
+        "industry",
+        "year"
+      ]
+    },
+    {
+      "subject_term": "competitive intensity",
+      "object_term": "collaboration",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Insignificant",
+      "non_linear_type": "Inverted_U-shaped",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Model 2: the competitive intensity variable is positive and significant while its squared term is negative though not significant.  Thus, Hypothesis 1 is partially supported.",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Poisson regression (fixed-effects) on number of collaborations: competitive intensity positive and competitive intensity squared negative (in full sample the squared term not significant); Hypothesis 1 partially supported.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": "Poisson-Collaboration-FullSample",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Fixed-effects Poisson regression on count of collaborations; no exogenous identification; correlational inference based on observational panel data.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "resource-based view"
+      ],
+      "moderators": [
+        "technology intensity"
+      ],
+      "mediators": [],
+      "controls": [
+        "firm age",
+        "firm size",
+        "number of business lines",
+        "publicly listed",
+        "firm origin",
+        "industry",
+        "year"
+      ]
+    },
+    {
+      "subject_term": "competitive intensity",
+      "object_term": "collaboration",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Mixed",
+      "non_linear_type": "Inverted_U-shaped",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Hypothesis 2. The inverted-U-shaped relationship between competitive intensity and collaboration is stronger in more technology intensive industries than in less technology intensive industries.",
+      "boundary_conditions": "Relationship strength contingent on industry technology intensity.",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 2 predicts steeper slopes (stronger inverted-U) in more technology intensive industries.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "Hypotheses Development",
+      "line_index_range": null,
+      "supporting_theories": [
+        "contingency theory",
+        "resource-based view"
+      ],
+      "moderators": [
+        "technology intensity"
+      ],
+      "mediators": [],
+      "controls": [
+        "firm age",
+        "firm size",
+        "number of business lines",
+        "publicly listed",
+        "firm origin",
+        "industry",
+        "year"
+      ]
+    },
+    {
+      "subject_term": "competitive intensity",
+      "object_term": "collaboration",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Mixed",
+      "non_linear_type": "Inverted_U-shaped",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Significant coefﬁcients in both the competitive intensity and the competitive intensity squared terms are only found in more technology intensive industries.  This suggests that the inverted-U-shaped relationship between competitive intensity and collaboration is stronger in more technology intensive industries than in less technology intensive industries, supporting Hypothesis 2.",
+      "boundary_conditions": "Effect observed primarily in high and medium-high technology intensity industry subsamples (per subsample Poisson regressions).",
+      "replication_outcome": null,
+      "context_snippet": "Subsample Poisson regressions: inverted-U significant in more technology intensive industry groups; not significant in low tech industries.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": "Poisson-Collaboration-ByTechIntensity",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Subsample (by OECD industry tech-intensity) fixed-effects Poisson regressions; no exogenous identification.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "contingency theory"
+      ],
+      "moderators": [
+        "technology intensity"
+      ],
+      "mediators": [],
+      "controls": [
+        "firm age",
+        "firm size",
+        "number of business lines",
+        "publicly listed",
+        "firm origin",
+        "industry",
+        "year"
+      ]
+    },
+    {
+      "subject_term": "collaboration",
+      "object_term": "firm growth",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Hypothesis 3. Growth from collaboration is higher for firms facing lower levels of competitive intensity than for firms facing higher levels of competitive intensity.",
+      "boundary_conditions": "Interaction of collaboration and competitive intensity predicted to affect firm growth.",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 3 predicts that firms facing lower competitive intensity derive greater growth from collaboration than firms facing higher competitive intensity.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H3",
+      "claim_id": "H3",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "Hypotheses Development",
+      "line_index_range": null,
+      "supporting_theories": [
+        "resource-based view"
+      ],
+      "moderators": [
+        "competitive intensity"
+      ],
+      "mediators": [],
+      "controls": [
+        "firm age",
+        "firm size",
+        "number of business lines",
+        "publicly listed",
+        "firm origin",
+        "industry",
+        "year"
+      ]
+    },
+    {
+      "subject_term": "collaboration",
+      "object_term": "firm growth",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Insignificant",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Model 2: The inclusion of the interaction terms of competitive intensity and collaboration in the full sample model: A negative sign for the term competitive intensity × collaboration and a positive sign for the term competitive intensity^2 × collaboration suggest that firms facing lower levels of competitive intensity will have lesser growth from collaboration as compared to firms facing higher levels of competitive intensity. Thus, Hypothesis 3 is not supported.",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "Regression of first difference of log sales (OLS) with interaction terms: Hypothesis 3 not supported in full-sample tests; interaction terms do not show the hypothesized pattern.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H3",
+      "claim_id": "H3",
+      "study_id": "OLS-Growth-FullSample",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "OLS regressions on $$\\Delta \\log(S_{i,t})$$ including predicted collaboration (from Poisson) and interaction terms; no exogenous identification.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "resource-based view"
+      ],
+      "moderators": [
+        "competitive intensity",
+        "technology intensity"
+      ],
+      "mediators": [],
+      "controls": [
+        "firm age",
+        "firm size",
+        "number of business lines",
+        "publicly listed",
+        "firm origin",
+        "industry",
+        "year"
+      ]
+    },
+    {
+      "subject_term": "collaboration",
+      "object_term": "firm growth",
+      "status": "Hypothesized",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Hypothesis 4: The higher growth from collaboration for firms facing lower levels of competitive intensity than for firms facing higher levels of competitive intensity is greater in more technology intensive industries than in less technology intensive industries.",
+      "boundary_conditions": "Effect predicted to be stronger in more technology intensive industries.",
+      "replication_outcome": null,
+      "context_snippet": "Hypothesis 4 predicts that the competitive intensity × collaboration effect on growth differs by industry technology intensity, with larger gaps in more technology intensive industries.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H4",
+      "claim_id": "H4",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": null,
+      "section_header": "Hypotheses Development",
+      "line_index_range": null,
+      "supporting_theories": [
+        "contingency theory",
+        "resource-based view"
+      ],
+      "moderators": [
+        "technology intensity",
+        "competitive intensity"
+      ],
+      "mediators": [],
+      "controls": [
+        "firm age",
+        "firm size",
+        "number of business lines",
+        "publicly listed",
+        "firm origin",
+        "industry",
+        "year"
+      ]
+    },
+    {
+      "subject_term": "collaboration",
+      "object_term": "firm growth",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "It is evident that firms facing lower levels of competitive intensity will have greater growth from collaboration as compared to firms facing higher levels of competitive intensity only in the case of high technology intensive industries. Thus, Hypothesis 4 is supported.",
+      "boundary_conditions": "Observed effect is specific to high technology intensive industries; in medium-low industries the pattern is reversed.",
+      "replication_outcome": null,
+      "context_snippet": "Subsample OLS regressions by technology intensity show that the interaction effect (competitive intensity × collaboration × technology intensity) leads to greater growth from collaboration for low-competitive-intensity firms in high-technology industries.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H4",
+      "claim_id": "H4",
+      "study_id": "OLS-Growth-ByTechIntensity",
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "OLS regressions on $$\\Delta \\log(S_{i,t})$$ with interaction terms and predicted collaboration; subsample analyses by OECD industry tech-intensity; no exogenous causal identification.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "contingency theory"
+      ],
+      "moderators": [
+        "technology intensity",
+        "competitive intensity"
+      ],
+      "mediators": [],
+      "controls": [
+        "firm age",
+        "firm size",
+        "number of business lines",
+        "publicly listed",
+        "firm origin",
+        "industry",
+        "year"
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "competitive intensity",
+      "name": "firm-level competitive intensity (log of summed average competition across product markets)",
+      "details": "For each firm, identify the product markets the firm participates in. For each product market m compute average competition as product market sales divided by number of competing firms. Sum average competition across the firm's participating product markets and take the natural log. Data sources: Report of the Census of Industrial Production (Economic Development Board) for 1994–1996 and firm business line listings from Dun & Bradstreet directory.",
+      "instrument": "Administrative industry statistics (Census of Industrial Production) combined with firm business-line listings (Dun & Bradstreet).",
+      "scale_items": null,
+      "scoring_procedure": "Compute per-market average competition, sum across markets for the firm, then take log.",
+      "formula": "$$AverageCompetition_{m} = \\frac{ProductMarketSize_{m}}{NumberOfFirms_{m}}\\\\CompetitiveIntensity_{i} = \\log\\left(\\sum_{m \\in Markets_i} AverageCompetition_{m}\\right)$$",
+      "reliability": null,
+      "validity": "Construct grounded in Barnett (1997) conceptualization; measure takes into account differing product-market participation across firms.",
+      "context_adaptations": "Applied to Singapore manufacturing product markets (1994–1996); product-market sizes and firm counts per market used.",
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "collaboration",
+      "name": "count of collaboration agreements per firm-year",
+      "details": "Number count of collaboration agreements established by a firm in each year identified via content analysis of business newspaper articles (The Straits Times and The Business Times) for 1994–1996. Collaboration defined as voluntary cooperation involving exchange, sharing or co-development of products, technologies, or services.",
+      "instrument": "Content analysis of English-language Singapore newspapers (The Straits Times, The Business Times) during 1994–1996.",
+      "scale_items": null,
+      "scoring_procedure": "Count reported collaboration agreements per firm in each year (integer 0,1,2,...).",
+      "formula": null,
+      "reliability": "Procedural: consistent coding rules applied; inter-coder reliability not reported in paper.",
+      "validity": "Face validity via explicit newspaper reports; covers observable collaboration announcements.",
+      "context_adaptations": "Includes partnerships, co-developments, joint ventures as reported in newspapers.",
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "technology intensity",
+      "name": "OECD industry technology intensity classification",
+      "details": "Industry-level classification into high, medium-high, medium-low, and low technology intensity based on OECD (1997) criterion: ratio of R&D expenditure and embodied technology to output. Firms assigned classification according to their 11 manufacturing industries in the dataset.",
+      "instrument": "OECD (1997) industry classification applied to Singapore manufacturing subsectors.",
+      "scale_items": [
+        "high",
+        "medium-high",
+        "medium-low",
+        "low"
+      ],
+      "scoring_procedure": "Assign industry label per OECD taxonomy (examples: paints/pharmaceuticals/electronics = high; printing/food = low).",
+      "formula": null,
+      "reliability": null,
+      "validity": "Uses standard OECD definition and taxonomy; applied at industry (not firm) level.",
+      "context_adaptations": "Mapped the 11 major Singapore manufacturing industries in the sample to OECD categories.",
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "firm age",
+      "name": "firm age (years)",
+      "details": "Number of years since establishment of operations in Singapore (as reported in Dun & Bradstreet directory).",
+      "instrument": "Dun & Bradstreet Key Business Directory (1992/93–1997/98).",
+      "scale_items": null,
+      "scoring_procedure": "Integer years from establishment to observation year.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Standard administrative measure for firm age.",
+      "context_adaptations": null,
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "firm size",
+      "name": "firm size category",
+      "details": "Categorical indicator variables for firm size: large (>=500 employees), medium, small (<100 employees); used as controls to account for resources/scale advantages.",
+      "instrument": "Employee counts from Dun & Bradstreet directory.",
+      "scale_items": [
+        "large (>=500 employees)",
+        "medium",
+        "small (<100 employees)"
+      ],
+      "scoring_procedure": "Create dummy variables for size categories; included in regressions.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Standard size categorization; used as control.",
+      "context_adaptations": null,
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "number of business lines",
+      "name": "count of lines of business",
+      "details": "Number of distinct business/product lines in which the firm participates (based on directory listing); used as a control for firm diversification and scope.",
+      "instrument": "Dun & Bradstreet directory business-line listings.",
+      "scale_items": null,
+      "scoring_procedure": "Integer count of listed business lines; included as continuous control.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Administrative listing-based measure.",
+      "context_adaptations": null,
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "publicly listed",
+      "name": "public listing indicator",
+      "details": "Dummy indicator for whether the firm is publicly listed (1 = listed, 0 = not listed); used as a control for access to capital and transparency.",
+      "instrument": "Dun & Bradstreet directory and public records.",
+      "scale_items": null,
+      "scoring_procedure": "Binary coding.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Standard indicator for listing status.",
+      "context_adaptations": null,
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "firm origin",
+      "name": "firm country/region of origin indicators",
+      "details": "Dummy indicators for firm origin: Triad origin (Japan, Europe, United States), Asian origin (excluding Japan and Singapore), Singapore origin; used as controls for differing resources/experience.",
+      "instrument": "Dun & Bradstreet directory ownership/origin information.",
+      "scale_items": [
+        "Triad origin",
+        "Asian origin",
+        "Singapore origin"
+      ],
+      "scoring_procedure": "Binary dummies representing origin categories; included in regressions.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Administrative origin categorization.",
+      "context_adaptations": null,
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "industry",
+      "name": "industry dummy variables",
+      "details": "Dummy variables representing the firm's manufacturing industry (11 major manufacturing industries used) to control for fixed industry effects.",
+      "instrument": "Industry assignment from Dun & Bradstreet and Census data.",
+      "scale_items": null,
+      "scoring_procedure": "Create industry dummies for regression controls.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Controls for unobserved industry fixed effects.",
+      "context_adaptations": null,
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "year",
+      "name": "year dummy variables",
+      "details": "Dummy variables for observation year (1994, 1995, 1996) to control for time effects.",
+      "instrument": "Observation year in pooled cross-section.",
+      "scale_items": null,
+      "scoring_procedure": "Create year dummies for regressions.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Controls for year-specific shocks/trends.",
+      "context_adaptations": null,
+      "study_id": "Poisson-Collaboration-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "firm growth",
+      "name": "first difference of log sales (growth)",
+      "details": "Firm growth measured as the first difference of log sales between t and t+1. The growth model used: $$S_{i,t+1} = S_{i,t} \\exp(\\pi' x_{it}) \\epsilon$$ and regressions estimate $$\\Delta \\log(S_{i,t})$$ via OLS with covariates and interaction terms (competitive intensity, collaboration, technology intensity, controls).",
+      "instrument": "Sales figures from Dun & Bradstreet directory (pooled cross-sections for 1994–1996).",
+      "scale_items": null,
+      "scoring_procedure": "Compute $$\\Delta \\log(S_{i,t}) = \\log(S_{i,t+1}) - \\log(S_{i,t})$$ and use as dependent variable in OLS regressions.",
+      "formula": "$$S_{i,t+1} = S_{i,t} \\exp(\\pi' x_{it}) \\epsilon\\\\\\Delta \\log(S_{i,t}) = \\log(S_{i,t+1}) - \\log(S_{i,t})$$",
+      "reliability": null,
+      "validity": "Standard growth measure in empirical strategy research; used by Podolny et al. (1996) and Stuart (2000).",
+      "context_adaptations": "Used in OLS regressions to test H3 and H4; some models substitute predicted collaboration from Poisson model to avoid endogeneity.",
+      "study_id": "OLS-Growth-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3"
+    },
+    {
+      "construct_term": "collaboration",
+      "name": "predicted collaboration (instrumented via Poisson)",
+      "details": "To avoid correlation with the growth regression error term, the analysis substitutes the predicted value of collaboration from the Poisson collaboration model into the growth regressions. Predicted collaboration is obtained from the fixed-effects Poisson regression of collaboration on competitive intensity, controls and industry/year dummies.",
+      "instrument": "Two-stage approach: Poisson fixed-effects for count outcome produces predicted counts used in OLS growth regressions.",
+      "scale_items": null,
+      "scoring_procedure": "Estimate Poisson model for collaboration, compute predicted counts, include predicted collaboration as explanatory variable in OLS for growth.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Procedural approach to reduce endogeneity from using observed collaboration in growth regression; not an instrumental-variable identification with external instrument.",
+      "context_adaptations": "Used in OLS growth regressions reported in Table 4.",
+      "study_id": "OLS-Growth-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3"
+    },
+    {
+      "construct_term": "competitive intensity",
+      "name": "firm-level competitive intensity (log of summed average competition across product markets)",
+      "details": "Same operationalization as used in collaboration regressions (see earlier). Included as main moderator and as component in interaction terms in growth regressions.",
+      "instrument": "Census of Industrial Production product-market statistics combined with firm business-line listings.",
+      "scale_items": null,
+      "scoring_procedure": "Compute per-market average competition and take log of sum across firm's markets. Used directly and as squared term and in interactions in regressions.",
+      "formula": "$$CompetitiveIntensity_{i} = \\log\\left(\\sum_{m \\in Markets_i} \\frac{ProductMarketSize_{m}}{NumberOfFirms_{m}}\\right)$$",
+      "reliability": null,
+      "validity": "See Methods; captures variation in competition across firms within same industry.",
+      "context_adaptations": null,
+      "study_id": "OLS-Growth-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3"
+    },
+    {
+      "construct_term": "technology intensity",
+      "name": "OECD industry technology intensity classification",
+      "details": "Same industry-level classification as used in collaboration regressions; used as moderator and for subsample analyses. High/medium-high/medium-low/low categories used to split sample for subsample regressions.",
+      "instrument": "OECD (1997) industry taxonomy mapped to Singapore manufacturing industries.",
+      "scale_items": [
+        "high",
+        "medium-high",
+        "medium-low",
+        "low"
+      ],
+      "scoring_procedure": "Assign each firm the technology intensity level of its industry and use as moderator variable or to split sample into subsamples for regressions.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Standard OECD-based classification; applied at industry level.",
+      "context_adaptations": "Used to run subsample regressions and interaction tests reported for H2 and H4.",
+      "study_id": "OLS-Growth-FullSample",
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H4"
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "resource-based view",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "The resource-based view suggests that the heterogeneous resources that a firm possesses result in favorable strategic and social positions that affect its ability to collaborate.",
+      "evidence": "Used to justify why firms with distinctive resources face different collaborative incentives and opportunities.",
+      "section_header": "Background and Hypotheses Development",
+      "confidence": 0.8
+    },
+    {
+      "name": "contingency theory",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H2",
+        "H4"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Technology is widely recognized as a major contingency factor in determining firm structure and behavior (Burns and Stalker, 1961; Lawrence and Lorsch, 1967; Perrow, 1967).",
+      "evidence": "Used to justify moderating role of industry technology intensity on competitive intensity–collaboration and collaboration–growth relationships.",
+      "section_header": "Background and Hypotheses Development",
+      "confidence": 0.8
+    },
+    {
+      "name": "competitive dynamics (Barnett, 1997)",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H2"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "Barnett (1997) suggests that a firm's competitive intensity is influenced by its ability to gain market share with the best use of its resources in evolving and uncertain environments.",
+      "evidence": "Used to conceptualize firm-level heterogeneity in competitive intensity and to ground Hypotheses 1 and 2.",
+      "section_header": "Background and Hypotheses Development",
+      "confidence": 0.7
+    }
+  ],
+  "coverage_report": {
+    "constructs": 4,
+    "relationships": 8,
+    "measurements": 16,
+    "reason": "Extraction limited to constructs and relationships explicitly tied to numbered hypotheses (H1–H4) and their empirical tests. The paper contains many more variables/controls and detailed regression results; minimal coverage quotas for the controlled-vocabulary checklist (≥10 constructs, ≥12 relationships, ≥6 measurements) are not met because extraction was scoped to core hypothesis-anchored constructs and required empirical pairings.",
+    "errors": [
+      "insufficient_coverage"
+    ]
+  }
+}

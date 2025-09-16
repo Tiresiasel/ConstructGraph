@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "construct-graph"
+version = "0.1.0"
+description = "Build and visualize a research knowledge graph from PDFs"
+requires-python = ">=3.10"
+readme = "README.md"
+authors = [{name = "ConstructGraph Maintainers"}]
+dependencies = [
+  "py2neo>=2021.2.4",
+  "openai>=1.3.0",
+  "pypdf>=3.17.1",
+  "qdrant-client>=1.7.0",
+  "sentence-transformers>=2.2.2",
+  "numpy>=1.24.3",
+  "jinja2>=3.1.2",
+]
+
+[project.scripts]
+construct-graph = "construct_graph.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+
+

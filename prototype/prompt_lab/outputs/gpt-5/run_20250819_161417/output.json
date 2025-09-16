@@ -1,0 +1,306 @@
+{
+  "paper_metadata": {
+    "doi": "10.1002/smj.2110",
+    "title": "FROM CORE TO PERIPHERY AND BACK: A STUDY ON THE DELIBERATE SHAPING OF KNOWLEDGE FLOWS IN INTERFIRM DYADS AND NETWORKS",
+    "authors": [
+      "Andrea Lipparini",
+      "Gianni Lorenzoni",
+      "Simone Ferriani"
+    ],
+    "publication_year": 2014,
+    "journal": "Strategic Management Journal",
+    "research_type": "Qualitative",
+    "research_context": "Italian powered two-wheeler (motorcycle and scooter) industry; 892 projects across 184 buyer–supplier and supplier–supplier relationships among 17 manufacturers (core firms) and 13 first-tier suppliers (peripheral firms), 2004–2009.",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "knowledge-enhancing practices",
+      "definition": "Distinctive patterns of action and interaction between core firms—buyers—and peripheral firms—suppliers—that enable the exchange, recombination, and co-creation of specialized knowledge, purposefully implemented to allow firms to leverage knowledge located beyond their organizational boundaries.",
+      "context_snippet": "“…a set of purposefully implemented knowledge-enhancing practices—which we define as distinctive patterns of action and interaction between core firms—‘buyers’—and peripheral firms—‘suppliers’—that enable the exchange, recombination, and co-creation of specialized knowledge—allow firms to leverage knowledge located beyond their organizational boundaries.”",
+      "aliases": [
+        "knowledge enhancing practices",
+        "interfirm knowledge-enhancing practices"
+      ]
+    },
+    {
+      "term": "core firms",
+      "definition": "Buying firms (lead assemblers) that possess prominence gained through relational skills and central positions in network structures; they set up and orchestrate dyads and networks and deliberately lead and facilitate knowledge sharing and deployment across partners.",
+      "context_snippet": "“…core buyer firms who were responsible for setting up and subsequently ‘orchestrating’ dyads and networks…” and “…core firms, which possess prominence gained through relational skills and their central position in network structures, leverage their position to harness the knowledge dispersed among peripheral firms.”",
+      "aliases": [
+        "buyers",
+        "buying firms",
+        "lead assemblers",
+        "core buyer firms"
+      ]
+    },
+    {
+      "term": "peripheral firms",
+      "definition": "First-tier suppliers connected to core firms; they receive, refine, and return knowledge, share proprietary know-how, and engage in inter-supplier learning when connected and supported by a common core firm.",
+      "context_snippet": "“…peripheral firms—‘suppliers’…” and “…knowledge flowing between peripheral firms that are linked to the same core firm, and learning extends from dyads to the network.”",
+      "aliases": [
+        "suppliers",
+        "first-tier suppliers",
+        "peripheral suppliers"
+      ]
+    },
+    {
+      "term": "knowledge flows",
+      "definition": "Flows of information and know-how at different codification levels between firms in dyads and networks, including outbound (core-to-peripheral), inbound (peripheral-to-core), bidirectional (simultaneous), and inter-supplier flows promoted by core firms.",
+      "context_snippet": "“We present a multiphase model of interfirm knowledge creation and exchange across dyads and networks…” and “Core firms are channeling knowledge (information and know-how) to peripheral firms in different forms and at different codification levels…”",
+      "aliases": [
+        "knowledge transfer",
+        "knowledge mobility"
+      ]
+    },
+    {
+      "term": "interfirm dyads",
+      "definition": "Voluntary collaborative arrangements of strategic significance between two independent organizations, based on written contracts and aimed at sharing tacit and explicit knowledge.",
+      "context_snippet": "“…ties between two entities, which we define as voluntary collaborative arrangements of strategic significance between independent organizations, based on written contracts and aimed at sharing tacit and explicit knowledge.”",
+      "aliases": [
+        "dyads",
+        "buyer–supplier ties"
+      ]
+    },
+    {
+      "term": "interfirm networks",
+      "definition": "Collaborative sets of non-equity, long-term cooperative relationships linking multiple firms; viewed as outcomes of generative rules of knowledge coordination and as viable organizational forms for sharing and generating valuable knowledge.",
+      "context_snippet": "“We posit that networks become viable organizational forms for sharing and generating valuable knowledge…” and “Following Kogut (2000), we see networks as the outcomes of generative rules of knowledge coordination…”",
+      "aliases": [
+        "collaborative network",
+        "network"
+      ]
+    },
+    {
+      "term": "interfirm knowledge exchange and creation",
+      "definition": "The processes by which firms in dyads and networks transfer, recombine, and co-create specialized knowledge across organizational boundaries, structured in phases and across functional subsets (research and development, operations, and other upstream/downstream activities).",
+      "context_snippet": "“We present a multiphase model of interfirm knowledge creation and exchange across dyads and networks…”",
+      "aliases": [
+        "knowledge creation and exchange across dyads and networks"
+      ]
+    },
+    {
+      "term": "research and development",
+      "definition": "A focal organizational area and relational subset where firms share and co-develop product concepts, designs, engineering knowledge, and testing activities to enable knowledge exchange and creation.",
+      "context_snippet": "“…three broad functional areas: R&D, operations, and other up- and downstream activities, which we identified as the industry’s focal organizational areas for knowledge exchange and creation.”",
+      "aliases": [
+        "R&D"
+      ]
+    },
+    {
+      "term": "operations",
+      "definition": "A focal organizational area and relational subset encompassing production methods, scheduling, quality, logistics, and related practices through which firms exchange and improve operational knowledge.",
+      "context_snippet": "“…three broad functional areas: R&D, operations, and other up- and downstream activities, which we identified as the industry’s focal organizational areas for knowledge exchange and creation.”",
+      "aliases": []
+    },
+    {
+      "term": "upstream and downstream activities",
+      "definition": "A focal organizational area and relational subset beyond R&D and operations that includes market forecasting, cost management, marketing, after-sales, and broader managerial exchanges supporting knowledge flows.",
+      "context_snippet": "“…three broad functional areas: R&D, operations, and other up- and downstream activities, which we identified as the industry’s focal organizational areas for knowledge exchange and creation.”",
+      "aliases": [
+        "other upstream and downstream activities"
+      ]
+    },
+    {
+      "term": "bidirectional knowledge flows",
+      "definition": "Simultaneous, reciprocal exchanges of knowledge between core and peripheral firms that foster problem solving, codesign, co-engineering, and joint testing, making it difficult to identify a predominant direction.",
+      "context_snippet": "“Once knowledge transfer channels have been established, Phase 3 sees bidirectional flows, with core and peripheral firms exchanging knowledge simultaneously, making it difficult to identify a predominant direction.”",
+      "aliases": [
+        "simultaneous knowledge flows"
+      ]
+    },
+    {
+      "term": "collaborative knowledge",
+      "definition": "Knowledge that is co-created by partners through reciprocal exchange and joint activities in dyads, serving as a prerequisite for virtuous relational learning.",
+      "context_snippet": "“In Phase 3, firms reciprocally exchange knowledge and cocreate ‘collaborative knowledge’… a prerequisite for virtuous relational learning.”",
+      "aliases": [
+        "co-created knowledge"
+      ]
+    },
+    {
+      "term": "knowledge flows between peripheral firms",
+      "definition": "Inter-supplier knowledge exchanges promoted and supported by a common core firm, extending learning from dyads to the network.",
+      "context_snippet": "“In Phase 4, knowledge flows between peripheral firms that are linked to the same core firm, and learning extends from dyads to the network.”",
+      "aliases": [
+        "inter-supplier knowledge flows",
+        "supplier–supplier knowledge flows"
+      ]
+    }
+  ],
+  "construct_dimensions": [
+    {
+      "parent_construct": "interfirm knowledge exchange and creation",
+      "dimension_construct": "research and development"
+    },
+    {
+      "parent_construct": "interfirm knowledge exchange and creation",
+      "dimension_construct": "operations"
+    },
+    {
+      "parent_construct": "interfirm knowledge exchange and creation",
+      "dimension_construct": "upstream and downstream activities"
+    }
+  ],
+  "relationships": [
+    {
+      "subject_term": "core firms",
+      "object_term": "peripheral firms",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "In Phase 1, core firms channel information and know-how to selected suppliers, shaping outbound knowledge flows across R&D, operations, and other activities.",
+      "supporting_quote": "“In Phase 1, knowledge flows are mainly from core to peripheral firm, the former channeling information and know-how to a number of selected suppliers.”",
+      "boundary_conditions": "Italian powered two-wheeler industry collaborations (2004–2009) across R&D, operations, and other upstream/downstream activities.",
+      "replication_outcome": null,
+      "context_snippet": "“Core firms are channeling knowledge (information and know-how) to peripheral firms in different forms and at different codification levels…”",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": null,
+      "claim_id": "CC1",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "Phase 1—Knowledge flows from core firms to peripheral firms",
+      "line_index_range": null,
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "peripheral firms",
+      "object_term": "core firms",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "In Phase 2, suppliers return refined and proprietary knowledge to core firms, transferring specialized knowledge, design inputs, and operational capabilities.",
+      "supporting_quote": "“In Phase 2, knowledge flows reverse this direction, moving mainly to core firms from peripherals, who return some of the knowledge they originally received in more refined forms and transfer some of their own proprietary knowledge to the core firms.”",
+      "boundary_conditions": "Same industry setting and period; projects spanning R&D, operations, and upstream/downstream activities.",
+      "replication_outcome": null,
+      "context_snippet": "“Peripheral firms…providing specialized knowledge and technical information… sharing proprietary technology and know-how…”",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": null,
+      "claim_id": "CC2",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "Phase 2—Knowledge flows from peripheral firms to core firms",
+      "line_index_range": null,
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "bidirectional knowledge flows",
+      "object_term": "collaborative knowledge",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "In Phase 3, reciprocal exchanges via structured meetings, codesign and co-engineering, and joint testing lead to the cocreation of collaborative knowledge.",
+      "supporting_quote": "“In Phase 3, firms reciprocally exchange knowledge and cocreate ‘collaborative knowledge’… design engineers on both sides… working together on projects to share expertise, foster problem solving, and improve the efficiency and quality of product development.”",
+      "boundary_conditions": "Observed across multiple projects in the Italian two-wheeler industry; activities span R&D and operations.",
+      "replication_outcome": null,
+      "context_snippet": "“Phase 3 sees bidirectional flows, with core and peripheral firms exchanging knowledge simultaneously…”",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": null,
+      "claim_id": "CC3",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "Phase 3—Simultaneous, bidirectional knowledge flows between core and peripheral firms",
+      "line_index_range": null,
+      "supporting_theories": [],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "core firms",
+      "object_term": "knowledge flows between peripheral firms",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "In Phase 4, core firms promote and support knowledge flows between different peripheral firms, extending learning from dyads to the network.",
+      "supporting_quote": "“In the fourth model phase, we observed knowledge flowing between different peripheral firms, whose connection had been promoted and supported by a common core firm. … learning extends from dyads to the network.”",
+      "boundary_conditions": "Supplier–supplier collaborations linked by a common core firm within the Italian motorcycle industry network.",
+      "replication_outcome": null,
+      "context_snippet": "“Redeploying knowledge dispersed across collaborative networks requires that core firms possess (or develop) learning and teaching capabilities across organizational boundaries…”",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": null,
+      "claim_id": "CC4",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "Phase 4—Knowledge flows between peripheral firms",
+      "line_index_range": null,
+      "supporting_theories": [
+        "the network as knowledge"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "knowledge-enhancing practices",
+      "object_term": "interfirm knowledge exchange and creation",
+      "status": "Empirical_Result",
+      "evidence_type": "Qualitative",
+      "qualitative_finding": "Networks become viable organizational forms for sharing and generating valuable knowledge when purposefully implemented knowledge-enhancing practices are enacted by core firms to lead and facilitate knowledge sharing and deployment.",
+      "supporting_quote": "“We posit that networks become viable organizational forms for sharing and generating valuable knowledge when a set of purposefully implemented knowledge-enhancing practices… allow firms to leverage knowledge located beyond their organizational boundaries.”",
+      "boundary_conditions": "Observed in buyer–supplier networks in the Italian two-wheeler industry.",
+      "replication_outcome": null,
+      "context_snippet": "“Finally, we show how the effective creation and extraction of network value hinges on the purposeful enactment by core firms of practices designed to lead and facilitate knowledge sharing and deployment.”",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": null,
+      "claim_id": "CC5",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": "Qualitative",
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "The shaping of knowledge exchange and creation in dyads and network: a four-phase model",
+      "line_index_range": null,
+      "supporting_theories": [
+        "relational view",
+        "the network as knowledge"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    }
+  ],
+  "measurements": [],
+  "core_theories": [
+    {
+      "name": "the network as knowledge",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC4",
+        "CC5"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "“Following Kogut (2000), we see networks as the outcomes of generative rules of knowledge coordination…”",
+      "evidence": "Used to frame how orchestrated knowledge mobility across the network enables co-creation and value extraction, informing claims about inter-supplier flows and the role of practices.",
+      "section_header": "CONCEPTUAL BACKGROUND",
+      "confidence": 0.7
+    },
+    {
+      "name": "relational view",
+      "canonical_id": null,
+      "origin_source": "Core_Claim",
+      "linked_claims": [
+        "CC5"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "References to interfirm knowledge-sharing routines generating relational rents (Dyer and Singh, 1998).",
+      "evidence": "Supports the claim that deliberate, purposive practices and routines across buyer–supplier ties underpin effective knowledge exchange and co-created value.",
+      "section_header": "CONCEPTUAL BACKGROUND",
+      "confidence": 0.6
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+{
+  "paper_metadata": {
+    "doi": "10.1002/smj.2318",
+    "title": "COMPETITION NETWORK STRUCTURE AND PRODUCT MARKET ENTRY",
+    "authors": [
+      "Paul F. Skilton",
+      "Ednilson Bernardes"
+    ],
+    "publication_year": 2015,
+    "journal": "Strategic Management Journal",
+    "research_type": "Quantitative",
+    "research_context": "Aircraft modification industry in the United States; competition networks derived from FAA supplemental type certificates and type certificate data sheets; independent variables measured 1990–1999; product market entry measured 2000–2009; firms that were going concerns and had at least three STCs in the 1990s.",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "product_market_entry_rate",
+      "definition": "The rate or level at which a firm enters new product markets, operationalized in this study as the count of new supplemental type certificates issued to each firm between 2000 and 2009, where each supplemental type certificate represents an act of product market entry and may cover multiple aircraft types.",
+      "context_snippet": "We measured the dependent variable, future product market entry, as the count of new STCs issued to each firm between 2000 and 2009. Since each STC is issued to a single firm and specifies modifications not covered by its prior STCs, every STC represents an act of product market entry.",
+      "aliases": [
+        "rate of product market entry",
+        "future product market entry"
+      ]
+    },
+    {
+      "term": "competition network",
+      "definition": "The relational structures of interdependence between rivals that emerge from direct competition. In competition networks, effects propagate through publicly observed competitive actions and responses rather than through private information flows.",
+      "context_snippet": "Competition networks are defined as the relational structures of interdependence between rivals that emerge from direct competition.",
+      "aliases": [
+        "competition networks"
+      ]
+    },
+    {
+      "term": "ego network",
+      "definition": "The focal firm’s immediate network of direct competitors. The study focuses on the structure of the ego network (size, interconnectedness, and diversity) as the relevant locus influencing subsequent product market entry.",
+      "context_snippet": "Because of this we focus on the structure of the ego network rather than position in the total network. If we exclude B, Figure 1 depicts C’s ego network of direct competitors.",
+      "aliases": [
+        "ego network of direct competitors"
+      ]
+    },
+    {
+      "term": "ego network size",
+      "definition": "The number of direct competitors in a firm’s ego network. In network theory this is degree. In this study, degree as of 2000 is calculated as the count of direct competitor going concerns identified via shared modification noun pairs and aircraft model/type in the 1990s.",
+      "context_snippet": "Degree is the network theory name for ego network size. Degree as of 2000 was calculated as the count of direct competitor going concerns, as defined above.",
+      "aliases": [
+        "degree",
+        "network size"
+      ]
+    },
+    {
+      "term": "ego network density",
+      "definition": "The interconnectedness of a firm’s ego network, measured as the percentage of possible competitive ties among the firm’s direct competitors that are actually realized.",
+      "context_snippet": "Density is measured as the percentage of possible competitive ties between members of the ego network that are actually realized.",
+      "aliases": [
+        "density"
+      ]
+    },
+    {
+      "term": "competitor_diversity",
+      "definition": "The diversity of competitors in a firm’s ego network, theorized to affect product market entry because similar rivals are expected to behave similarly whereas diverse rivals increase the variety of competitive actions faced. Operationalized as the coefficient of variation of multimarket contact between the focal firm and each direct competitor.",
+      "context_snippet": "A network of diverse competitors should have different effects on product market entry than a network of similar competitors… The diversity of a focal firm’s multimarket contact is measured as the coefficient of variation (standard deviation divided by mean) of multimarket contact with the firm’s direct competitors.",
+      "aliases": [
+        "diversity of competitors",
+        "diversity_of_multimarket_contact"
+      ]
+    },
+    {
+      "term": "multimarket contact",
+      "definition": "The extent to which two rivals meet across multiple product markets, which generally dampens the level of competitive action between them. Measured using the Baum and Korn (1999) method that weights each shared market by its centrality in a firm’s portfolio.",
+      "context_snippet": "We measured multimarket contact using the method developed by Baum and Korn (1999), which weights each shared market by its centrality in a firm’s portfolio of markets.",
+      "aliases": []
+    },
+    {
+      "term": "market centrality",
+      "definition": "The centrality of a given market in a company’s portfolio, defined as the proportion of the company’s other product markets that share a word pair or a model/type with the given market. Used to weight shared markets in the multimarket contact measure.",
+      "context_snippet": "We measure the centrality of market m in a company i’s portfolio as the proportion of i’s other product markets that share a word pair or a model/type with market m.",
+      "aliases": []
+    },
+    {
+      "term": "direct competition",
+      "definition": "A binary relation between firms indicating they compete directly in a product market, defined here as different firms having supplemental type certificates that share one or more descriptive noun pairs and one or more aircraft model/type.",
+      "context_snippet": "We define direct competition as occurring when different firms have STCs that share one or more noun pairs and one or more model/type.",
+      "aliases": [
+        "direct competitors"
+      ]
+    },
+    {
+      "term": "learned market entry capability",
+      "definition": "A firm’s learned ability to enter product markets based on prior experience, controlled for because firms that have entered many markets in the past are likely to continue to do so. Measured as the count of STCs issued to each firm in the 1990s.",
+      "context_snippet": "It is necessary to control for learned market entry capability because if firms have learned to enter product markets in the past, they are likely to continue to do so… We measured learned market entry capability as the count of STCs issued to each firm in the 1990s.",
+      "aliases": []
+    },
+    {
+      "term": "type certificate holder",
+      "definition": "An indicator of whether a firm holds a type certificate data sheet, typically identifying airframe manufacturers who are distinct from other modifiers. Used as a control variable.",
+      "context_snippet": "We controlled for whether the firm was a TCDS holder because holders are usually airframe makers, making them distinct from other modifiers.",
+      "aliases": [
+        "TCDS holder"
+      ]
+    },
+    {
+      "term": "percentage of rotorcraft",
+      "definition": "The share of a firm’s STCs in the 1990s that involve rotorcraft, used as a control to account for differences in capabilities across broad aircraft categories.",
+      "context_snippet": "The controls are the percentage of a firm’s STCs in the 1990s involving rotorcraft or multiengine aircraft.",
+      "aliases": [
+        "rotorcraft percentage"
+      ]
+    },
+    {
+      "term": "percentage of multiengine",
+      "definition": "The share of a firm’s STCs in the 1990s that involve multiengine aircraft, used as a control to account for differences in capabilities across broad aircraft categories.",
+      "context_snippet": "The controls are the percentage of a firm’s STCs in the 1990s involving rotorcraft or multiengine aircraft.",
+      "aliases": [
+        "multiengine percentage"
+      ]
+    }
+  ],
+  "construct_dimensions": [],
+  "relationships": [
+    {
+      "subject_term": "ego network size",
+      "object_term": "product_market_entry_rate",
+      "status": "Hypothesized",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Aircraft modification industry in the United States; focal firm’s ego network constructed from 1990–1999 direct competition; outcome measured 2000–2009 for going concerns with ≥3 STCs in the 1990s.",
+      "context_snippet": "Hypothesis 1: The rate of product market entry will increase as ego network size increases.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "line_index_range": null,
+      "supporting_theories": [
+        "competitive dynamics theory",
+        "network architecture model"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "learned market entry capability",
+        "type certificate holder",
+        "percentage of rotorcraft",
+        "percentage of multiengine"
+      ]
+    },
+    {
+      "subject_term": "ego network density",
+      "object_term": "product_market_entry_rate",
+      "status": "Hypothesized",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Aircraft modification industry in the United States; focal firm’s ego network constructed from 1990–1999 direct competition; outcome measured 2000–2009 for going concerns with ≥3 STCs in the 1990s.",
+      "context_snippet": "Hypothesis 2: The rate of product market entry will decrease as ego network density increases.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "line_index_range": null,
+      "supporting_theories": [
+        "structural holes"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "learned market entry capability",
+        "type certificate holder",
+        "percentage of rotorcraft",
+        "percentage of multiengine"
+      ]
+    },
+    {
+      "subject_term": "competitor_diversity",
+      "object_term": "product_market_entry_rate",
+      "status": "Hypothesized",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "boundary_conditions": "Aircraft modification industry in the United States; diversity operationalized via coefficient of variation of multimarket contact with 1990s direct competitors; outcome measured 2000–2009.",
+      "context_snippet": "Hypothesis 3: The rate of product market entry will increase as competitor diversity increases.",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H3",
+      "claim_id": "H3",
+      "study_id": null,
+      "causal_support_level": null,
+      "design_type": null,
+      "manipulated_variable": null,
+      "causal_notes": null,
+      "section_header": "THEORY DEVELOPMENT",
+      "line_index_range": null,
+      "supporting_theories": [
+        "competitive dynamics theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "learned market entry capability",
+        "type certificate holder",
+        "percentage of rotorcraft",
+        "percentage of multiengine"
+      ]
+    },
+    {
+      "subject_term": "ego network size",
+      "object_term": "product_market_entry_rate",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "",
+      "supporting_quote": "",
+      "boundary_conditions": "Negative binomial regression using firms in the U.S. aircraft modification industry; independent variables from 1990–1999; dependent variable 2000–2009.",
+      "replication_outcome": null,
+      "context_snippet": "In Model 2 of Table 2, ego network size is entered. Hypothesis 1 is supported. As the number of competitors in ego networks increases, the rate of product market entry increases.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1_Result",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Negative binomial regression due to overdispersion in count outcome; no experimental manipulation.",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "competitive dynamics theory",
+        "network architecture model"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "learned market entry capability",
+        "type certificate holder",
+        "percentage of rotorcraft",
+        "percentage of multiengine"
+      ]
+    },
+    {
+      "subject_term": "ego network density",
+      "object_term": "product_market_entry_rate",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Insignificant",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "",
+      "supporting_quote": "",
+      "boundary_conditions": "Negative binomial regression using firms in the U.S. aircraft modification industry; independent variables from 1990–1999; dependent variable 2000–2009.",
+      "replication_outcome": null,
+      "context_snippet": "In Model 3 the variable for ego network density is entered into the control model. Its coefficient is not significantly different from zero, so that Hypothesis 2 is not supported.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H2",
+      "claim_id": "H2_Result",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "No significant effect detected in negative binomial models.",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "structural holes"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "learned market entry capability",
+        "type certificate holder",
+        "percentage of rotorcraft",
+        "percentage of multiengine"
+      ]
+    },
+    {
+      "subject_term": "competitor_diversity",
+      "object_term": "product_market_entry_rate",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": "",
+      "supporting_quote": "",
+      "boundary_conditions": "Negative binomial regression using firms in the U.S. aircraft modification industry; independent variables from 1990–1999; dependent variable 2000–2009.",
+      "replication_outcome": null,
+      "context_snippet": "In Model 4 the diversity of multimarket contact variable is entered into the control model. The estimated coefficient is positive and significant and thus supports Hypothesis 3.",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H3",
+      "claim_id": "H3_Result",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Effect persists in the fully specified model (Model 5).",
+      "section_header": "RESULTS",
+      "line_index_range": null,
+      "supporting_theories": [
+        "competitive dynamics theory"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": [
+        "learned market entry capability",
+        "type certificate holder",
+        "percentage of rotorcraft",
+        "percentage of multiengine"
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "product_market_entry_rate",
+      "name": "Future product market entry (count of STCs, 2000–2009)",
+      "details": "Count of new supplemental type certificates issued to each firm between 2000 and 2009. Each supplemental type certificate represents an act of product market entry and may cover multiple aircraft types.",
+      "instrument": "Federal Aviation Administration Supplemental Type Certificates database",
+      "scale_items": null,
+      "scoring_procedure": "Sum the number of new STCs for each firm over 2000–2009.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Archival regulatory records; one STC corresponds to one product market entry event by definition.",
+      "context_adaptations": "Aircraft modification industry context; STCs may span several aircraft types.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "direct competition",
+      "name": "Direct competition operationalization via STC text and aircraft model/type overlap",
+      "details": "Identify direct competitors when different firms have STCs that share one or more descriptive noun pairs and one or more aircraft model/type. Noun pairs are extracted via text analysis of STC descriptions after filtering proper names, numbers, codes, and non-descriptive nouns; plurals and variants are aggregated; nouns occurring in more than 50 STCs are retained; co-occurrences of noun pairs across STCs define similar modifications.",
+      "instrument": "FAA STC text descriptions and Type Certificate Data Sheets; text analysis software",
+      "scale_items": [
+        "Descriptive noun pairs appearing in STC texts",
+        "Aircraft model/type identifiers from TCDS"
+      ],
+      "scoring_procedure": "Assign a direct-competition tie if firm A and firm B share at least one noun pair and at least one aircraft model/type across their STCs in the 1990s.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Face validity from domain-specific textual descriptors and shared aircraft types indicating overlapping product markets.",
+      "context_adaptations": "Threshold: nouns appearing in more than 50 STCs; list of 227 frequently occurring descriptive nouns covering >80% of post-1990 STCs.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "ego network size",
+      "name": "Degree (ego network size as of 2000)",
+      "details": "Count of direct competitor going concerns linked to the focal firm via the direct competition definition based on 1990s STCs.",
+      "instrument": "Derived from direct competition network constructed using FAA STCs and TCDS",
+      "scale_items": null,
+      "scoring_procedure": "For each focal firm, count distinct going-concern rivals with whom it has a direct competition tie in the 1990s.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Construct validity supported by competitive dynamics logic that more rivals imply more stimuli for entry.",
+      "context_adaptations": "Going concerns determined via evidence of activity or corporate status during the 2000s.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "ego network density",
+      "name": "Ego network density",
+      "details": "Percentage of realized competitive ties among all possible pairs within the focal firm’s ego network of direct competitors.",
+      "instrument": "Derived from the constructed direct competition network",
+      "scale_items": null,
+      "scoring_procedure": "Compute realized ties among rivals in the ego network divided by total possible ties among them.",
+      "formula": "Density = (Number of realized competitor-competitor ties within ego network) / (N*(N-1)/2), where N is the number of rivals in the ego network.",
+      "reliability": null,
+      "validity": "Standard network metric; theorized to capture interdependence among rivals.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H2"
+    },
+    {
+      "construct_term": "multimarket contact",
+      "name": "Baum and Korn weighted multimarket contact (1991–2000)",
+      "details": "Dyadic multimarket contact between focal firm i and rival j over 1991–2000, weighting each shared market by its centrality in each firm’s portfolio.",
+      "instrument": "Constructed from markets defined by STC noun pairs and aircraft model/type overlaps",
+      "scale_items": null,
+      "scoring_procedure": "Compute multimarket contact for each (i,j) using weighted sums of shared markets as per formula; include only cases where sum of Dim × Djm across markets exceeds 1.",
+      "formula": "∑Mi [Cim × (Dim × Djm)] + ∑Mj [Cjm × (Dim × Djm)] divided by (Mi + Mj), for all ∑Mi (Dim × Djm) > 1; where Cim and Cjm are centralities of market m to firms i and j; Dim and Djm are 1 if active in market m and 0 otherwise.",
+      "reliability": null,
+      "validity": "Established in competitive dynamics literature; reflects rivalry breadth across markets.",
+      "context_adaptations": "Markets defined by shared noun pairs and aircraft model/type.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3"
+    },
+    {
+      "construct_term": "competitor_diversity",
+      "name": "Diversity of multimarket contact (coefficient of variation)",
+      "details": "For each focal firm, compute multimarket contact with each direct competitor (1991–2000), then take the coefficient of variation (standard deviation divided by mean) across these values to capture diversity of competitor relationships.",
+      "instrument": "Derived from multimarket contact calculations across the ego network",
+      "scale_items": null,
+      "scoring_procedure": "Coefficient of variation = SD(MMCi·) / Mean(MMCi·), where MMCi· are dyadic multimarket contact values between focal firm i and each rival.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Common dispersion measure; alternative diversity measures (e.g., diversity of rivals’ degree, density, prior entries) produced similar results.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3"
+    },
+    {
+      "construct_term": "learned market entry capability",
+      "name": "Prior market entry experience (1990s STC count)",
+      "details": "Count of STCs issued to each firm in the 1990s to control for the effect of learned capability on future entry.",
+      "instrument": "FAA STC database",
+      "scale_items": null,
+      "scoring_procedure": "Sum the number of STCs issued to the firm during 1990–1999.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Correlated with firm age (r = 0.29) but age was not significant when included; consistent with learning-by-doing.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "type certificate holder",
+      "name": "Type certificate holder indicator",
+      "details": "Binary indicator of whether the firm holds a type certificate data sheet, typically identifying airframe manufacturers distinct from other modifiers.",
+      "instrument": "FAA Type Certificate Data Sheets",
+      "scale_items": null,
+      "scoring_procedure": "Set to 1 if firm is a TCDS holder; 0 otherwise.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Construct validity based on organizational role differences (airframe makers vs. other modifiers).",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "percentage of rotorcraft",
+      "name": "Rotorcraft share of 1990s STCs",
+      "details": "Percentage of a firm’s STCs in the 1990s involving rotorcraft.",
+      "instrument": "FAA STC database",
+      "scale_items": null,
+      "scoring_procedure": "Compute rotorcraft-related STCs divided by total STCs in 1990s.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Controls for broad market category implying different skills.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "percentage of multiengine",
+      "name": "Multiengine share of 1990s STCs",
+      "details": "Percentage of a firm’s STCs in the 1990s involving multiengine aircraft.",
+      "instrument": "FAA STC database",
+      "scale_items": null,
+      "scoring_procedure": "Compute multiengine-related STCs divided by total STCs in 1990s.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Controls for broad market category implying different skills.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "competitive dynamics theory",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "We build on a core proposition of competitive dynamics theory that competition creates interdependencies expressed through patterns of action and response.",
+      "evidence": "Citations include Barnett and Pontikes (2008), Baum and Korn (1999), Chen (1996), Gimeno and Woo (1996), Smith et al. (1991), Tsai et al. (2011).",
+      "section_header": "THEORY DEVELOPMENT",
+      "confidence": 0.9
+    },
+    {
+      "name": "network architecture model",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "This study differs … by proposing that competition networks belong to the network architecture category.",
+      "evidence": "Based on Borgatti and Lopez-Kidwell (2011) distinction between flow and architecture models.",
+      "section_header": "THEORY DEVELOPMENT",
+      "confidence": 0.8
+    },
+    {
+      "name": "structural holes",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H2"
+      ],
+      "hypothesis_id": "H2",
+      "grounding_phrase": "As Burt has long argued (1992, 2007) … dense ties in a network mean that its members act in similar ways, reducing the variety of actions the focal actor is exposed to.",
+      "evidence": "Used to justify the expectation that higher ego network density reduces entry because actions are interdependent and variety is reduced.",
+      "section_header": "THEORY DEVELOPMENT",
+      "confidence": 0.85
+    }
+  ],
+  "coverage_report": {
+    "constructs": 13,
+    "relationships": 6,
+    "measurements": 9,
+    "reason": "The paper proposes three hypotheses and reports corresponding quantitative tests; only H1–H3 are core claims. Post hoc exploratory findings were excluded to adhere to the core scope policy.",
+    "errors": []
+  }
+}

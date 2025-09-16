@@ -1,0 +1,198 @@
+{   "relevant":true,
+    "L_summary_of_the_paper": {
+      "L1_summary_of_paper": "This conceptual paper develops a theoretical framework to explain how interfirm relational rivalry, a social-psychological phenomenon, influences firm-level competitive strategy. The core research question is how the shared history between firms can drive their competitive behavior above and beyond current, objective market conditions. The key concept, 'relational rivalry,' is defined as a subjective relationship between specific competitors, formed through a history of similarity, repeated competition, and evenly matched contests, which heightens the subjective stakes of competition independently of objective stakes. This is contrasted with 'structural competition,' which is based on current market overlap and resource similarity. The paper's primary theoretical contribution is integrating the micro-level theory of relational rivalry with the macro-level competitive dynamics literature, particularly the Awareness-Motivation-Capability (AMC) framework. It argues that relational rivalry is a powerful, non-rational driver of both motivation and awareness. A crucial extension is the concept of 'institutionalization,' proposed as the key mechanism through which rivalry becomes embedded in a firm's culture, routines, and narratives, allowing it to persist beyond the tenure of individual managers. The paper puts forth nine propositions detailing how relational rivalry is expected to increase competitive aggressiveness toward rivals, reduce the pacifying effect of multimarket contact, and influence a firm's overall competitive repertoire complexity and inertia. The main conclusion is that strategy research must account for the 'hot' relational and historical factors, not just 'cold' rational calculations, to fully understand interfirm competition. Its contribution lies in redirecting the field's attention toward the previously neglected role of history and social psychology in shaping strategic decisions."
+    },
+    "M_Theory_and_Unit_of_Analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Relational Rivalry Theory",
+          "type": "primary"
+        },
+        {
+          "theory": "Competitive Dynamics (AMC Framework)",
+          "type": "secondary"
+        },
+        {
+          "theory": "Institutional Theory",
+          "type": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Multi-level",
+      "M3_unit_of_analysis_element": [
+        "Volume of competitive actions",
+        "Speed of competitive action",
+        "Likelihood of competitive response",
+        "Repertoire diversity",
+        "Other: <Competitive inertia>"
+      ]
+    },
+    "N_Assumptions_and_Behavioral_Scope": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "No",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A_Bibliographic_and_Administrative": {
+      "A1_citation": "Kilduff, G. J. (2019). Interfirm relational rivalry: Implications for competitive strategy. Academy of Management Review, 44(4), 775-799.",
+      "A2_year": 2019,
+      "A3_outlet_tier": "Other: <Premier theory journal (AMR)>",
+      "A4_study_type": "Conceptual/Theory",
+      "A5_replicability": "Not applicable",
+      "NA_reason_if_any": "This is a conceptual/theory paper and does not involve data or code."
+    },
+    "B_Perspective_and_Theoretical_Positioning": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Institutional theory",
+        "Attention-based view",
+        "Cognitive maps"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_Phenomenon_Constructs_and_Context": {
+      "C1_constructs": [
+        "Attack/response",
+        "Repertoire",
+        "Rivalry intensity",
+        "Aggressiveness",
+        "Similarity/overlap"
+      ],
+      "C2_measurement": "Not applicable",
+      "NA_reason_if_any": "Conceptual paper; proposes measurement approaches for future work (archival, survey) but does not apply them.",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "The paper does not use metrics but proposes several for future research in its appendix. For relational rivalry, it suggests: 1) Surveys of firm members or industry experts asking them to rate rivalry intensity. 2) Objective, indirect markers based on its antecedents: historical similarity (in size, resource profile, status), historical repeated competition (volume of past competitive moves, years in same market), and historical evenly matched competition (similarity in past performance metrics like market share or ROA). 3) Text analysis of media publications counting the co-occurrence of firm names with words like 'rival' or 'rivalry'.",
+      "C4_shock_type": "Not applicable",
+      "NA_reason_if_any": "Conceptual paper, does not use an empirical shock.",
+      "C4_shock_design": "Not applicable"
+    },
+    "D_Methods_and_Identification_Causality": {
+      "D1_design": "Conceptual/Theory",
+      "D2_causal_or_correlational": "Theoretical/Not applicable",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Not applicable",
+      "NA_reason_if_any": "The paper builds theoretical arguments and propositions about causal relationships but does not test them empirically.",
+      "D2_identification": "Not applicable",
+      "D2_causal_claim_strength": "Not applicable",
+      "D2_key_assumptions_addressed": "Not applicable",
+      "D2_robustness_suite": "Not applicable",
+      "D3_endogeneity": "Not applicable",
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": "Not applicable"
+    },
+    "E_Outcomes_and_Effects": {
+      "E1_outcomes": [
+        "Action rate/mix"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Competitive aggressiveness toward rival",
+          "direction": "+"
+        },
+        {
+          "outcome": "Competitive repertoire complexity",
+          "direction": "+"
+        },
+        {
+          "outcome": "Competitive inertia",
+          "direction": "–"
+        },
+        {
+          "outcome": "Effect of multimarket contact on attack volume",
+          "direction": "Moderation (weakens negative effect)"
+        },
+        {
+          "outcome": "Competitive aggressiveness toward non-rivals",
+          "direction": "Mixed (proposes competing + and – effects)"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Attention allocation",
+        "Deterrence",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "Firm capability",
+        "Multimarket contact",
+        "Past performance",
+        "Firm size",
+        "Firm age",
+        "Relative performance of the rival(s)"
+      ]
+    },
+    "F_Quality_and_Systematicity": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "Not applicable",
+      "NA_reason_if_any": "Conceptual paper, no empirical data to introduce bias.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_Integration_Hooks": {
+      "G1_construct_mapping_note": "The paper's central task is mapping the micro, social-psychological construct of 'relational rivalry' onto the macro, strategic management field. It carefully distinguishes it from the existing construct of 'structural competition' (or rivalry as a synonym for competition). Relational rivalry is historically determined, subjective, and dyad-specific, whereas structural competition is objective, based on current market conditions, and treats competitors as interchangeable.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "A firm's competitive behavior toward a specific opponent is a function of both current structural incentives and the institutionalized history of their dyadic relationship.",
+        "The institutionalization of past competitive interactions transforms individual-level psychological rivalry into a stable, firm-level strategic orientation that persists through changes in leadership and market conditions.",
+        "The presence of a strong relational rival can act as an organizational antidote to complacency, leading to greater strategic dynamism (higher complexity, lower inertia) than would be predicted by market structure alone."
+      ]
+    },
+    "H_Type_Applicability": {
+      "TYPE_APPLICABLE_empirical": "No",
+      "TYPE_APPLICABLE_theory_conceptual": "Yes",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "The paper is a pure conceptual/theory piece that develops a model and a series of propositions without conducting an empirical test."
+    },
+    "I_Mechanism_and_Proposition_Detailing": {
+      "I1_mechanism_statements": [
+        "Relational rivalry increases motivation and effort due to heightened subjective stakes and implications for self-worth and status.",
+        "Relational rivalry leads to more eager, less deliberative decision making.",
+        "Relational rivalry increases awareness of a competitor's actions through focused attention and monitoring.",
+        "Institutionalization embeds rivalry into organizational narratives, routines, and culture, ensuring its persistence and transmission to new members, independent of the original individuals involved."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "mediation",
+          "variable": "Institutionalization",
+          "role_in_link": "Mediates the relationship between historical antecedents (similarity, repeated/evenly matched competition) and the formation of enduring interfirm relational rivalry."
+        },
+        {
+          "type": "moderation",
+          "variable": "Firm capability",
+          "role_in_link": "The positive effect of capability on competitive aggressiveness is weakened for actions directed toward relational rivals."
+        },
+        {
+          "type": "moderation",
+          "variable": "Multimarket contact",
+          "role_in_link": "The negative effect of multimarket contact on attack volume is weakened between relational rivals."
+        },
+        {
+          "type": "moderation",
+          "variable": "Relative performance of the rival(s)",
+          "role_in_link": "The positive effects of rivalry on aggressiveness and complexity, and its negative effect on inertia, are weakened when the rival performs poorly."
+        }
+      ],
+      "I3_theoretical_propositions": [
+        "Proposition 1: Firms will (a) initiate a larger number of competitive attacks toward, (b) be more likely to respond to attacks from, and (c) be quicker to respond to attacks from their relational rivals as compared to other firms within the same industry or strategic group (i.e., nonrelational rivals).",
+        "Proposition 2: The positive effects of firm capability on (a) attack volume, (b) likelihood of response, and (c) speed of response will be weaker for action directed toward relational rivals as compared to nonrelational rivals.",
+        "Proposition 3: The negative effect of multimarket contact on the volume of firms’ attacks toward one another will be weaker between relational rivals as compared to nonrelational rivals.",
+        "Proposition 4: The greater the level of relational rivalry that a firm is involved in, (a) the more likely the firm is to attack, (b) the more likely it is to respond to attack, and (c) the faster it is to respond to attack from competing firms that are not its relational rivals.",
+        "Proposition 5: The greater the level of relational rivalry that a firm is involved in, the greater the complexity of its competitive repertoire.",
+        "Proposition 6: The greater the level of relational rivalry that a firm is involved in, the lower its competitive inertia.",
+        "Proposition 7: The negative effects of (a) past performance, (b) size, and (c) age on complexity of competitive repertoire and the positive effects of (d) past performance, (e) size, and (f) age on competitive inertia will be weaker for firms involved in higher levels of relational rivalry.",
+        "Proposition 8: The positive effects of a firm’s involvement in relational rivalry on its (a) competitive aggressiveness (volume, likelihood, and speed) and (b) competitive complexity, and the negative effect on its (c) competitive inertia, will be weaker, and possibly even reverse direction, under conditions of low relative performance by the relational rival(s).",
+        "Proposition 9: The greater the level of relational rivalry that a firm is involved in, (a) the less likely it is to attack, (b) the less likely it is to respond to attack, and (c) the slower it is to respond to attack from competing firms that are not its relational rivals."
+      ]
+    },
+    "J_Findings_and_Evidence": {
+      "J1_main_findings_summary": "Not applicable",
+      "NA_reason_if_any": "Conceptual paper. The 'findings' are the theoretical propositions listed in section I3.",
+      "J2_finding_evidence_links": "Not applicable",
+      "J3_finding_strength": "Speculative (conceptual)"
+    },
+    "K_Overall_Paper_Contribution": {
+      "K1_contribution_summary": "The paper's primary contribution is to build a bridge between micro-level social psychology and macro-level competitive strategy. It theorizes that interfirm relational rivalry—a historically-grounded relationship—is a distinct and powerful driver of competitive behavior, operating alongside and interacting with traditional rational-economic factors. By introducing 'institutionalization' as a key firm-level mechanism, it provides a novel explanation for the persistence of intense, targeted competition and sets a new research agenda focused on the relational and historical underpinnings of strategy."
+    }
+  }

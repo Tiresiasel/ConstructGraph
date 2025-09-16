@@ -1,0 +1,431 @@
+{
+  "paper_metadata": {
+    "doi": null,
+    "title": "\"Austrian\" and Industrial Organization Perspectives on Firm-Level Competitive Activity and Performance",
+    "authors": [
+      "Greg Young",
+      "Ken G. Smith",
+      "Curtis M. Grimm"
+    ],
+    "publication_year": 1996,
+    "journal": "Organization Science",
+    "research_type": "Quantitative",
+    "research_context": "Longitudinal quantitative study of publicly owned single-business firms in the U.S. computer software industry (SIC 7371, 7372, 7373) using 1,903 competitive moves observed over 1983-1991; competitive moves coded from Predicasts F&S Index and financial data from SEC filings (Disclosure database).",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "firm-level competitive activity",
+      "definition": "Firm-level competitive activity is defined here as the total number of competitive actions a firm takes in a given year. Competitive activity includes product introductions and announcements, as well as marketing and promotion campaigns (including price cuts). The authors measured firm-level competitive activity by performing a structured content analysis of published citations (Predicasts F&S Index) and counting each cited move of product introductions, product announcements, and marketing/promotion campaigns for each firm in each year. The annual sum of a firm's moves is the construct's operationalization. A 2% random subsample validity check found multiple sources in 58% of cases and 100% agreement where multiple sources existed.",
+      "context_snippet": "\"Firm-level competitive activity is defined here as the total number of competitive actions a firm takes in a given year.\" ... \"we consider competitive activity to include product introductions and announcements, as well as marketing and promotion campaigns (including price cuts).\" Methods: \"We applied a comprehensive, multiple source method and examined citations of the sample firms appearing in the Predicasts F & S Index for the 1983-1991 period... The measure of firm-level competitive activity was expressed quantitatively as the annual sum of each firm's moves.\"",
+      "aliases": [
+        "competitive activity",
+        "competitive moves"
+      ]
+    },
+    {
+      "term": "industry-level rivalry",
+      "definition": "The authors define the level of competitive activity in the industry (industry-level rivalry) as the aggregation of firm-level competitive activity minus the competitive activity of the focal firm. When the number of competitive actions between all firms in the industry is high, rivalry will be intense. The industry-level rivalry measure was constructed by aggregating firm moves to the industry level and subtracting the focal firm's own competitive activity.",
+      "context_snippet": "\"We define the level of competitive activity in the industry (industry-level rivalry) as the aggregation of firm-level competitive activity minus the competitive activity of the focal firm. When the number of competitive actions between all firms in the industry is high, rivalry will be intense.\"",
+      "aliases": [
+        "competitor rivalry",
+        "industry-level competitive activity"
+      ]
+    },
+    {
+      "term": "firm-level cooperative mechanisms",
+      "definition": "Firm-level cooperative mechanisms are defined as formal interfirm agreements including equity purchases, mergers, technology licenses, and participation in trade associations and technology consortia. The construct focuses on linkages between organizations over which communication and resources flow. Measurement: each Predicasts F&S Index citation of such a move in the software industry was counted as one cooperative mechanism for each participating firm in the sample.",
+      "context_snippet": "\"We define firm-level cooperative mechanisms to be formal interfirm agreements including equity purchases, mergers, technology licenses, and participation in trade associations and technology consortia (Bresser 1988, Dollinger 1990, Harrigan 1985, Koh and Venkatraman 1991).\" Methods: \"Each Predicasts F&S Index citation of such a move in the software industry was counted as one cooperative mechanism for each of the participating firms in the sample.\"",
+      "aliases": [
+        "horizontal cooperative mechanisms",
+        "cooperative mechanisms (firm-level)"
+      ]
+    },
+    {
+      "term": "industry-level cooperative mechanisms",
+      "definition": "The level of cooperative mechanisms in the industry (industry-level cooperation) is defined as the aggregation of firm-level cooperative mechanisms minus those of the focal firm. When the number of cooperative mechanisms involving firms in an industry is high, the level of industry cooperation will tend to be high. Industry-level cooperative mechanisms were measured by aggregating firm-level cooperative mechanism counts to the industry level and subtracting the focal firm's own cooperative activity.",
+      "context_snippet": "\"We define the level of cooperative mechanisms in the industry (industry-level cooperation) as simply the aggregation of firm-level cooperative mechanisms minus those of the focal firm. That is, when the number of cooperative mechanisms involving firms in an industry is high, the level of industry cooperation will tend to be high.\"",
+      "aliases": [
+        "industry cooperation",
+        "industry-level cooperation"
+      ]
+    },
+    {
+      "term": "firm performance",
+      "definition": "Firm performance in the study is operationalized using two commonly accepted financial measures: return on assets and return on sales. Financial data were collected from annual SEC filings as reported by the Disclosure database.",
+      "context_snippet": "\"We used two commonly accepted financial measures of firm performance, return on sales and return on assets. The data were collected from annual SEC filings as reported by the Disclosure database.\"",
+      "aliases": [
+        "performance",
+        "financial performance"
+      ]
+    },
+    {
+      "term": "return on assets",
+      "definition": "Return on assets is used as one of two firm performance measures. The authors obtained return on assets values from annual SEC filings via the Disclosure database. (No formula is provided in the text.)",
+      "context_snippet": "\"We used two commonly accepted financial measures of firm performance, return on sales and return on assets. The data were collected from annual SEC filings as reported by the Disclosure database.\"",
+      "aliases": [
+        "ROA"
+      ]
+    },
+    {
+      "term": "return on sales",
+      "definition": "Return on sales is used as one of two firm performance measures. The authors obtained return on sales values from annual SEC filings via the Disclosure database. (No formula is provided in the text.)",
+      "context_snippet": "\"We used two commonly accepted financial measures of firm performance, return on sales and return on assets. The data were collected from annual SEC filings as reported by the Disclosure database.\"",
+      "aliases": [
+        "ROS"
+      ]
+    },
+    {
+      "term": "product introductions",
+      "definition": "Product introductions are enumerated as one category of competitive actions included in firm-level competitive activity; they are captured in the content analysis of published citations (Predicasts F&S Index) and counted as moves.",
+      "context_snippet": "\"we consider competitive activity to include product introductions and announcements, as well as marketing and promotion campaigns (including price cuts).\"",
+      "aliases": []
+    },
+    {
+      "term": "product announcements",
+      "definition": "Product announcements are enumerated as one category of competitive actions included in firm-level competitive activity; captured via structured content analysis of Predicasts F&S Index citations and counted as moves.",
+      "context_snippet": "\"we consider competitive activity to include product introductions and announcements, as well as marketing and promotion campaigns (including price cuts).\"",
+      "aliases": []
+    },
+    {
+      "term": "marketing and promotion campaigns",
+      "definition": "Marketing and promotion campaigns (including price cuts) are enumerated as one category of competitive actions included in firm-level competitive activity; captured via structured content analysis of Predicasts F&S Index citations and counted as moves.",
+      "context_snippet": "\"we consider competitive activity to include product introductions and announcements, as well as marketing and promotion campaigns (including price cuts).\"",
+      "aliases": []
+    }
+  ],
+  "construct_dimensions": [
+    {
+      "parent_construct": "firm-level cooperative mechanisms",
+      "dimension_construct": "equity purchases"
+    },
+    {
+      "parent_construct": "firm-level cooperative mechanisms",
+      "dimension_construct": "mergers"
+    },
+    {
+      "parent_construct": "firm-level cooperative mechanisms",
+      "dimension_construct": "technology licenses"
+    },
+    {
+      "parent_construct": "firm-level cooperative mechanisms",
+      "dimension_construct": "participation in trade associations and technology consortia"
+    },
+    {
+      "parent_construct": "firm-level competitive activity",
+      "dimension_construct": "product introductions"
+    },
+    {
+      "parent_construct": "firm-level competitive activity",
+      "dimension_construct": "product announcements"
+    },
+    {
+      "parent_construct": "firm-level competitive activity",
+      "dimension_construct": "marketing and promotion campaigns (including price cuts)"
+    }
+  ],
+  "relationships": [
+    {
+      "subject_term": "industry-level cooperative mechanisms",
+      "object_term": "firm-level competitive activity",
+      "status": "Hypothesized",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H1",
+      "claim_id": "H1"
+    },
+    {
+      "subject_term": "industry-level cooperative mechanisms",
+      "object_term": "firm-level competitive activity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Insignificant",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "\"Hi is not supported. That is, cooperative mechanisms at the industry level are unrelated to a firm's competitive activity.\"",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "\"Hi is not supported. That is, cooperative mechanisms at the industry level are unrelated to a firm's competitive activity.\"",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H1",
+      "claim_id": "H1",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Independent measures lagged one period; multiple regression analysis; serial correlation addressed by including lagged dependent variable.",
+      "section_header": "Results (Hi and H2)",
+      "line_index_range": null,
+      "supporting_theories": [
+        "structure-conduct-performance paradigm"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "firm-level cooperative mechanisms",
+      "object_term": "firm-level competitive activity",
+      "status": "Hypothesized",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H2",
+      "claim_id": "H2"
+    },
+    {
+      "subject_term": "firm-level cooperative mechanisms",
+      "object_term": "firm-level competitive activity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "\"H2 is supported. As the cooperative mechanisms in which the firm participates increase, competitive firm activity increases (beta = .08, p < .05).\"",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "\"In contrast, H2 is supported. As the cooperative mechanisms in which the firm participates increase, competitive firm activity increases (beta = .08, p < .05).\"",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H2",
+      "claim_id": "H2",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Independent measures lagged; multiple regression analysis; serial correlation corrected via lagged dependent variable.",
+      "section_header": "Results (Hi and H2)",
+      "line_index_range": null,
+      "supporting_theories": [
+        "Austrian school of economics"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "industry-level rivalry",
+      "object_term": "firm performance",
+      "status": "Hypothesized",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H3",
+      "claim_id": "H3"
+    },
+    {
+      "subject_term": "industry-level rivalry",
+      "object_term": "firm performance",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "\"As argued in H3 the competitor rivalry measure is significant and negative (beta = -.22, p < .05 for ROA, beta = -.21, p < .05 for ROS).\"",
+      "boundary_conditions": null,
+      "replication_outcome": null,
+      "context_snippet": "\"As argued in H3 the competitor rivalry measure is significant and negative (beta = -.22, p < .05 for ROA, beta = -.21, p < .05 for ROS).\"",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H3",
+      "claim_id": "H3",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Independent measures lagged one period; regression analysis; serial correlation corrected by including lagged dependent variable.",
+      "section_header": "Results (H3 and H4)",
+      "line_index_range": null,
+      "supporting_theories": [
+        "structure-conduct-performance paradigm"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "firm-level competitive activity",
+      "object_term": "firm performance",
+      "status": "Hypothesized",
+      "origin_source": "Hypothesis",
+      "hypothesis_id": "H4",
+      "claim_id": "H4"
+    },
+    {
+      "subject_term": "firm-level competitive activity",
+      "object_term": "firm performance",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "\"H4 also is supported, as the influence of firm competitive activity on relative firm performance is positive and significant (beta = .22, p < .01 for ROA; beta = .22, p < .01 for ROS).\"",
+      "boundary_conditions": "In hypercompetitive environments firm performance is an outcome of a series of competitive actions; benefits of increased firm activity are argued particularly in hypercompetitive contexts.",
+      "replication_outcome": null,
+      "context_snippet": "\"D'Aveni (1994: 10-12) argues that, in a hypercompetitive environment, firm performance is an outcome of a series of competitive actions... H4. As competitive firm activity increases, firm performance increases.\" Results: \"H4 also is supported...\"",
+      "origin_source": "Results-Confirming",
+      "hypothesis_id": "H4",
+      "claim_id": "H4",
+      "study_id": null,
+      "causal_support_level": "Correlational",
+      "design_type": "Regression",
+      "manipulated_variable": "None",
+      "causal_notes": "Independent variables lagged one year behind dependent variable to examine causal linkage implied by hypothesis; multiple regression analysis; serial correlation addressed by including lagged dependent variable.",
+      "section_header": "Results (H3 and H4)",
+      "line_index_range": null,
+      "supporting_theories": [
+        "Austrian school of economics",
+        "hypercompetition (as described by D'Aveni)"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "firm-level competitive activity",
+      "name": "Count of competitive moves (annual sum)",
+      "details": "Structured content analysis of published citations in the Predicasts F & S Index for 1983-1991; coders recorded cited moves classified as product introductions, product announcements, and marketing/promotion campaigns (including price cuts). The annual sum of each firm's coded moves is the measurement.",
+      "instrument": "Predicasts F & S Index (content analysis)",
+      "scale_items": [
+        "product introductions",
+        "product announcements",
+        "marketing and promotion campaigns (including price cuts)"
+      ],
+      "scoring_procedure": "Each cited move is counted as one competitive action for the focal firm in the year of the citation; the firm's annual competitive activity is the sum of these counts.",
+      "formula": null,
+      "reliability": "2% random subsample validity check found 58% of subsample had multiple sources; in every case with multiple sources, agreement was 100%.",
+      "validity": "Measure consistent with prior studies of dynamic competition cited by authors; representativeness of sample checked via pairwise t-tests against industry norms (Dun & Bradstreet).",
+      "context_adaptations": "None reported beyond coding rules for move types.",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H4"
+    },
+    {
+      "construct_term": "industry-level rivalry",
+      "name": "Aggregated competitive moves (industry minus focal firm)",
+      "details": "Industry-level rivalry measured as the aggregation of firm-level competitive activity across all firms in the industry minus the focal firm's competitive activity for the year.",
+      "instrument": "Derived from Predicasts F & S Index counts aggregated to industry level",
+      "scale_items": [
+        "aggregate of firm competitive move counts"
+      ],
+      "scoring_procedure": "Sum firm-level move counts for the industry and subtract the focal firm's own move count to yield industry-level rivalry for the focal firm and year.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Operationalization consistent with prior work that aggregates conduct measures to industry level (Kwoka 1979; Schomburg et al. 1994).",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3"
+    },
+    {
+      "construct_term": "firm-level cooperative mechanisms",
+      "name": "Count of firm cooperative mechanisms (per firm per year)",
+      "details": "Each Predicasts F & S Index citation of a cooperative move (equity arrangements, mergers, technology licenses, participation in trade associations and technology consortia) was counted as one cooperative mechanism for each participating firm. The firm's annual cooperative mechanisms is the sum of such citations.",
+      "instrument": "Predicasts F & S Index (content analysis)",
+      "scale_items": [
+        "equity purchases/arrangements",
+        "mergers",
+        "technology licenses",
+        "participation in trade associations and technology consortia"
+      ],
+      "scoring_procedure": "Count each cited cooperative move involving the focal firm as one cooperative mechanism in that year; sums yield annual firm-level cooperative mechanisms.",
+      "formula": null,
+      "reliability": "Measurement drawn from same citation database as competitive moves; no separate reliability statistic reported beyond general methods validity checks.",
+      "validity": "Construct defined to avoid overlap with competitive actions; count method captures formal interfirm agreements referenced in Predicasts.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H2"
+    },
+    {
+      "construct_term": "industry-level cooperative mechanisms",
+      "name": "Aggregated cooperative mechanisms (industry minus focal firm)",
+      "details": "Industry-level cooperative mechanisms measured as the aggregation of firm-level cooperative mechanism counts across the industry minus the focal firm's own cooperative mechanisms for the year.",
+      "instrument": "Derived from Predicasts F & S Index cooperative-move counts",
+      "scale_items": [
+        "aggregate of firm cooperative mechanism counts"
+      ],
+      "scoring_procedure": "Sum firm-level cooperative mechanism counts for the industry and subtract the focal firm's count to yield industry-level cooperation for the focal firm and year.",
+      "formula": null,
+      "reliability": null,
+      "validity": "Operationalization consistent with industrial-aggregation procedures used in related IO literature.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H1"
+    },
+    {
+      "construct_term": "firm performance",
+      "name": "Return on assets and return on sales (financial measures)",
+      "details": "Firm performance was measured using return on assets (ROA) and return on sales (ROS), obtained from annual SEC filings as reported by the Disclosure database. These values were used as dependent variables in regression models testing H3 and H4.",
+      "instrument": "SEC filings (Disclosure database)",
+      "scale_items": [
+        "return on assets",
+        "return on sales"
+      ],
+      "scoring_procedure": "Use reported ROA and ROS values from annual filings; models used lagging procedures for temporal ordering.",
+      "formula": null,
+      "reliability": "SEC filing data considered highly reliable by authors due to legal reporting requirements; no psychometric reliability applicable.",
+      "validity": "Authors argue SEC data fairly reflects business conditions and is a reliable data source for financial performance.",
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": "H3"
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "Austrian school of economics",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H2",
+        "H4"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "\"According to Austrian economics\"; \"the Austrian school ... emphasizes that organizational action ... constitutes the critical market process\"",
+      "evidence": null,
+      "section_header": "Hypotheses / A Dynamic Model of Competitive Activity",
+      "confidence": null
+    },
+    {
+      "name": "structure-conduct-performance paradigm",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H1",
+        "H3"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "\"the structure-conduct-performance (s-c-p) paradigm of industrial organization\"; \"According to the s-c-p tradition...\"",
+      "evidence": null,
+      "section_header": "Hypotheses / A Dynamic Model of Competitive Activity",
+      "confidence": null
+    },
+    {
+      "name": "hypercompetition (as conceptualized by D'Aveni)",
+      "canonical_id": null,
+      "origin_source": "Hypothesis_Development",
+      "linked_claims": [
+        "H4"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "\"D'Aveni (1994) argues that in hypercompetition firms use horizontal cooperative mechanisms...\"; \"In a hypercompetitive marketplace, firms with more competitive activity theoretically will have superior performance over time\"",
+      "evidence": null,
+      "section_header": "Introduction / Hypotheses",
+      "confidence": null
+    }
+  ],
+  "coverage_report": {
+    "constructs": 11,
+    "relationships": 8,
+    "measurements": 5,
+    "reason": "Extraction limited to constructs and relationships explicitly tied to the paper's hypotheses (H1-H4) and their empirical tests, per the provided scope policy. The paper contains four explicit hypotheses and four corresponding empirical tests; only constructs appearing in those hypotheses/proposition development or empirical confirmations were extracted.",
+    "errors": [
+      "coverage_below_minimum"
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{ "relevant":false,
+    "L": {
+      "L1_summary_of_paper": "This paper investigates how the number of firms within an industrial district affects the mortality rates of individual firms. It challenges the prevailing view in the industrial district literature, which emphasizes social embeddedness and cooperation as the primary drivers of district flexibility and firm survival. The author develops a theoretical framework that contrasts two perspectives: neo-institutional theory and organizational ecology. Neo-institutional theory suggests that districts function as communities where dense networks foster collective learning and cooperation, leading to lower firm mortality (termed 'Third Italian' districts). In contrast, organizational ecology posits that districts are competitive arenas where an increasing number of firms (density) intensifies resource competition and raises mortality rates, with change occurring through the replacement of firms ('Marshallian' districts). The study tests hypotheses derived from these theories using a longitudinal dataset of 315 textile firms in the Reutlingen district of Baden-Württemberg, Germany, from 1946 to 1993. Using proportional hazards models, the main findings are that a larger district size, both at the time of a firm's founding (an 'imprinting' effect) and contemporaneously, significantly increases the likelihood of firm failure. The imprinting effect at founding is found to be substantially stronger than the contemporaneous effect, suggesting that while firms may learn to cope with competition over time, early environmental conditions have a lasting negative impact. The paper concludes that this district more closely resembles a 'Marshallian' model where competitive selection, rather than cooperative learning, is the dominant mechanism of change. The primary contribution is redirecting the theoretical focus in industrial district research from an overemphasis on cooperation to a more balanced view that incorporates the critical roles of population structure, competition, and selection."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Organizational ecology",
+          "status": "primary"
+        },
+        {
+          "theory": "Neo-institutional theory",
+          "status": "primary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Firm",
+      "M3_unit_of_analysis_element": "Other: <Firm mortality/survival>"
+    },
+    "N": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "Not applicable",
+      "NA_reason_if_any_N2": "The study uses a population-level variable (district size) to predict firm-level outcomes, not dyadic interactions where symmetry would be relevant.",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "NA_reason_if_any_N4": "The model does not concern how firms weigh specific competitors' actions, but rather how the aggregate number of firms in the environment affects them.",
+      "N5_focus_scope": "Not applicable",
+      "NA_reason_if_any_N5": "The theoretical framework is not based on a focal firm's cognitive perception or tracking of specific competitors, but on the overall structural conditions of the competitive environment (i.e., the total number of firms)."
+    },
+    "A": {
+      "A1_citation": "Staber, U. (1998). Inter-firm Co-operation and Competition in Industrial Districts. Organization Studies, 19(4), 701-724.",
+      "A2_year": 1998,
+      "A3_outlet_tier": "OS",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Other: <Population-level perspective>",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Learning",
+        "Institutional theory",
+        "Embeddedness",
+        "Other: <Organizational ecology>",
+        "Other: <Density dependence>"
+      ],
+      "B4_contribution_type": "Adjudication"
+    },
+    "C": {
+      "C1_constructs": [
+        "Community",
+        "Similarity/overlap",
+        "Other: <Population density>",
+        "Other: <Firm survival>"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "The paper notes that the textile industry, especially at the upper end of the fashion scale, is characterized by extreme demand volatility and uncertainty, making market demand difficult to predict.",
+      "C4_shock_type": "Market disruption",
+      "C4_shock_design": "The study does not use an exogenous shock for identification. Instead, it controls for different eras of environmental resource scarcity by including dummy variables for three distinct founding periods (1946-1959, 1960-1979, 1980 onwards), which correspond to periods of growth, stagnation, and intense international competition."
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "No",
+      "D2b_causality_supported_by_design": "Weak",
+      "D2_identification": "Other: <Proportional hazards model with time-varying and time-invariant covariates>",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": [
+        "Proportionality of hazards (implicit in the choice of the Cox model)."
+      ],
+      "D2_robustness_suite": "Other: <Tested for a curvilinear specification of district size>",
+      "D3_endogeneity": "Lags",
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "Local and national business directories",
+        "Trade publications",
+        "Yellow pages",
+        "Trade association membership listings",
+        "Newspaper clippings",
+        "Various archival materials"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Entry/exit/survival"
+      ],
+      "E2_effect_directions": {
+        "District size at founding on mortality risk": "+",
+        "Contemporaneous district size on mortality risk": "+"
+      },
+      "E3_mechanisms_tags": [
+        "Learning",
+        "Legitimacy/Status",
+        "Resource dependence"
+      ],
+      "E4_moderators": [
+        "Product specialization",
+        "Phase specialization"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk of bias stems from potential omitted variables. Unobserved factors, such as shifts in global demand for specific textiles or local policy changes, could simultaneously affect both the number of firms in the district and the survival chances of individual firms, leading to a spurious correlation. The study's causal claims are weak due to the lack of a quasi-experimental design or instruments to address this endogeneity.",
+      "F3_saturation_contribution": "Divergent"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The paper maps the abstract construct of 'competitive pressure' and 'coordination complexity' to the observable metric of 'number of firms in the district'. It further maps the theoretical concept of 'district dynamism' to the empirical outcome of 'firm mortality rate'.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The effect of inter-firm network density on firm survival is conditional on the dominant mode of interaction; when competition dominates learning, increased density raises mortality.",
+        "Early-stage environmental conditions (imprinting) have a more persistent effect on firm survival than contemporaneous conditions, but this effect is partially attenuated by organizational learning over time."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "Not applicable"
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "A large number of firms intensifies competition for limited resources (e.g., customers, suppliers, skilled labor), thereby increasing the risk of failure.",
+        "A large number of firms increases the volume and intensity of interaction, creating problems of coordination and requiring the allocation of scarce resources to administrative and communicative functions.",
+        "The 'imprinting' mechanism suggests that firms founded in crowded, competitive environments adopt structures and strategies that become rigid and constrain subsequent adaptation, raising the risk of failure throughout the firm's lifetime.",
+        "Firms can acquire cooperative skills through repeated exchange over time, which allows them to build trust and learn to navigate the network, thereby mitigating the negative effects of contemporaneous competition."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Product specialization and Phase specialization",
+          "role_in_link": "The paper tests whether the constraining effect of district size on firm survival is greatest for specialized firms. It hypothesizes a positive interaction effect between specialization and district size on mortality risk. This moderation was not supported by the data."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "A large number of firms in the district at the time of a firm's founding significantly increases its subsequent risk of mortality at any point in its life (supports Hypothesis 1).",
+        "A large number of firms in the district during a firm's lifetime (contemporaneously) also significantly increases its risk of mortality (supports Hypothesis 2).",
+        "The constraining effect of district size at the time of founding is substantially larger than the effect of contemporaneous district size, suggesting a strong 'imprinting' effect that is only partially mitigated by later learning (supports Hypothesis 3).",
+        "Contrary to expectations, the constraining effect of district size was not greater for specialized firms; the interaction effect was not significant, and the hypothesis was rejected (rejects Hypothesis 4)."
+      ],
+      "J2_finding_evidence_links": [
+        "Table 2 (Proportional Hazard Log-Odds Estimates of Mortality Rates)",
+        "Empirical Results section, pages 713-717."
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper's main contribution is to challenge the dominant, cooperation-focused narrative in industrial district research by empirically demonstrating the powerful role of competitive selection. By integrating organizational ecology and neo-institutional theory and using firm mortality as a key outcome, it provides a more balanced theoretical framework and shows that an increase in the number of firms can be a liability rather than an asset, undermining firm survival through heightened competition and coordination challenges."
+    }
+  }

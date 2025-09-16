@@ -1,0 +1,127 @@
+{
+  "relevant": true,
+  "L1_summary_of_paper": "The paper theorizes and tests how multimarket contact (MMC) affects firms' sales growth under imperfect observability. Building on Matsushima's (2001) repeated-game logic, Greve argues that when prices/quality are hard to observe, firms sometimes defect from mutual forbearance through stealthy moves (small price cuts, selective service upgrades). Defection likelihood depends on (i) the focal firm's probability of being detected—decreasing with the number of its multimarket-connected rivals in the focal market (firm-level MMC)—and (ii) the market's overall collusive price umbrella—rising with the number of multimarket-connected firms present (market-level MMC). Key constructs: firm-level MMC (count of a focal firm's multimarket rivals in a market), market-level MMC (count of firms in the market that have multimarket ties), sales growth deviation from the market median (proxy for defection), market growth, concentration (Herfindahl), foreign and single-market firm counts, firm market share, loss ratio. Context: Norwegian general insurance, 1912–1986, 329 firms, 30,069 firm–market–year observations. Methods: tobit models on positive deviations (left-censored at 0) with market and period effects; Honore fixed-effect tobit for firms; comparative OLS on absolute deviations; alternative MMC weightings (count vs overlap). Main findings: (H1) lower firm-level MMC → higher sales growth deviation (more defection); (H2) higher market-level MMC → higher sales growth deviation; (H3) interaction consistent with stronger defection when firm-level MMC is low and market-level MMC is high (partial support). Contributions: introduces and empirically tests an imperfect-observability account of MMC; extends two-player theory to multi-firm, multi-market settings; shifts MMC evidence from price-observable industries to a product-market context with imperfect observability.",
+  "M1_main_theories": [
+    "Mutual forbearance (primary)",
+    "Multimarket contact theory (primary)",
+    "Competitive dynamics (secondary)"
+  ],
+  "M2_unit_of_analysis_level": "Firm",
+  "M3_unit_of_analysis_element": "Other: Sales growth deviation from market median (proxy for defection from mutual forbearance)",
+  "N1_behavioral_scope": "Multiple behaviors",
+  "N2_assumption_symmetry": "Not reported",
+  "N3_assumption_common_environment": "Yes",
+  "N4_assumption_equal_weighting": "Not reported",
+  "N5_focus_scope": "Multiple competitors focus",
+  "A1_citation": "Greve, H. R. (2008). Multimarket contact and sales growth: Evidence from insurance. Strategic Management Journal, 29(3), 229–249. (Published online 15 October 2007).",
+  "A2_year": "2008",
+  "A3_outlet_tier": "SMJ",
+  "A4_study_type": "Empirical-Quant",
+  "A5_replicability": "None",
+  "B1_primary_perspective": "Network",
+  "B2_levels": "Multi-level",
+  "B3_theoretical_lens_tags": [
+    "Competitive dynamics",
+    "Multimarket contact"
+  ],
+  "B4_contribution_type": "Redirection",
+  "C1_constructs": [
+    "MMC",
+    "Rivalry intensity",
+    "Other: Market concentration (Herfindahl)"
+  ],
+  "C2_measurement": [
+    "Archival behavioral",
+    "Network-derived"
+  ],
+  "C3_uncertainty_ambiguity": "Stated only",
+  "C3_metric_detail": "Imperfect observability is theorized (prices/quality hard to observe); no direct metric; identification relies on sales growth deviations as behavioral signals.",
+  "C4_shock_type": "None",
+  "C4_shock_design": "Not applicable",
+  "D1_design": "Panel",
+  "D2_causal_or_correlational": "Associational only",
+  "D2a_causality_claimed": "No",
+  "D2b_causality_supported_by_design": "Not applicable",
+  "D2_identification": "Other: Tobit with firm FE (Honore) and market/period effects; lagged MMC; comparative OLS on absolute deviations; alternative MMC weighting checks",
+  "D2_causal_claim_strength": "None",
+  "D2_key_assumptions_addressed": [
+    "Controls for market growth and concentration",
+    "Controls for foreign and single-market firms",
+    "Controls for firm market share and loss ratio",
+    "Market fixed effects",
+    "Firm fixed effects via Honore estimator",
+    "Time (period) effects"
+  ],
+  "D2_robustness_suite": [
+    "Alt specs"
+  ],
+  "D3_endogeneity": "Lags",
+  "D4_level_alignment": "Explicit bridging",
+  "D5_data_sources": [
+    "Norwegian Insurance Council yearbooks (industry regulator) 1912–1986",
+    "Counts of foreign insurers operating via domestic agents"
+  ],
+  "E1_outcomes": [
+    "Other: Sales growth deviation"
+  ],
+  "E2_effect_directions": {
+    "Firm-level MMC → Sales growth deviation": "−",
+    "Market-level MMC → Sales growth deviation": "+",
+    "Firm×Market MMC interaction → Sales growth deviation": "−"
+  },
+  "E3_mechanisms_tags": [
+    "Information access",
+    "Deterrence",
+    "Tacit collusion"
+  ],
+  "E4_moderators": [
+    "Market-level MMC (interaction with firm-level MMC)",
+    "Market concentration (Herfindahl)",
+    "Market growth rate"
+  ],
+  "F1_transparency_quality": "Medium",
+  "F2_risk_of_bias_notes": "MMC measures may be noisy due to niche segmentation/local focus within markets; imperfect mapping of punishment strength; sales growth deviation is an indirect proxy for defection; FE-tobit limitations; potential omitted variables remain.",
+  "F3_saturation_contribution": "New theme",
+  "G1_construct_mapping_note": "Count-based MMC maps to detection probability (firm-level) and to collusive price umbrella (market-level); sales growth deviation operationalizes defection from mutual forbearance.",
+  "G2_translation_rule": "Conditionality",
+  "G3_integration_evidence_strength": "Single-study suggestive",
+  "G4_unifying_props_drafts": [
+    "P1: Holding market conditions constant, a firm's sales growth deviation decreases with its firm-level MMC in the focal market.",
+    "P2: Holding firm characteristics constant, sales growth deviation increases with market-level MMC.",
+    "P3: The negative association between firm-level MMC and sales growth deviation strengthens as market-level MMC increases."
+  ],
+  "TYPE_APPLICABLE_empirical": "Yes",
+  "TYPE_APPLICABLE_theory_conceptual": "No",
+  "TYPE_APPLICABLE_review_meta": "No",
+  "NA_reason_if_any": "Not applicable",
+  "I1_mechanism_statements": [
+    "More multimarket-connected rivals raise detection probability, deterring stealthy deviations.",
+    "High market-level MMC sustains higher prices, increasing the profit gain from a small defection.",
+    "Low firm-level MMC combined with high market-level MMC maximizes expected gains from (and minimizes risks of) defection."
+  ],
+  "I2_mediation_moderation_details": [
+    {
+      "type": "moderation",
+      "variable": "Market-level MMC",
+      "role_in_link": "Strengthens the negative effect of firm-level MMC on sales growth deviation (i.e., low firm-level MMC is especially growth-enhancing when market-level MMC is high)."
+    }
+  ],
+  "I3_theoretical_propositions": [
+    "H1: Firm-level MMC in a focal market is negatively related to the firm's sales growth deviation.",
+    "H2: Market-level MMC is positively related to the firm's sales growth deviation in the focal market.",
+    "H3: Low firm-level MMC combined with high market-level MMC yields especially high sales growth deviation."
+  ],
+  "J1_main_findings_summary": [
+    "Lower firm-level MMC is associated with higher positive deviations from market sales growth.",
+    "Higher market-level MMC is associated with higher positive deviations from market sales growth.",
+    "Interaction indicates strongest deviations when firm-level MMC is low and market-level MMC is high (partial support).",
+    "Market growth and concentration increase deviations; foreign and single-market firm counts reduce deviations; high-share firms deviate less; high-loss firms deviate more."
+  ],
+  "J2_finding_evidence_links": [
+    "Table 2 (descriptives, correlations)",
+    "Table 3 (panel tobit on positive deviations; random and fixed-effect specifications)",
+    "Methods: Data and methodology (sales deviation construction; FE/RE; Honore estimator)"
+  ],
+  "J3_finding_strength": "Mixed evidence",
+  "K1_contribution_summary": "Establishes an imperfect-observability mechanism for MMC effects: detection risk (firm-level MMC) and collusive surplus (market-level MMC) jointly shape defection behavior, observed via sales growth deviations. Extends MMC theory beyond fully observable pricing contexts and demonstrates multi-level MMC effects in a long-run product-market setting."
+}

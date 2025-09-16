@@ -1,0 +1,797 @@
+{
+  "paper_metadata": {
+    "doi": "doi.org/10.1287/mnsc.2016.2691",
+    "title": "Acquisitions, Node Collapse, and Network Revolution",
+    "authors": [
+      "Exequiel Hernandez",
+      "Anoop Menon"
+    ],
+    "publication_year": 2018,
+    "journal": "Management Science",
+    "research_type": "Quantitative",
+    "research_context": "Agent-based simulation of interorganizational networks in which firms compete to acquire one another; multi-period simulation using an Erdős–Rényi initial network; actors produce resource \"bits\" each period; acquisitions modeled as node collapses that transfer target nodes and ties to acquirer; parameters include transmission (tr), distance weighting (d), and cost of size (c).",
+    "is_replication_study": false
+  },
+  "constructs": [
+    {
+      "term": "node collapse",
+      "definition": "An acquisition consists of the collapse of two nodes by which the acquirer gains ownership of the target’s ties, which creates unique strategic possibilities for acquisitions and network change.",
+      "context_snippet": "From a networks lens, an acquisition consists of the collapse of two nodes by which the acquirer gains ownership of the target’s ties, which creates unique strategic possibilities for acquisitions and network change.",
+      "aliases": [
+        "acquisition",
+        "merger"
+      ]
+    },
+    {
+      "term": "acquisition",
+      "definition": "A transaction in which an acquirer inherits the target's node(s) and the target's ties, resulting in the acquirer internalizing the target's resources and taking ownership of its network ties (i.e., a node collapse).",
+      "context_snippet": "An acquisition consists of the collapse of two nodes by which the acquirer gains ownership of the target’s ties.",
+      "aliases": [
+        "node collapse",
+        "merge"
+      ]
+    },
+    {
+      "term": "performance",
+      "definition": "Firm performance in the simulation is the period payoff π_it given by Equation (1): π_it = sum_j (r_ijt * (spl_ijt + 1)^d)^{1.5} - c(size_it)^2, where r_ijt is the amount of resources firm i has access to from firm j in period t, spl_ijt is the shortest path length from firm j to firm i at time t, d captures how distance traveled by a resource affects performance, and c(size_it)^2 captures costs (diseconomies) of firm size.",
+      "context_snippet": "The objective of each actor is to maximize its performance, which is a function of the resources to which it has access at a given point in time. The profit for actor i in period t is given by π_it = ∑_j (r_ijt × (spl_ijt + 1)^d)^1.5 − c(size_it)^2 (Equation (1)).",
+      "aliases": [
+        "profit",
+        "payoff"
+      ]
+    },
+    {
+      "term": "degree centrality",
+      "definition": "Degree centrality is measured as the number of ties an actor possesses in each period (simple count of links).",
+      "context_snippet": "At the ego level, we capture the degree centrality of each actor as the number of ties it possesses in each period (Wasserman and Faust 1994).",
+      "aliases": [
+        "degree"
+      ]
+    },
+    {
+      "term": "constraint",
+      "definition": "Network constraint (Burt 1992) measures the extent to which an ego's contacts are themselves connected; constraint is computed as c_i = ∑_j (p_ij + ∑_q p_iq p_qj)^2, where p_ij is the proportion of i's total network ties represented by j. Low values of constraint represent networks rich in structural holes; high values represent networks with high closure.",
+      "context_snippet": "We follow prior work by measuring structural holes based on network constraint (Burt 1992): c_i = ∑_j (p_ij + ∑_q p_iq p_qj)^2, i, q, j, where p_ij is the proportion of i's total network ties represented by j ... Recall that low values of constraint represent networks rich in structural holes while high values capture networks with high closure or density.",
+      "aliases": [
+        "network constraint"
+      ]
+    },
+    {
+      "term": "structural holes",
+      "definition": "Structural holes are gaps in a network where an actor can bridge otherwise disconnected parties; spanning structural holes is associated with access to novel resources and brokerage advantages (Burt 1992).",
+      "context_snippet": "Constraint is (inversely) associated with access to structural holes, whereby firms gain novel resources from bridging disconnected clusters (Burt 1992, Buskens and Van de Rĳt 2008).",
+      "aliases": []
+    },
+    {
+      "term": "modularity",
+      "definition": "Modularity (Q) captures community structure of the network; Q = 1/e * ∑_k (e_kk − {e_kk}), where e is the total number of ties, e_kk is the number of ties in community k, and {e_kk} is the expected number. High modularity indicates dense within-group ties and sparse between-group ties. The Louvain algorithm was used to estimate modularity.",
+      "context_snippet": "We capture community structure using Girvan and Newman’s (2002) approach to finding the modularity of the network ... we adopt the 'Louvain' approach (Blondel et al. 2008) because it has been shown to have a good balance of accuracy and computational efficiency (Fortunato 2010).",
+      "aliases": [
+        "community structure"
+      ]
+    },
+    {
+      "term": "internal synergies",
+      "definition": "Internal synergies refer to benefits arising from ownership of the target’s internal resources (resources owned by the firms), i.e., the value created by combining acquirer and target owned assets.",
+      "context_snippet": "The former may give rise to 'internal synergies,' as discussed by previous mergers and acquisitions (M&A) research ... Synergies stemming from resources owned by firms (internal synergies) have been emphasized in prior research on M&A.",
+      "aliases": [
+        "internal resource synergies"
+      ]
+    },
+    {
+      "term": "network synergies",
+      "definition": "Network synergies are the improvement in the acquirer’s network position resulting from the structural recombination of ties when a node collapse occurs; they stem from inheriting the target's ties and thereby changing access to external/network resources.",
+      "context_snippet": "We introduce 'network synergies'—the improvement in the acquirer’s network position resulting from the structural change in the network because of a node collapse.",
+      "aliases": [
+        "network-based synergies",
+        "external synergies"
+      ]
+    },
+    {
+      "term": "resource transmission (tr)",
+      "definition": "Transmission parameter tr ∈ [0,1] determines friction in the flow of resources through the network. The probability that firm i obtains access to resources from firm j is tr^{spl_ijt}, where spl_ijt is the shortest path length between i and j; tr = 0 implies no transmission, tr = 1 implies guaranteed transmission along any path.",
+      "context_snippet": "A 'transmission' parameter, tr ∈ [0,1], determines how much friction there is in the flow of resources through the network. The probability that a firm i obtains access to resources from firm j is then given by tr^{spl_ijt}.",
+      "aliases": [
+        "tr"
+      ]
+    },
+    {
+      "term": "distance weighting (d)",
+      "definition": "Parameter d captures how much the distance (shortest path length) that a resource has traveled across the network impacts performance; it weights resources by (spl_ijt + 1)^d in the performance equation.",
+      "context_snippet": "d is a parameter that captures how much the distance that the resource has travelled across the network impacts performance. Thus, (spl_ijt + 1)^d can be thought of as a distance-based weighting factor for the amount of resources.",
+      "aliases": [
+        "d"
+      ]
+    },
+    {
+      "term": "cost of size (c)",
+      "definition": "Parameter c determines how much firms are penalized for being large; size_it is the number of nodes owned by firm i at time t and the cost term in the profit function is c(size_it)^2, capturing diseconomies of size.",
+      "context_snippet": "On the cost side, size_it captures the number of nodes 'owned' by firm i in period t, and c is a parameter that determines how much firms are penalized for being large.",
+      "aliases": [
+        "c"
+      ]
+    },
+    {
+      "term": "firm size",
+      "definition": "Firm size in the simulation is defined as the number of nodes owned by the firm (initially one, increases when a firm acquires other firms/nodes).",
+      "context_snippet": "Initially, all firms have a 'size' of one node. As they acquire other firms, acquirers internalize the nodes of targets and thus grow in size, defined as the number of nodes possessed by the firm.",
+      "aliases": [
+        "size"
+      ]
+    },
+    {
+      "term": "network externalities",
+      "definition": "Effects of node collapses that spill over to actors not directly involved in the acquisition, including changes in their performance or structural network positions (degree, constraint).",
+      "context_snippet": "Node collapses have an impact on the existence and distribution of ties for nodes not involved directly in the acquisition, resulting in potentially strong network externalities.",
+      "aliases": []
+    },
+    {
+      "term": "Erdős–Rényi initial network",
+      "definition": "The simulation initializes a random Erdős–Rényi network with n nodes and probability p that any two nodes are linked; default network size n = 25 and p = 0.15.",
+      "context_snippet": "We initialize a random Erdős–Rényi (1959) network with n nodes and probability p that any two nodes are linked to one another. We set the network size to 25 nodes and p to 0.15.",
+      "aliases": [
+        "random network initialization"
+      ]
+    }
+  ],
+  "construct_dimensions": [
+    {
+      "parent_construct": "synergies",
+      "dimension_construct": "internal synergies"
+    },
+    {
+      "parent_construct": "synergies",
+      "dimension_construct": "network synergies"
+    }
+  ],
+  "relationships": [
+    {
+      "subject_term": "node collapse",
+      "object_term": "degree centrality",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Node collapses helped improve the performance of acquirers and, in the process of seeking more resources, resulted in higher centrality and greater access to structural holes for acquirers.",
+      "boundary_conditions": "Observed in the simulation under default parameters (n=25, p=0.15, tr=0.5) and across parameter variations described in the paper.",
+      "replication_outcome": null,
+      "context_snippet": "We observed that node collapses always increase performance for the focal firm ... degree centrality generally increased for the acquiring firm with each node collapse in Figure 2(c).",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result1a",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Effect reported from agent-based simulation; mechanism modeled explicitly but not an empirical causal test.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "networks as pipes",
+        "network synergies"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "node collapse",
+      "object_term": "constraint",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Node collapses tended to produce positive externalities on the performance of others but negative externalities on their centrality and structural holes.",
+      "boundary_conditions": "Decline in constraint for acquirers observed when acquirers seek network resources; in late extremely small-network stages constraint may increase due to density.",
+      "replication_outcome": null,
+      "context_snippet": "Network constraint in Figure 2(d) generally declined with each transaction, suggesting that the pursuit of network resources was associated with increasing access to structural holes.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result1b",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Result arises from simulation dynamics.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "structural holes",
+        "networks as pipes"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "node collapse",
+      "object_term": "modularity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "These transactions tended to produce positive externalities on the performance of others but negative externalities on their centrality and structural holes. When firms could only add ties, the impact on the network per transaction was significantly weaker.",
+      "boundary_conditions": "Observed in default simulation; modularity decreased over time as node collapses occurred.",
+      "replication_outcome": null,
+      "context_snippet": "Figure 2(e) shows that the modularity of the network decreases over time. This means that the process of competitive node collapses to obtain greater amounts of resources leads to a decreasing number of distinct clusters in the network.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result1c",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Agent-based simulation evidence.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "networks as pipes"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "network synergies",
+      "object_term": "rate of network shrinkage (increasing-returns world)",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "In a world of increasing returns to scale, network synergies can ameliorate the tendency of firms to quickly acquire others, slowing network shrinkage.",
+      "boundary_conditions": "Result pertains to simulation with increasing returns to scale on resources; network synergies slow shrinkage that would otherwise occur with internal synergies alone.",
+      "replication_outcome": null,
+      "context_snippet": "As the network evolves over time, the relative importance of network synergies increases, slowing the rate of network collapse at an increasing rate.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result2A",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Simulation-based countervailing force between internal synergies and network synergies.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "synergy in mergers and acquisitions",
+        "networks as pipes"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "network synergies",
+      "object_term": "network shrinkage under decreasing returns",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "In a world of decreasing returns to scale, network synergies can facilitate node collapses and lead to network shrinkage.",
+      "boundary_conditions": "Observed when resource production exhibits decreasing returns and network synergies provide sufficient value to offset losses from decreasing returns.",
+      "replication_outcome": null,
+      "context_snippet": "Allowing for network synergies in this world can actually cause some firms to undertake acquisitions driven by the possibility of increasing access to network resources to an extent that more than compensates for the value loss due to decreasing returns.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result2B",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Simulation finding about interaction of returns-to-scale and network synergies.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "synergy in mergers and acquisitions",
+        "networks as pipes"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "node collapse",
+      "object_term": "performance of other actors",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Node collapses tend to have a positive effect on the performance of the rest of the network, and this effect decreases over time.",
+      "boundary_conditions": "Positive externality arises because acquirers internalize additional resources and thereby transmit more to linked partners; effect size declines over time as network densifies.",
+      "replication_outcome": null,
+      "context_snippet": "Node collapses create positive externalities for two reasons. First, they allow the acquirer to internalize and control one additional 'bit' of resources ... Second, collapses tend to shrink the distance between the target's partners and the acquirer ... increasing the odds that resources will flow to the acquirer's partners.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result3A",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Simulation produces average positive performance externalities for non-acquirer actors.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "networks as pipes"
+      ],
+      "moderators": [
+        "transmission (tr)"
+      ],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "node collapse",
+      "object_term": "degree centrality of other actors",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Node collapses create a negative externality on the degree centrality of actors.",
+      "boundary_conditions": "Degree of a third party can decrease when third party was tied to both merging nodes; negative externality increases over time as the network becomes denser, then lessens in very late stages when few firms remain.",
+      "replication_outcome": null,
+      "context_snippet": "The degree centrality of a third party (i.e., neither acquirer nor target) can never increase after a node collapse because such transactions do not create new ties in the network—they only reassign the 'ownership' of existing ties.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result3B",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Simulation-based negative externality on degree for third parties.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "networks as pipes"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "node collapse",
+      "object_term": "constraint of other actors",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "Node collapses create a negative externality on the structural holes of other actors (i.e., increases others' constraint) when the focal actor seeks to increase structural holes.",
+      "boundary_conditions": "Applies when acquirers seek to increase their own structural holes; externality may reverse in very small networks.",
+      "replication_outcome": null,
+      "context_snippet": "A unique issue raised by node collapses is that firms may strategically consider both kinds of resources ... Result 3C: Node collapses create a negative externality on the structural holes of other actors/ ... increases others' constraint ... when the focal actor seeks to increase structural holes.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result3C",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Simulation result; mechanism described with toy network illustration.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "structural holes",
+        "networks as pipes"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "low cost of being large",
+      "object_term": "network concentration (dominance by few large firms)",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "When actors seek to increase the amount of resources accessed through node collapses and cost is low, the network tends to become dominated by one or a few large firms.",
+      "boundary_conditions": "Observed when cost parameter c is low (near 0) combined with incentives for internal resource production (increasing returns in model).",
+      "replication_outcome": null,
+      "context_snippet": "When cost is low, the network becomes dominated by one or a few large firms that absorb many nodes because the internal resource incentives overpower the network resource incentives.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result4A",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Simulation showing concentration when c is low.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "synergy in mergers and acquisitions"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "increase in cost of being large",
+      "object_term": "number of firms remaining",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "As cost increases, the number of firms remaining in the network increases (i.e., fewer node collapses happen).",
+      "boundary_conditions": "Observed in simulation as cost parameter c varied, other parameters held constant.",
+      "replication_outcome": null,
+      "context_snippet": "Figure 4(a) shows that the number of firms remaining in the network increases with cost (i.e., fewer node collapses happen as cost increases).",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result4B",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Simulation finding about cost parameter c.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "Coasean diseconomies of size",
+        "synergy in mergers and acquisitions"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "increase in distance importance (d)",
+      "object_term": "modularity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "As the importance of distance-weighted resources increases up to moderate levels, the network is increasingly characterized by small to medium-sized firms and evolves toward a structure characterized by ... higher modularity at the global level.",
+      "boundary_conditions": "Effect holds for moderate d; for very high d and in late periods a mild reversal (nonlinearity) occurs due to the 'hurdle rate' effect.",
+      "replication_outcome": null,
+      "context_snippet": "Figure 5(d) shows that the importance of distant network resources pushes the network toward higher modularity initially as d increases. But at very high d at late stages, this tendency is slightly reversed.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result5A",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Simulation-based; nonlinearity noted when d is very high.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "networks as pipes",
+        "novelty/value of distant resources"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "very high distance importance (d)",
+      "object_term": "constraint (late periods)",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Positive",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "As the importance of distance-weighted resources increases from moderate to very high levels, in late periods there is a mild amelioration ... the network evolves toward a structure characterized by slightly higher constraint.",
+      "boundary_conditions": "Applies mainly in late periods and at very high values of d because of the 'hurdle rate' effect observed in the simulation.",
+      "replication_outcome": null,
+      "context_snippet": "Figure 5(c) depicts that constraint initially declines in d ... But at very high d and in late stages, the hurdle rate take effect and push the network toward higher constraint.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result5B",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Nonlinear simulation effect.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "networks as pipes"
+      ],
+      "moderators": [],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "increase in transmission (tr) in low-cost scenario",
+      "object_term": "number of node collapses (or number of firms remaining)",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Negative",
+      "non_linear_type": null,
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "As transmission increases, the number of firms remaining in the network increases (fewer node collapses), when cost is low.",
+      "boundary_conditions": "Result pertains to low-cost (c ~ 0) regime; increasing tr makes network resources more available so acquisitions for internalization are less attractive.",
+      "replication_outcome": null,
+      "context_snippet": "Figure 6(a) shows that, under low cost, the number of firms remaining in the network increases as transmission increases.",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result6A",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Simulation-based effect conditional on cost parameter.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "networks as pipes"
+      ],
+      "moderators": [
+        "cost of size (c)"
+      ],
+      "mediators": [],
+      "controls": []
+    },
+    {
+      "subject_term": "increase in transmission (tr) in high-cost scenario",
+      "object_term": "number of node collapses / network inequality / constraint / modularity",
+      "status": "Empirical_Result",
+      "evidence_type": "Quantitative",
+      "effect_direction": "Mixed",
+      "non_linear_type": "Other",
+      "is_validated_causality": false,
+      "is_meta_analysis": false,
+      "qualitative_finding": null,
+      "supporting_quote": "As transmission increases in a high-cost scenario, the number of node collapses initially increases and then declines, the egalitarianism of the network initially decreases and then increases, the constraint of ego networks initially increases and then decreases, and the modularity of the network initially decreases and then increases.",
+      "boundary_conditions": "Nonlinear effect observed when cost parameter c is high (e.g., c=1) across early/mid/late periods in the simulation.",
+      "replication_outcome": null,
+      "context_snippet": "Figure 6(b) demonstrates that in the initial periods, the distribution of firm size becomes more egalitarian as transmission increases in a low-cost regime, whereas it exhibits a nonlinear pattern under a high-cost regime ...",
+      "origin_source": "Model_Result",
+      "hypothesis_id": null,
+      "claim_id": "Result6B",
+      "study_id": null,
+      "causal_support_level": "Indeterminate",
+      "design_type": "Other",
+      "manipulated_variable": "None",
+      "causal_notes": "Complex nonlinear patterns arise in simulation when varying tr and c jointly.",
+      "section_header": "Results",
+      "line_index_range": null,
+      "supporting_theories": [
+        "networks as pipes",
+        "Coasean diseconomies of size"
+      ],
+      "moderators": [
+        "cost of size (c)"
+      ],
+      "mediators": [],
+      "controls": []
+    }
+  ],
+  "measurements": [
+    {
+      "construct_term": "performance",
+      "name": "Performance payoff (π_it) - Equation (1)",
+      "details": "π_it = ∑_j (r_ijt × (spl_ijt + 1)^d)^1.5 − c(size_it)^2. First term captures value of resources (own and network); r_ijt is amount of resources accessible from firm j; spl_ijt is shortest path length; d weights distance; exponent 1.5 captures increasing returns; second term captures cost of firm size with parameter c.",
+      "instrument": "Model equation in Methods/Model specification",
+      "scale_items": null,
+      "scoring_procedure": "Calculated each period for each firm based on current network and firm size, using expected value given probabilistic transmission tr.",
+      "formula": "π_it = ∑_j (r_ijt × (spl_ijt + 1)^d)^1.5 − c(size_it)^2",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": "Distance-weighting and size-cost parameters varied in sensitivity analyses (d and c).",
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "constraint",
+      "name": "Burt's network constraint",
+      "details": "Constraint computed as c_i = ∑_j (p_ij + ∑_q p_iq p_qj)^2 where p_ij is proportion of i's ties to j; follows Burt (1992). Lower values indicate more structural holes.",
+      "instrument": "Network metric (Burt 1992)",
+      "scale_items": null,
+      "scoring_procedure": "Computed each period for each actor from adjacency matrix.",
+      "formula": "c_i = ∑_j (p_ij + ∑_q p_iq p_qj)^2",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "degree centrality",
+      "name": "Degree (count of ties)",
+      "details": "Degree centrality measured as count of direct ties for each actor each period.",
+      "instrument": "Network adjacency matrix",
+      "scale_items": null,
+      "scoring_procedure": "Count of ties per node per period.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "modularity",
+      "name": "Network modularity (Q) - Louvain algorithm",
+      "details": "Modularity Q computed to capture community structure; Louvain algorithm used for detection and computation.",
+      "instrument": "Louvain community detection algorithm",
+      "scale_items": null,
+      "scoring_procedure": "Compute partition using Louvain algorithm and calculate modularity Q.",
+      "formula": "Q = 1/e * ∑_k (e_kk − {e_kk})",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "resource transmission (tr)",
+      "name": "Transmission probability parameter",
+      "details": "tr ∈ [0,1] determines friction in resource flow; probability that firm i receives resources from firm j is tr^{spl_ijt}; varied in sensitivity analyses.",
+      "instrument": "Model parameter",
+      "scale_items": null,
+      "scoring_procedure": "Set globally per simulation run.",
+      "formula": "P(access) = tr^{spl_ijt}",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "distance weighting (d)",
+      "name": "Distance weighting parameter",
+      "details": "Parameter d weights resources by distance: resource contribution multiplied by (spl_ijt + 1)^d in performance equation; varied to study importance of distant resources.",
+      "instrument": "Model parameter",
+      "scale_items": null,
+      "scoring_procedure": "Set globally per simulation run.",
+      "formula": "weight = (spl_ijt + 1)^d",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "cost of size (c)",
+      "name": "Firm size cost parameter",
+      "details": "Parameter c determines penalty for being large; cost term in performance is c(size_it)^2. Varied to model diseconomies of size.",
+      "instrument": "Model parameter",
+      "scale_items": null,
+      "scoring_procedure": "Set globally per simulation run.",
+      "formula": "cost = c(size_it)^2",
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "Erdős–Rényi initial network",
+      "name": "Initial network generation (Erdős–Rényi)",
+      "details": "Initial network generated as Erdős–Rényi with n=25 nodes and tie probability p=0.15 (default); used for all simulation runs unless specified otherwise.",
+      "instrument": "Random graph generator",
+      "scale_items": null,
+      "scoring_procedure": "Generate adjacency by Bernoulli(p) for each dyad.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    },
+    {
+      "construct_term": "resource production (bit)",
+      "name": "Per-node resource production",
+      "details": "Each node produces a single 'bit' of resources every period that is valuable to firms; the firm that owns the node has guaranteed access (probability 1); other firms access via network transmission probability tr^{spl}.",
+      "instrument": "Model rule",
+      "scale_items": null,
+      "scoring_procedure": "One bit per node per period; distributed probabilistically via tr and shortest path length.",
+      "formula": null,
+      "reliability": null,
+      "validity": null,
+      "context_adaptations": null,
+      "study_id": null,
+      "origin_source": "Methods-Operationalization",
+      "hypothesis_id": null
+    }
+  ],
+  "core_theories": [
+    {
+      "name": "networks as pipes",
+      "canonical_id": null,
+      "origin_source": "Model_Result",
+      "linked_claims": [
+        "Result1a",
+        "Result1b",
+        "Result1c",
+        "Result3A",
+        "Result3B",
+        "Result3C",
+        "Result5A",
+        "Result5B",
+        "Result6A",
+        "Result6B"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "interorganizational networks function as 'pipes' through which firms obtain valuable resources",
+      "evidence": "Used to justify that network position affects access to resources and to explain externalities and effects of transmission parameter tr.",
+      "section_header": "Introduction / Background",
+      "confidence": 0.9
+    },
+    {
+      "name": "structural holes",
+      "canonical_id": null,
+      "origin_source": "Model_Result",
+      "linked_claims": [
+        "Result1b",
+        "Result3C",
+        "Result4A",
+        "Result4B"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "constraint is (inversely) associated with access to structural holes, whereby firms gain novel resources from bridging disconnected clusters (Burt 1992)",
+      "evidence": "Used to ground claims about how node collapses change access to novelty and brokerage (constraint and structural holes) and the competitive implications.",
+      "section_header": "Background / Methods",
+      "confidence": 0.9
+    },
+    {
+      "name": "synergy in mergers and acquisitions",
+      "canonical_id": null,
+      "origin_source": "Model_Result",
+      "linked_claims": [
+        "Result2A",
+        "Result2B",
+        "Result4A",
+        "Result4B"
+      ],
+      "hypothesis_id": null,
+      "grounding_phrase": "M&A research has focused on the internalization benefits of such deals ... 'internal synergies' ... we introduce 'network synergies' ...",
+      "evidence": "Used to motivate the distinction between internal synergies (value from internalized assets) and network synergies (value from inherited ties) and to interpret how those incentives shape network evolution.",
+      "section_header": "Introduction / Background",
+      "confidence": 0.85
+    }
+  ],
+  "coverage_report": {
+    "constructs": 15,
+    "relationships": 14,
+    "measurements": 11,
+    "reason": null,
+    "errors": []
+  }
+}

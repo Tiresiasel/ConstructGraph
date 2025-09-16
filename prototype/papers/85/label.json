@@ -1,0 +1,155 @@
+{   "relevant":false,
+    "L_summary_of_the_paper": {
+      "L1_summary_of_paper": "This conceptual paper develops a theoretical framework to explain 'values-based rivalry' between social activists and firms. The core research question is how to characterize the unique tensions, actions, and responses in this rivalry and what determines a firm's likelihood of responding to an activist's claims. The key concepts introduced are 'values-based rivalry' (competition over control of practices and supremacy in 'values domains'), and the central actions are 'claims' (by activists) and 'counterclaims' (by firms). The theoretical framing integrates competitive dynamics research with social activist research. The framework proposes that the rivalry is driven by tensions over practice control and values supremacy. The paper's second part details the constructs and relationships driving firm responses, arguing that a firm's response likelihood is determined by a managerial sensemaking process. This process involves three key perceptions, which are context-specific versions of the Awareness-Motivation-Capability (AMC) framework: 1) Perceived Salience (Awareness), shaped by the activist's influence attributes (effectiveness, disruptiveness, support); 2) Perceived Threat (Motivation), shaped by the activist's diagnostic claims (focus, tone, reach) and catalyzed by salience; and 3) Perceived Feasibility (Capability), shaped by the activist's prognostic claims (scope, alignment). The main conclusion is a set of 11 propositions detailing these relationships, culminating in the central argument that perceived threat positively relates to response likelihood, and this relationship is positively moderated by perceived feasibility. The paper's primary contribution is to expand competitive dynamics theory to account for rivalry between dissimilar actors (firms and activists) and to provide a detailed, micro-level cognitive model of the firm's response process, thereby also enriching social activist research with a more dynamic and interactive perspective."
+    },
+    "M_theory_and_unit_of_analysis": {
+      "M1_main_theories": [
+        {
+          "theory": "Competitive dynamics",
+          "tag": "primary"
+        },
+        {
+          "theory": "Social activist research",
+          "tag": "primary"
+        },
+        {
+          "theory": "Awareness-Motivation-Capability (AMC) framework",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Dyad",
+      "M3_unit_of_analysis_element": "Other: <specify>(Firm's counterclaim response to an activist's claim)"
+    },
+    "N_assumptions_and_behavioral_scope": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "No",
+      "N3_assumption_common_environment": "No",
+      "N4_assumption_equal_weighting": "Not applicable",
+      "N5_focus_scope": "Single competitor focus"
+    },
+    "A_bibliographic_and_administrative": {
+      "A1_citation": "Waldron, T. L., Navis, C., Aronson, O., York, J. G., & Pacheco, D. F. (2019). Values-based rivalry: A theoretical framework of rivalry between activists and firms. Academy of Management Review, 44(4), 800-818.",
+      "A2_year": 2019,
+      "A3_outlet_tier": "Other-A*",
+      "A4_study_type": "Conceptual/Theory",
+      "A5_replicability": "Not applicable"
+    },
+    "B_perspective_and_theoretical_positioning": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Multi-level",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Attention-based view",
+        "Cognitive maps"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C_phenomenon_constructs_and_context": {
+      "C1_constructs": [
+        "Attack/response",
+        "Rivalry intensity",
+        "Perceived competitor set",
+        "Status",
+        "Other: <specify>(Values-based rivalry, Managerial perceptions, Salience, Threat, Feasibility, Claims, Counterclaims)"
+      ],
+      "C2_measurement": "Not applicable",
+      "C3_uncertainty_ambiguity": "Not applicable",
+      "C3_metric_detail": "Not applicable",
+      "C4_shock_type": "Reputation",
+      "C4_shock_design": "Not applicable"
+    },
+    "D_methods_and_identification_causality": {
+      "D1_design": "Conceptual/Theory",
+      "D2_causal_or_correlational": "Theoretical/Not applicable",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Not applicable",
+      "D2_identification": "Not applicable",
+      "D2_causal_claim_strength": "None",
+      "D2_key_assumptions_addressed": "Not applicable",
+      "D2_robustness_suite": "Not applicable",
+      "D3_endogeneity": "Not applicable",
+      "D4_level_alignment": "Other: <specify>(Theoretically specified links between managerial cognition and firm-level response)",
+      "D5_data_sources": "Not applicable"
+    },
+    "E_outcomes_and_effects": {
+      "E1_outcomes": "Other: <specify>(Firm response likelihood (counterclaims))",
+      "E2_effect_directions": "Not applicable",
+      "E3_mechanisms_tags": [
+        "Attention allocation",
+        "Legitimacy/Status",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "Perceived feasibility"
+      ]
+    },
+    "F_quality_and_systematicity": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "Not applicable",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G_integration_hooks": {
+      "G1_construct_mapping_note": "The paper maps the general constructs of the Awareness-Motivation-Capability (AMC) framework to more context-specific managerial perceptions in values-based rivalry: Awareness becomes Perceived Salience, Motivation becomes Perceived Threat, and Capability becomes Perceived Feasibility.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "Rivalry can emerge between dissimilar actors when they compete for control over behaviors (practices) and supremacy in non-market sociocognitive spaces (values domains).",
+        "In rivalries between dissimilar actors, a focal firm's response is catalyzed by a multi-stage managerial sensemaking process where perceived salience of the rival precedes and enables threat assessment, which in turn motivates a response.",
+        "The translation of a perceived threat into a competitive response is conditional on the perceived feasibility of available actions, which acts as a cognitive empowerment mechanism."
+      ]
+    },
+    "H_type_applicability": {
+      "TYPE_APPLICABLE_empirical": "No",
+      "TYPE_APPLICABLE_theory_conceptual": "Yes",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "This paper is a conceptual piece that develops a new theoretical framework. It does not test hypotheses using empirical data, nor is it a literature review or meta-analysis."
+    },
+    "I_mechanism_and_proposition_detailing": {
+      "I1_mechanism_statements": [
+        "Managerial threat perception functions as the primary motivational mechanism that converts latent tension between a firm and an activist into an active response (counterclaim).",
+        "Managerial salience perception acts as a cognitive filtering mechanism, determining which activists are worthy of attention and subsequent threat evaluation.",
+        "Managerial feasibility perception serves as a cognitive empowerment mechanism, amplifying the firm's propensity to respond to a perceived threat when potential changes are deemed realistic and manageable."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "moderation",
+          "variable": "Managers' feasibility perceptions",
+          "role_in_link": "Positively moderates the relationship between managers' threat perceptions and their firm's response likelihood."
+        },
+        {
+          "type": "Other: <specify>(Catalyzing relationship)",
+          "variable": "Managers' salience perceptions",
+          "role_in_link": "Precedes and catalyzes managers' efforts to make sense of threats from activists."
+        }
+      ],
+      "I3_theoretical_propositions": [
+        "Proposition 1: Managers’ threat perceptions positively relate to their firms’ response likelihood during values-based rivalry.",
+        "Proposition 2: Managers’ salience perceptions precede and catalyze their efforts to make sense of threats from activists during values-based rivalry.",
+        "Proposition 3: Managers’ feasibility perceptions positively moderate the relationship between their threat perceptions and response likelihood during values-based rivalry.",
+        "Proposition 4: Managers’ perceptions of activists’ effectiveness positively relate to their perceptions of the activists’ salience.",
+        "Proposition 5: Managers’ perceptions of activists’ disruptiveness positively relate to their perceptions of the activists’ salience.",
+        "Proposition 6: Managers’ perceptions of activists’ support positively relate to their perceptions of the activists’ salience.",
+        "Proposition 7: Managers’ perceptions of activists’ diagnostic focus influence their perceptions of the activists as threats such that threat perceptions intensify as diagnostic focus becomes more individual.",
+        "Proposition 8: Managers’ perceptions of activists’ diagnostic tone influence their perceptions of the activists as threats such that threat perceptions intensify as claims become more negative in tone.",
+        "Proposition 9: Managers’ perceptions of activists’ diagnostic reach influence their perceptions of the activists as threats such that threat perceptions intensify as claims become broader in reach.",
+        "Proposition 10: Managers’ perceptions of activists’ prognostic scope negatively relate to their perceptions of the feasibility of accommodating the practice change proposed in activists’ claims.",
+        "Proposition 11: Managers’ perceptions of activists’ prognostic alignment positively relate to their perceptions of the feasibility of accommodating the practice change proposed in activists’ claims."
+      ]
+    },
+    "J_findings_and_evidence": {
+      "J1_main_findings_summary": [
+        "The rivalry between activists and firms, termed 'values-based rivalry', is characterized by tensions over control of firm practices and supremacy in 'values domains'.",
+        "The primary actions and responses in this form of rivalry are symbolic 'claims' and 'counterclaims' rather than traditional market moves.",
+        "A firm's decision to respond to an activist's claim is driven by managers' perceptions of the activist's salience, the threat posed by their claims, and the feasibility of potential changes.",
+        "Managers' perception of an activist's salience is informed by the activist's reputed influence attributes (effectiveness, disruptiveness, support).",
+        "Managers' perception of threat is informed by attributes of the activist's diagnostic claims (focus, tone, reach).",
+        "Managers' perception of feasibility is informed by attributes of the activist's prognostic claims (scope, alignment)."
+      ],
+      "J2_finding_evidence_links": "Not applicable",
+      "J3_finding_strength": "Speculative (conceptual)"
+    },
+    "K_overall_paper_contribution": {
+      "K1_contribution_summary": "The paper's main contribution is the development of an integrative theoretical framework that conceptualizes rivalry between dissimilar actors (activists and firms). It broadens competitive dynamics theory by identifying the unique tensions (practice control, values supremacy) and actions (claims/counterclaims) of this rivalry. Furthermore, it provides a detailed cognitive model specifying how activist- and claim-related attributes shape managerial perceptions (salience, threat, feasibility), which in turn drive the firm's likelihood of response."
+    }
+  }

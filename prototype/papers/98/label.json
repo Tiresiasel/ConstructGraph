@@ -1,0 +1,164 @@
+{   "relevant":false,
+    "L": {
+      "L1_summary_of_paper": "This study develops and empirically tests a refined thesis derived from the Law of Requisite Variety (LRV). The central research question is how the experiential variety of a top management team (TMT) translates into superior firm performance. The authors introduce the key concept of 'calibrated competitive repertoires,' defined as the degree to which a firm's competitive actions—in terms of their complexity and consistency—match the level of variety present in the external competitive environment. The theoretical framing integrates LRV with Upper Echelons Theory, positing that TMT experiential variety (internal variety) enhances a firm's ability to achieve calibrated repertoires (matching external variety), which in turn drives performance. The study examines the relationships between TMT industry experience variety (the independent variable), calibrated repertoire complexity and consistency (the mediators), and firm financial performance (the dependent variable, measured by ROA). The context is the global 3D printing industry from 1986 to 2017, using hand-collected longitudinal panel data. The main finding is that TMT experiential variety does not directly impact firm performance but has a significant positive indirect effect through the full mediation of calibrated repertoires. Specifically, greater TMT variety is associated with more accurately calibrated repertoires (both complexity and consistency), and this calibration is positively associated with higher ROA. The paper's primary contribution is to provide one of the first direct and nuanced empirical tests of the LRV in management, shifting the focus from 'more variety is better' to 'calibrated variety is better' and offering a concrete method for operationalizing and measuring this calibration."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Law of Requisite Variety",
+          "role": "primary"
+        },
+        {
+          "theory": "Upper Echelons Theory",
+          "role": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Firm",
+      "M3_unit_of_analysis_element": "Repertoire diversity"
+    },
+    "N": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "Not reported",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A": {
+      "A1_citation": "Fox, B. C., Simsek, Z., & Heavey, C. 2022. Top management team experiential variety, competitive repertoires, and firm performance: Examining the law of requisite variety in the 3D printing industry (1986-2017). Academy of Management Journal, 65(2), 545-576.",
+      "A2_year": 2022,
+      "A3_outlet_tier": "AMJ",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Other: Firm-to-environment",
+      "B2_levels": "Firm",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Cognitive maps"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Repertoire",
+        "Similarity/overlap"
+      ],
+      "C2_measurement": [
+        "Archival behavioral",
+        "Text/NLP"
+      ],
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "TMT industry experience variety: Shannon entropy index of different NAICS codes present in the TMT's collective career history. Competitive Repertoire Complexity: Shannon entropy index of 10 types of competitive actions in a given year. Competitive Repertoire Consistency: Normalized displacement vector of year-to-year change in the firm's competitive repertoire. Calibrated Repertoires (Complexity & Consistency): Measured as 1 minus the absolute deviation of a firm's repertoire metric from a 'standard' derived from the trend line of the industry's top three performers' metrics for that year.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Weak",
+      "D2_identification": "Other: Random-effects panel models with controls and lags; Fixed-effects panel models for robustness",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": [
+        "Testing for symmetric effects of deviation above/below the calibration standard.",
+        "Distinguishing between-firm and within-firm effects using hybrid models."
+      ],
+      "D2_robustness_suite": [
+        "Alt specs",
+        "Cluster/serial corr fixes"
+      ],
+      "D3_endogeneity": [
+        "FE saturation",
+        "Lags"
+      ],
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "Wohlers Report",
+        "Econolyst research reports",
+        "Factiva",
+        "BoardEx",
+        "EDGAR filings (10-K, S-1)",
+        "LinkedIn profiles",
+        "Executive biographies and CVs"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Revenue/profit",
+        "Action rate/mix"
+      ],
+      "E2_effect_directions": [
+        {
+          "outcome": "Calibrated Action rate/mix",
+          "direction": "+"
+        },
+        {
+          "outcome": "Revenue/profit",
+          "direction": "+"
+        }
+      ],
+      "E3_mechanisms_tags": [
+        "Learning",
+        "Attention allocation",
+        "Signaling",
+        "Other: Cognitive and behavioral adaptation (reducing routinized or headless chicken responses)"
+      ],
+      "E4_moderators": []
+    },
+    "F": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "The primary risk of bias stems from the potential endogeneity of TMT composition; unobserved factors (like a firm's strategic intent or culture) might influence both the hiring of diverse TMTs and the firm's competitive posture. A second key assumption is that the actions of top-performing firms serve as an accurate proxy for external environmental variety, which may not always hold. The single-industry context (3D printing) limits external validity.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The central conceptual move of this paper is to map the abstract idea of 'requisite variety' from LRV onto a measurable construct: 'calibration.' Calibration is operationalized as the inverse of the deviation between a focal firm's competitive repertoire characteristics (complexity, consistency) and an environmental benchmark derived from industry top performers.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "The performance effect of TMT experiential variety is fully mediated by the firm's ability to calibrate its competitive repertoire to the demands of the external environment.",
+        "Effective adaptation requires calibrating not only the contemporaneous complexity of actions but also their temporal consistency over time.",
+        "Deviations from the requisite level of repertoire variety, whether in the direction of over-simplification or over-complexification, are equally detrimental to firm performance."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "Not applicable"
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "TMTs with high industry experience variety can draw upon a richer reserve of cognitive resources and behavioral routines. This reduces their propensity to engage in maladaptive responses, such as 'routinized responses' (oversimplification) or 'headless chicken responses' (over-complexification), thereby enabling them to enact a more calibrated set of competitive actions."
+      ],
+      "I2_mediation_moderation_details": [
+        {
+          "type": "mediation",
+          "variable": "Calibrated repertoire complexity",
+          "role_in_link": "Mediates the relationship between TMT industry experience variety and firm performance."
+        },
+        {
+          "type": "mediation",
+          "variable": "Calibrated repertoire consistency",
+          "role_in_link": "Mediates the relationship between TMT industry experience variety and firm performance."
+        }
+      ],
+      "I3_theoretical_propositions": "Not applicable"
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "TMT industry experience variety is positively and significantly associated with a firm's ability to calibrate both its repertoire complexity (H1) and repertoire consistency (H2).",
+        "Calibrated repertoire complexity (H3) and calibrated repertoire consistency (H4) are both positively and significantly associated with higher firm performance (ROA).",
+        "The effect of TMT industry experience variety on firm performance is fully indirect, operating through the mediating mechanisms of calibrated repertoire complexity (H5) and consistency (H6).",
+        "The direct effect of TMT industry experience variety on firm performance is not statistically significant."
+      ],
+      "J2_finding_evidence_links": [
+        "Table 2 for H1-H4",
+        "Table 3 and Figure 2 for H5-H6"
+      ],
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "This paper's main contribution is the clarification, operationalization, and direct empirical testing of the Law of Requisite Variety within strategic management. By introducing the 'calibrated competitive repertoire' construct, it redirects theoretical attention from simply maximizing internal variety (e.g., TMT diversity) to achieving an optimal fit with external environmental demands. It provides a novel methodology for measuring this 'calibration' and demonstrates that this fit, not TMT diversity per se, is the more proximate driver of firm performance."
+    }
+  }

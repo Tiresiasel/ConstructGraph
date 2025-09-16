@@ -1,0 +1,9 @@
+{
+  "pdf": "/Users/tiresias/Documents/PhD/project3/scripts/prompt_lab/samples/Strategic Management Journal - 2013 - Lipparini - From core to periphery and back  A study on the deliberate shaping of.pdf",
+  "prompt": "/Users/tiresias/Documents/PhD/project3/scripts/prompt_lab/prompts/blueprint_prompt.txt",
+  "model": "gpt-5-mini",
+  "json_output": true,
+  "system": "You are a research assistant skilled in knowledge extraction. Output only valid JSON when requested.",
+  "timestamp": "20250819_162225",
+  "saved_primary_output": "output.json"
+}

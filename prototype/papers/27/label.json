@@ -1,0 +1,134 @@
+{
+    "L1_summary_of_paper": "The paper asks a first-order “why” question in competitive dynamics: what primary reasons (competitive rationales) directly cause specific tactical actions—or deliberate inaction (forbearance)—at a given moment and in a specific situation. Using the causal theory of action (reasons as causes), the authors define competitive rationales as agents’ primary reasons that explain intent and timing of a concrete move. Via an inductive multi-case qualitative study of 9 professional basketball head coaches across 15 games, they elicited and coded 841 coach statements tied to video-anchored decision points (substitutions, timeouts, offense/defense changes), identifying 43 distinct rationales and organizing them into a 3×3 framework: rationale types (rivalrous, organizational, social) × scope (immediate situation, longer-term strategic outcomes, external parties beyond the focal rival). Contrary to a purely adversarial view, most rationales were organizational (resource orchestration, learning, strategic consistency), and the majority targeted longer-term or broader-scope outcomes beyond the immediate exchange. Forbearance emerged as purposeful (especially among more decorated coaches), used to preserve options, misdirect rivals, and build capability. The study conditions the AMC model: awareness is challenged by the complexity/inscrutability of rationales; motivation includes reasons to act and to strategically forbear; capability is not only a prerequisite but also an outcome deliberately built through tactical actions. Contributions include (a) introducing and defining competitive rationales, (b) a type×scope framework to interpret tactical moves, and (c) a reframing of AMC with richer cognitive and temporal logic of rivalry. ",
+    "M1_main_theories": [
+    "Causal theory of action (primary)",
+    "Competitive dynamics / AMC (secondary)",
+    "Learning (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Event",
+    "M3_unit_of_analysis_element": [
+    "Other: Competitive rationales for tactical actions and forbearances",
+    "Speed/Timing"
+    ],
+    "N1_behavioral_scope": "Multiple behaviors",
+    "N2_assumption_symmetry": "False",
+    "N3_assumption_common_environment": "Yes",
+    "N4_assumption_equal_weighting": "Not reported",
+    "N5_focus_scope": "Single competitor focus",
+    "A1_citation": "Andrevski, G., Miller, D., Le Breton-Miller, I., & Ferrier, W. (2022). Competitive Rationales: Beneath the Surface of Competitive Behavior. Journal of Management, 48(8), 2286–2317. https://doi.org/10.1177/01492063211040555",
+    "A2_year": "2022",
+    "A3_outlet_tier": "JoM",
+    "A4_study_type": "Empirical-Qual",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Bridging",
+    "B2_levels": [
+    "Event",
+    "Firm"
+    ],
+    "B3_theoretical_lens_tags": [
+    "Competitive dynamics",
+    "Rivalry",
+    "Learning",
+    "Other: Causal theory of action"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+    "Attack/response",
+    "Speed/Timing",
+    "Other: Competitive rationales",
+    "Other: Forbearance",
+    "Other: Strategic consistency"
+    ],
+    "C2_measurement": [
+    "Text/NLP",
+    "Other: Interview-based retrospective (video-cued)"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Qualitative Gioia-style coding of 841 rationale statements elicited in post-game, video-cued interviews; 43 primary rationales distilled; inter-coder reliability for second-order categories Perreault & Leigh index = 0.74; statements mapped into a 3×3 type×scope framework. ",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Case/Qual",
+    "D2_causal_or_correlational": "Theoretical/Not applicable",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "Not applicable",
+    "D2_identification": "Not applicable",
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": "Not reported",
+    "D2_robustness_suite": "Not applicable",
+    "D3_endogeneity": "Not applicable",
+    "D4_level_alignment": "None",
+    "D5_data_sources": [
+    "Post-game semi-structured interviews with head coaches",
+    "Professional video recordings of games (score/time overlay) used as recall cues",
+    "Archival team/coach statistics from FIBA Europe and national federation"
+    ],
+    "E1_outcomes": [
+    "Other: Distribution of rationale types and scopes",
+    "Other: AMC component reinterpretations"
+    ],
+    "E2_effect_directions": {
+    "Other: Distribution of rationale types and scopes": "Other: Organizational rationales dominate; longer-term/broader-scope rationales are prevalent",
+    "Other: AMC component reinterpretations": "Other: Awareness challenged; motivation includes forbearance; capability built by action"
+    },
+    "E3_mechanisms_tags": [
+    "Learning",
+    "Attention allocation",
+    "Signaling",
+    "Legitimacy/Status",
+    "Spillovers",
+    "Resource dependence",
+    "Deterrence"
+    ],
+    "E4_moderators": [
+    "Other: Coach success (titles) associated with higher forbearance propensity (exploratory)"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "Potential recall bias (retrospective interviews), single-country men’s league, small N of coaches, sports-to-business generalizability limits, coder subjectivity mitigated but not eliminated despite reliability checks. ",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Map ‘competitive rationales’ onto AMC: (Awareness) inference difficulty rises with rationale type/scope diversity; (Motivation) include rationales for forbearance; (Capability) actions used to orchestrate/preserve/build capabilities over time. ",
+    "G2_translation_rule": "Conditionality",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+    "In tactical rivalry, organizational and social rationales frequently dominate rivalrous ones, even under zero-sum pressure.",
+    "Strategic forbearance is a purposeful response used to preserve options, misdirect rivals, and enable capability building over longer horizons.",
+    "The interpretability of competitive moves depends jointly on rationale type and scope; higher rationale diversity/inscrutability depresses rival awareness and complicates response."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "Yes",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Empirical qualitative study that also advances a conceptual framework; not a review/meta-analysis.",
+    "I1_mechanism_statements": [
+    "Organizational rationales → resource orchestration/learning/strategic consistency → improved future competitive position. ",
+    "Social rationales → manage stakeholder relationships and dignity/legitimacy (team, rival, referees, fans) → reduce friction and shape future contests. ",
+    "Rivalrous rationales → preemption/neutralization/surprise/misdirection/timing → immediate or staged advantages over current or future rivals. ",
+    "Forbearance rationales → preserve options, conceal strategy, build capability → delayed but potentially larger payoffs; increased among more successful coaches (exploratory). "
+    ],
+    "I2_mediation_moderation_details": [
+    {
+    "type": "moderation",
+    "variable": "Coach success (championship titles)",
+    "role_in_link": "Stronger propensity to forbear under pressure, suggesting longer time horizons and confidence moderate the link between situation and forbearance choice (exploratory association). "
+    }
+    ],
+    "I3_theoretical_propositions": [
+    "P1: In tactical competitive exchanges, a majority of primary reasons for actions are organizational or social rather than rivalrous, even under intense head-to-head rivalry. ",
+    "P2: Strategic forbearance is a deliberate competitive choice used to create option value, mislead rivals, and accumulate capability, and should be modeled as part of motivation in AMC. ",
+    "P3: The more diverse and opaque the rationale repertoire, the more limited rival awareness becomes, complicating accurate interpretation and timely response. "
+    ],
+    "J1_main_findings_summary": [
+    "Identifies 43 primary competitive rationales and a 3×3 framework (rivalrous/organizational/social × immediate/longer-term/external parties). ",
+    "Organizational rationales predominate; many actions aim to orchestrate/preserve/build resources and maintain strategic consistency. ",
+    "A majority of rationales extend beyond the immediate exchange to longer horizons or stakeholders beyond the direct rival. ",
+    "Forbearance is purposeful and frequent, used to preserve options, misdirect rivals, and build capability; more successful coaches forbear more often (exploratory). ",
+    "AMC is conditioned: awareness challenged by rationale complexity and deception; motivation includes forbearance; capabilities can be outputs of tactical action. "
+    ],
+    "J2_finding_evidence_links": [
+    "Framework/table & examples: Table 3 and Table 4; Findings section. ",
+    "Organizational share and rationale diversity: Findings narrative. ",
+    "Longer-term/broader scope prevalence: Study overview and findings summary. ",
+    "Forbearance patterns and titles association: Table 5 discussion. ",
+    "AMC implications: Implications for the AMC Model section. "
+    ],
+    "J3_finding_strength": "Mixed evidence",
+    "K1_contribution_summary": "Introduces ‘competitive rationales’—primary reasons for tactical actions/forbearances—and an interpretable 3×3 type×scope framework showing that many tactical moves serve organizational and social aims over longer horizons. By directly eliciting reasons at decision points, the study moves beyond inferring intent from action attributes and conditions the AMC model: awareness must grapple with rationale opacity; motivation encompasses action and strategic forbearance; and capabilities can be dynamically built through tactics."
+    }

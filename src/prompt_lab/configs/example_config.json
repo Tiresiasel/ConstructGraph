@@ -1,0 +1,5 @@
+{
+  "model": "gpt-5",
+  "json_output": true,
+  "system": "You are a research assistant skilled in knowledge extraction. Output only valid JSON when requested."
+}

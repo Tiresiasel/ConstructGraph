@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstructGraph Debug</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #1e1e1e; color: #e5e7eb; }
+        .debug-section { margin: 20px 0; padding: 15px; border: 1px solid #333; border-radius: 5px; }
+        .error { color: #ff6b6b; }
+        .success { color: #51cf66; }
+        .info { color: #74c0fc; }
+        button { padding: 10px 20px; margin: 5px; background: #007acc; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #005a9e; }
+        #results { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>ConstructGraph 前端调试工具</h1>
+    
+    <div class="debug-section">
+        <h3>1. API 连接测试</h3>
+        <button onclick="testAPI()">测试 API 连接</button>
+        <div id="api-results"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>2. JavaScript 模块测试</h3>
+        <button onclick="testModules()">测试模块加载</button>
+        <div id="module-results"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>3. 浏览器兼容性检查</h3>
+        <button onclick="checkCompatibility()">检查兼容性</button>
+        <div id="compatibility-results"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>4. 网络可视化测试</h3>
+        <button onclick="testVisNetwork()">测试 Vis.js</button>
+        <div id="vis-results"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>5. 完整应用测试</h3>
+        <button onclick="testFullApp()">测试完整应用</button>
+        <div id="app-results"></div>
+    </div>
+    
+    <div id="results"></div>
+
+    <script>
+        function log(elementId, message, type = 'info') {
+            const element = document.getElementById(elementId);
+            const className = type === 'error' ? 'error' : type === 'success' ? 'success' : 'info';
+            element.innerHTML += `<div class="${className}">${new Date().toLocaleTimeString()}: ${message}</div>`;
+        }
+        
+        async function testAPI() {
+            log('api-results', '开始测试 API 连接...');
+            try {
+                const response = await fetch('/api/health');
+                if (response.ok) {
+                    const data = await response.json();
+                    log('api-results', `API 健康检查成功: ${JSON.stringify(data)}`, 'success');
+                } else {
+                    log('api-results', `API 健康检查失败: ${response.status}`, 'error');
+                }
+            } catch (e) {
+                log('api-results', `API 连接错误: ${e.message}`, 'error');
+            }
+            
+            try {
+                const response = await fetch('/api/constructs?limit=5');
+                if (response.ok) {
+                    const data = await response.json();
+                    log('api-results', `获取构型数据成功: ${data.items?.length || 0} 个构型`, 'success');
+                } else {
+                    log('api-results', `获取构型数据失败: ${response.status}`, 'error');
+                }
+            } catch (e) {
+                log('api-results', `获取构型数据错误: ${e.message}`, 'error');
+            }
+        }
+        
+        async function testModules() {
+            log('module-results', '开始测试 JavaScript 模块...');
+            try {
+                const { initApp } = await import('/static/js/main.js');
+                log('module-results', 'main.js 模块加载成功', 'success');
+                
+                const { loadAllData } = await import('/static/js/api.js');
+                log('module-results', 'api.js 模块加载成功', 'success');
+                
+                const { appState } = await import('/static/js/state.js');
+                log('module-results', 'state.js 模块加载成功', 'success');
+                
+                log('module-results', '所有核心模块加载成功', 'success');
+            } catch (e) {
+                log('module-results', `模块加载失败: ${e.message}`, 'error');
+                log('module-results', `错误堆栈: ${e.stack}`, 'error');
+            }
+        }
+        
+        function checkCompatibility() {
+            log('compatibility-results', '开始检查浏览器兼容性...');
+            
+            // 检查 ES6 模块支持
+            try {
+                eval('import("data:text/javascript,")');
+                log('compatibility-results', 'ES6 模块支持: 是', 'success');
+            } catch (e) {
+                log('compatibility-results', 'ES6 模块支持: 否', 'error');
+            }
+            
+            // 检查 fetch API
+            if (typeof fetch === 'function') {
+                log('compatibility-results', 'Fetch API 支持: 是', 'success');
+            } else {
+                log('compatibility-results', 'Fetch API 支持: 否', 'error');
+            }
+            
+            // 检查 Promise 支持
+            if (typeof Promise === 'function') {
+                log('compatibility-results', 'Promise 支持: 是', 'success');
+            } else {
+                log('compatibility-results', 'Promise 支持: 否', 'error');
+            }
+            
+            // 检查 async/await
+            try {
+                eval('(async () => {})()');
+                log('compatibility-results', 'async/await 支持: 是', 'success');
+            } catch (e) {
+                log('compatibility-results', 'async/await 支持: 否', 'error');
+            }
+            
+            // 检查浏览器信息
+            log('compatibility-results', `用户代理: ${navigator.userAgent}`, 'info');
+        }
+        
+        function testVisNetwork() {
+            log('vis-results', '开始测试 Vis.js 网络可视化...');
+            
+            if (typeof vis === 'undefined') {
+                log('vis-results', 'Vis.js 未加载', 'error');
+                return;
+            }
+            
+            try {
+                const container = document.createElement('div');
+                container.style.width = '400px';
+                container.style.height = '300px';
+                container.style.border = '1px solid #333';
+                document.getElementById('vis-results').appendChild(container);
+                
+                const nodes = new vis.DataSet([
+                    { id: 1, label: '节点 1' },
+                    { id: 2, label: '节点 2' }
+                ]);
+                
+                const edges = new vis.DataSet([
+                    { from: 1, to: 2 }
+                ]);
+                
+                const data = { nodes, edges };
+                const options = {
+                    physics: { enabled: false },
+                    interaction: { hover: true }
+                };
+                
+                const network = new vis.Network(container, data, options);
+                log('vis-results', 'Vis.js 网络创建成功', 'success');
+                
+            } catch (e) {
+                log('vis-results', `Vis.js 测试失败: ${e.message}`, 'error');
+            }
+        }
+        
+        async function testFullApp() {
+            log('app-results', '开始测试完整应用...');
+            
+            try {
+                const { initApp } = await import('/static/js/main.js');
+                log('app-results', '应用模块导入成功', 'success');
+                
+                // 创建测试容器
+                const container = document.createElement('div');
+                container.id = 'test-network-container';
+                container.style.width = '600px';
+                container.style.height = '400px';
+                container.style.border = '1px solid #333';
+                document.getElementById('app-results').appendChild(container);
+                
+                // 模拟布局数据
+                const embed_pos = { 'test': { x: 0, y: 0 } };
+                const central_pos = { 'test': { x: 100, y: 100 } };
+                
+                log('app-results', '开始初始化应用...', 'info');
+                await initApp({ embed_pos, central_pos });
+                log('app-results', '应用初始化完成', 'success');
+                
+            } catch (e) {
+                log('app-results', `应用测试失败: ${e.message}`, 'error');
+                log('app-results', `错误堆栈: ${e.stack}`, 'error');
+            }
+        }
+        
+        // 页面加载完成后自动运行基本测试
+        window.addEventListener('load', function() {
+            log('results', '调试页面加载完成，可以开始测试', 'info');
+        });
+    </script>
+</body>
+</html>

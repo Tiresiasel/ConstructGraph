@@ -1,0 +1,39 @@
+{
+  "id": "chatcmpl-C6IMbVlaugbLtMLX3OWY40xii74Pm",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\n  \"paper_metadata\": {\n    \"doi\": \"dx.doi.org/10.5465/amr.2013.0493\",\n    \"title\": \"2013 Presidential Address: BECOMING AMBICULTURAL: A PERSONAL QUEST, AND ASPIRATION FOR ORGANIZATIONS\",\n    \"authors\": [\n      \"MING-JER CHEN\"\n    ],\n    \"publication_year\": 2014,\n    \"journal\": \"Academy of Management Review\",\n    \"research_type\": \"Conceptual\",\n    \"research_context\": \"Ambicultural perspective integrating East and West; implications for management and organization research, professional and personal growth, and organizational practice.\",\n    \"is_replication_study\": false\n  },\n  \"constructs\": [],\n  \"construct_dimensions\": [],\n  \"relationships\": [],\n  \"measurements\": [],\n  \"core_theories\": [],\n  \"coverage_report\": {\n    \"constructs\": 0,\n    \"relationships\": 0,\n    \"measurements\": 0,\n    \"reason\": \"This paper is a presidential address/conceptual essay without any labeled Hypotheses, Propositions, or a Hypothesis Development section. Under the extraction scope (only items explicitly tied to Hypotheses/Propositions or their development), no core constructs, relationships, or measurements are extractable.\",\n    \"errors\": [\n      \"no_hypotheses_or_propositions_found\",\n      \"core_scope_no_extractable_relationships\"\n    ]\n  }\n}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": [],
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1755616593,
+  "model": "gpt-5-mini-2025-08-07",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1914,
+    "prompt_tokens": 23271,
+    "total_tokens": 25185,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1600,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    }
+  }
+}

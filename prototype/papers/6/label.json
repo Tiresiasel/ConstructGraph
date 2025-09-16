@@ -1,0 +1,151 @@
+{   "relevant":false,
+    "L1_summary_of_paper": "Research question(s): How do family-controlled firms (FCFs) resolve the mixed-gamble trade-off between financial wealth (FW) and socioemotional wealth (SEW) when shaping their competitive action portfolios, specifically in terms of competitive aggressiveness (intensity) and competitive complexity (variety)? Theoretical framing: Behavioural Agency Model (BAM) with a mixed-gamble perspective, emphasizing loss aversion over SEW versus uncertain FW gains. Key concepts/definitions: Competitive aggressiveness = total count of competitive actions in a year; competitive complexity = variety of action types (Herfindahl-based). SEW = affective, identity, and control endowments of the family; performance aspirations = historical (own past) and social (industry median) aspiration levels. Constructs & relationships: Family control → (−) aggressiveness, (−) complexity; moderation by performance below aspirations (historical/social) turning effects positive; moderation by number of family business group affiliations strengthening the negative effects. Context/setting: 570 KOSPI-listed Korean manufacturing firms, 1998–2017; competitive actions manually coded from LexisNexis; ownership, governance, affiliations, and financials from national databases. Main findings: FCFs on average undertake fewer and less diverse competitive actions; when performance falls below historical or social aspirations, FCFs increase aggressiveness/complexity; more group affiliations amplify reluctance toward aggressiveness/complexity. Contributions: Brings a portfolio-level view of competitive dynamics to family business research; integrates FW–SEW mixed-gamble logic with competitive action repertoires; identifies boundary conditions (aspiration shortfalls, group affiliations) shaping risk bearing in FCF competitive behaviour.",
+    "M1_main_theories": [
+      "Behavioural agency model / Mixed gamble (primary)",
+      "Socioemotional wealth (primary)",
+      "Competitive dynamics (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm",
+    "M3_unit_of_analysis_element": [
+      "Action rate/mix",
+      "Other: Competitive aggressiveness (intensity of competitive actions)",
+      "Other: Competitive complexity (variety of competitive actions)"
+    ],
+    "N1_behavioral_scope": "Multiple behaviors",
+    "N2_assumption_symmetry": "Not reported",
+    "N3_assumption_common_environment": "No",
+    "N4_assumption_equal_weighting": "Not reported",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Cho, J., De Massis, A., & Kotlar, J. (2025). The Mixed Gamble of Competitive Dynamics in Family-Controlled Firms. Journal of Management Studies, 0(0), 1–??. https://doi.org/10.1111/joms.13218",
+    "A2_year": "2025",
+    "A3_outlet_tier": "JMS",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "Not reported",
+    "B1_primary_perspective": "Other: Firm-level competitive dynamics (repertoire attributes)",
+    "B2_levels": [
+      "Firm",
+      "Market/Industry"
+    ],
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Rivalry",
+      "Other: Behavioural agency model",
+      "Other: Socioemotional wealth"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Repertoire",
+      "Aggressiveness",
+      "Other: Competitive complexity",
+      "Other: Performance below aspirations (historical and social)",
+      "Other: Family business group affiliations"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Text"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Uncertainty is discussed conceptually via mixed-gamble risk to SEW vs uncertain FW; vulnerability operationalized using performance gaps to historical and social aspiration levels (ROA).",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "Not applicable",
+    "D2_identification": [
+      "Other: GEE with appropriate links",
+      "Other: Heckman selection (inverse Mills ratio)",
+      "Lags"
+    ],
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": [
+      "Selection into family control addressed via first-stage probit with instruments (efficiency and dividend ratios) feeding an inverse Mills ratio",
+      "Serial correlation handled via GEE working correlation",
+      "Overidentification and weak-ID tests reported for instrument relevance/exogeneity in first stage"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Instrument diagnostics",
+      "Cluster/serial corr fixes"
+    ],
+    "D3_endogeneity": [
+      "Lags",
+      "Other: Heckman IMR + instrument diagnostics"
+    ],
+    "D4_level_alignment": "None",
+    "D5_data_sources": [
+      "LexisNexis (news headlines for actions)",
+      "TS2000 (Korea)",
+      "DART (Korea)",
+      "Maeil Business Newspaper (family trees)",
+      "Korean Statistical Information Service"
+    ],
+    "E1_outcomes": [
+      "Action rate/mix"
+    ],
+    "E2_effect_directions": {
+      "Action rate/mix": "– for family control on aggressiveness and complexity; + when moderated by performance below aspirations; – stronger with more family group affiliations"
+    },
+    "E3_mechanisms_tags": [
+      "Other: SEW protection vs FW gains (loss aversion)",
+      "Resource dependence",
+      "Legitimacy/Status"
+    ],
+    "E4_moderators": [
+      "Performance below historical aspiration (ROA change t−1 vs t−2)",
+      "Performance below social aspiration (industry-median ROA gap)",
+      "Number of family business group affiliations (log count)"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "Manual coding of actions from news may reflect media coverage disparities (they control for coverage but residual bias possible); endogeneity of family control to strategy is only partially addressed via Heckman IMR rather than a clean natural experiment; Korean chaebol context may limit external validity to weak-formal-institution settings.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Competitive aggressiveness ↔ action count; competitive complexity ↔ repertoire variety (1–HHI). These map to ILR ‘Action rate/mix’. Family control is a governance/ownership antecedent; aspiration gaps and group affiliations are boundary conditions shaping risk bearing.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "P1: In settings where SEW is salient, greater family control shifts the action portfolio toward lower aggressiveness/complexity absent performance vulnerability.",
+      "P2: Historical/social aspiration shortfalls align FW and SEW motives, temporarily increasing aggressiveness/complexity despite SEW loss risk.",
+      "P3: Greater intra-group affiliation safeguards SEW, reinforcing risk aversion and dampening aggressiveness/complexity."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "H4_NA_reason_if_any": "Not applicable",
+    "I1_mechanism_statements": [
+      "SEW loss aversion → reluctance to dilute control/identity via aggressive and diverse initiatives → lower aggressiveness/complexity at baseline.",
+      "Performance below aspirations → FW and SEW goals align around survival → increased willingness to accept transient SEW loss risk → higher aggressiveness/complexity.",
+      "More family business group affiliations → SEW safeguarded via internal subsidies/cross-holdings → heightened risk aversion → lower aggressiveness/complexity."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Performance below historical aspiration",
+        "role_in_link": "Weakens and can reverse the negative effect of family control on aggressiveness/complexity"
+      },
+      {
+        "type": "moderation",
+        "variable": "Performance below social aspiration",
+        "role_in_link": "Weakens and can reverse the negative effect of family control on aggressiveness/complexity"
+      },
+      {
+        "type": "moderation",
+        "variable": "Family business group affiliations (log count)",
+        "role_in_link": "Strengthens the negative effect of family control on aggressiveness/complexity"
+      }
+    ],
+    "I3_theoretical_propositions": [
+      "H1: Family control is negatively related to (a) competitive aggressiveness and (b) competitive complexity.",
+      "H2: Below historical aspirations moderates the family control–aggressiveness/complexity link positively.",
+      "H3: Below social aspirations moderates the family control–aggressiveness/complexity link positively.",
+      "H4: Family group affiliations moderate the family control–aggressiveness/complexity link more negatively."
+    ],
+    "J1_main_findings_summary": [
+      "Family control exhibits a significant negative association with competitive aggressiveness (count) and competitive complexity (variety).",
+      "When performance falls below historical and social aspirations, the family control effect becomes positive for aggressiveness/complexity (greater action taking/variety).",
+      "A greater number of family business group affiliations strengthens the negative relationship between family control and aggressiveness/complexity.",
+      "Z-tests suggest that, under aspiration shortfalls (especially social), group-affiliated FCFs tilt more toward aggressiveness than complexity."
+    ],
+    "J2_finding_evidence_links": "Main effects and interactions reported in GEE models for aggressiveness and complexity (Tables II & III); instrument and IMR diagnostics in Appendix (AIV–AV); z-tests in Appendix Table AIV; robustness with alternative measures (Shannon index; z-score aggressiveness; Altman Z) in Supplementary Analysis.",
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "This paper integrates BAM’s mixed-gamble logic with portfolio-level competitive dynamics, showing that FCFs generally avoid aggressive and complex action repertoires to protect SEW, but pivot toward more intense and diverse actions when performance falls below aspirations, while extensive group affiliations re-anchor them in SEW-preserving restraint. It reframes antecedents of competitive action portfolios through FW–SEW risk bearing and delineates boundary conditions tied to performance vulnerability and organizational ecosystem structure."
+  }

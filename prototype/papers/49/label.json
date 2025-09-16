@@ -1,0 +1,115 @@
+{   "relevant": false,
+    "L_summary_of_paper": "This paper investigates a central strategic choice for new ventures (companies eight years or younger): whether to pursue 'strategic simplicity' (a few similar competitive actions) or 'strategic variety' (multiple different competitive actions) to achieve growth. Using a contingency theory framework applied to competitive dynamics, the study examines how this relationship is moderated by two key factors: the new venture's origin (independent vs. corporate) and the level of industry dynamism. The core constructs are strategic repertoire variety, new venture growth (measured as sales growth), venture origin, and industry dynamism. Based on data from 140 Spanish new ventures across seven strategic industries, the study employs hierarchical regression analysis. The main finding is that the value of strategic variety is highly conditional. Specifically, strategic variety is positively and significantly associated with higher new venture growth in highly dynamic industries. Furthermore, this positive effect is significantly more pronounced for independently owned ventures (IVs) than for their corporate counterparts (CVs). The study's main contribution is to challenge the generalized advice for new ventures to 'keep it simple,' specifying that in fast-changing environments, strategic variety is a crucial driver of growth. It also contributes by highlighting how organizational origins create different capabilities for benefiting from strategic choices, with IVs' flexibility allowing them to better leverage variety under uncertainty.",
+    "M1_main_theories": [
+      "Competitive dynamics (primary)",
+      "Contingency theory (primary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm",
+    "M3_unit_of_analysis_element": [
+      "Repertoire diversity"
+    ],
+    "N1_behavioral_scope": "Multiple behaviors",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "No",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Larrañeta, B., Zahra, S. A., & Galán González, J. L. (2014). Strategic repertoire variety and new venture growth: The moderating effects of origin and industry dynamism. Strategic Management Journal, 35(5), 761-772.",
+    "A2_year": 2014,
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Other: Firm-level contingency",
+    "B2_levels": "Multi-level",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Learning"
+    ],
+    "B4_contribution_type": "Other: Specification/Refinement of existing debate",
+    "C1_constructs": [
+      "Repertoire"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Survey/perceptual",
+      "Other: Expert ratings"
+    ],
+    "C3_uncertainty_ambiguity": "Measured",
+    "C3_metric_detail": "Industry dynamism was measured using a 5-item scale from Baum and Wally (2003), rated by 14 industry experts (two for each of the seven industries). This captures market and industry changes that are hard to predict and plan for, increasing managerial uncertainty.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "",
+    "D1_design": "Cross-section",
+    "D2_causal_or_correlational": "Causal claim",
+    "D2a_causality_claimed": "Yes",
+    "D2b_causality_supported_by_design": "Moderate",
+    "D2_identification": "Other: Hierarchical OLS regression with lagged dependent variable and multi-source data",
+    "D2_causal_claim_strength": "Moderate",
+    "D2_key_assumptions_addressed": [
+      "Common method variance",
+      "Non-response bias"
+    ],
+    "D2_robustness_suite": "Other: Tested for curvilinear effects and alternative variable groupings.",
+    "D3_endogeneity": [
+      "Lags",
+      "Other: Multi-source data"
+    ],
+    "D4_level_alignment": "Multilevel model",
+    "D5_data_sources": [
+      "Survey of senior executives",
+      "Ratings from industry experts",
+      "SABI/AMADEUS archival database"
+    ],
+    "E1_outcomes": [
+      "Revenue/profit"
+    ],
+    "E2_effect_directions": {
+      "Revenue/profit": "Mixed"
+    },
+    "E3_mechanisms_tags": [
+      "Learning",
+      "Other: Adaptation/Fit"
+    ],
+    "E4_moderators": [
+      "Venture origin (independent vs. corporate)",
+      "Industry dynamism"
+    ],
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Primary risk is omitted variable bias (e.g., managerial capability or cognitive complexity might drive both strategic variety and growth). External validity is limited to a single country (Spain) and specific 'strategic' industries.",
+    "F3_saturation_contribution": "Divergent",
+    "G1_construct_mapping_note": "The paper's 'strategic repertoire variety' is a direct measure of repertoire diversity, a core construct in competitive dynamics. It links this firm-level strategic choice to firm performance, contingent on firm type (origin) and environment (dynamism).",
+    "G2_translation_rule": "Conditionality",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "The performance effect of strategic repertoire variety is positive under conditions of high environmental dynamism.",
+      "Firms with greater organizational flexibility (e.g., independent ventures) benefit more from strategic repertoire variety in dynamic environments than less flexible firms (e.g., corporate ventures)."
+    ],
+    "TYPE_APPLICABLE_empirical": "Yes",
+    "TYPE_APPLICABLE_theory_conceptual": "No",
+    "TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "",
+    "I1_mechanism_statements": [
+      "For IVs: Experimenting with a variety of strategic repertoires allows IVs to learn and acquire new knowledge, which is easier to share and exploit due to nonhierarchical structures, leading to growth.",
+      "For CVs: Learning from market interactions may conflict with knowledge from corporate parents, complicating knowledge integration and slowing down its use, thereby limiting growth benefits from variety.",
+      "For Dynamism: In dynamic industries, success depends on trying out a range of competitive actions (variety) to remain attuned to changing market forces and match resources with different growth opportunities."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Venture origin",
+        "role_in_link": "Moderates the relationship between strategic variety and new venture growth, particularly in conjunction with industry dynamism."
+      },
+      {
+        "type": "moderation",
+        "variable": "Industry dynamism",
+        "role_in_link": "Moderates the relationship between strategic variety and new venture growth."
+      }
+    ],
+    "I3_theoretical_propositions": "Not applicable",
+    "J1_main_findings_summary": [
+      "Strategic variety is positively associated with new venture growth in industries with high dynamism, but shows no significant association in industries with low dynamism (Hypothesis 2 supported).",
+      "The positive relationship between strategic variety and growth in dynamic industries is significantly stronger for independent ventures (IVs) than for corporate ventures (CVs) (Hypothesis 3 supported).",
+      "There is no significant unconditional difference between IVs and CVs in how they benefit from strategic variety (Hypothesis 1 not supported)."
+    ],
+    "J2_finding_evidence_links": "Table 2 presents the hierarchical regression results. Figure 1 plots the interaction for Hypothesis 2. Figure 2 plots the three-way interaction for Hypothesis 3.",
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "This paper's primary contribution is to challenge the conventional wisdom that new ventures should always pursue strategic simplicity. By providing a contingency framework, it demonstrates that strategic variety is beneficial for growth under conditions of high industry dynamism. Furthermore, it contributes to the entrepreneurship literature by showing that a venture's origin (independent vs. corporate) critically moderates this relationship, with independent ventures being better able to capitalize on variety in dynamic settings due to their flexibility and learning capabilities."
+  }

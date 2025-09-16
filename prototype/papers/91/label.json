@@ -1,0 +1,160 @@
+{   "relevant":true,
+    "L": {
+      "L1_summary_of_paper": "This conceptual paper addresses a core puzzle in competitive dynamics: why do firms that are aware of a competitive attack and possess the capability to counter it often choose not to respond? The authors define this phenomenon as 'strategic forbearance,' distinguishing it from involuntary nonresponse which stems from a lack of awareness or capability. The central theoretical framing is the concept of 'transcendence,' where managers move beyond reflexive, immediate responses by expanding their considerations across three dimensions: (a) from the single attacker to other stakeholders and rivals, (b) from the immediate attack to its historical context and long-term implications, and (c) from tactical moves to global strategic coherence and adaptation. The paper develops a theoretical model proposing five primary drivers of strategic forbearance rooted in this transcendent thinking: mitigating rivalry, reaping relational benefits, preserving existing norms, enhancing optionality, and preserving strategic alignment. From these drivers, the authors derive eight specific propositions outlining the conditions under which forbearance is more likely than counteraction. The study's main contribution is to redirect the literature by reframing nonresponse from a passive failure to an active, mindful, and potentially advantageous strategic choice, thereby bringing the study of competitive dynamics closer to the core of reflective competitive strategy."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Competitive Dynamics",
+          "tag": "primary"
+        },
+        {
+          "theory": "Relational Competition",
+          "tag": "secondary"
+        },
+        {
+          "theory": "Real Options Theory",
+          "tag": "secondary"
+        },
+        {
+          "theory": "Norm Theory",
+          "tag": "secondary"
+        },
+        {
+          "theory": "Punctuated Equilibrium",
+          "tag": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "Firm",
+      "M3_unit_of_analysis_element": "Other: Strategic nonresponse to competitive attacks"
+    },
+    "N": {
+      "N1_behavioral_scope": "Single behavior",
+      "N2_assumption_symmetry": "Not reported",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "No",
+      "N5_focus_scope": "Multiple competitors focus"
+    },
+    "A": {
+      "A1_citation": "Andrevski, G., & Miller, D. (2022). Forbearance: Strategic nonresponse to competitive attacks. Academy of Management Review, 47(1), 59-74.",
+      "A2_year": 2022,
+      "A3_outlet_tier": "Other: Academy of Management Review (A*)",
+      "A4_study_type": "Conceptual/Theory",
+      "A5_replicability": "Not applicable"
+    },
+    "B": {
+      "B1_primary_perspective": "Bridging",
+      "B2_levels": "Firm",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry",
+        "Learning",
+        "Attention-based view",
+        "Embeddedness"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Attack/response",
+        "Other: Strategic Forbearance"
+      ],
+      "C2_measurement": "Not applicable",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "The paper does not measure uncertainty but theorizes about it as a driver for forbearance, particularly in the context of enhancing optionality and learning.",
+      "C4_shock_type": "None",
+      "C4_shock_design": "Not applicable"
+    },
+    "D": {
+      "D1_design": "Conceptual/Theory",
+      "D2_causal_or_correlational": "Theoretical/Not applicable",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Not applicable",
+      "D2_identification": "Not applicable",
+      "D2_causal_claim_strength": "Other: Theoretical causal claims",
+      "D2_key_assumptions_addressed": "Not applicable",
+      "D2_robustness_suite": "Not applicable",
+      "D3_endogeneity": "Not applicable",
+      "D4_level_alignment": "Not applicable",
+      "D5_data_sources": [
+        "Not applicable"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Other: Strategic Forbearance"
+      ],
+      "E2_effect_directions": "Not applicable",
+      "E3_mechanisms_tags": [
+        "Deterrence",
+        "Learning",
+        "Attention allocation",
+        "Signaling"
+      ],
+      "E4_moderators": [
+        "History of competitive interactions",
+        "Risk of motivating other rivals",
+        "History of collaboration with attacker",
+        "Presence of a common alliance partner",
+        "Stakeholder norms and expectations",
+        "Desire to keep options open for learning/evolution",
+        "Fit with core strategic configuration",
+        "Firm's state of internal alignment (equilibrium vs. transformation)"
+      ]
+    },
+    "F": {
+      "F1_transparency_quality": "High",
+      "F2_risk_of_bias_notes": "The primary potential bias is a focus on the functionality and rationality of forbearance. The framework may under-theorize dysfunctional reasons for nonresponse, such as organizational inertia or political gridlock, which could manifest similarly to strategic forbearance but stem from different causes.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The core construct 'Strategic Forbearance' is a specific type of 'nonresponse' in competitive dynamics. It is distinct from 'mutual forbearance' in multimarket contact literature. It operationalizes a form of 'cooperation' or 'de-escalation' in rivalry contexts.",
+      "G2_translation_rule": "Conditionality",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "A firm's decision to not respond to a competitive attack is conditioned by its transcendent capacity to evaluate long-term, multi-actor, and systemic consequences over short-term, dyadic, tactical gains.",
+        "The likelihood of strategic forbearance increases with the relational and structural embeddedness of the firm-attacker dyad within a broader network of competitors and stakeholders.",
+        "Strategic forbearance acts as a mechanism for preserving organizational coherence and pacing adaptation, particularly for firms with highly integrated strategic configurations."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "No",
+      "TYPE_APPLICABLE_theory_conceptual": "Yes",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "This paper is a conceptual piece that develops theory and propositions. It does not use empirical data, test hypotheses, or conduct a systematic literature review. Therefore, fields related to empirical methods, data, identification, and specific findings are not applicable."
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "Mitigating Rivalry: Managers forbear to de-escalate conflict by considering past/future interactions and the risk of provoking other rivals.",
+        "Reaping Relational Benefits: Managers forbear to preserve valuable collaborative ties with an attacker or to leverage common alliance partners for mediation.",
+        "Preserving Norms: Managers forbear to align with the expectations of key stakeholders (customers, regulators, community) and avoid reputational damage.",
+        "Enhancing Optionality: Managers forbear to preserve resources, maintain flexibility for future opportunities, and learn from the market's reaction to the attack (a real options logic).",
+        "Preserving Strategic Alignment and Pacing Transition: Managers forbear to avoid disrupting a coherent strategic configuration and to control the pace of organizational adaptation, often choosing to respond to multiple attacks via a single, larger strategic transformation."
+      ],
+      "I2_mediation_moderation_details": [],
+      "I3_theoretical_propositions": [
+        "Proposition 1a. Forbearance is more likely than counteraction when a defender has past and expected future competitive interactions with an attacker.",
+        "Proposition 1b. Forbearance is more likely when counteraction risks motivating other rivals to adopt more aggressive competitive positions.",
+        "Proposition 2a. Forbearance is more likely than counteraction when a defender has a history of collaboration with the attacker.",
+        "Proposition 2b. Forbearance is more likely than counteraction when a defender shares a common alliance partner with the attacker.",
+        "Proposition 3. Forbearance is more likely when counteraction risks violating the norms, priorities and expectations of stakeholders beyond an attacker and other industry members.",
+        "Proposition 4. Forbearance is more likely than counteraction when defenders want to keep their options open for evolving their business or to learn more about the potential effectiveness of an attack.",
+        "Proposition 5a. Forbearance is more likely when defenders anticipate that a counteraction will clash with their core strategic configuration and involve significant financial and reputational resources.",
+        "Proposition 5b. Forbearance is more likely when defenders are in an internally well-aligned state of equilibrium; they are more willing to react, perhaps to a selection of attacks, during periods of strategic transformation."
+      ]
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "The paper conceptually distinguishes 'strategic forbearance' (a mindful choice not to respond despite awareness and capability) from 'involuntary nonresponse'.",
+        "It proposes that strategic forbearance is driven by 'transcendence,' a cognitive shift beyond the immediate threat to consider a broader context.",
+        "Five key drivers for forbearance are identified: mitigating rivalry, reaping relational benefits, preserving norms, enhancing optionality, and preserving strategic alignment.",
+        "Forbearance is theorized to be more likely when firms have long-term and collaborative relationships with rivals and stakeholders.",
+        "Forbearance is also more likely when a response would threaten a firm's strategic coherence or when firms wish to preserve resources and learn from market uncertainty."
+      ],
+      "J2_finding_evidence_links": "Not applicable",
+      "J3_finding_strength": "Speculative (conceptual)"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper's primary contribution is redirecting scholarly attention in competitive dynamics toward the strategic importance of nonresponse. By conceptualizing 'strategic forbearance' and providing a novel theoretical framework based on 'transcendence,' it moves beyond traditional explanations (lack of awareness, motivation, capability) and reframes 'doing nothing' as a complex, mindful, and potentially advantageous strategic action. This opens up new avenues for research and provides a richer vocabulary for understanding competitive interactions."
+    }
+  }

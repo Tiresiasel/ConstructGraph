@@ -1,0 +1,135 @@
+{
+    "L1_summary_of_paper": "This empirical quantitative study analyzes how Tokyo-based banks chose branch locations (market niche entry) from 1894 to 1936. It pits four perspectives against each other: (1) density dependence from organizational ecology (niche attractiveness follows an inverted-U with local branch density); (2) mimetic isomorphism from institutional theory (banks imitate location choices of large, observable peers); (3) decision-making momentum from organizational learning (banks re-enter niches where they already operate and expand to adjacent niches); and (4) mutual forbearance from multimarket competition (creating or extending multipoint contact to soften rivalry). Using archival annual branch-address data from the Census of Banks, area populations from Tokyo Statistical Yearbook, and an adjacency matrix across 20 wards/counties, the paper estimates conditional logit models over 824 branch-entry choices by 174 banks. Findings: strong evidence for density dependence (inverted-U for branch density; partial for head-office density), strong imitation of large banks, strong momentum (same-area and neighboring-area expansion), mixed forbearance results (single-point competitors increase entry, multipoint competitors decrease entry), and size moderation (large banks show weaker momentum; size does not clearly moderate forbearance). Contributions: adjudicates among competing theories within one design, shows boundedly rational learning can dominate forward-looking preemption in spatial entry, and demonstrates conditional logit’s utility for niche-entry choice modeling in historical banking.",
+    "M1_main_theories": [
+      "Organizational ecology/density dependence (primary)",
+      "Institutional theory/mimetic isomorphism (primary)",
+      "Organizational learning theory (primary)",
+      "Mutual forbearance theory/multimarket contact (primary)"
+    ],
+    "M2_unit_of_analysis_level": "Network/Industry",
+    "M3_unit_of_analysis_element": [
+      "Other: Geographic branch location choice",
+      "Market entry location choice"
+    ],
+    "N1_behavioral_scope": "Single behavior",
+    "N2_assumption_symmetry": "Not reported",
+    "N3_assumption_common_environment": "Yes",
+    "N4_assumption_equal_weighting": "No",
+    "N5_focus_scope": "Multiple competitors focus",
+    "A1_citation": "Greve, H. R. (2000). Market Niche Entry Decisions: Competition, Learning, and Strategy in Tokyo Banking, 1894–1936. Academy of Management Journal, 43(5), 816–836.",
+    "A2_year": "2000",
+    "A3_outlet_tier": "AMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "Data public",
+    "B1_primary_perspective": "Bridging",
+    "B2_levels": "Market/Industry",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Rivalry",
+      "Multimarket contact",
+      "Learning",
+      "Institutional theory",
+      "Diffusion"
+    ],
+    "B4_contribution_type": "Adjudication",
+    "C1_constructs": [
+      "MMC",
+      "Other: Niche attractiveness (density)",
+      "Other: Imitation",
+      "Other: Decision-making momentum"
+    ],
+    "C2_measurement": [
+      "Archival behavioral",
+      "Network-derived"
+    ],
+    "C3_uncertainty_ambiguity": "Stated only",
+    "C3_metric_detail": "Uncertainty is theorized around entering unproven niches and bounded attention; not directly measured.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Panel",
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "None",
+    "D2_identification": "Other: Conditional logit discrete choice model",
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": [
+      "Independence of irrelevant alternatives (IIA) tested",
+      "Choice set matches decision-maker’s administrative geography (wards/counties)",
+      "Lagged covariates to mitigate simultaneity",
+      "Adjacency used to operationalize neighboring-niche effects"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Permutations",
+      "Other: IIA tests",
+      "Cluster/serial corr fixes",
+      "Interaction tests",
+      "Geographic splits (wards vs counties)"
+    ],
+    "D3_endogeneity": "Lags",
+    "D4_level_alignment": "None",
+    "D5_data_sources": [
+      "Japanese Ministry of Finance Census of Banks (annual branch addresses)",
+      "Tokyo Statistical Yearbook (population, property values)",
+      "Tokyo Metropolitan Government historical maps (adjacency)"
+    ],
+    "E1_outcomes": [
+      "Other: Niche entry location chosen"
+    ],
+    "E2_effect_directions": {
+      "Other: Niche entry location chosen": "Mixed"
+    },
+    "E3_mechanisms_tags": [
+      "Learning",
+      "Information access",
+      "Attention allocation",
+      "Tacit collusion",
+      "Legitimacy/Status"
+    ],
+    "E4_moderators": [
+      "Firm size"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "Potential omitted variables (transportation build-out, local economic shocks); spatial autocorrelation beyond simple adjacency; population interpolations for missing years; reliance on administrative boundaries may mask finer spatial substitution.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Density dependence operationalized via branch and head-office densities (linear and squared); imitation via size-weighted density; momentum via own-offices in same and neighboring areas; forbearance via counts of single-point and multipoint competitor contacts.",
+    "G2_translation_rule": "Complementarity",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "Spatial niche entry is co-shaped by ecological density, institutional imitation, experiential momentum, and multimarket ties.",
+      "Conditional logit cleanly separates alternative-specific drivers in geographic choice.",
+      "Firm size conditions learning-driven momentum more than it conditions forbearance."
+    ],
+    "TYPE_APPLICABLE_empirical": "Yes",
+    "TYPE_APPLICABLE_theory_conceptual": "No",
+    "TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "The article is an archival empirical study using discrete choice models; not a conceptual or review piece.",
+    "I1_mechanism_statements": [
+      "Density dependence: intermediate local density validates resource availability yet avoids excessive competition, maximizing niche attractiveness.",
+      "Mimetic entry: under uncertainty, decision-makers overweight observable large peers and imitate their location choices.",
+      "Momentum: success-biased learning and commitment lead banks to re-enter established niches and expand to adjacent ones.",
+      "Forbearance: converting single-point rivals into multipoint contact can temper rivalry; however, preexisting multipoint rivals reduce attractiveness, suggesting avoidance rather than extension in this setting."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Firm size",
+        "role_in_link": "Larger size weakens the positive association between own presence (same/neighboring areas) and subsequent entry (weaker momentum)."
+      }
+    ],
+    "I3_theoretical_propositions": [],
+    "J1_main_findings_summary": [
+      "Local branch density shows an inverted-U relationship with entry likelihood; head-office density shows partial inverted-U effects.",
+      "Banks imitate large banks’ branch locations (size-weighted density is positively associated with entry).",
+      "Strong decision-making momentum: banks re-enter niches where they already operate and expand to adjacent niches.",
+      "Forbearance is mixed: single-point competitor presence increases entry, while multipoint competitor presence decreases entry.",
+      "Firm size moderates momentum—large banks display weaker momentum effects; forbearance effects are not clearly size-dependent."
+    ],
+    "J2_finding_evidence_links": [
+      "Table 3 (Models 1–4): density, imitation, momentum, forbearance effects",
+      "Table 4 (Models 5–8): area splits, property value control, size interactions, resampling/weighting"
+    ],
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "By jointly testing ecological, institutional, learning, and multimarket theories in one historical context, the paper adjudicates among competing explanations of spatial niche entry, showing that boundedly rational momentum and imitation loom large relative to forward-looking preemption, and it establishes conditional logit as a practical tool for organizational location-choice research."
+  }
+  

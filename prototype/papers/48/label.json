@@ -1,0 +1,152 @@
+{   "relevant": true,
+    "L": {
+      "L1_summary_of_paper": "This paper investigates a central question in competitive dynamics: can competitive responses be predicted based on the characteristics of the initial actions that evoke them? The key concepts are 'action characteristics' (the predictors) and 'competitive responses' (the outcomes). Theoretically, the study integrates Schelling's (1960) work on commitment and threat with the stimulus-response model from social cognition (awareness, motivation, capability). It studies the relationships between four action constructs—competitive impact (breadth of effect), attack intensity (threat to rivals' key markets), implementation requirement (effort to execute), and type of action (strategic vs. tactical)—and two response constructs: the total number of responses and the time lag of those responses. The context is the U.S. domestic airline industry from 1979 to 1986, a period of intense rivalry following deregulation. Using a unique dataset of 191 actions and 418 responses hand-coded from 'Aviation Daily', the main findings show that actions with greater competitive impact and higher attack intensity provoke a larger number of responses. Conversely, strategic actions and those with high implementation requirements lead to fewer and slower responses. A key counterintuitive finding is that when an action strongly threatens a competitor's key markets (high attack intensity), the competitor responds more slowly, likely due to a fear of escalating retaliation. The paper's primary contribution is providing the first large-scale empirical evidence for the predictability of competitive responses, establishing a foundational methodology for the field of competitive dynamics."
+    },
+    "M": {
+      "M1_main_theories": [
+        {
+          "theory": "Stimulus-Response Model (Social Cognition)",
+          "level": "primary"
+        },
+        {
+          "theory": "Theory of Conflict (Schelling)",
+          "level": "primary"
+        },
+        {
+          "theory": "Competitive Dynamics",
+          "level": "secondary"
+        },
+        {
+          "theory": "Schumpeterian Competition",
+          "level": "secondary"
+        }
+      ],
+      "M2_unit_of_analysis_level": "dyadic",
+      "M3_unit_of_analysis_element": [
+        "Speed of competitive action",
+        "Volume of competitive actions"
+      ]
+    },
+    "N": {
+      "N1_behavioral_scope": "Multiple behaviors",
+      "N2_assumption_symmetry": "Yes",
+      "N3_assumption_common_environment": "Yes",
+      "N4_assumption_equal_weighting": "Yes",
+      "N5_focus_scope": "Multiple competitors focus but in a dyadic relationship"
+    },
+    "A": {
+      "A1_citation": "Chen, M. J., Smith, K. G., & Grimm, C. M. (1992). Action characteristics as predictors of competitive responses. Management science, 38(3), 439-455.",
+      "A2_year": 1992,
+      "A3_outlet_tier": "Other-A*",
+      "A4_study_type": "Empirical-Quant",
+      "A5_replicability": "None"
+    },
+    "B": {
+      "B1_primary_perspective": "Dyadic",
+      "B2_levels": "Dyad",
+      "B3_theoretical_lens_tags": [
+        "Competitive dynamics",
+        "Rivalry"
+      ],
+      "B4_contribution_type": "Redirection"
+    },
+    "C": {
+      "C1_constructs": [
+        "Attack/response",
+        "Speed/Timing",
+        "Other: <Aggressiveness (via Attack Intensity)>"
+      ],
+      "C2_measurement": "Archival behavioral",
+      "C3_uncertainty_ambiguity": "Stated only",
+      "C3_metric_detail": "The paper argues that uncertainty surrounding the effectiveness and long-term implications of strategic actions may cause competitors to be less motivated to respond until that uncertainty is resolved.",
+      "C4_shock_type": "Regulatory",
+      "C4_shock_design": "The study's timeframe (1979-1986) is situated directly after the 1978 deregulation of the U.S. airline industry. This event is treated as an exogenous shock that created a new competitive landscape and intensified rivalrous interactions, making it an ideal setting for observing competitive dynamics."
+    },
+    "D": {
+      "D1_design": "Panel",
+      "D2_causal_or_correlational": "Associational only",
+      "D2a_causality_claimed": "Yes",
+      "D2b_causality_supported_by_design": "Weak",
+      "D2_identification": "Other: <OLS multiple regression>",
+      "D2_causal_claim_strength": "Weak",
+      "D2_key_assumptions_addressed": "Not reported",
+      "D2_robustness_suite": "Other: <Cross-validation of a data subsample with other public sources and qualitative interviews with industry executives>",
+      "D3_endogeneity": "Not addressed",
+      "D4_level_alignment": "Explicit bridging",
+      "D5_data_sources": [
+        "Aviation Daily",
+        "Airport Activity Statistics of Certified Route Air Carriers"
+      ]
+    },
+    "E": {
+      "E1_outcomes": [
+        "Action rate/mix"
+      ],
+      "E2_effect_directions": {
+        "Number of Responses": {
+          "Competitive Impact": "+",
+          "Attack Intensity": "+",
+          "Implementation Requirement": "-",
+          "Type of Action (Strategic)": "-"
+        },
+        "Response Lag": {
+          "Competitive Impact": "Null",
+          "Attack Intensity": "+",
+          "Implementation Requirement": "+",
+          "Type of Action (Strategic)": "+"
+        }
+      },
+      "E3_mechanisms_tags": [
+        "Deterrence",
+        "Attention allocation",
+        "Signaling",
+        "Other: <Capability constraint>"
+      ],
+      "E4_moderators": "Not reported"
+    },
+    "F": {
+      "F1_transparency_quality": "Medium",
+      "F2_risk_of_bias_notes": "The primary risk is omitted variable bias, as firm-level and market-level controls (e.g., firm size, profitability, market concentration) are not included in the models. A second major risk is sample selection bias, as the study only analyzes actions that elicited a response, precluding analysis of what types of actions successfully deter all responses.",
+      "F3_saturation_contribution": "New theme"
+    },
+    "G": {
+      "G1_construct_mapping_note": "The study maps the abstract theoretical concepts from Schelling's work to measurable variables. 'Commitment' is operationalized via 'Type of Action' (strategic vs. tactical) and 'Implementation Requirement'. 'Threat' is operationalized via 'Competitive Impact' and 'Attack Intensity'.",
+      "G2_translation_rule": "Complementarity",
+      "G3_integration_evidence_strength": "Single-study suggestive",
+      "G4_unifying_props_drafts": [
+        "Action characteristics signaling high commitment (e.g., resource irreversibility, strategic nature) reduce the volume and speed of competitive responses by constraining rivals' capability to retaliate and deterring them through the threat of counter-retaliation.",
+        "Action characteristics signaling high threat (e.g., broad market impact, direct attack on rivals' core markets) increase the volume of responses by heightening rivals' awareness and motivation, but may paradoxically slow response timing when the threat is severe due to fears of triggering an escalating conflict."
+      ]
+    },
+    "H": {
+      "TYPE_APPLICABLE_empirical": "Yes",
+      "TYPE_APPLICABLE_theory_conceptual": "No",
+      "TYPE_APPLICABLE_review_meta": "No",
+      "NA_reason_if_any": "This is a primary empirical paper with data analysis, not a conceptual paper or a literature review."
+    },
+    "I": {
+      "I1_mechanism_statements": [
+        "Awareness & Motivation: Actions with high competitive impact and attack intensity are more visible and threatening/appealing, increasing competitors' awareness and motivation to respond.",
+        "Capability: Actions that are strategic or have high implementation requirements are difficult for rivals to counter, thus reducing their capability to respond quickly or at all.",
+        "Commitment & Deterrence: Strategic actions and those with high implementation requirements signal a strong, irreversible commitment from the initiator, which deters rivals from responding for fear of retaliation.",
+        "Fear of Escalation: When an action poses a strong threat to a competitor's core markets, the competitor responds slowly and cautiously to avoid precipitating an escalating and potentially ruinous conflict, especially if the initiator is a powerful or committed player."
+      ],
+      "I2_mediation_moderation_details": "Not applicable",
+      "NA_reason_if_any": "The paper does not formally test for mediation or moderation.",
+      "I3_theoretical_propositions": "Not applicable",
+      "NA_reason_if_any": "This is an empirical paper that tests hypotheses, not a conceptual paper that develops propositions."
+    },
+    "J": {
+      "J1_main_findings_summary": [
+        "The greater an action's competitive impact (number of competitors affected), the greater the number of responses it provokes.",
+        "The greater an action's attack intensity (threat to rivals' key markets), the greater the number of responses.",
+        "Strategic actions (vs. tactical ones) and actions with greater implementation requirements provoke fewer responses and slower responses (longer lag time).",
+        "Contrary to prediction, greater attack intensity is associated with slower, not faster, responses. Post-hoc analysis suggests this is due to competitors' fear of escalating retaliation when their core markets are threatened by a powerful initiator."
+      ],
+      "J2_finding_evidence_links": "Main regression results are in Table 2 (p. 450). Post-hoc analyses for the attack intensity finding are on p. 451.",
+      "J3_finding_strength": "Strong evidence"
+    },
+    "K": {
+      "K1_contribution_summary": "The paper makes a foundational contribution to strategic management by being one of the first studies to empirically demonstrate that competitive rivalry is not random but follows predictable patterns. It shows that specific, observable characteristics of a competitive action are systematic predictors of the number and timing of rival responses. Methodologically, it pioneers a rigorous, replicable approach for collecting competitive interaction data from public sources, paving the way for the field of competitive dynamics."
+    }
+  }

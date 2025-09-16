@@ -1,0 +1,39 @@
+{
+  "id": "chatcmpl-C6ISHQQNM56eNwVQlFGoWVsmj5LON",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\n  \"paper_metadata\": {\n    \"doi\": \"10.1002/smj.2110\",\n    \"title\": \"FROM CORE TO PERIPHERY AND BACK: A STUDY ON THE DELIBERATE SHAPING OF KNOWLEDGE FLOWS IN INTERFIRM DYADS AND NETWORKS\",\n    \"authors\": [\n      \"ANDREA LIPPARINI\",\n      \"GIANNI LORENZONI\",\n      \"SIMONE FERRIANI\"\n    ],\n    \"publication_year\": 2014,\n    \"journal\": \"Strategic Management Journal\",\n    \"research_type\": \"Mixed-Methods\",\n    \"research_context\": \"Italian powered two-wheeler industry\",\n    \"is_replication_study\": false\n  },\n  \"constructs\": [],\n  \"construct_dimensions\": [],\n  \"relationships\": [],\n  \"measurements\": [],\n  \"core_theories\": [],\n  \"coverage_report\": {\n    \"constructs\": 0,\n    \"relationships\": 0,\n    \"measurements\": 0,\n    \"reason\": \"No hypotheses, propositions, or clearly labeled 'Hypothesis Development' or 'Proposition' sections found in the paper. Per the extraction scope, only constructs and relationships explicitly tied to hypotheses/propositions are included. None were present.\",\n    \"errors\": [\n      \"no_hypotheses_found\",\n      \"out_of_core_scope\"\n    ]\n  }\n}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": [],
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1755616945,
+  "model": "gpt-5-mini-2025-08-07",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1772,
+    "prompt_tokens": 22594,
+    "total_tokens": 24366,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1472,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 4736
+    }
+  }
+}

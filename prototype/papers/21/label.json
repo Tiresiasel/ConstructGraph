@@ -1,0 +1,137 @@
+{   "relevant": false,
+    "L1_summary_of_paper": "The paper studies how a platform’s competitive position within a domain shapes volunteer contributors’ activity on online communities when exogenous information shocks arrive. The setting is two competing wiki platforms for video games—Fandom and Gamepedia—where each game has its own community (\"domain\"). Game content updates (new characters, modes, etc.) are used as plausibly exogenous impulses that trigger editing work on the related wikis; patches that only fix glitches are excluded. The design compares activity in a narrow 9-day window around each update (4 days before; update day + 4 days after) across 443 distinct updates for 23 wikis, resembling a regression discontinuity in time/event-study framework with rich fixed effects. Competitive position (CP) is measured just before each update as the focal platform’s share of active contributors within the game-domain (held constant within the 9-day window), mitigating reverse causality. The core finding: updates causally increase activity, and this increase is larger when the platform’s competitive position is stronger. Decomposition shows the extensive margin (more active contributors) explains most of the aggregate increase; intensive-margin gains are concentrated among high-productivity contributors (HPCs), while non-HPCs do not increase (and can even decrease) intensive activity as CP rises. Additional analyses distinguish content creation from maintenance (reverts/formatting). Contributions include: (i) introducing a clean quasi-experimental design to study competition for volunteer contributions across platforms; (ii) showing that relative competitive position conditions how communities mobilize after shocks; and (iii) unpacking extensive vs. intensive margins and heterogeneity by contributor type.",
+    "M1_main_theories": [
+      "Other: Platform competition / two-sided markets (primary)",
+      "Other: Network effects / audience makers (secondary)",
+      "Status (secondary)",
+      "Competitive dynamics (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Not applicable",
+    "M3_unit_of_analysis_element": [
+      "Other: Contribution volume (daily contributions)",
+      "Other: Active contributor count (extensive margin)",
+      "Other: Contributor intensive effort (per-contributor daily contributions)"
+    ],
+    "N1_behavioral_scope": "Single behaviors",
+    "N2_assumption_symmetry": "Not applicable",
+    "N3_assumption_common_environment": "Not applicable",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Loh, J., & Kretschmer, T. (2023). Online communities on competing platforms: Evidence from game wikis. Strategic Management Journal, 44(2), 441–476.",
+    "A2_year": "2023",
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "Not reported",
+    "B1_primary_perspective": "Bridging",
+    "B2_levels": "Not applicable",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Status",
+      "Other: Platform competition",
+      "Other: Network effects"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Community",
+      "Rivalry intensity",
+      "Other: Competitive position (share of active contributors in domain)",
+      "Speed/Timing"
+    ],
+    "C2_measurement": [
+      "Archival behavioral"
+    ],
+    "C3_uncertainty_ambiguity": "None",
+    "C3_metric_detail": "Core outcomes are log daily contributions at the wiki level and at the contributor level; extensive margin uses number of active contributors; intensive margin uses per-contributor daily contributions; reverts and maintenance are identified via platform flags/comments. Competitive position is measured as a platform’s share of active contributors in the domain 4 days pre-update and held fixed during the 9-day window.",
+    "C4_shock_type": "Innovation/tech",
+    "C4_shock_design": "Hand-collected release dates of content updates; exclude non-content patches. 9-day windows (−4 to +4 with the release day). Observations just after the update are treated; just before are control. Multiple updates across games support ATE and heterogeneous treatment effects by competitive position.",
+    "D1_design": "Event study",
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "Yes",
+    "D2b_causality_supported_by_design": "Moderate",
+    "D2_identification": "Other: Regression Discontinuity in Time (event-study with game-update FE and rich fixed effects)",
+    "D2_causal_claim_strength": "Moderate",
+    "D2_key_assumptions_addressed": [
+      "Update timing exogenous to wiki activity and platform CP within narrow windows; assessed via fixed effects and probability-of-update analysis",
+      "No differential pre-trends within the 9-day window (checked via day dummies)",
+      "CP measured pre-update and held fixed to avoid reverse causality"
+    ],
+    "D2_robustness_suite": [
+      "Alt specs",
+      "Pre-trend tests",
+      "Placebo/falsification",
+      "Cluster/serial corr fixes"
+    ],
+    "D3_endogeneity": "Exogenous shock",
+    "D4_level_alignment": "Explicit bridging",
+    "D5_data_sources": [
+      "MediaWiki revision logs (Fandom and Gamepedia)",
+      "Hand-collected game update release information",
+      "Platform flags/comments for reverts and maintenance",
+      "Semi-structured interviews (contextual insights)"
+    ],
+    "E1_outcomes": [
+      "Action rate/mix",
+      "Other: Number of active contributors",
+      "Other: Per-contributor daily contributions",
+      "Other: Reverts and maintenance"
+    ],
+    "E2_effect_directions": {
+      "Action rate/mix": "+",
+      "Other: Number of active contributors": "+",
+      "Other: Per-contributor daily contributions": "Mixed",
+      "Other: Reverts and maintenance": "Mixed"
+    },
+    "E3_mechanisms_tags": [
+      "Information access",
+      "Legitimacy/Status",
+      "Spillovers"
+    ],
+    "E4_moderators": [
+      "Other: Competitive position (share of active contributors pre-update)",
+      "Other: Contributor type (HPC vs. non-HPC)",
+      "Other: Community size (interacted with Post)"
+    ],
+    "F1_transparency_quality": "High",
+    "F2_risk_of_bias_notes": "Potential concern that update timing correlates with broader player activity (and thus wiki activity) is mitigated by rich time-varying FE and a dedicated probability-of-update analysis; remaining external validity limits include focus on two platforms and 13 games.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Map ‘competitive position’ to rivalry intensity within a domain; map contributions to action rate; treat extensive vs. intensive margins as distinct micro-channels for community mobilization.",
+    "G2_translation_rule": "Conditionality",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "P1: Following an exogenous information shock, communities on platforms with stronger competitive position exhibit larger increases in total contributions, primarily via the extensive margin.",
+      "P2: Intensive-margin responses to shocks are concentrated among high-productivity contributors and grow with competitive position; non-HPCs do not show similar increases.",
+      "P3: As competitive position strengthens, maintenance/quality-control activity becomes a non-trivial share of post-shock effort."
+    ],
+    "H1_TYPE_APPLICABLE_empirical": "Yes",
+    "H2_TYPE_APPLICABLE_theory_conceptual": "No",
+    "H3_TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Not applicable.",
+    "I1_mechanism_statements": [
+      "Updates introduce new information requirements, increasing the marginal return (intrinsic/status/audience) to contributing; stronger competitive position amplifies these non-pecuniary benefits, mobilizing more contributors (extensive margin).",
+      "Status competition and audience growth on the stronger platform encourage HPCs to increase intensive effort post-update.",
+      "Larger communities at stronger CP require more coordination/quality control, channeling some post-update effort into reverts and maintenance."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Competitive position (CP)",
+        "role_in_link": "Moderates the Post-update effect on contributions at wiki and contributor levels; stronger CP → larger treatment effect."
+      },
+      {
+        "type": "moderation",
+        "variable": "High-productivity contributor (HPC)",
+        "role_in_link": "Three-way interaction shows intensive-margin increases post-update are driven by HPCs as CP strengthens."
+      }
+    ],
+    "I3_theoretical_propositions": "Not applicable",
+    "J1_main_findings_summary": [
+      "Updates act as an impulse: wiki-level contributions rise about 30% immediately after updates; contributor-level contributions also increase but by a smaller percentage.",
+      "The increase in activity post-update is larger the stronger the platform’s competitive position in the domain.",
+      "Most of the aggregate response operates through the extensive margin (more active contributors); intensive-margin gains are meaningful but smaller.",
+      "Intensive-margin increases with stronger CP are concentrated among high-productivity contributors; non-HPCs do not mirror this pattern.",
+      "Maintenance/quality-control tasks (reverts, formatting) are a notable component of post-update activity, especially as communities grow."
+    ],
+    "J2_finding_evidence_links": "Design & identification (Sec. 3.3); ATE/impulse estimates (Table 3; Sec. 4.2.1); CP heterogeneity & margins (Fig. 8; Sec. 4.3.1–4.3.2); HPC definition and three-way interaction (Sec. 4; contributor analysis set-up).",
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "By leveraging exogenous content updates in a narrow event-window design, the study shows that relative competitive position conditions how much online communities mobilize after shocks. It advances competitive dynamics on platforms by separating extensive vs. intensive responses and revealing that intensive gains accrue mainly to top contributors, while most aggregate increases come from activating more contributors. The work refines how rivalry for volunteer effort translates into differential community performance across competing platforms."
+  }

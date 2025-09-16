@@ -1,0 +1,118 @@
+{
+    "L1_summary_of_paper": "This empirical study examines how industry-level conditions shape the extent of managerial networking among executives of Chinese manufacturing firms, and whether firms’ strategic proactiveness moderates these effects. Managerial networking is defined as the extent to which top managers utilize personal ties with suppliers, buyers, competitors, distributors/marketers, and regulators. Grounded in contingency and resource dependence perspectives (with a social capital view of ties), the paper theorizes that structural uncertainty, industry growth, regulatory stringency, competitive pressure, and capacity utilization reflect opportunities and threats that alter managers’ incentives to network. Using survey data from 364 firms (1999–2000) merged with archival industry statistics (1996–1998), OLS regressions show networking is higher when structural uncertainty, regulation, and competitive pressure are greater, and lower when capacity utilization is higher; industry growth is not significant. Strategic proactiveness strengthens the positive effects of uncertainty, regulation, and competition. The paper contributes by demonstrating the contingency of networking on industry structure in an emerging economy and by identifying strategic proactiveness as a boundary condition.",
+    "M1_main_theories": [
+      "Resource dependence theory (primary)",
+      "Contingency theory (primary)",
+      "Social capital theory (secondary)"
+    ],
+    "M2_unit_of_analysis_level": "Firm",
+    "M3_unit_of_analysis_element": "Managerial networking level",
+    "N1_behavioral_scope": "Not applicable",
+    "N2_assumption_symmetry": "True",
+    "N3_assumption_common_environment": "True",
+    "N4_assumption_equal_weighting": "Not applicable",
+    "N5_focus_scope": "Not applicable",
+    "A1_citation": "Luo, Y. (2003). Industrial dynamics and managerial networking in an emerging market: the case of China. Strategic Management Journal, 24(13), 1315–1327.",
+    "A2_year": "2003",
+    "A3_outlet_tier": "SMJ",
+    "A4_study_type": "Empirical-Quant",
+    "A5_replicability": "None",
+    "B1_primary_perspective": "Network",
+    "B2_levels": "Firm",
+    "B3_theoretical_lens_tags": [
+      "Competitive dynamics",
+      "Resource dependence",
+      "Embeddedness",
+      "Social capital"
+    ],
+    "B4_contribution_type": "Redirection",
+    "C1_constructs": [
+      "Managerial networking",
+      "Regulation",
+      "Competitive pressure",
+      "Uncertainty",
+      "Capacity utilization"
+    ],
+    "C2_measurement": [
+      "Survey/perceptual",
+      "Archival behavioral"
+    ],
+    "C3_uncertainty_ambiguity": "Measured",
+    "C3_metric_detail": "Structural uncertainty is the geometric mean of the standard deviations (1996–1998) of industry output, sales, and profit.",
+    "C4_shock_type": "None",
+    "C4_shock_design": "Not applicable",
+    "D1_design": "Cross-section",
+    "D2_causal_or_correlational": "Associational only",
+    "D2a_causality_claimed": "No",
+    "D2b_causality_supported_by_design": "None",
+    "D2_identification": "Other: OLS with controls and moderation tests",
+    "D2_causal_claim_strength": "None",
+    "D2_key_assumptions_addressed": "Not reported",
+    "D2_robustness_suite": "Alt specs",
+    "D3_endogeneity": "Not addressed",
+    "D4_level_alignment": "None",
+    "D5_data_sources": [
+      "China Statistical Yearbook (1996–1998)",
+      "Executive survey of Chinese manufacturing firms (1999–2000)"
+    ],
+    "E1_outcomes": [
+      "Managerial networking level"
+    ],
+    "E2_effect_directions": {
+      "Managerial networking level – Structural uncertainty": "+",
+      "Managerial networking level – Industrial growth": "Null",
+      "Managerial networking level – Industrial regulation": "+",
+      "Managerial networking level – Competitive pressure": "+",
+      "Managerial networking level – Capacity utilization": "–"
+    },
+    "E3_mechanisms_tags": [
+      "Resource dependence",
+      "Information access",
+      "Signaling"
+    ],
+    "E4_moderators": [
+      "Strategic proactiveness"
+    ],
+    "F1_transparency_quality": "Medium",
+    "F2_risk_of_bias_notes": "Networking is self-reported; potential common method concerns for the focal dependent variable; omitted variable and reverse causality not addressed; diagnostics for multicollinearity/normality/heteroscedasticity reported but no identification for causality.",
+    "F3_saturation_contribution": "New theme",
+    "G1_construct_mapping_note": "Maps industry-level structural attributes (uncertainty, regulation, competition, capacity utilization) to firm-level networking intensity via contingency/resource dependence logic in an emerging-market institutional context.",
+    "G2_translation_rule": "Conditionality",
+    "G3_integration_evidence_strength": "Single-study suggestive",
+    "G4_unifying_props_drafts": [
+      "In emerging markets, managerial networking adjusts to industry structure rather than remaining fixed.",
+      "Strategic proactiveness amplifies firms’ networking responsiveness to uncertainty, regulation, and competition.",
+      "Capacity slack (low utilization) triggers networking aimed at demand generation and access to privileges/resources."
+    ],
+    "TYPE_APPLICABLE_empirical": "Yes",
+    "TYPE_APPLICABLE_theory_conceptual": "No",
+    "TYPE_APPLICABLE_review_meta": "No",
+    "NA_reason_if_any": "Not applicable",
+    "I1_mechanism_statements": [
+      "Higher structural uncertainty raises information-processing needs, leading executives to rely more on personal ties with external actors.",
+      "Greater regulatory stringency increases dependence on officials and peer firms, encouraging networking to mitigate constraints or secure exceptions.",
+      "Stronger competitive pressure heightens interdependence with market stakeholders, prompting networking to defend or reposition.",
+      "Lower capacity utilization incentivizes networking with buyers/distributors/regulators to generate orders or redeploy assets."
+    ],
+    "I2_mediation_moderation_details": [
+      {
+        "type": "moderation",
+        "variable": "Strategic proactiveness",
+        "role_in_link": "Strengthens the positive effects of structural uncertainty, regulatory stringency, and competitive pressure on managerial networking."
+      }
+    ],
+    "I3_theoretical_propositions": [],
+    "J1_main_findings_summary": [
+      "Networking intensity increases with structural uncertainty, regulatory stringency, and competitive pressure, and decreases with capacity utilization.",
+      "Industry growth has no significant association with networking.",
+      "Strategic proactiveness positively moderates the effects of uncertainty, regulation, and competition on networking.",
+      "Results support a contingency view of networking in an emerging-market institutional context."
+    ],
+    "J2_finding_evidence_links": [
+      "Table 2: Model 1 and Model 3 (hierarchical moderated regressions).",
+      "Measurement and variable construction sections (Data and Methods)."
+    ],
+    "J3_finding_strength": "Strong evidence",
+    "K1_contribution_summary": "The paper demonstrates that in China’s emerging market, managerial networking is contingent on multiple industry structural attributes and is more strongly shaped by them when firms are strategically proactive, advancing a contingency/resource-dependence account of networking behavior beyond generic uncertainty."
+  }
+  

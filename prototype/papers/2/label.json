@@ -1,0 +1,143 @@
+{ 
+  "relevant":true,
+  "L1_summary_of_paper": "The paper formalizes the \"cue-ball effect\" in a vertical-differentiation triopoly (low-end L, middle M, high-end H). Consumers buy one unit; willingness-to-pay per unit quality (x) is distributed on [μ−α, μ+α] (baseline uniform; extensions allow skewness). Firms choose quality (position) then price; marginal cost rises convexly with quality. An unexpected cost advantage ε for the low-end firm shifts equilibrium. If repositioning is prohibited, M (the closer rival) is hurt more than H. If repositioning is allowed, M moves upscale to avoid L, thereby encroaching on H; because H faces an \"edge\" (limited room to move further upscale) and convex quality costs, H suffers a larger percentage profit decline than M—the cue-ball effect. Extensions show: (i) greater demand skewness (income inequality) weakens and can reverse the cue-ball effect; (ii) stronger competitive intensity (lower σ/μ) amplifies it; (iii) greater cost convexity b amplifies it. An illustrative grocery case (Walmart → Kroger upgrades → Whole Foods decline) aligns with the model’s comparative statics. Contributions: a formal triadic mechanism of indirect rivalry via repositioning, conditions under which distant rivals are harmed more than proximate ones, and a reframing of \"closest rival is most affected\" as conditional on repositioning feasibility and market structure.",
+  "M1_main_theories": [
+    "Vertical differentiation (primary)",
+    "Industrial organization theory (primary)",
+    "Competitive dynamics (secondary)",
+    "Repositioning literature (secondary)"
+  ],
+  "M2_unit_of_analysis_level": "Firm",
+  "M3_unit_of_analysis_element": [
+    "Pricing strategy",
+    "Other: Quality positioning (vertical differentiation)",
+    "Other: Repositioning decision"
+  ],
+  "N1_behavioral_scope": "Single behavior",
+  "N2_assumption_symmetry": "Not reported",
+  "N3_assumption_common_environment": "Yes",
+  "N4_assumption_equal_weighting": "Not reported",
+  "N5_focus_scope": "Multiple competitors focus",
+  "A1_citation": "Balasubramanian, N., Makadok, R., & Chiu, W.-T. (2024). The cue-ball effect: How an advantaged firm’s closer competitors can propagate the impact of its advantage to more distant competitors. Strategic Management Journal, 45(6), 1087–1116. https://doi.org/10.1002/smj.3579",
+  "A2_year": "2024",
+  "A3_outlet_tier": "SMJ",
+  "A4_study_type": "Conceptual/Theory",
+  "A5_replicability": "None",
+  "B1_primary_perspective": "Bridging",
+  "B2_levels": "Firm",
+  "B3_theoretical_lens_tags": [
+    "Competitive dynamics",
+    "Other: Vertical differentiation (IO)",
+    "Other: Repositioning"
+  ],
+  "B4_contribution_type": "Redirection",
+  "C1_constructs": [
+    "Similarity/overlap",
+    "Rivalry intensity",
+    "Other: Quality positioning (vertical differentiation)",
+    "Other: Repositioning",
+    "Other: Demand skewness (income inequality)",
+    "Other: Competitive intensity (consumer dispersion)"
+  ],
+  "C2_measurement": [
+    "Other: Formal model (analytical) parameters",
+    "Archival behavioral"
+  ],
+  "C3_uncertainty_ambiguity": "Stated only",
+  "C3_metric_detail": "Model calibrates consumer dispersion using σ/μ (coefficient of variation); extension varies skewness γ via a piecewise-uniform distribution; competitive intensity proxied by σ/μ.",
+  "C4_shock_type": "Other",
+  "C4_shock_design": "Unexpected exogenous cost reduction for the low-end firm (ε) in marginal cost; illustrated empirically by Walmart’s distribution efficiency shock.",
+  "D1_design": "Conceptual/Theory",
+  "D2_causal_or_correlational": "Theoretical/Not applicable",
+  "D2a_causality_claimed": "Yes",
+  "D2b_causality_supported_by_design": "Not applicable",
+  "D2_identification": "Not applicable",
+  "D2_causal_claim_strength": "Other: Theoretical (model-based)",
+  "D2_key_assumptions_addressed": [
+    "Full market coverage with three firms; ordering vH>vM>vL maintained",
+    "Two-stage game: simultaneous quality then price choice",
+    "Baseline uniform x distribution; extensions for skewness and dispersion",
+    "Convex cost of quality (ωv^b)",
+    "Shock only to L (ε); others unchanged",
+    "Hurt-worse defined by percentage profit decline (also checked in appendix with absolute declines)"
+  ],
+  "D2_robustness_suite": "Other: Comparative statics over ε, γ (skewness), σ/μ (dispersion), and cost convexity b; alternative ‘hurt-worse’ definition reported in appendix.",
+  "D3_endogeneity": "Not applicable",
+  "D4_level_alignment": "Explicit bridging",
+  "D5_data_sources": [
+    "Illustrative archival geography-based store data (Walmart Supercenter openings; Kroger renovations; Whole Foods performance)",
+    "Local income inequality measures (for skewness proxy)"
+  ],
+  "E1_outcomes": [
+    "Price",
+    "Market share",
+    "Revenue/profit",
+    "Other: Quality level (position)"
+  ],
+  "E2_effect_directions": {
+    "Price": {"L": "–", "M": "–", "H": "Mixed"},
+    "Market share": {"L": "+", "M": "–", "H": "–"},
+    "Revenue/profit": {"L": "+", "M": "–", "H": "– (larger than M when repositioning allowed)"},
+    "Other: Quality level (position)": {"L": "+", "M": "+", "H": "+ (limited by edge/cost convexity)"}
+  },
+  "E3_mechanisms_tags": [
+    "Spillovers",
+    "Other: Repositioning on quality",
+    "Other: Edge effect (limited upscale room)"
+  ],
+  "E4_moderators": [
+    "Demand skewness (income inequality)",
+    "Competitive intensity (σ/μ)",
+    "Cost convexity (b)",
+    "Shock magnitude (ε)"
+  ],
+  "F1_transparency_quality": "High",
+  "F2_risk_of_bias_notes": "Results hinge on triopoly structure, full coverage, simultaneous moves, convex cost, distributional forms, and defining ‘hurt-worse’ by percentage profits; empirical illustration is associative, not identified.",
+  "F3_saturation_contribution": "New theme",
+  "G1_construct_mapping_note": "Maps dyadic action–response into a triadic IO setting where repositioning transmits shocks to distant rivals; clarifies when ‘closest rival is most affected’ fails.",
+  "G2_translation_rule": "Conditionality",
+  "G3_integration_evidence_strength": "Single-study suggestive",
+  "G4_unifying_props_drafts": [
+    "Indirect rivalry emerges when repositioning redirects competitive pressure across quality space.",
+    "Edge constraints and convex costs govern asymmetric harm to distant rivals.",
+    "Market structure (skewness, dispersion) conditions whether close or distant rivals are most affected."
+  ],
+  "H1_TYPE_APPLICABLE_empirical": "No",
+  "H2_TYPE_APPLICABLE_theory_conceptual": "Yes",
+  "H3_TYPE_APPLICABLE_review_meta": "No",
+  "NA_reason_if_any": "Formal economic model with illustrative, non-identified archival analyses; no hypothesis testing or identification strategy.",
+  "I1_mechanism_statements": [
+    "L’s cost advantage → L raises quality and cuts price → M moves upscale to avoid L → M’s encroachment harms H (limited escape at the top end).",
+    "Edge effect: H has less feasible repositioning space and faces higher marginal quality costs, amplifying harm to H.",
+    "Comparative statics: higher skewness expands H’s escape room; lower dispersion increases direct rivalry; higher convexity raises H’s adjustment cost."
+  ],
+  "I2_mediation_moderation_details": [
+    {"type": "moderation", "variable": "Demand skewness (γ)", "role_in_link": "Higher γ weakens and can reverse the cue-ball effect by expanding H’s upscale room."},
+    {"type": "moderation", "variable": "Competitive intensity (σ/μ)", "role_in_link": "Lower σ/μ (more intense) strengthens the cue-ball effect and M’s relative advantage."},
+    {"type": "moderation", "variable": "Cost convexity (b)", "role_in_link": "Higher b strengthens the cue-ball effect by making H’s further upscaling costlier."}
+  ],
+  "I3_theoretical_propositions": [
+    "P1: Without repositioning, the closer rival (M) suffers a larger percentage profit decline than the distant rival (H) when L gains a cost advantage.",
+    "P2a: With repositioning, H suffers a larger percentage profit decline than M (cue-ball effect).",
+    "P2b: Allowing repositioning increases the performance gap in favor of M relative to H (repositioning advantage of M).",
+    "P3a: Greater demand skewness diminishes and can reverse the cue-ball effect.",
+    "P3b: Greater demand skewness can eliminate and reverse the repositioning advantage of M.",
+    "P4: Higher competitive intensity (lower σ/μ) increases both the cue-ball effect and M’s repositioning advantage.",
+    "P5: Greater cost convexity (higher b) increases both the cue-ball effect and M’s repositioning advantage."
+  ],
+  "J1_main_findings_summary": [
+    "Formal triadic model shows when distant rivals are hurt more than closer rivals via repositioning.",
+    "Baseline: no repositioning → M hurt more; with repositioning → H hurt more (cue-ball effect).",
+    "Comparative statics identify boundary conditions: skewness weakens/reverses the effect; intensity and convexity strengthen it.",
+    "Illustrative grocery case aligns qualitatively with model predictions regarding Walmart, Kroger, and Whole Foods."
+  ],
+  "J2_finding_evidence_links": [
+    "Figures 3–4 (baseline no-repositioning vs repositioning)",
+    "Figures 5–6 (skewness extension)",
+    "Figure 7 (competitive intensity)",
+    "Figure 8 (cost convexity)",
+    "Empirical illustration section"
+  ],
+  "J3_finding_strength": "Speculative (conceptual)",
+  "K1_contribution_summary": "By embedding repositioning in a vertical-differentiation triopoly, the paper explains how an advantaged firm’s impact can be propagated to distant rivals, specifies when this reversal of the ‘closest rival is most affected’ intuition occurs, and offers testable conditions linking demand skewness, competitive intensity, and cost convexity to indirect harm."
+}

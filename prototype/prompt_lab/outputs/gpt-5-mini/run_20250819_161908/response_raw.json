@@ -1,0 +1,39 @@
+{
+  "id": "chatcmpl-C6IP8SuIFPdkkihhG9qrb1QIQ0ppq",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "{\n  \"paper_metadata\": {\n    \"doi\": \"doi.org/10.5465/amj.2021.1440\",\n    \"title\": \"BRICKS WITHOUT STRAW: OVERCOMING RESOURCE LIMITATIONS TO ARCHITECT ECOSYSTEM LEADERSHIP XIANWEI SHI Shanghai Jiao Tong University XINGKUN LIANG Peking University SHAHZAD (SHAZ) ANSARI University of Cambridge\",\n    \"authors\": [\n      \"Xianwei Shi\",\n      \"Xingkun Liang\",\n      \"Shahzad (Shaz) Ansari\"\n    ],\n    \"publication_year\": 2024,\n    \"journal\": \"Academy of Management Journal\",\n    \"research_type\": \"Qualitative\",\n    \"research_context\": \"Nine-year longitudinal qualitative case study of Xiaomi within the Android ecosystem and the Chinese smartphone industry (including archival data, 112 semi-structured interviews, and participant observation).\",\n    \"is_replication_study\": false\n  },\n  \"constructs\": [],\n  \"construct_dimensions\": [],\n  \"relationships\": [],\n  \"measurements\": [],\n  \"core_theories\": [],\n  \"coverage_report\": {\n    \"constructs\": 0,\n    \"relationships\": 0,\n    \"measurements\": 0,\n    \"reason\": \"Per the extraction scope, only constructs/relationships explicitly tied to labeled Hypotheses/Propositions or contained in 'Hypothesis Development'/'Proposition' sections should be extracted. The provided paper contains no explicit Hypotheses, Propositions, Hypothesis Development sections, or labeled theoretical claims anchored to H/P identifiers; therefore no core-scoped constructs, relationships, or measurements meeting the required anchoring criteria were found.\",\n    \"errors\": [\n      \"no_anchor_found\",\n      \"insufficient_evidence\",\n      \"out_of_scope_content\"\n    ]\n  }\n}",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": [],
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1755616750,
+  "model": "gpt-5-mini-2025-08-07",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1927,
+    "prompt_tokens": 41480,
+    "total_tokens": 43407,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1536,
+      "rejected_prediction_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    }
+  }
+}
